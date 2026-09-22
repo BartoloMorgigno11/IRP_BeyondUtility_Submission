@@ -1,0 +1,36 @@
+check,status,evidence
+head_is_expected_f1arr_checkpoint,PASS,c280fbef3440debe0a804efaf1f15436d9659347
+head_descends_from_predecessor,PASS,c280fbef3440debe0a804efaf1f15436d9659347
+active_datasets_exact,PASS,"beauty,sports,ml1m,lastfm,foodcom"
+operational_video_games_rows_zero,PASS,0
+global_metric_blockers_zero,PASS,0
+f0_request_budget_unchanged,PASS,"{""BLOCKED_REQUESTS"":0,""CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL"":100584,""CONDITIONAL_REQUESTS"":9000,""CORE_MANDATORY_NOW_REQUESTS"":29292,""EXISTING_REUSABLE_REQUESTS"":0,""FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL"":88584,""MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE"":5364,""MANDATORY_RAW_REQUESTS_TOTAL"":50292,""OPTIONAL_REQUESTS"":12000,""PREVIOUS_D0B_ESTIMATE"":44928,""REQUIRED_SENSITIVITY_REQUESTS"":21000,""TRAINING_DEPENDENT_REQUESTS"":29292}"
+h0_hashes_unchanged,PASS,8
+foodcom_hashes_unchanged,PASS,"{""RAW_interactions.csv"":""4e278d2f687b1020f5694e51003a7d6174344b51aebbdf4530de88b5c6a78ee4"",""RAW_recipes.csv"":""6a8136d1da9e03396a9f52d72200b3fddb8fe103f11e1496effca30ac4e0539f""}"
+original_repo_unchanged,PASS,clean
+paper_unchanged,PASS,clean
+no_unexplained_worktree_changes,PASS,none
+traditional_matrix_35_rows,PASS,35
+traditional_raw_rows_35,PASS,35
+traditional_result_cells_595,PASS,595
+reuse_audit_complete,PASS,35
+no_protocol_identical_reuse_claimed,PASS,NO_PROTOCOL_IDENTICAL_REUSE
+planned_trainable_runs_100,PASS,100
+training_results_100_not_executed,PASS,100
+protocol_ambiguity_explicit,PASS,"Current repository evidence contains incompatible trainable seed/config lineages: original-paper Beauty/Sports archives reference seeds 0-4, local LastFM F6D2 adapted training uses seeds 42-46 and selected reranking seeds 44-46, and Plan E pilot artifacts use single seed 42 with superseded cohorts. F1B must not choose a cross-dataset training protocol implicitly.
+"
+deterministic_rows_not_fabricated,PASS,Random/MostPop/BM25-like require recomputation
+result_readiness_complete,PASS,595 of 595
+result_statuses_controlled,PASS,"BLOCKED_EXECUTION,DEGENERATE_PROTOCOL_INPUT"
+blank_result_statuses_zero,PASS,blank=0
+unknown_metric_rows_zero,PASS,0
+degenerate_traditional_cells_preserved,PASS,7
+candidate_recall_blocked_not_fabricated,PASS,30
+reranking_requests_unlocked_zero,PASS,0
+five_dataset_completeness_35_rows,PASS,35
+zero_llm_inference,PASS,0
+zero_ollama_recommendation_calls,PASS,0
+zero_traditional_training_runs,PASS,0
+zero_download_network_api,PASS,download=0;network=0;api=0
+commit_not_created,PASS,0
+config_forbids_llm_inference,PASS,false

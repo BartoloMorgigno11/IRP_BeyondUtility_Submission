@@ -1,0 +1,90 @@
+phase:
+  id: g2_history_length_execution_freeze
+  required_protocol_decision: G2_NESTED_HISTORY_PROTOCOL_FROZEN
+  success_token: G2_EXECUTION_RUNNER_FROZEN
+  blocked_token: G2_EXECUTION_RUNNER_BLOCKED
+  allow_commit: false
+
+execution:
+  allow_local_ollama_inference: false
+  allow_local_ollama_metadata: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network_downloads: false
+  allow_training: false
+  allow_tuning: false
+  allow_g3: false
+  allow_g4: false
+  allow_g5: false
+  ollama_base_url: http://127.0.0.1:11434
+  temperature: 0
+  max_output_tokens:
+    ranking: 256
+  timeout_seconds: 150
+  backend_retry_count: 2
+  backend_retry_backoff_seconds: [5, 15]
+  scientific_retry_count: 0
+  stream: false
+  response_format: json
+  canonical_logical_order: dataset_user_history_prompt_model
+  physical_execution_order: model_dataset_prompt_history_user
+  max_attempts: 3
+  structural_invalidity_retry_count: 0
+
+inputs:
+  protocol_config: configs/g2_history_length_sensitivity.yaml
+  protocol_manifest: results/manifests/g2_history_length_protocol_freeze.json
+  request_universe: results/tables/g2_history_length_request_universe.csv
+  protocol_accounting: results/tables/g2_history_length_request_accounting.csv
+  g1_execution_state: results/tables/g1_primary_ranking_execution_state.csv
+  g1_strict_parsing: results/tables/g1_primary_ranking_strict_parsing.csv
+  g1_model_runtime_provenance: results/manifests/g1_primary_ranking_model_runtime_provenance.json
+
+raw_evidence:
+  raw_dir: results/llm/extension_canonical/g2_history_length_sensitivity
+  request_jsonl: results/llm/extension_canonical/g2_history_length_sensitivity/requests.jsonl
+  response_jsonl: results/llm/extension_canonical/g2_history_length_sensitivity/responses.jsonl
+  event_jsonl: results/llm/extension_canonical/g2_history_length_sensitivity/events.jsonl
+  response_dir: results/llm/extension_canonical/g2_history_length_sensitivity/responses
+  raw_response_protocol: extension_canonical_raw_response_jsonl_v1
+  overwrite_terminal_evidence: false
+
+outputs:
+  execution_order: results/tables/g2_history_length_execution_order.csv
+  execution_accounting: results/tables/g2_history_length_execution_accounting.csv
+  g1_execution_reuse: results/tables/g2_history_length_g1_execution_reuse.csv
+  execution_freeze_manifest: results/manifests/g2_history_length_execution_freeze.json
+  report: report/g2_history_length_execution_runner.md
+
+expected_accounting:
+  logical_applicable_requests: 88050
+  exact_g1_reuse: 18660
+  new_ollama_calls_required: 69390
+  by_dataset:
+    beauty: {total: 5658, reuse: 1086, new: 4572}
+    sports: {total: 5010, reuse: 960, new: 4050}
+    ml1m: {total: 35958, reuse: 6000, new: 29958}
+    lastfm: {total: 35022, reuse: 5886, new: 29136}
+    foodcom: {total: 6402, reuse: 4728, new: 1674}
+  per_model:
+    total: 29350
+    reuse: 6220
+    new: 23130
+  per_prompt:
+    total: 44025
+    reuse: 9330
+    new: 34695
+
+retention:
+  tracked_scientific_foreground:
+    - configs/g2_history_length_execution.yaml
+    - src/extension/g2_history_length_execution.py
+    - tests/test_extension_g2_history_length_execution.py
+    - results/tables/g2_history_length_execution_order.csv
+    - results/tables/g2_history_length_execution_accounting.csv
+    - results/tables/g2_history_length_g1_execution_reuse.csv
+    - results/manifests/g2_history_length_execution_freeze.json
+    - report/g2_history_length_execution_runner.md
+  tracked_provenance_manifest: results/manifests/g2_history_length_execution_freeze.json
+  future_raw_evidence_class: EXTERNALIZED_RAW_EVIDENCE
+  future_per_request_audit_class: EXTERNALIZED_PER_REQUEST_AUDIT

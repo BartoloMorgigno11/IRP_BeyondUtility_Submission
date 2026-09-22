@@ -1,0 +1,30 @@
+key,value,evidence
+python_interpreter_path,C:\Users\Bartolo\Desktop\PROGETTI\IRP_BeyondUtility_Project\.venv_audit_recovery\Scripts\python.exe,sys.executable
+python_version,3.12.10,platform.python_version
+python_version_full,"3.12.10 (tags/v3.12.10:0cc8128, Apr 8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",sys.version
+environment_classification,project_local_venv_audit_recovery,derived from interpreter path
+ollama_client_version,0.32.15,ollama --version
+ollama_version_raw_output,"Warning: could not connect to a running Ollama instance
+Warning: client version is 0.32.15",ollama --version
+ollama_server_status,not_running_or_unreachable_during_f0r_no_model_call,ollama --version output only; no model call
+qwen2_7b_instruct_ollama_manifest_digest,dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755,results/tables/f0_final_model_matrix.csv
+qwen2_7b_instruct_ollama_model_layer_digest,43f7a214e5329f672bb05404cfba1913cbb70fdaa1a17497224e1925046b0ed5,results/tables/f0_final_model_matrix.csv
+qwen2_7b_instruct_ollama_model_layer_size,4431388192,results/tables/f0_final_model_matrix.csv
+mistral_7b_instruct_ollama_manifest_digest,6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf,results/tables/f0_final_model_matrix.csv
+mistral_7b_instruct_ollama_model_layer_digest,f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f,results/tables/f0_final_model_matrix.csv
+mistral_7b_instruct_ollama_model_layer_size,4372811712,results/tables/f0_final_model_matrix.csv
+gemma2_9b_ollama_manifest_digest,ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b,results/tables/f0_final_model_matrix.csv
+gemma2_9b_ollama_model_layer_digest,ff1d1fc78170d787ee1201778e2dd65ea211654ca5fb7d69b5a2e7b123a50373,results/tables/f0_final_model_matrix.csv
+gemma2_9b_ollama_model_layer_size,5443143296,results/tables/f0_final_model_matrix.csv
+gpu,NVIDIA GeForce RTX 4060 Laptop GPU,nvidia-smi --query-gpu
+gpu_driver,595.79,nvidia-smi --query-gpu
+gpu_memory_mb,8188,nvidia-smi --query-gpu
+ram_total_gb,31.715,GlobalMemoryStatusEx
+ram_available_gb,17.333,GlobalMemoryStatusEx
+torch_installed,true,import torch
+torch_version,2.6.0+cu124,import torch
+torch_cuda_available,true,import torch
+torch_cuda_version,12.4,import torch
+torch_device_count,1,import torch
+free_disk_gb,153.232,shutil.disk_usage(project_root)
+runtime_contract_policy,exact_current_environment_recorded_no_silent_environment_change_before_inference,F0R

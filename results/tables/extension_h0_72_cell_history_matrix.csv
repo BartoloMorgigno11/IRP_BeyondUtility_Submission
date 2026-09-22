@@ -1,0 +1,73 @@
+dataset,model_name,history_length,status,users,required_raw_requests,reusable_identical_raw_requests,to_compute_raw_requests,blocked_raw_requests,candidate_pool_size,requested_output_length,parser_contract,metric_k,prompt_strategy,historical_evidence_note
+beauty,qwen2:7b-instruct,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"pilot scope and fifth-dataset context; not full four-dataset final history matrix; top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+beauty,qwen2:7b-instruct,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no protocol-identical historical raw output found
+beauty,qwen2:7b-instruct,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+beauty,qwen2:7b-instruct,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no protocol-identical historical raw output found
+beauty,qwen2:7b-instruct,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+beauty,qwen2:7b-instruct,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"pilot scope and fifth-dataset context; not full four-dataset final history matrix; top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+beauty,mistral:7b-instruct,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"pilot scope and fifth-dataset context; not full four-dataset final history matrix; top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+beauty,mistral:7b-instruct,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no protocol-identical historical raw output found
+beauty,mistral:7b-instruct,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+beauty,mistral:7b-instruct,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no protocol-identical historical raw output found
+beauty,mistral:7b-instruct,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+beauty,mistral:7b-instruct,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"pilot scope and fifth-dataset context; not full four-dataset final history matrix; top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+beauty,gemma2:9b,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+beauty,gemma2:9b,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+beauty,gemma2:9b,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+beauty,gemma2:9b,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+beauty,gemma2:9b,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+beauty,gemma2:9b,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+sports,qwen2:7b-instruct,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+sports,qwen2:7b-instruct,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no protocol-identical historical raw output found
+sports,qwen2:7b-instruct,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+sports,qwen2:7b-instruct,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+sports,qwen2:7b-instruct,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+sports,qwen2:7b-instruct,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"pilot scope and fifth-dataset context; not full four-dataset final history matrix; top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+sports,mistral:7b-instruct,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+sports,mistral:7b-instruct,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no protocol-identical historical raw output found
+sports,mistral:7b-instruct,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+sports,mistral:7b-instruct,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+sports,mistral:7b-instruct,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+sports,mistral:7b-instruct,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"pilot scope and fifth-dataset context; not full four-dataset final history matrix; top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+sports,gemma2:9b,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+sports,gemma2:9b,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+sports,gemma2:9b,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+sports,gemma2:9b,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+sports,gemma2:9b,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+sports,gemma2:9b,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+ml1m,qwen2:7b-instruct,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+ml1m,qwen2:7b-instruct,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no protocol-identical historical raw output found
+ml1m,qwen2:7b-instruct,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+ml1m,qwen2:7b-instruct,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,ML-1M 20-user diagnostic subset and candidate-ID contract
+ml1m,qwen2:7b-instruct,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,ML-1M 20-user diagnostic subset and candidate-ID contract
+ml1m,qwen2:7b-instruct,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,ML-1M 20-user diagnostic subset and candidate-ID contract; pilot scope and fifth-dataset context; not full four-dataset final history matrix
+ml1m,mistral:7b-instruct,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+ml1m,mistral:7b-instruct,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no protocol-identical historical raw output found
+ml1m,mistral:7b-instruct,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+ml1m,mistral:7b-instruct,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,ML-1M 20-user diagnostic subset and candidate-ID contract
+ml1m,mistral:7b-instruct,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,ML-1M 20-user diagnostic subset and candidate-ID contract
+ml1m,mistral:7b-instruct,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,ML-1M 20-user diagnostic subset and candidate-ID contract; pilot scope and fifth-dataset context; not full four-dataset final history matrix
+ml1m,gemma2:9b,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+ml1m,gemma2:9b,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+ml1m,gemma2:9b,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+ml1m,gemma2:9b,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+ml1m,gemma2:9b,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+ml1m,gemma2:9b,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+lastfm,qwen2:7b-instruct,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+lastfm,qwen2:7b-instruct,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no protocol-identical historical raw output found
+lastfm,qwen2:7b-instruct,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+lastfm,qwen2:7b-instruct,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+lastfm,qwen2:7b-instruct,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+lastfm,qwen2:7b-instruct,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"pilot scope and fifth-dataset context; not full four-dataset final history matrix; top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+lastfm,mistral:7b-instruct,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+lastfm,mistral:7b-instruct,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no protocol-identical historical raw output found
+lastfm,mistral:7b-instruct,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+lastfm,mistral:7b-instruct,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+lastfm,mistral:7b-instruct,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+lastfm,mistral:7b-instruct,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,"pilot scope and fifth-dataset context; not full four-dataset final history matrix; top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid"
+lastfm,gemma2:9b,0,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+lastfm,gemma2:9b,1,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+lastfm,gemma2:9b,2,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix
+lastfm,gemma2:9b,5,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+lastfm,gemma2:9b,10,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,no historical Gemma final-history output found
+lastfm,gemma2:9b,20,TO_COMPUTE,200,200,0,200,0,20,10,llm_rank_strict_index_top10_v1,5,BASE,pilot scope and fifth-dataset context; not full four-dataset final history matrix

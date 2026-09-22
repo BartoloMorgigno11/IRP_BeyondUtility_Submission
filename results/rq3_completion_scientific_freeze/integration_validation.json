@@ -1,0 +1,49 @@
+{
+  "all_frozen_CIs_recomputed_and_matched": true,
+  "bootstrap_resamples": 10000,
+  "command": "python -B src/analysis/validate_rq3_completion_freeze.py --config configs/rq3_completion_freeze.yaml",
+  "git_storage_policy": "Scoped -text attributes preserve frozen CSV/JSON bytes across checkout.",
+  "history_grids": {
+    "GE10": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      10
+    ],
+    "GE20": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      15,
+      20
+    ]
+  },
+  "inference_calls": 0,
+  "old_g2_unchanged": "PASS",
+  "paired_bootstrap_applied": true,
+  "source_result_files_rewritten": false,
+  "statistical_rows_verified": 450,
+  "status": "PASS",
+  "tests": {
+    "initial_setup_issue": "Missing results/logs parent for pytest basetemp; fixed before successful rerun.",
+    "passed": 47,
+    "skipped": 2
+  },
+  "totals": {
+    "accounted": 40794,
+    "backend_incomplete": 0,
+    "expected": 40794,
+    "invalid": 464,
+    "missing": 0,
+    "valid": 40330
+  },
+  "validator": "src/analysis/validate_rq3_completion_freeze.py",
+  "validator_sha256": "79201eedfad42ce65b55071199cc57da23cf2e5d4dd6ec09c7eacf2b3ce38fab"
+}

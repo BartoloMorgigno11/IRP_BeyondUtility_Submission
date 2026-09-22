@@ -1,0 +1,7 @@
+dataset,model_name,requests,valid,invalid,wrong_length,parse_failed,valid_rate,invalid_rate
+Beauty,mistral:7b-instruct,200,11,189,181,8,0.055,0.945
+Beauty,qwen2:7b-instruct,200,1,199,199,0,0.005,0.995
+LastFM,mistral:7b-instruct,200,26,174,174,0,0.13,0.87
+LastFM,qwen2:7b-instruct,200,0,200,200,0,0.0,1.0
+Sports,mistral:7b-instruct,200,13,187,179,8,0.065,0.935
+Sports,qwen2:7b-instruct,200,1,199,199,0,0.005,0.995

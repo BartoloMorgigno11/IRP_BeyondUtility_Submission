@@ -1,0 +1,2 @@
+dataset,model_name,run_id,source_file,archive_member,source_kind,status,message,source_file_exists,archive_member_exists,records_total,recommendations_normalized,output_path
+beauty,BPRMF,beauty_BPRMF_rec-BPRMF-history10-shuffleFalse-seed0,original_repo/EvaLLMasRecommender/sota_results/beauty_his10.zip,beauty_his10/rec-BPRMF-history10-shuffleFalse-seed0.csv,models.baseline_outputs,found,Normalized 447260 recommendation rows.,True,True,22363,447260,results\raw_outputs\beauty_baseline_outputs_normalized.csv

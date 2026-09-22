@@ -1,0 +1,7 @@
+field,interaction_item_universe,missing_recipe_row,null_values,empty_values,whitespace_only_values,usable_non_empty,coverage,notes
+name,231637,0,0,1,0,231636,0.9999956829004002,"recipe names are not filled from descriptions, tags, ingredients, or IDs"
+tags,231637,0,,0,,231637,1.0,coverage over recipes referenced by RAW_interactions
+ingredients,231637,0,,0,,231637,1.0,coverage over recipes referenced by RAW_interactions
+description,231637,0,,4983,,226654,0.9784878926941724,coverage over recipes referenced by RAW_interactions
+nutrition,231637,0,,0,,231637,1.0,coverage over recipes referenced by RAW_interactions
+steps,231637,0,,0,,231637,1.0,coverage over recipes referenced by RAW_interactions

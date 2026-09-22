@@ -1,0 +1,31 @@
+check,status,evidence
+head_is_f0_checkpoint,PASS,6b489f507c41911f5571e136a02986119d3233ac
+f0_manifest_validated,PASS,FINAL_EXTENSION_FREEZE_VALIDATED
+f0r_manifest_validated,PASS,F0_FINAL_SANITY_VALIDATED
+exactly_five_active_datasets,PASS,"beauty,sports,ml1m,lastfm,foodcom"
+no_active_video_games_rows,PASS,0
+all_metrics_in_registry,PASS,39
+resolution_audits_every_metric,PASS,39
+result_cell_readiness_complete,PASS,8938 of 8938
+raw_source_mapping_complete,PASS,8938
+offline_results_add_zero_llm,PASS,0
+ks_implemented_or_accounted,PASS,ks_sample_representativeness
+shannon_category_entropy_at_5_implementation_closed,PASS,shannon_category_entropy_at_5
+ks_sample_representativeness_implementation_closed,PASS,ks_sample_representativeness
+jain_index_at_5_implementation_closed,PASS,jain_index_at_5
+gini_at_5_implementation_closed,PASS,gini_at_5
+oic_at_5_implementation_closed,PASS,oic_at_5
+f0_request_budget_unchanged,PASS,"{""BLOCKED_REQUESTS"":0,""CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL"":100584,""CONDITIONAL_REQUESTS"":9000,""CORE_MANDATORY_NOW_REQUESTS"":29292,""EXISTING_REUSABLE_REQUESTS"":0,""FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL"":88584,""MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE"":5364,""MANDATORY_RAW_REQUESTS_TOTAL"":50292,""OPTIONAL_REQUESTS"":12000,""PREVIOUS_D0B_ESTIMATE"":44928,""REQUIRED_SENSITIVITY_REQUESTS"":21000,""TRAINING_DEPENDENT_REQUESTS"":29292}"
+original_four_accounted,PASS,4
+foodcom_accounted,PASS,1
+no_inference_training_download_network,PASS,F1A executes offline artifact readers only; counters are zero
+f1ar_original_four_ks_closed,PASS,8 original-four primary/history K-S diagnostics computed offline
+f1ar_popreo_dpd_global_blockers_closed_by_f1arr,PASS,PopREO and DPD global protocols recovered by F1ARR; remaining global metric blockers = 0
+f1arr_popreo_protocol_recovered,PASS,paper equations 16-17 plus original calPopREO recovered
+f1arr_dpd_protocol_recovered,PASS,paper DPD formula plus original calDPDFreq recovered
+f1arr_global_popreo_dpd_blockers_removed,PASS,f1a_remaining_blockers.csv is empty after protocol recovery
+f1arr_result_cell_readiness_updated,PASS,"{""COMPUTED_F1A"":286,""DEGENERATE_PROTOCOL_INPUT"":91,""IMPLEMENTATION_READY_AWAITING_RAW"":810,""NOT_APPLICABLE"":287,""READY_AFTER_TRAINING_RAW"":1815,""READY_FROM_NEW_RAW"":5649}"
+f1arr_readiness_statuses_controlled,PASS,"PopREO/DPD final statuses use READY_FROM_NEW_RAW, READY_AFTER_TRAINING_RAW, DEGENERATE_PROTOCOL_INPUT, or NOT_APPLICABLE; other F1A statuses unchanged"
+f1arr_blank_statuses_zero,PASS,blank=0
+f1arr_unknown_metric_rows_zero,PASS,0
+f1arr_no_inference_training_download_network,PASS,F1ARR reads local artifacts and adds zero LLM requests

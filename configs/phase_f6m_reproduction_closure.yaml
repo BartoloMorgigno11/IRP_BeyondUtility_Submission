@@ -1,0 +1,92 @@
+phase:
+  id: phase_f6m_reproduction_closure
+  name: reproduction_closure_and_freeze
+  expected_branch: plan-d-extensions
+  expected_start_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  decision_complete: f6m_reproduction_closure_complete_with_documented_limitations
+  decision_blocked: f6m_reproduction_closure_blocked
+  offline_only: true
+  no_api_calls: true
+  no_training: true
+  no_downloads: true
+  no_new_inference: true
+  no_full_lastfm_extension: true
+
+validation:
+  expected_ranking_freeze_hash: D624D4D57CC23C5647D60DF172DE6E71DC746B8098DE66C95EBCCBE609D145EC
+  expected_ranking_decision: f6l_lastfm_v4_ranking_metrics_consolidated_and_frozen_for_reranking
+  expected_reranking_decision: f6l_lastfm_v4_reranking_continuation_v4_1_complete
+  expected_reranking_aggregate_final_responses: 4000
+  expected_reranking_continuation_final_responses: 1600
+  expected_reranking_positive_present_rows: 314
+  expected_lastfm_operationalized_users: 1000
+
+validation_history:
+  - gate: precondition_collect
+    command: '.venv_audit_recovery\Scripts\python.exe -B -m pytest tests --collect-only -q -p no:cacheprovider'
+    result: '1949 tests collected before F6M files were added'
+    status: pass
+  - gate: precondition_f6l_focused
+    command: '.venv_audit_recovery\Scripts\python.exe -B -m pytest tests/test_phase_f6l_lastfm_v4_reranking_continuation_v4_1.py tests/test_phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution.py -q -p no:cacheprovider'
+    result: '13 passed'
+    status: pass
+  - gate: f6m_focused
+    command: '.venv_audit_recovery\Scripts\python.exe -B -m pytest tests/test_phase_f6m_reproduction_closure.py -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp'
+    result: '5 passed'
+    status: pass
+  - gate: f6l_affected
+    command: '.venv_audit_recovery\Scripts\python.exe -B -m pytest tests/test_phase_f6l_lastfm_v4_ranking_metrics_freeze.py tests/test_phase_f6l_lastfm_v4_reranking_continuation_v4_1.py tests/test_phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution.py -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp_f6l'
+    result: '17 passed'
+    status: pass
+  - gate: documentation_and_evidence
+    command: '.venv_audit_recovery\Scripts\python.exe -B -m pytest tests/test_phase_f6j_scientific_evidence_synthesis.py tests/test_phase_f6k_scientific_gap_readiness.py tests/test_plan_d_phase_6b_readme_reproducibility.py tests/test_plan_d_phase_6c_final_scientific_report.py -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp_docs'
+    result: '107 passed'
+    status: pass
+  - gate: postchange_collect
+    command: '.venv_audit_recovery\Scripts\python.exe -B -m pytest tests --collect-only -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp_collect'
+    result: '1954 tests collected'
+    status: pass
+  - gate: cleanup_current
+    command: '.venv_audit_recovery\Scripts\python.exe -B -m pytest tests -m "cleanup_current and not unsafe_external" -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp_cleanup'
+    result: 'timed out after 1200 seconds with historical protected-input guard failures; first isolated failure: tests/test_phase_f6i2g_first_python_consolidation_execution.py reports f6i2g_failed_protected_input_change after intentional F6M edits'
+    status: residual_historical_suite_failure
+  - gate: broad_noncleanup
+    command: '.venv_audit_recovery\Scripts\python.exe -B -m pytest tests -m "not cleanup_current and not unsafe_external" -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp_broad_noncleanup'
+    result: 'timed out after 1200 seconds; first isolated failure under -x is tests/test_exactness_frontier_and_evidence_closure.py::test_required_schemas_and_exact_row_counts due older direct script path ModuleNotFoundError: No module named src'
+    status: residual_historical_suite_failure
+
+inputs:
+  f6d2_trainable_lastfm_metrics: results/tables/finalization_f6d2_aggregate_utility_metrics.csv
+  f6j_reproduction_matrix: results/tables/phase_f6j_paper_reproduction_extension_matrix.csv
+  f6j_research_question_matrix: results/tables/phase_f6j_research_question_evidence_matrix.csv
+  f6j_claim_registry: results/tables/phase_f6j_scientific_claim_registry.csv
+  f6j_limitations: results/tables/phase_f6j_limitations_and_threats.csv
+  f6k_readiness: results/tables/phase_f6k_scientific_gap_readiness.csv
+  f6l_ranking_metrics: results/tables/phase_f6l_lastfm_v4_ranking_freeze_metrics.csv
+  f6l_ranking_summary: results/manifests/phase_f6l_lastfm_v4_ranking_metrics_freeze_summary.json
+  f6l_ranking_hashes: results/manifests/phase_f6l_lastfm_v4_ranking_metrics_freeze_hashes.json
+  f6l_reranking_fail_strict_metrics: results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_fail_strict_metrics.csv
+  f6l_reranking_complete_case_metrics: results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_complete_case_metrics.csv
+  f6l_reranking_validity: results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_validity.csv
+  f6l_reranking_comparison: results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_ranking_vs_reranking_comparison.csv
+  f6l_reranking_statistics: results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_statistical_tests.csv
+  f6l_reranking_failure_taxonomy: results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_failure_taxonomy.csv
+  f6l_reranking_final_validation: results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_final_validation.csv
+  f6l_reranking_summary: results/manifests/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_summary.json
+  f6l_reranking_hashes: results/manifests/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_hashes.json
+
+outputs:
+  report: report/phase_f6m_reproduction_closure.md
+  manifest: results/manifests/phase_f6m_reproduction_closure_manifest.json
+  tables:
+    artifact_index: results/tables/phase_f6m_artifact_index.csv
+    input_validation: results/tables/phase_f6m_input_validation.csv
+    master_reproducibility_matrix: results/tables/phase_f6m_master_reproducibility_matrix.csv
+    master_results_long: results/tables/phase_f6m_master_results_long.csv
+    master_results_wide: results/tables/phase_f6m_master_results_wide.csv
+    research_question_matrix: results/tables/phase_f6m_research_question_matrix.csv
+    paper_claim_evidence_matrix: results/tables/phase_f6m_paper_claim_evidence_matrix.csv
+    limitations_register: results/tables/phase_f6m_limitations_register.csv
+    lastfm_final_status: results/tables/phase_f6m_lastfm_final_status.csv
+    statistical_assessment: results/tables/phase_f6m_statistical_assessment.csv
+    reproduction_extension_boundary: results/tables/phase_f6m_reproduction_extension_boundary.csv

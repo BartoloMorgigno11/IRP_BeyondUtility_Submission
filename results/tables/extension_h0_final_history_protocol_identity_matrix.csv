@@ -1,0 +1,14 @@
+dimension,final_contract,historical_observation,status
+datasets,beauty;sports;ml1m;lastfm,R5C has same four datasets; E1 is video_games pilot,FINAL_ONLY_FOR_E0_MANIFEST
+models,qwen2:7b-instruct;mistral:7b-instruct;gemma2:9b,R5C has Qwen/Mistral only; Plan D has Qwen/Mistral; E0 has all three,FINAL_ONLY_FOR_E0_MANIFEST
+prompt,BASE only,R5C corrected prompt family differs; Plan D candidate-id prompt differs,FINAL_ONLY_FOR_E0_MANIFEST
+history_lengths,0;1;2;5;10;20,R5C partial grid; Plan D 5/10/20; official grids vary by dataset,FINAL_ONLY_FOR_E0_MANIFEST
+paired_users,200 per dataset,R5C 100/cell; Plan D 20; E1 pilot only,FINAL_ONLY_FOR_E0_MANIFEST
+candidate_pool,20,R5C/Plan D/E0 all use 20 where applicable,IDENTICAL_WHERE_PRESENT
+positive_count,1,E0/R5C group validation; E1 pilot validation,IDENTICAL_WHERE_PRESENT
+negative_count,19,E0 final contract,FINAL_ONLY_FOR_E0_MANIFEST
+requested_output,10 positions,R5C corrected requests exactly 5,FINAL_ONLY_FOR_E0_MANIFEST
+parser,llm_rank_strict_index_top10_v1,R5C parser is r5c_ranked_index_json_top5_v1,FINAL_ONLY_FOR_E0_MANIFEST
+metric_k,5,R5C/official use K=5 where applicable,IDENTICAL_WHERE_PRESENT
+l0_semantics,explicit empty history [],E0 code uses empty frame for length 0; no tail(0) leak,IDENTICAL_FINAL_CONTRACT
+raw_output_reuse,none,0 reusable historical rows,NO_REUSABLE_RAW_OUTPUTS

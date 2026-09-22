@@ -1,0 +1,75 @@
+{
+  "canonical_source_artifacts": [
+    "results/tables/g1_primary_ranking_beyond_utility.csv",
+    "results/manifests/g1_metric_contract_and_provenance.json"
+  ],
+  "canonical_source_sha256": {
+    "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+    "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+  },
+  "configuration_contract": {
+    "configuration_cells": 30,
+    "datasets": [
+      "beauty",
+      "sports",
+      "ml1m",
+      "lastfm",
+      "foodcom"
+    ],
+    "models": [
+      "qwen2:7b-instruct",
+      "mistral:7b-instruct",
+      "gemma2:9b"
+    ],
+    "prompt_strategies": [
+      "BASE",
+      "LLMRANK"
+    ]
+  },
+  "created_from_commit": "4f85c9abe18d9f916366146d8a5cdbd1f4800240",
+  "display_contract": {
+    "cross_panel_height_comparison": "NOT_VALID",
+    "independent_y_axis_per_metric": true,
+    "noncomputed_visual_label": "N/C",
+    "transform": "NONE_RAW_CANONICAL_VALUE"
+  },
+  "figure_id": "fig_rq2_llm_calibration_landscape",
+  "figure_values_csv": "results/final_figures/rq2/values/fig_rq2_llm_calibration_landscape_values.csv",
+  "figure_values_sha256": "5cdda7a90d51e009fc437235d077d9f30f2f1a712f3c588d66ba415f73e79d66",
+  "generator": "src/analysis/final_figures/rq2.py",
+  "generator_sha256": "38de0ac2d11441dc964ba7aeae7e9a9dd5ff4c48e7120511159bfeaa5b372e95",
+  "limitations": [
+    "Calibration is averaged over users with both history and recommendation feature distributions.",
+    "Eligible and undefined-user counts are preserved in the figure-values CSV.",
+    "All 30 canonical cells are computed, but eligibility is partial in cells with undefined users; Food.com has 260-273 eligible users per cell.",
+    "A noncomputed cell would be shown as N/C, never as zero."
+  ],
+  "metric_contract": {
+    "eligibility_fields": [
+      "eligible_user_count",
+      "undefined_user_count",
+      "eligibility_status"
+    ],
+    "imputation": false,
+    "metric": "calibration_at_5",
+    "noncomputed_policy": "PRESERVE_STATUS_AND_BLANK_VALUE"
+  },
+  "metric_ids": [
+    "calibration_at_5"
+  ],
+  "output_pdf": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_landscape.pdf",
+  "output_pdf_sha256": "494c57b23f472ab8ac5b6b2a65fd77a3b79b0c46764269d010ace39f458e22b4",
+  "output_png": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_landscape.png",
+  "output_png_sha256": "51a3e30a23c82bdae336224561ad124e0c1b8deaee6ee1dd1198335db66ca04b",
+  "output_svg": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_landscape.svg",
+  "output_svg_sha256": "e52fcae04db6832c972c666c6e22e55afa5b0927d3b6b53e2a0f7c7194fa2b2f",
+  "rq": "RQ2",
+  "schema_version": "1.0",
+  "scientific_interpretation": "Calibration@5 is shown only where the canonical artifact reports a computed eligible-user mean; no missing value is imputed.",
+  "scientific_purpose": "Summarize canonical Calibration@5 while preserving per-cell user eligibility and undefined-user accounting.",
+  "source_status_counts": {
+    "calibration_at_5": {
+      "COMPUTED": 30
+    }
+  }
+}

@@ -1,0 +1,6 @@
+scope_id,output_family,requires_correction,affected_datasets,affected_models,affected_rows,correction_action,status,reason
+F1BZA-CORRECTIVE-001,foodcom_zero_history,false,foodcom,BPRMF;GRU4Rec;SASRec;LightGCN,1000,NONE,VALID_AS_IS,F1BZ Food.com zero-history count is a true cohort property.
+F1BZA-CORRECTIVE-002,candidate20_ranking_results,false,"beauty,sports,ml1m,lastfm,foodcom",BPRMF;GRU4Rec;SASRec;LightGCN,100,NONE,VALID_AS_IS,F1BZ final metrics remain valid for the frozen candidate20 ranking task.
+F1BZA-CORRECTIVE-003,reranking_pool_construction,true,"beauty,sports,ml1m,lastfm,foodcom",BPRMF;GRU4Rec;SASRec;LightGCN,4882,REGENERATE_NON_TAUTOLOGICAL_FIRST_STAGE_SOURCES_BEFORE_LLM_RERANKING,INVALID,Current first-stage source uses the forced-positive candidate20 universe.
+F1BZA-CORRECTIVE-004,future_llm_reranking_requests,true,"beauty,sports,ml1m,lastfm,foodcom",future_llm_models,29292,LOCK_UNTIL_RERANKING_POOL_REGENERATION,INVALID,The request count is numerically unchanged but cannot be executed against invalid pools.
+F1BZA-CORRECTIVE-005,full_catalog_generation_from_checkpoints,true,"beauty,foodcom,lastfm,ml1m,sports",BPRMF;GRU4Rec;SASRec;LightGCN,20,4 dataset-model cells can regenerate from checkpoint; 16 require a corrected item-universe policy or retraining.,PARTIAL,Only cells with full raw catalog coverage in the model item map are immediately ready.

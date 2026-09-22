@@ -1,0 +1,13 @@
+scope,protocol,key,accounted,valid,invalid,out_of_range,wrong_length,parse_failure,backend_incomplete
+overall,R5C_ORIGINAL,all,2400,2385,15,15,0,0,0
+model_dataset,R5C_ORIGINAL,qwen2:7b-instruct|ML-1M,300,285,15,15,0,0,0
+dataset,R5C_ORIGINAL,ML-1M,600,585,15,15,0,0,0
+qwen2_ml1m_history_length,R5C_ORIGINAL,10,100,97,3,3,0,0,0
+qwen2_ml1m_history_length,R5C_ORIGINAL,20,100,97,3,3,0,0,0
+qwen2_ml1m_history_length,R5C_ORIGINAL,5,100,91,9,9,0,0,0
+overall,R5C_CORRECTED,all,2400,2400,0,0,0,0,0
+model_dataset,R5C_CORRECTED,qwen2:7b-instruct|ML-1M,300,300,0,0,0,0,0
+dataset,R5C_CORRECTED,ML-1M,600,600,0,0,0,0,0
+qwen2_ml1m_history_length,R5C_CORRECTED,10,100,100,0,0,0,0,0
+qwen2_ml1m_history_length,R5C_CORRECTED,20,100,100,0,0,0,0,0
+qwen2_ml1m_history_length,R5C_CORRECTED,5,100,100,0,0,0,0,0

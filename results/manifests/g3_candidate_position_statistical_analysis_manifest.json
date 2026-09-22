@@ -1,0 +1,154 @@
+{
+  "bootstrap_executed": true,
+  "bootstrap_settings": {
+    "alpha": 0.05,
+    "bootstrap_engine": "empirical_multinomial_equivalent_to_paired_user_resampling_for_mean_delta",
+    "bootstrap_percentile_method": "numpy_quantile_linear",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260901,
+    "confidence_interval": "two_sided_95_percent_percentile_ci",
+    "contrast": "FIRST_minus_RANDOM",
+    "primary_test": "paired_user_bootstrap_mean_delta"
+  },
+  "canddif_status": "RETAINED_DESCRIPTIVE_ONLY_NO_SIGNIFICANCE_TEST",
+  "created_at_utc": "2026-09-04T14:18:31Z",
+  "decision_token": "G3_STATISTICAL_ANALYSIS_FROZEN",
+  "files_created": [
+    "src/extension/g3_candidate_position_statistical_analysis.py",
+    "results/tables/g3_candidate_position_statistical_paired_contributions.csv",
+    "results/tables/g3_candidate_position_statistical_results.csv",
+    "results/tables/g3_candidate_position_statistical_validation.csv",
+    "results/manifests/g3_candidate_position_statistical_analysis_manifest.json",
+    "report/g3_candidate_position_statistical_analysis.md",
+    "report/notes.md"
+  ],
+  "frozen_evidence_modified": false,
+  "frozen_metrics_modified": false,
+  "frozen_universe_modified": false,
+  "head_before_generation": "e0c9b2afbbdfca2b9824e2001fd3f0703d440726",
+  "input_hashes": {
+    "report/g3_candidate_position_metrics_validation.md": "a89ea2cc6b9792477f11f33ba2179a3f85a9ab72733b8983327ce74430bda57f",
+    "results/manifests/g3_candidate_position_analysis_universe_freeze.json": "4e613b4587d5c5fd176fa29c6d32be3c3c27b05722fd35e352de37c579968d7d",
+    "results/manifests/g3_candidate_position_execution_freeze.json": "3736adb0ad2d3460d53b1f046c1bd4ada88a2cdab0ca10184fd0ead63499745d",
+    "results/manifests/g3_candidate_position_execution_retention_manifest.json": "9b1ebb2a58d9405de9d706dc57b035eb85a9187f1fdc00f3b03645e43d6239a5",
+    "results/manifests/g3_candidate_position_metrics_freeze.json": "3cc590443a8a63c53744293625c255ef5f385141d5344cd14499ee4feb156ea6",
+    "results/manifests/g3_candidate_position_protocol_freeze.json": "67b2ced9daf68bf67c412ca4bfab0168e9b124bec9fa110aafb8842c69e79e14",
+    "results/tables/g3_candidate_position_analysis_pairs.csv": "bb10bd93fe5ac716faff503405f5ed8febc74463b2e0dbfde69279812122c4d4",
+    "results/tables/g3_candidate_position_analysis_universe.csv": "5e7ace57f1c7f93b9aae7d5f921b6d2e7617b739dfa1a47232a2a4a43dfa6fa9",
+    "results/tables/g3_candidate_position_canddif.csv": "6349802ba933d5ab0218fd72268e4aa0c71563f3a8c1cc91d8a0273ee9e59f80",
+    "results/tables/g3_candidate_position_metric_results.csv": "ce005175b0e6222ca488080506cd8a8e13d1314e136e0421c782b88f14e4e25e",
+    "results/tables/g3_candidate_position_metric_validation.csv": "bf6a60367dfcc3277781c3acc735112b07b30284267f835c29c7415616c16542",
+    "results/tables/g3_candidate_position_statistical_plan.csv": "143c2535675678ca6a5a363a0a3cd41a0778d633ac5e47c4d1577be903fad809"
+  },
+  "multiplicity": {
+    "corrected_decision": "NOT_DEFINED_NO_FROZEN_P_VALUE_METHOD_FOR_G3",
+    "execution_status": "NOT_APPLIED_NO_FROZEN_P_VALUE_METHOD_FOR_G3",
+    "frozen_plan": "holm_bonferroni_within_metric_dataset_model_prompt_family",
+    "p_value_status": "NOT_COMPUTED_NO_FROZEN_PRIMARY_P_VALUE_METHOD_FOR_G3"
+  },
+  "new_tests_or_hypotheses_added": false,
+  "next_safe_step": "generate frozen G3 scientific readout/synthesis from frozen metrics and statistical artifacts",
+  "ollama_api_calls_executed": 0,
+  "output_hashes": {
+    "report/g3_candidate_position_statistical_analysis.md": "ed78c9ad7663133465f464c835f4df9e45fcca08fc80c302ea76f9e49eb1d8fe",
+    "results/tables/g3_candidate_position_statistical_paired_contributions.csv": "5b5080c76cd90caca1db4fde7b574e65e677702fbd6ed7bc07ef391ec42a8a8a",
+    "results/tables/g3_candidate_position_statistical_results.csv": "2b2e1fa3d661fa1c4c2e81d56350548eeb33d1fb9594ef5b924b548af7a555a3",
+    "results/tables/g3_candidate_position_statistical_validation.csv": "9108202377fd9b2f40c26b7279f40606e7982614b502e8ed2bc6cedb941cccd8"
+  },
+  "phase_id": "g3_candidate_position_statistical_analysis",
+  "precondition_head": "e0c9b2afbbdfca2b9824e2001fd3f0703d440726",
+  "precondition_status": "G3_METRICS_FROZEN",
+  "protocol_changes": false,
+  "schema_version": "1.0",
+  "source_hashes": {
+    "src/extension/g3_candidate_position_statistical_analysis.py": "516b867352efd85c015af62ff75952fec253eeaa1e6adcbf1452ea3ec16af619"
+  },
+  "summary": {
+    "breakdown_by_dataset": [
+      {
+        "CI_SUPPORTED_NEGATIVE": 0,
+        "CI_SUPPORTED_POSITIVE": 18,
+        "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 0,
+        "dataset": "beauty"
+      },
+      {
+        "CI_SUPPORTED_NEGATIVE": 0,
+        "CI_SUPPORTED_POSITIVE": 18,
+        "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 0,
+        "dataset": "foodcom"
+      },
+      {
+        "CI_SUPPORTED_NEGATIVE": 0,
+        "CI_SUPPORTED_POSITIVE": 16,
+        "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 2,
+        "dataset": "lastfm"
+      },
+      {
+        "CI_SUPPORTED_NEGATIVE": 1,
+        "CI_SUPPORTED_POSITIVE": 15,
+        "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 2,
+        "dataset": "ml1m"
+      },
+      {
+        "CI_SUPPORTED_NEGATIVE": 0,
+        "CI_SUPPORTED_POSITIVE": 18,
+        "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 0,
+        "dataset": "sports"
+      }
+    ],
+    "breakdown_by_model": [
+      {
+        "CI_SUPPORTED_NEGATIVE": 0,
+        "CI_SUPPORTED_POSITIVE": 30,
+        "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 0,
+        "model": "gemma2:9b"
+      },
+      {
+        "CI_SUPPORTED_NEGATIVE": 1,
+        "CI_SUPPORTED_POSITIVE": 25,
+        "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 4,
+        "model": "mistral:7b-instruct"
+      },
+      {
+        "CI_SUPPORTED_NEGATIVE": 0,
+        "CI_SUPPORTED_POSITIVE": 30,
+        "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 0,
+        "model": "qwen2:7b-instruct"
+      }
+    ],
+    "breakdown_by_prompt": [
+      {
+        "CI_SUPPORTED_NEGATIVE": 0,
+        "CI_SUPPORTED_POSITIVE": 45,
+        "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 0,
+        "prompt_strategy": "BASE"
+      },
+      {
+        "CI_SUPPORTED_NEGATIVE": 1,
+        "CI_SUPPORTED_POSITIVE": 40,
+        "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 4,
+        "prompt_strategy": "LLMRANK"
+      }
+    ],
+    "comparison_coverage": "90/90",
+    "corrected_decision_counts": {
+      "NOT_DEFINED_NO_FROZEN_P_VALUE_METHOD_FOR_G3": 90
+    },
+    "multiplicity_status": "NOT_APPLIED_NO_FROZEN_P_VALUE_METHOD_FOR_G3",
+    "paired_contribution_rows": 18000,
+    "paired_user_counts": [
+      200
+    ],
+    "primary_ci_decision_counts": {
+      "CI_SUPPORTED_NEGATIVE": 1,
+      "CI_SUPPORTED_POSITIVE": 85,
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 4
+    },
+    "statistical_result_rows": 90,
+    "unique_pair_count": 6000,
+    "validation_failures": [],
+    "validation_pass_count": 34,
+    "validation_total_count": 34
+  },
+  "zero_inference": true
+}

@@ -1,0 +1,25 @@
+{
+  "continuation_raw_hash": "D58A21BC2CF736B23BDB583C6D1DFBD5C0DA194E72A203A44518DE132A805EB2",
+  "original_raw_hash_after": "AB6449BD7BE8B8288A6FB0DB5FB3F3439F616662AE93FF572065120D2B6BE030",
+  "original_raw_hash_before": "AB6449BD7BE8B8288A6FB0DB5FB3F3439F616662AE93FF572065120D2B6BE030",
+  "original_raw_preserved": true,
+  "output_artifacts": {
+    "report/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_report.md": "BF88656B401520F5E98899C23FC127FB058390AE86BEE8642FA6358C88520CF3",
+    "results/manifests/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_summary.json": "7A26B538E19BE929DC52E3512BDCB88A1FD6BA0D25E6CFB4202EBEF65DAEACAF",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_aggregate_parse_results.csv": "D4501EB53D81B2416E014DB36D6E619EB6614461D56E25A8791742E6CF0ACB7D",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_attempt_log.csv": "511749AE9846C7A7BB199EC16BA121A4A7CA986F3359DA71F12E0824479762AA",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_beyond_utility_metrics.csv": "293E4DAC2260B4E4051C4CB42A16BC345B173FBCF8FCA006D89478878AF1894D",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_complete_case_metrics.csv": "E7D1CE434271BCA215E9E59C30B7916D404D23C0913B84845E3FAC2AAAC6E22B",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_duplicate_windows.csv": "0AE0576CDDC806EB4528FA296075E39EBA4931A19CC67FCE62DA135DE101417D",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_fail_strict_metrics.csv": "3BE4E0579382CE4C76DD63AD595A15AA8B0DF24150C0443EED9112A96FE79095",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_failure_taxonomy.csv": "416C993D410D6501570FAE07B40789279C1500C9F386CB448959584EDC3F7992",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_final_validation.csv": "F10B77E3E6FA61FC36B4D1F2A5363A59C25E79F18D7548F37E86A111FCC31D34",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_parse_results.csv": "6C615F09886BFA33B7B9F3F481F23F90DE773F9E883357F2A9172DB4C67F2365",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_preflight.csv": "45A5FEC72CC07FF062FCB714B6066CF82F01889EEE0ED57A269285EF8E36ABF8",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_ranking_vs_reranking_comparison.csv": "B75C07611C1A34062F851B0B5B63261747F7746E8CF42C9E3DF67C16911C29B5",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_runtime.csv": "7C2E6275E205FF9601004241F8120C7D0913CF56AA28D6D63CC86BAA7071F17E",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_state.csv": "4D7BE0D4F17BBEF7195E0D859047CFE2EBC37ACB4F08541A47BEDEA84777B765",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_statistical_tests.csv": "1028A076351161BF06622B68A1C7EDB28E3A5C4BA720479AAE1159A7FC914FFB",
+    "results/tables/phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution_validity.csv": "CB185E6C00FE8E4B22EC9103AAC8475C37023421E875F7E8AEB54AB6BEFFEFF2"
+  }
+}

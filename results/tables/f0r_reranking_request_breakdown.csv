@@ -1,0 +1,6 @@
+dataset,first_stage_dependency,target_cohort_N,model_count,prompt_count,model_prompt_applicability,requests,training_prerequisite,candidate_recall_prerequisite,included_in_mandatory_total,included_only_in_training_dependent,mandatory_total_reference,training_dependent_total_reference,status
+beauty,traditional_first_stage_rankings;candidate_recall_audit,990,3,2,3 models x 2 prompts,5940,true,true,false,true,50292,29292,PASS
+sports,traditional_first_stage_rankings;candidate_recall_audit,892,3,2,3 models x 2 prompts,5352,true,true,false,true,50292,29292,PASS
+ml1m,traditional_first_stage_rankings;candidate_recall_audit,1000,3,2,3 models x 2 prompts,6000,true,true,false,true,50292,29292,PASS
+lastfm,traditional_first_stage_rankings;candidate_recall_audit,1000,3,2,3 models x 2 prompts,6000,true,true,false,true,50292,29292,PASS
+foodcom,traditional_first_stage_rankings;candidate_recall_audit,1000,3,2,3 models x 2 prompts,6000,true,true,false,true,50292,29292,PASS

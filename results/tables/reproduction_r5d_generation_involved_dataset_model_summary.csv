@@ -1,0 +1,9 @@
+dataset,model_name,n_manifest_requests,n_terminal,n_valid_outputs,n_invalid_outputs,n_wrong_length,n_out_of_range,n_parse_failure,n_backend_incomplete,n_backend_failed,n_not_executed
+Beauty,mistral:7b-instruct,100,1,1,0,0,0,0,0,0,99
+Beauty,qwen2:7b-instruct,100,1,1,0,0,0,0,0,0,99
+LastFM,mistral:7b-instruct,200,2,2,0,0,0,0,0,0,198
+LastFM,qwen2:7b-instruct,200,2,2,0,0,0,0,0,0,198
+ML-1M,mistral:7b-instruct,200,2,2,0,0,0,0,0,0,198
+ML-1M,qwen2:7b-instruct,200,2,2,0,0,0,0,0,0,198
+Sports,mistral:7b-instruct,100,1,1,0,0,0,0,0,0,99
+Sports,qwen2:7b-instruct,100,1,1,0,0,0,0,0,0,99

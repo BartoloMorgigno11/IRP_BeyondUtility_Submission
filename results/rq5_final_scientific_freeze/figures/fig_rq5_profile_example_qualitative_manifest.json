@@ -1,0 +1,20 @@
+{
+  "config": "configs/rq5_final_freeze.yaml",
+  "evidence_family": "illustrative",
+  "figure_id": "fig_rq5_profile_example_qualitative",
+  "figure_sha256": {
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_example_qualitative.pdf": "fc5fef5b5688f3dd6994b09831f1685a02866fa3e943fe94ae29f2a7f8c79bab",
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_example_qualitative.png": "452c60a379d3371c02023a653503dc34558b6bb344ce74416a440a9f87765604",
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_example_qualitative.svg": "765627f93b37c3bda0fa1084fbb681f845b1018252c8988b947347a3b5d34b7e"
+  },
+  "generation_script": "src/analysis/rq5_final_freeze.py",
+  "limitations": "Qualitative illustration only; text shortened for display; no profile-quality validation",
+  "rq_identifier": "RQ5",
+  "scientific_interpretation": "A real generated profile and interpretive cues",
+  "source_artifacts": {
+    "results/rq5_final_scientific_freeze/evidence_f6l.zip": "c4561cfbfc450e35ee205743dba1cd0ef0a1c6e913419e7f269bdb75813bb241",
+    "results/rq5_final_scientific_freeze/evidence_figure_inputs.zip": "1d9a27bba9f1925aa77f1925812659dc5d38184da815b1ad9981363743ca5d5a"
+  },
+  "source_csv": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_example_qualitative_values.csv",
+  "source_csv_sha256": "f868bd7bffcd2570bf238fc537a1529bcacc8e509e501b7fed1e293e46e9cde1"
+}

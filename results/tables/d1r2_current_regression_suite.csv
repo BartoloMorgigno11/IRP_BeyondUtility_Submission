@@ -1,0 +1,10 @@
+suite_member,member_type,current_suite_status,reason,historical_exclusion_reason
+tests/test_extension_d0a_foodcom_material_feasibility.py,pytest_file,included,active current extension/Food.com/H0/E0/E2A or exactness gate,
+tests/test_extension_d0b_final_fifth_dataset_selection.py,pytest_file,included,active current extension/Food.com/H0/E0/E2A or exactness gate,
+tests/test_extension_d1_final_dataset_cleanup.py,pytest_file,included,active current extension/Food.com/H0/E0/E2A or exactness gate,
+tests/test_extension_h0_history_final_parity_audit.py,pytest_file,included,active current extension/Food.com/H0/E0/E2A or exactness gate,
+tests/test_extension_e0_protocol.py,pytest_file,included,active current extension/Food.com/H0/E0/E2A or exactness gate,
+tests/test_extension_e2a_cell_universe.py,pytest_file,included,active current extension/Food.com/H0/E0/E2A or exactness gate,
+tests/test_exactness_frontier_and_evidence_closure.py,pytest_file,excluded_historical_phase_snapshot,D1R3 correction: explicit cleanup_historical/phase_snapshot marker,fixed historical snapshot artifact expectations; persistent builder output
+src/analysis/build_workspace_forensic_state_audit.py --help,direct_script_probe,included,verifies direct-script import bootstrap without writing forensic artifacts,
+tests/test_workspace_forensic_state_audit.py,pytest_file,excluded_historical_phase_snapshot,D1R3 correction: explicit cleanup_historical/phase_snapshot marker,fixed historical snapshot artifact expectations; persistent builder output

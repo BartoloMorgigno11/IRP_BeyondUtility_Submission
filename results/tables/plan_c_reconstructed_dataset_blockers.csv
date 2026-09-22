@@ -1,0 +1,2 @@
+dataset,blocker_type,missing_inputs,affected_artifacts,requires_author_contact,notes
+lastfm,blocked_chronological_split,listening timestamps in user_artists.dat,ground_truth.csv;candidates.csv;sequential_data.txt;negative_samples.txt,False,LastFM is kept extension_only; no non-chronological ground truth was fabricated.

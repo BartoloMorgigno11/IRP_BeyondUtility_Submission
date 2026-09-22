@@ -1,0 +1,15 @@
+phase_id: phase_f6i2kr
+phase_name: phase_f6i2kr_manifest_consolidation_current_suite_closure
+expected_branch: plan-d-extensions
+expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+runtime:
+  interpreter: .venv_audit_recovery/Scripts/python.exe
+  python_no_user_site: "1"
+  classification: defensible_repaired_clone_exact_package_versions
+  not_exact_original_runtime: true
+authoritative_inputs:
+  f6i2j_decision_token: f6i2j_git_state_capture_consolidation_complete
+  f6i2k_decision_token: f6i2k_manifest_generation_consolidation_complete
+closure_scope:
+  no_helper_consolidation: true
+  next_helper_group_after_success: validation_table_creation

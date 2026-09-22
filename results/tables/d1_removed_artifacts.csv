@@ -1,0 +1,88 @@
+path,classification,artifact_type,source,reason,exists_before,is_dir,file_count,byte_count,sha256_before,removed,exists_after
+Espansione_progetto/video_games_tutti_esperimenti,REMOVE_DATASET_SPECIFIC,legacy_local_prototype,D1_DISCOVERED,D1-discovered discarded dataset prototype bundle,False,False,5,22409,,True,False
+ISTRUZIONI_AMICO.md,REMOVE_DATASET_SPECIFIC,instruction,D1_DISCOVERED,D1-discovered obsolete discarded-dataset run instructions,False,False,1,5114,,True,False
+configs/extension_e1_pilot.yaml,REMOVE_DATASET_SPECIFIC,config,D1_DISCOVERED,old E1 pilot config was discarded-dataset-specific,False,False,1,4158,,True,False
+configs/video_games.yaml,REMOVE_DATASET_SPECIFIC,config,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,2655,,True,False
+data/processed/video_games,REMOVE_DATASET_SPECIFIC,processed_dataset,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,4,8201576,,True,False
+data/raw/video_games_2014,REMOVE_DATASET_SPECIFIC,raw_canonical_or_enrichment_data,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+report/dataset_audit.md,REMOVE_DATASET_SPECIFIC,report,D1_DISCOVERED,old discarded-dataset prototype report,False,False,1,2272,,True,False
+report/extension_dataset_pivot_video_games.md,REMOVE_DATASET_SPECIFIC,report,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+report/extension_e0_protocol_freeze.md,REMOVE_DATASET_SPECIFIC,report,D1_DISCOVERED,old E0 report describes discarded candidate materialization,False,False,1,2630,,True,False
+report/extension_e1_pilot.md,REMOVE_DATASET_SPECIFIC,report,D1_DISCOVERED,old E1 pilot report was discarded-dataset-specific,False,False,1,3582,,True,False
+report/extension_e2b0_video_games_2014_feasibility.md,REMOVE_DATASET_SPECIFIC,report,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+report/extension_e2b0h_video_games_history_title_blocker_audit.md,REMOVE_DATASET_SPECIFIC,report,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+report/extension_e2b0j_joint_title_recovery_frontier.md,REMOVE_DATASET_SPECIFIC,report,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+report/results_analysis.md,REMOVE_DATASET_SPECIFIC,report,D1_DISCOVERED,old discarded-dataset prototype report,False,False,1,5810,,True,False
+results/extension/e1_pilot,REMOVE_DATASET_SPECIFIC,raw_output,D1_DISCOVERED,old E1 pilot raw responses were discarded-dataset-specific,False,False,133,1701814,,True,False
+results/extension/extension_e0_video_games_mostpop_candidate_dry_run.csv,REMOVE_DATASET_SPECIFIC,other,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,222858,,True,False
+results/extension/extension_e0_video_games_random_candidate_dry_run.csv,REMOVE_DATASET_SPECIFIC,other,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,252723,,True,False
+results/manifests/extension_e0_prompt_samples.csv,REMOVE_DATASET_SPECIFIC,manifest,D1_DISCOVERED,embedded discarded E0 prompts,False,False,1,4381,,True,False
+results/manifests/extension_e0_reproducibility.json,REMOVE_DATASET_SPECIFIC,manifest,D1_DISCOVERED,embedded discarded E0 candidate hash,False,False,1,509,,True,False
+results/manifests/extension_e0_video_games_primary_candidates.csv,REMOVE_DATASET_SPECIFIC,manifest,D1_DISCOVERED,D1-discovered discarded E0 materialization,False,False,1,1889388,,True,False
+results/manifests/extension_e1_pilot_manifest.csv,REMOVE_DATASET_SPECIFIC,manifest,D1_DISCOVERED,old E1 pilot request manifest was discarded-dataset-specific,False,False,1,943519,,True,False
+results/manifests/extension_e1_reproducibility.json,REMOVE_DATASET_SPECIFIC,manifest,D1_DISCOVERED,old E1 pilot reproducibility manifest was discarded-dataset-specific,False,False,1,847,,True,False
+results/manifests/extension_e1_response_manifest.csv,REMOVE_DATASET_SPECIFIC,manifest,D1_DISCOVERED,old E1 pilot response manifest was discarded-dataset-specific,False,False,1,21966,,True,False
+results/manifests/extension_e1_runtime_provenance.json,REMOVE_DATASET_SPECIFIC,manifest,D1_DISCOVERED,old E1 pilot runtime provenance was discarded-dataset-specific,False,False,1,2621,,True,False
+results/manifests/extension_e1_selected_users.csv,REMOVE_DATASET_SPECIFIC,manifest,D1_DISCOVERED,old E1 pilot selected users were discarded-dataset-specific,False,False,1,777,,True,False
+results/manifests/extension_e2b0_no_inference_preflight_manifest.json,REMOVE_DATASET_SPECIFIC,manifest,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/manifests/extension_e2b0h_no_inference_manifest.json,REMOVE_DATASET_SPECIFIC,manifest,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/manifests/extension_e2b0j_no_inference_manifest.json,REMOVE_DATASET_SPECIFIC,manifest,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/metrics/video_games_coverage_metrics.csv,REMOVE_DATASET_SPECIFIC,metrics,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,347,,True,False
+results/metrics/video_games_final_results.csv,REMOVE_DATASET_SPECIFIC,metrics,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,2243,,True,False
+results/metrics/video_games_position_bias_metrics.csv,REMOVE_DATASET_SPECIFIC,metrics,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,1386,,True,False
+results/metrics/video_games_reproduction_metrics.csv,REMOVE_DATASET_SPECIFIC,metrics,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,467,,True,False
+results/raw_outputs/video_games_history_length_prompts.csv,REMOVE_DATASET_SPECIFIC,raw_output,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,112668,,True,False
+results/raw_outputs/video_games_mostpop_recommendations.csv,REMOVE_DATASET_SPECIFIC,raw_output,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,221851,,True,False
+results/tables/extension_e0_video_games_dry_run_summary.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,279,,True,False
+results/tables/extension_e1_canary_results.csv,REMOVE_DATASET_SPECIFIC,table,D1_DISCOVERED,old E1 pilot result table was discarded-dataset-specific,False,False,1,2794,,True,False
+results/tables/extension_e1_early_health_results.csv,REMOVE_DATASET_SPECIFIC,table,D1_DISCOVERED,old E1 pilot result table was discarded-dataset-specific,False,False,1,4990,,True,False
+results/tables/extension_e1_full_run_projection.csv,REMOVE_DATASET_SPECIFIC,table,D1_DISCOVERED,old E1 pilot runtime projection was discarded-dataset-specific,False,False,1,3336,,True,False
+results/tables/extension_e1_history_validation.csv,REMOVE_DATASET_SPECIFIC,table,D1_DISCOVERED,old E1 pilot validation table was discarded-dataset-specific,False,False,1,495,,True,False
+results/tables/extension_e1_model_readiness.csv,REMOVE_DATASET_SPECIFIC,table,D1_DISCOVERED,old E1 pilot readiness table was discarded-dataset-specific,False,False,1,293,,True,False
+results/tables/extension_e1_pilot_utility_by_cell.csv,REMOVE_DATASET_SPECIFIC,table,D1_DISCOVERED,old E1 pilot utility table was discarded-dataset-specific,False,False,1,2359,,True,False
+results/tables/extension_e1_preflight.csv,REMOVE_DATASET_SPECIFIC,table,D1_DISCOVERED,old E1 pilot preflight table was discarded-dataset-specific,False,False,1,889,,True,False
+results/tables/extension_e1_reliability_by_cell.csv,REMOVE_DATASET_SPECIFIC,table,D1_DISCOVERED,old E1 pilot reliability table was discarded-dataset-specific,False,False,1,1633,,True,False
+results/tables/extension_e1_reliability_by_model.csv,REMOVE_DATASET_SPECIFIC,table,D1_DISCOVERED,old E1 pilot reliability table was discarded-dataset-specific,False,False,1,361,,True,False
+results/tables/extension_e1_runtime_by_model.csv,REMOVE_DATASET_SPECIFIC,table,D1_DISCOVERED,old E1 pilot runtime table was discarded-dataset-specific,False,False,1,634,,True,False
+results/tables/extension_e2b0_protocol_identity.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_candidate_feasibility.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_candidate_strict_title_summary.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_cohort_bias_audit.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_history_200_feasibility.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_history_200_users.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_history_eligibility.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_missing_title_frequency.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_primary_1000_candidates.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_primary_1000_feasibility.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_primary_1000_users.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_title_conflict_summary.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_title_conflicts.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_title_map.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_title_provenance_summary.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0_video_games_2014_unresolved_title_items.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0h_video_games_blocker_concentration.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0h_video_games_blocking_asins.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0h_video_games_greedy_recovery_frontier.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0h_video_games_history_title_blocker_summary.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0h_video_games_l20_user_blockers.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0h_video_games_missing_count_distribution.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0h_video_games_title_recovery_priority.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0j_joint_blocker_distribution.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0j_joint_blocking_asins.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0j_joint_greedy_recovery_frontier.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0j_joint_recovery_concentration.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0j_joint_recovery_summary.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0j_joint_user_title_blockers.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0j_structural_exclusions.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+results/tables/extension_e2b0j_title_recovery_priority.csv,REMOVE_DATASET_SPECIFIC,table,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+src/data/prepare_video_games.py,REMOVE_DATASET_SPECIFIC,source_module,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,17522,,True,False
+src/experiments/run_video_games_gemma2.py,REMOVE_DATASET_SPECIFIC,source_module,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,1,20321,,True,False
+src/extension/e0_dry_run.py,REMOVE_DATASET_SPECIFIC,source_module,D1_DISCOVERED,old E0 materialization was discarded-dataset-specific,False,False,1,13217,,True,False
+src/extension/e1_pilot.py,REMOVE_DATASET_SPECIFIC,source_module,D1_DISCOVERED,old E1 pilot was discarded-dataset-specific,False,False,1,49286,,True,False
+src/extension/e2b0_video_games_2014_feasibility.py,REMOVE_DATASET_SPECIFIC,source_module,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+src/extension/e2b0h_video_games_history_title_blockers.py,REMOVE_DATASET_SPECIFIC,source_module,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+src/extension/e2b0j_joint_title_recovery_frontier.py,REMOVE_DATASET_SPECIFIC,source_module,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+tests/test_extension_e1_pilot.py,REMOVE_DATASET_SPECIFIC,test,D1_DISCOVERED,old E1 pilot test was discarded-dataset-specific,False,False,1,11209,,True,False
+tests/test_extension_e2b0_video_games_2014_feasibility.py,REMOVE_DATASET_SPECIFIC,test,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+tests/test_extension_e2b0h_video_games_history_title_blockers.py,REMOVE_DATASET_SPECIFIC,test,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False
+tests/test_extension_e2b0j_joint_title_recovery_frontier.py,REMOVE_DATASET_SPECIFIC,test,D0B_PURGE_INVENTORY,losing fifth-dataset operational artifact,False,False,0,0,,True,False

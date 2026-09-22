@@ -1,0 +1,67 @@
+{
+  "corrected": {
+    "authority": "FOREGROUND",
+    "bootstrap_contrasts": 32,
+    "decisions": {
+      "CI_SUPPORTED_NEGATIVE": 1,
+      "CI_SUPPORTED_POSITIVE": 2,
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 29
+    },
+    "matched_pairs": 3200,
+    "profiles": 800,
+    "ranking_reused": 200,
+    "rankings": 4000,
+    "raw_inference_unchanged": true,
+    "status": "PASS",
+    "strict_valid": 3996
+  },
+  "evidence_members_verified": 39534,
+  "history_v2": {
+    "aplt": "PASS",
+    "authority": "EXPERIMENTALLY_DISTINCT",
+    "bootstrap_contrasts": 64,
+    "decisions": {
+      "CI_SUPPORTED_NEGATIVE": 1,
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 63
+    },
+    "matched_pairs": 3200,
+    "mostpop_deterministic": "PASS",
+    "mostpop_hit_count": 51,
+    "profiles": 1600,
+    "ranking_reused": 600,
+    "rankings": 4800,
+    "raw_inference_unchanged": true,
+    "serendipity": "PASS",
+    "status": "PASS",
+    "strict_valid": 4794,
+    "utility": "PASS"
+  },
+  "r5d": {
+    "invalid": 5,
+    "manifest_member": "research/results/manifests/reproduction_r5d_generation_involved_v2_freeze.json",
+    "original_freeze_commit": "ba1dbe8367216f7ea1044b2ff8db69318f8678ee",
+    "original_manifest_sha256": "b1ee31f68f58276676e9d82be1024f1d6480ea0483253dba77b957bfcdfb1fd9",
+    "profiles": 400,
+    "rankings": 800,
+    "requests": 1200,
+    "status": "PASS",
+    "valid": 1195
+  },
+  "raw_inference_unchanged": true,
+  "systematic": {
+    "authority": "SUPPORTING",
+    "bootstrap_contrasts": 60,
+    "decisions": {
+      "CI_SUPPORTED_NEGATIVE": 1,
+      "CI_SUPPORTED_POSITIVE": 3,
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 56
+    },
+    "matched_pairs": 6000,
+    "profiles": 1000,
+    "ranking_reused": 2400,
+    "rankings": 9000,
+    "raw_inference_unchanged": true,
+    "status": "PASS",
+    "strict_valid": 8997
+  }
+}

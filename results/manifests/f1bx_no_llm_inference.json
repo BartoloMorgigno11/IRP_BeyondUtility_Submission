@@ -1,0 +1,33 @@
+{
+  "artifact_hashes": {
+    ".gitignore": "1b6ba6e8b5fb1f96ab5c75ad9c7731e7314ee7f4d4cd35c4147a2f45f7695f8a",
+    "configs/f1bx_execution_stage1.yaml": "23612fc5f829e6493a609e9e772caa44f1cbdf0ee88df51f8f14a1dce5709704",
+    "report/f1bx_baselines_and_foodcom_tuning.md": "da4c621e1daa76b5c160f02daac9349aa228ddd172df7f3e166dbc188b77b6a8",
+    "results/manifests/f1bx_execution_manifest.json": "aefe984cc7c688e1b6e6f8405d4f7f945ddabbbaf6db9a9183a702b8e7d82e46",
+    "results/manifests/f1bx_foodcom_selection_freeze.json": "abe8ec5f9b2f056d8d31dbba91fb87654de8e1666542931cce5b517ee32d90ab",
+    "results/raw_outputs/f1bx_baseline_recommendations.csv": "6f7f6c53751038bfa7320898f0aa4f06a049a4bff888fdba369073ebf57cefb6",
+    "results/tables/f1bx_baseline_beyond_utility_results.csv": "28b4719d3cb4c7c2a2e79aaae74aade1925f764104bc071c1eefc53c6f52da15",
+    "results/tables/f1bx_baseline_execution.csv": "b1e82279107ad943fb4874e5f84317f9191e1d4b98d134273e68c6f3eb03edf9",
+    "results/tables/f1bx_baseline_utility_results.csv": "2570b536621a05b5ccec860839e6bd6e7dc945ff9010c9dbf6c400b96e55ccbf",
+    "results/tables/f1bx_foodcom_selected_configs.csv": "550bfde84aad29063620404f832e7c6b70cd86460cdaf05d660e92fbadb4bff4",
+    "results/tables/f1bx_foodcom_tuning_runs.csv": "ee90e719c545136c052400fff530eff6db333d6e445a44c124ef0c2f1be64001",
+    "results/tables/f1bx_foodcom_validation_results.csv": "238d4e9d2c669ae65978cb1051718d74b41d064bb14a691a82ee93ca161ab594",
+    "results/tables/f1bx_runtime_provenance.csv": "3d66c78feb99a82c6b48eef8a07ce739ba2410dfb4ccdda87c89b4ea1d45d523",
+    "results/tables/f1bx_validation.csv": "eeb91cc535cce38fd8752b76433c40ca942f2ea320a5595f48007a937849dcb5",
+    "src/extension/f1bx_execution_stage1.py": "523873b2902b2285f7274c93546d1f8e555e103b1e60c163fecc243b8f846d83",
+    "tests/test_extension_f1bx_execution_stage1.py": "c350d15790f3077c7be3f04094a0f7a326bb0257e099fda1e9c5b3a47d953111"
+  },
+  "decision_token": "F1BX_TUNING_AND_BASELINES_BLOCKED",
+  "deterministic_baseline_runs_executed": 15,
+  "downloads_executed": 0,
+  "external_api_calls_executed": 0,
+  "foodcom_tuning_training_runs_executed": 0,
+  "head": "61fbde6d048faaed9e20508484efc90fa95fa5bf",
+  "llm_inference_calls_executed": 0,
+  "network_calls_executed": 0,
+  "ollama_recommendation_calls_executed": 0,
+  "phase_id": "f1bx_traditional_execution_stage1",
+  "raw_llm_outputs_created": 0,
+  "traditional_final_training_outputs_created": 0,
+  "validation_passed": true
+}

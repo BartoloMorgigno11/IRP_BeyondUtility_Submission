@@ -1,0 +1,5 @@
+family,raw_planned_requests,duplicate_requests,reusable_existing_outputs,unique_new_requests,new_profile_generation_requests,downstream_recommendation_requests,total_generation_requests,count_status,notes
+CandDif,2400,1200,0,1200,0,0,0,EXACT_DEDUPLICATED_REQUEST_MANIFEST,R5A exact count after material request-key deduplication.
+History,2400,0,0,2400,0,0,0,EXACT_DEDUPLICATED_REQUEST_MANIFEST,R5A exact count after material request-key deduplication.
+Generation,1200,0,0,1200,400,800,1200,EXACT_DEDUPLICATED_REQUEST_MANIFEST,R5A exact count; R4 4400 remains a family-level planning estimate.
+TOTAL,6000,1200,0,4800,400,800,1200,R5A_EXACT_COUNT_SUPERSEDES_R4_PLANNING_ESTIMATE,R4_RECOVERY_COUNT_STATUS was ESTIMATED_NOT_YET_DEDUPLICATED; R5A exact unique new request count is manifest-derived.

@@ -1,0 +1,13 @@
+archive_path,member_path,member_filename,member_size_bytes,is_dir,dataset_guess,artifact_match_type
+data/external/plan_c/hetrec2011-lastfm-2k.zip,user_friends.dat,user_friends.dat,251565,False,lastfm,
+data/external/plan_c/hetrec2011-lastfm-2k.zip,user_taggedartists.dat,user_taggedartists.dat,4366696,False,lastfm,lastfm_raw_file
+data/external/plan_c/hetrec2011-lastfm-2k.zip,user_taggedartists-timestamps.dat,user_taggedartists-timestamps.dat,5249917,False,lastfm,
+data/external/plan_c/hetrec2011-lastfm-2k.zip,artists.dat,artists.dat,1925879,False,lastfm,lastfm_raw_file
+data/external/plan_c/hetrec2011-lastfm-2k.zip,readme.txt,readme.txt,4627,False,lastfm,
+data/external/plan_c/hetrec2011-lastfm-2k.zip,tags.dat,tags.dat,234468,False,lastfm,
+data/external/plan_c/hetrec2011-lastfm-2k.zip,user_artists.dat,user_artists.dat,1296455,False,lastfm,lastfm_raw_file
+data/external/plan_c/ml-1m.zip,ml-1m/,ml-1m,0,True,ml1m,
+data/external/plan_c/ml-1m.zip,ml-1m/movies.dat,movies.dat,171308,False,ml1m,ml1m_raw_file
+data/external/plan_c/ml-1m.zip,ml-1m/ratings.dat,ratings.dat,24594131,False,ml1m,ml1m_raw_file
+data/external/plan_c/ml-1m.zip,ml-1m/README,README,5577,False,ml1m,
+data/external/plan_c/ml-1m.zip,ml-1m/users.dat,users.dat,134368,False,ml1m,ml1m_raw_file

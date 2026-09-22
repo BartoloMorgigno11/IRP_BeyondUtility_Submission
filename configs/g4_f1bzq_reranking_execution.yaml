@@ -1,0 +1,114 @@
+phase:
+  id: g4_f1bzq_reranking_protocol_freeze
+  expected_base_checkpoint: 0465d7aa5f9fe9231be94dbe8d45649864bb4878
+  predecessor_state: F1BZQ_AUTHORITATIVE_RERANKING_POOLS_VALIDATED
+  success_token: G4_F1BZQ_RERANKING_PROTOCOL_FROZEN
+  blocked_token: G4_F1BZQ_RERANKING_PROTOCOL_BLOCKED
+  scientific_status: ADAPTED_EXTENSION_NOT_PAPER_EXACT
+  base_checkpoint_required_as_ancestor: true
+  phase_start_clean_verified: true
+  phase_start_clean_evidence: git rev-parse HEAD returned 0465d7aa5f9fe9231be94dbe8d45649864bb4878 and git status --short returned empty before G4 edits
+
+execution:
+  allow_local_ollama_inference: false
+  allow_local_ollama_metadata: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network_downloads: false
+  allow_training: false
+  allow_tuning: false
+  allow_traditional_ranking_regeneration: false
+  allow_f1bzq_pool_regeneration: false
+  allow_f1br_f1bzc_pool_use: false
+  allow_f6m_response_reuse: false
+  allow_g0_canary_response_reuse: false
+  response_reuse: 0
+  ollama_base_url: http://127.0.0.1:11434
+  temperature: 0
+  max_output_tokens:
+    reranking: 256
+  timeout_seconds: 150
+  backend_retry_count: 2
+  backend_retry_backoff_seconds: [5, 15]
+  scientific_retry_count: 0
+  stream: false
+  response_format: json
+  canonical_request_order: dataset_user_prompt_model
+  physical_execution_order: model_dataset_prompt_user
+
+datasets:
+  beauty: 990
+  sports: 892
+  ml1m: 1000
+  lastfm: 1000
+  foodcom: 1000
+
+models:
+  - qwen2:7b-instruct
+  - mistral:7b-instruct
+  - gemma2:9b
+
+prompt_strategies:
+  - BASE
+  - LLMRANK
+
+task:
+  id: reranking
+  objective: LLM reranking over frozen F1BZQ authoritative balanced candidate pools.
+  history_contract: visible_last_10_or_available
+  candidate_pool_source: F1BZQ_ONLY
+  candidate_pool_policy: ADAPTED_BALANCED_MULTI_MODEL_RERANKING_POOL
+  candidate_pool_algorithm: BALANCED_RANK_ROUND_ROBIN_UNIQUE_20
+  candidate_pool_size: 20
+  no_positive_forcing: true
+  target_identity_used_for_ranking: false
+  requested_output_length: 10
+  parser_expected_length: 10
+  metric_cutoff_k: 5
+
+accounting:
+  logical_requests: 29292
+  response_reuse: 0
+  new_ollama_calls: 29292
+  cells: 30
+  existing_terminal_g4_evidence: 0
+
+statistics:
+  bootstrap_resamples: 10000
+  seed: 20260901
+  ci: two_sided_95_percentile
+  alpha: 0.05
+  paired_unit: dataset_user_candidate_pool_identity
+  p_value_method: NOT_FROZEN_DO_NOT_COMPUTE
+  multiple_testing_correction: NONE_UNTIL_EXPLICIT_P_VALUE_METHOD_IS_FROZEN
+  ranking_vs_reranking: DESCRIPTIVE_PIPELINE_LEVEL_ONLY
+
+inputs:
+  f1bx_config: configs/f1bx_execution_stage1.yaml
+  f0_inference_contract: results/manifests/f0_final_inference_contract.json
+  f0_metric_matrix: results/tables/f0_final_metric_matrix.csv
+  f0_statistical_comparisons: results/tables/f0_final_statistical_comparisons.csv
+  f0_request_budget: results/tables/f0_final_request_budget.csv
+  g0_execution_manifest: results/manifests/g0_canary_execution_manifest.json
+  f1bzq_authoritative_pool_manifest: results/manifests/f1bzq_authoritative_pool_manifest.json
+  f1bzq_source_manifest: results/manifests/f1bzq_source_ranking_manifest.json
+  f1bzq_reranking_readiness: results/tables/f1bzq_reranking_readiness.csv
+  f1bzq_reranking_candidate_manifest: results/tables/f1bzq_reranking_candidate_manifest.csv
+  f1bzq_candidate_recall: results/tables/f1bzq_candidate_recall.csv
+  f1bzq_foodcom_warm_cold_recall: results/tables/f1bzq_foodcom_warm_cold_recall.csv
+  f1bzq_pool_source_contributions: results/tables/f1bzq_pool_source_contributions.csv
+  f1bzq_supersession_validation: results/tables/f1bzq_supersession_validation.csv
+
+outputs:
+  raw_dir: results/llm/extension_canonical/g4_f1bzq_reranking
+  request_universe: results/tables/g4_f1bzq_reranking_request_universe.csv
+  execution_order: results/tables/g4_f1bzq_reranking_execution_order.csv
+  candidate_hashes: results/tables/g4_f1bzq_candidate_hashes.csv
+  model_digests: results/tables/g4_f1bzq_model_digest_freeze.csv
+  metric_contract: results/tables/g4_f1bzq_metric_denominator_contract.csv
+  candidate_recall: results/tables/g4_f1bzq_candidate_recall_at_20.csv
+  statistical_comparisons: results/tables/g4_f1bzq_statistical_comparisons.csv
+  response_reuse_policy: results/tables/g4_f1bzq_response_reuse_policy.csv
+  dry_run_accounting: results/tables/g4_f1bzq_zero_call_dry_run_accounting.csv
+  retention_plan: results/tables/g4_f1bzq_retention_plan.csv
+  validation: results/tables/g4_f1bzq_validation.csv

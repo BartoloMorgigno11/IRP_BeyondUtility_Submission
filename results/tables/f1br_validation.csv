@@ -1,0 +1,32 @@
+check,status,evidence
+head_is_expected,PASS,c280fbef3440debe0a804efaf1f15436d9659347
+rechorus_gitlink_exact,PASS,fb646d4eed13a8d81ae308965b08c816f40d1a57
+rechorus_defaults_not_fabricated,PASS,unavailable defaults explicitly marked
+local_zero_training_smoke_passed,PASS,"BPRMF, GRU4Rec, SASRec, and LightGCN tiny constructors succeeded"
+paper_hyperparameter_rows,PASS,20
+lightgcn_appendix_typo_documented,PASS,documented
+seed_policy_42_46,PASS,"[42,43,44,45,46]"
+seed_policy_not_paper_identity,PASS,false
+seed_evidence_classification,PASS,LOCAL_REPRODUCIBLE_FIVE_SEED_POLICY
+original_four_ready_to_train_16,PASS,16
+f6d2_not_promoted_as_reuse,PASS,reuse remains zero
+foodcom_search_space_40,PASS,40
+foodcom_tuning_validation_only,PASS,4
+baseline_ready_15,PASS,15
+trainable_ready_20,PASS,20
+training_budget_exact,PASS,"{""FINAL_EVIDENCE_RUNS"":100,""FOODCOM_FINAL_RUNS"":20,""FOODCOM_TUNING_RUNS"":40,""ORIGINAL_FOUR_FINAL_RUNS"":80,""TOTAL_TRAINING_RUNS"":140}"
+reranking_source_policy_frozen,PASS,5
+f1b_planning_updates_prepared,PASS,"beyond_utility_results,candidate_recall,first_stage_inventory,five_dataset_completeness,reranking_readiness,result_cell_readiness,reuse_audit,training_plan,training_results,utility_results"
+active_datasets_exact,PASS,"beauty,sports,ml1m,lastfm,foodcom"
+video_games_absent,PASS,0
+global_metric_blockers_zero,PASS,0
+f0_budget_unchanged,PASS,"{""BLOCKED_REQUESTS"":0,""CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL"":100584,""CONDITIONAL_REQUESTS"":9000,""CORE_MANDATORY_NOW_REQUESTS"":29292,""EXISTING_REUSABLE_REQUESTS"":0,""FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL"":88584,""MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE"":5364,""MANDATORY_RAW_REQUESTS_TOTAL"":50292,""OPTIONAL_REQUESTS"":12000,""PREVIOUS_D0B_ESTIMATE"":44928,""REQUIRED_SENSITIVITY_REQUESTS"":21000,""TRAINING_DEPENDENT_REQUESTS"":29292}"
+h0_hashes_unchanged,PASS,true
+foodcom_hashes_unchanged,PASS,true
+original_repo_unchanged,PASS,clean
+paper_unchanged,PASS,clean
+no_unexplained_worktree_changes,PASS,none
+zero_training_in_f1br,PASS,0
+zero_llm_inference,PASS,0
+zero_download_network_api,PASS,0
+config_forbids_training_and_inference,PASS,false

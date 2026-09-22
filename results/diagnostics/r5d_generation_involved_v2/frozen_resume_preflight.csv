@@ -1,0 +1,18 @@
+check_id,check_name,status,observed,expected
+RESUME-001,manifest row count unchanged,pass,1200,1200
+RESUME-002,r5a manifest sha unchanged,pass,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD
+RESUME-003,stored frozen protocol hash unchanged,pass,AA76CD3E936A969A57CDA2E9E54E22B73D6C1D3DB65C0795F86E181CEDFE3B1A,AA76CD3E936A969A57CDA2E9E54E22B73D6C1D3DB65C0795F86E181CEDFE3B1A
+RESUME-004,computed runtime protocol hash unchanged,pass,AA76CD3E936A969A57CDA2E9E54E22B73D6C1D3DB65C0795F86E181CEDFE3B1A,AA76CD3E936A969A57CDA2E9E54E22B73D6C1D3DB65C0795F86E181CEDFE3B1A
+RESUME-005,runtime models available with frozen identifiers,pass,available,available
+RESUME-006,completed terminal rows before resume,pass,600,600
+RESUME-007,remaining rows before resume,pass,600,600
+RESUME-008,terminal retry count zero,pass,0,0
+RESUME-009,original invalids terminal and unchanged,pass,R5D-RANK-167AC5F3AB797DBA;R5D-RANK-59C06DDCFD78BFF4;R5D-RANK-E491A3315449174D,R5D-RANK-167AC5F3AB797DBA;R5D-RANK-59C06DDCFD78BFF4;R5D-RANK-E491A3315449174D
+RESUME-010,original invalids excluded from missing set,pass,0,0
+RESUME-011,missing output files absent,pass,0,0
+RESUME-012,terminal output files present,pass,600,600
+RESUME-013,request ids and output destinations unique,pass,requests_unique=True;outputs_unique=True,true;true
+RESUME-014,missing rows are downstream ranking rows,pass,ranking,ranking
+RESUME-015,profile-generation dependencies complete,pass,profiles_valid=400/400;missing_dependencies_ok=True,400/400;true
+RESUME-016,invalid-output policy is manifest-denominator zero credit,pass,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO
+RESUME-017,max retries frozen to zero,pass,0,0

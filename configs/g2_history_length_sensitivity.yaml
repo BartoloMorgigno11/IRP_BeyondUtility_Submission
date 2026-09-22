@@ -1,0 +1,152 @@
+phase:
+  id: g2_history_length_sensitivity_protocol_freeze
+  required_g1_checkpoint_short: 7d32400
+  required_g1_commit_message: Complete and retain G1 primary ranking evidence
+  predecessor_state:
+    - G1_PRIMARY_RANKING_VALIDATED
+    - G1_RETENTION_VALIDATED
+  success_token: G2_NESTED_HISTORY_PROTOCOL_FROZEN
+  blocked_token: G2_NESTED_HISTORY_PROTOCOL_BLOCKED
+  phase_start_clean_required: true
+  allow_commit: false
+
+execution:
+  allow_local_ollama_inference: false
+  allow_local_ollama_metadata: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network_downloads: false
+  allow_training: false
+  allow_tuning: false
+  allow_g3: false
+  allow_g4: false
+  allow_g5: false
+  temperature: 0
+  max_output_tokens:
+    ranking: 256
+  timeout_seconds: 150
+  backend_retry_count: 2
+  backend_retry_backoff_seconds: [5, 15]
+  scientific_retry_count: 0
+  stream: false
+  response_format: json
+  canonical_request_order: dataset_user_history_prompt_model
+  physical_execution_order: model_dataset_prompt_history_user
+
+models:
+  - qwen2:7b-instruct
+  - mistral:7b-instruct
+  - gemma2:9b
+
+datasets:
+  - beauty
+  - sports
+  - ml1m
+  - lastfm
+  - foodcom
+
+prompt_strategies:
+  - BASE
+  - LLMRANK
+
+history_lengths: [0, 1, 2, 5, 10, 20]
+
+nested_design:
+  selected_design: DESIGN_B_NESTED_PAIRED_ANALYSES
+  design_decision_source: G2_COHORT_DESIGN_REVIEW_COMPLETE
+  design_decision_token: ADOPT_DESIGN_B
+  no_outcome_dependent_filtering: true
+  deduplicate_overlapping_user_h_requests: true
+  b1_primary:
+    reporting_view: PRIMARY_B1_GE10
+    min_train_history_interactions: 10
+    history_lengths: [0, 1, 2, 5, 10]
+    selection_rule: all_g1_users_with_at_least_10_train_history_interactions
+  b2_long_history:
+    reporting_view: LONG_HISTORY_B2_GE20
+    min_train_history_interactions: 20
+    history_lengths: [10, 20]
+    selection_rule: all_g1_users_with_at_least_20_train_history_interactions
+  secondary_full_curve:
+    reporting_view: SECONDARY_FULL_CURVE_GE20
+    min_train_history_interactions: 20
+    history_lengths: [0, 1, 2, 5, 10, 20]
+    reuse_only_no_duplicate_requests: true
+
+primary_paired_cohort:
+  min_train_history_interactions: 10
+  selection_rule: design_b_primary_b1_all_g1_users_with_at_least_10_train_history_interactions
+  no_outcome_dependent_filtering: true
+  low_share_warning_threshold: 0.10
+
+foodcom_zero_history:
+  keep_all_users: true
+  keep_warm_users: true
+  keep_true_zero_history_users: true
+  primary_h0_label_for_warm_ge10: CONTROLLED_H0
+  true_zero_h0_label: TRUE_ZERO_HISTORY
+  true_zero_h_positive_status: NOT_APPLICABLE
+
+inputs:
+  g1_config: configs/g1_primary_ranking_execution.yaml
+  g1_request_universe: results/tables/g1_primary_ranking_request_universe.csv
+  g1_execution_state: results/tables/g1_primary_ranking_execution_state.csv
+  g1_strict_parsing: results/tables/g1_primary_ranking_strict_parsing.csv
+  g1_retention_manifest: results/manifests/g1_primary_ranking_retention_manifest.json
+  g1_execution_manifest: results/manifests/g1_primary_ranking_execution_manifest.json
+  f0_inference_contract: results/manifests/f0_final_inference_contract.json
+
+prior_evidence:
+  - id: R5C_HISTORY_LENGTH_ORIGINAL
+    path: results/tables/reproduction_r5c_history_length_execution_manifest.csv
+  - id: R5C_HISTORY_LENGTH_CORRECTED
+    path: results/tables/reproduction_r5c_history_length_corrected_execution_manifest.csv
+  - id: PLAN_D_ML1M_HISTORY_LENGTH
+    path: results/tables/plan_d_llm_ml1m_history_length_manifest.csv
+  - id: R1_OFFICIAL_HISTORY_LENGTH
+    path: results/tables/reproduction_r1_history_length_official_results.csv
+  - id: R4_HISTORY_LENGTH_RECONCILIATION
+    path: results/tables/reproduction_r4_history_length_reconciliation.csv
+
+metrics:
+  utility:
+    - hr_at_5
+    - ndcg_at_5
+    - mrr
+  reliability:
+    - backend_success_rate
+    - strict_parse_valid_rate
+    - invalid_length_rate
+    - duplicate_index_rate
+    - invalid_candidate_reference_rate
+  beyond_utility_policy: reuse_frozen_g1_definitions_where_applicable
+
+statistics:
+  alpha: 0.05
+  bootstrap_resamples: 10000
+  bootstrap_seed: 20260901
+  multiple_comparison_correction: holm_bonferroni_within_metric_dataset_model_prompt_family
+  planned_history_comparisons:
+    primary_b1_ge10:
+      - [0, 1]
+      - [0, 5]
+      - [0, 10]
+      - [1, 2]
+      - [2, 5]
+      - [5, 10]
+    long_history_b2_ge20:
+      - [10, 20]
+    secondary_full_curve_ge20:
+      - [0, 20]
+      - [5, 20]
+
+retention:
+  tracked_scientific_foreground:
+    - configs/g2_history_length_sensitivity.yaml
+    - src/extension/g2_history_length_sensitivity_protocol.py
+    - tests/test_extension_g2_history_length_sensitivity_protocol.py
+    - report/g2_history_length_protocol.md
+    - results/tables/g2_history_length_*.csv
+    - results/manifests/g2_history_length_protocol_freeze.json
+  externalized_raw_evidence_future_root: results/llm/extension_canonical/g2_history_length_sensitivity/
+  externalized_per_request_audit_future: true

@@ -1,0 +1,2 @@
+evidence_label,metric,value,status,notes
+POST-F6M DATASET-5 EXTENSION EVIDENCE,mapping_audit,,not_run,EXTENSION_E3_FOODCOM_ACQUISITION_BLOCKED: Manual source directory is missing: data/raw/foodcom/source

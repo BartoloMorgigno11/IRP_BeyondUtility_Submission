@@ -1,0 +1,6 @@
+dataset,first_stage_recommender,expected_eval_users,expected_candidate_pool_size,ranking_source,ranking_rows,positive_recall_audited,inventory_status,reason
+beauty,canonical_source_ranker_to_freeze,990,20,results/tables/f1bz_first_stage_rankings.csv,19800,true,FROZEN,F1BZ materialized first-stage trainable rankings for all frozen seeds and models.
+sports,canonical_source_ranker_to_freeze,892,20,results/tables/f1bz_first_stage_rankings.csv,17840,true,FROZEN,F1BZ materialized first-stage trainable rankings for all frozen seeds and models.
+ml1m,canonical_source_ranker_to_freeze,1000,20,results/tables/f1bz_first_stage_rankings.csv,20000,true,FROZEN,F1BZ materialized first-stage trainable rankings for all frozen seeds and models.
+lastfm,canonical_source_ranker_to_freeze,1000,20,results/tables/f1bz_first_stage_rankings.csv,20000,true,FROZEN,F1BZ materialized first-stage trainable rankings for all frozen seeds and models.
+foodcom,canonical_source_ranker_to_freeze,1000,20,results/tables/f1bz_first_stage_rankings.csv,20000,true,FROZEN,F1BZ materialized first-stage trainable rankings for all frozen seeds and models.

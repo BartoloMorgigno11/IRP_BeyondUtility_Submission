@@ -1,0 +1,12 @@
+key,value
+decision_token,REPRODUCTION_R1_OFFICIAL_ARTIFACT_RECOVERY_COMPLETE
+direct_artifacts,26
+archives_found,3
+zip_members_inspected,364
+official_metric_csvs_found,105
+fully_decoded_csvs,105
+partially_decoded_csvs,0
+unresolved_csvs,0
+decoded_metric_values,1470
+json_artifacts,226
+decode_status_counts,"{""FULLY_DECODED"": 1470}"

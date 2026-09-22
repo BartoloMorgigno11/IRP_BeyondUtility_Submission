@@ -1,0 +1,104 @@
+{
+  "dependency_versions": {
+    "colorama": "0.4.6",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.63.0",
+    "iniconfig": "2.3.0",
+    "kiwisolver": "1.5.0",
+    "matplotlib": "3.11.0",
+    "numpy": "2.5.0",
+    "packaging": "26.2",
+    "pandas": "3.0.3",
+    "pillow": "12.2.0",
+    "pluggy": "1.6.0",
+    "pygments": "2.20.0",
+    "pyparsing": "3.3.2",
+    "pytest": "9.1.1",
+    "python-dateutil": "2.9.0.post0",
+    "pyyaml": "6.0.3",
+    "six": "1.17.0",
+    "tzdata": "2026.2"
+  },
+  "export_sha256": "4bfa7baa22cd9424abeefbea5f18000592631081414c8b79303ca895858064b0",
+  "exported_tracked_paths": 83,
+  "external_scientific_dependencies": [],
+  "isolated_runtime": true,
+  "network_denied": true,
+  "original_worktree_access_denied": true,
+  "preexisting_caches_used": false,
+  "status": "PASS",
+  "steps": [
+    {
+      "arguments": [
+        "script",
+        "src/analysis/rq5_final_freeze.py",
+        "--config",
+        "configs/rq5_final_freeze.yaml",
+        "--mode",
+        "verify"
+      ],
+      "exit_code": 0,
+      "log_sha256": "b52ee54afe425b59e2b90a91d99a0b5b5dbe2a9c161a1580210f3efce0309340"
+    },
+    {
+      "arguments": [
+        "script",
+        "src/analysis/rq5_final_freeze.py",
+        "--config",
+        "configs/rq5_final_freeze.yaml",
+        "--mode",
+        "reproduce",
+        "--output-dir",
+        "results/rq5_reproduction_check"
+      ],
+      "exit_code": 0,
+      "log_sha256": "917763a8ec43839101b12aacad895707cbea7830bdc6b3cf560dc177d26f5b12"
+    },
+    {
+      "arguments": [
+        "script",
+        "src/analysis/rq5_final_freeze.py",
+        "--config",
+        "configs/rq5_final_freeze.yaml",
+        "--mode",
+        "figures"
+      ],
+      "exit_code": 0,
+      "log_sha256": "b5515f122d366b510281ddfbb322aa1512c8d1c8265b8139cfd76f3b9620ff5e"
+    },
+    {
+      "arguments": [
+        "script",
+        "src/analysis/rq5_final_freeze.py",
+        "--config",
+        "configs/rq5_final_freeze.yaml",
+        "--mode",
+        "verify"
+      ],
+      "exit_code": 0,
+      "log_sha256": "b52ee54afe425b59e2b90a91d99a0b5b5dbe2a9c161a1580210f3efce0309340"
+    },
+    {
+      "arguments": [
+        "pytest",
+        "tests/test_rq5_final_freeze.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "-o",
+        "addopts=",
+        "--junitxml=results/clean_room_tests.xml"
+      ],
+      "exit_code": 0,
+      "log_sha256": "398812f3445283d154426fa9cc147670f1d8efaeab2d29b55f663d077946e3b8"
+    }
+  ],
+  "test_counts": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 19
+  },
+  "validated_commit": "27384ca2557112af180af24f856ade6139346045"
+}

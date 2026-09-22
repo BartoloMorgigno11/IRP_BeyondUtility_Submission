@@ -1,0 +1,196 @@
+metric,dataset,applicability_status,feature_source,requires_new_raw,requires_training_raw,reason
+hr_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+hr_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+hr_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+hr_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+hr_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+ndcg_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+ndcg_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+ndcg_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+ndcg_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+ndcg_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+mrr_diagnostic,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+mrr_diagnostic,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+mrr_diagnostic,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+mrr_diagnostic,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+mrr_diagnostic,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+self_information_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+self_information_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+self_information_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+self_information_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+self_information_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+serendipity_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+serendipity_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+serendipity_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+serendipity_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+serendipity_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+arp_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+arp_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+arp_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+arp_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+arp_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+aplt_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+aplt_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+aplt_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+aplt_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+aplt_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+popreo_at_5,beauty,SUPPORTED_AWAITING_RAW,,true,false,protocol recovered by F1ARR; cohort edge cases audited separately; final values require canonical recommendation outputs
+popreo_at_5,sports,SUPPORTED_AWAITING_RAW,,true,false,protocol recovered by F1ARR; cohort edge cases audited separately; final values require canonical recommendation outputs
+popreo_at_5,ml1m,SUPPORTED_AWAITING_RAW,,true,false,protocol recovered by F1ARR; cohort edge cases audited separately; final values require canonical recommendation outputs
+popreo_at_5,lastfm,SUPPORTED_AWAITING_RAW,,true,false,protocol recovered by F1ARR; cohort edge cases audited separately; final values require canonical recommendation outputs
+popreo_at_5,foodcom,SUPPORTED_AWAITING_RAW,,true,false,protocol recovered by F1ARR; cohort edge cases audited separately; final values require canonical recommendation outputs
+item_coverage_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+item_coverage_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+item_coverage_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+item_coverage_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+item_coverage_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+catalog_coverage_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+catalog_coverage_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+catalog_coverage_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+catalog_coverage_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+catalog_coverage_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+oic_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+oic_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+oic_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+oic_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+oic_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+shannon_category_entropy_at_5,beauty,SUPPORTED_AWAITING_RAW,categories,True,False,categories from data/reconstructed/plan_c/amazon_beauty/catalog.csv; pipe-separated Amazon category path
+shannon_category_entropy_at_5,sports,SUPPORTED_AWAITING_RAW,categories,True,False,categories from data/reconstructed/plan_c/amazon_sports/catalog.csv; pipe-separated Amazon category path
+shannon_category_entropy_at_5,ml1m,SUPPORTED_AWAITING_RAW,genres,True,False,genres from data/processed/ml1m/catalog.csv; pipe-separated MovieLens genre set
+shannon_category_entropy_at_5,lastfm,SUPPORTED_AWAITING_RAW,tag_values,True,False,tag_values from data/processed/finalization_f6c_lastfm_catalog.csv; frozen LastFM tag_values from F6C
+shannon_category_entropy_at_5,foodcom,SUPPORTED_AWAITING_RAW,RAW_recipes.tags,True,False,RAW_recipes.tags from data/raw/foodcom/d0a_extracted/e7a43e623c61/RAW_recipes.csv; F0 Food.com canonical recipe tag policy
+ild_at_5,beauty,SUPPORTED_AWAITING_RAW,categories,True,False,categories from data/reconstructed/plan_c/amazon_beauty/catalog.csv; pipe-separated Amazon category path
+ild_at_5,sports,SUPPORTED_AWAITING_RAW,categories,True,False,categories from data/reconstructed/plan_c/amazon_sports/catalog.csv; pipe-separated Amazon category path
+ild_at_5,ml1m,SUPPORTED_AWAITING_RAW,genres,True,False,genres from data/processed/ml1m/catalog.csv; pipe-separated MovieLens genre set
+ild_at_5,lastfm,SUPPORTED_AWAITING_RAW,tag_values,True,False,tag_values from data/processed/finalization_f6c_lastfm_catalog.csv; frozen LastFM tag_values from F6C
+ild_at_5,foodcom,SUPPORTED_AWAITING_RAW,RAW_recipes.tags,True,False,RAW_recipes.tags from data/raw/foodcom/d0a_extracted/e7a43e623c61/RAW_recipes.csv; F0 Food.com canonical recipe tag policy
+calibration_at_5,beauty,SUPPORTED_AWAITING_RAW,categories,True,False,categories from data/reconstructed/plan_c/amazon_beauty/catalog.csv; pipe-separated Amazon category path
+calibration_at_5,sports,SUPPORTED_AWAITING_RAW,categories,True,False,categories from data/reconstructed/plan_c/amazon_sports/catalog.csv; pipe-separated Amazon category path
+calibration_at_5,ml1m,SUPPORTED_AWAITING_RAW,genres,True,False,genres from data/processed/ml1m/catalog.csv; pipe-separated MovieLens genre set
+calibration_at_5,lastfm,SUPPORTED_AWAITING_RAW,tag_values,True,False,tag_values from data/processed/finalization_f6c_lastfm_catalog.csv; frozen LastFM tag_values from F6C
+calibration_at_5,foodcom,SUPPORTED_AWAITING_RAW,RAW_recipes.tags,True,False,RAW_recipes.tags from data/raw/foodcom/d0a_extracted/e7a43e623c61/RAW_recipes.csv; F0 Food.com canonical recipe tag policy
+gini_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+gini_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+gini_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+gini_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+gini_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+dpd_at_5,beauty,SUPPORTED_AWAITING_RAW,,true,false,protocol recovered by F1ARR; cohort edge cases audited separately; final values require canonical recommendation outputs
+dpd_at_5,sports,SUPPORTED_AWAITING_RAW,,true,false,protocol recovered by F1ARR; cohort edge cases audited separately; final values require canonical recommendation outputs
+dpd_at_5,ml1m,SUPPORTED_AWAITING_RAW,,true,false,protocol recovered by F1ARR; cohort edge cases audited separately; final values require canonical recommendation outputs
+dpd_at_5,lastfm,SUPPORTED_AWAITING_RAW,,true,false,protocol recovered by F1ARR; cohort edge cases audited separately; final values require canonical recommendation outputs
+dpd_at_5,foodcom,SUPPORTED_AWAITING_RAW,,true,false,protocol recovered by F1ARR; cohort edge cases audited separately; final values require canonical recommendation outputs
+jain_index_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+jain_index_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+jain_index_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+jain_index_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+jain_index_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+strict_parse_validity,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+strict_parse_validity,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+strict_parse_validity,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+strict_parse_validity,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+strict_parse_validity,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+structural_invalidity_rate,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+structural_invalidity_rate,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+structural_invalidity_rate,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+structural_invalidity_rate,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+structural_invalidity_rate,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+invalid_reason_distribution,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+invalid_reason_distribution,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+invalid_reason_distribution,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+invalid_reason_distribution,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+invalid_reason_distribution,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+duplicate_rate,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+duplicate_rate,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+duplicate_rate,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+duplicate_rate,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+duplicate_rate,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+hallucination,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+hallucination,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+hallucination,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+hallucination,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+hallucination,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+backend_failure_rate,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+backend_failure_rate,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+backend_failure_rate,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+backend_failure_rate,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+backend_failure_rate,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+candidate_recall_at_n,beauty,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+candidate_recall_at_n,sports,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+candidate_recall_at_n,ml1m,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+candidate_recall_at_n,lastfm,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+candidate_recall_at_n,foodcom,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+conditional_hr_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+conditional_hr_at_5,sports,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+conditional_hr_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+conditional_hr_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+conditional_hr_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+conditional_ndcg_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+conditional_ndcg_at_5,sports,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+conditional_ndcg_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+conditional_ndcg_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+conditional_ndcg_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,True,formula implemented; final recommendation/raw output not yet produced
+canddif_hr_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+canddif_hr_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+canddif_hr_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+canddif_hr_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+canddif_hr_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+canddif_ndcg_at_5,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+canddif_ndcg_at_5,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+canddif_ndcg_at_5,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+canddif_ndcg_at_5,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+canddif_ndcg_at_5,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+latency,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+latency,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+latency,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+latency,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+latency,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+mean_latency,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+mean_latency,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+mean_latency,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+mean_latency,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+mean_latency,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+median_latency,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+median_latency,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+median_latency,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+median_latency,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+median_latency,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p90_latency,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p90_latency,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p90_latency,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p90_latency,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p90_latency,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p95_latency,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p95_latency,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p95_latency,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p95_latency,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p95_latency,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p99_latency,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p99_latency,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p99_latency,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p99_latency,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+p99_latency,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+throughput,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+throughput,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+throughput,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+throughput,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+throughput,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+token_counts,beauty,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+token_counts,sports,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+token_counts,ml1m,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+token_counts,lastfm,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+token_counts,foodcom,SUPPORTED_AWAITING_RAW,,True,False,formula implemented; final recommendation/raw output not yet produced
+monetary_marginal_cost,beauty,NOT_APPLICABLE,,False,False,local Ollama execution has no provider price; do not invent marginal monetary cost
+monetary_marginal_cost,sports,NOT_APPLICABLE,,False,False,local Ollama execution has no provider price; do not invent marginal monetary cost
+monetary_marginal_cost,ml1m,NOT_APPLICABLE,,False,False,local Ollama execution has no provider price; do not invent marginal monetary cost
+monetary_marginal_cost,lastfm,NOT_APPLICABLE,,False,False,local Ollama execution has no provider price; do not invent marginal monetary cost
+monetary_marginal_cost,foodcom,NOT_APPLICABLE,,False,False,local Ollama execution has no provider price; do not invent marginal monetary cost
+hardware_runtime_provenance,beauty,SUPPORTED_OFFLINE,,False,False,no recommendation raw required
+hardware_runtime_provenance,sports,SUPPORTED_OFFLINE,,False,False,no recommendation raw required
+hardware_runtime_provenance,ml1m,SUPPORTED_OFFLINE,,False,False,no recommendation raw required
+hardware_runtime_provenance,lastfm,SUPPORTED_OFFLINE,,False,False,no recommendation raw required
+hardware_runtime_provenance,foodcom,SUPPORTED_OFFLINE,,False,False,no recommendation raw required
+ks_sample_representativeness,beauty,IMPLEMENTATION_READY_BLOCKED_DATA_REQUIREMENT,,False,False,selected H0 cohort exists but full eligible-population train-history vector is not materialized as a current F0/F1A artifact
+ks_sample_representativeness,sports,IMPLEMENTATION_READY_BLOCKED_DATA_REQUIREMENT,,False,False,selected H0 cohort exists but full eligible-population train-history vector is not materialized as a current F0/F1A artifact
+ks_sample_representativeness,ml1m,IMPLEMENTATION_READY_BLOCKED_DATA_REQUIREMENT,,False,False,selected H0 cohort exists but full eligible-population train-history vector is not materialized as a current F0/F1A artifact
+ks_sample_representativeness,lastfm,IMPLEMENTATION_READY_BLOCKED_DATA_REQUIREMENT,,False,False,selected H0 cohort exists but full eligible-population train-history vector is not materialized as a current F0/F1A artifact
+ks_sample_representativeness,foodcom,SUPPORTED_OFFLINE,,False,False,no recommendation raw required

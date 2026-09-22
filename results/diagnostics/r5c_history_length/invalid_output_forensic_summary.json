@@ -1,0 +1,59 @@
+{
+  "can_repair_from_existing_raw_outputs_scientifically": false,
+  "cases_audited": 15,
+  "commit": "NONE",
+  "created_utc": "2026-08-21T14:50:20Z",
+  "exact_offline_mappable": 15,
+  "existing_r5c_counts": {
+    "accounted": 2400,
+    "backend_incomplete": 0,
+    "invalid": 15,
+    "parse_failure": 0,
+    "requests": 2400,
+    "target_gaps_all_valid": 3,
+    "target_gaps_total": 4,
+    "valid": 2385,
+    "wrong_length": 0
+  },
+  "final_decision": "R5C_SELECTIVE_RERUN_REQUIRED",
+  "genuine_invalid": 0,
+  "if_offline_recovered_hypothetical": {
+    "invalid": 0,
+    "r5c_freeze_ready_if_normalization_were_allowed": false,
+    "target_gaps_all_valid": 4,
+    "target_gaps_total": 4,
+    "valid": 2400
+  },
+  "input_hashes": {
+    "results\\tables\\reproduction_r5c_history_length_execution_manifest.csv": "600B70F08C60A127D87D08159DF326469798E59D43FA4E1808202B81173C366E",
+    "results\\tables\\reproduction_r5c_history_length_request_execution_status.csv": "EE4CFE2B27A98E4FCE4BA96EFABC2E3871E994A665060EC6CAA5AB150DF1364C"
+  },
+  "item_id_to_index_mapping": "DETERMINISTIC",
+  "llm_calls": 0,
+  "partial_or_ambiguous": 0,
+  "phase": "R5C_INVALID_OUTPUT_FORENSIC_AUDIT",
+  "post_hoc_normalization_scientifically_allowed": false,
+  "push": "NO",
+  "r5c_rerun_executed": false,
+  "r5d_executed": false,
+  "raw_output_modified": false,
+  "rows_requiring_rerun": [
+    "R5C-HIST-0511C5418AE2F5F3",
+    "R5C-HIST-3682BCB95E686347",
+    "R5C-HIST-3B3BCB495C88086C",
+    "R5C-HIST-69A6B40E04C7DE5A",
+    "R5C-HIST-D5880B18CED18E3C",
+    "R5C-HIST-D5C6D0F95274B3EC",
+    "R5C-HIST-1488249A15B05E91",
+    "R5C-HIST-33FE537B137AAA80",
+    "R5C-HIST-397F15AD6B87D885",
+    "R5C-HIST-3A9CDDF1B9807079",
+    "R5C-HIST-403121CD5854DF8C",
+    "R5C-HIST-618C41D1A22C8557",
+    "R5C-HIST-8AD3F8034BBE875E",
+    "R5C-HIST-8B9BDAD2E93014C4",
+    "R5C-HIST-98DA53A00FCCC5D5"
+  ],
+  "selective_rerun_required": true,
+  "technical_mapping_possible": true
+}

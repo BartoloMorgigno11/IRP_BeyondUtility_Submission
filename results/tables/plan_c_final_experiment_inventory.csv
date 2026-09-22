@@ -1,0 +1,9 @@
+phase,artifact/script/report,purpose,generated_outputs,status,commit_relevance,notes
+C0,plan_c_full_replication_matrix.md; plan_c_*.csv,Inventory the paper/repo replication surface.,replication matrix and artifact/task/model inventory,completed,include,Defines exact/reconstruction/blocker taxonomy.
+C1,validate_plan_c_artifacts.py; artifact manifests,Validate local artifact availability.,artifact validation details and summary,completed,include,No downloads or mutations.
+C2,check_plan_c_source_urls.py; source reports,Check source reachability and recovery routes.,source URL checks and manual download checklist,completed,include,Dropbox HTML reachability is not artifact recovery.
+C3,inspect_plan_c_downloads.py,Inspect staged manual downloads without extracting by default.,manual download inventory and suggested manifest updates,completed,include,Raw public data classified separately from official processed artifacts.
+C4,validate_plan_c_raw_datasets.py,Validate raw dataset schemas and reconstruction readiness.,raw schema and readiness tables,completed,include,LastFM marked extension-only for utility metrics.
+C5,reconstruct_plan_c_datasets.py,Create reconstructed canonical datasets.,data/reconstructed/plan_c and reconstructed summary tables,completed,include,Negative sampling default corrected to interaction_items.
+C6,run_plan_c_baselines.py,Evaluate deterministic baselines on reconstructed datasets.,"Plan C metrics, comparison tables, candidate diagnostics, plots",completed_with_scope_limits,include,Amazon ContentBM25 full runs remain future work; diagnostic subsets are marked.
+C7,summarize_plan_c_final_results.py; final reports,"Consolidate claims, limitations, and exam narrative.","final overview, claims, inventory, reports, oral guide",completed,include,Final story separates exact reproduction blockers from reconstruction evidence.

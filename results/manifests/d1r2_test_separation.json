@@ -1,0 +1,28 @@
+{
+  "blocking_issue": "tests/test_exactness_frontier_and_evidence_closure.py::test_determinism_and_protected_input_fingerprint observed row_count=17579, expected 136",
+  "branch": "master",
+  "classified_nodes": 145,
+  "current_suite_green": false,
+  "current_suite_results": "results/tables/d1r2_current_suite_results.csv",
+  "decision_token": "D1R2_CURRENT_TREE_BLOCKED",
+  "downloads_executed": 0,
+  "error_nodes": 43,
+  "failed_nodes": 102,
+  "fixes_applied": [
+    "Added direct-script repository-root bootstrap to src/analysis/build_workspace_forensic_state_audit.py."
+  ],
+  "head": "adbf060f93872f6a75a32d38bbfe34ce30ed059e",
+  "historical_worktrees_executed": 0,
+  "llm_requests_executed": 0,
+  "phase_id": "d1r2_historical_freeze_vs_current_extension_test_separation",
+  "source_lastfailed": ".pytest_cache/v/cache/lastfailed",
+  "taxonomy_counts": {
+    "CURRENT_REGRESSION": 4,
+    "DESTRUCTIVE_OR_PERSISTENT_SIDE_EFFECT": 31,
+    "HISTORICAL_FREEZE_VALIDATION": 87,
+    "HISTORICAL_REPRODUCTION_LOGIC": 23
+  },
+  "timestamp_utc": "2026-08-27T11:53:02.855305+00:00",
+  "training_runs_executed": 0,
+  "unknown_nodes": 0
+}

@@ -1,0 +1,11 @@
+{
+  "baseline_passed": 41,
+  "command": "python -B -m pytest tests/test_rq5_final_freeze.py tests/test_utility_metrics.py tests/test_output_parser.py tests/test_hallucination.py tests/test_coverage.py -p no:cacheprovider",
+  "errors": 0,
+  "failures": 0,
+  "passed": 60,
+  "rq5_passed": 19,
+  "skip_reason": "optional rapidfuzz unavailable; no RQ5 candidate-index test skipped",
+  "skipped": 2,
+  "tests": 62
+}

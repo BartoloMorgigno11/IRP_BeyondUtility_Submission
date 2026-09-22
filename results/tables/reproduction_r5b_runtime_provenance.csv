@@ -1,0 +1,3 @@
+phase,backend,ollama_version,model_name,model_available,model_digest,model_parameter_size,model_quantization_level,context_length,runtime_available,runtime_error,request_count,succeeded,backend_failed,not_executed,git_branch,git_head,staged_diff_empty,disk_free_bytes,external_api_allowed,downloads_allowed,training_allowed
+R5B,ollama,0.32.4,mistral:7b-instruct,true,6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf,7.2B,Q4_K_M,32768,true,,600,600,0,0,master,98c28c5364c40e571765a3b50d4dab8affe80743,true,155088941056,false,false,false
+R5B,ollama,0.32.4,qwen2:7b-instruct,true,dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755,7.6B,Q4_0,32768,true,,600,600,0,0,master,98c28c5364c40e571765a3b50d4dab8affe80743,true,155088941056,false,false,false

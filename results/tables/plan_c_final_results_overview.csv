@@ -1,0 +1,11 @@
+dataset,reconstruction_status,exact_original_artifact_recovered,candidate_item_universe,baseline,run_scope,diagnostic_subset,max_users,hr_at_5,ndcg_at_5,catalog_coverage_at_5,evaluated_users,status,notes
+amazon_beauty,reconstructed_from_public_raw,no,interaction_items,mostpop,full,False,,0.1865581540938156,0.1218049913823627,0.0058486751747658,22363,available,Real Plan C reconstructed-dataset baseline metrics.
+amazon_beauty,reconstructed_from_public_raw,no,interaction_items,random,full,False,,0.051111210481599,0.0297061760161657,0.0466813783737905,22363,available,Real Plan C reconstructed-dataset baseline metrics.
+amazon_beauty,reconstructed_from_public_raw,no,interaction_items,content_bm25,diagnostic_max_users_1000,True,1000,0.317,0.2303098637007468,0.0126811314640206,1000,available,Real Plan C reconstructed-dataset baseline metrics.
+amazon_sports,reconstructed_from_public_raw,no,interaction_items,mostpop,full,False,,0.2109669082532726,0.1415364725903375,0.004297280894105,35598,available,Real Plan C reconstructed-dataset baseline metrics.
+amazon_sports,reconstructed_from_public_raw,no,interaction_items,random,full,False,,0.0487948761166357,0.0288092328987212,0.0344928663633955,35598,available,Real Plan C reconstructed-dataset baseline metrics.
+amazon_sports,reconstructed_from_public_raw,no,interaction_items,content_bm25,diagnostic_max_users_1000,True,1000,0.262,0.182786145361599,0.0066103341431838,1000,available,Real Plan C reconstructed-dataset baseline metrics.
+lastfm,extension_only,no,,all,full,False,,,,,0,blocked,LastFM is extension_only in C5: no ground_truth.csv/candidates.csv protocol is available for utility metrics.
+ml1m,reconstructed_from_public_raw,no,interaction_items,content_bm25,full,False,,0.2375827814569536,0.1562358579730421,0.5977337110481586,6040,available,Real Plan C reconstructed-dataset baseline metrics.
+ml1m,reconstructed_from_public_raw,no,interaction_items,mostpop,full,False,,0.3013245033112582,0.1989268049046611,0.1637908833376255,6040,available,Real Plan C reconstructed-dataset baseline metrics.
+ml1m,reconstructed_from_public_raw,no,interaction_items,random,full,False,,0.0511589403973509,0.0284872079551804,0.9533865567859904,6040,available,Real Plan C reconstructed-dataset baseline metrics.

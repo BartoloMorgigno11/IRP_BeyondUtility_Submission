@@ -1,0 +1,7 @@
+dataset,model_name,n_manifest_requests,n_terminal,n_succeeded,n_valid_outputs,n_invalid_outputs,n_wrong_length,n_parse_failure,n_backend_incomplete,n_backend_failed,n_not_executed,first_hr_at_5,random_hr_at_5,first_ndcg_at_5,random_ndcg_at_5
+Beauty,mistral:7b-instruct,200,200,200,200,0,0,0,0,0,0,0.26,0.34,0.22422417928846541,0.1854617137594331
+Beauty,qwen2:7b-instruct,200,200,200,200,0,0,0,0,0,0,0.49,0.26,0.41543281576755725,0.14462653526448047
+LastFM,mistral:7b-instruct,200,200,200,200,0,0,0,0,0,0,0.59,0.5,0.5277551241576647,0.32688459337162823
+LastFM,qwen2:7b-instruct,200,200,200,200,0,0,0,0,0,0,0.81,0.43,0.6490598039415529,0.297008201438006
+Sports,mistral:7b-instruct,200,200,200,200,0,0,0,0,0,0,0.42,0.35,0.38239947294154475,0.2127786071600896
+Sports,qwen2:7b-instruct,200,200,200,200,0,0,0,0,0,0,0.49,0.33,0.44495870347817557,0.2130209442960639

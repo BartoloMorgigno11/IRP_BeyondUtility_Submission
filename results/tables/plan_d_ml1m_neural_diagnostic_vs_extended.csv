@@ -1,0 +1,17 @@
+dataset,method,metric,diagnostic_value,extended_value,absolute_delta,relative_delta,diagnostic_num_users_evaluated,extended_num_users_evaluated,diagnostic_num_train_interactions,extended_num_train_interactions,diagnostic_epochs_completed,extended_epochs_completed,notes
+ml1m,bprmf,hit_rate,0.03,0.243,0.213,7.1,100,1000,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,bprmf,ndcg,0.014046353680405408,0.15937033409037268,0.145323980409967272,10.34602884965750834889400627,100,1000,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,bprmf,final_train_loss,0.693149596452713,0.4722051227092743,-0.2209444737434387,-0.3187543855960560147735449209,100,1000,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,bprmf,best_train_loss,0.693149596452713,0.4722051227092743,-0.2209444737434387,-0.3187543855960560147735449209,100,1000,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,lightgcn,hit_rate,0.04,0.259,0.219,5.475,100,1000,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,lightgcn,ndcg,0.021487123143774566,0.1705688327335642,0.149081709589789634,6.938188448600336163025331996,100,1000,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,lightgcn,final_train_loss,0.6930791735649109,0.4225176560878754,-0.2705615174770355,-0.3903760606243290018098058498,100,1000,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,lightgcn,best_train_loss,0.6930791735649109,0.4225176560878754,-0.2705615174770355,-0.3903760606243290018098058498,100,1000,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,sasrec,hit_rate,0.08333333333333333,0.3333333333333333,0.24999999999999997,2.99999999999999976,36,672,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,sasrec,ndcg,0.042160626689055535,0.23168720425511383,0.189526577566058295,4.495345360111960692383582379,36,672,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,sasrec,final_train_loss,0.672196090221405,0.1756496965577922,-0.4965463936636128,-0.7386927726700441335012657967,36,672,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,sasrec,best_train_loss,0.672196090221405,0.1756496965577922,-0.4965463936636128,-0.7386927726700441335012657967,36,672,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,gru4rec,hit_rate,0.1388888888888889,0.2931547619047619,0.154265873015873,1.110714285714285511142857143,36,672,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,gru4rec,ndcg,0.08868155736711968,0.18426210701606538,0.0955805496489457,1.077795118699437143593460134,36,672,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,gru4rec,final_train_loss,0.6883231401443481,0.30753321761323005,-0.38078992253111805,-0.5532138908641988644463493351,36,672,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+ml1m,gru4rec,best_train_loss,0.6883231401443481,0.30753321761323005,-0.38078992253111805,-0.5532138908641988644463493351,36,672,5000,100000,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.

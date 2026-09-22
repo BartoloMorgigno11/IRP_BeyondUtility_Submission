@@ -1,0 +1,27 @@
+dataset,phase,step,status,message,path,row_count,timestamp
+sports,smoke,smoke_checks,completed,Smoke checks passed.,,34,2026-06-28T23:07:43.742862+00:00
+sports,dataset_audit,dataset_audit,ready,Verified existing dataset audit output.,results\tables\sports_dataset_audit.csv,83,2026-06-28T23:07:43.742862+00:00
+sports,llm_outputs,llm_outputs,ready,Verified recommendation file with 1707 usable row(s) and 1 empty row(s).,results\raw_outputs\sports_llm_outputs_normalized.csv,1707,2026-06-28T23:07:43.742862+00:00
+sports,baseline_outputs,baseline_outputs,not_configured,No baseline output source is configured.,results\raw_outputs\sports_baseline_outputs_normalized.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,mostpop,mostpop,not_configured,MostPop is blocked because interactions_path is not configured.,,0,2026-06-28T23:07:43.742862+00:00
+sports,reproduction,reproduction,blocked,reproduction produced diagnostics but no real metric rows.,results\tables\sports_reproduction_summary.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,reproduction,ground_truth_path,blocked,Ground-truth path is not configured.,,0,2026-06-28T23:07:43.742862+00:00
+sports,reproduction,llm_recommendations,ready,Loaded normalized llm recommendations. Skipped 1 row(s) without a non-empty recommended_item_id or recommended_item_text.,results\raw_outputs\sports_llm_outputs_normalized.csv,1707,2026-06-28T23:07:43.742862+00:00
+sports,reproduction,traditional_baseline_recommendations,missing,Normalized traditional_baseline recommendation file is missing.,results\raw_outputs\sports_baseline_outputs_normalized.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,reproduction,mostpop_recommendations,missing,Normalized mostpop recommendation file is missing.,results\raw_outputs\sports_mostpop_recommendations.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,reproduction,hallucination_reference,not_configured,LLM hallucination metrics are blocked because neither candidates_path nor catalog_path is configured to a valid readable file.,candidates_path=not_configured; catalog_path=not_configured,0,2026-06-28T23:07:43.742862+00:00
+sports,coverage,coverage,blocked,coverage produced diagnostics but no real metric rows.,results\tables\sports_coverage_summary.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,coverage,catalog_path,not_configured,Catalog Coverage@5 is blocked because catalog_path is not configured.,,0,2026-06-28T23:07:43.742862+00:00
+sports,coverage,llm_recommendations,ready,Loaded normalized llm recommendations. Skipped 1 row(s) without a non-empty recommended_item_id or recommended_item_text.,results\raw_outputs\sports_llm_outputs_normalized.csv,1707,2026-06-28T23:07:43.742862+00:00
+sports,coverage,traditional_baseline_recommendations,missing,Normalized traditional_baseline recommendation file is missing.,results\raw_outputs\sports_baseline_outputs_normalized.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,coverage,mostpop_recommendations,missing,Normalized mostpop recommendation file is missing.,results\raw_outputs\sports_mostpop_recommendations.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,position_bias,position_bias,blocked,position_bias produced diagnostics but no real metric rows.,results\tables\sports_position_bias_summary.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,position_bias,candidates_path,not_configured,Position-bias analysis is blocked because candidates_path is not configured.,,0,2026-06-28T23:07:43.742862+00:00
+sports,position_bias,llm_recommendations,ready,Loaded normalized llm recommendations. Skipped 1 row(s) without a non-empty recommended_item_id or recommended_item_text.,results\raw_outputs\sports_llm_outputs_normalized.csv,1707,2026-06-28T23:07:43.742862+00:00
+sports,position_bias,traditional_baseline_recommendations,missing,Normalized traditional_baseline recommendation file is missing.,results\raw_outputs\sports_baseline_outputs_normalized.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,position_bias,mostpop_recommendations,missing,Normalized mostpop recommendation file is missing.,results\raw_outputs\sports_mostpop_recommendations.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,history_length,history_length,blocked,history_length produced diagnostics but no real metric rows.,results\tables\sports_history_length_summary.csv,0,2026-06-28T23:07:43.742862+00:00
+sports,history_length,history_data,not_configured,History-length prompt preparation is blocked because neither history_path nor interactions_path is configured.,,0,2026-06-28T23:07:43.742862+00:00
+sports,cost,cost_metrics_module,ready,Cost/token utility functions are importable; no API calls are made.,src/evaluation/cost_metrics.py,0,2026-06-28T23:07:43.742862+00:00
+sports,cost,token_latency_inputs,not_configured,No token/latency record path is configured; cost estimates were not computed.,,0,2026-06-28T23:07:43.742862+00:00
+sports,cost,pricing_assumptions,not_configured,"configs/cost.yaml is present, but prices are null; cost estimates were not computed.",configs\cost.yaml,0,2026-06-28T23:07:43.742862+00:00

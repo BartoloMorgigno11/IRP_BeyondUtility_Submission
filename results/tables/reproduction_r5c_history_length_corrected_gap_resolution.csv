@@ -1,0 +1,5 @@
+gap_id,dataset,metric,requests_expected,requests_accounted,valid,invalid,wrong_length,parse_failure,backend_incomplete,gap_recovered,evidence_class
+R4-GAP-0007,Beauty,History-length sensitivity,600,600,600,0,0,0,0,true,PAPER_ALIGNED_ADAPTED_HISTORY_LENGTH_RECOVERY_CORRECTED
+R4-GAP-0021,LastFM,History-length sensitivity,600,600,600,0,0,0,0,true,PAPER_ALIGNED_ADAPTED_HISTORY_LENGTH_RECOVERY_CORRECTED
+R4-GAP-0033,ML-1M,History-length sensitivity,600,600,600,0,0,0,0,true,PAPER_ALIGNED_ADAPTED_HISTORY_LENGTH_RECOVERY_CORRECTED
+R4-GAP-0047,Sports,History-length sensitivity,600,600,600,0,0,0,0,true,PAPER_ALIGNED_ADAPTED_HISTORY_LENGTH_RECOVERY_CORRECTED

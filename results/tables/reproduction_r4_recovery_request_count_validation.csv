@@ -1,0 +1,4 @@
+family,raw_planned_requests,duplicate_requests,reusable_existing_outputs,unique_new_requests,count_status,notes
+CandDif,2400,1200,0,1200,PLANNING_ESTIMATE,HR and NDCG share the same paired FIRST/RANDOM outputs within each dataset; this is not a frozen request manifest.
+History,2400,0,0,2400,PLANNING_ESTIMATE,History requests are estimated from R4 gap rows; exact prompt/user/candidate hashes remain future R5A manifest work.
+Generation,800,0,0,800,PLANNING_ESTIMATE,Profile artifacts are not proposed for regeneration where existing support exists; downstream request deduplication remains future R5A manifest work.

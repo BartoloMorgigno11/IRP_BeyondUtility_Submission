@@ -1,0 +1,2 @@
+accounting_scope,logical_requests,new_ollama_calls_required,existing_g3_terminal_requests,pending_new_requests,g1_g2_reuse_requests,request_ledger_rows,response_ledger_rows,new_ollama_calls_in_dry_run
+GRAND_TOTAL,12000,12000,0,12000,0,0,0,0

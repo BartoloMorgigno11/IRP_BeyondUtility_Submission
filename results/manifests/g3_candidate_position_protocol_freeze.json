@@ -1,0 +1,114 @@
+{
+  "artifact_hashes": {
+    "configs/g3_candidate_position_execution.yaml": "a8b5d9b9bd111e93deda78eb48526272b1cbfa98bf5fc3bb26d7433dbe36788b",
+    "report/g3_candidate_position_execution_runner.md": "fdb6bd8938714c8800f6caf8e6baeb45c289bd088ac6b37b8572ec7047217717",
+    "report/g3_candidate_position_protocol.md": "6d4e67171cdcb3d3d44f45f6fc37fd41f9e4ef4450d136f604ea0079ebbc04bf",
+    "results/tables/g3_candidate_position_cohort.csv": "f8d02416601d46222a7e0c4d280a198cd049776a17385c71e9069cb524926af9",
+    "results/tables/g3_candidate_position_execution_accounting.csv": "cdd1cb26e75b89c5c7360acb036710a2d1bb91cabed9d02ddb507ac726296deb",
+    "results/tables/g3_candidate_position_execution_order.csv": "5dffabf52a91ef2d0f081e363157152825ed7b5a9ed550634d17a6b8bf27bf0a",
+    "results/tables/g3_candidate_position_metric_contract.csv": "884ed36f699e663e242987e486efc00b564258d675da65a48395a6dc067c32db",
+    "results/tables/g3_candidate_position_pair_integrity.csv": "9de7febe5fe472b57f383f59c11a83f49353772482223360aa42fe0e0be75255",
+    "results/tables/g3_candidate_position_request_accounting.csv": "60483d0ca39c468bd0088c8250735f6f6465e4e51a175c7ecf3a25014f8f56a2",
+    "results/tables/g3_candidate_position_request_universe.csv": "823723c23a1c2a6617fedd5934e4cfb14508f91b28d8e680fc884ed454ef9ba8",
+    "results/tables/g3_candidate_position_retention_plan.csv": "96f9571ef50f0d4d8bfb2737e8c1e38b288385f7c898959f76a62828a40dcca7",
+    "results/tables/g3_candidate_position_statistical_plan.csv": "143c2535675678ca6a5a363a0a3cd41a0778d633ac5e47c4d1577be903fad809",
+    "results/tables/g3_candidate_position_validation.csv": "31c3489c71fe3c10dcc90c8d92311996f385b92f4ff252f59418cb3653a63f80",
+    "src/extension/g3_candidate_position_execution.py": "d89648ff8f011164a62e41c934c1d7e06d18b9a772ea109480eb34f7cac2ceb3",
+    "tests/test_extension_g3_candidate_position_execution.py": "9f0fabb9565a076d1b46d771e731913b9095e9db0110f6398fe66274e8903164"
+  },
+  "candidate_order_conditions": [
+    "FIRST",
+    "RANDOM"
+  ],
+  "cohort_rule": "first_200_users_by_sort_key_from_frozen_G1_primary_candidate_users_after_candidate_contract_validation",
+  "created_at_utc": "2026-09-04T06:58:44Z",
+  "datasets": [
+    "beauty",
+    "sports",
+    "ml1m",
+    "lastfm",
+    "foodcom"
+  ],
+  "decision_token": "G3_BASE_LLMRANK_FIRST_RANDOM_PROTOCOL_FROZEN",
+  "first_algorithm": "positive_at_position_1_then_remaining_negatives_in_frozen_primary_candidate_order",
+  "g1_g2_reuse_requests": 0,
+  "g3_execution_started": false,
+  "generation_contract": {
+    "backend_retry_backoff_seconds": [
+      5,
+      15
+    ],
+    "backend_retry_count": 2,
+    "generation_config_hash": "7a56cfdf0644c6ad6178237477d00fa1bc2e6680f42d3dc5293487d7d3be1598",
+    "generation_config_id": "",
+    "keep_alive": "",
+    "num_ctx": "",
+    "num_predict": 256,
+    "repeat_penalty": "",
+    "response_format": "json",
+    "scientific_retry_count": 0,
+    "seed": "",
+    "stop": "",
+    "stream": false,
+    "structural_invalidity_retry_count": 0,
+    "temperature": 0.0,
+    "timeout_seconds": 150,
+    "top_k": "",
+    "top_p": ""
+  },
+  "head_before_generation": "34c231779ef48bfcd291c6435bcf52a0baf02acd",
+  "history_policy": "visible_last_10_or_available",
+  "llm_inference_calls_executed": 0,
+  "llmsrec_excluded": true,
+  "logical_requests": 12000,
+  "model_digests": {
+    "gemma2:9b": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+    "mistral:7b-instruct": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+    "qwen2:7b-instruct": "dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755"
+  },
+  "models": [
+    "qwen2:7b-instruct",
+    "mistral:7b-instruct",
+    "gemma2:9b"
+  ],
+  "new_ollama_calls_required": 12000,
+  "parser_contract_hash": "d14a76e858742ec251edf4ec5e6b063f04014ed55d9d54bb6c633ddceb515502",
+  "phase_id": "g3_candidate_position_first_random_protocol_freeze",
+  "phase_start_git_status": "?? configs/g3_candidate_position_execution.yaml\n?? src/extension/g3_candidate_position_execution.py\n?? tests/test_extension_g3_candidate_position_execution.py",
+  "precondition_head": "34c231779ef48bfcd291c6435bcf52a0baf02acd",
+  "prompt_contracts": {
+    "metric_k": 5,
+    "parser_contract": "llm_rank_strict_index_top10_v1",
+    "parser_expected_length": 10,
+    "requested_output_length": 10
+  },
+  "prompt_strategies": [
+    "BASE",
+    "LLMRANK"
+  ],
+  "random_algorithm": "sha256_seeded_sort_rotate_if_positive_first",
+  "random_key_derivation": "seed|dataset|user_id|candidate_item_id|candidate_title",
+  "random_seed": "R5A_CANDDIF_RANDOM_POSITION_V1",
+  "source_artifact_hashes": {
+    "results/manifests/f0_final_inference_contract.json": "7bf74991efec2219607412c3baa3c7eef20629a2b6fa50b3a9a95dd8308f8714",
+    "results/manifests/g1_primary_ranking_execution_manifest.json": "351eb31d4ae938c755c913b312e690e5be066f43d0128df252f62c2d3c9856b9",
+    "results/manifests/g1_primary_ranking_retention_manifest.json": "9e400e2bab4699cb3980340890b95bd5bf206d662090646aebe82e5406b92868",
+    "results/manifests/g2_history_length_execution_retention_manifest.json": "582e6818d1870f1ecb31b5597f05e6706a9cddce85c6c2556d62d01bd39763f4",
+    "results/manifests/g2_history_length_scientific_synthesis_manifest.json": "d17ee7278c010a40d546110e46248cf69c4367374ca5181b51aedc5a0391c627",
+    "results/tables/g1_primary_ranking_request_universe.csv": "84d55fbc3f7307f1b2a255d3ea588d09cf38a154ea199c4eaaed69a53fc5af8c"
+  },
+  "table_hashes": {
+    "results/tables/g3_candidate_position_cohort.csv": "f8d02416601d46222a7e0c4d280a198cd049776a17385c71e9069cb524926af9",
+    "results/tables/g3_candidate_position_metric_contract.csv": "884ed36f699e663e242987e486efc00b564258d675da65a48395a6dc067c32db",
+    "results/tables/g3_candidate_position_pair_integrity.csv": "9de7febe5fe472b57f383f59c11a83f49353772482223360aa42fe0e0be75255",
+    "results/tables/g3_candidate_position_request_accounting.csv": "60483d0ca39c468bd0088c8250735f6f6465e4e51a175c7ecf3a25014f8f56a2",
+    "results/tables/g3_candidate_position_request_universe.csv": "823723c23a1c2a6617fedd5934e4cfb14508f91b28d8e680fc884ed454ef9ba8",
+    "results/tables/g3_candidate_position_retention_plan.csv": "96f9571ef50f0d4d8bfb2737e8c1e38b288385f7c898959f76a62828a40dcca7",
+    "results/tables/g3_candidate_position_statistical_plan.csv": "143c2535675678ca6a5a363a0a3cd41a0778d633ac5e47c4d1577be903fad809",
+    "results/tables/g3_candidate_position_validation.csv": "31c3489c71fe3c10dcc90c8d92311996f385b92f4ff252f59418cb3653a63f80"
+  },
+  "users_per_dataset": 200,
+  "validation_fail": 0,
+  "validation_pass": 25,
+  "validation_passed": true
+}

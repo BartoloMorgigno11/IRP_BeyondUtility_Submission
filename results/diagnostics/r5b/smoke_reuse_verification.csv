@@ -1,0 +1,5 @@
+request_id,dataset,model_name,condition,same_prompt_hash,same_model_identifier,same_manifest_row,same_params,result_file,parse_status
+R5A-REQ-4EA016A34526A13C,Beauty,mistral:7b-instruct,CANDDIF_FIRST,True,True,True,True,results/recovery/r5/R5A-REQ-4EA016A34526A13C.json,invalid_length
+R5A-REQ-6D0E5FD8D3303B11,Beauty,mistral:7b-instruct,CANDDIF_RANDOM,True,True,True,True,results/recovery/r5/R5A-REQ-6D0E5FD8D3303B11.json,parsed_valid
+R5A-REQ-D821EF2CB333B9AF,Beauty,qwen2:7b-instruct,CANDDIF_FIRST,True,True,True,True,results/recovery/r5/R5A-REQ-D821EF2CB333B9AF.json,invalid_length
+R5A-REQ-2C2F4A86B733A59E,Beauty,qwen2:7b-instruct,CANDDIF_RANDOM,True,True,True,True,results/recovery/r5/R5A-REQ-2C2F4A86B733A59E.json,invalid_length

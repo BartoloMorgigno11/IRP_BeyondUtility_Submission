@@ -1,0 +1,61 @@
+dataset,model_name,profile_condition,task,cohort_size,request_count,status,mandatory_class,budget_class,dependency,blocker
+beauty,qwen2:7b-instruct,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,beauty_qwen2:7b-instruct_history_L20,
+beauty,qwen2:7b-instruct,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+beauty,qwen2:7b-instruct,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+beauty,qwen2:7b-instruct,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+beauty,mistral:7b-instruct,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,beauty_mistral:7b-instruct_history_L20,
+beauty,mistral:7b-instruct,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+beauty,mistral:7b-instruct,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+beauty,mistral:7b-instruct,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+beauty,gemma2:9b,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,beauty_gemma2:9b_history_L20,
+beauty,gemma2:9b,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+beauty,gemma2:9b,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+beauty,gemma2:9b,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+sports,qwen2:7b-instruct,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,sports_qwen2:7b-instruct_history_L20,
+sports,qwen2:7b-instruct,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+sports,qwen2:7b-instruct,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+sports,qwen2:7b-instruct,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+sports,mistral:7b-instruct,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,sports_mistral:7b-instruct_history_L20,
+sports,mistral:7b-instruct,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+sports,mistral:7b-instruct,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+sports,mistral:7b-instruct,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+sports,gemma2:9b,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,sports_gemma2:9b_history_L20,
+sports,gemma2:9b,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+sports,gemma2:9b,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+sports,gemma2:9b,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+ml1m,qwen2:7b-instruct,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,ml1m_qwen2:7b-instruct_history_L20,
+ml1m,qwen2:7b-instruct,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+ml1m,qwen2:7b-instruct,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+ml1m,qwen2:7b-instruct,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+ml1m,mistral:7b-instruct,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,ml1m_mistral:7b-instruct_history_L20,
+ml1m,mistral:7b-instruct,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+ml1m,mistral:7b-instruct,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+ml1m,mistral:7b-instruct,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+ml1m,gemma2:9b,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,ml1m_gemma2:9b_history_L20,
+ml1m,gemma2:9b,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+ml1m,gemma2:9b,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+ml1m,gemma2:9b,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+lastfm,qwen2:7b-instruct,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,lastfm_qwen2:7b-instruct_history_L20,
+lastfm,qwen2:7b-instruct,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+lastfm,qwen2:7b-instruct,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+lastfm,qwen2:7b-instruct,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+lastfm,mistral:7b-instruct,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,lastfm_mistral:7b-instruct_history_L20,
+lastfm,mistral:7b-instruct,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+lastfm,mistral:7b-instruct,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+lastfm,mistral:7b-instruct,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+lastfm,gemma2:9b,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,lastfm_gemma2:9b_history_L20,
+lastfm,gemma2:9b,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+lastfm,gemma2:9b,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+lastfm,gemma2:9b,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+foodcom,qwen2:7b-instruct,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,foodcom_qwen2:7b-instruct_history_L20,
+foodcom,qwen2:7b-instruct,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+foodcom,qwen2:7b-instruct,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+foodcom,qwen2:7b-instruct,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+foodcom,mistral:7b-instruct,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,foodcom_mistral:7b-instruct_history_L20,
+foodcom,mistral:7b-instruct,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+foodcom,mistral:7b-instruct,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+foodcom,mistral:7b-instruct,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+foodcom,gemma2:9b,HISTORY_ONLY,ranking,200,0,REUSES_HISTORY_L20_RAW,CONDITIONAL_CONTEXT_ONLY,OFFLINE_NO_LLM,foodcom_gemma2:9b_history_L20,
+foodcom,gemma2:9b,PROFILE_GENERATION,profile_generation,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_prompt_contract_freeze,profile orchestration is scientifically relevant but not mandatory core
+foodcom,gemma2:9b,PROFILE_ONLY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core
+foodcom,gemma2:9b,PROFILE_PLUS_HISTORY,ranking,200,200,CONDITIONAL,CONDITIONAL,CONDITIONAL,profile_generation_protocol_freeze,profile orchestration is scientifically relevant but not mandatory core

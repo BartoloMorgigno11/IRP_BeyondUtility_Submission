@@ -1,0 +1,4 @@
+source_id,source_path,source_exists,terminal_rows_observed,canonical_id_overlap_with_g4,reuse_allowed,exact_reused_rows,reason,status
+g0_canary,results/llm/extension_canonical/g0_canary/responses.jsonl,true,72,36,false,0,excluded_by_g4_response_reuse_zero,G4_RESPONSE_REUSE_EXPLICITLY_ZERO
+g1_primary_ranking,results/llm/extension_canonical/g1_primary_ranking/responses.jsonl,true,29256,0,false,0,different_task_candidate_source,G4_RESPONSE_REUSE_EXPLICITLY_ZERO
+f6m_lastfm_reranking,results/llm/lastfm_reranking_v4_1/responses.jsonl,false,0,0,false,0,explicitly_excluded_not_f1bzq_g4,G4_RESPONSE_REUSE_EXPLICITLY_ZERO

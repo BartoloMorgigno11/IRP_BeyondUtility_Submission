@@ -1,0 +1,169 @@
+{
+  "artifact_hashes": {
+    "configs/rq5_final_freeze.yaml": {
+      "sha256": "a28dfae72ec54ba711f74721f68f03871cfcab3c5f785d0234261d78c84dc40c",
+      "size": 1882
+    },
+    "configs/rq5_freeze_requirements.txt": {
+      "sha256": "07e6d8ecfe15c39ed3febe6856a01f6e1382fe5ec4ed096e816ea1be1d157d11",
+      "size": 375
+    },
+    "report/rq5_final_scientific_freeze.md": {
+      "sha256": "55daca850deb414ebb0617fcd823fba6c2f0f32e3eb7d565e32fa3a9f2f5a342",
+      "size": 5272
+    },
+    "results/rq5_final_scientific_freeze/corrected/bootstrap_results.csv": {
+      "sha256": "f81d55d54468fe363b898635040c0299fa4303a9d94ce0dcdfcb10e5a8e712dc",
+      "size": 7759
+    },
+    "results/rq5_final_scientific_freeze/corrected/matching_validation.csv": {
+      "sha256": "3266abdd6285d353665c79914959dad34416ba2d646b757fe97496d203b0f11b",
+      "size": 150448
+    },
+    "results/rq5_final_scientific_freeze/corrected/metrics.csv": {
+      "sha256": "98c7782211ec143c46205591a1cebc2dc4e5798926aef23badd34287cdd3f312",
+      "size": 2877
+    },
+    "results/rq5_final_scientific_freeze/corrected/paired_contributions.csv": {
+      "sha256": "68fb7d4565d9a8a7f9aa2c7447272fe945c4ac66d0066f6af7799500b35abd70",
+      "size": 1538082
+    },
+    "results/rq5_final_scientific_freeze/corrected/per_user.csv": {
+      "sha256": "1b1b59508e5e56222db4546de8c4256f968ffd2c98d4cb848cda47e17c57b3d0",
+      "size": 1177890
+    },
+    "results/rq5_final_scientific_freeze/corrected/profile_reuse_audit.csv": {
+      "sha256": "cc7522c9dfd8f293e428a59ed91e5c4ecdee48508987b481b7aeb57908eae636",
+      "size": 299758
+    },
+    "results/rq5_final_scientific_freeze/corrected/ranking_reuse_audit.csv": {
+      "sha256": "0257238f2f891f827703388939b6f5ad6371bb7858621006a1c576bab578a1e9",
+      "size": 36246
+    },
+    "results/rq5_final_scientific_freeze/corrected/request_universe.csv": {
+      "sha256": "8847ae2ce87a6d4f3c2bedd6c947dc662255b989ffffa95b9f0a86623b017ea8",
+      "size": 26198729
+    },
+    "results/rq5_final_scientific_freeze/corrected/validation.json": {
+      "sha256": "2449578f4e1ddc4a39149b2ead7eb31ae47708d0008a27ecf5175ad1f02af07c",
+      "size": 358
+    },
+    "results/rq5_final_scientific_freeze/evidence_corrected.zip": {
+      "sha256": "4e0e5a6128e0c5acda03d6919168226d56d6c5dbbf5e3001a8951be2f0cbc0da",
+      "size": 27711917
+    },
+    "results/rq5_final_scientific_freeze/evidence_f6l.zip": {
+      "sha256": "c4561cfbfc450e35ee205743dba1cd0ef0a1c6e913419e7f269bdb75813bb241",
+      "size": 37282419
+    },
+    "results/rq5_final_scientific_freeze/evidence_figure_inputs.zip": {
+      "sha256": "1d9a27bba9f1925aa77f1925812659dc5d38184da815b1ad9981363743ca5d5a",
+      "size": 2869
+    },
+    "results/rq5_final_scientific_freeze/evidence_history_v1.zip": {
+      "sha256": "33c47c66f77aec7837f7ff7b99dadd48981692fbb3defa62610a89ad3c8bc599",
+      "size": 55976046
+    },
+    "results/rq5_final_scientific_freeze/evidence_pilot_v2.zip": {
+      "sha256": "d11b1aa7e168613a9574533653da4fd738fd3f65bfbc8d0c6e4c42ed2af63fab",
+      "size": 1328309
+    },
+    "results/rq5_final_scientific_freeze/evidence_popularity.zip": {
+      "sha256": "e8dad24b644abf1bf1bde9c6bf1d3ad72e2454ce099e5753d0d3176e85bafd11",
+      "size": 57929136
+    },
+    "results/rq5_final_scientific_freeze/evidence_r5d.zip": {
+      "sha256": "22bc924c56f61ed9999afbd2d96617cc1a5ce165891b803ead76fbc9d33f41d1",
+      "size": 5749826
+    },
+    "results/rq5_final_scientific_freeze/evidence_systematic.zip": {
+      "sha256": "a594ce5acab9925e4662cc9bf2d76e2724db413719887a1130eead172b7fe01e",
+      "size": 73819601
+    },
+    "results/rq5_final_scientific_freeze/history_v2/validation.json": {
+      "sha256": "8edd6d8db799747171ecf034dbec9cc4cd591e042bdb9e72093026893b922a58",
+      "size": 466
+    },
+    "results/rq5_final_scientific_freeze/package_inventory.csv": {
+      "sha256": "66f15413fb68321a731f309edbb0f2a84e72aa25b269d94117a98b1e743b230c",
+      "size": 19271236
+    },
+    "results/rq5_final_scientific_freeze/scientific_synthesis.json": {
+      "sha256": "14c4d9e53b3bf7de28e5a94c4ab552cfb3d1131e63d393225d776fc9665a62a3",
+      "size": 5668
+    },
+    "results/rq5_final_scientific_freeze/systematic/validation.json": {
+      "sha256": "af15626f528a762e31fa73ce137ca4554e939e5c0bbb17a88c32c2626ce5caa6",
+      "size": 360
+    },
+    "results/rq5_final_scientific_freeze/validation.json": {
+      "sha256": "489d214b3cc0e9fb9711f02a9891efdfd99586bb8681d857d0b79c6680dc9871",
+      "size": 1825
+    },
+    "src/analysis/rq5_clean_room_check.py": {
+      "sha256": "6f5bfffa8c0cf33a727206def0dea0c923287a555e46f36a71f9c323ea14e162",
+      "size": 7244
+    },
+    "src/analysis/rq5_final_freeze.py": {
+      "sha256": "715e01fdc2af5462494c402b93f8ba685a1f563c76f190140167a92f1600dbda",
+      "size": 41275
+    },
+    "src/analysis/rq5_package_import.py": {
+      "sha256": "ef38156aa4ca50b6ee620cdf2385bf81f950276f3344f78b85a48b5c74d57160",
+      "size": 9179
+    },
+    "src/evaluation/rq5_freeze_metrics.py": {
+      "sha256": "a1bd068bfe085f75b3f71a4e6a1fa1efee2087d5606ba75d390a09ca262307fc",
+      "size": 2660
+    },
+    "tests/test_rq5_final_freeze.py": {
+      "sha256": "29b213aee6f618b289198c299b4fde5d5d00027941968140197c4f3083d4ae6f",
+      "size": 7357
+    }
+  },
+  "authority": "FOREGROUND",
+  "base_commit": "88c6987ffa7b0b246918686b720eb911896ebd48",
+  "dependencies": [
+    "evidence_corrected.zip",
+    "evidence_f6l.zip",
+    "evidence_pilot_v2.zip"
+  ],
+  "environment": {
+    "dependency_lock": "configs/rq5_freeze_requirements.txt",
+    "matplotlib": "3.11.0",
+    "numpy": "2.5.0",
+    "pandas": "3.0.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "pyyaml": "6.0.3"
+  },
+  "family": "corrected",
+  "freeze_commit": {
+    "resolution": "commit_provenance.json",
+    "rule": "actual commit whose tree contains this exact freeze_manifest.json blob; never the pre-freeze checkout",
+    "self_reference_explanation": "Git commit cannot contain its own hash; a subsequent provenance-only commit records the containing commit"
+  },
+  "package_inventory": "results/rq5_final_scientific_freeze/package_inventory.csv",
+  "raw_unchanged": true,
+  "source_commits": {
+    "master": "944798f3e754576beef2a03bd5a00811a285b1e6",
+    "r5d_freeze": "ba1dbe8367216f7ea1044b2ff8db69318f8678ee",
+    "submission_prof": "01e68c6c5e3b074c1e7bcbab44f5007d221b3653"
+  },
+  "validation": {
+    "authority": "FOREGROUND",
+    "bootstrap_contrasts": 32,
+    "decisions": {
+      "CI_SUPPORTED_NEGATIVE": 1,
+      "CI_SUPPORTED_POSITIVE": 2,
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 29
+    },
+    "matched_pairs": 3200,
+    "profiles": 800,
+    "ranking_reused": 200,
+    "rankings": 4000,
+    "raw_inference_unchanged": true,
+    "status": "PASS",
+    "strict_valid": 3996
+  }
+}

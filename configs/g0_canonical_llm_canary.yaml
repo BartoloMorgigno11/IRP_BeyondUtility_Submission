@@ -1,0 +1,65 @@
+phase:
+  id: g0_canonical_llm_canary
+  expected_head: 727340acdcfe29bf03a75ee309cdc6b848f967c4
+  predecessor_state: F1BZQ_CHECKPOINT_FROZEN
+  phase_start_clean_verified: true
+  phase_start_clean_evidence: git status --short --untracked-files=all returned empty after F1BZQ checkpoint commit
+  success_token: G0_CANONICAL_LLM_CANARY_VALIDATED
+  blocked_token: G0_CANONICAL_LLM_CANARY_BLOCKED
+
+execution:
+  allow_local_ollama_inference: true
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network_downloads: false
+  allow_training: false
+  allow_tuning: false
+  allow_traditional_ranking_regeneration: false
+  allow_f1bzq_pool_regeneration: false
+  allow_commit: false
+  ollama_base_url: http://127.0.0.1:11434
+  temperature: 0
+  max_output_tokens:
+    ranking: 256
+    reranking: 256
+  timeout_seconds: 300
+  infrastructure_retry_count: 0
+  scientific_retry_count: 0
+  stream: false
+  response_format: json
+  request_order: dataset_user_task_prompt_model
+
+models:
+  - qwen2:7b-instruct
+  - mistral:7b-instruct
+  - gemma2:9b
+
+prompt_strategies:
+  - BASE
+  - LLMRANK
+
+tasks:
+  - ranking
+  - reranking
+
+selection:
+  deterministic_salt: G0_CANONICAL_LLM_CANARY_SELECTION_V1
+  non_foodcom_users_per_dataset: 1
+  foodcom_warm_users: 1
+  foodcom_true_zero_history_users: 1
+  use_recommendation_success_for_selection: false
+  use_candidate_recall_for_selection: false
+
+inputs:
+  f1bx_config: configs/f1bx_execution_stage1.yaml
+  f1bz_config: configs/f1bz_final_traditional_execution.yaml
+  f0_primary_ranking_matrix: results/tables/f0_final_primary_ranking_matrix.csv
+  f1bzq_authoritative_pool_manifest: results/manifests/f1bzq_authoritative_pool_manifest.json
+  f1bzq_source_manifest: results/manifests/f1bzq_source_ranking_manifest.json
+  f1bzq_reranking_readiness: results/tables/f1bzq_reranking_readiness.csv
+  f1bzq_reranking_candidate_manifest: results/tables/f1bzq_reranking_candidate_manifest.csv
+  f1bzq_supersession_validation: results/tables/f1bzq_supersession_validation.csv
+  f0_request_budget: results/tables/f0_final_request_budget.csv
+
+outputs:
+  raw_dir: results/llm/extension_canonical/g0_canary

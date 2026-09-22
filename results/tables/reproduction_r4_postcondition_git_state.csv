@@ -1,0 +1,46 @@
+phase,check,returncode,output,timestamp_utc
+postcondition,branch,0,master,2026-08-17T22:42:42.521355+00:00
+postcondition,head,0,357d8a4cf98c78effc6c92f5b8dc00e334836a56,2026-08-17T22:42:42.548991+00:00
+postcondition,status_short,0,"M report/notes.md
+?? configs/reproduction_r4_three_way_reconciliation.yaml
+?? final_metric_paper_comparison_values.md
+?? original_repo_metric_file_inventory.csv
+?? original_repo_metric_values_decoded.csv
+?? original_repo_metric_values_decoded_summary.csv
+?? original_repo_metric_values_decoded_wide.csv
+?? original_repo_requested_metric_values_decoded.csv
+?? report/reproduction_r4_three_way_beyond_utility_reconciliation.md
+?? requested_metric_candidate_position_bias_values.csv
+?? requested_metric_generation_involved_performance_values.csv
+?? requested_metric_history_length_sensitivity_values.csv
+?? requested_metric_novelty_values.csv
+?? requested_metric_paper_comparison_values.csv
+?? requested_metric_values_summary.csv
+?? src/analysis/reproduction_r4_three_way_reconciliation.py
+?? src/experiments/build_reproduction_r4_three_way_reconciliation.py
+?? tests/test_reproduction_r4_three_way_reconciliation.py",2026-08-17T22:42:42.604784+00:00
+postcondition,status_branch,0,"## master...origin/master [ahead 3]
+ M report/notes.md
+?? configs/reproduction_r4_three_way_reconciliation.yaml
+?? final_metric_paper_comparison_values.md
+?? original_repo_metric_file_inventory.csv
+?? original_repo_metric_values_decoded.csv
+?? original_repo_metric_values_decoded_summary.csv
+?? original_repo_metric_values_decoded_wide.csv
+?? original_repo_requested_metric_values_decoded.csv
+?? report/reproduction_r4_three_way_beyond_utility_reconciliation.md
+?? requested_metric_candidate_position_bias_values.csv
+?? requested_metric_generation_involved_performance_values.csv
+?? requested_metric_history_length_sensitivity_values.csv
+?? requested_metric_novelty_values.csv
+?? requested_metric_paper_comparison_values.csv
+?? requested_metric_values_summary.csv
+?? src/analysis/reproduction_r4_three_way_reconciliation.py
+?? src/experiments/build_reproduction_r4_three_way_reconciliation.py
+?? tests/test_reproduction_r4_three_way_reconciliation.py",2026-08-17T22:42:42.656017+00:00
+postcondition,diff_stat,0,"report/notes.md | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+warning: in the working copy of 'report/notes.md', CRLF will be replaced by LF the next time Git touches it",2026-08-17T22:42:42.710959+00:00
+postcondition,cached_diff_stat,0,,2026-08-17T22:42:42.739958+00:00
+postcondition,original_repo_status,0,## main...origin/main,2026-08-17T22:42:42.770245+00:00
+postcondition,original_repo_diff_stat,0,,2026-08-17T22:42:42.803131+00:00

@@ -1,0 +1,10 @@
+check_name,status,finding,recommendation
+raw_outputs_present,audit_only,7 raw JSONL files found under results/raw_outputs/.,Keep raw local traces Git-ignored; do not commit .jsonl responses.
+raw_outputs_gitignored,passed,Raw-output ignore pattern is present.,Maintain a Git ignore rule for results/raw_outputs/*.jsonl.
+no_raw_jsonl_intended_for_commit,passed,No tracked raw JSONL files under results/raw_outputs/.,Do not stage or commit raw JSONL responses.
+original_repo_not_modified,passed,No Git-visible original_repo/ modifications detected.,Do not modify original_repo/ unless explicitly instructed.
+no_checkpoint_model_cache_files_tracked,passed,No tracked checkpoint/model/cache files detected by suffix scan.,"Keep model weights, checkpoints, and caches out of Git."
+large_files_summary,audit_only,.venv/Lib/site-packages/torch/lib/cublas64_12.dll (100188672 bytes); .venv/Lib/site-packages/torch/lib/cublasLt64_12.dll (472802816 bytes); .venv/Lib/site-packages/torch/lib/cudnn_adv64_9.dll (241576488 bytes); .venv/Lib/site-packages/torch/lib/cudnn_engines_precompiled64_9.dll (588910632 bytes); .venv/Lib/site-packages/torch/lib/cudnn_heuristic64_9.dll (85741608 bytes); .venv/Lib/site-packages/torch/lib/cudnn_ops64_9.dll (107721256 bytes); .venv/Lib/site-packages/torch/lib/cufft64_11.dll (291784192 bytes); .venv/Lib/site-packages/torch/lib/curand64_10.dll (63308800 bytes); .venv/Lib/site-packages/torch/lib/cusolver64_11.dll (114861056 bytes); .venv/Lib/site-packages/torch/lib/cusolverMg64_11.dll (78133248 bytes),Review large files manually before committing if any are listed.
+test_suite_command,audit_only,Recommended command: python -m pytest tests/ -q,Run before final handoff.
+final_git_status_command,audit_only,Recommended command: git status --short,Review staged/untracked files manually before committing.
+destructive_cleanup,passed,No destructive cleanup was performed by D5L.,Do not run git clean -fd or delete raw outputs automatically.

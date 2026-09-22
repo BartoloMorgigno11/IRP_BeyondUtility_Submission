@@ -1,0 +1,2 @@
+relative_path,change_type,classification,required_action
+report/notes.md,HASH_CHANGED,TEST_SIDE_EFFECT_UNRESOLVED,Identify and isolate the builder/test that rewrites running notes during full-suite; do not update F2 or D1R baseline to accept it.

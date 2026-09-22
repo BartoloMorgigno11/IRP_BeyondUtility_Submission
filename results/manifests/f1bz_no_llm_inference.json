@@ -1,0 +1,12 @@
+{
+  "decision_token": "F1BZ_FINAL_TRADITIONAL_EXECUTION_VALIDATED",
+  "downloads_executed": 0,
+  "external_api_calls_executed": 0,
+  "f0_budget_unchanged": true,
+  "f1bz_manifest_hash": "8fcbfa36eda76341dc78c984b2e0965dca59626e9f7cd7204d9d161068c9afb5",
+  "future_llm_requests_unlocked_not_executed": 29292,
+  "llm_inference_calls_executed": 0,
+  "network_calls_executed": 0,
+  "ollama_recommendation_calls_executed": 0,
+  "phase_id": "f1bz_final_traditional_execution"
+}

@@ -1,0 +1,65 @@
+{
+  "authority_branch": "submission/final",
+  "canonical_provenance_manifest": "results/manifests/g4_f1bzq_canonical_provenance.json",
+  "external_execution_evidence_policy": {
+    "classification": "EXTERNAL_FROZEN_EXECUTION_EVIDENCE",
+    "mandatory_git_dependency": false,
+    "reference_manifest": "results/manifests/g4_f1bzq_canonical_provenance.json"
+  },
+  "frozen_metric_reproduction_authority": [
+    "results/raw_outputs/f1bzq_reranking_pools/",
+    "results/tables/g4_f1bzq_analytic_universe.csv",
+    "results/tables/g4_f1bzq_metric_results.csv",
+    "results/tables/g4_f1bzq_candidate_conditional_metrics.csv",
+    "results/tables/g4_f1bzq_metric_denominators.csv",
+    "results/tables/g4_f1bzq_reliability.csv",
+    "results/tables/g4_f1bzq_statistical_results.csv",
+    "results/tables/g4_f1bzq_statistical_paired_contributions.csv.gz"
+  ],
+  "phase_id": "g4_f1bzq_reproducibility_contract",
+  "schema_version": "1.0",
+  "tiers": {
+    "TIER_1_FROZEN_REPRODUCTION": {
+      "external_ledgers_required": false,
+      "guarantee": "Recompute and validate frozen G4 metrics and statistics without checkpoints, raw datasets, or LLM inference.",
+      "inputs": [
+        "committed F1BZQ candidate pools",
+        "committed G4 analytic universe",
+        "committed G4 metric and statistical artifacts"
+      ],
+      "requires_checkpoints": false,
+      "requires_llm_inference": false,
+      "requires_raw_datasets": false
+    },
+    "TIER_2_CANDIDATE_RECONSTRUCTION": {
+      "alternatives": [
+        {
+          "inputs": [
+            "committed first-stage rankings"
+          ],
+          "scope": "Deterministically reconstruct the authoritative balanced F1BZQ pools."
+        },
+        {
+          "inputs": [
+            "100 recorded first-stage checkpoints",
+            "reconstructed datasets and cohort selectors"
+          ],
+          "scope": "Reconstruct first-stage rankings and then the authoritative balanced F1BZQ pools."
+        }
+      ],
+      "requires_llm_inference": false
+    },
+    "TIER_3_FULL_FRESH_EXECUTION": {
+      "byte_identical_llm_output_guaranteed": false,
+      "guarantee_limit": "Frozen derived evidence alone does not guarantee byte-identical fresh LLM inference.",
+      "inputs": [
+        "reconstructed or acquired datasets",
+        "cohort selectors",
+        "checkpoints or deterministic retraining",
+        "exact recorded LLM model identifiers and digests",
+        "compatible inference runtime",
+        "G4 execution pipeline"
+      ]
+    }
+  }
+}

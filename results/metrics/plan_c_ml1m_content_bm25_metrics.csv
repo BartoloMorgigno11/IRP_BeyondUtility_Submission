@@ -1,0 +1,4 @@
+dataset,baseline,k,metric,value,evaluated_users,recommendation_rows,diagnostic_subset,max_users,run_scope,reconstruction_status,status,notes,timestamp
+ml1m,content_bm25,5,hit_rate,0.23758278145695363,6040,604000,False,,full,reconstructed_from_public_raw,computed,Computed against reconstructed Plan C ground truth and candidates.,2026-06-29T16:06:30.191078+00:00
+ml1m,content_bm25,5,ndcg,0.15623585797304218,6040,604000,False,,full,reconstructed_from_public_raw,computed,Computed against reconstructed Plan C ground truth and candidates.,2026-06-29T16:06:30.191078+00:00
+ml1m,content_bm25,5,catalog_coverage,0.5977337110481586,6040,604000,False,,full,reconstructed_from_public_raw,computed,Catalog Coverage@K over reconstructed Plan C catalog.,2026-06-29T16:06:30.191078+00:00

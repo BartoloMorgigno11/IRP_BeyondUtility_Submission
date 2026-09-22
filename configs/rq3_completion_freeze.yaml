@@ -1,0 +1,72 @@
+paths:
+  OUTPUT_DIR: results/rq3_completion_scientific_freeze
+  REQUEST_MANIFEST: results/rq3_completion_scientific_freeze/request_manifest.csv.gz
+  TERMINAL_ARCHIVE: results/rq3_completion_scientific_freeze/terminal_evidence.tar.gz
+  COHORT: results/tables/g2_history_length_cohort.csv
+  CANONICAL_CONTRIBUTIONS: results/tables/g2_history_length_statistical_paired_contributions.csv
+  CANONICAL_GRID: results/tables/g2_history_length_readout_metric_values.csv
+  FINAL_GRID: results/tables/rq3_llm_history_metric_grid_final.csv
+  G2_CONFIG: configs/g2_history_length_sensitivity.yaml
+  G2_ANALYSIS_MANIFEST: results/manifests/g2_history_length_analysis_universe_freeze.json
+  G2_READOUT_MANIFEST: results/manifests/g2_history_length_scientific_readout_manifest.json
+  G2_STATS_MANIFEST: results/manifests/g2_history_length_statistical_analysis_manifest.json
+experiment:
+  allow_api_calls: false
+  expected_by_history:
+    3: 14298
+    4: 14298
+    15: 12198
+  expected_totals:
+    expected: 40794
+    accounted: 40794
+    valid: 40330
+    invalid: 464
+    backend_incomplete: 0
+    missing: 0
+  history_grids:
+    GE10:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 10
+    GE20:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 10
+    - 15
+    - 20
+  bootstrap_resamples: 10000
+  bootstrap_seed: 20260901
+  contrasts:
+  - - H2_H3
+    - PRIMARY_B1_GE10
+    - 2
+    - 3
+    - 14298
+  - - H3_H4
+    - PRIMARY_B1_GE10
+    - 3
+    - 4
+    - 14298
+  - - H4_H5
+    - PRIMARY_B1_GE10
+    - 4
+    - 5
+    - 14298
+  - - H10_H15
+    - SECONDARY_FULL_CURVE_GE20
+    - 10
+    - 15
+    - 12198
+  - - H15_H20
+    - SECONDARY_FULL_CURVE_GE20
+    - 15
+    - 20
+    - 12198

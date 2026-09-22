@@ -1,0 +1,205 @@
+# Local environments and secrets
+.env
+.env.*
+!.env.example
+.venv/
+.venv_*/
+venv/
+env/
+
+# Transitional local archive from cleanup runs; canonical archive files live under
+# report/archive/ and results/archive/ when selected for Git.
+/archive/
+
+# External evidence bundles remain outside normal Git unless a phase promotes a
+# small manifest or report into the tracked foreground.
+/archive_external/
+
+# Python cache and tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.pytest_cache*/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Large local raw datasets
+data/raw/*
+!data/raw/.gitkeep
+
+# Dataset-5 Food.com raw and processed scientific inputs are local-only.
+data/processed/foodcom/
+
+# Manually staged Plan C external artifacts
+data/external/plan_c/*
+!data/external/plan_c/.gitkeep
+
+# Generated Plan C reconstructed datasets
+data/reconstructed/plan_c/*
+!data/reconstructed/plan_c/.gitkeep
+
+# Large generated Plan B recommendation outputs
+results/raw_outputs/ml1m_*_recommendations.csv
+
+# Large generated Plan C recommendation outputs
+results/raw_outputs/plan_c_*_recommendations.csv
+results/raw_outputs/plan_c_*diagnostic_max_users_*_recommendations.csv
+
+# Large generated Plan D recommendation outputs and optional model caches
+results/raw_outputs/plan_d_*_recommendations.csv
+results/raw_outputs/plan_d_*_raw.jsonl
+results/checkpoints/plan_d_*/
+results/cache/plan_d_*/
+
+# GitHub readiness cleanup: local runtime, raw, and bulk generated outputs
+data/processed/finalization_*
+results/environment/
+results/llm/
+!results/llm/
+results/llm/*
+!results/llm/extension_canonical/
+results/llm/extension_canonical/*
+!results/llm/extension_canonical/g0_canary/
+!results/llm/extension_canonical/g0_canary/**
+results/models/
+results/checkpoints/
+results/predictions/
+results/logs/
+!results/logs/.gitkeep
+
+# Keep canonical F6M foreground result tables tracked; hide nonselected local tables.
+results/tables/*
+!results/tables/.gitkeep
+!results/tables/phase_f6m_*.csv
+!results/tables/d0a_*.csv
+!results/tables/d0b_*.csv
+!results/tables/d1_*.csv
+!results/tables/d1r_*.csv
+!results/tables/d1r2_*.csv
+!results/tables/d1r3_*.csv
+!results/tables/d1f_*.csv
+!results/tables/f0_*.csv
+!results/tables/f0r_*.csv
+!results/tables/f1a_*.csv
+!results/tables/f1ar_*.csv
+!results/tables/f1arr_*.csv
+!results/tables/f1b_*.csv
+!results/tables/f1br_*.csv
+!results/tables/f1bx_*.csv
+!results/tables/f1bxr_*.csv
+!results/tables/f1by_*.csv
+!results/tables/f1bz_*.csv
+!results/tables/f1bza_*.csv
+!results/tables/f1bzc_*.csv
+!results/tables/f1bzp_*.csv
+!results/tables/f1bzq_*.csv
+!results/tables/g0_*.csv
+!results/tables/extension_cell_*.csv
+!results/tables/extension_raw_experiment_universe.csv
+!results/tables/extension_metric_applicability_matrix.csv
+!results/tables/extension_parity_summary.csv
+!results/tables/extension_h0_*.csv
+!results/tables/extension_e1_*.csv
+!results/tables/extension_e2_*.csv
+!results/tables/extension_e3_foodcom_*.csv
+!results/tables/g1_primary_ranking_30_cell_completeness.csv
+!results/tables/g1_primary_ranking_utility.csv
+!results/tables/g1_primary_ranking_beyond_utility.csv
+!results/tables/g1_primary_ranking_complete_case.csv
+!results/tables/g1_primary_ranking_foodcom_warm_cold.csv
+!results/tables/g1_primary_ranking_reliability.csv
+!results/tables/g1_primary_ranking_runtime.csv
+!results/tables/g1_primary_ranking_validation.csv
+!results/tables/g2_history_length_*.csv
+# GitHub-publishable deterministic packages for oversized foreground evidence.
+results/tables/g2_history_length_request_universe.csv
+results/tables/g2_history_length_execution_order.csv
+results/tables/g4_f1bzq_statistical_paired_contributions.csv
+!results/tables/g2_history_length_request_universe.csv.gz
+!results/tables/g2_history_length_execution_order.csv.gz
+!results/tables/g4_f1bzq_statistical_paired_contributions.csv.gz
+!results/tables/g1_primary_ranking_per_request_stats.csv.gz
+!results/tables/g1_primary_ranking_strict_parsing.csv.gz
+!results/tables/g1_primary_ranking_recommendations.csv.gz
+!results/tables/g1_primary_ranking_request_universe.csv.gz
+!results/tables/g1_primary_ranking_raw_response_inventory.csv.gz
+!results/tables/g1_primary_ranking_execution_state.csv.gz
+!results/tables/g1_primary_ranking_physical_execution_order.csv.gz
+!results/tables/reproduction_r1_*.csv
+!results/tables/reproduction_r5a_*.csv
+!results/tables/repository_cleanup_inventory.csv
+
+# Keep canonical F6M manifest tracked; hide nonselected local manifests.
+results/manifests/*
+!results/manifests/phase_f6m_reproduction_closure_manifest.json
+!results/manifests/d0a_*.json
+!results/manifests/d0b_*.json
+!results/manifests/d1_*.json
+!results/manifests/d1r_*.json
+!results/manifests/d1r2_*.json
+!results/manifests/d1r3_*.json
+!results/manifests/d1f_*.json
+!results/manifests/f0_*.json
+!results/manifests/f0r_*.json
+!results/manifests/f1a_*.json
+!results/manifests/f1ar_*.json
+!results/manifests/f1arr_*.json
+!results/manifests/f1b_*.json
+!results/manifests/f1br_*.json
+!results/manifests/f1bx_*.json
+!results/manifests/f1bxr_*.json
+!results/manifests/f1by_*.json
+!results/manifests/f1bz_*.json
+!results/manifests/f1bza_*.json
+!results/manifests/f1bzc_*.json
+!results/manifests/f1bzp_*.json
+!results/manifests/f1bzq_*.json
+!results/manifests/g0_*.json
+!results/manifests/g1_primary_ranking_execution_manifest.json
+!results/manifests/g1_primary_ranking_budget_invariance_manifest.json
+!results/manifests/g1_primary_ranking_g0_reuse_manifest.json
+!results/manifests/g1_primary_ranking_model_runtime_provenance.json
+!results/manifests/g1_primary_ranking_request_manifest.json
+!results/manifests/g1_primary_ranking_resume_idempotence_manifest.json
+!results/manifests/g1_primary_ranking_retention_manifest.json
+!results/manifests/g2_history_length_*.json
+!results/manifests/github_packaged_artifacts.json
+!results/manifests/github_commit_provenance_map.csv
+!results/manifests/extension_cell_universe_freeze.json
+!results/manifests/extension_h0_*.json
+
+# Keep only the canonical paper PDF in normal Git.
+paper/*
+!paper/2411.00331v1.pdf
+
+# Local validation scratch logs with restrictive permissions
+results/logs/phase_f6g2r_pytest_tmp/
+results/logs/phase_f6l_lastfm_v4_1_execution_pytest/
+results/logs/phase_f6m_pytest_tmp/
+
+# Controlled final-submission RQ3 evidence and integration provenance.
+!results/tables/rq3_llm_history_metric_grid_final.csv
+!results/rq3_completion_scientific_freeze/
+!results/rq3_completion_scientific_freeze/**
+!results/manifests/final_submission_*.json
+!results/manifests/final_submission_*.csv
+
+# Verified G1 correction evidence; historical manifests remain unchanged.
+!results/tables/audit_figure2_serendipity_cells.csv
+!results/tables/audit_figure2_serendipity_user_contingency.csv
+!results/tables/g1_serendipity_fix_regression_check.csv
+!results/manifests/g1_serendipity_correction.json

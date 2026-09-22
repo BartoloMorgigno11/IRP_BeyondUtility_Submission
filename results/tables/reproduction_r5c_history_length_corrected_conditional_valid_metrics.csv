@@ -1,0 +1,25 @@
+dataset,model_name,experimental_condition,history_length,n_valid_outputs,diagnostic_hr_at_5_valid_only,diagnostic_ndcg_at_5_valid_only,diagnostic_only,notes
+Beauty,mistral:7b-instruct,HISTORY_LENGTH_0,0,100,0.17,0.10126800101389016,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Beauty,mistral:7b-instruct,HISTORY_LENGTH_10,10,100,0.25,0.15398725039056177,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Beauty,mistral:7b-instruct,HISTORY_LENGTH_20,20,100,0.28,0.17672972152470354,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Beauty,qwen2:7b-instruct,HISTORY_LENGTH_0,0,100,0.25,0.13508825577529385,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Beauty,qwen2:7b-instruct,HISTORY_LENGTH_10,10,100,0.3,0.1786550821768666,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Beauty,qwen2:7b-instruct,HISTORY_LENGTH_20,20,100,0.32,0.18052107829423142,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+LastFM,mistral:7b-instruct,HISTORY_LENGTH_10,10,100,0.67,0.4401011767951517,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+LastFM,mistral:7b-instruct,HISTORY_LENGTH_20,20,100,0.6,0.3836680031967245,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+LastFM,mistral:7b-instruct,HISTORY_LENGTH_5,5,100,0.58,0.37959118297339656,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+LastFM,qwen2:7b-instruct,HISTORY_LENGTH_10,10,100,0.33,0.19982784387496536,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+LastFM,qwen2:7b-instruct,HISTORY_LENGTH_20,20,100,0.32,0.20665255022188597,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+LastFM,qwen2:7b-instruct,HISTORY_LENGTH_5,5,100,0.38,0.24109043665078483,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+ML-1M,mistral:7b-instruct,HISTORY_LENGTH_10,10,100,0.44,0.26162391347496483,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+ML-1M,mistral:7b-instruct,HISTORY_LENGTH_20,20,100,0.45,0.2856521991423963,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+ML-1M,mistral:7b-instruct,HISTORY_LENGTH_5,5,100,0.35,0.2061317264212289,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+ML-1M,qwen2:7b-instruct,HISTORY_LENGTH_10,10,100,0.34,0.22856708764652744,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+ML-1M,qwen2:7b-instruct,HISTORY_LENGTH_20,20,100,0.3,0.20755949178158553,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+ML-1M,qwen2:7b-instruct,HISTORY_LENGTH_5,5,100,0.37,0.24141021308591162,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Sports,mistral:7b-instruct,HISTORY_LENGTH_10,10,100,0.39,0.2287735432501283,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Sports,mistral:7b-instruct,HISTORY_LENGTH_20,20,100,0.42,0.24054456129665625,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Sports,mistral:7b-instruct,HISTORY_LENGTH_5,5,100,0.4,0.23274814061716712,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Sports,qwen2:7b-instruct,HISTORY_LENGTH_10,10,100,0.26,0.1741292012176286,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Sports,qwen2:7b-instruct,HISTORY_LENGTH_20,20,100,0.32,0.20073478543466483,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.
+Sports,qwen2:7b-instruct,HISTORY_LENGTH_5,5,100,0.24,0.16043849875334318,true,Conditional-valid metrics are diagnostic and separate format compliance from ranking quality.

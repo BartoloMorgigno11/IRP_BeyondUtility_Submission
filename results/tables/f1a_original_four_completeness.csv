@@ -1,0 +1,5 @@
+dataset,applicable_result_cells,computed_existing_raw,computed_f1a,awaiting_new_raw,awaiting_training,blocked_protocol,degenerate_protocol_input,blocked_data_requirement,not_applicable,status
+beauty,1787,0,57,1290,365,0,18,0,57,ACCOUNTED
+sports,1787,0,57,1290,365,0,18,0,57,ACCOUNTED
+ml1m,1787,0,57,1308,365,0,0,0,57,ACCOUNTED
+lastfm,1787,0,57,1308,365,0,0,0,57,ACCOUNTED

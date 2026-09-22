@@ -1,0 +1,5 @@
+dataset,official_evidence_classification,evidence_class,notes
+Beauty,RESULT_ARTIFACT_PRESENT,POST-F6M TOTAL REPRODUCIBILITY CLOSURE EVIDENCE,Official result archive or result member found.
+Sports,RESULT_ARTIFACT_PRESENT,POST-F6M TOTAL REPRODUCIBILITY CLOSURE EVIDENCE,Official result archive or result member found.
+ML-1M,REFERENCE_ONLY,POST-F6M TOTAL REPRODUCIBILITY CLOSURE EVIDENCE,"README references MovieLens-1M/raw data, but no official result artifact was found."
+LastFM,REFERENCE_ONLY,POST-F6M TOTAL REPRODUCIBILITY CLOSURE EVIDENCE,"README references LastFM/raw data, but no official result artifact was found."

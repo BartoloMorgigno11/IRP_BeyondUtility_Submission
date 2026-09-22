@@ -1,0 +1,2 @@
+staging_dir,manifest_path,staged_files_found,archives_found,archives_opened,archive_members_listed,possible_artifact_matches,suggested_manifest_updates,status,notes,timestamp
+data/external/plan_c,data/artifact_manifests/plan_c_artifact_manifest.csv,6,2,2,12,10,10,inspected,Staged files were inspected without archive extraction or manifest mutation.,2026-06-29T09:08:52.788346+00:00

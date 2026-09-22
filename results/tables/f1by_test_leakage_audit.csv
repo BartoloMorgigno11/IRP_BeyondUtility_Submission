@@ -1,0 +1,9 @@
+check,status,evidence
+f1bxr_contract_inputs_only,PASS,runner reads f1bxr validation cohort/candidates and raw interactions for prefix reconstruction
+f0_final_test_candidates_not_scored,PASS,execution table
+f0_final_test_targets_not_used,PASS,execution table
+final_test_hr_not_computed,PASS,metrics table
+final_test_ndcg_not_computed,PASS,metrics table
+winner_selection_before_final_test_results,PASS,selected configs
+final_result_artifacts_absent_before_winner_freeze,PASS,
+protected_final_files_hashed_only_in_prior_contract,PASS,f1bxr_foodcom_validation_contract.json

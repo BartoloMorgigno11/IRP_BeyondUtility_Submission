@@ -1,0 +1,43 @@
+* text=auto
+
+*.md text eol=lf
+*.py text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.txt text eol=lf
+
+*.pdf binary
+*.docx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bin binary
+*.zip binary
+*.gz binary
+*.pt binary
+*.pth binary
+*.pkl binary
+*.pickle binary
+*.dll binary
+*.pyd binary
+*.exe binary
+
+# Preserve exact bytes of the scientific freeze and its recorded hashes.
+results/rq3_completion_scientific_freeze/** -text
+results/tables/rq3_llm_history_metric_grid_final.csv -text
+results/tables/g1_primary_ranking_beyond_utility.csv -text
+results/tables/audit_figure2_serendipity_cells.csv -text
+results/tables/audit_figure2_serendipity_user_contingency.csv -text
+results/tables/g1_serendipity_fix_regression_check.csv -text
+
+# Preserve exact RQ5 archive, derived artifact and figure provenance bytes.
+results/rq5_final_scientific_freeze/** -text
+results/plots/rq5_final_scientific_freeze/** -text
+results/tables/rq5_primary_systematic_profile_reuse_audit.csv -text
+
+*.svg text eol=lf
+.gitattributes text eol=lf

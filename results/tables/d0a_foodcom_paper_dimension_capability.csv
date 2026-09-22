@@ -1,0 +1,14 @@
+dimension,status,evidence
+BASE,READY,primary 1000 strict-name candidate gate
+LLMRank,READY,same candidate contract with LLMRank prompt family
+History L0/1/2/5/10/20,READY,paired 200 strict L20 gate
+CandDif / candidate-position bias,READY_WITH_ADAPTATION,requires future order perturbation cells over frozen candidates
+hallucination,READY,candidate recipe names support strict candidate-set matching
+profile generation,READY_WITH_ADAPTATION,recipe history can be rendered from names/tags/ingredients
+profile-only recommendation,READY_WITH_ADAPTATION,profile prompt adaptation required
+profile + history recommendation,READY_WITH_ADAPTATION,profile prompt plus visible history adaptation required
+ranking,READY,one held-out target and 20-candidate sets
+reranking,READY,candidate order is frozen
+candidate-order sensitivity,READY_WITH_ADAPTATION,requires future deterministic order variants
+candidate-pool sensitivity,READY_WITH_ADAPTATION,requires future deterministic pool-size variants
+K-S representativeness if globally recoverable,BLOCKED_GLOBAL_PROTOCOL,global K-S representativeness protocol is not recovered here

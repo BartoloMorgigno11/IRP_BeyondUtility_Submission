@@ -1,0 +1,11 @@
+dataset,component,source_path,archive_member,file_found,member_found,status,sampled_rows,parsed_rows,parse_errors,required_fields_present,supports_reconstruction_role,notes
+amazon_beauty,amazon_reviews,data/external/plan_c/reviews_Beauty_5.json.gz,,True,False,valid,1000,1000,0,True,True,"Parsers used: json:1000 Supports sequential interactions if reviewerID, asin, rating, and unixReviewTime are present."
+amazon_beauty,amazon_metadata,data/external/plan_c/meta_Beauty.json.gz,,True,False,valid,1000,1000,0,True,True,Parsers used: python_literal:1000 Supports catalog reconstruction if asin and at least one text/metadata field are present.
+amazon_sports,amazon_reviews,data/external/plan_c/reviews_Sports_and_Outdoors_5.json.gz,,True,False,valid,1000,1000,0,True,True,"Parsers used: json:1000 Supports sequential interactions if reviewerID, asin, rating, and unixReviewTime are present."
+amazon_sports,amazon_metadata,data/external/plan_c/meta_Sports_and_Outdoors.json.gz,,True,False,valid,1000,1000,0,True,True,Parsers used: python_literal:1000 Supports catalog reconstruction if asin and at least one text/metadata field are present.
+ml1m,ml1m_ratings,data/external/plan_c/ml-1m.zip,ml-1m/ratings.dat,True,True,valid,1000,1000,0,True,True,MovieLens-1M member parsed with '::' separator.
+ml1m,ml1m_movies,data/external/plan_c/ml-1m.zip,ml-1m/movies.dat,True,True,valid,1000,1000,0,True,True,MovieLens-1M member parsed with '::' separator.
+ml1m,ml1m_users,data/external/plan_c/ml-1m.zip,ml-1m/users.dat,True,True,valid,1000,1000,0,True,True,MovieLens-1M member parsed with '::' separator.
+lastfm,lastfm_user_artists,data/external/plan_c/hetrec2011-lastfm-2k.zip,user_artists.dat,True,True,valid,1000,1000,0,True,True,LastFM HetRec member parsed with tab separator.
+lastfm,lastfm_artists,data/external/plan_c/hetrec2011-lastfm-2k.zip,artists.dat,True,True,valid,1000,1000,0,True,True,LastFM HetRec member parsed with tab separator.
+lastfm,lastfm_user_taggedartists,data/external/plan_c/hetrec2011-lastfm-2k.zip,user_taggedartists.dat,True,True,valid,1000,1000,0,True,True,LastFM HetRec member parsed with tab separator.

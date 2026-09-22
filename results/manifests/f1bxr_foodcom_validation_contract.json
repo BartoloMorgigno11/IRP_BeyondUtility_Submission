@@ -1,0 +1,166 @@
+{
+  "artifact_hashes": {
+    ".gitignore": "7a025ea9ce4f24f7fc2c7bedc973a8633037233e75a3799a9ae7f6d566ee8f1b",
+    "configs/f1bxr_foodcom_validation_contract.yaml": "9387477be6aabd160bc2e846c29d1b9e06eb3a47be4ee59d14e2d2a46ccf5ea8",
+    "report/f1bxr_foodcom_validation_contract.md": "8e4e4531858d906ef10351de55513552893773fb33963f92ec91d299fe6819a0",
+    "results/tables/f1bxr_foodcom_nested_split_audit.csv": "70c6a72449f94730bcabba581a8ab000c979888d09346b8260ad628964252811",
+    "results/tables/f1bxr_foodcom_validation_candidate_audit.csv": "5a102ec927e8cdaab626d7388f38e3f3c77c2a0741c08bd95f0e51a276146ecd",
+    "results/tables/f1bxr_foodcom_validation_candidates.csv": "1762d94963a910be05a61b6e51584c08bced46b4904c7c85d2a7cc578311d3fc",
+    "results/tables/f1bxr_foodcom_validation_cohort.csv": "bec12e811762d2f05dfa33d0954c3d4a09f2705f91aeca3d0c7e0d4855d8f3df",
+    "results/tables/f1bxr_foodcom_validation_eligibility.csv": "9d97dfcf91f827388f897887c1e2634c39acd53ea5ce5898297f7c07265f42e9",
+    "results/tables/f1bxr_test_leakage_audit.csv": "af7e3eabef9390eb63ad905342d26bf7c4b4fa77b36e5c774369485e40ef213c",
+    "results/tables/f1bxr_tuning_readiness.csv": "21edf8d000b73506b16fa1bc1ae210f655ed2eeed1af54830d08e9b43957a5f8",
+    "results/tables/f1bxr_validation.csv": "2cdd824b9a1adb01e9dd2166c4637c9be63f6bef8399f351024bcd145e19ee82",
+    "src/extension/f1bxr_foodcom_validation_contract.py": "843898688de5c918e3bf3b136d09c1ad0a7a97a7f98f9f50f5cfbc7e77b1e912",
+    "tests/test_extension_f1bxr_foodcom_validation_contract.py": "305144048e75c29bf4dc0cb2bc2e3818a5538961467b436b22b674cdd0a037aa"
+  },
+  "baseline_preservation": {
+    "baseline_computed_rows": 15,
+    "baseline_recommendation_rows": 292920,
+    "baseline_rows": 15,
+    "f1bx_decision_token": "F1BX_TUNING_AND_BASELINES_BLOCKED",
+    "hashes_after": {
+      "results/raw_outputs/f1bx_baseline_recommendations.csv": "6f7f6c53751038bfa7320898f0aa4f06a049a4bff888fdba369073ebf57cefb6",
+      "results/tables/f1bx_baseline_beyond_utility_results.csv": "28b4719d3cb4c7c2a2e79aaae74aade1925f764104bc071c1eefc53c6f52da15",
+      "results/tables/f1bx_baseline_execution.csv": "b1e82279107ad943fb4874e5f84317f9191e1d4b98d134273e68c6f3eb03edf9",
+      "results/tables/f1bx_baseline_utility_results.csv": "2570b536621a05b5ccec860839e6bd6e7dc945ff9010c9dbf6c400b96e55ccbf"
+    },
+    "hashes_before": {
+      "results/raw_outputs/f1bx_baseline_recommendations.csv": "6f7f6c53751038bfa7320898f0aa4f06a049a4bff888fdba369073ebf57cefb6",
+      "results/tables/f1bx_baseline_beyond_utility_results.csv": "28b4719d3cb4c7c2a2e79aaae74aade1925f764104bc071c1eefc53c6f52da15",
+      "results/tables/f1bx_baseline_execution.csv": "b1e82279107ad943fb4874e5f84317f9191e1d4b98d134273e68c6f3eb03edf9",
+      "results/tables/f1bx_baseline_utility_results.csv": "2570b536621a05b5ccec860839e6bd6e7dc945ff9010c9dbf6c400b96e55ccbf"
+    },
+    "hashes_unchanged": true,
+    "manifest_comparison": {
+      "results/raw_outputs/f1bx_baseline_recommendations.csv": {
+        "actual": "6f7f6c53751038bfa7320898f0aa4f06a049a4bff888fdba369073ebf57cefb6",
+        "expected": "6f7f6c53751038bfa7320898f0aa4f06a049a4bff888fdba369073ebf57cefb6",
+        "matches": true
+      },
+      "results/tables/f1bx_baseline_beyond_utility_results.csv": {
+        "actual": "28b4719d3cb4c7c2a2e79aaae74aade1925f764104bc071c1eefc53c6f52da15",
+        "expected": "28b4719d3cb4c7c2a2e79aaae74aade1925f764104bc071c1eefc53c6f52da15",
+        "matches": true
+      },
+      "results/tables/f1bx_baseline_execution.csv": {
+        "actual": "b1e82279107ad943fb4874e5f84317f9191e1d4b98d134273e68c6f3eb03edf9",
+        "expected": "b1e82279107ad943fb4874e5f84317f9191e1d4b98d134273e68c6f3eb03edf9",
+        "matches": true
+      },
+      "results/tables/f1bx_baseline_utility_results.csv": {
+        "actual": "2570b536621a05b5ccec860839e6bd6e7dc945ff9010c9dbf6c400b96e55ccbf",
+        "expected": "2570b536621a05b5ccec860839e6bd6e7dc945ff9010c9dbf6c400b96e55ccbf",
+        "matches": true
+      }
+    }
+  },
+  "candidate_audit_failures": 0,
+  "candidate_count": 20,
+  "catalog_stats": {
+    "candidate_universe_hash": "445441e653ccd5b8c25c2812bdab3378e043fabb55210b6b5cce9ed0dc3364c2",
+    "candidate_universe_items": 231636,
+    "raw_recipe_rows": 231637,
+    "requirements": "valid_recipe_id;canonical_catalog_membership;usable_recipe_name",
+    "valid_recipe_id_name_rows": 231636
+  },
+  "chronological_order": "date_ascending_then_original_input_order",
+  "commit_created": 0,
+  "config_hash": "20149f097251b892d2ec78c931602d01908b8d13765efaf62fd06d2b268e08b8",
+  "contract_id": "F1BXR_FOODCOM_VALIDATION_CONTRACT_V1",
+  "dataset": "foodcom",
+  "decision_token": "F1BXR_FOODCOM_VALIDATION_CONTRACT_RESOLVED",
+  "downloads_executed": 0,
+  "eligibility_counts": {
+    "required_validation_users": 1000,
+    "selection_seed": 20260829,
+    "total_foodcom_users": 226570,
+    "users_remaining_after_excluding_f0_primary_test_users": 37392,
+    "users_satisfying_common_model_input_requirements": 37576,
+    "users_supporting_candidate_construction": 37392,
+    "users_with_enough_interactions_for_nested_validation_target": 60314,
+    "users_with_enough_interactions_for_test_target": 226570,
+    "users_with_validation_positive_in_candidate_universe": 37392
+  },
+  "ended_at": "2026-08-29T12:06:21.513771+00:00",
+  "expected_head": "61fbde6d048faaed9e20508484efc90fa95fa5bf",
+  "final_test_contract": {
+    "candidate_rows": 20000,
+    "candidate_users": 1000,
+    "final_candidate_hash": "642a69ad8fda1222fc0c27adceca73d938cbcdb98ab1b2353349d0e5220f2639",
+    "final_user_hash": "66688a72e857da101557cc1adfa47b118d9b32d9147632fdbf75fe3abb17fe7d",
+    "user_count": 1000
+  },
+  "final_test_target_definition": "i[T]",
+  "final_training_runs_executed": 0,
+  "head": "61fbde6d048faaed9e20508484efc90fa95fa5bf",
+  "integrity": {
+    "active_datasets": [
+      "beauty",
+      "sports",
+      "ml1m",
+      "lastfm",
+      "foodcom"
+    ],
+    "active_video_games_rows": 0,
+    "baseline_hashes_unchanged": true,
+    "baseline_recommendation_rows": 292920,
+    "baseline_rows": 15,
+    "commit_created": 0,
+    "downloads_executed": 0,
+    "expected_head": "61fbde6d048faaed9e20508484efc90fa95fa5bf",
+    "f0_budget": {
+      "BLOCKED_REQUESTS": 0,
+      "CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL": 100584,
+      "CONDITIONAL_REQUESTS": 9000,
+      "CORE_MANDATORY_NOW_REQUESTS": 29292,
+      "EXISTING_REUSABLE_REQUESTS": 0,
+      "FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL": 88584,
+      "MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE": 5364,
+      "MANDATORY_RAW_REQUESTS_TOTAL": 50292,
+      "OPTIONAL_REQUESTS": 12000,
+      "PREVIOUS_D0B_ESTIMATE": 44928,
+      "REQUIRED_SENSITIVITY_REQUESTS": 21000,
+      "TRAINING_DEPENDENT_REQUESTS": 29292
+    },
+    "f0_budget_unchanged": true,
+    "final_test_candidate_rows": 20000,
+    "final_test_contract_untouched": true,
+    "final_test_user_count": 1000,
+    "final_training_runs_executed": 0,
+    "foodcom_raw_hashes_unchanged": true,
+    "global_metric_blockers": 0,
+    "h0_hashes_unchanged": true,
+    "head": "61fbde6d048faaed9e20508484efc90fa95fa5bf",
+    "head_is_expected": true,
+    "llm_inference_calls_executed": 0,
+    "network_calls_executed": 0,
+    "training_runs_executed": 0,
+    "tuning_ready_rows": 40,
+    "validation_candidate_rows": 20000,
+    "validation_final_test_user_overlap": 0,
+    "validation_user_count": 1000
+  },
+  "later_final_training_policy": "retrain using i1..i[T-1] after Food.com winners are frozen; not executed in F1BXR",
+  "llm_inference_calls_executed": 0,
+  "negative_count": 19,
+  "negative_seed_label": "f1bxr_validation_negatives",
+  "network_calls_executed": 0,
+  "ordering_seed_label": "f1bxr_validation_order",
+  "phase_id": "f1bxr_foodcom_validation_contract_recovery",
+  "selection_metric": "validation_ndcg_at_5",
+  "started_at": "2026-08-29T12:04:13.984797+00:00",
+  "test_leakage_failures": 0,
+  "training_runs_executed": 0,
+  "tuning_ready_rows": 40,
+  "tuning_seed": 42,
+  "tuning_training_prefix_definition": "i1..i[T-2]",
+  "validation_candidate_contract_hash": "b40486b48924c3a515d2d9bc0e4d9239a4956508a2fa60301a1b4bedcf038380",
+  "validation_candidate_rows": 20000,
+  "validation_cohort_hash": "7718f1691ae22b7c5fb431b1abf1e93d93ad523f3b43c751e7a1e114e464eab9",
+  "validation_failures": [],
+  "validation_passed": true,
+  "validation_selection_seed": 20260829,
+  "validation_target_definition": "i[T-1]",
+  "validation_users_selected": 1000
+}

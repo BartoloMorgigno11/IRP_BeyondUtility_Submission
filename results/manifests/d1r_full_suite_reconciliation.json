@@ -1,0 +1,70 @@
+{
+  "baseline": {
+    "d1_manifest_sha256": "f33db07f293ef8321483ba66397bd7ee5135e8053e5af0774303cb844ba36e6e",
+    "d1_removed_ledger_sha256": "9d5574e9091484de282c723c2c6721c3b4d8101ace6d24726204dadaf8fdb7a6",
+    "protected_input_compatible_status_after_targeted": "checked=1144;changed=0",
+    "protected_input_raw_status_before_targeted": "checked=1144;changed=275;missing=52;hash_mismatch=223;existence_mismatch=52"
+  },
+  "branch": "master",
+  "commits_created": 0,
+  "decision_token": "D1R_FULL_SUITE_BLOCKED",
+  "downloads_executed": 0,
+  "fixes_applied": [
+    "Added direct-script repository-root bootstrap to src/analysis/build_exactness_frontier_and_evidence_closure.py.",
+    "Added src/analysis/protected_input_compatibility.py to separate frozen F2 historical hash status from current-tree explained deltas without changing F2 hashes.",
+    "Delegated F3-F6 protected_hash_status checks to the compatibility helper."
+  ],
+  "full_suite": {
+    "collected_or_accounted": "2122",
+    "command": "$env:PYTHONNOUSERSITE='1'; $env:PYTHONDONTWRITEBYTECODE='1'; .\\.venv_audit_recovery\\Scripts\\python.exe -B -m pytest -q --tb=short -ra --basetemp results\\logs\\d1r_full_suite_tmp tests",
+    "deselected": "0",
+    "elapsed_hms": "2:05:07",
+    "elapsed_seconds": "7507.72",
+    "errors": "43",
+    "exit_code": "1",
+    "failed": "102",
+    "full_suite_complete": "true",
+    "full_suite_green": "false",
+    "passed": "1975",
+    "phase_id": "d1r_post_purge_full_suite_failure_reconciliation",
+    "skipped": "2",
+    "warnings": "6",
+    "xfailed": "0",
+    "xpassed": "0"
+  },
+  "head": "adbf060f93872f6a75a32d38bbfe34ce30ed059e",
+  "llm_requests_executed": 0,
+  "network_calls_executed": 0,
+  "phase_id": "d1r_post_purge_full_suite_failure_reconciliation",
+  "post_suite": {
+    "active_dataset_set": [
+      "beauty",
+      "sports",
+      "ml1m",
+      "lastfm",
+      "foodcom"
+    ],
+    "foodcom_hashes_unchanged": true,
+    "forbidden_operational_video_games_references": 0,
+    "git_diff_check": "line-ending warnings only",
+    "h0_hashes_unchanged": true,
+    "protected_input_compatible_status": "checked=1144;changed=1",
+    "protected_input_raw_status": "checked=1144;changed=275;missing=52;hash_mismatch=223;existence_mismatch=52",
+    "unresolved_protected_side_effects": 1
+  },
+  "source_artifacts": {
+    "full_suite_summary": "results/tables/d1r_full_suite_summary.csv",
+    "post_suite_side_effects": "results/tables/d1r_post_suite_side_effects.csv",
+    "protected_input_baseline": "results/tables/d1r_protected_input_baseline.csv",
+    "protected_input_changes": "results/tables/d1r_protected_input_changes.csv",
+    "root_cause_matrix_observed_18": "results/tables/d1r_full_suite_failure_root_causes.csv",
+    "unresolved_post_suite_protected_changes": "results/tables/d1r_unresolved_post_suite_protected_changes.csv"
+  },
+  "targeted_gates": {
+    "d1_d0b_d0a_h0_e0_e2a": "54 passed in 6.01s",
+    "exactness_frontier": "5 passed",
+    "observed_18_nodes": "18 passed by combined exactness plus finalization gates",
+    "observed_finalization_protected_nodes": "13 passed in 980.67s"
+  },
+  "timestamp_utc": "2026-08-27T10:32:23.916472+00:00"
+}

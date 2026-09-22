@@ -1,0 +1,7 @@
+taxonomy,node_count,failed_count,error_count,current_suite_action,historical_action,final_unknown_allowed,notes
+CURRENT_REGRESSION,0,0,0,none_remaining,none,false,D1R3 correction applied
+HISTORICAL_FREEZE_VALIDATION,91,79,12,exclude_from_current_suite,validate_in_isolated_historical_worktree,false,D1R3 correction applied
+HISTORICAL_REPRODUCTION_LOGIC,23,23,0,exclude_from_current_suite,validate_in_isolated_historical_worktree,false,
+ENVIRONMENT_SPECIFIC,0,0,0,exclude_from_current_suite,validate_in_isolated_historical_worktree,false,
+DESTRUCTIVE_OR_PERSISTENT_SIDE_EFFECT,31,0,31,exclude_from_current_suite,validate_in_isolated_historical_worktree,false,
+UNKNOWN,0,0,0,exclude_from_current_suite,validate_in_isolated_historical_worktree,false,

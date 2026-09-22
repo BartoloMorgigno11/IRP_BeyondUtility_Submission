@@ -1,0 +1,153 @@
+phase:
+  id: g3_candidate_position_first_random_protocol_freeze
+  required_head: 34c231779ef48bfcd291c6435bcf52a0baf02acd
+  predecessor_state:
+    - G1_PRIMARY_RANKING_VALIDATED
+    - G2_EXECUTION_RETENTION_FROZEN
+    - G2_SCIENTIFIC_SYNTHESIS_FROZEN
+  success_token: G3_BASE_LLMRANK_FIRST_RANDOM_PROTOCOL_FROZEN
+  blocked_token: G3_BASE_LLMRANK_FIRST_RANDOM_PROTOCOL_BLOCKED
+  allow_commit: false
+
+execution:
+  allow_local_ollama_inference: false
+  allow_local_ollama_metadata: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network_downloads: false
+  allow_training: false
+  allow_tuning: false
+  allow_g4: false
+  allow_g5: false
+  ollama_base_url: http://127.0.0.1:11434
+  temperature: 0
+  max_output_tokens:
+    ranking: 256
+  timeout_seconds: 150
+  backend_retry_count: 2
+  backend_retry_backoff_seconds: [5, 15]
+  scientific_retry_count: 0
+  structural_invalidity_retry_count: 0
+  stream: false
+  response_format: json
+  canonical_logical_order: dataset_user_order_prompt_model
+  physical_execution_order: model_dataset_prompt_order_user
+  max_attempts: 3
+
+datasets:
+  - beauty
+  - sports
+  - ml1m
+  - lastfm
+  - foodcom
+
+models:
+  - qwen2:7b-instruct
+  - mistral:7b-instruct
+  - gemma2:9b
+
+prompt_strategies:
+  - BASE
+  - LLMRANK
+
+cohort:
+  users_per_dataset: 200
+  selection_rule: first_200_users_by_sort_key_from_frozen_G1_primary_candidate_users_after_candidate_contract_validation
+  same_users_across_models_prompts_orders: true
+  outcome_dependent_filtering: false
+
+history:
+  policy: visible_last_10_or_available
+  source: frozen_G1_train_history_loader
+  target_excluded: true
+
+candidate_orders:
+  conditions:
+    - FIRST
+    - RANDOM
+  first:
+    algorithm: positive_at_position_1_then_remaining_negatives_in_frozen_primary_candidate_order
+  random:
+    algorithm: sha256_seeded_sort_rotate_if_positive_first
+    seed: R5A_CANDDIF_RANDOM_POSITION_V1
+    key_derivation: seed|dataset|user_id|candidate_item_id|candidate_title
+    positive_position_allowed_values: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+inputs:
+  g1_config: configs/g1_primary_ranking_execution.yaml
+  g1_request_universe: results/tables/g1_primary_ranking_request_universe.csv
+  g1_execution_manifest: results/manifests/g1_primary_ranking_execution_manifest.json
+  g1_retention_manifest: results/manifests/g1_primary_ranking_retention_manifest.json
+  g2_execution_retention_manifest: results/manifests/g2_history_length_execution_retention_manifest.json
+  g2_scientific_synthesis_manifest: results/manifests/g2_history_length_scientific_synthesis_manifest.json
+  f0_inference_contract: results/manifests/f0_final_inference_contract.json
+
+raw_evidence:
+  raw_dir: results/llm/extension_canonical/g3_candidate_position
+  request_jsonl: results/llm/extension_canonical/g3_candidate_position/requests.jsonl
+  response_jsonl: results/llm/extension_canonical/g3_candidate_position/responses.jsonl
+  event_jsonl: results/llm/extension_canonical/g3_candidate_position/events.jsonl
+  response_dir: results/llm/extension_canonical/g3_candidate_position/responses
+  raw_response_protocol: extension_canonical_raw_response_jsonl_v1
+  overwrite_terminal_evidence: false
+
+outputs:
+  cohort: results/tables/g3_candidate_position_cohort.csv
+  request_universe: results/tables/g3_candidate_position_request_universe.csv
+  request_accounting: results/tables/g3_candidate_position_request_accounting.csv
+  pair_integrity: results/tables/g3_candidate_position_pair_integrity.csv
+  metric_contract: results/tables/g3_candidate_position_metric_contract.csv
+  statistical_plan: results/tables/g3_candidate_position_statistical_plan.csv
+  retention_plan: results/tables/g3_candidate_position_retention_plan.csv
+  validation: results/tables/g3_candidate_position_validation.csv
+  execution_order: results/tables/g3_candidate_position_execution_order.csv
+  execution_accounting: results/tables/g3_candidate_position_execution_accounting.csv
+  protocol_manifest: results/manifests/g3_candidate_position_protocol_freeze.json
+  execution_manifest: results/manifests/g3_candidate_position_execution_freeze.json
+  protocol_report: report/g3_candidate_position_protocol.md
+  execution_report: report/g3_candidate_position_execution_runner.md
+
+expected_accounting:
+  logical_requests: 12000
+  exact_g1_g2_reuse: 0
+  new_ollama_calls_required: 12000
+  users_per_dataset: 200
+  by_dataset: 2400
+  by_model: 4000
+  by_prompt: 6000
+  by_order: 6000
+
+metrics:
+  utility:
+    - hr_at_5
+    - ndcg_at_5
+    - mrr
+  canddif:
+    - canddif_hr_at_5
+    - canddif_ndcg_at_5
+  denominator_policy:
+    utility: fail_strict_all_planned_users_invalid_terminal_zero
+    beyond_utility: strict_valid_users_only_metric_specific_defined_subsets
+
+statistics:
+  alpha: 0.05
+  bootstrap_resamples: 10000
+  bootstrap_seed: 20260901
+  confidence_interval: two_sided_95_percent_percentile_ci
+  primary_test: paired_user_bootstrap_mean_delta
+  effect_size: paired_mean_delta
+  multiple_comparison_correction: holm_bonferroni_within_metric_dataset_model_prompt_family
+  secondary_test: not_frozen_for_g3_no_secondary_p_values
+
+retention:
+  tracked_scientific_foreground:
+    - configs/g3_candidate_position_execution.yaml
+    - src/extension/g3_candidate_position_execution.py
+    - tests/test_extension_g3_candidate_position_execution.py
+    - results/tables/g3_candidate_position_*.csv
+    - results/manifests/g3_candidate_position_protocol_freeze.json
+    - results/manifests/g3_candidate_position_execution_freeze.json
+    - report/g3_candidate_position_protocol.md
+    - report/g3_candidate_position_execution_runner.md
+  externalized_raw_evidence_future_root: results/llm/extension_canonical/g3_candidate_position/
+  externalized_per_request_audit_future: true

@@ -1,0 +1,5 @@
+dataset,diagnostic_subset,max_users,raw_users,raw_items,raw_interactions,eligible_users,excluded_users,train_interactions,ground_truth_rows,candidate_rows,catalog_rows,min_interactions_per_user,negative_samples_per_user,candidate_item_universe,candidate_universe_size,catalog_size,interaction_item_count,users_with_insufficient_negatives,split_type,reconstruction_status
+ml1m,False,,6040,3706,1000209,6040,0,994169,6040,604000,3883,,99,interaction_items,3706,3883,3706,0,chronological_leave_one_out,reconstructed_from_public_raw
+amazon_beauty,False,,22363,12101,198502,22363,0,176139,22363,2236300,259204,,99,interaction_items,12101,259204,12101,0,chronological_leave_one_out,reconstructed_from_public_raw
+amazon_sports,False,,35598,18357,296337,35598,0,260739,35598,3559800,532197,,99,interaction_items,18357,532197,18357,0,chronological_leave_one_out,reconstructed_from_public_raw
+lastfm,False,,1892,17632,92834,0,0,92834,0,0,17632,,99,,0,17632,0,0,interactions_catalog_only_no_chronological_timestamp,extension_only

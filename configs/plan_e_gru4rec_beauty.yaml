@@ -1,0 +1,55 @@
+experiment_id: plan_e_gru4rec_beauty
+model_id: gru4rec_reconstructed_beauty_strict_sequential
+dataset: Amazon Beauty
+paper_alignment: adapted_paper_like_reconstructed
+configuration_provenance:
+  phase_3g_config: configs/plan_e_gru4rec_ml1m_pilot.yaml
+  phase_3g_report: report/plan_e_gru4rec_ml1m_pilot.md
+  plan_d_source: results/tables/plan_d_gru4rec_training_summary.csv
+  selected_plan_d_row: Plan D ml1m gru4rec extended_subset completed 2026-06-30T14:24:45.150160+00:00
+  selected_plan_d_config_hash: 2e552a1d9ab6
+  adaptation_note: Reuses the successful Phase 3G ML-1M GRU4Rec hyperparameters unchanged and changes only dataset-specific paths, IDs and outputs.
+implementation_path: src/baselines/plan_d_gru4rec.py
+adapter_path: src/baselines/plan_e_gru4rec_adapter.py
+training_module_path: src/baselines/plan_e_gru4rec_training.py
+training_data_path: data/reconstructed/plan_c/amazon_beauty/interactions.csv
+datamap_path: data/reconstructed/plan_c/amazon_beauty/datamaps.json
+candidate_sets_path: results/tables/ranking_candidate_sets.csv
+row_compatibility_path: results/tables/plan_e_gru4rec_row_compatibility.csv
+ranking_candidate_set_id: plan_e_beauty_1000user_ranking_manifest
+reranking_candidate_set_id: plan_e_beauty_1000user_reranking_manifest
+policy_id: strict_training_history_and_train_known_candidates
+seed: 42
+device: cuda
+deterministic_algorithms: true
+item_embedding_dim: 64
+hidden_size: 64
+num_layers: 1
+dropout: 0.2
+maximum_sequence_length: 50
+padding_direction: left
+padding_index: 0
+real_item_offset: 1
+history_truncation_policy: keep_most_recent
+chronology_sort_fields:
+  - user_id
+  - timestamp
+  - source_row_index
+equal_timestamp_tie_rule: original_source_row_index
+training_pair_strategy: all_prefix_next_item
+loss: bpr_pairwise
+learning_rate: 0.001
+regularization: 0.0
+optimizer: Adam
+batch_size: 512
+epochs: 5
+num_workers: 0
+evaluation_k: 5
+candidate_scoring_method: gru4rec_score_candidates_dot_product
+tie_breaking_rule:
+  - descending_score
+  - lexical_raw_item_id
+  - original_candidate_position
+maximum_run_minutes: 60
+checkpoint_path: results/models/plan_e_gru4rec_beauty/model_state.pt
+metadata_path: results/models/plan_e_gru4rec_beauty/metadata.json

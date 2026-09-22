@@ -1,0 +1,114 @@
+project_root: .
+
+experiment:
+  name: reproduction_r5d_generation_involved_recovery
+  identity: R5D_GENERATION_INVOLVED_RECOVERY_V2
+  allow_paid_or_external_api_calls: false
+  allow_downloads: false
+  allow_training: false
+  allow_canddif_recovery: false
+  allow_history_length_recovery: false
+  allow_local_ollama_execution: true
+
+frozen_r5a:
+  freeze_commit: 98c28c5364c40e571765a3b50d4dab8affe80743
+  manifest: results/tables/reproduction_r5a_recovery_request_manifest.csv
+  manifest_sha256: 290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD
+  manifest_rows: 4800
+
+frozen_r5b_corrected:
+  freeze_commit: 83b46454866ea61f3e05eec81d555be53e4c41e8
+  freeze_manifest: results/manifests/reproduction_r5b_corrected_freeze.json
+  protocol_hash: 9596F36E1B1DBC15B68679DDF32114E6AE09914B418FB31DC112072384B708D5
+  raw_namespace: results/recovery/r5b_corrected
+
+frozen_r5c_corrected:
+  freeze_commit: 98a93d9892d8e9b21c9cdfa981e0ebea0a987500
+  freeze_manifest: results/manifests/reproduction_r5c_history_length_corrected_freeze_candidate.json
+  protocol_hash: 3AAD4945AF443A7F50846BFD044C54FEFD5B77EDBD3725B1D1F1C62D829ECDEE
+  raw_namespace: results/recovery/r5c_history_length_corrected
+
+scope:
+  recovery_family: GENERATION_INVOLVED_RECOVERY
+  selected_rows: 1200
+  profile_generation_rows: 400
+  downstream_recommendation_rows: 800
+  expected_cells: 12
+  expected_profile_cells: 4
+  expected_ranking_cells: 8
+  expected_k: 10
+  metric_k: 5
+  expected_target_gaps: 4
+  profile_generation_datasets:
+    - ML-1M
+    - LastFM
+  downstream_datasets:
+    - Beauty
+    - Sports
+    - ML-1M
+    - LastFM
+  datasets:
+    - Beauty
+    - Sports
+    - ML-1M
+    - LastFM
+  models:
+    - qwen2:7b-instruct
+    - mistral:7b-instruct
+  conditions:
+    - PROFILE_GENERATION
+    - PROFILE_PLUS_HISTORY
+  forbidden_recovery_families:
+    - CANDDIF_RECOVERY
+    - HISTORY_LENGTH_RECOVERY
+
+profile_materialization:
+  generated_profile_placeholder_prefix: PENDING_PROFILE_GENERATION
+  materialized_profile_header: Generated profile dependency
+  max_profile_chars_for_context_preflight: 4096
+
+runtime:
+  backend: ollama
+  endpoint: http://127.0.0.1:11434/api/generate
+  tags_endpoint: http://127.0.0.1:11434/api/tags
+  version_endpoint: http://127.0.0.1:11434/api/version
+  timeout_seconds: 120
+  temperature: 0
+  max_retries: 0
+  stream: false
+  format: json
+  disk_free_min_bytes: 1073741824
+  assumed_context_length: 32768
+  min_context_margin_tokens: 1024
+
+gates:
+  canary_initial_per_cell: 1
+  early_additional_per_cell: 2
+  periodic_accounted_checkpoints:
+    - 120
+    - 300
+    - 600
+    - 900
+  min_overall_validity_rate: 1.0
+  min_model_validity_rate: 1.0
+  max_overall_wrong_length_rate: 0.0
+  max_cell_wrong_length_rate: 0.0
+
+outputs:
+  table_dir: results/tables
+  diagnostics_dir: results/diagnostics/r5d_generation_involved_v2
+  report: report/reproduction_r5d_generation_involved_v2_recovery.md
+  result_namespace: results/recovery/r5d_generation_involved_v2
+  request_execution_status: results/tables/reproduction_r5d_generation_involved_v2_request_execution_status.csv
+  execution_manifest: results/tables/reproduction_r5d_generation_involved_v2_execution_manifest.csv
+  dependency_validation: results/tables/reproduction_r5d_generation_involved_v2_dependency_validation.csv
+  output_validity: results/tables/reproduction_r5d_generation_involved_v2_output_validity.csv
+  metrics_by_condition: results/tables/reproduction_r5d_generation_involved_v2_metrics_by_condition.csv
+  generation_results: results/tables/reproduction_r5d_generation_involved_v2_results.csv
+  conditional_valid_metrics: results/tables/reproduction_r5d_generation_involved_v2_conditional_valid_metrics.csv
+  dataset_model_summary: results/tables/reproduction_r5d_generation_involved_v2_dataset_model_summary.csv
+  gap_resolution: results/tables/reproduction_r5d_generation_involved_v2_gap_resolution.csv
+  runtime_provenance: results/tables/reproduction_r5d_generation_involved_v2_runtime_provenance.csv
+  validation: results/tables/reproduction_r5d_generation_involved_v2_validation.csv
+  scope_summary: results/tables/reproduction_r5d_generation_involved_v2_scope_summary.csv
+  freeze_candidate: results/manifests/reproduction_r5d_generation_involved_v2_freeze_candidate.json

@@ -1,0 +1,73 @@
+{
+  "active_datasets": [
+    "beauty",
+    "sports",
+    "ml1m",
+    "lastfm",
+    "foodcom"
+  ],
+  "decision_token": "EXTENSION_DATASET_FOODCOM_SELECTED_FOR_EXECUTION",
+  "generation_timestamp": "2026-08-26T08:21:47.851237+00:00",
+  "generator_identity": "src.extension.e2a_cell_universe",
+  "no_downloads": true,
+  "no_inference": true,
+  "no_raw_reconstruction": true,
+  "no_training": true,
+  "output_artifacts": {
+    "cells": "a657dd02b1838672088dc173799ad8a912ea44ab80b7f17abb8ff0af8684b671",
+    "completeness": "fc3e5165df599135c43686b8963a0fe62ceb54cea4fc251d42a800d90949fa7e",
+    "metric_applicability": "3ff5f0bb78a2c45156e3c4f516e5d2e460c704edf716f4e4fb87d5a9ecdcd89c",
+    "parity": "b45fe0fd74e778a57d0ef8fa411fa6732ea370c60b08fda00e85c55efc3e08c2",
+    "raw": "544807d471ac91b5dc9468fb1fd0f43c07a304f6e7a443cd0e82ec14a5e09973"
+  },
+  "schema_version": "extension_cell_universe_v2_foodcom_active",
+  "semantic_universe_hash": "cac4882858d1c34fdc35f2c568758bef6202ea6f969d538ea14ed6f9a0e9111d",
+  "source_artifacts": {
+    "results/manifests/d0b_no_inference_manifest.json": {
+      "exists": true,
+      "sha256": "627e496f7dd3feda97f0eca9100748f6bdfa93a417fbfaf97a5d9c5ba35c2d0d"
+    },
+    "results/manifests/extension_h0_no_inference_manifest.json": {
+      "exists": true,
+      "sha256": "ad11c149090ab454c4235abb8db1bae8c7a4bb3a3d43eddc60e44d8055cbde48"
+    },
+    "results/tables/d0a_foodcom_history200_feasibility.csv": {
+      "exists": true,
+      "sha256": "340142910349840fc266ea0fd2e426a1e9ec3da00cf627c224a33cbd5d91c73d"
+    },
+    "results/tables/d0a_foodcom_primary1000_feasibility.csv": {
+      "exists": true,
+      "sha256": "f8ff32f23cd41dc87b2833d64bd6256613ae29d752fe761c3318a47d96b4a2d0"
+    },
+    "results/tables/d0b_final_selection_decision.csv": {
+      "exists": true,
+      "sha256": "371e41440e6e9d8831827d9ad6e538012b644e3af4720f39013aba247812051f"
+    },
+    "results/tables/extension_h0_72_cell_history_matrix.csv": {
+      "exists": true,
+      "sha256": "63dff562a03486d38918dd74258e5f61ccb11b5909578f40d71d3ed095810c50"
+    },
+    "src/extension/d0a_foodcom_material_feasibility.py": {
+      "exists": true,
+      "sha256": "c40c472064e02873aff67d05aa3f16a068d3cf604f4dfc1839b9d31f743ccd23"
+    },
+    "src/extension/d0b_final_fifth_dataset_selection.py": {
+      "exists": true,
+      "sha256": "0eca6537746a3f8cd82d6f25a5ea864afab81f3cd8908b0f91d800b5954d467e"
+    },
+    "src/extension/e2a_cell_universe.py": {
+      "exists": true,
+      "sha256": "c69184e85fb5440364f7b0193d5746cbf58b89c25f0718890d32b32a9a1adba6"
+    },
+    "tests/test_extension_e2a_cell_universe.py": {
+      "exists": true,
+      "sha256": "a6d619b54a062d672ed1427bcd169113e7de352efb3331bdaaa1f31738c51a8e"
+    }
+  },
+  "source_branch": "master",
+  "source_commit": "adbf060f93872f6a75a32d38bbfe34ce30ed059e",
+  "validation": {
+    "errors": [],
+    "passed": true
+  }
+}

@@ -1,0 +1,42 @@
+phase,scope,check,command,observed
+postcondition,main_repo,branch,git branch --show-current,master
+postcondition,main_repo,head,git rev-parse HEAD,10529058c3579c42686b76d5d3ac8b96ba7d6337
+postcondition,main_repo,status_short,git status --short,"M report/notes.md
+?? final_metric_paper_comparison_values.md
+?? original_repo_metric_file_inventory.csv
+?? original_repo_metric_values_decoded.csv
+?? original_repo_metric_values_decoded_summary.csv
+?? original_repo_metric_values_decoded_wide.csv
+?? original_repo_requested_metric_values_decoded.csv
+?? report/reproduction_r2_complete_official_metric_calculability.md
+?? requested_metric_candidate_position_bias_values.csv
+?? requested_metric_generation_involved_performance_values.csv
+?? requested_metric_history_length_sensitivity_values.csv
+?? requested_metric_novelty_values.csv
+?? requested_metric_paper_comparison_values.csv
+?? requested_metric_values_summary.csv
+?? src/analysis/reproduction_r2_official_metric_calculability.py
+?? tests/test_reproduction_r2_official_metric_calculability.py"
+postcondition,main_repo,status_branch_short,git status --branch --short,"## master...origin/master [ahead 1]
+ M report/notes.md
+?? final_metric_paper_comparison_values.md
+?? original_repo_metric_file_inventory.csv
+?? original_repo_metric_values_decoded.csv
+?? original_repo_metric_values_decoded_summary.csv
+?? original_repo_metric_values_decoded_wide.csv
+?? original_repo_requested_metric_values_decoded.csv
+?? report/reproduction_r2_complete_official_metric_calculability.md
+?? requested_metric_candidate_position_bias_values.csv
+?? requested_metric_generation_involved_performance_values.csv
+?? requested_metric_history_length_sensitivity_values.csv
+?? requested_metric_novelty_values.csv
+?? requested_metric_paper_comparison_values.csv
+?? requested_metric_values_summary.csv
+?? src/analysis/reproduction_r2_official_metric_calculability.py
+?? tests/test_reproduction_r2_official_metric_calculability.py"
+postcondition,main_repo,diff_stat,git diff --stat,"warning: in the working copy of 'report/notes.md', CRLF will be replaced by LF the next time Git touches it
+ report/notes.md | 9 +++++++++
+ 1 file changed, 9 insertions(+)"
+postcondition,main_repo,diff_cached_stat,git diff --cached --stat,
+postcondition,original_repo,status_branch_short,git status --branch --short,## main...origin/main
+postcondition,original_repo,diff_stat,git diff --stat,

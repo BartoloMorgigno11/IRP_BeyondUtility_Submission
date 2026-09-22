@@ -1,0 +1,7 @@
+dataset,model_name,n_manifest_requests,n_succeeded,n_backend_failed,n_not_executed,n_valid_outputs,n_invalid_outputs,first_hr_at_5,random_hr_at_5,first_ndcg_at_5,random_ndcg_at_5,evidence_class
+Beauty,mistral:7b-instruct,200,200,0,0,11,189,0.01,0.03,0.01,0.018175293653079346,PAPER_ALIGNED_ADAPTED_RECOVERY
+Beauty,qwen2:7b-instruct,200,200,0,0,1,199,0.0,0.0,0.0,0.0,PAPER_ALIGNED_ADAPTED_RECOVERY
+LastFM,mistral:7b-instruct,200,200,0,0,26,174,0.08,0.06,0.08,0.0452371901428583,PAPER_ALIGNED_ADAPTED_RECOVERY
+LastFM,qwen2:7b-instruct,200,200,0,0,0,200,0.0,0.0,0.0,0.0,PAPER_ALIGNED_ADAPTED_RECOVERY
+Sports,mistral:7b-instruct,200,200,0,0,13,187,0.07,0.01,0.07,0.003868528072345416,PAPER_ALIGNED_ADAPTED_RECOVERY
+Sports,qwen2:7b-instruct,200,200,0,0,1,199,0.0,0.0,0.0,0.0,PAPER_ALIGNED_ADAPTED_RECOVERY

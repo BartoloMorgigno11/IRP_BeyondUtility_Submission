@@ -1,0 +1,4 @@
+prompt_strategy,description,uses_user_history,uses_candidate_list,uses_item_metadata,uses_in_context_examples,output_format,intended_phase,status,notes
+openp5_base,Paper-inspired direct candidate ranking prompt using history and candidate metadata.,true,true,true,false,strict_json,D5E_qwen2_ml1m_ranking_diagnostic,implemented,first diagnostic template; asks model to rank only candidate IDs.
+llmrank_recency,Recency-focused candidate ranking variant inspired by LLMRank ordering sensitivity.,true,true,true,false,strict_json,D5F_or_later_position_bias_and_ranking,implemented_or_stub,recency-focused variant inspired by LLMRank; can emphasize recent history order.
+llmsrec_icl_stub,Documented in-context-learning placeholder for a future LLMSRec-style prompt.,true,true,true,true,strict_json,optional_future,stub_documented,documented placeholder for ICL; not used in D5E unless examples are implemented.

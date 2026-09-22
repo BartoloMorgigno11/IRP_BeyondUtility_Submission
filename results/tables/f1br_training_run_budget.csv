@@ -1,0 +1,6 @@
+budget_item,run_count,training_executed_in_f1br,notes
+ORIGINAL_FOUR_FINAL_RUNS,80,false,4 datasets x 4 trainable models x 5 local final seeds
+FOODCOM_FINAL_RUNS,20,false,Food.com selected config per model x 5 local final seeds
+FOODCOM_TUNING_RUNS,40,false,Validation-only search configs x one fixed tuning seed
+FINAL_EVIDENCE_RUNS,100,false,Final five-seed model runs after Food.com tuning
+TOTAL_TRAINING_RUNS,140,false,Final evidence runs plus tuning runs

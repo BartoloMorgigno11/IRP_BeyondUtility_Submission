@@ -1,0 +1,64 @@
+phase:
+  id: f1bxr_foodcom_validation_contract_recovery
+  expected_head: 61fbde6d048faaed9e20508484efc90fa95fa5bf
+  predecessor_state: F1BX_TUNING_AND_BASELINES_BLOCKED
+  resolved_token: F1BXR_FOODCOM_VALIDATION_CONTRACT_RESOLVED
+  blocked_token: F1BXR_FOODCOM_VALIDATION_CONTRACT_BLOCKED
+
+paths:
+  raw_interactions: data/raw/foodcom/d0a_extracted/e7a43e623c61/RAW_interactions.csv
+  raw_recipes: data/raw/foodcom/d0a_extracted/e7a43e623c61/RAW_recipes.csv
+  final_test_users: results/tables/d0a_foodcom_primary1000_users.csv
+  final_test_candidates: results/tables/d0a_foodcom_primary1000_candidates.csv
+  f1bx_execution_manifest: results/manifests/f1bx_execution_manifest.json
+  f1br_foodcom_search_space: results/tables/f1br_foodcom_search_space.csv
+  f0_request_budget: results/tables/f0_final_request_budget.csv
+  f1arr_final_metric_blockers: results/tables/f1arr_final_metric_blockers.csv
+  d0a_archive_manifest: results/manifests/d0a_foodcom_raw_archive_manifest.json
+  d0a_extracted_hashes: results/manifests/d0a_foodcom_extracted_file_hashes.json
+  h0_manifest: results/manifests/extension_h0_no_inference_manifest.json
+
+validation_contract:
+  contract_id: F1BXR_FOODCOM_VALIDATION_CONTRACT_V1
+  dataset: foodcom
+  target_users: 1000
+  candidate_count: 20
+  negative_count: 19
+  selection_seed: 20260829
+  tuning_seed: 42
+  selection_metric: validation_ndcg_at_5
+  chronological_order: date_ascending_then_original_input_order
+  minimum_tuning_training_prefix_length: 1
+  candidate_item_universe:
+    source: RAW_recipes.csv
+    requirements:
+      - valid_recipe_id
+      - canonical_catalog_membership
+      - usable_recipe_name
+  validation_target: penultimate_interaction
+  final_test_target: final_interaction
+  tuning_training_prefix: all_interactions_before_validation_target
+  final_training_after_tuning: complete_pre_test_history_reincorporating_validation_interaction
+
+negative_sampling:
+  algorithm: rejection_sample_from_sorted_catalog_universe
+  global_seed: 20260829
+  per_user_seed_label: f1bxr_validation_negatives
+  replacement: false
+  exclude_training_prefix: true
+  exclude_validation_positive: true
+  consult_final_test_target: false
+
+candidate_order:
+  algorithm: deterministic_seeded_shuffle
+  per_user_seed_label: f1bxr_validation_order
+  positive_position_systematic: false
+
+execution:
+  allow_training: false
+  allow_final_training: false
+  allow_baseline_rerun: false
+  allow_llm_inference: false
+  allow_network: false
+  allow_download: false
+  allow_commit: false

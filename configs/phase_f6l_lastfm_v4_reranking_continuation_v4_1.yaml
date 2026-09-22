@@ -1,0 +1,46 @@
+# F6L LastFM V4.1 reranking continuation freeze.
+# Generated for review only. Do not execute without separate authorization.
+phase_id: phase_f6l
+base_run_id: "20260806_034027"
+continuation_id: "phase_f6l_lastfm_v4_reranking_continuation_v4_1_20260807"
+decision_token: "f6l_lastfm_v4_reranking_post_breaker_versioned_continuation_ready"
+execution_authorized: false
+allow_api_calls_required_for_future_execution: true
+local_only_required: true
+target_selection_policy: all_and_only_canonical_requests_without_final_response
+target_counts:
+  total: 1600
+  retry_after_non_final_transport_timeout: 48
+  first_attempt_never_attempted: 1552
+source_artifacts:
+  base_manifest: "results/tables/phase_f6l_lastfm_v4_reranking_full_run_manifest.csv"
+  base_parse_results: "results/tables/phase_f6l_lastfm_v4_reranking_full_run_parse_results.csv"
+  post_breaker_summary: "results/manifests/phase_f6l_lastfm_v4_reranking_post_breaker_summary.json"
+  raw_output_dir: "results/llm/phase_f6l_lastfm_v4_reranking_full_run_20260806_034027"
+contracts:
+  parser_source_hash: "5527024992F87984078F46F15491F1E8CB6EB7DF6659559416EBD67F8A098854"
+  schema_hash: "266F765149A0C46DAFAB8D4B1C9A0ECAF63986E806E6866F74FA2E75D04321E3"
+  output_contract_hash: "6E06E4DD3D8CD5EB332324B4FDEDAEA67943950698ED244F16C20B7BAE28714F"
+  ranking_baseline_freeze_hash: "D624D4D57CC23C5647D60DF172DE6E71DC746B8098DE66C95EBCCBE609D145EC"
+completion_policy:
+  completed_requires_final_response_and_parser_classification: true
+  non_final_transport_timeout_is_completed: false
+  include_non_final_transport_timeouts_in_continuation: true
+  prior_timeout_records_remain_byte_invariant: true
+  one_final_response_per_canonical_request_for_parser_metrics: true
+duplicate_token_breaker_v4_1:
+  duplicate_token_remains_structural_invalid_fail_strict: true
+  no_repair: true
+  no_deduplication: true
+  no_retry_caused_by_duplicate_token: true
+  stop_if_two_consecutive_closed_200_final_response_windows_same_cell_rate_gt: 0.05
+  stop_if_cell_cumulative_rate_gt_after_at_least_400_final_responses: 0.05
+hard_stop_immediate:
+  - malformed_json
+  - unknown_token
+  - out_of_domain_token
+  - wrong_length
+  - mapping_failure
+  - parser_drift
+  - schema_drift
+  - manifest_hash_drift

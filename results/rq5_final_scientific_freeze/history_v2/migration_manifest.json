@@ -1,0 +1,76 @@
+{
+  "affected_artifacts": [
+    "per_user.csv",
+    "metrics.csv",
+    "paired_contributions.csv",
+    "bootstrap_results.csv"
+  ],
+  "aplt_affected_cells": [
+    {
+      "condition": "profile_only",
+      "history_length": 1
+    },
+    {
+      "condition": "profile_plus_history",
+      "history_length": 1
+    },
+    {
+      "condition": "profile_only",
+      "history_length": 2
+    }
+  ],
+  "aplt_affected_requests": [
+    {
+      "condition": "profile_only",
+      "history_length": 1,
+      "new_aplt": 0.0,
+      "old_aplt": 0.2,
+      "request_id": "RQ5F6-RANK-9951A46617A3100E8FC2"
+    },
+    {
+      "condition": "profile_plus_history",
+      "history_length": 1,
+      "new_aplt": 0.0,
+      "old_aplt": 0.2,
+      "request_id": "RQ5F6-RANK-52FF1E908AE237CC3030"
+    },
+    {
+      "condition": "profile_only",
+      "history_length": 2,
+      "new_aplt": 0.0,
+      "old_aplt": 0.2,
+      "request_id": "RQ5F6-RANK-DA9A74F27E37C49FEFA8"
+    }
+  ],
+  "audit_observed_historical_hit_count": 56,
+  "audit_observed_is_not_target": true,
+  "catalog_sha256": "343debd3cc3baa042d13cf8e050de99457535aa1d112176f05f31e85082ccf85",
+  "classification": "LOCAL_ADAPTED_ONLY",
+  "frequency_sha256": "ff17012f6f6e0028d4930cdf95986c8e27978550514202c22451f480e9dbeb27",
+  "long_tail_threshold": 17.0,
+  "new_bootstrap_results_sha256": "b0c31b8439b724013e7fada27b9b54ff6c84bc6e0bbb2f11663e349873d1ffd3",
+  "new_hit_count": 51,
+  "new_hit_vector_sha256": "3803ed95f3e3472781336a980d16a85426d846776cefca322ced4bf2e097b13c",
+  "new_metrics_sha256": "7ace71bc8354515d2fb099883c7f6cba908d91bd49be01c7fb04c86ac66386fa",
+  "new_mostpop_sha256": "b19959c91902d078a24dfb494e8f4ef84de8707de8aacc1493d3fb71894c4d31",
+  "new_per_user_sha256": "75f60b22c94b979fcaf0c0d4d600e1f20039af5a3b9030b6b02745190aa68ccb",
+  "old_artifacts_preserved_in": "evidence_history_v1.zip",
+  "old_bootstrap_results_sha256": "11c751c3863272f510e6ad77253c6b3462b331b3d601fb02205fab0e082e380c",
+  "old_hit_count": 47,
+  "old_hit_vector_sha256": "13475792797319adac8484b66f0b2283de9897b28a44a28b750386d3acec1216",
+  "old_metrics_sha256": "5b333b5568170af11abeed889097e1ac73810479bda1faaf3a892cc8a79e99c6",
+  "old_mostpop_sha256": "d46a5f22213650c259ffefaa6014c5f923b100ce39cabbed306222dbeb57b62b",
+  "old_per_user_member": "submission/results/tables/rq5_figure6_history_length_per_user_metrics.csv",
+  "old_per_user_sha256": "0425e792e5703da10c4897b90ca7bb58c4463fe1dfea1e09e3d3b18e3e6c9716",
+  "positive_count_items": 12092,
+  "raw_inference_unchanged": true,
+  "reason": [
+    "strict-invalid APLT must be zero",
+    "replace NumPy-dependent tie ordering with canonical item ID ordering"
+  ],
+  "source": "research/data/reconstructed/plan_c/amazon_beauty/interactions.csv",
+  "source_sha256": "d2a7801a024349063cff7c455e872eed6e8eb0132324ed8b710be1ff9a0e9478",
+  "tie_break": "descending_frequency_then_ascending_exact_canonical_item_id_unicode_string",
+  "train_rows": 176139,
+  "version": "V2"
+}

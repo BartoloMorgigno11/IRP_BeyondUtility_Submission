@@ -1,0 +1,20 @@
+{
+  "config": "configs/rq5_final_freeze.yaml",
+  "evidence_family": "history_v2",
+  "figure_id": "fig_rq5_history_length_profile_conditions",
+  "figure_sha256": {
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_history_length_profile_conditions.pdf": "1a8c8297cc7d6700fdea640f0d169eeef54597ae82d357f2932bb39f09434c68",
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_history_length_profile_conditions.png": "760ce5c63939e6ade26d77caad8a13c9f5d4425b363fff724bb1bb6e9428f1f7",
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_history_length_profile_conditions.svg": "6b6a86f31b8d18f91d46c6af0c3232e77238d4af48d75598a0ac19f0a19df901"
+  },
+  "generation_script": "src/analysis/rq5_final_freeze.py",
+  "limitations": "Beauty/Qwen only; local adapted APLT/MostPop; V2 canonical ID tie-break; exploratory",
+  "rq_identifier": "RQ5",
+  "scientific_interpretation": "Experimentally distinct history-length slice; PASS metrics only",
+  "source_artifacts": {
+    "results/rq5_final_scientific_freeze/history_v2/metrics.csv": "7ace71bc8354515d2fb099883c7f6cba908d91bd49be01c7fb04c86ac66386fa",
+    "results/rq5_final_scientific_freeze/history_v2/migration_manifest.json": "d07254a556ef01b720fa7094eb63249ce7f3ec5b5fea5de6401cb381f5439fce"
+  },
+  "source_csv": "results/rq5_final_scientific_freeze/figures/fig_rq5_history_length_profile_conditions_values.csv",
+  "source_csv_sha256": "387f617f5652b76361190c7f9c5575498e5855941ff217000d3f1de697136789"
+}

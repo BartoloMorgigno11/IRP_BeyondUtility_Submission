@@ -1,0 +1,822 @@
+{
+  "created_from_commit": "77cb2a36d61031a62598bd428931ff352a63db6d",
+  "figure_branch": "freeze/final-figures",
+  "figure_ids": [
+    "fig_rq1_utility_heatmap_appendix",
+    "fig_rq2_llm_longtail_novelty_heatmap",
+    "fig_rq2_llm_serendipity_coverage_heatmap",
+    "fig_rq2_llm_calibration_heatmap",
+    "fig_rq3_history_metric_grid_final",
+    "fig_rq4_g3_first_random_utility_pairs",
+    "fig_rq4_g3_first_random_bootstrap_deltas",
+    "fig_rq5_profile_conditions_main",
+    "fig_rq5_profile_deltas_heatmap",
+    "fig_rq6_textual_hallucination_vs_structural_reliability",
+    "fig_rq7_candidate_recall_and_reranking_utility",
+    "fig_cross_rq_evidence_overview",
+    "fig_rq1_traditional_vs_llm_utility",
+    "fig_rq2_traditional_vs_llm_longtail_popularity_novelty",
+    "fig_rq2_traditional_vs_llm_serendipity_diversity_coverage",
+    "fig_rq2_llm_diversity_distribution_heatmap",
+    "fig_rq3_paired_bootstrap_decisions",
+    "fig_rq5_history_length_profile_conditions",
+    "fig_rq1_utility_landscape_main",
+    "fig_rq2_llm_longtail_novelty_landscape",
+    "fig_rq2_llm_serendipity_coverage_landscape",
+    "fig_rq2_llm_diversity_distribution_landscape",
+    "fig_rq2_llm_calibration_landscape",
+    "fig_rq4_targeted_r5b_canddif_recovery",
+    "fig_rq5_profile_plus_history_extension",
+    "fig_rq5_profile_example_qualitative"
+  ],
+  "figures": [
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq1_utility_heatmap_appendix",
+      "figure_manifest": "results/manifests/final_figures/fig_rq1_utility_heatmap_appendix_manifest.json",
+      "notes": "Final main text despite historical appendix filename.",
+      "output_sha256": {
+        "results/final_figures/rq1/figures/fig_rq1_utility_heatmap_appendix.pdf": "8e099f5dcd476d74d6e2004472b59422f4205d5fc853f0bfc4ac351b79b6d327",
+        "results/final_figures/rq1/figures/fig_rq1_utility_heatmap_appendix.png": "65f577e49270c4e05fe38307eef693d44b3a1a470f528227c8b495dad5d45645",
+        "results/final_figures/rq1/figures/fig_rq1_utility_heatmap_appendix.svg": "0c2bd9fb44ac4df98622e5c7479ec2eb9c0221d800c1e351d08344deaed0f910"
+      },
+      "pdf_path": "results/final_figures/rq1/figures/fig_rq1_utility_heatmap_appendix.pdf",
+      "png_path": "results/final_figures/rq1/figures/fig_rq1_utility_heatmap_appendix.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "8b0fbac9c61f37f2dc870371eaabd4f14efd642e52f4094b121ddd3ed671d5ef",
+      "role": "MAIN_TEXT",
+      "rq": "RQ1",
+      "scientific_purpose": "Expose all 30 frozen dataset-by-model-by-prompt utility cells for external inspection.",
+      "scientific_source_sha256": {
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/tables/g1_primary_ranking_utility.csv": "369db87fb19686525135aa1f5cd9d1b1d6d790e4696aad0b70613cb235b33308"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq1/values/fig_rq1_utility_heatmap_appendix_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq1/figures/fig_rq1_utility_heatmap_appendix.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq2_llm_longtail_novelty_heatmap",
+      "figure_manifest": "results/manifests/final_figures/fig_rq2_llm_longtail_novelty_heatmap_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_heatmap.pdf": "d5ca886bfc77b3c4e2d8c2f39a1277185a321e670eac3f842b568de7523d308c",
+        "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_heatmap.png": "5ea21987f9187b86a78aa661f66049e630b026c7af489c40270ccfeafc80dcfd",
+        "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_heatmap.svg": "c2172403cc688dc10e2961a42786dc931bb4f3e1749e5c817be7bc9dd8b3c876"
+      },
+      "pdf_path": "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_heatmap.pdf",
+      "png_path": "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_heatmap.png",
+      "renderer_dependencies_sha256": {
+        "src/analysis/final_figures/rq2.py": "38de0ac2d11441dc964ba7aeae7e9a9dd5ff4c48e7120511159bfeaa5b372e95"
+      },
+      "renderer_sha256": "343617bb1e9b232cd9d96797da7e16ed520a410317d0a787ec1ebe99c04cb960",
+      "role": "MAIN_TEXT",
+      "rq": "RQ2",
+      "scientific_purpose": "Expose all 30 canonical dataset-model-prompt cells for APLT@5, ARP@5, PopREO@5, and self-information@5.",
+      "scientific_source_sha256": {
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq2/values/fig_rq2_llm_longtail_novelty_heatmap_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_heatmap.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq2_llm_serendipity_coverage_heatmap",
+      "figure_manifest": "results/manifests/final_figures/fig_rq2_llm_serendipity_coverage_heatmap_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_heatmap.pdf": "62ee264b8465943322d928c2ebb8e5f55c1ac5cd1c4f50b3e1a839797a81383a",
+        "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_heatmap.png": "d9bcdc19d8c96d2257c0fb637fbeda88eec0e638cc6deb1f20b75dc5538e5445",
+        "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_heatmap.svg": "e3d7865494f071dee15cc638ad21d7b9c96aaf55224637291624da17dd207f52"
+      },
+      "pdf_path": "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_heatmap.pdf",
+      "png_path": "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_heatmap.png",
+      "renderer_dependencies_sha256": {
+        "src/analysis/final_figures/rq2.py": "38de0ac2d11441dc964ba7aeae7e9a9dd5ff4c48e7120511159bfeaa5b372e95"
+      },
+      "renderer_sha256": "343617bb1e9b232cd9d96797da7e16ed520a410317d0a787ec1ebe99c04cb960",
+      "role": "MAIN_TEXT",
+      "rq": "RQ2",
+      "scientific_purpose": "Expose all 30 canonical cells for corrected serendipity@5 and the two distinct coverage constructs.",
+      "scientific_source_sha256": {
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq2/values/fig_rq2_llm_serendipity_coverage_heatmap_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_heatmap.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq2_llm_calibration_heatmap",
+      "figure_manifest": "results/manifests/final_figures/fig_rq2_llm_calibration_heatmap_manifest.json",
+      "notes": "Local extension, not a target-paper metric.",
+      "output_sha256": {
+        "results/final_figures/rq2/figures/fig_rq2_llm_calibration_heatmap.pdf": "2869d0208d3ee1150fa41493d0ed5e7354401db8c9c3bafa51851d4540d26ecb",
+        "results/final_figures/rq2/figures/fig_rq2_llm_calibration_heatmap.png": "48f66d136100198483b1232628f296068ae11ee32c5d456bcbf6015080348ac6",
+        "results/final_figures/rq2/figures/fig_rq2_llm_calibration_heatmap.svg": "70ec9d7f639014eba6dff527e11fdb88030b1dc87c02b54fe2046f0e436f1cfe"
+      },
+      "pdf_path": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_heatmap.pdf",
+      "png_path": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_heatmap.png",
+      "renderer_dependencies_sha256": {
+        "src/analysis/final_figures/rq2.py": "38de0ac2d11441dc964ba7aeae7e9a9dd5ff4c48e7120511159bfeaa5b372e95",
+        "src/analysis/final_figures/rq2_heatmaps.py": "343617bb1e9b232cd9d96797da7e16ed520a410317d0a787ec1ebe99c04cb960"
+      },
+      "renderer_sha256": "ed3d8bcc8900f8fc9dfe0e4385f18d45c8175c2181709d944fc3cbdf33cd08c2",
+      "role": "MAIN_TEXT",
+      "rq": "RQ2",
+      "scientific_purpose": "Expose all 30 canonical Calibration@5 cells with eligible and undefined user counts.",
+      "scientific_source_sha256": {
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq2/values/fig_rq2_llm_calibration_heatmap_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_heatmap.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq3_history_metric_grid_final",
+      "figure_manifest": "results/manifests/final_figures/fig_rq3_history_metric_grid_final_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq3/figures/fig_rq3_history_metric_grid_final.pdf": "0c3ee6ffd750f1631b2e93f3ecaf1167452a7d3e4f3a51a37751a5d637dbfd75",
+        "results/final_figures/rq3/figures/fig_rq3_history_metric_grid_final.png": "86d8c146b56ac2eae436a04850f47019e8149713375b900022b51c547565661d",
+        "results/final_figures/rq3/figures/fig_rq3_history_metric_grid_final.svg": "97e5e2da2fae2caa12a07cccbad3894babb76dfb1cee317272d15356a94978ce"
+      },
+      "pdf_path": "results/final_figures/rq3/figures/fig_rq3_history_metric_grid_final.pdf",
+      "png_path": "results/final_figures/rq3/figures/fig_rq3_history_metric_grid_final.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "b0c41c8184b97252dac12a3b388d0f055771bc6897b27eb123e574daefb2ae6b",
+      "role": "MAIN_TEXT",
+      "rq": "RQ3",
+      "scientific_purpose": "GE20 complete-history descriptive trajectories",
+      "scientific_source_sha256": {
+        "results/rq3_completion_scientific_freeze/freeze_manifest.json": "c23d83a1249e700f11ca6284fa9819db70009b4607d09c779432b3ac9a09f295",
+        "results/rq3_completion_scientific_freeze/scientific_synthesis_summary.csv": "189ab285a873a74ef2c25f95f1f784b1b45edd000b21fb00f2fa265ad7fa824f",
+        "results/rq3_completion_scientific_freeze/statistical_results.csv": "976257e38d7cff90cc135bc126f27348020a1f9097f3260372bcd59c70a09f95",
+        "results/tables/rq3_llm_history_metric_grid_final.csv": "96ab1971f5717c04faba7c0b61e9e1bfc92620ac2ee56eab33d622ec312a349d"
+      },
+      "source_manifest_or_contract": "results/rq3_completion_scientific_freeze/freeze_manifest.json",
+      "source_values_artifact": "results/final_figures/rq3/values/fig_rq3_history_metric_grid_final_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq3/figures/fig_rq3_history_metric_grid_final.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq4_g3_first_random_utility_pairs",
+      "figure_manifest": "results/manifests/final_figures/fig_rq4_g3_first_random_utility_pairs_manifest.json",
+      "notes": "Target-informed FIRST oracle, not deployable.",
+      "output_sha256": {
+        "results/final_figures/rq4/figures/fig_rq4_g3_first_random_utility_pairs.pdf": "5bd8fcf5faae821c9e6a6245aa498fcbfb2190d63579a477744eafaa8ce091e0",
+        "results/final_figures/rq4/figures/fig_rq4_g3_first_random_utility_pairs.png": "6ed8472526de327c52af3830a8fddcdc28a24a2ac03e91013fc3fc7050a6b067",
+        "results/final_figures/rq4/figures/fig_rq4_g3_first_random_utility_pairs.svg": "5544787cf6b5fb2f4f619552c7370564fe1a139184df64f28020ad342930411e"
+      },
+      "pdf_path": "results/final_figures/rq4/figures/fig_rq4_g3_first_random_utility_pairs.pdf",
+      "png_path": "results/final_figures/rq4/figures/fig_rq4_g3_first_random_utility_pairs.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "898cd5e08fa9f4f1b7b5a8eabad9648de94aa0389f0bbf29cf0bce9d169b2946",
+      "role": "MAIN_TEXT",
+      "rq": "RQ4",
+      "scientific_purpose": "Systematic G3 paired candidate-order utility",
+      "scientific_source_sha256": {
+        "results/manifests/g3_candidate_position_metrics_freeze.json": "3cc590443a8a63c53744293625c255ef5f385141d5344cd14499ee4feb156ea6",
+        "results/manifests/g3_candidate_position_scientific_synthesis_manifest.json": "db85337b00ebf21680c624d41247a9d33e7c80386cdaa172d201f0cd2bbb8f82",
+        "results/manifests/g3_candidate_position_statistical_analysis_manifest.json": "066466de839a01eb3be9f6fdcfc3406b2f1d7cf902c3c814ee9d9cba46f8f9a0",
+        "results/tables/g3_candidate_position_canddif.csv": "6349802ba933d5ab0218fd72268e4aa0c71563f3a8c1cc91d8a0273ee9e59f80",
+        "results/tables/g3_candidate_position_metric_results.csv": "ce005175b0e6222ca488080506cd8a8e13d1314e136e0421c782b88f14e4e25e",
+        "results/tables/g3_candidate_position_pair_integrity.csv": "9de7febe5fe472b57f383f59c11a83f49353772482223360aa42fe0e0be75255",
+        "results/tables/g3_candidate_position_reliability.csv": "b31de0ea8c3b788091eeb7893af7a795029ddb36059d87a13c88f1257da7d537",
+        "results/tables/g3_candidate_position_statistical_results.csv": "2b2e1fa3d661fa1c4c2e81d56350548eeb33d1fb9594ef5b924b548af7a555a3",
+        "results/tables/g3_candidate_position_synthesis_decision_breakdowns.csv": "869daa07c5325bb1108ba5016712db979d5de7d2453f206f3200a92885f6cc07",
+        "results/tables/g3_candidate_position_synthesis_statistical_comparisons.csv": "f24af8cc57f3403e26453a6ea9d636b061c4375cbeeb3c9f9e53f6ecd643f19d"
+      },
+      "source_manifest_or_contract": "results/manifests/g3_candidate_position_metrics_freeze.json;results/manifests/g3_candidate_position_statistical_analysis_manifest.json;results/manifests/g3_candidate_position_scientific_synthesis_manifest.json",
+      "source_values_artifact": "results/final_figures/rq4/values/fig_rq4_g3_first_random_utility_pairs_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq4/figures/fig_rq4_g3_first_random_utility_pairs.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq4_g3_first_random_bootstrap_deltas",
+      "figure_manifest": "results/manifests/final_figures/fig_rq4_g3_first_random_bootstrap_deltas_manifest.json",
+      "notes": "Target-informed FIRST oracle, not deployable.",
+      "output_sha256": {
+        "results/final_figures/rq4/figures/fig_rq4_g3_first_random_bootstrap_deltas.pdf": "d8107403c0b51a9564418df8afe4c9dbba9e9f87931d78b3e09f211f85b4656a",
+        "results/final_figures/rq4/figures/fig_rq4_g3_first_random_bootstrap_deltas.png": "50f0fe4550540634f9398a0285757c17632bd0d7cb003372fec2c5f4169426df",
+        "results/final_figures/rq4/figures/fig_rq4_g3_first_random_bootstrap_deltas.svg": "ffcf28bc9908b77e52d702373339f731d14bd5f57c521bbf1e3d59bad0cf26f5"
+      },
+      "pdf_path": "results/final_figures/rq4/figures/fig_rq4_g3_first_random_bootstrap_deltas.pdf",
+      "png_path": "results/final_figures/rq4/figures/fig_rq4_g3_first_random_bootstrap_deltas.png",
+      "renderer_dependencies_sha256": {
+        "src/analysis/final_figures/rq4.py": "898cd5e08fa9f4f1b7b5a8eabad9648de94aa0389f0bbf29cf0bce9d169b2946"
+      },
+      "renderer_sha256": "ed3d8bcc8900f8fc9dfe0e4385f18d45c8175c2181709d944fc3cbdf33cd08c2",
+      "role": "MAIN_TEXT",
+      "rq": "RQ4",
+      "scientific_purpose": "Systematic G3 paired bootstrap FIRST-minus-RANDOM effects",
+      "scientific_source_sha256": {
+        "results/manifests/g3_candidate_position_metrics_freeze.json": "3cc590443a8a63c53744293625c255ef5f385141d5344cd14499ee4feb156ea6",
+        "results/manifests/g3_candidate_position_scientific_synthesis_manifest.json": "db85337b00ebf21680c624d41247a9d33e7c80386cdaa172d201f0cd2bbb8f82",
+        "results/manifests/g3_candidate_position_statistical_analysis_manifest.json": "066466de839a01eb3be9f6fdcfc3406b2f1d7cf902c3c814ee9d9cba46f8f9a0",
+        "results/tables/g3_candidate_position_canddif.csv": "6349802ba933d5ab0218fd72268e4aa0c71563f3a8c1cc91d8a0273ee9e59f80",
+        "results/tables/g3_candidate_position_metric_results.csv": "ce005175b0e6222ca488080506cd8a8e13d1314e136e0421c782b88f14e4e25e",
+        "results/tables/g3_candidate_position_pair_integrity.csv": "9de7febe5fe472b57f383f59c11a83f49353772482223360aa42fe0e0be75255",
+        "results/tables/g3_candidate_position_reliability.csv": "b31de0ea8c3b788091eeb7893af7a795029ddb36059d87a13c88f1257da7d537",
+        "results/tables/g3_candidate_position_statistical_results.csv": "2b2e1fa3d661fa1c4c2e81d56350548eeb33d1fb9594ef5b924b548af7a555a3",
+        "results/tables/g3_candidate_position_synthesis_decision_breakdowns.csv": "869daa07c5325bb1108ba5016712db979d5de7d2453f206f3200a92885f6cc07",
+        "results/tables/g3_candidate_position_synthesis_statistical_comparisons.csv": "f24af8cc57f3403e26453a6ea9d636b061c4375cbeeb3c9f9e53f6ecd643f19d"
+      },
+      "source_manifest_or_contract": "results/manifests/g3_candidate_position_metrics_freeze.json;results/manifests/g3_candidate_position_statistical_analysis_manifest.json;results/manifests/g3_candidate_position_scientific_synthesis_manifest.json",
+      "source_values_artifact": "results/final_figures/rq4/values/fig_rq4_g3_first_random_bootstrap_deltas_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq4/figures/fig_rq4_g3_first_random_bootstrap_deltas.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq5_profile_conditions_main",
+      "figure_manifest": "results/manifests/final_figures/fig_rq5_profile_conditions_main_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq5/figures/fig_rq5_profile_conditions_main.pdf": "77138827b0181f40cb8c693e80e5f7f065ac56f6db8c2ebfdb711a6f81cdf201",
+        "results/final_figures/rq5/figures/fig_rq5_profile_conditions_main.png": "50b20eb628da1a1c7e4c868babca139007b4550bb067697ecfd6b215afbd66b2",
+        "results/final_figures/rq5/figures/fig_rq5_profile_conditions_main.svg": "a6c344f46912a7bf523bf0a1a2c99339da8762d6dc192e1772077d01e47cafee"
+      },
+      "pdf_path": "results/final_figures/rq5/figures/fig_rq5_profile_conditions_main.pdf",
+      "png_path": "results/final_figures/rq5/figures/fig_rq5_profile_conditions_main.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "3aeb95027dcc9f3730c188027f9382e9d3d189b2951315b44b35fdaae81138d1",
+      "role": "MAIN_TEXT",
+      "rq": "RQ5",
+      "scientific_purpose": "Corrected matched absolute utility",
+      "scientific_source_sha256": {
+        "results/rq5_final_scientific_freeze/corrected/metrics.csv": "98c7782211ec143c46205591a1cebc2dc4e5798926aef23badd34287cdd3f312",
+        "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_conditions_main_values.csv": "8fcc680a8fd7b6cc5718fdeed951c45c2b679f983f76575ce57084afe9f12451",
+        "results/rq5_final_scientific_freeze/figures/figure_index.json": "48124a4886231e960a8d736ba3592957fdb855d59924953a29b7d69cff7b71e1",
+        "results/rq5_final_scientific_freeze/freeze_manifest.json": "e3e6a8edc1d2698e76350ffee726329f21f51a2aaa598690b2e9d2c7b379e3d6"
+      },
+      "source_manifest_or_contract": "results/rq5_final_scientific_freeze/figures/figure_index.json;results/rq5_final_scientific_freeze/freeze_manifest.json",
+      "source_values_artifact": "results/final_figures/rq5/values/fig_rq5_profile_conditions_main_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq5/figures/fig_rq5_profile_conditions_main.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq5_profile_deltas_heatmap",
+      "figure_manifest": "results/manifests/final_figures/fig_rq5_profile_deltas_heatmap_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq5/figures/fig_rq5_profile_deltas_heatmap.pdf": "c4e08746e6ece4f13a482eea18e24c71ec7153de6204a3859da58fa3e6c23237",
+        "results/final_figures/rq5/figures/fig_rq5_profile_deltas_heatmap.png": "2592ce328f628bb2f51cd39c17cebe03cdec3e5dedeb69ec81f5a7dc72b7f954",
+        "results/final_figures/rq5/figures/fig_rq5_profile_deltas_heatmap.svg": "db591697ca7fb76d05647c474e60999f5e77fc7bcdee332d96c728b2b5288094"
+      },
+      "pdf_path": "results/final_figures/rq5/figures/fig_rq5_profile_deltas_heatmap.pdf",
+      "png_path": "results/final_figures/rq5/figures/fig_rq5_profile_deltas_heatmap.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "3aeb95027dcc9f3730c188027f9382e9d3d189b2951315b44b35fdaae81138d1",
+      "role": "MAIN_TEXT",
+      "rq": "RQ5",
+      "scientific_purpose": "Corrected matched substitution and addition effects",
+      "scientific_source_sha256": {
+        "results/rq5_final_scientific_freeze/corrected/bootstrap_results.csv": "f81d55d54468fe363b898635040c0299fa4303a9d94ce0dcdfcb10e5a8e712dc",
+        "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_deltas_heatmap_values.csv": "b6189c79d9ce7c15c47760f7d0972563bf6683bfc7b07adbcfd8f11e2ca3a50f",
+        "results/rq5_final_scientific_freeze/figures/figure_index.json": "48124a4886231e960a8d736ba3592957fdb855d59924953a29b7d69cff7b71e1",
+        "results/rq5_final_scientific_freeze/freeze_manifest.json": "e3e6a8edc1d2698e76350ffee726329f21f51a2aaa598690b2e9d2c7b379e3d6"
+      },
+      "source_manifest_or_contract": "results/rq5_final_scientific_freeze/figures/figure_index.json;results/rq5_final_scientific_freeze/freeze_manifest.json",
+      "source_values_artifact": "results/final_figures/rq5/values/fig_rq5_profile_deltas_heatmap_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq5/figures/fig_rq5_profile_deltas_heatmap.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq6_textual_hallucination_vs_structural_reliability",
+      "figure_manifest": "results/manifests/final_figures/fig_rq6_textual_hallucination_vs_structural_reliability_manifest.json",
+      "notes": "Constrained-output structural reliability, not textual hallucination.",
+      "output_sha256": {
+        "results/final_figures/rq6/figures/fig_rq6_textual_hallucination_vs_structural_reliability.pdf": "9e5dde27ac2bd323175436209a40c00f397157bb3e0a8803a64406609bf4daf4",
+        "results/final_figures/rq6/figures/fig_rq6_textual_hallucination_vs_structural_reliability.png": "195e24b643d3d585914fb51173aa1ed0ff3005dba9b769394fea5628b309e7b6",
+        "results/final_figures/rq6/figures/fig_rq6_textual_hallucination_vs_structural_reliability.svg": "f37d98afd2c20fed88a66a1104b8c33ee8d6a53ece01520cc8cbb1d17fd6d5e9"
+      },
+      "pdf_path": "results/final_figures/rq6/figures/fig_rq6_textual_hallucination_vs_structural_reliability.pdf",
+      "png_path": "results/final_figures/rq6/figures/fig_rq6_textual_hallucination_vs_structural_reliability.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "68e6e7eead29e08907d54f263d74d095fdcf5ead744978781c0afd9fd4a7018f",
+      "role": "MAIN_TEXT",
+      "rq": "RQ6",
+      "scientific_purpose": "Separate target-paper free-text hallucination from local constrained-output structural reliability.",
+      "scientific_source_sha256": {
+        "results/manifests/rq6_evidence_authority.json": "a22ceae0565d87f1298ed1d97e8af1b53e24b3febb69ff81bb098c5bb1f5176e",
+        "results/manifests/rq6_final_figure_spec.json": "5752191568107c46318a9665b3aaea9c4a785e6b0a2c8f740473974d1017f280",
+        "results/manifests/rq6_scientific_contract.json": "f2df8cfc127a586d18082a6dc710356ba058ad1b641f2d38821fe588a87d050d",
+        "results/tables/g1_primary_ranking_reliability.csv": "1f5051ee58df03118617c981d13ece3a1679df2440b08f59e52a7ed068ebd023",
+        "results/tables/g2_history_length_analysis_universe.csv": "02d501b1fd250f2da1ab33905a36da2a80803c8e16b763b5a31f56de5bc7e336",
+        "results/tables/g3_candidate_position_reliability.csv": "b31de0ea8c3b788091eeb7893af7a795029ddb36059d87a13c88f1257da7d537",
+        "results/tables/g4_f1bzq_reliability.csv": "666f4af4d2fda42fbd145e0d34dd881f2655c5582e8c88b83251690b4b2d27cb"
+      },
+      "source_manifest_or_contract": "results/manifests/rq6_evidence_authority.json;results/manifests/rq6_scientific_contract.json;results/manifests/rq6_final_figure_spec.json",
+      "source_values_artifact": "results/final_figures/rq6/values/fig_rq6_textual_hallucination_vs_structural_reliability_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq6/figures/fig_rq6_textual_hallucination_vs_structural_reliability.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq7_candidate_recall_and_reranking_utility",
+      "figure_manifest": "results/manifests/final_figures/fig_rq7_candidate_recall_and_reranking_utility_manifest.json",
+      "notes": "No original-order same-pool superiority baseline; Food.com conditional n=4.",
+      "output_sha256": {
+        "results/final_figures/rq7/figures/fig_rq7_candidate_recall_and_reranking_utility.pdf": "fb24d3d77486f221f29a293e334bb28e0e06a2e767d55c66bc2064ad052c865c",
+        "results/final_figures/rq7/figures/fig_rq7_candidate_recall_and_reranking_utility.png": "6b0ae4f56a8b62e640c2c5496f3234dd83c8eccd4935704ec66619dfc1332db2",
+        "results/final_figures/rq7/figures/fig_rq7_candidate_recall_and_reranking_utility.svg": "657bb66b4ddc1333d3b19a8d12acddf19401a3e4fe4cd1e640e66e28a9079057"
+      },
+      "pdf_path": "results/final_figures/rq7/figures/fig_rq7_candidate_recall_and_reranking_utility.pdf",
+      "png_path": "results/final_figures/rq7/figures/fig_rq7_candidate_recall_and_reranking_utility.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "5af56a38fe29552c8ef0f3188ed7d6d283a9b497271e4e7446f5e4e7bdca51c0",
+      "role": "MAIN_TEXT",
+      "rq": "RQ7",
+      "scientific_purpose": "Separate first-stage candidate availability from conditional LLM re-ranking and all-user utility.",
+      "scientific_source_sha256": {
+        "configs/f1bzq_authoritative_reranking_pool_materialization.yaml": "228fda3283a722014b59ef48ba692d37335c9e394ef427b0a89a816fa388e4c8",
+        "results/manifests/f1bzq_authoritative_pool_manifest.json": "2fdb16d836739a763d75ae873a35b26ec72b1c9bd2fcf7bdbc135ac49d8522ce",
+        "results/manifests/g4_f1bzq_canonical_provenance.json": "9bbd7187eed9ace9cc3830ac2f1d20ddd4b02e13beb1742a227a5e08f02122bd",
+        "results/manifests/g4_f1bzq_metrics_freeze.json": "a82573e29924b461ba1d60c03cc39891aa0a5191b74157b41d2bd4975cf80c37",
+        "results/manifests/g4_f1bzq_reproducibility_contract.json": "718abc8d4cdad05dfe159e253e09069c9a28f76461a1639f95b4c1f83d1e0c25",
+        "results/manifests/g4_f1bzq_reranking_protocol_freeze.json": "c43081bf86d2aadbef556f02eb21e62fcb86d4535e83a079cf91a0ae56fb7d0b",
+        "results/manifests/g4_f1bzq_statistical_analysis_manifest.json": "a6e4fab9b6ff729d0bd79b2440b912635f6fd8c701612450e5af56d3f5b2ad8d",
+        "results/tables/g4_f1bzq_candidate_conditional_metrics.csv": "b6be7dc20ba6769e93d3dccef9092c159603d7bac22b7c45e7af3623746500ba",
+        "results/tables/g4_f1bzq_candidate_hashes.csv": "ee4574d349d0605ac508b408e6d5983721b954e16884aa0b045d6b0d652b209e",
+        "results/tables/g4_f1bzq_candidate_recall_at_20.csv": "07bdd61e79975c32c5c0edd6a51375dde7075e5d2ec448bbd3086731904255f2",
+        "results/tables/g4_f1bzq_metric_denominator_contract.csv": "e2927de9d763e3089b9040b75eef97cefbcdc9ce21b23749ba46652ae924aad8",
+        "results/tables/g4_f1bzq_metric_denominators.csv": "f07d31e9600b9109975135fead0f6d6d5df8eb1128bd16652b2035389f72b79d",
+        "results/tables/g4_f1bzq_metric_results.csv": "c19577d2c12a45fbc4d9dcdb009b2b3417dc602f3047a8be1c15ed2b97f3904b",
+        "results/tables/g4_f1bzq_reliability.csv": "666f4af4d2fda42fbd145e0d34dd881f2655c5582e8c88b83251690b4b2d27cb",
+        "results/tables/g4_f1bzq_reranking_request_universe.csv": "815b3d6fd9fb16b3b83d03d3727c4cf2f5fe5f1e6b6b04568ed1ee1b634750ba",
+        "results/tables/g4_f1bzq_statistical_results.csv": "21aaa612a82cee6d267e1b4558958ebba44f27afb269a4230bab3d14a5b77ee9"
+      },
+      "source_manifest_or_contract": "results/manifests/g4_f1bzq_canonical_provenance.json;results/manifests/g4_f1bzq_reproducibility_contract.json;results/manifests/g4_f1bzq_reranking_protocol_freeze.json;results/manifests/g4_f1bzq_metrics_freeze.json;results/manifests/g4_f1bzq_statistical_analysis_manifest.json;results/manifests/f1bzq_authoritative_pool_manifest.json;configs/f1bzq_authoritative_reranking_pool_materialization.yaml",
+      "source_values_artifact": "results/final_figures/rq7/values/fig_rq7_candidate_recall_and_reranking_utility_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq7/figures/fig_rq7_candidate_recall_and_reranking_utility.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_cross_rq_evidence_overview",
+      "figure_manifest": "results/manifests/final_figures/fig_cross_rq_evidence_overview_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/cross_rq/figures/fig_cross_rq_evidence_overview.pdf": "0e054bd4be776cb685f6d6fccb371f03026bf80b10f4ad5a4e9b7c2b46c7b400",
+        "results/final_figures/cross_rq/figures/fig_cross_rq_evidence_overview.png": "0aa38f65817f21b3345660df9bcafabdc340605c2052bceabd6e1f214c2fb051",
+        "results/final_figures/cross_rq/figures/fig_cross_rq_evidence_overview.svg": "51dc1f2a7596fc4c4306ce833f5a2bf9496a38b85cb805e79b34a4a133e0a440"
+      },
+      "pdf_path": "results/final_figures/cross_rq/figures/fig_cross_rq_evidence_overview.pdf",
+      "png_path": "results/final_figures/cross_rq/figures/fig_cross_rq_evidence_overview.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "2826e6d5ee5654f7107cbc8e7b06049150415fd7d42f84a94e106837856b6d60",
+      "role": "MAIN_TEXT",
+      "rq": "SYNTHESIS",
+      "scientific_purpose": "Map RQ1\u2013RQ7 phenomena, local evidence, findings, evidence status and critical qualifications without an aggregate effect score.",
+      "scientific_source_sha256": {
+        "results/final_figures/rq6/values/fig_rq6_textual_hallucination_vs_structural_reliability_values.csv": "cf3dc0f7f1cfbaa45ac4c280f1fa4dc7ca9af3d9d659f3752846322590a22d69",
+        "results/manifests/final_figures/fig_rq1_traditional_vs_llm_utility_manifest.json": "205a68062e4800667fc1294a921ba0a3630ca3a6bf75956fe16493457b357bb5",
+        "results/manifests/final_figures/fig_rq1_utility_heatmap_appendix_manifest.json": "a0aa796a71ddb2a2bef2b9c3037e4c79dbc485d7c749759631212539471da287",
+        "results/manifests/final_figures/fig_rq2_llm_calibration_heatmap_manifest.json": "86d2687350b81fd3f5bea6760130fb553572b8f97253e7c1dba402f56f7034fb",
+        "results/manifests/final_figures/fig_rq2_llm_longtail_novelty_heatmap_manifest.json": "551a6bb70fdd9908413666248d2b669b37fac1522c76d227d8b343e020bd12c1",
+        "results/manifests/final_figures/fig_rq2_llm_serendipity_coverage_heatmap_manifest.json": "ac2f02764cb6be8a48a835bf4db3b2f196df2d44848daf536e9fafb6181b68ea",
+        "results/manifests/final_figures/fig_rq2_traditional_vs_llm_longtail_popularity_novelty_manifest.json": "bbd846635a0910310d85724ed877297169d03d07d0a6dd10b8415664fdba22f1",
+        "results/manifests/final_figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage_manifest.json": "dd34ec053b1144781b147b5c6ede4c36fa8e9ab7532206fcfcbc8f10d611ec18",
+        "results/manifests/final_figures/fig_rq3_history_metric_grid_final_manifest.json": "28ecc8b63d8605a226f7221e01284ad46e064e8ccddfb284f7a7be0a95e11d1b",
+        "results/manifests/final_figures/fig_rq3_paired_bootstrap_decisions_manifest.json": "c2f719690629aa8d1a4e1e588ddaa7bd4d0839f90a343bb4840b21c156c8ac3e",
+        "results/manifests/final_figures/fig_rq4_g3_first_random_bootstrap_deltas_manifest.json": "103886a5189c9483286937ce77bfafaa9035c463390df1d5044a49bc77dda2b4",
+        "results/manifests/final_figures/fig_rq4_g3_first_random_utility_pairs_manifest.json": "aa47ea4ab0752546c5366ff74484178f749d604615c334ff5afb786e0e9568be",
+        "results/manifests/final_figures/fig_rq5_profile_conditions_main_manifest.json": "8aa8fc29750f1f63c0a185eaa64f7be2bb98bb5bdf741214790fba298c27dd64",
+        "results/manifests/final_figures/fig_rq5_profile_deltas_heatmap_manifest.json": "aad7d8c34d0cae0ed1e095655b2d52e645cf51cbcd053e254dcca844403eee7b",
+        "results/manifests/final_figures/fig_rq6_textual_hallucination_vs_structural_reliability_manifest.json": "11832e80210db4955734b3dabe2f9b3f0d9ba6ab3c7c8c9be6bfce6ed1af5d85",
+        "results/manifests/final_figures/fig_rq7_candidate_recall_and_reranking_utility_manifest.json": "b878614f3c0e5fc44ad51f387351e50d48be1643669c1ac71d749dcdf12d724a",
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/rq3_completion_scientific_freeze/freeze_manifest.json": "c23d83a1249e700f11ca6284fa9819db70009b4607d09c779432b3ac9a09f295",
+        "results/rq5_final_scientific_freeze/freeze_manifest.json": "e3e6a8edc1d2698e76350ffee726329f21f51a2aaa598690b2e9d2c7b379e3d6",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b",
+        "results/tables/g2_history_length_scientific_synthesis_focus_reconciliation.csv": "af8f2db79930105400979f8444f2adefb7a11a7ff6c030a2ad6db661d24c9ad8",
+        "results/tables/g3_candidate_position_synthesis_decision_breakdowns.csv": "869daa07c5325bb1108ba5016712db979d5de7d2453f206f3200a92885f6cc07",
+        "results/tables/g4_f1bzq_candidate_recall_at_20.csv": "07bdd61e79975c32c5c0edd6a51375dde7075e5d2ec448bbd3086731904255f2"
+      },
+      "source_manifest_or_contract": "results/manifests/final_figures/fig_rq1_utility_heatmap_appendix_manifest.json;results/manifests/final_figures/fig_rq1_traditional_vs_llm_utility_manifest.json;results/manifests/final_figures/fig_rq2_llm_longtail_novelty_heatmap_manifest.json;results/manifests/final_figures/fig_rq2_llm_serendipity_coverage_heatmap_manifest.json;results/manifests/final_figures/fig_rq2_llm_calibration_heatmap_manifest.json;results/manifests/final_figures/fig_rq2_traditional_vs_llm_longtail_popularity_novelty_manifest.json;results/manifests/final_figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage_manifest.json;results/manifests/final_figures/fig_rq3_history_metric_grid_final_manifest.json;results/manifests/final_figures/fig_rq3_paired_bootstrap_decisions_manifest.json;results/manifests/final_figures/fig_rq4_g3_first_random_utility_pairs_manifest.json;results/manifests/final_figures/fig_rq4_g3_first_random_bootstrap_deltas_manifest.json;results/manifests/final_figures/fig_rq5_profile_conditions_main_manifest.json;results/manifests/final_figures/fig_rq5_profile_deltas_heatmap_manifest.json;results/manifests/final_figures/fig_rq6_textual_hallucination_vs_structural_reliability_manifest.json;results/manifests/final_figures/fig_rq7_candidate_recall_and_reranking_utility_manifest.json;results/rq5_final_scientific_freeze/freeze_manifest.json;results/rq3_completion_scientific_freeze/freeze_manifest.json;results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/cross_rq/values/fig_cross_rq_evidence_overview_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/cross_rq/figures/fig_cross_rq_evidence_overview.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq1_traditional_vs_llm_utility",
+      "figure_manifest": "results/manifests/final_figures/fig_rq1_traditional_vs_llm_utility_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq1/figures/fig_rq1_traditional_vs_llm_utility.pdf": "0efbabf0a0c0634001ba2a570a3c39986c01fdc56d64f32073d27bc4a4acb99f",
+        "results/final_figures/rq1/figures/fig_rq1_traditional_vs_llm_utility.png": "64e76ba7eea0c0649c79f304e1dda1c6f3d1cbe9f2c082996304e189fa3b4e9d",
+        "results/final_figures/rq1/figures/fig_rq1_traditional_vs_llm_utility.svg": "54d5e7c041e11c19dc732ad6cf354d5ac977d90a7961c723828aaa82bd3a5700"
+      },
+      "pdf_path": "results/final_figures/rq1/figures/fig_rq1_traditional_vs_llm_utility.pdf",
+      "png_path": "results/final_figures/rq1/figures/fig_rq1_traditional_vs_llm_utility.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "b421319ab7897446a32f6fe147947cbcf8c7a18f551e8612b7d6332c40ed537e",
+      "role": "APPENDIX",
+      "rq": "RQ1",
+      "scientific_purpose": "Compare local traditional and LLM candidate-set ranking utility by dataset without pooling domains.",
+      "scientific_source_sha256": {
+        "results/manifests/f1bx_execution_manifest.json": "b6251567466574ba397e1f0d5014c0ea357f9973b4ba0f20cad2bbb5334c7ac9",
+        "results/manifests/f1bz_final_traditional_execution.json": "99acd7fc2f1ee967cb158b9f9d27912d7d92441048a9cbc47fda3c344f4b7ed8",
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/raw_outputs/f1bx_baseline_recommendations.csv": "6f7f6c53751038bfa7320898f0aa4f06a049a4bff888fdba369073ebf57cefb6",
+        "results/tables/f1bx_baseline_execution.csv": "b1e82279107ad943fb4874e5f84317f9191e1d4b98d134273e68c6f3eb03edf9",
+        "results/tables/f1bx_baseline_utility_results.csv": "2570b536621a05b5ccec860839e6bd6e7dc945ff9010c9dbf6c400b96e55ccbf",
+        "results/tables/f1bz_aggregate_utility_results.csv": "1870cc13e8cbed1f34c5bd89d85028ce0e4fff87ce9fa48089de1a59a178ee30",
+        "results/tables/f1bz_final_run_manifest.csv": "7ecdfa5e2c3d156422c37c0325ec3942d36ac0681de927611965b0f08fb3e0c0",
+        "results/tables/f1bz_per_seed_utility_results.csv": "3cca2df12acb45f67e1aba28166073d6633242b14f95392963b36314143f5352",
+        "results/tables/g1_primary_ranking_request_universe.csv.gz": "b4dcf0d80f3c4af0d2353ddec744c0856491d3a958b314ddbd8800811aa347d9",
+        "results/tables/g1_primary_ranking_utility.csv": "369db87fb19686525135aa1f5cd9d1b1d6d790e4696aad0b70613cb235b33308"
+      },
+      "source_manifest_or_contract": "results/manifests/f1bx_execution_manifest.json;results/manifests/f1bz_final_traditional_execution.json;results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq1/values/fig_rq1_traditional_vs_llm_utility_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq1/figures/fig_rq1_traditional_vs_llm_utility.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq2_traditional_vs_llm_longtail_popularity_novelty",
+      "figure_manifest": "results/manifests/final_figures/fig_rq2_traditional_vs_llm_longtail_popularity_novelty_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_longtail_popularity_novelty.pdf": "d69a97252baa37c9edaa8a2894a1d9ca2d6524413e329aba7ddc0079dae58267",
+        "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_longtail_popularity_novelty.png": "4f72361517fadd1ce4f645655af17f3afc29ca52d2690a13006ddb2c164619eb",
+        "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_longtail_popularity_novelty.svg": "55dafb3427ea56abcff83b86f023afec537568815f3281c92f0a05c9bb1c8d87"
+      },
+      "pdf_path": "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_longtail_popularity_novelty.pdf",
+      "png_path": "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_longtail_popularity_novelty.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "48ae9ced21c465d5bc26f16d9baab2c2d150fea3ea931fd74400bb9bbd00747d",
+      "role": "APPENDIX",
+      "rq": "RQ2",
+      "scientific_purpose": "Compare principal long-tail, popularity and novelty dimensions by dataset and system.",
+      "scientific_source_sha256": {
+        "results/manifests/f1bx_execution_manifest.json": "b6251567466574ba397e1f0d5014c0ea357f9973b4ba0f20cad2bbb5334c7ac9",
+        "results/manifests/f1bz_final_traditional_execution.json": "99acd7fc2f1ee967cb158b9f9d27912d7d92441048a9cbc47fda3c344f4b7ed8",
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/manifests/g1_serendipity_correction.json": "c33cca450081a00eb7937b524ffe58fff309e0b6583d9fc2ec35ac47edfce6f1",
+        "results/tables/f1bx_baseline_beyond_utility_results.csv": "28b4719d3cb4c7c2a2e79aaae74aade1925f764104bc071c1eefc53c6f52da15",
+        "results/tables/f1bz_aggregate_beyond_utility_results.csv": "cb6a666078fc41fd63404dda264123a1e6890ae044450f3918b3cab15b8c3ba1",
+        "results/tables/f1bz_per_seed_beyond_utility_results.csv": "c56be8f5034f4457eca43e44e5feb188f6d81b9c619ad6e3e52d23fdc2a9510d",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json;results/manifests/g1_serendipity_correction.json;results/manifests/f1bx_execution_manifest.json;results/manifests/f1bz_final_traditional_execution.json",
+      "source_values_artifact": "results/final_figures/rq2/values/fig_rq2_traditional_vs_llm_longtail_popularity_novelty_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_longtail_popularity_novelty.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq2_traditional_vs_llm_serendipity_diversity_coverage",
+      "figure_manifest": "results/manifests/final_figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage.pdf": "02bdcd7991fd642b3a09356c06089881d4127c638c46574220bd0cfd423728d8",
+        "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage.png": "cab331fe6886f51b203da20bd7b7556b604f1cfd652513a2df1c677bc044d755",
+        "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage.svg": "4853e32f51619b2349053be1f4044f6947a3ea5bb4a4f0634bea146cb11637a8"
+      },
+      "pdf_path": "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage.pdf",
+      "png_path": "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "48ae9ced21c465d5bc26f16d9baab2c2d150fea3ea931fd74400bb9bbd00747d",
+      "role": "APPENDIX",
+      "rq": "RQ2",
+      "scientific_purpose": "Compare corrected serendipity, feature diversity and descriptive item coverage.",
+      "scientific_source_sha256": {
+        "results/manifests/f1bx_execution_manifest.json": "b6251567466574ba397e1f0d5014c0ea357f9973b4ba0f20cad2bbb5334c7ac9",
+        "results/manifests/f1bz_final_traditional_execution.json": "99acd7fc2f1ee967cb158b9f9d27912d7d92441048a9cbc47fda3c344f4b7ed8",
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/manifests/g1_serendipity_correction.json": "c33cca450081a00eb7937b524ffe58fff309e0b6583d9fc2ec35ac47edfce6f1",
+        "results/tables/f1bx_baseline_beyond_utility_results.csv": "28b4719d3cb4c7c2a2e79aaae74aade1925f764104bc071c1eefc53c6f52da15",
+        "results/tables/f1bz_aggregate_beyond_utility_results.csv": "cb6a666078fc41fd63404dda264123a1e6890ae044450f3918b3cab15b8c3ba1",
+        "results/tables/f1bz_per_seed_beyond_utility_results.csv": "c56be8f5034f4457eca43e44e5feb188f6d81b9c619ad6e3e52d23fdc2a9510d",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json;results/manifests/g1_serendipity_correction.json;results/manifests/f1bx_execution_manifest.json;results/manifests/f1bz_final_traditional_execution.json",
+      "source_values_artifact": "results/final_figures/rq2/values/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq2_llm_diversity_distribution_heatmap",
+      "figure_manifest": "results/manifests/final_figures/fig_rq2_llm_diversity_distribution_heatmap_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_heatmap.pdf": "a53f9eb4dff5163e14edbbc60bfdf2f7a6532e18f3a79368f478c8df307b383b",
+        "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_heatmap.png": "402808dce2da58e98644997f7a6a8e8851f209be6d115a60c33da20651a269c3",
+        "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_heatmap.svg": "75bf70cdfbae8c71b67505f85b699ff392e023e42d2b4f772085eb7fb979419a"
+      },
+      "pdf_path": "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_heatmap.pdf",
+      "png_path": "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_heatmap.png",
+      "renderer_dependencies_sha256": {
+        "src/analysis/final_figures/rq2.py": "38de0ac2d11441dc964ba7aeae7e9a9dd5ff4c48e7120511159bfeaa5b372e95"
+      },
+      "renderer_sha256": "343617bb1e9b232cd9d96797da7e16ed520a410317d0a787ec1ebe99c04cb960",
+      "role": "APPENDIX",
+      "rq": "RQ2",
+      "scientific_purpose": "Expose all 30 canonical cells for ILD@5, category entropy@5, Gini@5, DPD@5, Jain index@5, and OIC@5.",
+      "scientific_source_sha256": {
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq2/values/fig_rq2_llm_diversity_distribution_heatmap_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_heatmap.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq3_paired_bootstrap_decisions",
+      "figure_manifest": "results/manifests/final_figures/fig_rq3_paired_bootstrap_decisions_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq3/figures/fig_rq3_paired_bootstrap_decisions.pdf": "c2b372da17d672eddcd47d413794457d08acafcb6ca77f53a3fc87b43c037e8c",
+        "results/final_figures/rq3/figures/fig_rq3_paired_bootstrap_decisions.png": "7afae94b73f496c7846d92bb6ed9c7f528243e18c309afeac56096aba8dd1db5",
+        "results/final_figures/rq3/figures/fig_rq3_paired_bootstrap_decisions.svg": "3ee6e3fec251c213856a72a9efd0d9667f2b308ae51d8c7867771eac0aca6647"
+      },
+      "pdf_path": "results/final_figures/rq3/figures/fig_rq3_paired_bootstrap_decisions.pdf",
+      "png_path": "results/final_figures/rq3/figures/fig_rq3_paired_bootstrap_decisions.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "b0c41c8184b97252dac12a3b388d0f055771bc6897b27eb123e574daefb2ae6b",
+      "role": "APPENDIX",
+      "rq": "RQ3",
+      "scientific_purpose": "Configuration-level paired-bootstrap contrast evidence",
+      "scientific_source_sha256": {
+        "results/rq3_completion_scientific_freeze/freeze_manifest.json": "c23d83a1249e700f11ca6284fa9819db70009b4607d09c779432b3ac9a09f295",
+        "results/rq3_completion_scientific_freeze/scientific_synthesis_summary.csv": "189ab285a873a74ef2c25f95f1f784b1b45edd000b21fb00f2fa265ad7fa824f",
+        "results/rq3_completion_scientific_freeze/statistical_results.csv": "976257e38d7cff90cc135bc126f27348020a1f9097f3260372bcd59c70a09f95",
+        "results/tables/rq3_llm_history_metric_grid_final.csv": "96ab1971f5717c04faba7c0b61e9e1bfc92620ac2ee56eab33d622ec312a349d"
+      },
+      "source_manifest_or_contract": "results/rq3_completion_scientific_freeze/freeze_manifest.json",
+      "source_values_artifact": "results/final_figures/rq3/values/fig_rq3_paired_bootstrap_decisions_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq3/figures/fig_rq3_paired_bootstrap_decisions.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq5_history_length_profile_conditions",
+      "figure_manifest": "results/manifests/final_figures/fig_rq5_history_length_profile_conditions_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq5/figures/fig_rq5_history_length_profile_conditions.pdf": "acbf61f6e9c5b6598c310cfded6153237b3e4b015721007e8fc6cc732501945f",
+        "results/final_figures/rq5/figures/fig_rq5_history_length_profile_conditions.png": "2a577383e00ccdb03415c199268a382cbcff09357597532b9873dbc97372b341",
+        "results/final_figures/rq5/figures/fig_rq5_history_length_profile_conditions.svg": "2de223360fb115906c19f62b9689ba0648eddabb0d6084ad4a6de629b0ef288e"
+      },
+      "pdf_path": "results/final_figures/rq5/figures/fig_rq5_history_length_profile_conditions.pdf",
+      "png_path": "results/final_figures/rq5/figures/fig_rq5_history_length_profile_conditions.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "3aeb95027dcc9f3730c188027f9382e9d3d189b2951315b44b35fdaae81138d1",
+      "role": "APPENDIX",
+      "rq": "RQ5",
+      "scientific_purpose": "Exploratory Beauty/Qwen history-profile slice",
+      "scientific_source_sha256": {
+        "results/rq5_final_scientific_freeze/figures/fig_rq5_history_length_profile_conditions_values.csv": "387f617f5652b76361190c7f9c5575498e5855941ff217000d3f1de697136789",
+        "results/rq5_final_scientific_freeze/figures/figure_index.json": "48124a4886231e960a8d736ba3592957fdb855d59924953a29b7d69cff7b71e1",
+        "results/rq5_final_scientific_freeze/freeze_manifest.json": "e3e6a8edc1d2698e76350ffee726329f21f51a2aaa598690b2e9d2c7b379e3d6",
+        "results/rq5_final_scientific_freeze/history_v2/metrics.csv": "7ace71bc8354515d2fb099883c7f6cba908d91bd49be01c7fb04c86ac66386fa",
+        "results/rq5_final_scientific_freeze/history_v2/migration_manifest.json": "d07254a556ef01b720fa7094eb63249ce7f3ec5b5fea5de6401cb381f5439fce"
+      },
+      "source_manifest_or_contract": "results/rq5_final_scientific_freeze/history_v2/migration_manifest.json;results/rq5_final_scientific_freeze/figures/figure_index.json;results/rq5_final_scientific_freeze/freeze_manifest.json",
+      "source_values_artifact": "results/final_figures/rq5/values/fig_rq5_history_length_profile_conditions_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq5/figures/fig_rq5_history_length_profile_conditions.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq1_utility_landscape_main",
+      "figure_manifest": "results/manifests/final_figures/fig_rq1_utility_landscape_main_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq1/figures/fig_rq1_utility_landscape_main.pdf": "b4bdf182a2dcfcd0d2e4114d9e74abf47c38fac159819868e14eefbe791804fa",
+        "results/final_figures/rq1/figures/fig_rq1_utility_landscape_main.png": "6e17feee66eba36f259f30b65e0dd10b8c6ac96d1be5d4385184b1da6da2f617",
+        "results/final_figures/rq1/figures/fig_rq1_utility_landscape_main.svg": "70953b332a95b1038d96e448b7525b24e7487c277e0e55c28de1f311027d4d9c"
+      },
+      "pdf_path": "results/final_figures/rq1/figures/fig_rq1_utility_landscape_main.pdf",
+      "png_path": "results/final_figures/rq1/figures/fig_rq1_utility_landscape_main.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "8b0fbac9c61f37f2dc870371eaabd4f14efd642e52f4094b121ddd3ed671d5ef",
+      "role": "REPOSITORY_ONLY",
+      "rq": "RQ1",
+      "scientific_purpose": "Summarize utility variation across datasets, models, and prompt strategies for HR@5, NDCG@5, and MRR.",
+      "scientific_source_sha256": {
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/tables/g1_primary_ranking_utility.csv": "369db87fb19686525135aa1f5cd9d1b1d6d790e4696aad0b70613cb235b33308"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq1/values/fig_rq1_utility_landscape_main_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq1/figures/fig_rq1_utility_landscape_main.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq2_llm_longtail_novelty_landscape",
+      "figure_manifest": "results/manifests/final_figures/fig_rq2_llm_longtail_novelty_landscape_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_landscape.pdf": "87fa810de07468682b54ae71b43dc0496d6b8e2f4adac8f6266e03501c8e765a",
+        "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_landscape.png": "02e1d2b269f0ca58d9542a0350f5cf6838caef3d326c3ea3c5f34abb0bc729bd",
+        "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_landscape.svg": "10b9ff97229591e1618f54d4c71c61f3bc93a289ff54dfba56cb3753d4564acd"
+      },
+      "pdf_path": "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_landscape.pdf",
+      "png_path": "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_landscape.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "38de0ac2d11441dc964ba7aeae7e9a9dd5ff4c48e7120511159bfeaa5b372e95",
+      "role": "REPOSITORY_ONLY",
+      "rq": "RQ2",
+      "scientific_purpose": "Summarize canonical APLT@5, ARP@5, PopREO@5, and self-information@5 across datasets, models, and prompts.",
+      "scientific_source_sha256": {
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq2/values/fig_rq2_llm_longtail_novelty_landscape_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq2/figures/fig_rq2_llm_longtail_novelty_landscape.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq2_llm_serendipity_coverage_landscape",
+      "figure_manifest": "results/manifests/final_figures/fig_rq2_llm_serendipity_coverage_landscape_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_landscape.pdf": "d6302efb2702219da465f2c2dfaad6ccb1acaa29fc80edecded6bc4bdc3eb21a",
+        "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_landscape.png": "b3668f9edeb1f4fbfdd2af54b44cda77c089afc2062ffb740d84dd672002dbab",
+        "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_landscape.svg": "ef8928689e193dfeab7612765d0e8611c75e125086b0c4d7debd9e14a323523d"
+      },
+      "pdf_path": "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_landscape.pdf",
+      "png_path": "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_landscape.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "38de0ac2d11441dc964ba7aeae7e9a9dd5ff4c48e7120511159bfeaa5b372e95",
+      "role": "REPOSITORY_ONLY",
+      "rq": "RQ2",
+      "scientific_purpose": "Summarize corrected serendipity@5, item coverage@5, and catalog coverage@5 across datasets, models, and prompts.",
+      "scientific_source_sha256": {
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq2/values/fig_rq2_llm_serendipity_coverage_landscape_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq2/figures/fig_rq2_llm_serendipity_coverage_landscape.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq2_llm_diversity_distribution_landscape",
+      "figure_manifest": "results/manifests/final_figures/fig_rq2_llm_diversity_distribution_landscape_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_landscape.pdf": "39b443ac966cf6db0d299faa50e5f52c7cdc6fa1d0181d011803e234f660c59c",
+        "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_landscape.png": "e7a796145391dc2980ed5d3b7d14f23ef955d8afc1e877f495b50df9f73e99df",
+        "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_landscape.svg": "d619f95ed685d72590617a438fb3ba703fcb7df8654661a0bd10b6085f28993e"
+      },
+      "pdf_path": "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_landscape.pdf",
+      "png_path": "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_landscape.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "38de0ac2d11441dc964ba7aeae7e9a9dd5ff4c48e7120511159bfeaa5b372e95",
+      "role": "REPOSITORY_ONLY",
+      "rq": "RQ2",
+      "scientific_purpose": "Summarize canonical ILD@5, category entropy@5, Gini@5, DPD@5, Jain index@5, and OIC@5.",
+      "scientific_source_sha256": {
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq2/values/fig_rq2_llm_diversity_distribution_landscape_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq2/figures/fig_rq2_llm_diversity_distribution_landscape.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq2_llm_calibration_landscape",
+      "figure_manifest": "results/manifests/final_figures/fig_rq2_llm_calibration_landscape_manifest.json",
+      "notes": "No manuscript role implied by filename; see role column.",
+      "output_sha256": {
+        "results/final_figures/rq2/figures/fig_rq2_llm_calibration_landscape.pdf": "494c57b23f472ab8ac5b6b2a65fd77a3b79b0c46764269d010ace39f458e22b4",
+        "results/final_figures/rq2/figures/fig_rq2_llm_calibration_landscape.png": "51a3e30a23c82bdae336224561ad124e0c1b8deaee6ee1dd1198335db66ca04b",
+        "results/final_figures/rq2/figures/fig_rq2_llm_calibration_landscape.svg": "e52fcae04db6832c972c666c6e22e55afa5b0927d3b6b53e2a0f7c7194fa2b2f"
+      },
+      "pdf_path": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_landscape.pdf",
+      "png_path": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_landscape.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "38de0ac2d11441dc964ba7aeae7e9a9dd5ff4c48e7120511159bfeaa5b372e95",
+      "role": "REPOSITORY_ONLY",
+      "rq": "RQ2",
+      "scientific_purpose": "Summarize canonical Calibration@5 while preserving per-cell user eligibility and undefined-user accounting.",
+      "scientific_source_sha256": {
+        "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+        "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+      },
+      "source_manifest_or_contract": "results/manifests/g1_metric_contract_and_provenance.json",
+      "source_values_artifact": "results/final_figures/rq2/values/fig_rq2_llm_calibration_landscape_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_landscape.svg"
+    },
+    {
+      "deterministic_regeneration": "HASH_VALIDATED",
+      "figure_id": "fig_rq4_targeted_r5b_canddif_recovery",
+      "figure_manifest": "results/manifests/final_figures/fig_rq4_targeted_r5b_canddif_recovery_manifest.json",
+      "notes": "Target-informed FIRST oracle, not deployable.",
+      "output_sha256": {
+        "results/final_figures/rq4/figures/fig_rq4_targeted_r5b_canddif_recovery.pdf": "f0d931b31a89d0709757a75159b7a456552957b5529bf748af996f38c3e4d6ee",
+        "results/final_figures/rq4/figures/fig_rq4_targeted_r5b_canddif_recovery.png": "582093097fd0723adeec34a88516f9f4318b009ad852ca8ff529db4a2e67973e",
+        "results/final_figures/rq4/figures/fig_rq4_targeted_r5b_canddif_recovery.svg": "c316effb55c030554a43900346a8b34d2fe3ac3d2099a4a2efab040c4de0fe5f"
+      },
+      "pdf_path": "results/final_figures/rq4/figures/fig_rq4_targeted_r5b_canddif_recovery.pdf",
+      "png_path": "results/final_figures/rq4/figures/fig_rq4_targeted_r5b_canddif_recovery.png",
+      "renderer_dependencies_sha256": {},
+      "renderer_sha256": "898cd5e08fa9f4f1b7b5a8eabad9648de94aa0389f0bbf29cf0bce9d169b2946",
+      "role": "REPOSITORY_ONLY",
+      "rq": "RQ4",
+      "scientific_purpose": "Targeted corrected R5B CandDif recovery, supporting only",
+      "scientific_source_sha256": {
+        "results/manifests/reproduction_r5b_corrected_freeze.json": "67b4d0fe8ae58f1b2f20ac3dac24258a72a4d8caba28ad32c777e08b3d759f38",
+        "results/tables/reproduction_r5b_corrected_canddif_results.csv": "65d026ff2f3b225daccdf649bf232c831e42eac437799279dcfd647f545fe3de",
+        "results/tables/reproduction_r5b_corrected_metrics_by_condition.csv": "d91f5e476132cc6e73a5895241eb55cbde7b631347d19d73b57698604c978ca0"
+      },
+      "source_manifest_or_contract": "results/manifests/reproduction_r5b_corrected_freeze.json",
+      "source_values_artifact": "results/final_figures/rq4/values/fig_rq4_targeted_r5b_canddif_recovery_values.csv",
+      "status": "FROZEN_VALIDATED",
+      "svg_path": "results/final_figures/rq4/figures/fig_rq4_targeted_r5b_canddif_recovery.svg"
+    },
+    {
+      "deterministic_regeneration": "FROZEN_HASH_VALIDATED",
+      "figure_id": "fig_rq5_profile_plus_history_extension",
+      "figure_manifest": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_plus_history_extension_manifest.json",
+      "notes": "R5D feasibility evidence; no matched History-only counterfactual.",
+      "output_sha256": {
+        "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.pdf": "7e6992bf329a82b8deca3c33dc618d4a1025282a4d8011ccc7c43e87065b2ea9",
+        "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.png": "0a5e3132fb354b4167989a9fdc110278dfb4b6e2bc691d66aa4b0e6028327d74",
+        "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.svg": "5dd3a4fcf5da603bdec7e50fcb21c4074752f01d9dcd4c590f5a704102bc5ca5"
+      },
+      "pdf_path": "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.pdf",
+      "png_path": "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.png",
+      "renderer_sha256": "715e01fdc2af5462494c402b93f8ba685a1f563c76f190140167a92f1600dbda",
+      "role": "REPOSITORY_ONLY",
+      "rq": "RQ5",
+      "scientific_purpose": "Pipeline feasibility and absolute downstream utility",
+      "scientific_source_sha256": {
+        "results/rq5_final_scientific_freeze/r5d/metrics.csv": "498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7"
+      },
+      "source_manifest_or_contract": "results/rq5_final_scientific_freeze/freeze_manifest.json",
+      "source_values_artifact": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_plus_history_extension_values.csv",
+      "status": "FROZEN_SUPPORTING",
+      "svg_path": "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.svg"
+    },
+    {
+      "deterministic_regeneration": "NOT_APPLICABLE",
+      "figure_id": "fig_rq5_profile_example_qualitative",
+      "figure_manifest": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_example_qualitative_manifest.json",
+      "notes": "Editorial exclusion; archival evidence is retained, not regenerated.",
+      "output_sha256": {},
+      "pdf_path": "",
+      "png_path": "",
+      "renderer_sha256": null,
+      "role": "EXCLUDED",
+      "rq": "RQ5",
+      "scientific_purpose": "Archived qualitative profile example",
+      "scientific_source_sha256": {},
+      "source_manifest_or_contract": "results/rq5_final_scientific_freeze/freeze_manifest.json",
+      "source_values_artifact": "",
+      "status": "EXCLUDED_EDITORIAL",
+      "svg_path": ""
+    }
+  ],
+  "freeze_version": "1.0",
+  "global_assertions": {
+    "all_scientific_sources_frozen": true,
+    "calibration_local_extension_preserved": true,
+    "foodcom_popreo_undefined_preserved": true,
+    "foodcom_rq7_conditional_n4_diagnostic_preserved": true,
+    "no_missing_appendix_figures": true,
+    "no_missing_main_text_figures": true,
+    "no_scientific_values_modified": true,
+    "rq6_textual_hallucination_not_equated_with_structural_invalidity": true,
+    "rq7_same_pool_superiority_not_claimed": true,
+    "traditional_vs_llm_role_separate_from_rq7": true
+  },
+  "global_figure_index": "results/final_figures/global_figure_index.csv",
+  "global_figure_index_sha256": "c4b34e1ad3ca50cf3f49f351cab61d6cbd6a98e46f1eac75f4e08bbcde585332",
+  "role_counts": {
+    "APPENDIX": 6,
+    "EXCLUDED": 1,
+    "MAIN_TEXT": 12,
+    "REPOSITORY_ONLY": 7
+  },
+  "validation": "ALL_ACTIVE_CHAINS_AND_SOURCE_HASHES_VALIDATED"
+}

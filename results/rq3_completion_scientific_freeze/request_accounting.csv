@@ -1,0 +1,4 @@
+history_length,cohort,expected,accounted,valid,invalid,backend_incomplete,missing,status
+3,GE10,14298,14298,14196,102,0,0,PASS
+4,GE10,14298,14298,14128,170,0,0,PASS
+15,GE20,12198,12198,12006,192,0,0,PASS

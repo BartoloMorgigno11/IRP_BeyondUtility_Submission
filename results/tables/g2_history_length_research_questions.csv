@@ -1,0 +1,9 @@
+rq_id,scope,question,primary_metrics,planned_status
+RQ-G2.1,PRIMARY_B1_GE10,How does utility change as visible chronological train history increases from H=0 to H=10 among GE10 users?,hr_at_5;ndcg_at_5;mrr,FROZEN_PRE_INFERENCE
+RQ-G2.2,PRIMARY_B1_GE10,What is the controlled value of any visible history relative to no visible history?,hr_at_5;ndcg_at_5;mrr,FROZEN_PRE_INFERENCE
+RQ-G2.3,PRIMARY_B1_GE10,Do marginal gains saturate between H=5 and H=10 in the primary B1 short/medium design?,hr_at_5;ndcg_at_5;mrr,FROZEN_PRE_INFERENCE
+RQ-G2.4,PRIMARY_B1_GE10_prompt_interaction,Does BASE versus LLMRANK interact with short/medium history length under the frozen prompt contracts?,hr_at_5;ndcg_at_5;mrr;strict_parse_valid_rate,FROZEN_PRE_INFERENCE
+RQ-G2.5,PRIMARY_B1_GE10_model_interaction,Are B1 short/medium history-length effects consistent across the three frozen G1 local models?,hr_at_5;ndcg_at_5;mrr;strict_parse_valid_rate,FROZEN_PRE_INFERENCE
+RQ-G2.6,PRIMARY_B1_GE10_dataset_interaction,"Are B1 short/medium history-length effects consistent across Beauty, Sports, ML1M, LastFM, and Food.com?",hr_at_5;ndcg_at_5;mrr,FROZEN_PRE_INFERENCE
+RQ-G2.LONG,LONG_HISTORY_B2_GE20,"Among users with at least 20 historical interactions, does increasing context from H=10 to H=20 produce additional utility/reliability benefit?",hr_at_5;ndcg_at_5;mrr;strict_parse_valid_rate,FROZEN_PRE_INFERENCE_LONG_HISTORY_EXTENSION
+RQ-G2.7,FOODCOM_TRUE_ZERO_HISTORY_DIAGNOSTIC,How does Food.com real true-zero H=0 behavior compare descriptively with Food.com controlled H=0 warm users?,hr_at_5;ndcg_at_5;mrr;strict_parse_valid_rate,DESCRIPTIVE_ONLY_NOT_PRIMARY_PAIRED

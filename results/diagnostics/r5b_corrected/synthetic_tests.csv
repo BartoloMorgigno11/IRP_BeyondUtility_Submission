@@ -1,0 +1,13 @@
+case_id,expected_valid,observed_valid,expected_status,observed_status,output_length,duplicate_count,unknown_item_count,pass,notes
+valid_json_object_indices,true,true,parsed_valid,parsed_valid,5,0,0,true,
+plain_json_array_candidate_ids,false,false,invalid_schema,invalid_schema,0,0,0,true,
+numbered_lines,false,false,parse_failed,parse_failed,0,0,0,true,"numbered lines must not be converted to [1,342,2,177,...]"
+wrong_key_json,false,false,invalid_schema,invalid_schema,0,0,0,true,
+line_separated_ids,false,false,parse_failed,parse_failed,0,0,0,true,
+four_ids,false,false,invalid_length,invalid_length,4,0,0,true,
+six_ids,false,false,invalid_length,invalid_length,6,0,0,true,
+full_candidate_set,false,false,invalid_length,invalid_length,20,0,0,true,
+duplicate,false,false,duplicate_indices,duplicate_indices,5,1,0,true,
+out_of_candidate_index,false,false,unknown_indices,unknown_indices,5,0,1,true,
+empty_output,false,false,empty_output,empty_output,0,0,0,true,
+truncated_output,false,false,parse_failed,parse_failed,0,0,0,true,

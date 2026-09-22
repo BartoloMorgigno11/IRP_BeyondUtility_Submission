@@ -1,0 +1,19 @@
+check_name,passed,observed_value,expected_value,severity,notes
+all_E2_manifests_present,true,6,6,critical,"All six E2 manifests must be read, not regenerated."
+item_text_sources_discovered_or_blocked,true,present_or_blocked,present_or_blocked,critical,Each valid E2 dataset needs local item text or a blocked row.
+user_query_sources_discovered_or_blocked,true,present_or_blocked,present_or_blocked,critical,Each valid E2 dataset needs train/history interactions or a blocked row.
+no_training_performed,true,no_training,no_training,critical,E3B is local text scoring only.
+no_neural_training_performed,true,no_neural_training,no_neural_training,critical,E3B does not train neural baselines.
+no_llm_inference_performed,true,no_llm_inference,no_llm_inference,critical,E3B does not run LLM inference.
+no_ollama_call_performed,true,no_ollama_call,no_ollama_call,critical,E3B does not call Ollama.
+no_api_call_performed,true,no_api_call,no_api_call,critical,E3B does not call remote APIs.
+no_download_performed,true,no_download,no_download,critical,E3B does not download data or models.
+no_lastfm_run_performed,true,no_lastfm_run,no_lastfm_run,critical,LastFM remains blocked/conditional.
+no_raw_outputs_created,true,7,unchanged_existing_only,critical,E3B writes CSV tables only and no raw JSONL outputs.
+no_original_repo_output,true,clean,clean,critical,original_repo/ must remain unmodified.
+no_plan_c_modification,true,clean,clean,critical,Plan C files and metrics must remain unmodified.
+bm25_scores_schema_valid_if_created,true,valid,valid,critical,Scores must use the E3B schema when scoring is possible.
+bm25_metrics_schema_valid,true,valid,valid,critical,Metrics table must use the E3B schema.
+hr_at_5_between_0_and_1,true,0<=hr<=1,0<=hr<=1,critical,Computed HR@5 values must be probabilities.
+ndcg_at_5_between_0_and_1,true,0<=ndcg<=1,0<=ndcg<=1,critical,Computed NDCG@5 values must be probabilities.
+no_exact_reproduction_overclaim,true,no_exact_claim,no_exact_claim,critical,E3B report classifies unverified BM25 as reconstructed BM25-like.

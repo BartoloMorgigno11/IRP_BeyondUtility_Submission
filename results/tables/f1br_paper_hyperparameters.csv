@@ -1,0 +1,21 @@
+dataset,method,lr,l2,embedding,hidden,layers,heads,k1,b,source_priority,evidence_source,appendix_typo_note,status
+beauty,BM25,,,,,,,1.5,0.75,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+sports,BM25,,,,,,,1.5,0.75,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+ml1m,BM25,,,,,,,1.5,0.75,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+lastfm,BM25,,,,,,,1.5,0.75,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+beauty,BPRMF,0.001,5e-06,64,,,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+sports,BPRMF,0.001,1e-06,128,,,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+ml1m,BPRMF,0.0005,1e-05,64,,,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+lastfm,BPRMF,0.001,5e-05,128,,,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+beauty,GRU4Rec,0.005,0.0001,128,100,,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+sports,GRU4Rec,0.001,0.0001,64,100,,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+ml1m,GRU4Rec,0.001,5e-05,128,100,,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+lastfm,GRU4Rec,0.01,0.0001,128,100,,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+beauty,SASRec,0.0001,0.0005,128,,1,1,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+sports,SASRec,0.0001,0.0005,128,,1,1,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+ml1m,SASRec,0.0001,0.0001,128,,2,1,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+lastfm,SASRec,0.001,0.0005,128,,1,1,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+beauty,LightGCN,0.001,1e-06,128,,3,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+sports,LightGCN,0.001,1e-06,128,,3,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,,FROZEN
+ml1m,LightGCN,0.001,1e-05,128,,4,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,"final LightGCN entries are labelled Beauty in the appendix, but the final two reported configurations are identical and are not an operational hyperparameter blocker.",FROZEN
+lastfm,LightGCN,0.001,1e-05,128,,4,,,,paper_appendix_a3,paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request,"final LightGCN entries are labelled Beauty in the appendix, but the final two reported configurations are identical and are not an operational hyperparameter blocker.",FROZEN

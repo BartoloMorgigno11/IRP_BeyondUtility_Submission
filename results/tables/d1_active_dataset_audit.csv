@@ -1,0 +1,6 @@
+dataset,dataset_id,active_raw_experiment_count,active_cell_count,expected_active,status
+Beauty,beauty,16,214,True,ACTIVE
+Sports,sports,16,214,True,ACTIVE
+ML-1M,ml1m,14,200,True,ACTIVE
+LastFM,lastfm,16,214,True,ACTIVE
+Food.com,foodcom,52,700,True,ACTIVE

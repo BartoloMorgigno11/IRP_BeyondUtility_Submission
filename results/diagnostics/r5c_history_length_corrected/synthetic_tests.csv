@@ -1,0 +1,15 @@
+case_id,expected_valid,observed_valid,expected_status,observed_status,output_length,duplicate_count,unknown_item_count,pass,notes
+valid_json_object_indices,true,true,parsed_valid,parsed_valid,5,0,0,true,
+valid_json_multiline,true,true,parsed_valid,parsed_valid,5,0,0,true,
+k_minus_1,false,false,invalid_length,invalid_length,4,0,0,true,
+k_plus_1,false,false,invalid_length,invalid_length,6,0,0,true,
+numbered_ranking,false,false,parse_failed,parse_failed,0,0,0,true,numbered lines must not be converted into candidate indices
+plain_json_array_candidate_ids,false,false,invalid_schema,invalid_schema,0,0,0,true,
+leading_prose,false,false,parse_failed,parse_failed,0,0,0,true,
+trailing_prose,false,false,parse_failed,parse_failed,0,0,0,true,
+duplicate_index,false,false,duplicate_indices,duplicate_indices,5,1,0,true,
+candidate_set_violation,false,false,unknown_indices,unknown_indices,5,0,1,true,
+truncated_output,false,false,parse_failed,parse_failed,0,0,0,true,
+empty_history_row_valid,true,true,parsed_valid,parsed_valid,5,0,0,true,
+backend_incomplete_response,false,false,backend_incomplete,backend_incomplete,0,0,0,true,
+ml1m_item_ids_in_indices_field,false,false,unknown_indices,unknown_indices,5,0,5,true,"actual ML-1M item IDs [1912, 3389, 3266, 1194, 147] must not be accepted as candidate positions"

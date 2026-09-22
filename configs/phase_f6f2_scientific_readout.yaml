@@ -1,0 +1,97 @@
+phase:
+  id: phase_f6f2
+  name: scientific_readout_and_claim_freeze
+  expected_branch: plan-d-extensions
+  expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  expected_f6f1_scientific_hash: 4bf9391b835dad47c80f41b9d41b130f64ac3f4776561cc19bf0a3d044ffb37c
+  expected_f6e4c_decision: f6e4c_scientific_consolidation_complete_with_corrected_derived_metrics
+  expected_f6f1_decision: f6f1_beyond_utility_metrics_complete_with_documented_blocks
+  expected_f6f1r_decision: f6f1r_environment_recovery_complete_with_runtime_metadata_differences
+  interpreter_path: .venv_repro_system_site/Scripts/python.exe
+  environment_classification: reconstructed_venv_with_system_site_packages
+  decision_complete_with_blocks: f6f2_scientific_readout_complete_with_documented_blocks
+  recommendation: proceed_to_lastfm_reranking_reconstruction
+
+inputs:
+  f6f1_manifest: results/manifests/phase_f6f1_beyond_utility_freeze.json
+  f6f1_report: report/phase_f6f1_beyond_utility_metrics.md
+  f6f1_metric_source_inventory: results/tables/phase_f6f1_metric_source_inventory.csv
+  f6f1_metric_contract: results/tables/phase_f6f1_metric_contract.csv
+  f6f1_metric_exactness_matrix: results/tables/phase_f6f1_metric_exactness_matrix.csv
+  f6f1_aplt_results: results/tables/phase_f6f1_aplt_results.csv
+  f6f1_serendipity_results: results/tables/phase_f6f1_serendipity_results.csv
+  f6f1_popularity_novelty_results: results/tables/phase_f6f1_popularity_novelty_results.csv
+  f6f1_candidate_position_results: results/tables/phase_f6f1_candidate_position_results.csv
+  f6f1_ranking_vs_reranking: results/tables/phase_f6f1_ranking_vs_reranking.csv
+  f6f1_llm_vs_baseline: results/tables/phase_f6f1_llm_vs_baseline.csv
+  f6f1_research_question_update: results/tables/phase_f6f1_research_question_update.csv
+  f6f1_missing_or_blocked: results/tables/phase_f6f1_missing_or_blocked.csv
+  f6f1_structural_diagnostics: results/tables/phase_f6f1_structural_diagnostics.csv
+  f6e4c_manifest: results/manifests/phase_f6e4c_scientific_freeze.json
+  f6e4c_cell_summary: results/tables/phase_f6e4c_cell_summary.csv
+  f6e4c_dataset_task_summary: results/tables/phase_f6e4c_dataset_task_summary.csv
+  f6e4c_research_question_evidence: results/tables/phase_f6e4c_research_question_evidence.csv
+  f6e4c_claim_registry: results/tables/phase_f6e4c_claim_registry.csv
+  f6e4c_history_length_analysis: results/tables/phase_f6e4c_history_length_analysis.csv
+  f6e4c_mistral_llmrank_lastfm_audit: results/tables/phase_f6e4c_mistral_llmrank_lastfm_audit.csv
+  f6e4c_strategy_paired_comparison: results/tables/phase_f6e4c_strategy_paired_comparison.csv
+  f6e4c_model_paired_comparison: results/tables/phase_f6e4c_model_paired_comparison.csv
+  f6f1r_manifest: results/manifests/phase_f6f1r_environment_freeze.json
+
+outputs:
+  report: report/phase_f6f2_scientific_readout.md
+  freeze_manifest: results/manifests/phase_f6f2_scientific_readout_freeze.json
+  tables:
+    input_integrity: results/tables/phase_f6f2_input_integrity.csv
+    metric_status: results/tables/phase_f6f2_metric_status.csv
+    key_numeric_findings: results/tables/phase_f6f2_key_numeric_findings.csv
+    aplt_readout: results/tables/phase_f6f2_aplt_readout.csv
+    serendipity_readout: results/tables/phase_f6f2_serendipity_readout.csv
+    popularity_novelty_readout: results/tables/phase_f6f2_popularity_novelty_readout.csv
+    candidate_position_readout: results/tables/phase_f6f2_candidate_position_readout.csv
+    ranking_reranking_readout: results/tables/phase_f6f2_ranking_reranking_readout.csv
+    llm_baseline_readout: results/tables/phase_f6f2_llm_baseline_readout.csv
+    strategy_model_readout: results/tables/phase_f6f2_strategy_model_readout.csv
+    research_question_closure: results/tables/phase_f6f2_research_question_closure.csv
+    claim_registry: results/tables/phase_f6f2_claim_registry.csv
+    remaining_replication_gaps: results/tables/phase_f6f2_remaining_replication_gaps.csv
+    next_phase_requirements: results/tables/phase_f6f2_next_phase_requirements.csv
+    missing_or_blocked: results/tables/phase_f6f2_missing_or_blocked.csv
+
+allowed_exactness_classifications:
+  - exact_formula_exact_inputs
+  - exact_formula_reconstructed_inputs
+  - exact_formula_adapted_population
+  - reconstructed_formula
+  - local_proxy
+  - extension_metric
+  - blocked_missing_evidence
+  - blocked_missing_input
+  - not_applicable
+
+allowed_research_question_classifications:
+  - supported_in_adapted_setting
+  - partially_supported
+  - not_reproduced
+  - opposite_result_in_adapted_setting
+  - evidence_inconclusive
+  - not_tested
+  - blocked
+
+prohibited_wording:
+  - exactly replicated every result
+  - paper is wrong
+  - LLMRank is always worse
+  - Mistral is always better
+  - LLMs eliminate popularity bias
+  - Candidate position causally determines the result
+  - Hallucination was eliminated
+
+unsafe_excluded_tests:
+  - inference
+  - ollama
+  - network
+  - cuda
+  - training
+  - downloads
+  - full_suite

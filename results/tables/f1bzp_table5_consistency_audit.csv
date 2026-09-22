@@ -1,0 +1,4 @@
+hypothesis,beauty_bprmf_hr5,beauty_gru4rec_hr5,beauty_sasrec_hr5,beauty_lightgcn_hr5,beauty_gpt35_hr5,consistency_assessment,classification,reason
+ONE_JOINT_20_ITEM_MULTI_MODEL_POOL,0.0238,0.0216,0.0242,0.0244,0.0320,COMPATIBLE_NOT_IDENTIFYING,INCONCLUSIVE_CONSISTENCY_CHECK,Beauty Table 5 can check plausibility but cannot recover candidate-pool assembly mechanics.
+FOUR_SOURCE_SPECIFIC_TOPK_POOLS_THEN_AGGREGATION,0.0238,0.0216,0.0242,0.0244,0.0320,COMPATIBLE_NOT_IDENTIFYING,INCONCLUSIVE_CONSISTENCY_CHECK,Beauty Table 5 can check plausibility but cannot recover candidate-pool assembly mechanics.
+ANOTHER_RECOVERED_INTERPRETATION,0.0238,0.0216,0.0242,0.0244,0.0320,NO_LOCAL_RECOVERY,INCONCLUSIVE_CONSISTENCY_CHECK,Beauty Table 5 can check plausibility but cannot recover candidate-pool assembly mechanics.

@@ -1,0 +1,3 @@
+local_model,paper_same_model_rows,official_same_model_rows,local_rows,comparison_scope,interpretation
+qwen2:7b-instruct,12,0,4875,same model family only where paper labels normalize to the local model; no official glm/gpt/llama rows are treated as local qwen/mistral.,Model-level evidence is qualitative and protocol-limited unless model identity and task conditions match.
+mistral:7b-instruct,12,0,4779,same model family only where paper labels normalize to the local model; no official glm/gpt/llama rows are treated as local qwen/mistral.,Model-level evidence is qualitative and protocol-limited unless model identity and task conditions match.

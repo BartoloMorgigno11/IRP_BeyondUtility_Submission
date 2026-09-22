@@ -1,0 +1,112 @@
+{
+  "analysis_pair_source": "results/tables/g3_candidate_position_analysis_pairs.csv",
+  "analysis_universe_source": "results/tables/g3_candidate_position_analysis_universe.csv",
+  "bootstrap_executed": false,
+  "canddif_formula": {
+    "epsilon": "1e-12",
+    "formula": "log((1-Acc_random)/(1-Acc_first))",
+    "source": "src/analysis/reproduction_r5b_canddif_recovery.py"
+  },
+  "created_at_utc": "2026-09-04T14:09:57Z",
+  "decision_token": "G3_METRICS_FROZEN",
+  "denominator_contract": {
+    "beyond_utility": "not computed in this phase unless separately frozen/applicable to G3",
+    "canddif": "paired FIRST/RANDOM cell accuracies over frozen 6000-pair universe",
+    "reliability": "planned requests",
+    "utility": "planned/applicable users; invalid terminal response contributes zero"
+  },
+  "files_created": [
+    "src/extension/g3_candidate_position_metrics.py",
+    "results/tables/g3_candidate_position_metric_results.csv",
+    "results/tables/g3_candidate_position_canddif.csv",
+    "results/tables/g3_candidate_position_reliability.csv",
+    "results/tables/g3_candidate_position_metric_denominators.csv",
+    "results/tables/g3_candidate_position_metric_validation.csv",
+    "results/manifests/g3_candidate_position_metrics_freeze.json",
+    "report/g3_candidate_position_metrics_validation.md",
+    "report/notes.md"
+  ],
+  "frozen_evidence_modified": false,
+  "head_before_generation": "b21c0cff1f3cdb474ef2944fcc1aa5e6fae5325e",
+  "input_hash_mismatches": [],
+  "input_hashes_observed": {
+    "report/g3_candidate_position_analysis_universe.md": "f27d6d91be1e6fcf32f94a51aca40f2cdedbaf81b2c6f9c860b43f259c8ac2d1",
+    "results/llm/extension_canonical/g3_candidate_position/events.jsonl": "3496f61e2184a2949cee046126f7397204663fc3340d2c20ed2781c86b444a12",
+    "results/llm/extension_canonical/g3_candidate_position/requests.jsonl": "3a559f2a42a2e7b57028f24cdf9de202778ccbb7e9922215ce31edccaba7552f",
+    "results/llm/extension_canonical/g3_candidate_position/responses.jsonl": "5f97fbb25f8ac39d68c39694294e5e5c1e92a14adc4c6f7f9502af1940308c69",
+    "results/manifests/g3_candidate_position_execution_freeze.json": "3736adb0ad2d3460d53b1f046c1bd4ada88a2cdab0ca10184fd0ead63499745d",
+    "results/manifests/g3_candidate_position_execution_retention_manifest.json": "9b1ebb2a58d9405de9d706dc57b035eb85a9187f1fdc00f3b03645e43d6239a5",
+    "results/manifests/g3_candidate_position_protocol_freeze.json": "67b2ced9daf68bf67c412ca4bfab0168e9b124bec9fa110aafb8842c69e79e14",
+    "results/tables/g3_candidate_position_analysis_counts.csv": "88255c2a264bbaba132b29b6ef7cc95e9ef3be5b77706e4666a983f70c8524e3",
+    "results/tables/g3_candidate_position_analysis_pairs.csv": "bb10bd93fe5ac716faff503405f5ed8febc74463b2e0dbfde69279812122c4d4",
+    "results/tables/g3_candidate_position_analysis_universe.csv": "5e7ace57f1c7f93b9aae7d5f921b6d2e7617b739dfa1a47232a2a4a43dfa6fa9",
+    "results/tables/g3_candidate_position_analysis_validation.csv": "45aaeeb94d019464a21c7d993ed0625b21f4d671b9d122b8946139eb0cc561f0",
+    "results/tables/g3_candidate_position_denominator_contract.csv": "b35b267647873a55871e0b7e8336fed948ec7464ab9f99b4701e06e9d6a1b802",
+    "results/tables/g3_candidate_position_execution_evidence_inventory.csv": "59e1a438c540a21d33ae786eb259596df7faeaad0f5894236032b35322618e1a",
+    "results/tables/g3_candidate_position_pair_integrity.csv": "9de7febe5fe472b57f383f59c11a83f49353772482223360aa42fe0e0be75255",
+    "results/tables/g3_candidate_position_request_universe.csv": "823723c23a1c2a6617fedd5934e4cfb14508f91b28d8e680fc884ed454ef9ba8",
+    "src/extension/g3_candidate_position_analysis_universe.py": "107d8013310f957a80eda6b8677822fcc88f8091cc6a6601fc231f7a95396c77"
+  },
+  "metric_contract_hashes": {
+    "src/analysis/reproduction_r5b_canddif_recovery.py": "bffbbe792e94cafbd162780f741344ca3290385ecf629a8633e1e4097b94263a",
+    "src/metrics/canonical_metric_contract.py": "7c9cad54bf14984abbc7f47a83bdc410fdabe62807f9d904a953b43f2b43b7ac"
+  },
+  "next_safe_step": "run frozen G3 statistical analysis; do not start G4/G3 downstream without explicit request",
+  "output_hashes": {
+    "report/g3_candidate_position_metrics_validation.md": "a89ea2cc6b9792477f11f33ba2179a3f85a9ab72733b8983327ce74430bda57f",
+    "results/tables/g3_candidate_position_canddif.csv": "6349802ba933d5ab0218fd72268e4aa0c71563f3a8c1cc91d8a0273ee9e59f80",
+    "results/tables/g3_candidate_position_metric_denominators.csv": "576d843be2a198ec4bbab60c5fd75ffa788a3f351b8c7f8debe266926083953f",
+    "results/tables/g3_candidate_position_metric_results.csv": "ce005175b0e6222ca488080506cd8a8e13d1314e136e0421c782b88f14e4e25e",
+    "results/tables/g3_candidate_position_metric_validation.csv": "bf6a60367dfcc3277781c3acc735112b07b30284267f835c29c7415616c16542",
+    "results/tables/g3_candidate_position_reliability.csv": "b31de0ea8c3b788091eeb7893af7a795029ddb36059d87a13c88f1257da7d537"
+  },
+  "phase_id": "g3_candidate_position_metrics_freeze",
+  "precondition_status": "G3_ANALYTIC_UNIVERSE_FROZEN",
+  "protocol_config_runner_modified": false,
+  "schema_version": "1.0",
+  "source_hashes": {
+    "src/extension/g3_candidate_position_metrics.py": "fd0e45f7c616e80549abd31da974ebfec363fd1498294d520d5239286d469025"
+  },
+  "statistical_analysis_executed": false,
+  "summary": {
+    "backend_errors": 0,
+    "canddif_cells_per_metric": {
+      "CandDif_HR@5": 30,
+      "CandDif_NDCG@5": 30
+    },
+    "canddif_rows": 60,
+    "denominator_rows": 116,
+    "invalid": 166,
+    "invalid_class_counts": {
+      "HALLUCINATION_OR_OUT_OF_CANDIDATE": 1,
+      "INVALID_DUPLICATE": 51,
+      "INVALID_LENGTH": 114
+    },
+    "invalid_nonzero_contribution_rows": 0,
+    "logical_rows": 12000,
+    "metric_rows": 180,
+    "pair_rows": 6000,
+    "reliability_rows": 25,
+    "strict_positive_absent_from_top10_rows": 3530,
+    "strict_valid": 11834,
+    "utility_cells_per_metric": {
+      "HR@5": 60,
+      "MRR": 60,
+      "NDCG@5": 60
+    },
+    "valid_by_order": {
+      "FIRST": {
+        "invalid": 96,
+        "strict_valid": 5904
+      },
+      "RANDOM": {
+        "invalid": 70,
+        "strict_valid": 5930
+      }
+    },
+    "validation_failures": [],
+    "validation_pass_count": 26,
+    "validation_total_count": 26
+  },
+  "zero_inference": true
+}

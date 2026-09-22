@@ -1,0 +1,81 @@
+phase:
+  id: g1_primary_ranking_execution
+  expected_base_checkpoint: 5dfec10537a8acd1404c586323a3935add48bc2a
+  predecessor_state: G0_CANARY_CHECKPOINT_FROZEN
+  success_token: G1_PRIMARY_RANKING_VALIDATED
+  blocked_token: G1_PRIMARY_RANKING_BLOCKED
+  phase_start_clean_required: true
+  base_checkpoint_required_as_ancestor: true
+
+execution:
+  allow_local_ollama_inference: true
+  allow_local_ollama_metadata: true
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network_downloads: false
+  allow_training: false
+  allow_tuning: false
+  allow_reranking_execution: false
+  allow_history_grid_execution: false
+  allow_canddif_execution: false
+  allow_profile_generation: false
+  allow_pool_size_sensitivity: false
+  allow_commit: false
+  ollama_base_url: http://127.0.0.1:11434
+  temperature: 0
+  max_output_tokens:
+    ranking: 256
+  timeout_seconds: 150
+  backend_retry_count: 2
+  backend_retry_backoff_seconds: [5, 15]
+  scientific_retry_count: 0
+  stream: false
+  response_format: json
+  canonical_request_order: dataset_user_prompt_model
+  physical_execution_order: model_dataset_prompt_user
+
+models:
+  - qwen2:7b-instruct
+  - mistral:7b-instruct
+  - gemma2:9b
+
+prompt_strategies:
+  - BASE
+  - LLMRANK
+
+tasks:
+  - ranking
+
+primary_universe:
+  expected_users: 4882
+  expected_requests: 29292
+  expected_g0_reuse: 36
+  expected_new_ollama_calls: 29256
+  expected_cells: 30
+  candidate_pool_size: 20
+  positive_candidates: 1
+  negative_candidates: 19
+  requested_output_length: 10
+  parser_expected_length: 10
+  metric_cutoff_k: 5
+
+inputs:
+  f1bx_config: configs/f1bx_execution_stage1.yaml
+  f0_primary_ranking_matrix: results/tables/f0_final_primary_ranking_matrix.csv
+  f0_request_budget: results/tables/f0_final_request_budget.csv
+  f0_manifest: results/manifests/f0_final_extension_freeze.json
+  f0r_manifest: results/manifests/f0r_final_freeze_sanity.json
+  f0_inference_contract: results/manifests/f0_final_inference_contract.json
+  g0_request_matrix: results/tables/g0_canary_request_matrix.csv
+  g0_execution: results/tables/g0_canary_execution.csv
+  g0_parse_validation: results/tables/g0_canary_parse_validation.csv
+  g0_response_jsonl: results/llm/extension_canonical/g0_canary/responses.jsonl
+  g0_request_manifest: results/manifests/g0_canary_request_manifest.json
+  g0_execution_manifest: results/manifests/g0_canary_execution_manifest.json
+  f1a_manifest: results/manifests/f1a_no_inference_manifest.json
+  f1arr_manifest: results/manifests/f1arr_popreo_dpd_recovery.json
+  f1bzq_manifest: results/manifests/f1bzq_authoritative_pool_manifest.json
+  f1bx_baseline_recommendations: results/raw_outputs/f1bx_baseline_recommendations.csv
+
+outputs:
+  raw_dir: results/llm/extension_canonical/g1_primary_ranking

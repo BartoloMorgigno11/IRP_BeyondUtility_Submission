@@ -1,0 +1,49 @@
+{
+  "artifact_hashes": {
+    ".gitignore": "72955ffdbd56ddde04ef111b10fd3fe13cbe4a1c35010c5afa2de3d1fc6dd4d1",
+    "configs/f1b_traditional_completion.yaml": "31f773c70f7243971c033c7d91931bfa4d78b4bb716d6a5461cec737f2802cc1",
+    "report/f1b_traditional_model_completion.md": "020d45d0665b60687b0c860322051fe9cf6363b1fa1a5667cc0c36c34f043fbb",
+    "report/notes.md": "fe754a6d1cdc7dbc1c949fa7f9bf194b76424334d814d3e61b81fa3d5c140f4d",
+    "results/tables/f1b_candidate_recall.csv": "e138f569c992da851bb40fe51c06aed4de15ac9388b0e2304221823748094ac4",
+    "results/tables/f1b_first_stage_ranking_inventory.csv": "810e4c935eb66630b07d324d25c57882ece8244ab3d4de32435d6c810e7c0a6c",
+    "results/tables/f1b_five_dataset_completeness.csv": "75b06b1be56ce51f66526682da91e8359ee0a1d962de58754d1865721cf1f1fe",
+    "results/tables/f1b_reranking_readiness.csv": "3059d312e8a3de86c5ddcda2a647e31b0d53a93c90614f86dd1ef9deb0981ef7",
+    "results/tables/f1b_result_cell_readiness.csv": "3dece0b662c04bed93eb56ed0a9abf0021165113de4eead702641ff756a00de1",
+    "results/tables/f1b_traditional_beyond_utility_results.csv": "eef4ee57696e011a7abd262c1e216831a470688c247d4f09b2d11f3ca447a655",
+    "results/tables/f1b_traditional_reuse_audit.csv": "70505ec9aee73f57d324e288067b93916ac006a70620af635f59db3bf43396a9",
+    "results/tables/f1b_traditional_utility_results.csv": "75ca353acb4d58427dd9eeaaea92c22415ae9b60211d7f52802f81858f7b8828",
+    "results/tables/f1b_training_plan.csv": "410f58fc1de09c72e805c761b2aa2b6a95c936d956d65222ad8ec4e1904c5433",
+    "results/tables/f1b_training_results.csv": "d19a8be96614f2109d401616ff2ee97699763d31ac49c199028ee5059c4ccc07",
+    "results/tables/f1b_validation.csv": "c10781d9accc4b4d56bbb9bb8b46f3815962ec47ee3c9b1d24418c4ab8159b4a",
+    "src/extension/f1b_traditional_completion.py": "dfdf19b6135b51b2d4f9303c042c3ad04a21be3f5b609f4f950610fbccdb84f1",
+    "tests/test_extension_f1b_traditional_completion.py": "e4fc4303282dfd33ba2e7eca3159033393145b63746e3d2efc8ccb25caaff9ec"
+  },
+  "decision_token": "F1B_TRADITIONAL_COMPLETION_BLOCKED",
+  "downloads_executed": 0,
+  "external_api_calls_executed": 0,
+  "f1br_protocol_resolution": {
+    "baseline_rows_ready_to_execute": 15,
+    "decision_token": "F1BR_TRADITIONAL_PROTOCOL_RESOLVED",
+    "llm_inference_calls_executed_in_f1br": 0,
+    "phase_id": "f1br_traditional_protocol_recovery",
+    "resolved_seed_policy": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "trainable_rows_ready_to_train": 20,
+    "training_runs_executed_in_f1br": 0
+  },
+  "head": "c280fbef3440debe0a804efaf1f15436d9659347",
+  "llm_inference_calls_executed": 0,
+  "network_calls_executed": 0,
+  "notes": "F1B materialized blocker/audit artifacts only; no recommendation generation or training was executed.",
+  "ollama_recommendation_calls_executed": 0,
+  "phase_id": "f1b_traditional_recommender_completion",
+  "raw_llm_outputs_created": 0,
+  "traditional_training_runs_executed": 0,
+  "training_outputs_created": 0,
+  "validation_passed": true
+}

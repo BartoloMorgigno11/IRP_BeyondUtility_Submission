@@ -1,0 +1,6 @@
+evidence_id,observation,supports_top5x4,classification,reason
+arithmetic_fit,Four source models times evaluation cutoff five equals twenty candidates.,weak,PLAUSIBLE_BUT_UNRECOVERED,Arithmetic compatibility is not protocol evidence.
+paper_wording,Available controlled evidence says top-K items from four models and a 20-item pool.,ambiguous,PLAUSIBLE_BUT_UNRECOVERED,"The audited evidence does not specify K=5 per model, order, duplicates, or refill."
+official_prompt_templates,Original templates consume one candidate list and ask for top 10 or ranking 20 supplied candidates.,no,PLAUSIBLE_BUT_UNRECOVERED,Prompt templates do not expose how the upstream 20 candidates were assembled.
+historical_predictions,Local historical predictions demonstrate non-tautological full-catalog retrieval but not aggregation mechanics.,ambiguous,PLAUSIBLE_BUT_UNRECOVERED,Historical files lack recovered source contribution counts for the exact paper pool.
+final_classification,Top-5 x four-model pooling remains plausible but unrecovered.,not_enough,PLAUSIBLE_BUT_UNRECOVERED,F1BZP must not claim this as paper-exact.

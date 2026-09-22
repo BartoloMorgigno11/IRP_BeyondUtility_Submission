@@ -1,0 +1,10 @@
+check,observed,expected,pass
+git_head,98c28c5364c40e571765a3b50d4dab8affe80743,98c28c5364c40e571765a3b50d4dab8affe80743,True
+manifest_sha256,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD,True
+manifest_total_rows,4800,4800,True
+canddif_selected_rows,1200,1200,True
+first_random_counts,"{""('CANDDIF_RECOVERY', 'CANDDIF_FIRST')"": 600, ""('CANDDIF_RECOVERY', 'CANDDIF_RANDOM')"": 600}","{""CANDDIF_FIRST"": 600, ""CANDDIF_RANDOM"": 600}",True
+dataset_counts,"{""Beauty"": 400, ""LastFM"": 400, ""Sports"": 400}","{""Beauty"": 400, ""LastFM"": 400, ""Sports"": 400}",True
+out_of_scope_r5b_families,"{""CANDDIF_RECOVERY"": 1200, ""GENERATION_INVOLVED_RECOVERY"": 1200, ""HISTORY_LENGTH_RECOVERY"": 2400}",R5B selected CANDDIF only; R5A manifest still contains all families,True
+pair_integrity,"{""duplicate_pair_keys"": 0, ""invalid_pairs"": 0, ""pairs"": 600, ""random_order_failures"": 0, ""same_candidate_set_failures"": 0, ""valid_pairs"": 600}","{""invalid_pairs"": 0, ""pairs"": 600, ""valid_pairs"": 600}",True
+raw_output_accounting,"{""accounting_pass"": true, ""corrupted_count"": 0, ""duplicate_count"": 0, ""duplicate_ids"": [], ""empty_raw_response_count"": 0, ""missing_count"": 0, ""missing_ids"": [], ""raw_json_files"": 1200, ""unexpected_count"": 0, ""unexpected_ids"": [], ""unique_expected_ids"": 1200, ""unique_raw_output_ids"": 1200}",1200 expected and 1200 accounted,True

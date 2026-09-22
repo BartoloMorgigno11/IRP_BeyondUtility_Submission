@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "rq": "RQ6",
+  "target_paper_measure": {
+    "canonical_name": "free-text textual/catalogue hallucination",
+    "output_space": "generated item titles",
+    "event": "Generated recommendation cannot be matched to the valid catalogue under the declared title-matching policy."
+  },
+  "local_canonical_measure": {
+    "canonical_name": "constrained-output structural reliability",
+    "output_space": "candidate-index JSON",
+    "direct_textual_hallucination_measure": false,
+    "failure_types": [
+      {
+        "id": "INVALID_LENGTH",
+        "meaning": "Returned index list has the wrong length.",
+        "textual_hallucinated_title": false
+      },
+      {
+        "id": "DUPLICATE_INDICES",
+        "meaning": "Returned list repeats candidate indices.",
+        "textual_hallucinated_title": false
+      },
+      {
+        "id": "UNKNOWN_OR_OUT_OF_CANDIDATE_INDEX",
+        "meaning": "Index is outside the allowed candidate space.",
+        "textual_hallucinated_title": false
+      },
+      {
+        "id": "PARSER_OR_SCHEMA_FAILURE",
+        "meaning": "Response fails the frozen JSON/parser/schema contract.",
+        "textual_hallucinated_title": false
+      },
+      {
+        "id": "BACKEND_FAILURE",
+        "meaning": "Backend did not produce a completed scientific response.",
+        "textual_hallucinated_title": false
+      }
+    ]
+  },
+  "direct_comparability": false,
+  "direct_textual_hallucination_reproduced": false,
+  "canonical_strict_valid_accounting": {
+    "G1": {
+      "strict_valid": 29024,
+      "planned": 29292,
+      "invalid": 268,
+      "invalid_length_requests": 238,
+      "duplicate_index_requests": 30,
+      "unknown_index_requests": 0,
+      "backend_failures": 0,
+      "source": "results/tables/g1_primary_ranking_reliability.csv"
+    },
+    "G2": {
+      "strict_valid": 86768,
+      "planned": 88050,
+      "invalid": 1282,
+      "invalid_length_requests": 1090,
+      "duplicate_index_requests": 182,
+      "unknown_index_requests": 10,
+      "unknown_values": 16,
+      "backend_failures": 0,
+      "source": "results/tables/g2_history_length_analysis_universe.csv"
+    },
+    "G3": {
+      "strict_valid": 11834,
+      "planned": 12000,
+      "invalid": 166,
+      "invalid_length_requests": 114,
+      "duplicate_index_requests": 51,
+      "out_of_candidate_requests": 1,
+      "backend_failures": 0,
+      "source": "results/tables/g3_candidate_position_reliability.csv"
+    },
+    "G4": {
+      "strict_valid": 28986,
+      "planned": 29292,
+      "invalid": 306,
+      "invalid_length_requests": 255,
+      "duplicate_index_requests": 51,
+      "unknown_index_requests": 0,
+      "backend_failures": 0,
+      "source": "results/tables/g4_f1bzq_reliability.csv"
+    }
+  },
+  "rq5_views": {
+    "overlap_policy": "SEPARATE_OVERLAPPING_VIEWS_DO_NOT_SUM",
+    "views": [
+      {
+        "id": "corrected",
+        "strict_valid": 3996,
+        "planned": 4000,
+        "invalid": 4,
+        "source": "results/rq5_final_scientific_freeze/corrected/per_user.csv"
+      },
+      {
+        "id": "systematic",
+        "strict_valid": 8997,
+        "planned": 9000,
+        "invalid": 3,
+        "source": "results/rq5_final_scientific_freeze/systematic/per_user.csv"
+      },
+      {
+        "id": "history_v2",
+        "strict_valid": 4794,
+        "planned": 4800,
+        "invalid": 6,
+        "source": "results/rq5_final_scientific_freeze/history_v2/per_user.csv"
+      },
+      {
+        "id": "r5d",
+        "strict_valid": 795,
+        "planned": 800,
+        "invalid": 5,
+        "source": "results/rq5_final_scientific_freeze/r5d/per_user.csv"
+      }
+    ]
+  },
+  "scientific_interpretation": {
+    "allowed": [
+      "Report constrained-protocol structural reliability.",
+      "Report candidate-space failures separately.",
+      "Keep overlapping RQ5 views separate.",
+      "Use R1 only as recovered upstream reference."
+    ],
+    "prohibited": [
+      "Call structural invalidity a textual hallucination rate.",
+      "Infer zero textual hallucination from zero unknown-index events.",
+      "Claim direct comparability with the paper.",
+      "Claim constrained output causally reduces paper-style hallucination.",
+      "Use R3 or R4 as quantitative foreground evidence."
+    ]
+  },
+  "authority_manifest": "results/manifests/rq6_evidence_authority.json",
+  "figure_spec": "results/manifests/rq6_final_figure_spec.json"
+}

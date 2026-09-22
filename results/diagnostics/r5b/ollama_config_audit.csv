@@ -1,0 +1,3 @@
+model,api,temperature,seed,num_predict,stream,format,format_is_schema,system_prompt_sent,raw_mode,top_p,top_k,stop_sequences,context_size,template,timeout_seconds,audit_note
+mistral:7b-instruct,/api/generate,0,0,512,false,json,NO,NO,not configured,not configured,not configured,not configured,not configured in request,ollama model default template,120,R5B uses JSON mode but not a JSON schema; the request does not encode expected list length.
+qwen2:7b-instruct,/api/generate,0,0,512,false,json,NO,NO,not configured,not configured,not configured,not configured,not configured in request,ollama model default template,120,R5B uses JSON mode but not a JSON schema; the request does not encode expected list length.

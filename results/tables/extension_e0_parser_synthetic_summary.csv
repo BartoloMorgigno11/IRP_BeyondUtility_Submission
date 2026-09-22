@@ -1,0 +1,12 @@
+case_id,parse_valid,status,output_length,duplicate_count,unknown_item_count
+valid_10,True,parsed_valid,10,0,0
+nine_outputs,False,invalid_length,9,0,0
+eleven_outputs,False,invalid_length,11,0,0
+duplicate,False,duplicate_indices,10,1,0
+zero,False,unknown_indices,10,0,1
+twenty_one,False,unknown_indices,10,0,1
+strings,False,invalid_schema,0,0,0
+item_ids,False,invalid_schema,0,0,0
+prose,False,parse_failed,0,0,0
+malformed,False,parse_failed,0,0,0
+extra_key,False,invalid_schema,0,0,0

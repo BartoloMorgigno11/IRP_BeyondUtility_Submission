@@ -1,0 +1,19 @@
+{
+  "config": "configs/rq5_final_freeze.yaml",
+  "evidence_family": "r5d",
+  "figure_id": "fig_rq5_profile_plus_history_extension",
+  "figure_sha256": {
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.pdf": "7e6992bf329a82b8deca3c33dc618d4a1025282a4d8011ccc7c43e87065b2ea9",
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.png": "0a5e3132fb354b4167989a9fdc110278dfb4b6e2bc691d66aa4b0e6028327d74",
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.svg": "5dd3a4fcf5da603bdec7e50fcb21c4074752f01d9dcd4c590f5a704102bc5ca5"
+  },
+  "generation_script": "src/analysis/rq5_final_freeze.py",
+  "limitations": "No aligned History-only counterfactual; not a causal profile benefit",
+  "rq_identifier": "RQ5",
+  "scientific_interpretation": "Pipeline feasibility and absolute downstream utility",
+  "source_artifacts": {
+    "results/rq5_final_scientific_freeze/r5d/metrics.csv": "498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7"
+  },
+  "source_csv": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_plus_history_extension_values.csv",
+  "source_csv_sha256": "2555cf5191446a01f61665f8dc6f69e608276b5ae9cf990b3d463ab53e79b863"
+}

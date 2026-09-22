@@ -1,0 +1,11 @@
+check_id,check_name,status,observed,expected
+FINAL-001,expected manifest rows,pass,4800,4800
+FINAL-002,accounted rows,pass,4800,4800
+FINAL-003,missing rows,pass,0,0
+FINAL-004,unexpected raw outputs,pass,0,0
+FINAL-005,unauthorized retries,pass,0,0
+FINAL-006,duplicate final request IDs,pass,0,0
+FINAL-007,valid count,pass,4795,4795
+FINAL-008,terminal invalid count,pass,5,5
+FINAL-009,reconciliation matrix rows,pass,44,44
+FINAL-010,paper exact cells zero,pass,0,0

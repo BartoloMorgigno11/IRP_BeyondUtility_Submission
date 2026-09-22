@@ -1,0 +1,15 @@
+case_id,task,expected_valid,observed_valid,expected_status,observed_status,output_length,duplicate_count,unknown_item_count,pass,notes
+ranking_valid_exact10,ranking,true,true,parsed_valid,parsed_valid,10,0,0,true,
+ranking_k_minus_1,ranking,false,false,invalid_length,invalid_length,9,0,0,true,
+ranking_k_plus_1,ranking,false,false,invalid_length,invalid_length,11,0,0,true,
+ranking_numbered_output,ranking,false,false,parse_failed,parse_failed,0,0,0,true,
+ranking_duplicate,ranking,false,false,duplicate_indices,duplicate_indices,10,1,0,true,
+ranking_out_of_range,ranking,false,false,unknown_indices,unknown_indices,10,0,1,true,
+ranking_item_ids_in_indices_field,ranking,false,false,unknown_indices,unknown_indices,10,0,10,true,actual dataset item IDs must not be accepted as candidate positions
+ranking_truncated_output,ranking,false,false,parse_failed,parse_failed,0,0,0,true,
+ranking_backend_incomplete,ranking,false,false,backend_incomplete,backend_incomplete,0,0,0,true,
+profile_valid,profile_generation,true,true,parsed_valid,parsed_valid,1,0,0,true,
+profile_empty,profile_generation,false,false,empty_profile,empty_profile,0,0,0,true,
+profile_extra_key,profile_generation,false,false,invalid_schema,invalid_schema,0,0,0,true,
+profile_plain_text,profile_generation,false,false,parse_failed,parse_failed,0,0,0,true,
+profile_backend_incomplete,profile_generation,false,false,backend_incomplete,backend_incomplete,0,0,0,true,

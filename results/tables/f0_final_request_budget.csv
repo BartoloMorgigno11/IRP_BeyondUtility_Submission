@@ -1,0 +1,13 @@
+budget_item,request_count,notes
+EXISTING_REUSABLE_REQUESTS,0,Protocol-identical raw requests already available; F0 promotes none without full identity proof.
+CORE_MANDATORY_NOW_REQUESTS,29292,"Primary five-dataset ranking matrix, immediately executable after canary."
+REQUIRED_SENSITIVITY_REQUESTS,21000,History-length plus incremental candidate-order/CandDif sensitivity.
+TRAINING_DEPENDENT_REQUESTS,29292,Reranking LLM requests locked behind first-stage ranking and candidate-recall audit.
+CONDITIONAL_REQUESTS,9000,"Profile/generation experiments, scientifically relevant but not mandatory core."
+OPTIONAL_REQUESTS,12000,Candidate-pool-size sensitivity excluded from core budget.
+BLOCKED_REQUESTS,0,Conceptual blocked requests; current F0 blockers add no executable requests.
+MANDATORY_RAW_REQUESTS_TOTAL,50292,CORE_MANDATORY_NOW + REQUIRED_SENSITIVITY.
+FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL,88584,Mandatory + training-dependent + conditional.
+CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL,100584,Full planned plus optional plus blocked conceptual requests.
+PREVIOUS_D0B_ESTIMATE,44928,Non-authoritative prior estimate.
+MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE,5364,"F0 recalculated from raw experiment identity, not inherited from D0B."

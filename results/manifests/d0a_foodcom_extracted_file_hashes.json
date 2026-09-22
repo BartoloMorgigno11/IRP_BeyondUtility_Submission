@@ -1,0 +1,18 @@
+{
+  "archive_sha256": "e7a43e623c616799f78a0479b550483450fd7ede4e0c40979db3458a82b5b913",
+  "created_at": "2026-08-25T13:51:16.496674+00:00",
+  "extracted_dir": "C:/Users/Bartolo/Desktop/PROGETTI/IRP_BeyondUtility_Project/data/raw/foodcom/d0a_extracted/e7a43e623c61",
+  "files": {
+    "RAW_interactions.csv": {
+      "byte_size": 349436524,
+      "relative_extracted_path": "C:/Users/Bartolo/Desktop/PROGETTI/IRP_BeyondUtility_Project/data/raw/foodcom/d0a_extracted/e7a43e623c61/RAW_interactions.csv",
+      "sha256": "4e278d2f687b1020f5694e51003a7d6174344b51aebbdf4530de88b5c6a78ee4"
+    },
+    "RAW_recipes.csv": {
+      "byte_size": 294520189,
+      "relative_extracted_path": "C:/Users/Bartolo/Desktop/PROGETTI/IRP_BeyondUtility_Project/data/raw/foodcom/d0a_extracted/e7a43e623c61/RAW_recipes.csv",
+      "sha256": "6a8136d1da9e03396a9f52d72200b3fddb8fe103f11e1496effca30ac4e0539f"
+    }
+  },
+  "phase_id": "d0a_foodcom_material_raw_intake_final_protocol_feasibility"
+}

@@ -1,0 +1,76 @@
+sensitivity_family,dataset,model_name,prompt,condition,canonical_condition_reused,cohort_size,request_count,status,mandatory_class,budget_class,seed,policy
+CandDif / candidate order,beauty,qwen2:7b-instruct,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,beauty,mistral:7b-instruct,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,beauty,gemma2:9b,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,sports,qwen2:7b-instruct,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,sports,mistral:7b-instruct,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,sports,gemma2:9b,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,ml1m,qwen2:7b-instruct,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,ml1m,mistral:7b-instruct,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,ml1m,gemma2:9b,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,lastfm,qwen2:7b-instruct,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,lastfm,mistral:7b-instruct,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,lastfm,gemma2:9b,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,foodcom,qwen2:7b-instruct,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,foodcom,mistral:7b-instruct,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+CandDif / candidate order,foodcom,gemma2:9b,BASE,ALTERNATE_SEEDED_ORDER,CANONICAL_PRIMARY_BASE_RAW,200,200,TO_INFER,REQUIRED_SENSITIVITY,REQUIRED_SENSITIVITY,20260824,count only incremental alternate-order requests; canonical primary BASE raw is not duplicated
+candidate_pool_size,beauty,qwen2:7b-instruct,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,qwen2:7b-instruct,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,qwen2:7b-instruct,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,qwen2:7b-instruct,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,mistral:7b-instruct,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,mistral:7b-instruct,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,mistral:7b-instruct,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,mistral:7b-instruct,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,gemma2:9b,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,gemma2:9b,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,gemma2:9b,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,beauty,gemma2:9b,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,qwen2:7b-instruct,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,qwen2:7b-instruct,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,qwen2:7b-instruct,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,qwen2:7b-instruct,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,mistral:7b-instruct,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,mistral:7b-instruct,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,mistral:7b-instruct,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,mistral:7b-instruct,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,gemma2:9b,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,gemma2:9b,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,gemma2:9b,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,sports,gemma2:9b,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,qwen2:7b-instruct,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,qwen2:7b-instruct,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,qwen2:7b-instruct,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,qwen2:7b-instruct,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,mistral:7b-instruct,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,mistral:7b-instruct,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,mistral:7b-instruct,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,mistral:7b-instruct,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,gemma2:9b,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,gemma2:9b,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,gemma2:9b,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,ml1m,gemma2:9b,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,qwen2:7b-instruct,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,qwen2:7b-instruct,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,qwen2:7b-instruct,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,qwen2:7b-instruct,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,mistral:7b-instruct,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,mistral:7b-instruct,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,mistral:7b-instruct,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,mistral:7b-instruct,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,gemma2:9b,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,gemma2:9b,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,gemma2:9b,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,lastfm,gemma2:9b,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,qwen2:7b-instruct,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,qwen2:7b-instruct,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,qwen2:7b-instruct,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,qwen2:7b-instruct,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,mistral:7b-instruct,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,mistral:7b-instruct,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,mistral:7b-instruct,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,mistral:7b-instruct,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,gemma2:9b,BASE,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,gemma2:9b,BASE,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,gemma2:9b,LLMRANK,POOL_10,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20
+candidate_pool_size,foodcom,gemma2:9b,LLMRANK,POOL_50,NO,200,200,OPTIONAL,OPTIONAL,OPTIONAL,20260824,excluded from core mandatory budget; final primary protocol remains pool=20

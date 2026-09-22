@@ -1,0 +1,26 @@
+phase:
+  id: phase_f6i2a
+  name: substantive_repository_consolidation_design
+  runtime_classification: defensible_repaired_clone_exact_package_versions
+  exact_original_runtime_reproduction: false
+
+inputs:
+  f6i1_inventory: results/tables/phase_f6i1_relevant_file_inventory.csv
+  f6i1_edges: results/tables/phase_f6i1_dependency_edges.csv
+  f6i1_retention: results/tables/phase_f6i1_retention_classification.csv
+  f6i1_delete_candidates: results/tables/phase_f6i1_delete_now_candidates.csv
+  f6i1_manual_review: results/tables/phase_f6i1_manual_review.csv
+  f6i1_future_map: results/tables/phase_f6i1_future_dependency_map.csv
+  f6i1_duplicates: results/tables/phase_f6i1_duplicate_groups.csv
+  f6i1_validation: results/tables/phase_f6i1_validation.csv
+  f6i1_initial_capture: results/manifests/phase_f6i1_initial_capture.json
+  f6i1_report: report/phase_f6i1_repository_retention_audit_and_safe_cleanup_batch1.md
+
+policy:
+  execute_cleanup: false
+  allow_training: false
+  allow_inference: false
+  allow_api_calls: false
+  allow_downloads: false
+  allow_package_changes: false
+  update_allowed_current_state_files: true

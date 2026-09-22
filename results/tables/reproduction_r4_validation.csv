@@ -1,0 +1,21 @@
+check_id,check_name,status,observed,expected,details
+R4-VAL-001,expected branch,pass,master,master,R4 starts from the frozen master branch.
+R4-VAL-002,expected head,pass,357d8a4cf98c78effc6c92f5b8dc00e334836a56,357d8a4cf98c78effc6c92f5b8dc00e334836a56,R4 starts from the frozen R3 commit.
+R4-VAL-003,no unrelated worktree changes,pass,,,Only R4 outputs/source and the 12 protected historical artifacts may be present.
+R4-VAL-004,no staged diff,pass,,empty,R4 must not stage.
+R4-VAL-005,original repo clean,pass,,empty,R4 must not modify original_repo/EvaLLMasRecommender.
+R4-VAL-006,protected artifacts unchanged,pass,PROTECTED_UNCHANGED=12,12 PROTECTED_UNCHANGED,R4 reuses R3 protection evidence and recomputes hashes.
+R4-VAL-007,all four datasets in three-way master,pass,ALL=193; Beauty=2937; LastFM=458; ML-1M=1898; Sports=2348,Beauty; Sports; ML-1M; LastFM,Every dataset appears.
+R4-VAL-008,all relevant paper metrics appear,pass,20/20,20/20,E1 non-extension metrics are represented.
+R4-VAL-009,paper official local value columns distinct,pass,columns present,columns present,Values are not collapsed into one generic field.
+R4-VAL-010,no banned investigation statuses,pass,,,R4 uses explicit comparable/gap classes.
+R4-VAL-011,adapted cells not classified exact,pass,0,0,Adapted evidence cannot be exact protocol.
+R4-VAL-012,diagnostics not classified exact,pass,0,0,Diagnostic rows remain diagnostic.
+R4-VAL-013,candidate diagnostics not called CandDif,pass,0,0,R3 found no paper-compatible local CandDif.
+R4-VAL-014,hallucination semantics separated,pass,separate,separate,"Textual, candidate, and structural semantics remain separate."
+R4-VAL-015,profile-only rows not performance,pass,separate,separate,Generation performance requires downstream recommendation rows.
+R4-VAL-016,all 54 R3 gaps represented,pass,54,54,One priority row per R3 true gap.
+R4-VAL-017,all gaps prioritized,pass,P0_MUST_CLOSE=6; P1_HIGH_VALUE=8; P2_USEFUL_BUT_OPTIONAL=32; P3_REDUNDANT_OR_LOW_VALUE=8,priority vocabulary only,Exact priority vocabulary used.
+R4-VAL-018,P0/P1 proposed recovery has reasons,pass,nonblank,nonblank,High-priority recovery rows carry exact reasons.
+R4-VAL-019,no recovery executed,pass,planned only,planned only,R4 only plans recovery.
+R4-VAL-020,beyond summary complete,pass,60,60,Professor-facing table covers every requested Beyond-Utility family and dataset.

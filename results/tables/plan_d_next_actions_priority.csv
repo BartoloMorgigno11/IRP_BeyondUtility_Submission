@@ -1,0 +1,5 @@
+priority_rank,action_id,action_title,related_component,why_it_matters,expected_output,prerequisites,risk,recommended_order,notes
+1,review_plan_d_final_reproducibility_package,Review Plan D final reproducibility package,final_report,D5L generated the final aggregate evidence tables.,Reviewed final package and claim boundaries.,D5L completed.,low,next,Check raw outputs remain ignored before committing.
+2,prepare_exam_presentation_tables,Prepare exam presentation tables,final_report,The oral exam needs compact generated tables.,Presentation-ready generated tables.,D5L package available.,low,after package review,Use generated CSV values.
+3,final_report,Finalize report,final_report,The project needs final claims grounded in generated artifacts.,Final report with limitations and generated metrics.,D5L package reviewed.,low,final,Do not invent metric values.
+4,optional_openai_api_diagnostic_if_budget_approved,Optional OpenAI API diagnostic if budget approved,api_availability,Closed-source comparison remains conditional.,Small approved API diagnostic or documented no-API decision.,"Explicit user approval, API key, and budget.",high,optional,No API calls by default.

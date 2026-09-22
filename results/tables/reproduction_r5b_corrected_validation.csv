@@ -1,0 +1,9 @@
+check_id,check_name,status,observed,expected
+VAL-001,static preflight,pass,26/26,all pass
+VAL-002,synthetic tests,pass,12/12,all pass
+VAL-003,canary complete when attempted,pass,12/12,all complete
+VAL-004,canary parsed K=5 when attempted,pass,12/12,all 5
+VAL-005,early health no backend incomplete,pass,checked,0
+VAL-006,pair validation,pass,600/600,600/600
+VAL-007,incomplete not succeeded,pass,checked,none
+VAL-008,full run authorization consistent,pass,authorized=True;decision=R5B_CORRECTED_RECOVERY_COMPLETE;terminal=1200,consistent

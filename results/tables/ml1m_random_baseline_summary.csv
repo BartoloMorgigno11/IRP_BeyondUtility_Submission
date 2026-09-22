@@ -1,0 +1,2 @@
+dataset,model,status,users_evaluated,candidate_rows,recommendation_rows,metrics_written,seed,notes,candidates_path,ground_truth_path,recommendations_path,metrics_path,timestamp
+ml1m,random,completed,6040,604000,604000,True,42,Computed deterministic Random HR@5 and NDCG@5.,data\processed\ml1m\candidates.csv,data\processed\ml1m\ground_truth.csv,results\raw_outputs\ml1m_random_recommendations.csv,results\metrics\ml1m_random_metrics.csv,2026-06-29T00:41:02.219961+00:00

@@ -1,0 +1,7 @@
+check_id,check_name,status,observed,expected,details
+F1BZC-POOL-001,attempted_pool_rows,PASS,1000,1000,Diagnostic attempted pools were materialized only for recoverable full-catalog sources.
+F1BZC-POOL-002,pool_size,PASS,{20: 1000},20,F1BR adapted final pool size.
+F1BZC-POOL-003,pool_uniqueness,PASS,true,true,Deduplicated adapted pool item IDs.
+F1BZC-POOL-004,no_forced_positive,PASS,ranking code receives positive only after ranking for audit metrics,no target insertion,Full-catalog source ranking and union do not insert or swap the positive item.
+F1BZC-POOL-005,multi_model_contribution,BLOCKED,1000,0,F1BR adapted concatenation is first-model dominated for the diagnostic LastFM pools.
+F1BZC-POOL-006,authoritative_pool_freeze,BLOCKED,false,true,No authoritative reranking pool is frozen when contribution validation is blocked.

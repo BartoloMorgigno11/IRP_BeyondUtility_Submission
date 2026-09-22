@@ -1,0 +1,100 @@
+{
+  "analytic_universe_modified": false,
+  "created_at_utc": "2026-09-06T12:42:20Z",
+  "decision_token": "G4_SCIENTIFIC_SYNTHESIS_FROZEN",
+  "files_created": [
+    "results/tables/g4_f1bzq_synthesis_candidate_bottleneck.csv",
+    "results/tables/g4_f1bzq_synthesis_internal_ci_counts.csv",
+    "results/tables/g4_f1bzq_synthesis_prompt_effects.csv",
+    "results/tables/g4_f1bzq_synthesis_model_effects.csv",
+    "results/tables/g4_f1bzq_synthesis_conditional_quality.csv",
+    "results/tables/g4_f1bzq_synthesis_beyond_reliability.csv",
+    "results/tables/g4_f1bzq_synthesis_g1_vs_g4_descriptive.csv",
+    "results/tables/g4_f1bzq_synthesis_takeaways.csv",
+    "results/tables/g4_f1bzq_synthesis_validation.csv",
+    "results/manifests/g4_f1bzq_scientific_synthesis_manifest.json",
+    "report/g4_f1bzq_scientific_synthesis.md",
+    "report/notes.md"
+  ],
+  "final_report_rewrite": false,
+  "frozen_evidence_modified": false,
+  "head_before_generation": "a21408c9f097457f72b854f6675639f42ad028b5",
+  "holm_applied": false,
+  "input_hashes": {
+    "results/manifests/g4_f1bzq_analytic_universe_freeze.json": "2cb39f6c3e3b8fbf8926e9e46bb4148d3635c3a52b2cbafe38d8e81939e75422",
+    "results/manifests/g4_f1bzq_metrics_freeze.json": "a82573e29924b461ba1d60c03cc39891aa0a5191b74157b41d2bd4975cf80c37",
+    "results/manifests/g4_f1bzq_statistical_analysis_manifest.json": "a6e4fab9b6ff729d0bd79b2440b912635f6fd8c701612450e5af56d3f5b2ad8d",
+    "results/tables/g4_f1bzq_candidate_conditional_metrics.csv": "b6be7dc20ba6769e93d3dccef9092c159603d7bac22b7c45e7af3623746500ba",
+    "results/tables/g4_f1bzq_metric_denominators.csv": "f07d31e9600b9109975135fead0f6d6d5df8eb1128bd16652b2035389f72b79d",
+    "results/tables/g4_f1bzq_metric_results.csv": "c19577d2c12a45fbc4d9dcdb009b2b3417dc602f3047a8be1c15ed2b97f3904b",
+    "results/tables/g4_f1bzq_metric_undefined_blocked.csv": "5c06d8affef175f79ee9ff10f241151db321a25be78c4d1cd226d9519c32652f",
+    "results/tables/g4_f1bzq_reliability.csv": "666f4af4d2fda42fbd145e0d34dd881f2655c5582e8c88b83251690b4b2d27cb",
+    "results/tables/g4_f1bzq_statistical_comparisons.csv": "1145162db3576a2d6024a0bd0088fcf24acb6e3112271509b2a57eec2e512355",
+    "results/tables/g4_f1bzq_statistical_results.csv": "21aaa612a82cee6d267e1b4558958ebba44f27afb269a4230bab3d14a5b77ee9",
+    "results/tables/g4_f1bzq_statistical_validation.csv": "aef80f7edd3387c12d46fec7d9f36b4ed1600ac8f39f4c620593dfd7d43a8f9d"
+  },
+  "metric_artifacts_modified": false,
+  "new_statistics_executed": false,
+  "new_tests_added": false,
+  "next_safe_step": "update the final report/relationship narrative from frozen G4 synthesis artifacts only when explicitly requested",
+  "ollama_or_api_calls_executed": 0,
+  "output_hashes": {
+    "report/g4_f1bzq_scientific_synthesis.md": "d592163c3f41a439075552ef116cadb24afc411fd460e9a34b95690f74eb9ef5",
+    "results/tables/g4_f1bzq_synthesis_beyond_reliability.csv": "d017192aa45a4793bae1bb5f6f5bef5b46de5cd8a0764d0101d8957409c52257",
+    "results/tables/g4_f1bzq_synthesis_candidate_bottleneck.csv": "f7559da77754aff41ffc33f20bec859127941eac8157c6d4bba1112cd5239fcd",
+    "results/tables/g4_f1bzq_synthesis_conditional_quality.csv": "ae949fc12deae350a635b303bb0ed837c5d86f5effbbc01bb0d73e35439d8919",
+    "results/tables/g4_f1bzq_synthesis_g1_vs_g4_descriptive.csv": "0d9ca3eff75a62d0845fdfed6c3fe91b9c077f4820875482aa53d654a2492cb0",
+    "results/tables/g4_f1bzq_synthesis_internal_ci_counts.csv": "3c6b0534e76620723fb0e45ca35b20085bb755e5199f853c409d7ee5f3bc6441",
+    "results/tables/g4_f1bzq_synthesis_model_effects.csv": "19cab94491edfe47ff09bbb09680f2f2f950875504a14586f6e768dd2eaf8c68",
+    "results/tables/g4_f1bzq_synthesis_prompt_effects.csv": "abc9b5eed3d3c10fba05d71d10418bb203c5f6161968e108039de00561fd3755",
+    "results/tables/g4_f1bzq_synthesis_takeaways.csv": "c2911fb1199df136cc78ce332cc1ec93772172ca71a90572f1dc1adef379b828",
+    "results/tables/g4_f1bzq_synthesis_validation.csv": "83fa0dd080327419007aa6ab0deaa37336b87b177dee9d450a2223b0cce19925"
+  },
+  "p_values_computed": false,
+  "phase_id": "g4_f1bzq_scientific_synthesis",
+  "precondition_status": "G4_STATISTICAL_ANALYSIS_FROZEN",
+  "protocol_config_runner_modified": false,
+  "schema_version": "1.0",
+  "source": "frozen_g4_analytic_metric_statistical_artifacts_only",
+  "statistical_artifacts_modified": false,
+  "statistical_wording": "bootstrap_CI_only_no_p_values_holm_not_applied_NS_not_no_effect",
+  "summary": {
+    "candidate_recall_exact": {
+      "beauty": "0.049494949494949494",
+      "foodcom": "0.0040000000000000001",
+      "lastfm": "0.46899999999999997",
+      "ml1m": "0.193",
+      "sports": "0.031390134529147982"
+    },
+    "g1_vs_g4_descriptive_rows": 90,
+    "internal_ci_decisions": {
+      "CI_SUPPORTED_NEGATIVE": 24,
+      "CI_SUPPORTED_POSITIVE": 29,
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 172
+    },
+    "internal_inferential_rows": 225,
+    "model_pair_decisions": {
+      "CI_SUPPORTED_NEGATIVE": 11,
+      "CI_SUPPORTED_POSITIVE": 27,
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 112
+    },
+    "prompt_strategy_decisions": {
+      "CI_SUPPORTED_NEGATIVE": 13,
+      "CI_SUPPORTED_POSITIVE": 2,
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 60
+    },
+    "reliability": {
+      "backend_errors": 0,
+      "duplicate_indices": 51,
+      "invalid_length": 255,
+      "planned_requests": 29292,
+      "strict_valid": 28986,
+      "structural_invalid": 306
+    },
+    "validation_failures": 0,
+    "validation_passes": 29
+  },
+  "validation_failures": [],
+  "validation_passed": true,
+  "zero_inference": true
+}

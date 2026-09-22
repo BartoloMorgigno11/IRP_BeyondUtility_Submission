@@ -1,0 +1,148 @@
+phase_id: phase_f6l
+phase_name: phase_f6l_paper_faithful_completion_and_rq_revalidation
+decision_token: f6l_execution_matrix_partially_blocked_by_missing_official_artifacts
+previous_checkpoint_token: f6l_paper_faithful_execution_checkpoint_ready
+
+runtime:
+  python: .venv_audit_recovery/Scripts/python.exe
+  python_no_user_site: "1"
+  python_dont_write_bytecode: "1"
+  cleanup_gate_result: "159 passed, 1698 deselected"
+  runtime_classification: defensible_repaired_clone_exact_package_versions
+
+policy:
+  default_mode: audit-checkpoint
+  no_inference_before_checkpoint: true
+  no_paid_api: true
+  no_original_repo_modification: true
+  no_raw_output_overwrite: true
+  no_git_stage_or_commit: true
+  official_free_downloads_allowed: true
+  official_download_destinations:
+    - data/external/phase_f6l/
+    - results/external/phase_f6l/
+  evidence_classifications:
+    - exact_original_artifact_reproduction
+    - paper_protocol_reproduction_new_stochastic_output
+    - paper_protocol_reproduction_different_open_model
+    - paper_protocol_reproduction_new_sample
+    - adapted_protocol_reproduction
+    - original_project_extension
+    - blocked_missing_original_specification
+    - blocked_paid_or_unavailable_model
+    - non_comparable
+
+authoritative_sources:
+  - paper/2411.00331v1.pdf
+  - original_repo/EvaLLMasRecommender
+  - https://github.com/JiangDeccc/EvaLLMasRecommender
+  - original_repo/EvaLLMasRecommender/llm_results/beauty.zip
+  - original_repo/EvaLLMasRecommender/llm_results/sports.zip
+  - original_repo/EvaLLMasRecommender/sota_results/beauty_his10.zip
+  - results/tables/phase_f6j_research_question_evidence_matrix.csv
+  - results/tables/phase_f6k_scientific_gap_readiness.csv
+
+lastfm_paper_target:
+  dataset: LastFM
+  filtering: 5-core
+  split: leave-one-out
+  sample_users: 1000
+  sample_validation: Kolmogorov-Smirnov gate against eligible test population
+  ranking_candidate_pool:
+    positive_items: 1
+    negative_items: 19
+    candidate_count: 20
+    candidate_order: shared across LLMs
+    requested_output_count: 10
+  reranking_candidate_pool:
+    source_models:
+      - BPRMF
+      - GRU4Rec
+      - SASRec
+      - LightGCN
+    candidate_count: 20
+    candidate_order: preserved and shared across LLMs
+    requested_output_count: 10
+  metrics:
+    utility:
+      - HR@5
+      - NDCG@5
+    beyond_utility:
+      - APLT
+      - popularity
+      - serendipity
+      - validity
+      - hallucination
+
+local_open_models:
+  - model_family: Qwen2 7B Instruct
+    local_identifier: qwen2:7b-instruct
+    paper_model_identifier: qwen-2-7b-instruct
+    execution_classification: paper_protocol_reproduction_different_open_model
+  - model_family: Mistral 7B Instruct
+    local_identifier: mistral:7b-instruct
+    paper_model_identifier: mistral-7b-instruct-v0.2
+    execution_classification: paper_protocol_reproduction_different_open_model
+
+closed_or_paid_models:
+  - GPT-3.5
+  - GPT-4
+  - GPT-4o-mini
+  - GPT-4o
+  - Claude3
+  - GLM4
+  - Llama3-70B-Instruct
+
+outputs:
+  tables:
+    paper_repository_exactness_matrix: results/tables/phase_f6l_paper_repository_exactness_matrix.csv
+    profile_generation_contract: results/tables/phase_f6l_profile_generation_contract.csv
+    profile_generation_results: results/tables/phase_f6l_profile_generation_results.csv
+    lastfm_ranking_exactness: results/tables/phase_f6l_lastfm_ranking_exactness.csv
+    lastfm_ranking_results: results/tables/phase_f6l_lastfm_ranking_results.csv
+    lastfm_reranking_results: results/tables/phase_f6l_lastfm_reranking_results.csv
+    runtime_cost_results: results/tables/phase_f6l_runtime_cost_results.csv
+    rq_revalidation: results/tables/phase_f6l_rq_revalidation.csv
+    irreducible_exactness_limits: results/tables/phase_f6l_irreducible_exactness_limits.csv
+    execution_request_manifest: results/tables/phase_f6l_execution_request_manifest.csv
+    execution_request_breakdown: results/tables/phase_f6l_execution_request_breakdown.csv
+    lastfm_reranking_prerequisite_audit: results/tables/phase_f6l_lastfm_reranking_prerequisite_audit.csv
+    official_artifact_recovery: results/tables/phase_f6l_official_artifact_recovery.csv
+    final_execution_authorization_matrix: results/tables/phase_f6l_final_execution_authorization_matrix.csv
+    checkpoint_summary: results/tables/phase_f6l_execution_checkpoint_summary.csv
+    model_preflight: results/tables/phase_f6l_model_preflight.csv
+    external_download_manifest: results/tables/phase_f6l_external_download_manifest.csv
+    validation: results/tables/phase_f6l_validation.csv
+    execute_preflight: results/tables/phase_f6l_execute_preflight.csv
+    authorized_request_manifest_audit: results/tables/phase_f6l_authorized_request_manifest_audit.csv
+    ollama_local_model_preflight: results/tables/phase_f6l_ollama_local_model_preflight.csv
+    execution_blocker: results/tables/phase_f6l_execution_blocker.csv
+    lastfm_contract_reconstruction_audit: results/tables/phase_f6l_lastfm_contract_reconstruction_audit.csv
+    execution_contract_materialization_blockers: results/tables/phase_f6l_execution_contract_materialization_blockers.csv
+    execution_contract_materialization_summary: results/tables/phase_f6l_execution_contract_materialization_summary.csv
+    profile_request_manifest: results/tables/phase_f6l_profile_request_manifest.csv
+    profile_checkpoint: results/tables/phase_f6l_profile_checkpoint.csv
+    lastfm_author_specification_registry: results/tables/phase_f6l_lastfm_author_specification_registry.csv
+    lastfm_preprocessing_count_comparison: results/tables/phase_f6l_lastfm_preprocessing_count_comparison.csv
+    lastfm_operationalization_contract: results/tables/phase_f6l_lastfm_operationalization_contract.csv
+    lastfm_operationalization_sensitivity_plan: results/tables/phase_f6l_lastfm_operationalization_sensitivity_plan.csv
+    lastfm_full_cohort_extension_plan: results/tables/phase_f6l_lastfm_full_cohort_extension_plan.csv
+    rq_evidence_hierarchy_contract: results/tables/phase_f6l_rq_evidence_hierarchy_contract.csv
+    separated_checkpoints: results/tables/phase_f6l_separated_checkpoints.csv
+    profile_execution_preflight: results/tables/phase_f6l_profile_execution_preflight.csv
+    profile_execution_state: results/tables/phase_f6l_profile_execution_state.csv
+    profile_parse_results: results/tables/phase_f6l_profile_parse_results.csv
+    profile_recommendation_rows: results/tables/phase_f6l_profile_recommendation_rows.csv
+    profile_metrics: results/tables/phase_f6l_profile_metrics.csv
+    profile_metric_differences: results/tables/phase_f6l_profile_metric_differences.csv
+    profile_runtime_resources: results/tables/phase_f6l_profile_runtime_resources.csv
+    profile_rq_revalidation: results/tables/phase_f6l_profile_rq_revalidation.csv
+  manifests:
+    checkpoint: results/manifests/phase_f6l_execution_checkpoint_manifest.json
+    protected_input_hashes: results/manifests/phase_f6l_protected_input_hashes.json
+    execute_preflight: results/manifests/phase_f6l_execute_preflight_manifest.json
+    execution_contract_materialization: results/manifests/phase_f6l_execution_contract_materialization_manifest.json
+    separated_contracts_checkpoint: results/manifests/phase_f6l_separated_contracts_checkpoint_manifest.json
+    profile_execution: results/manifests/phase_f6l_profile_execution_manifest.json
+  author_clarification_request: report/phase_f6l_author_clarification_request.md
+  report: report/phase_f6l_paper_faithful_completion_and_rq_revalidation.md

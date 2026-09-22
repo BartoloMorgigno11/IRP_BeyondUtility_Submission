@@ -1,0 +1,112 @@
+{
+  "calibration_eligibility": {
+    "cell_annotation_contract": "RAW_VALUE_PLUS_ELIGIBLE_E_AND_UNDEFINED_U_COUNTS",
+    "computed_cells": 30,
+    "configuration_cells": 30,
+    "eligible_user_count_max": 1000,
+    "eligible_user_count_min": 260,
+    "undefined_user_count_max": 740,
+    "undefined_user_count_min": 0
+  },
+  "canonical_source_artifacts": [
+    "results/tables/g1_primary_ranking_beyond_utility.csv",
+    "results/manifests/g1_metric_contract_and_provenance.json"
+  ],
+  "canonical_source_sha256": {
+    "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+    "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+  },
+  "configuration_contract": {
+    "columns": [
+      {
+        "model_name": "qwen2:7b-instruct",
+        "prompt_variant": "BASE"
+      },
+      {
+        "model_name": "qwen2:7b-instruct",
+        "prompt_variant": "LLMRANK"
+      },
+      {
+        "model_name": "mistral:7b-instruct",
+        "prompt_variant": "BASE"
+      },
+      {
+        "model_name": "mistral:7b-instruct",
+        "prompt_variant": "LLMRANK"
+      },
+      {
+        "model_name": "gemma2:9b",
+        "prompt_variant": "BASE"
+      },
+      {
+        "model_name": "gemma2:9b",
+        "prompt_variant": "LLMRANK"
+      }
+    ],
+    "configuration_cells_per_metric": 30,
+    "datasets": [
+      "beauty",
+      "sports",
+      "ml1m",
+      "lastfm",
+      "foodcom"
+    ]
+  },
+  "created_from_commit": "c9d99e196aabbd9564e1756fef9d7d7c23e2d5ac",
+  "display_contract": {
+    "cell_annotations": "RAW_CANONICAL_VALUES",
+    "cross_metric_aggregate": false,
+    "cross_metric_color_comparison": "NOT_VALID",
+    "direction_reversal": false,
+    "imputation": false,
+    "noncomputed_label": "N/C",
+    "numeric_zero_label": "NUMERIC_ZERO_FORMATTED_AS_A_NUMBER",
+    "panel_color_transform": "PER_METRIC_LINEAR_NORMALIZATION"
+  },
+  "figure_id": "fig_rq2_llm_calibration_heatmap",
+  "figure_values_csv": "results/final_figures/rq2/values/fig_rq2_llm_calibration_heatmap_values.csv",
+  "figure_values_sha256": "e732f83d363c337fbe2e7890585664409b9038b8b6305a12fb0ceacdbca925fd",
+  "generator": "src/analysis/final_figures/render_polish.py",
+  "generator_dependencies": {
+    "src/analysis/final_figures/rq2.py": "38de0ac2d11441dc964ba7aeae7e9a9dd5ff4c48e7120511159bfeaa5b372e95",
+    "src/analysis/final_figures/rq2_heatmaps.py": "343617bb1e9b232cd9d96797da7e16ed520a410317d0a787ec1ebe99c04cb960"
+  },
+  "generator_sha256": "ed3d8bcc8900f8fc9dfe0e4385f18d45c8175c2181709d944fc3cbdf33cd08c2",
+  "limitations": [
+    "Calibration is averaged only over users with both history and recommendation feature distributions.",
+    "Cell annotations report the raw value plus eligible (e) and undefined (u) user counts.",
+    "N/C is reserved for a noncomputed configuration and is visually distinct from numeric zero; no value is imputed.",
+    "All 30 frozen configurations are computed, although user-level eligibility is partial where u is nonzero."
+  ],
+  "metric_ids": [
+    "calibration_at_5"
+  ],
+  "output_pdf": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_heatmap.pdf",
+  "output_pdf_sha256": "2869d0208d3ee1150fa41493d0ed5e7354401db8c9c3bafa51851d4540d26ecb",
+  "output_png": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_heatmap.png",
+  "output_png_sha256": "48f66d136100198483b1232628f296068ae11ee32c5d456bcbf6015080348ac6",
+  "output_svg": "results/final_figures/rq2/figures/fig_rq2_llm_calibration_heatmap.svg",
+  "output_svg_sha256": "70ec9d7f639014eba6dff527e11fdb88030b1dc87c02b54fe2046f0e436f1cfe",
+  "render_only_remediation": {
+    "base_figure_head": "0b2fbaa3d91e46d0daf85c9b981b57375b323ae0",
+    "change": "Calibration@5 title explicitly identifies local extension",
+    "figure_values_sha256_unchanged": "e732f83d363c337fbe2e7890585664409b9038b8b6305a12fb0ceacdbca925fd",
+    "not_target_paper_metric": true,
+    "previous_output_sha256": {
+      "pdf": "94d23aca952321b5ed1ff6ddf3fd5f79fef8380c1c38fa3cf30fab644a16ced2",
+      "png": "6782b4412a39c5d3ec901dc4f81a3a8b03f72cf145b4bda7bd7b4bd2324f69e8",
+      "svg": "0874ccb8e0959ab8660b499e88c410ce7b7139b99043e1375c881a8712369566"
+    },
+    "scope": "TYPOGRAPHY_ONLY_NO_SCIENTIFIC_VALUE_CHANGE",
+    "visible_title": "RQ2 Calibration@5 — local extension"
+  },
+  "rq": "RQ2",
+  "schema_version": "1.0",
+  "scientific_interpretation": "Calibration@5 is the canonical eligible-user mean; every cell retains its eligible and undefined-user accounting.",
+  "scientific_purpose": "Expose all 30 canonical Calibration@5 cells with eligible and undefined user counts.",
+  "source_status_counts": {
+    "calibration_at_5": {
+      "COMPUTED": 30
+    }
+  }
+}

@@ -1,0 +1,36 @@
+command,output
+git branch --show-current,master
+git rev-parse HEAD,092f6862295402389a4aa20a1e4ef2d8b66da0b0
+git status --short,"?? final_metric_paper_comparison_values.md
+?? original_repo_metric_file_inventory.csv
+?? original_repo_metric_values_decoded.csv
+?? original_repo_metric_values_decoded_summary.csv
+?? original_repo_metric_values_decoded_wide.csv
+?? original_repo_requested_metric_values_decoded.csv
+?? report/reproduction_r1_original_repo_result_recovery.md
+?? requested_metric_candidate_position_bias_values.csv
+?? requested_metric_generation_involved_performance_values.csv
+?? requested_metric_history_length_sensitivity_values.csv
+?? requested_metric_novelty_values.csv
+?? requested_metric_paper_comparison_values.csv
+?? requested_metric_values_summary.csv
+?? src/analysis/reproduction_r1_original_repo_recovery.py
+?? tests/test_reproduction_r1_original_repo_recovery.py"
+git status --branch --short,"## master...origin/master
+?? final_metric_paper_comparison_values.md
+?? original_repo_metric_file_inventory.csv
+?? original_repo_metric_values_decoded.csv
+?? original_repo_metric_values_decoded_summary.csv
+?? original_repo_metric_values_decoded_wide.csv
+?? original_repo_requested_metric_values_decoded.csv
+?? report/reproduction_r1_original_repo_result_recovery.md
+?? requested_metric_candidate_position_bias_values.csv
+?? requested_metric_generation_involved_performance_values.csv
+?? requested_metric_history_length_sensitivity_values.csv
+?? requested_metric_novelty_values.csv
+?? requested_metric_paper_comparison_values.csv
+?? requested_metric_values_summary.csv
+?? src/analysis/reproduction_r1_original_repo_recovery.py
+?? tests/test_reproduction_r1_original_repo_recovery.py"
+git diff --stat,
+git diff --cached --stat,

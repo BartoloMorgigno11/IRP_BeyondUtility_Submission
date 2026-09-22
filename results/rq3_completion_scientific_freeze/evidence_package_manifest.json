@@ -1,0 +1,20 @@
+{
+  "base_commit": "944798f3e754576beef2a03bd5a00811a285b1e6",
+  "policy": "Byte-preserving deterministic gzip/tar packaging; terminal records include original raw responses. No inference or metric regeneration.",
+  "request_manifest": {
+    "original_path": "artifacts/rq3_llm_completion/request_manifest.csv",
+    "original_sha256": "ef9554878343fb506f0c7dc8c8c3e4da3f5806f04968b470a37cc207e1a76dfa",
+    "packaged_path": "results/rq3_completion_scientific_freeze/request_manifest.csv.gz",
+    "packaged_sha256": "d11e7564fecf7c702bd883a30481f5505b860489025a59d7f83719c49ccad05d"
+  },
+  "source_manifest_sha256": "85a11534d2d23c5045790a5561d434e55c7ace4480eaaf6679cc3412dce0e988",
+  "source_producer_sha256": "75624c8dc07c676ab7130d2d832d112924fc33e3bfe65754233a45f7732cfe7d",
+  "terminal_evidence": {
+    "member_inventory": "results/rq3_completion_scientific_freeze/terminal_evidence_members.csv",
+    "member_inventory_sha256": "2d6cfdfe8453abf93a81257ba306928f2c10b1f0406c6e089e6b3dbe1e1d5482",
+    "members": 40794,
+    "original_directory": "results/llm/rq3_llm_completion/terminal",
+    "packaged_path": "results/rq3_completion_scientific_freeze/terminal_evidence.tar.gz",
+    "packaged_sha256": "7c79eeb35064be5d96a81990e7c7251065c99745e505666f8cc59afbb17ed553"
+  }
+}

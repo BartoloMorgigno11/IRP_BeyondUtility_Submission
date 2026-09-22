@@ -1,0 +1,8 @@
+model,required_inputs,available_inputs,adaptation_required,status,blocker
+Random,candidate sets,20-candidate sets,none,READY_DATA,
+MostPop,train interactions,chronological train rows,none,READY_DATA,
+BM25-like,item text metadata,"name, description, tags, ingredients",recipe text field concatenation,READY_WITH_ADAPTATION,
+BPRMF,user-item train interactions,chronological train rows with IDs,map raw IDs to contiguous internals in future preprocessing,READY_DATA,
+GRU4Rec,ordered user sequences,date plus input-order chronological sequences,day-level tie policy documented,READY_WITH_ADAPTATION,
+SASRec,ordered user sequences,date plus input-order chronological sequences,day-level tie policy documented,READY_WITH_ADAPTATION,
+LightGCN,user-item train graph,chronological train rows with IDs,map raw IDs to contiguous internals in future preprocessing,READY_DATA,

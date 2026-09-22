@@ -1,0 +1,2 @@
+pairs,valid_pairs,invalid_pairs,same_candidate_set_failures,random_order_failures,duplicate_pair_keys
+600,600,0,0,0,0

@@ -1,0 +1,55 @@
+phase:
+  id: f1bz_final_traditional_execution
+  expected_head: 5f29945d1cfe5e6cce5b6cc0522db6f0efe8a976
+  predecessor_state: F1BY_WINNER_CHECKPOINT_FROZEN
+  success_token: F1BZ_FINAL_TRADITIONAL_EXECUTION_VALIDATED
+  blocked_token: F1BZ_FINAL_TRADITIONAL_EXECUTION_BLOCKED
+
+execution:
+  allow_traditional_training: true
+  allow_final_test_evaluation: true
+  allow_llm_inference: false
+  allow_ollama_recommendation_calls: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network: false
+  allow_commit: false
+  resume_completed_runs: true
+
+runtime:
+  implementation_classification: LOCAL_PROJECT_WRAPPER_NOT_RECHORUS_EXACT
+  optimizer: Adam
+  epochs: 5
+  max_sequence_length: 50
+  dropout: 0.2
+  bprmf_batch_size: 4096
+  gru4rec_batch_size: 512
+  sasrec_batch_size: 512
+  lightgcn_batch_size: 4096
+  device_policy: cuda_if_available_else_cpu
+  deterministic_algorithms: true
+  negative_sampling: deterministic_one_train_universe_negative_per_positive
+  empty_sequence_eval_policy: deterministic_zero_history_candidate_tie_break
+
+inputs:
+  f1bx_config: configs/f1bx_execution_stage1.yaml
+  f1br_readiness: results/tables/f1br_trainable_execution_readiness.csv
+  f1by_winners: results/tables/f1by_foodcom_selected_configs.csv
+  f1by_winner_manifest: results/manifests/f1by_foodcom_winner_selection.json
+  f1bx_baseline_manifest: results/manifests/f1bx_execution_manifest.json
+  f1bx_baseline_recommendations: results/raw_outputs/f1bx_baseline_recommendations.csv
+  f0_reranking_matrix: results/tables/f0_final_reranking_matrix.csv
+  f0_request_budget: results/tables/f0_final_request_budget.csv
+  f1arr_metric_blockers: results/tables/f1arr_final_metric_blockers.csv
+  f1arr_degenerate_cells: results/tables/f1arr_final_degenerate_metric_cells.csv
+  d0a_foodcom_hash_manifest: results/manifests/d0a_foodcom_extracted_file_hashes.json
+  h0_manifest: results/manifests/extension_h0_no_inference_manifest.json
+
+reranking_source:
+  policy_id: F1BR_ADAPTED_ORDERED_DEDUP_TOP20_UNION_V1
+  source_seed_policy: F1BZ_FIVE_SEED_MEAN_SCORE_THEN_FROZEN_MODEL_ORDER
+  model_order: [BPRMF, GRU4Rec, SASRec, LightGCN]
+  seeds: [42, 43, 44, 45, 46]
+  per_model_top_k: 20
+  final_pool_size: 20
+  duplicate_policy: keep_first_occurrence_by_model_order_then_mean_score_rank

@@ -1,0 +1,2 @@
+winner_token,selected_dataset,foodcom_dataset_blockers,videogames_dataset_blockers,foodcom_ready_like,videogames_ready_like,global_protocol_blocker_requirements,selection_rule,loser,blocker_rows_recorded
+FOODCOM_SELECTED_FINAL_FIFTH_DATASET,Food.com,0,25,64,39,3,"fewer mandatory dataset-specific blockers, then more complete final matrix",Video Games,26

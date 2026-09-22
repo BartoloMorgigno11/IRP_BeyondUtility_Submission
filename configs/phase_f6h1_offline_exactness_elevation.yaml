@@ -1,0 +1,58 @@
+phase:
+  id: phase_f6h1
+  name: offline_exactness_elevation_from_existing_evidence
+  expected_branch: plan-d-extensions
+  expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  interpreter_path: .venv_audit_recovery/Scripts/python.exe
+  environment_classification: defensible_repaired_clone_exact_package_versions
+
+target_frontier_classes:
+  - exact_possible_by_documentary_verification_only
+  - exact_possible_by_offline_recomputation
+  - exact_possible_with_existing_raw_outputs
+
+inputs:
+  workspace_forensic_report: report/workspace_forensic_state_audit.md
+  exactness_frontier_report: report/exactness_frontier_and_evidence_closure.md
+  f6g3_report: report/phase_f6g3_lastfm_reranking_top10_freeze.md
+  handoff: report/future_operations_context_handoff.md
+  current_context_snapshot: results/manifests/current_project_context_snapshot.json
+  exactness_frontier_snapshot: results/manifests/exactness_frontier_snapshot.json
+  f6g3_freeze_manifest: results/manifests/phase_f6g3_top10_freeze_manifest.json
+  f6g3_protected_hashes: results/manifests/phase_f6g3_protected_input_hashes.json
+  paper_atomic_contract: results/tables/paper_atomic_contract.csv
+  paper_repository_contract_conflicts: results/tables/paper_repository_contract_conflicts.csv
+  paper_to_local_traceability: results/tables/paper_to_local_traceability.csv
+  current_reproduction_status_matrix: results/tables/current_reproduction_status_matrix.csv
+  exactness_frontier_by_component: results/tables/exactness_frontier_by_component.csv
+  numeric_cell_exactness_frontier: results/tables/numeric_cell_exactness_frontier.csv
+  exactness_elevation_candidates: results/tables/exactness_elevation_candidates.csv
+  irreducible_exactness_blockers: results/tables/irreducible_exactness_blockers.csv
+  numeric_result_reconciliation: results/tables/numeric_result_reconciliation.csv
+  artifact_lineage_and_supersession: results/tables/artifact_lineage_and_supersession.csv
+  project_claim_verification: results/tables/project_claim_verification.csv
+  paper_pdf: paper/2411.00331v1.pdf
+  paper_pdf_duplicate: paper/Beyond Utility Evaluating LLM As Recommander.pdf
+  paper_docx_translation: paper/traduzione_italiana_beyond_utility_llm_recommender.docx
+  upstream_root: original_repo/EvaLLMasRecommender
+  upstream_readme: original_repo/EvaLLMasRecommender/README.md
+  upstream_metric_code: original_repo/EvaLLMasRecommender/eva/codes/llm_metrics.py
+  upstream_templates_dir: original_repo/EvaLLMasRecommender/eva/templates
+  upstream_beauty_sota_zip: original_repo/EvaLLMasRecommender/sota_results/beauty_his10.zip
+  upstream_beauty_llm_zip: original_repo/EvaLLMasRecommender/llm_results/beauty.zip
+  upstream_sports_llm_zip: original_repo/EvaLLMasRecommender/llm_results/sports.zip
+
+policy:
+  no_training: true
+  no_llm_inference: true
+  no_ollama: true
+  no_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  no_prompt_changes: true
+  no_parser_changes: true
+  no_candidate_changes: true
+  no_cohort_changes: true
+  no_metric_contract_changes: true
+  require_full_exactness_gate_for_elevation: true
+  exclude_lastfm_reranking_from_paper_elevation: true

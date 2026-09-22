@@ -1,0 +1,49 @@
+{
+  "canonical_source_artifacts": [
+    "results/manifests/rq6_evidence_authority.json",
+    "results/manifests/rq6_scientific_contract.json",
+    "results/manifests/rq6_final_figure_spec.json",
+    "results/tables/g1_primary_ranking_reliability.csv",
+    "results/tables/g2_history_length_analysis_universe.csv",
+    "results/tables/g3_candidate_position_reliability.csv",
+    "results/tables/g4_f1bzq_reliability.csv"
+  ],
+  "canonical_source_sha256": {
+    "results/manifests/rq6_evidence_authority.json": "a22ceae0565d87f1298ed1d97e8af1b53e24b3febb69ff81bb098c5bb1f5176e",
+    "results/manifests/rq6_final_figure_spec.json": "5752191568107c46318a9665b3aaea9c4a785e6b0a2c8f740473974d1017f280",
+    "results/manifests/rq6_scientific_contract.json": "f2df8cfc127a586d18082a6dc710356ba058ad1b641f2d38821fe588a87d050d",
+    "results/tables/g1_primary_ranking_reliability.csv": "1f5051ee58df03118617c981d13ece3a1679df2440b08f59e52a7ed068ebd023",
+    "results/tables/g2_history_length_analysis_universe.csv": "02d501b1fd250f2da1ab33905a36da2a80803c8e16b763b5a31f56de5bc7e336",
+    "results/tables/g3_candidate_position_reliability.csv": "b31de0ea8c3b788091eeb7893af7a795029ddb36059d87a13c88f1257da7d537",
+    "results/tables/g4_f1bzq_reliability.csv": "666f4af4d2fda42fbd145e0d34dd881f2655c5582e8c88b83251690b4b2d27cb"
+  },
+  "created_from_commit": "1ff09443cd6f331753af356f3b61600d20dbd28d",
+  "direct_comparability": false,
+  "figure_id": "fig_rq6_textual_hallucination_vs_structural_reliability",
+  "figure_values_csv": "results/final_figures/rq6/values/fig_rq6_textual_hallucination_vs_structural_reliability_values.csv",
+  "figure_values_sha256": "cf3dc0f7f1cfbaa45ac4c280f1fa4dc7ca9af3d9d659f3752846322590a22d69",
+  "generator": "src/analysis/final_figures/rq6.py",
+  "generator_sha256": "68e6e7eead29e08907d54f263d74d095fdcf5ead744978781c0afd9fd4a7018f",
+  "limitations": [
+    "Paper textual/catalogue hallucination and local structural invalidity are not directly comparable.",
+    "No locally reproduced free-text hallucination rate.",
+    "No causal claim that constrained output reduces hallucination.",
+    "Overlapping RQ5 views omitted from the quantitative panel."
+  ],
+  "output_pdf": "results/final_figures/rq6/figures/fig_rq6_textual_hallucination_vs_structural_reliability.pdf",
+  "output_pdf_sha256": "9e5dde27ac2bd323175436209a40c00f397157bb3e0a8803a64406609bf4daf4",
+  "output_png": "results/final_figures/rq6/figures/fig_rq6_textual_hallucination_vs_structural_reliability.png",
+  "output_png_sha256": "195e24b643d3d585914fb51173aa1ed0ff3005dba9b769394fea5628b309e7b6",
+  "output_svg": "results/final_figures/rq6/figures/fig_rq6_textual_hallucination_vs_structural_reliability.svg",
+  "output_svg_sha256": "f37d98afd2c20fed88a66a1104b8c33ee8d6a53ece01520cc8cbb1d17fd6d5e9",
+  "panel_a_construct": "PAPER_FREE_TEXT_TEXTUAL_CATALOGUE_HALLUCINATION_VS_LOCAL_CANDIDATE_INDEX_STRUCTURAL_RELIABILITY",
+  "panel_b_evidence_type": "STRUCTURAL_RELIABILITY",
+  "r1_quantitative_dependency": false,
+  "r3_r4_quantitative_dependency": false,
+  "row_count": 4,
+  "rq": "RQ6",
+  "rq5_views_summed": false,
+  "schema_version": "1.0",
+  "scientific_interpretation": "Local constrained-output protocols have high structural validity; this is not a direct reproduction of free-text textual hallucination.",
+  "scientific_purpose": "Separate target-paper free-text hallucination from local constrained-output structural reliability."
+}

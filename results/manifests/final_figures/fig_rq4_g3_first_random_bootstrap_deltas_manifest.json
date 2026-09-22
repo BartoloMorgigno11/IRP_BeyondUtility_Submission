@@ -1,0 +1,80 @@
+{
+  "canonical_source_artifacts": [
+    "results/tables/g3_candidate_position_metric_results.csv",
+    "results/tables/g3_candidate_position_canddif.csv",
+    "results/tables/g3_candidate_position_statistical_results.csv",
+    "results/tables/g3_candidate_position_synthesis_statistical_comparisons.csv",
+    "results/tables/g3_candidate_position_synthesis_decision_breakdowns.csv",
+    "results/tables/g3_candidate_position_reliability.csv",
+    "results/tables/g3_candidate_position_pair_integrity.csv",
+    "results/manifests/g3_candidate_position_metrics_freeze.json",
+    "results/manifests/g3_candidate_position_statistical_analysis_manifest.json",
+    "results/manifests/g3_candidate_position_scientific_synthesis_manifest.json"
+  ],
+  "canonical_source_sha256": {
+    "results/manifests/g3_candidate_position_metrics_freeze.json": "3cc590443a8a63c53744293625c255ef5f385141d5344cd14499ee4feb156ea6",
+    "results/manifests/g3_candidate_position_scientific_synthesis_manifest.json": "db85337b00ebf21680c624d41247a9d33e7c80386cdaa172d201f0cd2bbb8f82",
+    "results/manifests/g3_candidate_position_statistical_analysis_manifest.json": "066466de839a01eb3be9f6fdcfc3406b2f1d7cf902c3c814ee9d9cba46f8f9a0",
+    "results/tables/g3_candidate_position_canddif.csv": "6349802ba933d5ab0218fd72268e4aa0c71563f3a8c1cc91d8a0273ee9e59f80",
+    "results/tables/g3_candidate_position_metric_results.csv": "ce005175b0e6222ca488080506cd8a8e13d1314e136e0421c782b88f14e4e25e",
+    "results/tables/g3_candidate_position_pair_integrity.csv": "9de7febe5fe472b57f383f59c11a83f49353772482223360aa42fe0e0be75255",
+    "results/tables/g3_candidate_position_reliability.csv": "b31de0ea8c3b788091eeb7893af7a795029ddb36059d87a13c88f1257da7d537",
+    "results/tables/g3_candidate_position_statistical_results.csv": "2b2e1fa3d661fa1c4c2e81d56350548eeb33d1fb9594ef5b924b548af7a555a3",
+    "results/tables/g3_candidate_position_synthesis_decision_breakdowns.csv": "869daa07c5325bb1108ba5016712db979d5de7d2453f206f3200a92885f6cc07",
+    "results/tables/g3_candidate_position_synthesis_statistical_comparisons.csv": "f24af8cc57f3403e26453a6ea9d636b061c4375cbeeb3c9f9e53f6ecd643f19d"
+  },
+  "created_from_commit": "bc85bd0dfe2bf71e361eff2cdf780ccf98ec1f48",
+  "decision_counts": {
+    "INCONCLUSIVE": 4,
+    "NEGATIVE": 1,
+    "POSITIVE": 85
+  },
+  "display_contract": {
+    "first_target_informed_oracle": true,
+    "no_deployability_claim": true,
+    "no_r5b_g3_pooling": true,
+    "no_statistical_recalculation": true
+  },
+  "evidence_role": "PRIMARY_G3_SYSTEMATIC",
+  "figure_id": "fig_rq4_g3_first_random_bootstrap_deltas",
+  "figure_values_csv": "results/final_figures/rq4/values/fig_rq4_g3_first_random_bootstrap_deltas_values.csv",
+  "figure_values_sha256": "708b7cd6160a3140bd91b02a3d06d8ebf178743d5610720ff8c9e8773e08eeaa",
+  "generator": "src/analysis/final_figures/render_polish.py",
+  "generator_dependencies": {
+    "src/analysis/final_figures/rq4.py": "898cd5e08fa9f4f1b7b5a8eabad9648de94aa0389f0bbf29cf0bce9d169b2946"
+  },
+  "generator_sha256": "ed3d8bcc8900f8fc9dfe0e4385f18d45c8175c2181709d944fc3cbdf33cd08c2",
+  "limitations": [
+    "FIRST explicitly places the known relevant target at candidate position 1: target-informed oracle stress condition, not a deployable ordering strategy.",
+    "Paired comparisons keep candidate membership fixed and change only initial order.",
+    "No p-values, multiplicity-adjusted p-values, or synthetic significance scores."
+  ],
+  "output_pdf": "results/final_figures/rq4/figures/fig_rq4_g3_first_random_bootstrap_deltas.pdf",
+  "output_pdf_sha256": "d8107403c0b51a9564418df8afe4c9dbba9e9f87931d78b3e09f211f85b4656a",
+  "output_png": "results/final_figures/rq4/figures/fig_rq4_g3_first_random_bootstrap_deltas.png",
+  "output_png_sha256": "50f0fe4550540634f9398a0285757c17632bd0d7cb003372fec2c5f4169426df",
+  "output_svg": "results/final_figures/rq4/figures/fig_rq4_g3_first_random_bootstrap_deltas.svg",
+  "output_svg_sha256": "ffcf28bc9908b77e52d702373339f731d14bd5f57c521bbf1e3d59bad0cf26f5",
+  "render_only_remediation": {
+    "base_figure_head": "0b2fbaa3d91e46d0daf85c9b981b57375b323ae0",
+    "change": "HR@5/NDCG@5/MRR labels and explicit pos/neg/inc bootstrap counts",
+    "decision_counts_from_frozen_values": true,
+    "figure_values_sha256_unchanged": "708b7cd6160a3140bd91b02a3d06d8ebf178743d5610720ff8c9e8773e08eeaa",
+    "panel_titles": {
+      "hr_at_5": "HR@5 (pos=29 / neg=1 / inc=0)",
+      "mrr": "MRR (pos=28 / neg=0 / inc=2)",
+      "ndcg_at_5": "NDCG@5 (pos=28 / neg=0 / inc=2)"
+    },
+    "previous_output_sha256": {
+      "pdf": "5d6c9d419d6a6c3deee30e2960200615f0545e9219654dbb7eed3718421d644a",
+      "png": "7ec201483ba4d32f3d1bc6a7e995968b18d723e8f02a3840778e0cf10717a694",
+      "svg": "58ba8b30ff26a6bedbe1984c440bf385e8c6382f3381a28ec91aefa28394f583"
+    },
+    "scope": "TYPOGRAPHY_ONLY_NO_SCIENTIFIC_VALUE_CHANGE"
+  },
+  "row_count": 90,
+  "rq": "RQ4",
+  "schema_version": "1.0",
+  "scientific_interpretation": "Initial candidate ordering affects utility under paired identical-membership conditions; FIRST-minus-RANDOM effects are predominantly positive with exceptions.",
+  "scientific_purpose": "Systematic G3 paired bootstrap FIRST-minus-RANDOM effects"
+}

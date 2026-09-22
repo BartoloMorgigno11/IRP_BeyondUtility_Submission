@@ -1,0 +1,2 @@
+dataset,applicable_result_cells,computed_existing_raw,computed_f1a,awaiting_new_raw,awaiting_training,blocked_protocol,degenerate_protocol_input,blocked_data_requirement,not_applicable,status
+foodcom,1787,0,57,1263,355,0,55,0,57,ACCOUNTED

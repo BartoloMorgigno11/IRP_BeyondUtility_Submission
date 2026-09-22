@@ -1,0 +1,4 @@
+dataset,scope,evaluation_N,positive_present_N,positive_absent_N,candidate_recall_at_20,candidate_recall_tautological,force_positive,status,reason
+foodcom,ALL_USERS,1000,4,996,0.0040000000000000001,false,false,COMPUTED,Food.com warm/cold split preserved from the frozen final-training history contract.
+foodcom,WARM_USERS,273,4,269,0.014652014652014652,false,false,COMPUTED,Food.com warm/cold split preserved from the frozen final-training history contract.
+foodcom,TRUE_ZERO_HISTORY_USERS,727,0,727,0,false,false,COMPUTED,Food.com warm/cold split preserved from the frozen final-training history contract.

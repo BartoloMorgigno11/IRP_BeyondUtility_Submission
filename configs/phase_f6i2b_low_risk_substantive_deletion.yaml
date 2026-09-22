@@ -1,0 +1,45 @@
+phase:
+  id: phase_f6i2b
+  name: low_risk_substantive_deletion
+  runtime_classification: defensible_repaired_clone_exact_package_versions
+  exact_original_runtime_reproduction: false
+
+inputs:
+  f6i2a_low_risk_delete_bundle: results/tables/phase_f6i2a_low_risk_delete_bundle.csv
+  f6i2a_retention_decisions: results/tables/phase_f6i2a_retention_decisions.csv
+  f6i2a_future_dependency_protection: results/tables/phase_f6i2a_future_dependency_protection.csv
+  f6i2a_source_file_audit: results/tables/phase_f6i2a_source_file_audit.csv
+  f6i2a_results_manifest_audit: results/tables/phase_f6i2a_results_manifest_audit.csv
+  f6i2a_manual_review: results/tables/phase_f6i2a_manual_review.csv
+  f6i2a_validation: results/tables/phase_f6i2a_validation.csv
+  f6i2a_manifest: results/manifests/phase_f6i2a_consolidation_design_manifest.json
+  f6i2a_protected_input_hashes: results/manifests/phase_f6i2a_protected_input_hashes.json
+  f6i2a_report: report/phase_f6i2a_substantive_repository_consolidation_design.md
+  f6i1_inventory: results/tables/phase_f6i1_relevant_file_inventory.csv
+  f6i1_edges: results/tables/phase_f6i1_dependency_edges.csv
+  f6i1_retention: results/tables/phase_f6i1_retention_classification.csv
+  f6i1_delete_candidates: results/tables/phase_f6i1_delete_now_candidates.csv
+  f6i1_manual_review: results/tables/phase_f6i1_manual_review.csv
+  f6i1_future_map: results/tables/phase_f6i1_future_dependency_map.csv
+  f6i1_duplicates: results/tables/phase_f6i1_duplicate_groups.csv
+  f6i1_validation: results/tables/phase_f6i1_validation.csv
+  f6i1_initial_capture: results/manifests/phase_f6i1_initial_capture.json
+  f6i1_report: report/phase_f6i1_repository_retention_audit_and_safe_cleanup_batch1.md
+  future_handoff: report/future_operations_context_handoff.md
+  current_context_snapshot: results/manifests/current_project_context_snapshot.json
+
+policy:
+  expected_low_risk_deletion_candidates: 8
+  execute_deletion_by_default: false
+  allow_training: false
+  allow_inference: false
+  allow_ollama: false
+  allow_api_calls: false
+  allow_downloads: false
+  allow_package_changes: false
+  allow_archive_migration: false
+  allow_source_consolidation: false
+  allow_yaml_consolidation: false
+  allow_test_consolidation: false
+  allow_documentation_consolidation: false
+  update_allowed_current_state_files: true

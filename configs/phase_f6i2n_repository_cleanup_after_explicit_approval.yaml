@@ -1,0 +1,20 @@
+phase:
+  id: phase_f6i2n
+  name: phase_f6i2n_repository_cleanup_after_explicit_approval
+  purpose: post-helper-consolidation wrapper and consumer cleanup readiness review
+runtime:
+  interpreter: .venv_audit_recovery/Scripts/python.exe
+  python_no_user_site: "1"
+  classification: defensible_repaired_clone_exact_package_versions
+scope:
+  mode: read_only_review
+  no_wrapper_modification: true
+  no_consumer_modification: true
+  no_canonical_module_modification: true
+  no_config_consolidation: true
+  no_training: true
+  no_inference: true
+  no_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  no_git_stage_or_commit: true

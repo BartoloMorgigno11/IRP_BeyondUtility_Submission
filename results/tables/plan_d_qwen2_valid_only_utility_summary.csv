@@ -1,0 +1,4 @@
+plan,phase,dataset,scope,backend,model,prompt_strategy,utility_variant,num_instances,hit_rate_at_5,ndcg_at_5,mean_positive_rank,num_hits,notes
+Plan D,D5E.1_qwen2_output_validity_analysis,ml1m,diagnostic_subset,ollama,qwen2:7b-instruct,openp5_base,original_parsed_output,20,0.150000,0.100889,2.666667,3,"Original D5E utility from parsed output, including invalid IDs in the returned rank positions."
+Plan D,D5E.1_qwen2_output_validity_analysis,ml1m,diagnostic_subset,ollama,qwen2:7b-instruct,openp5_base,valid_only_output,20,0.150000,0.100889,2.666667,3,"Recomputed from ignored raw JSONL parsed valid_item_ids only, preserving order after removing hallucinated IDs; no raw response text is committed."
+Plan D,D5E.1_qwen2_output_validity_analysis,ml1m,diagnostic_subset,ollama,qwen2:7b-instruct,openp5_base,invalid_as_failure,20,0.150000,0.100889,2.666667,3,Strict operational variant: any instance with hallucinated IDs is counted as utility failure.

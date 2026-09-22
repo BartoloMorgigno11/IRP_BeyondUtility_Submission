@@ -1,0 +1,66 @@
+{
+  "dominant_root_causes": [
+    {
+      "count": 361,
+      "percent_invalid": 0.3144599303135889,
+      "percent_total": 0.30083333333333334,
+      "root_cause": "Model produced near-full candidate ranking (11-19 IDs)",
+      "technical_code": "MODEL_PRODUCED_NEAR_FULL_CANDIDATE_SET"
+    },
+    {
+      "count": 341,
+      "percent_invalid": 0.2970383275261324,
+      "percent_total": 0.2841666666666667,
+      "root_cause": "Model produced full 20-candidate ranking",
+      "technical_code": "MODEL_PRODUCED_FULL_CANDIDATE_SET"
+    },
+    {
+      "count": 196,
+      "percent_invalid": 0.17073170731707318,
+      "percent_total": 0.16333333333333333,
+      "root_cause": "Model produced fewer than K IDs",
+      "technical_code": "MODEL_PRODUCED_UNDER_K"
+    },
+    {
+      "count": 96,
+      "percent_invalid": 0.08362369337979095,
+      "percent_total": 0.08,
+      "root_cause": "Model produced over-K short list (6-9 IDs)",
+      "technical_code": "MODEL_PRODUCED_OVER_K_SHORT_LIST"
+    },
+    {
+      "count": 86,
+      "percent_invalid": 0.07491289198606271,
+      "percent_total": 0.07166666666666667,
+      "root_cause": "Model produced more than 20 indices",
+      "technical_code": "MODEL_PRODUCED_MORE_THAN_CANDIDATE_SET"
+    },
+    {
+      "count": 52,
+      "percent_invalid": 0.04529616724738676,
+      "percent_total": 0.043333333333333335,
+      "root_cause": "Model produced 10 IDs, matching original top-10 habit",
+      "technical_code": "MODEL_PRODUCED_TOP10_ORIGINAL_CONTRACT"
+    },
+    {
+      "count": 16,
+      "percent_invalid": 0.013937282229965157,
+      "percent_total": 0.013333333333333334,
+      "root_cause": "Runner accepted incomplete Ollama response with done=false",
+      "technical_code": "RUNNER_ACCEPTED_INCOMPLETE_OLLAMA_DONE_FALSE"
+    }
+  ],
+  "invalid": 1148,
+  "mistral_invalid": 550,
+  "mistral_valid": 50,
+  "parse_failed": 16,
+  "parse_failed_done_false": 16,
+  "qwen_invalid": 598,
+  "qwen_valid": 2,
+  "requests": 1200,
+  "top5_salvage_possible_including_valid": 972,
+  "top5_salvage_possible_invalid_only": 920,
+  "valid": 52,
+  "wrong_length": 1132,
+  "wrong_length_done_stop": 1132
+}

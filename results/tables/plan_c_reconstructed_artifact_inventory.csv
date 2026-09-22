@@ -1,0 +1,37 @@
+dataset,artifact_name,path,written,rows_or_lines,artifact_status,format_status,notes
+ml1m,interactions.csv,data/reconstructed/plan_c/ml1m/interactions.csv,True,994169,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+ml1m,catalog.csv,data/reconstructed/plan_c/ml1m/catalog.csv,True,3883,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+ml1m,datamaps.json,data/reconstructed/plan_c/ml1m/datamaps.json,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+ml1m,meta.json,data/reconstructed/plan_c/ml1m/meta.json,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+ml1m,README_RECONSTRUCTED.md,data/reconstructed/plan_c/ml1m/README_RECONSTRUCTED.md,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+ml1m,ground_truth.csv,data/reconstructed/plan_c/ml1m/ground_truth.csv,True,6040,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+ml1m,candidates.csv,data/reconstructed/plan_c/ml1m/candidates.csv,True,604000,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+ml1m,sequential_data.txt,data/reconstructed/plan_c/ml1m/sequential_data.txt,True,6040,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+ml1m,negative_samples.txt,data/reconstructed/plan_c/ml1m/negative_samples.txt,True,6040,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_beauty,interactions.csv,data/reconstructed/plan_c/amazon_beauty/interactions.csv,True,176139,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_beauty,catalog.csv,data/reconstructed/plan_c/amazon_beauty/catalog.csv,True,259204,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_beauty,datamaps.json,data/reconstructed/plan_c/amazon_beauty/datamaps.json,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_beauty,meta.json,data/reconstructed/plan_c/amazon_beauty/meta.json,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_beauty,README_RECONSTRUCTED.md,data/reconstructed/plan_c/amazon_beauty/README_RECONSTRUCTED.md,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_beauty,ground_truth.csv,data/reconstructed/plan_c/amazon_beauty/ground_truth.csv,True,22363,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_beauty,candidates.csv,data/reconstructed/plan_c/amazon_beauty/candidates.csv,True,2236300,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_beauty,sequential_data.txt,data/reconstructed/plan_c/amazon_beauty/sequential_data.txt,True,22363,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_beauty,negative_samples.txt,data/reconstructed/plan_c/amazon_beauty/negative_samples.txt,True,22363,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_sports,interactions.csv,data/reconstructed/plan_c/amazon_sports/interactions.csv,True,260739,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_sports,catalog.csv,data/reconstructed/plan_c/amazon_sports/catalog.csv,True,532197,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_sports,datamaps.json,data/reconstructed/plan_c/amazon_sports/datamaps.json,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_sports,meta.json,data/reconstructed/plan_c/amazon_sports/meta.json,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_sports,README_RECONSTRUCTED.md,data/reconstructed/plan_c/amazon_sports/README_RECONSTRUCTED.md,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_sports,ground_truth.csv,data/reconstructed/plan_c/amazon_sports/ground_truth.csv,True,35598,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_sports,candidates.csv,data/reconstructed/plan_c/amazon_sports/candidates.csv,True,3559800,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_sports,sequential_data.txt,data/reconstructed/plan_c/amazon_sports/sequential_data.txt,True,35598,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+amazon_sports,negative_samples.txt,data/reconstructed/plan_c/amazon_sports/negative_samples.txt,True,35598,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+lastfm,interactions.csv,data/reconstructed/plan_c/lastfm/interactions.csv,True,92834,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+lastfm,catalog.csv,data/reconstructed/plan_c/lastfm/catalog.csv,True,17632,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+lastfm,datamaps.json,data/reconstructed/plan_c/lastfm/datamaps.json,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+lastfm,meta.json,data/reconstructed/plan_c/lastfm/meta.json,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+lastfm,README_RECONSTRUCTED.md,data/reconstructed/plan_c/lastfm/README_RECONSTRUCTED.md,True,1,written_reconstructed,reconstructed_format,Generated Plan C reconstruction artifact; not an exact original paper file.
+lastfm,ground_truth.csv,data/reconstructed/plan_c/lastfm/ground_truth.csv,False,0,not_written,not_applicable,Not written because this dataset lacks a safe chronological split in C5.
+lastfm,candidates.csv,data/reconstructed/plan_c/lastfm/candidates.csv,False,0,not_written,not_applicable,Not written because this dataset lacks a safe chronological split in C5.
+lastfm,sequential_data.txt,data/reconstructed/plan_c/lastfm/sequential_data.txt,False,0,not_written,not_applicable,Not written because this dataset lacks a safe chronological split in C5.
+lastfm,negative_samples.txt,data/reconstructed/plan_c/lastfm/negative_samples.txt,False,0,not_written,not_applicable,Not written because this dataset lacks a safe chronological split in C5.

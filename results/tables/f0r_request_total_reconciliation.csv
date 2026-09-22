@@ -1,0 +1,12 @@
+budget_item,computed_request_count,expected_request_count,f0_budget_request_count,formula,status
+CORE_MANDATORY,29292,29292,29292,sum primary dataset N x 3 models x 2 prompts,PASS
+REQUIRED_SENSITIVITY,21000,21000,21000,history 18000 + CandDif/order 3000,PASS
+MANDATORY_TOTAL,50292,50292,50292,core mandatory + required sensitivity,PASS
+TRAINING_DEPENDENT,29292,29292,29292,reranking 4882 x 3 models x 2 prompts; not in mandatory,PASS
+MANDATORY_PLUS_TRAINING_DEPENDENT,79584,79584,,mandatory total + training-dependent,PASS
+CONDITIONAL,9000,9000,9000,profile generation/profile-only/profile+history; history-only rows add zero,PASS
+FULL_PLANNED_IF_CONDITIONAL,88584,88584,88584,mandatory + training-dependent + conditional,PASS
+OPTIONAL,12000,12000,12000,candidate pool sizes 10/50 only,PASS
+CONCEPTUAL_ALL_APPLICABLE,100584,100584,100584,full planned if conditional + optional,PASS
+EXISTING_REUSABLE,0,0,0,no historical raw request promoted as protocol-identical,PASS
+CANARY_INCREMENTAL,0,0,,canonical canary requests are subset final request IDs and not repeated,PASS

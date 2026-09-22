@@ -1,0 +1,102 @@
+checkpoint=after_batch_001 executed=50 accounted=650 valid=647 invalid=3
+checkpoint=after_batch_002 executed=100 accounted=700 valid=697 invalid=3
+checkpoint=after_batch_003 executed=150 accounted=750 valid=747 invalid=3
+checkpoint=after_batch_004 executed=200 accounted=800 valid=797 invalid=3
+checkpoint=after_batch_005 executed=250 accounted=850 valid=847 invalid=3
+checkpoint=after_batch_006 executed=300 accounted=900 valid=897 invalid=3
+checkpoint=after_batch_007 executed=350 accounted=950 valid=947 invalid=3
+checkpoint=after_batch_008 executed=400 accounted=1000 valid=997 invalid=3
+checkpoint=after_batch_009 executed=450 accounted=1050 valid=1046 invalid=4
+checkpoint=after_batch_010 executed=500 accounted=1100 valid=1096 invalid=4
+checkpoint=after_batch_011 executed=550 accounted=1150 valid=1145 invalid=5
+checkpoint=after_batch_012 executed=600 accounted=1200 valid=1195 invalid=5
+{
+  "freeze_metadata_version": "r5d_generation_involved_frozen_completion_candidate_v1",
+  "phase": "R5D_GENERATION_INVOLVED_RECOVERY_V2",
+  "decision": "R5D_FROZEN_PROTOCOL_COMPLETION_VALID",
+  "created_utc": "2026-08-21T18:40:38Z",
+  "r5a_manifest_sha256": "290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD",
+  "protocol_hash": "AA76CD3E936A969A57CDA2E9E54E22B73D6C1D3DB65C0795F86E181CEDFE3B1A",
+  "raw_namespace": "results/recovery/r5d_generation_involved_v2",
+  "raw_count": 1200,
+  "raw_aggregate_sha256": "4E1466456445B0BB3946DA4414AFD3B74D41E5BF350F0B0A92A6F33359FCB658",
+  "requests_expected": 1200,
+  "requests_accounted": 1200,
+  "valid": 1195,
+  "invalid": 5,
+  "invalid_policy": "FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO",
+  "invalid_policy_interpretation": "terminal invalid outputs remain in the manifest denominator and receive zero HR/NDCG credit",
+  "target_gaps_accounted_under_invalid_policy": 4,
+  "target_gaps_all_valid": 2,
+  "target_gaps_total": 4,
+  "executed_this_resume": 600,
+  "retried_rows": 0,
+  "paper_exact": false,
+  "freeze_ready_under_invalid_policy": true,
+  "all_valid_freeze_ready": false,
+  "status_counts": {
+    "requests_expected": 1200,
+    "requests_accounted": 1200,
+    "valid": 1195,
+    "invalid": 5,
+    "missing": 0,
+    "raw_count": 1200,
+    "retry_nonzero": 0,
+    "backend_incomplete": 0,
+    "backend_failed": 0,
+    "wrong_length": 1,
+    "out_of_range": 2,
+    "duplicate": 2,
+    "parse_failure": 0,
+    "item_id_substitution_values": 20
+  },
+  "invalid_by_cell": [
+    {
+      "model_name": "mistral:7b-instruct",
+      "dataset": "Beauty",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "validity_class": "DUPLICATE",
+      "n": 1,
+      "request_ids": [
+        "R5D-RANK-59C06DDCFD78BFF4"
+      ]
+    },
+    {
+      "model_name": "mistral:7b-instruct",
+      "dataset": "Beauty",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "validity_class": "OUT_OF_RANGE",
+      "n": 2,
+      "request_ids": [
+        "R5D-RANK-167AC5F3AB797DBA",
+        "R5D-RANK-E491A3315449174D"
+      ]
+    },
+    {
+      "model_name": "mistral:7b-instruct",
+      "dataset": "Sports",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "validity_class": "WRONG_LENGTH",
+      "n": 1,
+      "request_ids": [
+        "R5D-RANK-FA218507694B581F"
+      ]
+    },
+    {
+      "model_name": "qwen2:7b-instruct",
+      "dataset": "Sports",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "validity_class": "DUPLICATE",
+      "n": 1,
+      "request_ids": [
+        "R5D-RANK-94B4099CCA078776"
+      ]
+    }
+  ],
+  "failure_reasons": {
+    "DUPLICATE": 2,
+    "OUT_OF_RANGE": 2,
+    "WRONG_LENGTH": 1
+  },
+  "llm_calls": 600
+}

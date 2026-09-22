@@ -1,0 +1,5 @@
+metric_family,applicability,denominator_unit,denominator_rule,invalid_terminal_policy,frozen_or_applicable_to_g3,metric_values_computed_in_this_phase
+utility,"HR@5,NDCG@5,MRR ordinary paired deltas",planned paired users within dataset_model_prompt_cell,all 200 users per dataset cell retained for each FIRST/RANDOM pair,invalid terminal response contributes zero utility,true,false
+reliability,"strict-valid rate, invalid class counts, backend error rate",planned requests,all 12000 logical G3 requests; 6000 FIRST and 6000 RANDOM,invalid terminal response remains terminal scientific evidence,true,false
+canddif,CandDif HR@5 and CandDif NDCG@5 from FIRST/RANDOM cell accuracies,paired FIRST/RANDOM cell accuracies,compute from paired FIRST and RANDOM accuracies within each dataset_model_prompt_cell,invalid terminal contributes zero to the underlying utility accuracy,true,false
+beyond_utility,only if already frozen/applicable to G3,strict-valid users or metric-specific defined-user subset,reuse frozen metric-specific denominator semantics only when applicable,excluded from strict-valid beyond-utility denominator,conditional,false

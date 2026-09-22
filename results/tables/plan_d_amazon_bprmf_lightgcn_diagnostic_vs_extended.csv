@@ -1,0 +1,17 @@
+dataset,method,metric,diagnostic_value,extended_value,absolute_delta,relative_delta,diagnostic_num_users_evaluated,extended_num_users_evaluated,diagnostic_num_train_interactions,extended_num_train_interactions,diagnostic_epochs_completed,extended_epochs_completed,notes
+amazon_beauty,bprmf,hit_rate,0.06,0.06,0,0,100,1000,803,7495,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_beauty,bprmf,ndcg,0.03178882481454721,0.03647147910397743,0.00468265428943022,0.1473050456173939014991265504,100,1000,803,7495,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_beauty,bprmf,final_train_loss,0.6931103467941284,0.6916268765926361,-0.0014834702014923,-0.002140308838778493671994584346,100,1000,803,7495,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_beauty,bprmf,best_train_loss,0.6931103467941284,0.6916268765926361,-0.0014834702014923,-0.002140308838778493671994584346,100,1000,803,7495,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_beauty,lightgcn,hit_rate,0.06,0.123,0.063,1.05,100,1000,803,7495,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_beauty,lightgcn,ndcg,0.04273705614469083,0.08760728843763393,0.0448702322929431,1.049913970233002858652489376,100,1000,803,7495,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_beauty,lightgcn,final_train_loss,0.6926968097686768,0.6908184289932251,-0.0018783807754517,-0.002711692545659301357368825908,100,1000,803,7495,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_beauty,lightgcn,best_train_loss,0.6926968097686768,0.6908184289932251,-0.0018783807754517,-0.002711692545659301357368825908,100,1000,803,7495,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_sports,bprmf,hit_rate,0.07,0.055,-0.015,-0.2142857142857142857142857143,100,1000,680,7292,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_sports,bprmf,ndcg,0.03940741988597636,0.031109584488885546,-0.008297835397090814,-0.2105653052420137263846627364,100,1000,680,7292,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_sports,bprmf,final_train_loss,0.6931288242340088,0.6914868950843811,-0.0016419291496277,-0.002368865775337261926582723879,100,1000,680,7292,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_sports,bprmf,best_train_loss,0.6931288242340088,0.6914868950843811,-0.0016419291496277,-0.002368865775337261926582723879,100,1000,680,7292,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_sports,lightgcn,hit_rate,0.08,0.082,0.002,0.025,100,1000,680,7292,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_sports,lightgcn,ndcg,0.055912349797770176,0.050377921273315356,-0.00553442852445482,-0.09898400880078084141690271688,100,1000,680,7292,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_sports,lightgcn,final_train_loss,0.6926488280296326,0.6905762851238251,-0.0020725429058075,-0.002992198675486437657740150811,100,1000,680,7292,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.
+amazon_sports,lightgcn,best_train_loss,0.6926488280296326,0.6905762851238251,-0.0020725429058075,-0.002992198675486437657740150811,100,1000,680,7292,1,5,Compared from existing diagnostic_subset and extended_subset metric CSVs.

@@ -1,0 +1,150 @@
+{
+  "analysis_memberships": [
+    "PRIMARY_B1_GE10",
+    "LONG_HISTORY_B2_GE20",
+    "SECONDARY_FULL_CURVE_GE20",
+    "FOODCOM_TRUE_ZERO_HISTORY_DIAGNOSTIC"
+  ],
+  "artifact_hashes": {
+    "configs/g2_history_length_execution.yaml": "88d75cb60e581ebc0bc932a43b6a142a8c2ee28f5ad0066776d73ec3ad9cc3e2",
+    "report/g2_history_length_execution_runner.md": "879083037ed4a5e03dc12c2fc072a7cec62b45b40e58d51453f74346ad4d8b09",
+    "results/tables/g2_history_length_execution_accounting.csv": "e981434821b98c7fe04d88456368023ce7d39282bd8a06c5835237927db14b75",
+    "results/tables/g2_history_length_execution_order.csv": "e6c26f462e4990080315323668cf9321a2887f2be0886285ead3a0dbf19fdbf6",
+    "results/tables/g2_history_length_g1_execution_reuse.csv": "31794380aaa84ad0814b178c8888717282e5b577fecab27cf23ad83b09df1815",
+    "src/extension/g2_history_length_execution.py": "6af48c51f29f8fae1a14e1a5c7d7e60f99c8e8a93af1c9b5df24bd1d9e46e302",
+    "tests/test_extension_g2_history_length_execution.py": "26bad8e7a98a8ab58b1f16ede561c1fd49f7bb1e6c8b1cb6ff566bb5424340ea"
+  },
+  "canonical_logical_order": "dataset_user_history_prompt_model",
+  "decision_token": "G2_EXECUTION_RUNNER_FROZEN",
+  "dry_run_generation_calls": 0,
+  "existing_g2_terminal_requests": 0,
+  "future_new_calls_required": 69390,
+  "g1_reusable_requests": 18660,
+  "generated_at": "2026-09-01T16:26:38Z",
+  "generation_contract": {
+    "backend_retry_backoff_seconds": [
+      5,
+      15
+    ],
+    "backend_retry_count": 2,
+    "format": "json",
+    "max_attempts": 3,
+    "num_predict": 256,
+    "scientific_retry_count": 0,
+    "stream": false,
+    "structural_invalidity_retry_count": 0,
+    "temperature": 0.0,
+    "timeout_seconds": 150
+  },
+  "interrupted_nonterminal_requests": 0,
+  "logical_applicable_requests": 88050,
+  "model_preflight": [
+    {
+      "current_local_digest": "",
+      "current_model_identity_status": "FROZEN_G1_DIGEST_REFERENCE_ONLY",
+      "digest_match": "not_checked",
+      "expected_g1_digest": "dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755",
+      "llm_generation_call": "false",
+      "metadata_access_status": "DRY_RUN_NO_OLLAMA_METADATA_CALL",
+      "model": "qwen2:7b-instruct",
+      "model_family": "QWEN",
+      "status": "DRY_RUN_MODEL_CHECK_DEFERRED_UNTIL_EXECUTION"
+    },
+    {
+      "current_local_digest": "",
+      "current_model_identity_status": "FROZEN_G1_DIGEST_REFERENCE_ONLY",
+      "digest_match": "not_checked",
+      "expected_g1_digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+      "llm_generation_call": "false",
+      "metadata_access_status": "DRY_RUN_NO_OLLAMA_METADATA_CALL",
+      "model": "mistral:7b-instruct",
+      "model_family": "MISTRAL",
+      "status": "DRY_RUN_MODEL_CHECK_DEFERRED_UNTIL_EXECUTION"
+    },
+    {
+      "current_local_digest": "",
+      "current_model_identity_status": "FROZEN_G1_DIGEST_REFERENCE_ONLY",
+      "digest_match": "not_checked",
+      "expected_g1_digest": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+      "llm_generation_call": "false",
+      "metadata_access_status": "DRY_RUN_NO_OLLAMA_METADATA_CALL",
+      "model": "gemma2:9b",
+      "model_family": "GEMMA",
+      "status": "DRY_RUN_MODEL_CHECK_DEFERRED_UNTIL_EXECUTION"
+    }
+  ],
+  "new_ollama_calls_in_this_invocation": 0,
+  "no_inference_guards": {
+    "downloads_executed": 0,
+    "external_api_calls_executed": 0,
+    "g3_requests_executed": 0,
+    "g4_requests_executed": 0,
+    "g5_requests_executed": 0,
+    "llm_generation_calls_executed": 0,
+    "metrics_generated": false,
+    "ollama_metadata_calls_executed_in_dry_run": 0,
+    "training_runs_executed": 0,
+    "tuning_runs_executed": 0
+  },
+  "parser_contract": "llm_rank_strict_index_top10_v1",
+  "parser_contract_hash": "d14a76e858742ec251edf4ec5e6b063f04014ed55d9d54bb6c633ddceb515502",
+  "phase_id": "g2_history_length_execution_freeze",
+  "physical_order": "model_dataset_prompt_history_user",
+  "protected_path_policy": {
+    "data_raw_modified": false,
+    "g0_raw_evidence_modified": false,
+    "g1_raw_evidence_modified": false,
+    "g1_scientific_foreground_modified": false,
+    "original_repo_modified": false,
+    "paper_modified": false
+  },
+  "protocol_decision": "G2_NESTED_HISTORY_PROTOCOL_FROZEN",
+  "protocol_manifest": "results/manifests/g2_history_length_protocol_freeze.json",
+  "protocol_request_universe_hash": "61bc0378111146e1c5666daa9e8952e78be5a75b4fcc77b1720473c368fc6b77",
+  "raw_evidence_paths": {
+    "event_jsonl": "results/llm/extension_canonical/g2_history_length_sensitivity/events.jsonl",
+    "overwrite_terminal_evidence": false,
+    "raw_dir": "results/llm/extension_canonical/g2_history_length_sensitivity",
+    "raw_response_protocol": "extension_canonical_raw_response_jsonl_v1",
+    "request_jsonl": "results/llm/extension_canonical/g2_history_length_sensitivity/requests.jsonl",
+    "response_dir": "results/llm/extension_canonical/g2_history_length_sensitivity/responses",
+    "response_jsonl": "results/llm/extension_canonical/g2_history_length_sensitivity/responses.jsonl"
+  },
+  "retention": {
+    "future_per_request_audit_class": "EXTERNALIZED_PER_REQUEST_AUDIT",
+    "future_raw_evidence_class": "EXTERNALIZED_RAW_EVIDENCE",
+    "tracked_provenance_manifest": "results/manifests/g2_history_length_execution_freeze.json",
+    "tracked_scientific_foreground": [
+      "configs/g2_history_length_execution.yaml",
+      "src/extension/g2_history_length_execution.py",
+      "tests/test_extension_g2_history_length_execution.py",
+      "results/tables/g2_history_length_execution_order.csv",
+      "results/tables/g2_history_length_execution_accounting.csv",
+      "results/tables/g2_history_length_g1_execution_reuse.csv",
+      "results/manifests/g2_history_length_execution_freeze.json",
+      "report/g2_history_length_execution_runner.md"
+    ]
+  },
+  "table_hashes": {
+    "results/tables/g2_history_length_execution_accounting.csv": "e981434821b98c7fe04d88456368023ce7d39282bd8a06c5835237927db14b75",
+    "results/tables/g2_history_length_execution_order.csv": "e6c26f462e4990080315323668cf9321a2887f2be0886285ead3a0dbf19fdbf6",
+    "results/tables/g2_history_length_g1_execution_reuse.csv": "31794380aaa84ad0814b178c8888717282e5b577fecab27cf23ad83b09df1815"
+  },
+  "tables": {
+    "execution_accounting": "results/tables/g2_history_length_execution_accounting.csv",
+    "execution_order": "results/tables/g2_history_length_execution_order.csv",
+    "g1_execution_reuse": "results/tables/g2_history_length_g1_execution_reuse.csv"
+  },
+  "terminal_states": [
+    "STRICT_VALID",
+    "INVALID_FORMAT",
+    "INVALID_LENGTH",
+    "INVALID_DUPLICATE",
+    "INVALID_CANDIDATE",
+    "HALLUCINATION_OR_OUT_OF_CANDIDATE",
+    "BACKEND_FAILURE"
+  ],
+  "unresolved_new_requests": 69390,
+  "validation_failures": [],
+  "validation_passed": true
+}

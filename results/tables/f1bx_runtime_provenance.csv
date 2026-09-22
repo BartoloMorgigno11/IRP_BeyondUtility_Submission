@@ -1,0 +1,13 @@
+resource,value,status,notes
+python,3.12.10,RECORDED,
+platform,Windows-11-10.0.26200-SP0,RECORDED,
+free_disk_bytes,166096908288,RECORDED,
+total_disk_bytes,1023010664448,RECORDED,
+total_ram_bytes,34053414912,RECORDED,
+available_ram_bytes,18287480832,RECORDED,
+torch,2.5.1+cu121,RECORDED,
+cuda_available,true,RECORDED,
+cuda_version,12.1,RECORDED,
+gpu,NVIDIA GeForce RTX 4060 Laptop GPU,RECORDED,
+vram_bytes,8585216000,RECORDED,
+torch_device,cuda,RECORDED,

@@ -1,0 +1,27 @@
+dataset_candidate,scope,family,total,READY,READY_WITH_ADAPTATION,READY_AFTER_TRAINING,BLOCKED_DATASET,BLOCKED_GLOBAL_PROTOCOL,NOT_APPLICABLE
+Food.com,mandatory_total,ALL,72,45,11,8,0,3,5
+Food.com,family,CandDif,3,0,3,0,0,0,0
+Food.com,family,beyond utility,6,3,1,0,0,2,0
+Food.com,family,diversity,5,3,2,0,0,0,0
+Food.com,family,efficiency,5,0,0,0,0,0,5
+Food.com,family,fairness,4,2,1,0,0,1,0
+Food.com,family,history,18,18,0,0,0,0,0
+Food.com,family,primary,6,6,0,0,0,0,0
+Food.com,family,profiles,4,1,3,0,0,0,0
+Food.com,family,reliability,7,7,0,0,0,0,0
+Food.com,family,reranking,4,0,0,4,0,0,0
+Food.com,family,traditional recommenders,7,2,1,4,0,0,0
+Food.com,family,utility,3,3,0,0,0,0,0
+Video Games,mandatory_total,ALL,72,26,5,8,25,3,5
+Video Games,family,CandDif,3,0,3,0,0,0,0
+Video Games,family,beyond utility,6,3,1,0,0,2,0
+Video Games,family,diversity,5,3,0,0,2,0,0
+Video Games,family,efficiency,5,0,0,0,0,0,5
+Video Games,family,fairness,4,2,0,0,1,1,0
+Video Games,family,history,18,0,0,0,18,0,0
+Video Games,family,primary,6,6,0,0,0,0,0
+Video Games,family,profiles,4,0,0,0,4,0,0
+Video Games,family,reliability,7,7,0,0,0,0,0
+Video Games,family,reranking,4,0,0,4,0,0,0
+Video Games,family,traditional recommenders,7,2,1,4,0,0,0
+Video Games,family,utility,3,3,0,0,0,0,0

@@ -1,0 +1,81 @@
+phase:
+  id: f1bzp_reranking_protocol_resolution
+  predecessor_state: F1BZC_RERANKING_SOURCE_BLOCKED
+  success_token: F1BZP_ADAPTED_POOL_PROTOCOL_FROZEN
+  blocked_token: F1BZP_RERANKING_PROTOCOL_BLOCKED
+
+execution:
+  allow_checkpoint_loading: true
+  allow_checkpoint_shape_audit: true
+  allow_traditional_scoring: false
+  allow_traditional_training: false
+  allow_baseline_execution: false
+  allow_tuning: false
+  allow_final_test_evaluation: false
+  allow_llm_inference: false
+  allow_ollama_recommendation_calls: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network: false
+  allow_authoritative_pool_generation: false
+  allow_commit: false
+
+inputs:
+  f1bz_config: configs/f1bz_final_traditional_execution.yaml
+  f1bz_manifest: results/manifests/f1bz_final_traditional_execution.json
+  f1bza_manifest: results/manifests/f1bza_post_execution_audit.json
+  f1bza_readiness: results/tables/f1bza_full_catalog_regeneration_readiness.csv
+  f1bza_zero_history_summary: results/tables/f1bza_foodcom_zero_history_summary.csv
+  f1bzc_manifest: results/manifests/f1bzc_full_catalog_recovery.json
+  f1bzc_adapter_audit: results/tables/f1bzc_full_catalog_adapter_audit.csv
+  f1bzc_candidate_recall: results/tables/f1bzc_candidate_recall.csv
+  f1bzc_pool_validation: results/tables/f1bzc_reranking_pool_validation.csv
+  f1bzc_source_contributions: results/tables/f1bzc_reranking_source_contributions.csv
+  f1br_reranking_source_protocol: results/tables/f1br_reranking_source_protocol.csv
+  f0_request_budget: results/tables/f0_final_request_budget.csv
+
+model_representable_catalog:
+  policy_id: MODEL_REPRESENTABLE_FULL_CATALOG_V1
+  eligible_catalog_source: dataset_raw_metadata_catalog
+  retrievable_universe: eligible_catalog_intersect_checkpoint_item_vocabulary
+  oov_positive_policy: count_as_candidate_recall_miss_never_force
+  checkpoint_retraining_required: false
+
+paper_pool_evidence:
+  local_pdf: paper/2411.00331v1.pdf
+  direct_pdf_text_extraction: unavailable_local_tooling
+  specified_candidate_pool_size: 20
+  specified_source_models: [BPRMF, GRU4Rec, SASRec, LightGCN]
+  positive_may_be_absent: true
+  exact_aggregation_recovered: false
+
+adapted_pool_policy:
+  policy_id: ADAPTED_BALANCED_MULTI_MODEL_RERANKING_POOL
+  algorithm_id: BALANCED_RANK_ROUND_ROBIN_UNIQUE_20
+  model_order: [BPRMF, GRU4Rec, SASRec, LightGCN]
+  requested_source_depth: 20
+  final_pool_size: 20
+  duplicate_policy: skip_duplicate_continue_round_robin_until_unique20_or_exhausted
+  insufficient_unique_policy: block_user_before_llm_reranking
+  force_positive: false
+  target_identity_used: false
+  preserve_source_internal_order: true
+  immutable_candidate_order_for_llm: true
+  classification: adapted_not_paper_exact
+
+source_seed_policy:
+  policy_id: F1BZ_FIVE_SEED_MEAN_SCORE_THEN_FROZEN_MODEL_ORDER
+  provenance: configs/f1bz_final_traditional_execution.yaml::reranking_source.source_seed_policy
+  uses_final_test_metric: false
+  selected_seed: ALL_FIVE_SEED_MEAN
+  seeds: [42, 43, 44, 45, 46]
+
+request_budget:
+  CORE_MANDATORY: 29292
+  REQUIRED_SENSITIVITY: 21000
+  MANDATORY_TOTAL: 50292
+  TRAINING_DEPENDENT: 29292
+  CONDITIONAL: 9000
+  OPTIONAL: 12000
+  CONCEPTUAL_ALL_APPLICABLE: 100584
+  reranking_requests_unlocked_in_f1bzp: 0

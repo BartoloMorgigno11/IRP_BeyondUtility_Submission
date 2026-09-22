@@ -1,0 +1,5 @@
+gap_id,dataset,metric,requests_expected,requests_accounted,valid,invalid,wrong_length,out_of_range,parse_failure,backend_incomplete,gap_recovered,evidence_class
+R4-GAP-0005,Beauty,Generation-involved profile recommendation,200,2,2,0,0,0,0,0,false,PAPER_ALIGNED_ADAPTED_GENERATION_INVOLVED_RECOVERY
+R4-GAP-0019,LastFM,Generation-involved profile recommendation,400,4,4,0,0,0,0,0,false,PAPER_ALIGNED_ADAPTED_GENERATION_INVOLVED_RECOVERY
+R4-GAP-0031,ML-1M,Generation-involved profile recommendation,400,4,4,0,0,0,0,0,false,PAPER_ALIGNED_ADAPTED_GENERATION_INVOLVED_RECOVERY
+R4-GAP-0045,Sports,Generation-involved profile recommendation,200,2,2,0,0,0,0,0,false,PAPER_ALIGNED_ADAPTED_GENERATION_INVOLVED_RECOVERY

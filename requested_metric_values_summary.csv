@@ -1,0 +1,6 @@
+﻿"metric_family","rows","output_file","source","caveat"
+"paper_comparison_requested_metrics","158","requested_metric_paper_comparison_values.csv","final_metric_paper_comparison.csv","Only recovered paper numeric cells; local values are not exact paper reproduction."
+"novelty","1062","requested_metric_novelty_values.csv","final_metric_paper_comparison.csv; phase_f6m_master_results_long.csv; phase_f6f1/f6f2 popularity novelty tables","Includes paper-cell average_popularity/serendipity plus local self-information novelty evidence."
+"history_length_sensitivity","208","requested_metric_history_length_sensitivity_values.csv","finalization_f6d4a_history_length_sensitivity.csv; phase_f6e4c_history_length_analysis.csv","Adapted/local observational bins; paper bins were not recovered exactly."
+"candidate_position_bias","3099","requested_metric_candidate_position_bias_values.csv","final_metric_paper_comparison.csv; phase_f6f1_candidate_position_results.csv; plan_d variant summary","Only small Plan D CandDif is controlled diagnostic; broader F6F rows are observational/adapted."
+"generation_involved_performance","248","requested_metric_generation_involved_performance_values.csv","phase_f6l_profile_metrics.csv; phase_f6l_profile_metric_differences.csv","Profile/generation evidence uses local open models and is not exact paper model execution."

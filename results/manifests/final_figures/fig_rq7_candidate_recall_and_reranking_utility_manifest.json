@@ -1,0 +1,99 @@
+{
+  "candidate_recall_numerators_denominators": {
+    "beauty": [
+      49,
+      990
+    ],
+    "foodcom": [
+      4,
+      1000
+    ],
+    "lastfm": [
+      469,
+      1000
+    ],
+    "ml1m": [
+      193,
+      1000
+    ],
+    "sports": [
+      28,
+      892
+    ]
+  },
+  "canonical_source_artifacts": [
+    "results/tables/g4_f1bzq_candidate_recall_at_20.csv",
+    "results/tables/g4_f1bzq_metric_results.csv",
+    "results/tables/g4_f1bzq_candidate_conditional_metrics.csv",
+    "results/tables/g4_f1bzq_metric_denominators.csv",
+    "results/tables/g4_f1bzq_metric_denominator_contract.csv",
+    "results/tables/g4_f1bzq_reliability.csv",
+    "results/tables/g4_f1bzq_statistical_results.csv",
+    "results/tables/g4_f1bzq_candidate_hashes.csv",
+    "results/tables/g4_f1bzq_reranking_request_universe.csv",
+    "results/manifests/g4_f1bzq_canonical_provenance.json",
+    "results/manifests/g4_f1bzq_reproducibility_contract.json",
+    "results/manifests/g4_f1bzq_reranking_protocol_freeze.json",
+    "results/manifests/g4_f1bzq_metrics_freeze.json",
+    "results/manifests/g4_f1bzq_statistical_analysis_manifest.json",
+    "results/manifests/f1bzq_authoritative_pool_manifest.json",
+    "configs/f1bzq_authoritative_reranking_pool_materialization.yaml"
+  ],
+  "canonical_source_sha256": {
+    "configs/f1bzq_authoritative_reranking_pool_materialization.yaml": "228fda3283a722014b59ef48ba692d37335c9e394ef427b0a89a816fa388e4c8",
+    "results/manifests/f1bzq_authoritative_pool_manifest.json": "2fdb16d836739a763d75ae873a35b26ec72b1c9bd2fcf7bdbc135ac49d8522ce",
+    "results/manifests/g4_f1bzq_canonical_provenance.json": "9bbd7187eed9ace9cc3830ac2f1d20ddd4b02e13beb1742a227a5e08f02122bd",
+    "results/manifests/g4_f1bzq_metrics_freeze.json": "a82573e29924b461ba1d60c03cc39891aa0a5191b74157b41d2bd4975cf80c37",
+    "results/manifests/g4_f1bzq_reproducibility_contract.json": "718abc8d4cdad05dfe159e253e09069c9a28f76461a1639f95b4c1f83d1e0c25",
+    "results/manifests/g4_f1bzq_reranking_protocol_freeze.json": "c43081bf86d2aadbef556f02eb21e62fcb86d4535e83a079cf91a0ae56fb7d0b",
+    "results/manifests/g4_f1bzq_statistical_analysis_manifest.json": "a6e4fab9b6ff729d0bd79b2440b912635f6fd8c701612450e5af56d3f5b2ad8d",
+    "results/tables/g4_f1bzq_candidate_conditional_metrics.csv": "b6be7dc20ba6769e93d3dccef9092c159603d7bac22b7c45e7af3623746500ba",
+    "results/tables/g4_f1bzq_candidate_hashes.csv": "ee4574d349d0605ac508b408e6d5983721b954e16884aa0b045d6b0d652b209e",
+    "results/tables/g4_f1bzq_candidate_recall_at_20.csv": "07bdd61e79975c32c5c0edd6a51375dde7075e5d2ec448bbd3086731904255f2",
+    "results/tables/g4_f1bzq_metric_denominator_contract.csv": "e2927de9d763e3089b9040b75eef97cefbcdc9ce21b23749ba46652ae924aad8",
+    "results/tables/g4_f1bzq_metric_denominators.csv": "f07d31e9600b9109975135fead0f6d6d5df8eb1128bd16652b2035389f72b79d",
+    "results/tables/g4_f1bzq_metric_results.csv": "c19577d2c12a45fbc4d9dcdb009b2b3417dc602f3047a8be1c15ed2b97f3904b",
+    "results/tables/g4_f1bzq_reliability.csv": "666f4af4d2fda42fbd145e0d34dd881f2655c5582e8c88b83251690b4b2d27cb",
+    "results/tables/g4_f1bzq_reranking_request_universe.csv": "815b3d6fd9fb16b3b83d03d3727c4cf2f5fe5f1e6b6b04568ed1ee1b634750ba",
+    "results/tables/g4_f1bzq_statistical_results.csv": "21aaa612a82cee6d267e1b4558958ebba44f27afb269a4230bab3d14a5b77ee9"
+  },
+  "created_from_commit": "65146e4c0d0483091ea0f70de5e282ba7666a39b",
+  "decomposition_cells": 30,
+  "figure_id": "fig_rq7_candidate_recall_and_reranking_utility",
+  "figure_values_csv": "results/final_figures/rq7/values/fig_rq7_candidate_recall_and_reranking_utility_values.csv",
+  "figure_values_sha256": "38c0dbaf0769a2d036dbc7dc09bd555bb25c95c314b4353f083aa045fe0a61e9",
+  "foodcom_conditional_n": 4,
+  "g1_g4_comparability": "DESCRIPTIVE_ONLY",
+  "generator": "src/analysis/final_figures/rq7.py",
+  "generator_sha256": "5af56a38fe29552c8ef0f3188ed7d6d283a9b497271e4e7446f5e4e7bdca51c0",
+  "internal_g4_bootstrap_counts": {
+    "inconclusive": 172,
+    "negative": 24,
+    "positive": 29
+  },
+  "limitations": [
+    "Food.com conditional utility is diagnostic only: four candidate-present users.",
+    "G1 and G4 use structurally different candidate sources; their comparison is descriptive only.",
+    "No same-pool baseline compares original first-stage ordering with the LLM-reordered final pooled candidates.",
+    "Internal G4 bootstrap decisions do not establish superiority over traditional recommenders.",
+    "The product identity is specific to the implemented single-positive and zero-credit denominator contract."
+  ],
+  "max_hr_decomposition_error": 5.551115123125783e-17,
+  "max_ndcg_decomposition_error": 2.7755575615628914e-17,
+  "output_pdf": "results/final_figures/rq7/figures/fig_rq7_candidate_recall_and_reranking_utility.pdf",
+  "output_pdf_sha256": "fb24d3d77486f221f29a293e334bb28e0e06a2e767d55c66bc2064ad052c865c",
+  "output_png": "results/final_figures/rq7/figures/fig_rq7_candidate_recall_and_reranking_utility.png",
+  "output_png_sha256": "6b0ae4f56a8b62e640c2c5496f3234dd83c8eccd4935704ec66619dfc1332db2",
+  "output_svg": "results/final_figures/rq7/figures/fig_rq7_candidate_recall_and_reranking_utility.svg",
+  "output_svg_sha256": "657bb66b4ddc1333d3b19a8d12acddf19401a3e4fe4cd1e640e66e28a9079057",
+  "pool_size": 20,
+  "positive_forcing": false,
+  "row_count": 30,
+  "rq": "RQ7",
+  "same_pool_all_models_prompts": true,
+  "same_pool_superiority_test": false,
+  "schema_version": "1.0",
+  "scientific_interpretation": "End-to-end utility depends jointly on upstream target availability and LLM conditional re-ranking; candidate recall varies sharply across datasets.",
+  "scientific_purpose": "Separate first-stage candidate availability from conditional LLM re-ranking and all-user utility.",
+  "universal_llmrank_claim": false
+}

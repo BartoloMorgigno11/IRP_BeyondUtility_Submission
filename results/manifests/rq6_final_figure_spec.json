@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "figure_id": "fig_rq6_textual_hallucination_vs_structural_reliability",
+  "rq": "RQ6",
+  "status": "SPEC_ONLY_NO_RENDER",
+  "purpose": "Separate the paper free-text hallucination construct from local constrained-output structural reliability.",
+  "panels": [
+    {
+      "panel_id": "A",
+      "title": "Paper construct: textual/catalogue hallucination",
+      "evidence_role": "CONCEPT_AND_SUPPORTING_UPSTREAM_REFERENCE",
+      "measure": "Generated free-text item titles unmatched to the valid catalogue.",
+      "sources": [
+        "results/tables/reproduction_r1_hallucination_official_results.csv"
+      ],
+      "quantitative_foreground": false,
+      "requirements": [
+        "Label R1 numbers as recovered upstream reference evidence.",
+        "State that direct local reproduction and direct comparability are absent.",
+        "Do not imply a shared denominator with panel B."
+      ]
+    },
+    {
+      "panel_id": "B",
+      "title": "Local constrained-output structural reliability",
+      "evidence_role": "CANONICAL_LOCAL_NUMERIC_PANEL",
+      "measure": "Strict-valid requests and structural failures under candidate-index JSON.",
+      "numeric_sources": [
+        "results/tables/g1_primary_ranking_reliability.csv",
+        "results/tables/g2_history_length_analysis_universe.csv",
+        "results/tables/g3_candidate_position_reliability.csv",
+        "results/tables/g4_f1bzq_reliability.csv"
+      ],
+      "optional_separate_rq5_views": [
+        "results/rq5_final_scientific_freeze/corrected/per_user.csv",
+        "results/rq5_final_scientific_freeze/systematic/per_user.csv",
+        "results/rq5_final_scientific_freeze/history_v2/per_user.csv",
+        "results/rq5_final_scientific_freeze/r5d/per_user.csv"
+      ],
+      "rq5_aggregation_policy": "SHOW_SEPARATELY_DO_NOT_SUM",
+      "categories": [
+        "strict valid",
+        "invalid length",
+        "duplicate indices",
+        "unknown/out-of-candidate index",
+        "parser/schema failure where applicable",
+        "backend failure"
+      ]
+    }
+  ],
+  "forbidden_quantitative_sources": [
+    "results/tables/reproduction_r3_hallucination_audit.csv",
+    "results/tables/reproduction_r4_hallucination_reconciliation.csv"
+  ],
+  "forbidden_labels": [
+    "hallucination rate for local structural invalidity",
+    "local textual hallucination rate"
+  ],
+  "forbidden_claims": [
+    "Zero unknown-index events imply zero textual hallucination.",
+    "Constrained output causally reduces paper-style hallucination.",
+    "Panels A and B directly reproduce the same measure."
+  ],
+  "rendering": {
+    "generated": false,
+    "render_command": null,
+    "final_figure_path": null
+  },
+  "contracts": [
+    "results/manifests/rq6_evidence_authority.json",
+    "results/manifests/rq6_scientific_contract.json"
+  ]
+}

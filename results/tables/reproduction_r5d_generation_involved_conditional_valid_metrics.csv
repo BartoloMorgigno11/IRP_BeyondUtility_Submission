@@ -1,0 +1,9 @@
+dataset,model_name,experimental_condition,n_valid_outputs,diagnostic_hr_at_5_valid_only,diagnostic_ndcg_at_5_valid_only,diagnostic_only,notes
+Beauty,mistral:7b-instruct,PROFILE_PLUS_HISTORY,1,0.0,0.0,true,Conditional-valid metrics separate format compliance from ranking quality.
+Beauty,qwen2:7b-instruct,PROFILE_PLUS_HISTORY,1,0.0,0.0,true,Conditional-valid metrics separate format compliance from ranking quality.
+LastFM,mistral:7b-instruct,PROFILE_PLUS_HISTORY,1,1.0,0.6309297535714575,true,Conditional-valid metrics separate format compliance from ranking quality.
+LastFM,qwen2:7b-instruct,PROFILE_PLUS_HISTORY,1,0.0,0.0,true,Conditional-valid metrics separate format compliance from ranking quality.
+ML-1M,mistral:7b-instruct,PROFILE_PLUS_HISTORY,1,1.0,0.43067655807339306,true,Conditional-valid metrics separate format compliance from ranking quality.
+ML-1M,qwen2:7b-instruct,PROFILE_PLUS_HISTORY,1,1.0,0.5,true,Conditional-valid metrics separate format compliance from ranking quality.
+Sports,mistral:7b-instruct,PROFILE_PLUS_HISTORY,1,0.0,0.0,true,Conditional-valid metrics separate format compliance from ranking quality.
+Sports,qwen2:7b-instruct,PROFILE_PLUS_HISTORY,1,0.0,0.0,true,Conditional-valid metrics separate format compliance from ranking quality.

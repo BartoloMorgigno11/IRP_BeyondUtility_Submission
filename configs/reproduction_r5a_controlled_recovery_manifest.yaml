@@ -1,0 +1,113 @@
+project_root: .
+
+experiment:
+  name: reproduction_r5a_controlled_recovery_manifest
+  allow_api_calls: false
+  allow_ollama_calls: false
+  allow_training: false
+  allow_downloads: false
+  allow_recovery_execution: false
+  dry_run_only: true
+
+frozen_state:
+  branch: master
+  head: a96ad41765b242137a83b919d59a3b394daae562
+  r4_freeze_commit: a96ad41765b242137a83b919d59a3b394daae562
+
+scope:
+  include_priorities:
+    - P0_MUST_CLOSE
+    - P1_HIGH_VALUE
+  exclude_priorities:
+    - P2_USEFUL_BUT_OPTIONAL
+    - P3_REDUNDANT_OR_LOW_VALUE
+    - P4_EXTENSION_ONLY
+  datasets:
+    - Beauty
+    - Sports
+    - ML-1M
+    - LastFM
+  models:
+    - qwen2:7b-instruct
+    - mistral:7b-instruct
+  cohort_size: 100
+
+families:
+  canddif:
+    datasets:
+      - Beauty
+      - Sports
+      - LastFM
+    task: ranking
+    candidate_conditions:
+      - FIRST
+      - RANDOM
+    random_seed: R5A_CANDDIF_RANDOM_POSITION_V1
+    metrics:
+      - CandDif-HR
+      - CandDif-NDCG
+  history_length:
+    datasets:
+      - Beauty
+      - Sports
+      - ML-1M
+      - LastFM
+    task: ranking
+    exact_lengths:
+      Beauty:
+        - 0
+        - 10
+        - 20
+      Sports:
+        - 5
+        - 10
+        - 20
+      ML-1M:
+        - 5
+        - 10
+        - 20
+      LastFM:
+        - 5
+        - 10
+        - 20
+  generation_involved:
+    datasets:
+      - Beauty
+      - Sports
+      - ML-1M
+      - LastFM
+    task: ranking
+    downstream_condition: profile_plus_history
+    missing_profile_generation_datasets:
+      - ML-1M
+      - LastFM
+    profile_history_length: 10
+
+inputs:
+  r4_gap_priority: results/tables/reproduction_r4_gap_scientific_priority.csv
+  r4_proposed_recovery_experiments: results/tables/reproduction_r4_proposed_recovery_experiments.csv
+  r4_recovery_count_validation: results/tables/reproduction_r4_recovery_request_count_validation.csv
+  r4_protected_hash_check: results/tables/reproduction_r4_protected_artifact_hash_check.csv
+  candidate_title_map: results/tables/candidate_item_title_map.csv
+  canonical_local_full_matrix_requests: results/llm/canonical_local_full_matrix/requests.jsonl
+  f6l_profile_request_manifest: results/tables/phase_f6l_profile_request_manifest.csv
+  f6l_profile_execution_manifest: results/llm/phase_f6l_profile_execution_20260801_010000/profile_execution_manifest.json
+  plan_e_candidate_manifests:
+    Beauty: results/tables/plan_e_beauty_1000user_ranking_manifest.csv
+    Sports: results/tables/plan_e_sports_1000user_ranking_manifest.csv
+    ML-1M: results/tables/plan_e_ml1m_1000user_ranking_manifest.csv
+  plan_c_interactions:
+    Beauty: data/reconstructed/plan_c/amazon_beauty/interactions.csv
+    Sports: data/reconstructed/plan_c/amazon_sports/interactions.csv
+    ML-1M: data/reconstructed/plan_c/ml1m/interactions.csv
+  plan_c_catalogs:
+    Beauty: data/reconstructed/plan_c/amazon_beauty/catalog.csv
+    Sports: data/reconstructed/plan_c/amazon_sports/catalog.csv
+    ML-1M: data/reconstructed/plan_c/ml1m/catalog.csv
+  lastfm_cohort: data/processed/finalization_f6c_lastfm_ranking_cohort.csv
+  lastfm_candidates: data/processed/finalization_f6c_lastfm_ranking_candidates.csv
+
+outputs:
+  table_dir: results/tables
+  report: report/reproduction_r5a_controlled_recovery_manifest.md
+  planned_output_dir: results/recovery/r5

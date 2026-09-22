@@ -1,0 +1,70 @@
+# MovieLens-1M Plan B reconstruction config.
+# Raw data must be placed manually under data/raw/ml1m/.
+
+dataset:
+  name: ml1m
+  raw_dir: data/raw/ml1m
+  processed_dir: data/processed/ml1m
+  sample_dir: data/samples/ml1m
+  interactions_path: data/processed/ml1m/interactions.csv
+  catalog_path: data/processed/ml1m/catalog.csv
+  candidates_path: data/processed/ml1m/candidates.csv
+  ground_truth_path: data/processed/ml1m/ground_truth.csv
+  llm_outputs_path: null
+  baseline_outputs_path: null
+
+paths:
+  raw_dir: data/raw/ml1m
+  processed_dir: data/processed/ml1m
+  sample_dir: data/samples/ml1m
+  interactions_path: data/processed/ml1m/interactions.csv
+  catalog_path: data/processed/ml1m/catalog.csv
+  candidates_path: data/processed/ml1m/candidates.csv
+  ground_truth_path: data/processed/ml1m/ground_truth.csv
+  llm_outputs_path: null
+  baseline_outputs_path: null
+
+original_repo:
+  root: original_repo/EvaLLMasRecommender
+  data_dir: null
+  llm_results_dir: original_repo/EvaLLMasRecommender/llm_results
+  sota_results_dir: original_repo/EvaLLMasRecommender/sota_results
+
+experiment:
+  task: ranking
+  k_values: [5]
+  seed: 42
+  sample_size: null
+  allow_api_calls: false
+
+preprocessing:
+  min_interactions: 2
+  negative_samples_per_user: 99
+  candidate_ordering: deterministic_shuffle
+
+api:
+  allow_api_calls: false
+  provider: null
+  model: null
+  api_key_env_var: null
+
+models:
+  llm_outputs: []
+  baselines: [mostpop, random]
+  baseline_outputs: []
+
+metrics:
+  utility: [hr, ndcg]
+  beyond_utility: [coverage]
+  matching_protocols: [exact]
+
+output:
+  metrics_dir: results/metrics
+  tables_dir: results/tables
+  plots_dir: results/plots
+  raw_outputs_dir: results/raw_outputs
+  dataset_audit_path: results/tables/ml1m_dataset_audit.csv
+  preparation_summary_path: results/tables/ml1m_dataset_preparation_summary.csv
+  metrics_path: results/metrics/ml1m_reconstruction_metrics.csv
+  summary_path: results/tables/ml1m_reconstruction_summary.csv
+  analysis_path: report/results_analysis.md

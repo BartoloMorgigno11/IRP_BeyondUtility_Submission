@@ -1,0 +1,282 @@
+phase:
+  id: phase_f6g1
+  expected_branch: plan-d-extensions
+  expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  interpreter_path: .venv_repro_system_site/Scripts/python.exe
+  environment_classification: reconstructed_venv_with_system_site_packages
+  expected_f6f2_decision: f6f2_scientific_readout_complete_with_documented_blocks
+  expected_f6f2_scientific_hash: 4f12ae5b194f80090dfc1f117b53690452c3ec6c5c1e6fdaad919d11a9951a56
+  expected_f6f1_decision: f6f1_beyond_utility_metrics_complete_with_documented_blocks
+  expected_f6f1_scientific_hash: 4bf9391b835dad47c80f41b9d41b130f64ac3f4776561cc19bf0a3d044ffb37c
+  expected_f6e4c_decision: f6e4c_scientific_consolidation_complete_with_corrected_derived_metrics
+  expected_f6e4c_scientific_hash: 8069072950cb843f2b55bb639b926ba26008088c37761f8839b367c1eda91ce2
+  expected_f6f1r_decision: f6f1r_environment_recovery_complete_with_runtime_metadata_differences
+  expected_f6f1r_scientific_status: identical
+
+dataset:
+  name: LastFM
+  expected_users: 1859
+  target_pool_size: 20
+  source_top_n: 100
+  max_requests_per_shard: 500
+
+pool_policy:
+  canonical_policy_name: phase_f6g1_reconstructed_adapted_round_robin_union_20
+  previous_pool_name: finalization_f6d2_lastfm_reranking_candidates_adapted_20
+  operation: round_robin_union
+  model_order: [bprmf, gru4rec, sasrec, lightgcn]
+  selected_seeds:
+    bprmf: 45
+    gru4rec: 46
+    sasrec: 44
+    lightgcn: 46
+  deduplication_key: item_id
+  duplicate_policy: first_occurrence_with_provenance_attachment
+  tie_breaking: source_rank_then_numeric_item_id
+  score_fusion: none
+  positive_insertion: false
+  retain_positive_absent_users: true
+  canonical_population: all_user
+  diagnostic_population: positive_present
+  final_pool_classification_if_gates_pass: reconstructed_pool_with_adapted_components
+  future_experiment_label_if_gates_pass: adapted_lastfm_reranking
+
+future_requests:
+  models: [qwen2:7b-instruct, mistral:7b-instruct]
+  strategies: [base_adapted_indexed, llmrank_adapted_indexed]
+  expected_output_length: 20
+  parser_contract: indexed_json_top20_unique_candidates
+  invalid_output_policy: invalid_output_zero_for_operational_utility
+  operational_utility_policy: all_user_absent_positive_counts_as_zero
+  conditional_utility_policy: strict_valid_positive_present_reported_separately
+
+input_hashes:
+  f6f2_manifest:
+    path: results/manifests/phase_f6f2_scientific_readout_freeze.json
+    sha256: d215057889ac055ae4fd07eaa63151ef1a5bb0cf470da23840d31490bfd5ec2a
+    phase: F6F2
+  f6f2_remaining_gaps:
+    path: results/tables/phase_f6f2_remaining_replication_gaps.csv
+    sha256: 47da43fcf95e72b418de5da9a00047219362e774b0f63211671e16f9c595261e
+    phase: F6F2
+  f6f2_next_phase_requirements:
+    path: results/tables/phase_f6f2_next_phase_requirements.csv
+    sha256: 3edc31127b08217cf1536093a8ed75ad383ac8bce063f3595887ce42c25db82a
+    phase: F6F2
+  f6f1_manifest:
+    path: results/manifests/phase_f6f1_beyond_utility_freeze.json
+    sha256: 70753d4cc49c138fa6f448c381f2eb20b419279e46ee82400f1c9ae87774ff78
+    phase: F6F1
+  f6e4c_manifest:
+    path: results/manifests/phase_f6e4c_scientific_freeze.json
+    sha256: 6f192decb71cb6490a75014c41766acded13ee9c0a9169bfd4e259b372ebaea4
+    phase: F6E4C
+  f6d1_baseline_protocol:
+    path: results/tables/finalization_f6d1_lastfm_baseline_protocol.csv
+    sha256: b53320d7a54bd7b0f9b359266d6733926e3ccd044101fc65dc8a9357de5d7816
+    phase: F6D1
+  f6d1_prediction_validation:
+    path: results/tables/finalization_f6d1_lastfm_prediction_validation.csv
+    sha256: 14ac8382ee3dd8f9c8ac591484d993b1c138a2bc251314e377f719e19bdaab23
+    phase: F6D1
+  f6d1_utility_metrics:
+    path: results/tables/finalization_f6d1_lastfm_utility_metrics.csv
+    sha256: 85caa09dc2e9e130891a7e99e9232b1d5797b30ff2acdfc999f0b81d5dd77203
+    phase: F6D1
+  f6d1_baseline_predictions:
+    path: results/predictions/finalization_f6d1_lastfm_baseline_rankings.csv
+    sha256: 230bdb6461e7ffc666429ed2bf2e4067babe652f316416162cbf3b4ece02d57f
+    phase: F6D1
+  f6d2_execution_manifest:
+    path: results/tables/finalization_f6d2_execution_manifest.csv
+    sha256: 8d8ff710222c3cd05973237fcf09dac63e77615e18f70fabebb494f0eb532e29
+    phase: F6D2
+  f6d2_reranking_policy_audit:
+    path: results/tables/finalization_f6d2_reranking_policy_audit.csv
+    sha256: 3313e80d41e468b17e6a4936bf568c7a07a6d23f00ef5f4a1b64dab6d1ac8236
+    phase: F6D2
+  f6d2_reranking_source_selection:
+    path: results/tables/finalization_f6d2_reranking_source_selection.csv
+    sha256: cb3837d00e86c962c284447455404f65864a179108d9846e6bcd9abe0a4b6c16
+    phase: F6D2
+  f6d2_reranking_pool_validation:
+    path: results/tables/finalization_f6d2_reranking_pool_validation.csv
+    sha256: 030419a48e2d8db8c0155daf7cc3639e6f9d2111c5d9f3c89cb25e01a2e36423
+    phase: F6D2
+  f6d2_candidate_predictions:
+    path: results/predictions/finalization_f6d2_lastfm_candidate_rankings.csv
+    sha256: 0d82998303e263ed82fad9ff5e79f5fb9fa9898c81d3d3d23e954d264e78a186
+    phase: F6D2
+  f6d2_full_catalog_predictions:
+    path: results/predictions/finalization_f6d2_lastfm_full_catalog_rankings.csv
+    sha256: 09e7b73b132c5f6cd9092fca3cc59303388dec977d1be2f06f00b5337ebeb7d4
+    phase: F6D2
+  previous_adapted_pool:
+    path: data/processed/finalization_f6d2_lastfm_reranking_candidates_adapted.csv
+    sha256: 898cb274f775baaa53ef39ecb41dd36a310a276dd19bcc193a63c4c8f1590e28
+    phase: F6D2
+  lastfm_ranking_cohort:
+    path: data/processed/finalization_f6c_lastfm_ranking_cohort.csv
+    sha256: ff299f4e5ea135eea4a81cf4b22d338018e7b8ab8969c03383a165a4742f8102
+    phase: F6C
+  lastfm_train:
+    path: data/processed/finalization_f6c_lastfm_train.csv
+    sha256: 598a47e0d3cd43f65083ab84cc6a90a4ff012b1d3cbe00ff20eef49d41af6915
+    phase: F6C
+  lastfm_validation:
+    path: data/processed/finalization_f6c_lastfm_validation.csv
+    sha256: 7858f415c0f7e06fddd23bc0b5ada8c9615b2135a6781bb63525d592a3c45950
+    phase: F6C
+  lastfm_test:
+    path: data/processed/finalization_f6c_lastfm_test.csv
+    sha256: 6ad0ec9b5d140c637ef68ade09dca7db6dec764cf0b4852c345454e08ed7444c
+    phase: F6C
+  lastfm_catalog:
+    path: data/processed/finalization_f6c_lastfm_catalog.csv
+    sha256: a9a320b2c96b2dd3fa737cee3ded6070b97f67509fa1322aaadad716898763b2
+    phase: F6C
+  lastfm_interactions:
+    path: data/processed/finalization_f6c_lastfm_interactions.csv
+    sha256: f9ef7118f153ee51f051c607892d41961ed71b6a9ea9916d7aeba49d5a612bae
+    phase: F6C
+  lastfm_item_identity_audit:
+    path: results/tables/finalization_f6c_lastfm_item_identity_audit.csv
+    sha256: 41aeefc7bab986522b185d3e5f7da70baa52bb14a54bde18a8e5ae1f20ef886e
+    phase: F6C
+  f6d3_reranking_protocol:
+    path: results/tables/finalization_f6d3_reranking_protocol.csv
+    sha256: 973000b556c48a964503eb8b7fcab45b634590d7d06ec3aff3e7ac4611ae6a12
+    phase: F6D3
+  f6d3_reranking_pool_composition:
+    path: results/tables/finalization_f6d3_reranking_pool_composition.csv
+    sha256: 8e41c959038d6b8b20d150975ef65c2709ec9c7d929a1489838fb822a0c439cc
+    phase: F6D3
+  f6d3_reranking_evaluation_policy:
+    path: results/tables/finalization_f6d3_reranking_evaluation_policy.csv
+    sha256: e67aaaa1627b9ab8daa353a6b7144d5574e68f104f25d03b6b16d98c61c3b769
+    phase: F6D3
+  f6d3_reranking_manifest:
+    path: results/tables/finalization_f6d3_lastfm_reranking_llm_manifest.csv
+    sha256: c9c45ebe7dba28a5fa4b43b368bf657ddda06651eb01b158ea604c4ba9a9c4dc
+    phase: F6D3
+  f6d3_ranking_manifest:
+    path: results/tables/finalization_f6d3_lastfm_ranking_llm_manifest.csv
+    sha256: bdf546912f06670380d9ccba1dfb4e2af5e22151834da47cd0eda85e09009f18
+    phase: F6D3
+  f6d4a_request_audit:
+    path: results/tables/finalization_f6d4a_request_audit.csv
+    sha256: 7df1a38e2c606d8877fd335b8f7be9314c16da3ad888cd29e5ce9301f7ac3a98
+    phase: F6D4A
+  f6d4a_qwen2_raw:
+    path: results/llm/finalization_f6d4a_lastfm_ranking_qwen2_raw.jsonl
+    sha256: 1384a47058ed8dd8c06fc52d6bc425020b1746b60ad11e4bde6153f948a493b4
+    phase: F6D4A
+  f6d4a_mistral_raw:
+    path: results/llm/finalization_f6d4a_lastfm_ranking_mistral_raw.jsonl
+    sha256: 7031f37d40092b4f318b5e03273772531ffda37cef0c38bfed32edfef935736a
+    phase: F6D4A
+  f2_protected_hashes:
+    path: results/tables/finalization_f2_protected_input_hashes_after.csv
+    sha256: 18d2ed7db21ce62fbf8369f17c547c25aeb5a93196f01239fd1300b0615f4301
+    phase: F2
+  paper_pdf:
+    path: paper/2411.00331v1.pdf
+    sha256: a143265ae42f027c079766b1c006c438d698897b732634d78a010eb0a62f0f23
+    phase: paper
+  paper_translation_docx:
+    path: paper/traduzione_italiana_beyond_utility_llm_recommender.docx
+    sha256: 30e1251171239f96d044a5df123dc5d5cde5886c2634a7efb1a37f98ceba5f44
+    phase: paper
+  original_repo_readme:
+    path: original_repo/EvaLLMasRecommender/README.md
+    sha256: 0b07e562e5cc127248174ee4be8ccf9d5d5217f3df8d123c0a69fde02ede9a83
+    phase: original_repo
+  original_repo_llm_metrics:
+    path: original_repo/EvaLLMasRecommender/eva/codes/llm_metrics.py
+    sha256: 950fca780f2be82cccd78e92343c61dfa2f9810edde30195f33d079bf97ca55c
+    phase: original_repo
+  original_repo_zero_shot:
+    path: original_repo/EvaLLMasRecommender/eva/codes/zero_shot.py
+    sha256: ae917e764bd5097fd62d8e1b13ebe65918f33159071721bc7206a923fd2a28ca
+    phase: original_repo
+
+outputs:
+  report: report/phase_f6g1_lastfm_reranking_reconstruction.md
+  freeze_manifest: results/manifests/phase_f6g1_lastfm_reranking_freeze.json
+  tables:
+    input_integrity: results/tables/phase_f6g1_input_integrity.csv
+    source_inventory: results/tables/phase_f6g1_source_inventory.csv
+    paper_pool_contract: results/tables/phase_f6g1_paper_pool_contract.csv
+    cohort_audit: results/tables/phase_f6g1_cohort_audit.csv
+    prediction_inventory: results/tables/phase_f6g1_prediction_inventory.csv
+    seed_policy_audit: results/tables/phase_f6g1_seed_policy_audit.csv
+    candidate_source_model_decisions: results/tables/phase_f6g1_candidate_source_model_decisions.csv
+    pool_item_provenance: results/tables/phase_f6g1_pool_item_provenance.csv
+    pool_instance_summary: results/tables/phase_f6g1_pool_instance_summary.csv
+    pool_quality_summary: results/tables/phase_f6g1_pool_quality_summary.csv
+    positive_policy: results/tables/phase_f6g1_positive_policy.csv
+    previous_pool_reconciliation: results/tables/phase_f6g1_previous_pool_reconciliation.csv
+    traditional_pool_metrics: results/tables/phase_f6g1_traditional_pool_metrics.csv
+    title_item_reconciliation: results/tables/phase_f6g1_title_item_reconciliation.csv
+    comparability_gate: results/tables/phase_f6g1_comparability_gate.csv
+    exactness_classification: results/tables/phase_f6g1_exactness_classification.csv
+    future_logical_instances: results/tables/phase_f6g1_future_logical_instances.csv
+    future_request_manifest: results/tables/phase_f6g1_future_request_manifest.csv
+    future_shard_manifest: results/tables/phase_f6g1_future_shard_manifest.csv
+    missing_or_blocked: results/tables/phase_f6g1_missing_or_blocked.csv
+
+validation:
+  run_suites: true
+  suites:
+    - name: F6G1 tests
+      files: [tests/test_plan_f6g1_lastfm_reranking_reconstruction.py]
+    - name: F6F2 tests
+      files: [tests/test_plan_f6f2_scientific_readout.py]
+    - name: F6F1 tests
+      files: [tests/test_plan_f6f1_beyond_utility_metrics.py]
+    - name: F6F1R tests
+      files: [tests/test_plan_f6f1r_environment_recovery.py]
+    - name: F6E4C tests
+      files: [tests/test_plan_f6e4c_scientific_consolidation.py]
+    - name: F6D1 LastFM safe tests
+      files: [tests/test_finalization_f6d1_lastfm_baselines.py]
+    - name: title item reconciliation tests
+      files: [tests/test_item_title_map_reconciliation.py]
+    - name: protected input guard
+      files: [tests/test_finalization_f6d4a_protected_input_guard.py]
+    - name: minimal parser contract
+      files: [tests/test_canonical_llm_contract.py]
+  unsafe_exclusions:
+    - training
+    - cuda
+    - ollama
+    - inference
+    - network
+    - downloads
+    - api
+    - unsafe_full_suite
+    - tests/test_finalization_f6d2_lastfm_trainable_models.py
+
+allowed_final_decisions:
+  - f6g1_lastfm_reranking_reconstruction_complete_ready_for_inference
+  - f6g1_lastfm_reranking_reconstruction_complete_with_adapted_pool
+  - f6g1_lastfm_reranking_reconstruction_complete_diagnostic_only
+  - f6g1_blocked_by_missing_pool_contract
+  - f6g1_blocked_by_missing_predictions
+  - f6g1_blocked_by_seed_policy
+  - f6g1_blocked_by_positive_policy
+  - f6g1_blocked_by_low_pool_recall
+  - f6g1_blocked_by_title_reconciliation
+  - f6g1_blocked_by_leakage
+  - f6g1_blocked_by_tests
+  - f6g1_blocked_by_nondeterminism
+  - f6g1_blocked_by_input_invariance
+  - f6g1_incomplete_missing_evidence
+
+allowed_recommendations:
+  - proceed_to_lastfm_reranking_llm_inference
+  - run_targeted_pool_reconstruction_repair
+  - recompute_missing_traditional_predictions
+  - keep_lastfm_reranking_diagnostic_only
+  - keep_lastfm_reranking_blocked
+  - inspect_pool_protocol_conflict

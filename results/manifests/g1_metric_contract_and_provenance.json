@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "scope": "G1_METRIC_CONTRACT_AND_CANONICAL_PROVENANCE",
+  "status": "FINAL",
+  "release_candidate_base_commit": "6392049ae2701476bc40bfb2d285c03c12f42295",
+  "mrr_contract": {
+    "canonical_name": "mrr",
+    "display_name": "MRR",
+    "inspected_ranking_depth": 10,
+    "per_request_formula": "1 / one_based_rank_of_positive_within_the_10_item_strict_valid_output",
+    "positive_absent_policy": "ZERO",
+    "terminal_invalid_policy": "ZERO",
+    "denominator_semantics": "Mean per-request contribution over every planned/applicable request in the phase cell; absent-positive and terminal-invalid requests remain in that denominator with zero contribution.",
+    "semantic_equivalence": {
+      "status": "PASS",
+      "phases": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "RQ3"
+      ],
+      "fixed_cases": {
+        "positive_rank_1": 1.0,
+        "positive_rank_5": 0.2,
+        "positive_rank_10": 0.1,
+        "positive_absent": 0.0,
+        "terminal_invalid": 0.0
+      }
+    },
+    "shared_implementation": false,
+    "implementation_duplication": "DOCUMENTED_DO_NOT_REFACTOR_FROZEN_IMPLEMENTATIONS",
+    "implementations": {
+      "G1": "src.extension.f1a_offline_metric_closure.reciprocal_rank, imported by src.extension.g1_primary_ranking_execution",
+      "G2": "src.analysis.g2_history_length_metrics.reciprocal_rank",
+      "G3": "src.extension.g3_candidate_position_metrics.utility_from_ranked_indices",
+      "G4": "src.analysis.g4_f1bzq_metrics.compute_row_contributions",
+      "RQ3": "src.analysis.rq3_completion_scientific_freeze.utility"
+    },
+    "denominator_scopes": {
+      "G1": "planned users in each dataset/model/prompt cell",
+      "G2": "planned/applicable users in each frozen reporting-view cell",
+      "G3": "planned paired users in each dataset/model/prompt/candidate-order cell",
+      "G4": "planned users in each dataset/model/prompt reranking cell",
+      "RQ3": "all manifest requests in each history-length comparison cell"
+    }
+  },
+  "long_tail_contract": {
+    "canonical_metric": "APLT@5",
+    "canonical_metric_id": "aplt_at_5",
+    "implementation_alias": "calACLT",
+    "aclt_is_separate_metric": false,
+    "alias_explanation": "The paper names the construct APLT; the recovered upstream function is named calACLT. G1 exposes only APLT@5/aplt_at_5 and does not publish ACLT as an additional metric.",
+    "formula": "Mean over strict-valid users of the fraction of their top-5 recommendations whose train interaction count is positive and strictly below the dataset train-count 0.8 quantile.",
+    "popularity_source": "Train-only item interaction counts from the canonical dataset split.",
+    "missing_or_zero_popularity_policy": "A zero or missing train count is not classified as long-tail.",
+    "terminal_invalid_policy": "Excluded from the strict-valid beyond-utility denominator and recorded in undefined_user_count."
+  },
+  "canonical_artifact_authority": {
+    "config_path": "configs/g1_primary_ranking_execution.yaml",
+    "config_sha256": "a9fc4bf585ce0965a44f1758f4a4c96202c6fb4e237763bf86a4fbd6d8220868",
+    "canonical_utility_path": "results/tables/g1_primary_ranking_utility.csv",
+    "canonical_utility_sha256": "369db87fb19686525135aa1f5cd9d1b1d6d790e4696aad0b70613cb235b33308",
+    "canonical_beyond_utility_path": "results/tables/g1_primary_ranking_beyond_utility.csv",
+    "canonical_beyond_utility_sha256": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b",
+    "canonical_reliability_path": "results/tables/g1_primary_ranking_reliability.csv",
+    "canonical_reliability_sha256": "1f5051ee58df03118617c981d13ece3a1679df2440b08f59e52a7ed068ebd023",
+    "historical_pre_fix_sha256": "15ca9025aada73feba7513e06756b6c3ede42542befd82c1a76dbc757b018ae1",
+    "historical_pre_fix_classification": "HISTORICAL_PRE_FIX / NON_CANONICAL_FOREGROUND",
+    "serendipity_fix_commit": "21eb7cf23442a5ef1aa6471ec39bc4be109dea18",
+    "serendipity_correction_manifest": "results/manifests/g1_serendipity_correction.json",
+    "serendipity_correction_manifest_sha256": "c33cca450081a00eb7937b524ffe58fff309e0b6583d9fc2ec35ac47edfce6f1",
+    "raw_inference_unchanged": true,
+    "historical_manifest_policy": "Pre-fix hashes retained in original execution, request, runtime, reuse, idempotence, budget, and retention manifests are provenance records only. This manifest and the serendipity correction manifest supersede them for foreground artifact identity."
+  },
+  "complete_case_artifact": {
+    "path": "results/tables/g1_primary_ranking_complete_case.csv",
+    "sha256": "d0a41ad11b991ef6c3c3c5fed9d0adc7a63cc9a23545564f9c30966ec3dbfd95",
+    "classification": "NON_CANONICAL_FOREGROUND",
+    "role": "COMPLETE_CASE_UTILITY_DIAGNOSTIC",
+    "metrics": [
+      "hr_at_5",
+      "ndcg_at_5",
+      "mrr"
+    ],
+    "contains_serendipity_values": false,
+    "contains_historical_pre_fix_sha256": false,
+    "corrected_replacement_required": false,
+    "reason": "The table has no beyond-utility or serendipity rows and therefore contains no pre-fix serendipity values; it is not the fail-strict canonical utility table."
+  },
+  "foreground_reference_policy": {
+    "canonical_g1_tables": [
+      "results/tables/g1_primary_ranking_utility.csv",
+      "results/tables/g1_primary_ranking_beyond_utility.csv",
+      "results/tables/g1_primary_ranking_reliability.csv"
+    ],
+    "final_figure_inventory": "results/manifests/final_submission_figure_inventory.csv",
+    "final_figure_inventory_uses_corrected_beyond_utility_hash": true,
+    "pre_fix_hash_allowed_only_in_historical_provenance_and_correction_records": true
+  },
+  "validation": {
+    "test": "tests/test_g1_metric_contract_and_provenance.py",
+    "serendipity_validator": "python -B src/analysis/validate_g1_serendipity_correction.py --config configs/g1_serendipity_correction.yaml",
+    "new_llm_inference": false,
+    "canonical_metric_values_changed": false
+  }
+}

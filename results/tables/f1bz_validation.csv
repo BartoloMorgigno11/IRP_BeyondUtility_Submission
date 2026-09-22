@@ -1,0 +1,27 @@
+check,status,evidence
+head_matches_f1by_checkpoint,PASS,5f29945d1cfe5e6cce5b6cc0522db6f0efe8a976
+active_datasets_exact,PASS,"['beauty', 'sports', 'ml1m', 'lastfm', 'foodcom']"
+video_games_absent,PASS,0
+run_count_100,PASS,100
+completed_100,PASS,{'COMPLETED': 100}
+zero_failed_zero_retries,PASS,"{'failed': 0, 'retries': 0}"
+twenty_trainable_rows,PASS,20
+five_seeds_per_dataset_model,PASS,"{('beauty', 'BPRMF'): 5, ('beauty', 'GRU4Rec'): 5, ('beauty', 'LightGCN'): 5, ('beauty', 'SASRec'): 5, ('foodcom', 'BPRMF'): 5, ('foodcom', 'GRU4Rec'): 5, ('foodcom', 'LightGCN'): 5, ('foodcom', 'SASRec'): 5, ('lastfm', 'BPRMF'): 5, ('lastfm', 'GRU4Rec'): 5, ('lastfm', 'LightGCN'): 5, ('lastfm', 'SASRec'): 5, ('ml1m', 'BPRMF'): 5, ('ml1m', 'GRU4Rec'): 5, ('ml1m', 'LightGCN'): 5, ('ml1m', 'SASRec'): 5, ('sports', 'BPRMF'): 5, ('sports', 'GRU4Rec'): 5, ('sports', 'LightGCN'): 5, ('sports', 'SASRec'): 5}"
+foodcom_winner_identity,PASS,F1BY selected config ids and hashes
+no_final_test_selection_feedback,PASS,false
+utility_per_seed_rows,PASS,300
+beyond_per_seed_rows,PASS,"{'COMPUTED': 1380, 'DEGENERATE_PROTOCOL_INPUT': 20}"
+aggregate_utility_rows,PASS,60
+aggregate_beyond_rows,PASS,280
+traditional_35_complete,PASS,{'COMPLETED': 35}
+first_stage_rankings_materialized,PASS,97640
+reranking_pools_complete,PASS,4882
+candidate_recall_computed,PASS,5
+reranking_ready_30,PASS,{'READY_TO_INFER': 30}
+llm_request_upper_bound,PASS,29292
+f0_budget_unchanged,PASS,"{'EXISTING_REUSABLE_REQUESTS': 0, 'CORE_MANDATORY_NOW_REQUESTS': 29292, 'REQUIRED_SENSITIVITY_REQUESTS': 21000, 'TRAINING_DEPENDENT_REQUESTS': 29292, 'CONDITIONAL_REQUESTS': 9000, 'OPTIONAL_REQUESTS': 12000, 'BLOCKED_REQUESTS': 0, 'MANDATORY_RAW_REQUESTS_TOTAL': 50292, 'FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL': 88584, 'CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL': 100584, 'PREVIOUS_D0B_ESTIMATE': 44928, 'MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE': 5364}"
+global_metric_blockers_zero,PASS,0
+baseline_preserved,PASS,F1BX baseline manifest hashes
+foodcom_h0_hashes_unchanged,PASS,protected hashes
+original_repo_paper_unchanged,PASS,"{'original_repo': '', 'paper': ''}"
+zero_llm_network_download,PASS,0

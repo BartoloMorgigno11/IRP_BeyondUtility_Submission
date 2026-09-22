@@ -1,0 +1,450 @@
+{
+    "schema_version":  "1.0",
+    "phase_id":  "g1_primary_ranking_retention_freeze",
+    "generated_at_utc":  "2026-09-01T11:24:46.962Z",
+    "decision_source":  "G1_PRIMARY_RANKING_VALIDATED",
+    "execution_commit":  "3d7f3add4a86895335c7a2d71f4f2d5103bd127f",
+    "scientific_base_checkpoint":  "5dfec10537a8acd1404c586323a3935add48bc2a",
+    "canonical_requests":  29292,
+    "g0_reused_requests":  36,
+    "new_g1_terminal_requests":  29256,
+    "cell_completeness":  "30/30",
+    "retention_policy":  {
+                             "level_a":  "Git-eligible foreground tables, reports, and provenance manifests required for clone-readable G1 interpretation.",
+                             "level_b":  "Ignored external raw/per-request evidence recoverable through the deterministic external archive bundle.",
+                             "raw_llm_outputs_in_normal_git":  false,
+                             "metrics_or_science_modified":  false,
+                             "retention_manifest_self_hash_note":  "The retention manifest SHA256 is reported after write; it is not embedded to avoid a self-referential hash."
+                         },
+    "artifacts":  [
+                      {
+                          "path":  "results/tables/g1_primary_ranking_30_cell_completeness.csv",
+                          "artifact_role":  "G1 clone-readable scientific foreground table",
+                          "exists":  true,
+                          "size_bytes":  1984,
+                          "sha256":  "6c7c26e076381323856da445efc9f5bf2528f8527b7f676edde10fda902b993b",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_SCIENTIFIC_FOREGROUND",
+                          "scientific_requirement":  "Required to inspect G1 foreground results without raw evidence.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_utility.csv",
+                          "artifact_role":  "G1 clone-readable scientific foreground table",
+                          "exists":  true,
+                          "size_bytes":  40104,
+                          "sha256":  "369db87fb19686525135aa1f5cd9d1b1d6d790e4696aad0b70613cb235b33308",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_SCIENTIFIC_FOREGROUND",
+                          "scientific_requirement":  "Required to inspect G1 foreground results without raw evidence.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_beyond_utility.csv",
+                          "artifact_role":  "G1 clone-readable scientific foreground table",
+                          "exists":  true,
+                          "size_bytes":  162565,
+                          "sha256":  "15ca9025aada73feba7513e06756b6c3ede42542befd82c1a76dbc757b018ae1",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_SCIENTIFIC_FOREGROUND",
+                          "scientific_requirement":  "Required to inspect G1 foreground results without raw evidence.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_complete_case.csv",
+                          "artifact_role":  "G1 clone-readable scientific foreground table",
+                          "exists":  true,
+                          "size_bytes":  20756,
+                          "sha256":  "d0a41ad11b991ef6c3c3c5fed9d0adc7a63cc9a23545564f9c30966ec3dbfd95",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_SCIENTIFIC_FOREGROUND",
+                          "scientific_requirement":  "Required to inspect G1 foreground results without raw evidence.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_foodcom_warm_cold.csv",
+                          "artifact_role":  "G1 clone-readable scientific foreground table",
+                          "exists":  true,
+                          "size_bytes":  8809,
+                          "sha256":  "86906400ab9207cfc989f4894839d32d270b836c7a1a2ca9060276c66c63227d",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_SCIENTIFIC_FOREGROUND",
+                          "scientific_requirement":  "Required to inspect G1 foreground results without raw evidence.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_reliability.csv",
+                          "artifact_role":  "G1 clone-readable scientific foreground table",
+                          "exists":  true,
+                          "size_bytes":  4930,
+                          "sha256":  "1f5051ee58df03118617c981d13ece3a1679df2440b08f59e52a7ed068ebd023",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_SCIENTIFIC_FOREGROUND",
+                          "scientific_requirement":  "Required to inspect G1 foreground results without raw evidence.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_runtime.csv",
+                          "artifact_role":  "G1 clone-readable scientific foreground table",
+                          "exists":  true,
+                          "size_bytes":  10850,
+                          "sha256":  "2f0955c3d837feb00c12f438b8fe40f3e2960881008dece8b6b6d23cd0d8b144",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_SCIENTIFIC_FOREGROUND",
+                          "scientific_requirement":  "Required to inspect G1 foreground results without raw evidence.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_validation.csv",
+                          "artifact_role":  "G1 clone-readable scientific foreground table",
+                          "exists":  true,
+                          "size_bytes":  7977,
+                          "sha256":  "8c5ef3500391541e24d658f27aac3e0de91a07d10fa3a43be866646ae071e031",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_SCIENTIFIC_FOREGROUND",
+                          "scientific_requirement":  "Required to inspect G1 foreground results without raw evidence.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/manifests/g1_primary_ranking_execution_manifest.json",
+                          "artifact_role":  "G1 provenance/protocol manifest",
+                          "exists":  true,
+                          "size_bytes":  8294,
+                          "sha256":  "351eb31d4ae938c755c913b312e690e5be066f43d0128df252f62c2d3c9856b9",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_PROVENANCE_MANIFEST",
+                          "scientific_requirement":  "Required to inspect request identity, runtime/model provenance, G0 reuse, budget invariance, resume idempotence, and stable hashes.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/manifests/g1_primary_ranking_budget_invariance_manifest.json",
+                          "artifact_role":  "G1 provenance/protocol manifest",
+                          "exists":  true,
+                          "size_bytes":  8818,
+                          "sha256":  "6e36ad9edb4f56d3d2f91689870e29596ca7f361efc68b07e80dba20e013b2f0",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_PROVENANCE_MANIFEST",
+                          "scientific_requirement":  "Required to inspect request identity, runtime/model provenance, G0 reuse, budget invariance, resume idempotence, and stable hashes.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/manifests/g1_primary_ranking_g0_reuse_manifest.json",
+                          "artifact_role":  "G1 provenance/protocol manifest",
+                          "exists":  true,
+                          "size_bytes":  106117,
+                          "sha256":  "f31e57c05071612702d7fb011c6941c8c2cbfbe6d290cbef6238f684b84764fd",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_PROVENANCE_MANIFEST",
+                          "scientific_requirement":  "Required to inspect request identity, runtime/model provenance, G0 reuse, budget invariance, resume idempotence, and stable hashes.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/manifests/g1_primary_ranking_model_runtime_provenance.json",
+                          "artifact_role":  "G1 provenance/protocol manifest",
+                          "exists":  true,
+                          "size_bytes":  43011,
+                          "sha256":  "3a47303862dcc14c0a1909b8edec12ce46fa899802453f5546aa705f6a050fe0",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_PROVENANCE_MANIFEST",
+                          "scientific_requirement":  "Required to inspect request identity, runtime/model provenance, G0 reuse, budget invariance, resume idempotence, and stable hashes.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/manifests/g1_primary_ranking_request_manifest.json",
+                          "artifact_role":  "G1 provenance/protocol manifest",
+                          "exists":  true,
+                          "size_bytes":  1414172,
+                          "sha256":  "8d1dacb94cbf14116ca787a25fa7323b471a0f118d64d4447f5bb0911326cd5f",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_PROVENANCE_MANIFEST",
+                          "scientific_requirement":  "Required to inspect request identity, runtime/model provenance, G0 reuse, budget invariance, resume idempotence, and stable hashes.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/manifests/g1_primary_ranking_resume_idempotence_manifest.json",
+                          "artifact_role":  "G1 provenance/protocol manifest",
+                          "exists":  true,
+                          "size_bytes":  8704,
+                          "sha256":  "58849dae9f534f9ebd60184b6b794daa357a98c4f4813a3c5958524635524809",
+                          "git_status":  "untracked_eligible",
+                          "retention_class":  "TRACKED_PROVENANCE_MANIFEST",
+                          "scientific_requirement":  "Required to inspect request identity, runtime/model provenance, G0 reuse, budget invariance, resume idempotence, and stable hashes.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "report/g1_primary_ranking_execution.md",
+                          "artifact_role":  "G1 narrative report",
+                          "exists":  true,
+                          "size_bytes":  6109,
+                          "sha256":  "891f71beb75bfe389bbe5e7c7de6cd77e60f98893c6db6c3369cbfbb218ab754",
+                          "git_status":  "tracked",
+                          "retention_class":  "TRACKED_REPORT",
+                          "scientific_requirement":  "Required to understand G1 status, accounting, and retention split.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "report/notes.md",
+                          "artifact_role":  "Project notes with G1/G1R provenance entries",
+                          "exists":  true,
+                          "size_bytes":  211138,
+                          "sha256":  "263ca64e6a5092e73461072c134caf5cf222c895f47bfc73948f08300edefe94",
+                          "git_status":  "tracked",
+                          "retention_class":  "TRACKED_REPORT",
+                          "scientific_requirement":  "Required as project-level execution notes and phase lineage.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "docs/external_archive_guide.md",
+                          "artifact_role":  "External archive guide with G1 restore instructions",
+                          "exists":  true,
+                          "size_bytes":  3898,
+                          "sha256":  "e211d8a5a11cd64d131db1be7bedb9d1fc95382180fb40533b715a2c10d5df52",
+                          "git_status":  "tracked",
+                          "retention_class":  "TRACKED_REPORT",
+                          "scientific_requirement":  "Required to explain how to verify and restore externalized G1 evidence.",
+                          "recovery_requirement":  "Commit in Git; no external restore required for clone foreground audit."
+                      },
+                      {
+                          "path":  "results/llm/extension_canonical/g1_primary_ranking/events.jsonl",
+                          "artifact_role":  "G1 externalized raw or per-request bulk evidence",
+                          "exists":  true,
+                          "size_bytes":  26326808,
+                          "sha256":  "c9434c76a7e414b652fbc2f40416ffbd4c1efd500e6d9bca0ece6db862f99130",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_RAW_EVIDENCE",
+                          "scientific_requirement":  "Required for full raw/per-request audit, not required for clone foreground interpretation.",
+                          "recovery_requirement":  "Restore from external archive to the same repository-relative path; verify SHA256 against this manifest."
+                      },
+                      {
+                          "path":  "results/llm/extension_canonical/g1_primary_ranking/requests.jsonl",
+                          "artifact_role":  "G1 externalized raw or per-request bulk evidence",
+                          "exists":  true,
+                          "size_bytes":  89259625,
+                          "sha256":  "cf0037892689a4ff9443f77c485d688aacd84eef79f433f78a7d6e73866ae87d",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_RAW_EVIDENCE",
+                          "scientific_requirement":  "Required for full raw/per-request audit, not required for clone foreground interpretation.",
+                          "recovery_requirement":  "Restore from external archive to the same repository-relative path; verify SHA256 against this manifest."
+                      },
+                      {
+                          "path":  "results/llm/extension_canonical/g1_primary_ranking/responses.jsonl",
+                          "artifact_role":  "G1 externalized raw or per-request bulk evidence",
+                          "exists":  true,
+                          "size_bytes":  151085949,
+                          "sha256":  "7dd6a67521913786a0fc634fca18c6c820b595df73340436d2a208a3adef5686",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_RAW_EVIDENCE",
+                          "scientific_requirement":  "Required for full raw/per-request audit, not required for clone foreground interpretation.",
+                          "recovery_requirement":  "Restore from external archive to the same repository-relative path; verify SHA256 against this manifest."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_execution_state.csv",
+                          "artifact_role":  "G1 externalized raw or per-request bulk evidence",
+                          "exists":  true,
+                          "size_bytes":  45576107,
+                          "sha256":  "c8815ac5e1fdf6f54093091c2feea3b4827cb17470aad36f2740f88010d29064",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_PER_REQUEST_AUDIT",
+                          "scientific_requirement":  "Required for full raw/per-request audit, not required for clone foreground interpretation.",
+                          "recovery_requirement":  "Restore from external archive to the same repository-relative path; verify SHA256 against this manifest."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_per_request_stats.csv",
+                          "artifact_role":  "G1 externalized raw or per-request bulk evidence",
+                          "exists":  true,
+                          "size_bytes":  10706255,
+                          "sha256":  "eebf5a356af0c2d2b735c1bcba7743f5aa4f722bc1ff96afbec6eb2b9b4385e9",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_PER_REQUEST_AUDIT",
+                          "scientific_requirement":  "Required for full raw/per-request audit, not required for clone foreground interpretation.",
+                          "recovery_requirement":  "Restore from external archive to the same repository-relative path; verify SHA256 against this manifest."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_physical_execution_order.csv",
+                          "artifact_role":  "G1 externalized raw or per-request bulk evidence",
+                          "exists":  true,
+                          "size_bytes":  5215376,
+                          "sha256":  "23344c47aeed9c178141a9ff83e00d62957cfac331dd8b6fbdb9146594004b63",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_PER_REQUEST_AUDIT",
+                          "scientific_requirement":  "Required for full raw/per-request audit, not required for clone foreground interpretation.",
+                          "recovery_requirement":  "Restore from external archive to the same repository-relative path; verify SHA256 against this manifest."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_raw_response_inventory.csv",
+                          "artifact_role":  "G1 externalized raw or per-request bulk evidence",
+                          "exists":  true,
+                          "size_bytes":  11196112,
+                          "sha256":  "01008395c57df9cd780cff2abc7cda34bcabdbb3f507d8c1e7fb38ad877d01d8",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_PER_REQUEST_AUDIT",
+                          "scientific_requirement":  "Required for full raw/per-request audit, not required for clone foreground interpretation.",
+                          "recovery_requirement":  "Restore from external archive to the same repository-relative path; verify SHA256 against this manifest."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_recommendations.csv",
+                          "artifact_role":  "G1 externalized raw or per-request bulk evidence",
+                          "exists":  true,
+                          "size_bytes":  102419281,
+                          "sha256":  "23fd5dafe3ee8817e906098432d88fa96899d8448f76b6b8d3c27ab13602b24e",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_PER_REQUEST_AUDIT",
+                          "scientific_requirement":  "Required for full raw/per-request audit, not required for clone foreground interpretation.",
+                          "recovery_requirement":  "Restore from external archive to the same repository-relative path; verify SHA256 against this manifest."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_request_universe.csv",
+                          "artifact_role":  "G1 externalized raw or per-request bulk evidence",
+                          "exists":  true,
+                          "size_bytes":  38621436,
+                          "sha256":  "84d55fbc3f7307f1b2a255d3ea588d09cf38a154ea199c4eaaed69a53fc5af8c",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_PER_REQUEST_AUDIT",
+                          "scientific_requirement":  "Required for full raw/per-request audit, not required for clone foreground interpretation.",
+                          "recovery_requirement":  "Restore from external archive to the same repository-relative path; verify SHA256 against this manifest."
+                      },
+                      {
+                          "path":  "results/tables/g1_primary_ranking_strict_parsing.csv",
+                          "artifact_role":  "G1 externalized raw or per-request bulk evidence",
+                          "exists":  true,
+                          "size_bytes":  17818908,
+                          "sha256":  "84d96f391c09feba12607d5e79394fd2189db70a3d235a51e81f85cdf8e8a7e0",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_PER_REQUEST_AUDIT",
+                          "scientific_requirement":  "Required for full raw/per-request audit, not required for clone foreground interpretation.",
+                          "recovery_requirement":  "Restore from external archive to the same repository-relative path; verify SHA256 against this manifest."
+                      },
+                      {
+                          "path":  "results/llm/extension_canonical/g1_primary_ranking/responses/",
+                          "artifact_role":  "G1 per-request raw response JSON directory family",
+                          "exists":  true,
+                          "size_bytes":  298724284,
+                          "sha256":  "01008395c57df9cd780cff2abc7cda34bcabdbb3f507d8c1e7fb38ad877d01d8",
+                          "sha256_scope":  "raw_response_inventory_sha256_for_per_file_path_hash_mapping",
+                          "git_status":  "ignored",
+                          "retention_class":  "EXTERNALIZED_RAW_EVIDENCE",
+                          "scientific_requirement":  "Required for independent raw response audit and parser-input inspection; represented in foreground by file count plus raw-response inventory hash.",
+                          "recovery_requirement":  "Restore directory from external archive, then verify file count and per-file hashes using raw_response_inventory_path/raw_response_inventory_sha256.",
+                          "raw_response_inventory_path":  "results/tables/g1_primary_ranking_raw_response_inventory.csv",
+                          "raw_response_inventory_sha256":  "01008395c57df9cd780cff2abc7cda34bcabdbb3f507d8c1e7fb38ad877d01d8",
+                          "raw_response_file_count":  29256
+                      }
+                  ],
+    "external_archive":  {
+                             "path":  "archive_external/g1_primary_ranking/G1_primary_ranking_3d7f3add_external_evidence.zip",
+                             "artifact_role":  "Deterministic external archive bundle for G1 bulk evidence",
+                             "exists":  true,
+                             "size_bytes":  805541645,
+                             "sha256":  "1da06322b966afde096681189bdc923ff7a34288ff899f94f564595fdd11ab8a",
+                             "git_status":  "ignored",
+                             "retention_class":  "EXTERNAL_ARCHIVE_BUNDLE",
+                             "scientific_requirement":  "Required to recover externalized raw/per-request G1 evidence without ambiguity.",
+                             "recovery_requirement":  "Place archive outside normal Git; verify SHA256; extract from repository root so contained repository-relative paths are restored.",
+                             "archive_file_count":  29266,
+                             "archive_uncompressed_bytes":  796950141,
+                             "archive_format":  "zip",
+                             "archive_entry_order":  "repository-relative lexical order",
+                             "archive_entry_timestamp_utc":  "1980-01-01T00:00:00Z",
+                             "archive_compression":  "NoCompression"
+                         },
+    "hash_invariance":  [
+                            {
+                                "path":  "results/tables/g1_primary_ranking_30_cell_completeness.csv",
+                                "before_sha256":  "6c7c26e076381323856da445efc9f5bf2528f8527b7f676edde10fda902b993b",
+                                "after_sha256":  "6c7c26e076381323856da445efc9f5bf2528f8527b7f676edde10fda902b993b",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/tables/g1_primary_ranking_utility.csv",
+                                "before_sha256":  "369db87fb19686525135aa1f5cd9d1b1d6d790e4696aad0b70613cb235b33308",
+                                "after_sha256":  "369db87fb19686525135aa1f5cd9d1b1d6d790e4696aad0b70613cb235b33308",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/tables/g1_primary_ranking_beyond_utility.csv",
+                                "before_sha256":  "15ca9025aada73feba7513e06756b6c3ede42542befd82c1a76dbc757b018ae1",
+                                "after_sha256":  "15ca9025aada73feba7513e06756b6c3ede42542befd82c1a76dbc757b018ae1",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/tables/g1_primary_ranking_complete_case.csv",
+                                "before_sha256":  "d0a41ad11b991ef6c3c3c5fed9d0adc7a63cc9a23545564f9c30966ec3dbfd95",
+                                "after_sha256":  "d0a41ad11b991ef6c3c3c5fed9d0adc7a63cc9a23545564f9c30966ec3dbfd95",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/tables/g1_primary_ranking_foodcom_warm_cold.csv",
+                                "before_sha256":  "86906400ab9207cfc989f4894839d32d270b836c7a1a2ca9060276c66c63227d",
+                                "after_sha256":  "86906400ab9207cfc989f4894839d32d270b836c7a1a2ca9060276c66c63227d",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/tables/g1_primary_ranking_reliability.csv",
+                                "before_sha256":  "1f5051ee58df03118617c981d13ece3a1679df2440b08f59e52a7ed068ebd023",
+                                "after_sha256":  "1f5051ee58df03118617c981d13ece3a1679df2440b08f59e52a7ed068ebd023",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/tables/g1_primary_ranking_runtime.csv",
+                                "before_sha256":  "2f0955c3d837feb00c12f438b8fe40f3e2960881008dece8b6b6d23cd0d8b144",
+                                "after_sha256":  "2f0955c3d837feb00c12f438b8fe40f3e2960881008dece8b6b6d23cd0d8b144",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/tables/g1_primary_ranking_validation.csv",
+                                "before_sha256":  "8c5ef3500391541e24d658f27aac3e0de91a07d10fa3a43be866646ae071e031",
+                                "after_sha256":  "8c5ef3500391541e24d658f27aac3e0de91a07d10fa3a43be866646ae071e031",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/manifests/g1_primary_ranking_execution_manifest.json",
+                                "before_sha256":  "351eb31d4ae938c755c913b312e690e5be066f43d0128df252f62c2d3c9856b9",
+                                "after_sha256":  "351eb31d4ae938c755c913b312e690e5be066f43d0128df252f62c2d3c9856b9",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/manifests/g1_primary_ranking_budget_invariance_manifest.json",
+                                "before_sha256":  "6e36ad9edb4f56d3d2f91689870e29596ca7f361efc68b07e80dba20e013b2f0",
+                                "after_sha256":  "6e36ad9edb4f56d3d2f91689870e29596ca7f361efc68b07e80dba20e013b2f0",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/manifests/g1_primary_ranking_g0_reuse_manifest.json",
+                                "before_sha256":  "f31e57c05071612702d7fb011c6941c8c2cbfbe6d290cbef6238f684b84764fd",
+                                "after_sha256":  "f31e57c05071612702d7fb011c6941c8c2cbfbe6d290cbef6238f684b84764fd",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/manifests/g1_primary_ranking_model_runtime_provenance.json",
+                                "before_sha256":  "3a47303862dcc14c0a1909b8edec12ce46fa899802453f5546aa705f6a050fe0",
+                                "after_sha256":  "3a47303862dcc14c0a1909b8edec12ce46fa899802453f5546aa705f6a050fe0",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/manifests/g1_primary_ranking_request_manifest.json",
+                                "before_sha256":  "8d1dacb94cbf14116ca787a25fa7323b471a0f118d64d4447f5bb0911326cd5f",
+                                "after_sha256":  "8d1dacb94cbf14116ca787a25fa7323b471a0f118d64d4447f5bb0911326cd5f",
+                                "byte_identical":  true
+                            },
+                            {
+                                "path":  "results/manifests/g1_primary_ranking_resume_idempotence_manifest.json",
+                                "before_sha256":  "58849dae9f534f9ebd60184b6b794daa357a98c4f4813a3c5958524635524809",
+                                "after_sha256":  "58849dae9f534f9ebd60184b6b794daa357a98c4f4813a3c5958524635524809",
+                                "byte_identical":  true
+                            }
+                        ],
+    "clone_equivalent_audit":  {
+                                   "foreground_answers_execution_scope":  true,
+                                   "foreground_answers_request_counts":  true,
+                                   "foreground_answers_datasets_models_prompts":  true,
+                                   "foreground_answers_utility_results":  true,
+                                   "foreground_answers_beyond_utility_results":  true,
+                                   "foreground_answers_reliability_validity":  true,
+                                   "foreground_answers_runtime":  true,
+                                   "foreground_answers_foodcom_warm_cold":  true,
+                                   "foreground_answers_model_runtime_provenance":  true,
+                                   "foreground_answers_request_protocol_identity":  true,
+                                   "foreground_identifies_external_archive_hash":  true,
+                                   "external_archive_restore_permits_raw_audit":  true
+                               }
+}

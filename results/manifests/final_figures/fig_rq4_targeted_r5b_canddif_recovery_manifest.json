@@ -1,0 +1,40 @@
+{
+  "canonical_source_artifacts": [
+    "results/tables/reproduction_r5b_corrected_canddif_results.csv",
+    "results/tables/reproduction_r5b_corrected_metrics_by_condition.csv",
+    "results/manifests/reproduction_r5b_corrected_freeze.json"
+  ],
+  "canonical_source_sha256": {
+    "results/manifests/reproduction_r5b_corrected_freeze.json": "67b4d0fe8ae58f1b2f20ac3dac24258a72a4d8caba28ad32c777e08b3d759f38",
+    "results/tables/reproduction_r5b_corrected_canddif_results.csv": "65d026ff2f3b225daccdf649bf232c831e42eac437799279dcfd647f545fe3de",
+    "results/tables/reproduction_r5b_corrected_metrics_by_condition.csv": "d91f5e476132cc6e73a5895241eb55cbde7b631347d19d73b57698604c978ca0"
+  },
+  "created_from_commit": "bc85bd0dfe2bf71e361eff2cdf780ccf98ec1f48",
+  "display_contract": {
+    "first_target_informed_oracle": false,
+    "no_deployability_claim": true,
+    "no_r5b_g3_pooling": true,
+    "no_statistical_recalculation": true
+  },
+  "evidence_role": "SUPPORTING_R5B_TARGETED",
+  "figure_id": "fig_rq4_targeted_r5b_canddif_recovery",
+  "figure_values_csv": "results/final_figures/rq4/values/fig_rq4_targeted_r5b_canddif_recovery_values.csv",
+  "figure_values_sha256": "32c2ff831d1d02a8f3d1d098644b82640edd5e2bd828bd0f7c934bbddd013e10",
+  "generator": "src/analysis/final_figures/rq4.py",
+  "generator_sha256": "898cd5e08fa9f4f1b7b5a8eabad9648de94aa0389f0bbf29cf0bce9d169b2946",
+  "limitations": [
+    "R5B targeted and G3 systematic results are never pooled.",
+    "Paper-aligned adapted recovery, not paper-exact reproduction."
+  ],
+  "output_pdf": "results/final_figures/rq4/figures/fig_rq4_targeted_r5b_canddif_recovery.pdf",
+  "output_pdf_sha256": "f0d931b31a89d0709757a75159b7a456552957b5529bf748af996f38c3e4d6ee",
+  "output_png": "results/final_figures/rq4/figures/fig_rq4_targeted_r5b_canddif_recovery.png",
+  "output_png_sha256": "582093097fd0723adeec34a88516f9f4318b009ad852ca8ff529db4a2e67973e",
+  "output_svg": "results/final_figures/rq4/figures/fig_rq4_targeted_r5b_canddif_recovery.svg",
+  "output_svg_sha256": "c316effb55c030554a43900346a8b34d2fe3ac3d2099a4a2efab040c4de0fe5f",
+  "row_count": 12,
+  "rq": "RQ4",
+  "schema_version": "1.0",
+  "scientific_interpretation": "Corrected targeted recovery is supporting evidence and is not pooled with systematic G3.",
+  "scientific_purpose": "Targeted corrected R5B CandDif recovery, supporting only"
+}

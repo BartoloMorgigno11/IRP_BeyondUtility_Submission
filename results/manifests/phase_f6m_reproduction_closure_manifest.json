@@ -1,0 +1,98 @@
+{
+  "artifact_index_rows": 30,
+  "config_path": "configs/phase_f6m_reproduction_closure.yaml",
+  "counts": {
+    "claim_rows": 4,
+    "limitation_rows": 6,
+    "master_results_long_rows": 261,
+    "master_results_wide_rows": 37,
+    "research_question_rows": 6
+  },
+  "decision_token": "f6m_reproduction_closure_complete_with_documented_limitations",
+  "generated_at_utc": "2026-08-10T09:53:25Z",
+  "git": {
+    "branch": "plan-d-extensions",
+    "head": "02a20b8b509b8cf834a8766dd1cf1f751ae204bf",
+    "original_repo_status": ""
+  },
+  "lastfm": {
+    "ranking_freeze_hash": "D624D4D57CC23C5647D60DF172DE6E71DC746B8098DE66C95EBCCBE609D145EC",
+    "reranking_aggregate_final_responses": 4000,
+    "reranking_decision_token": "f6l_lastfm_v4_reranking_continuation_v4_1_complete",
+    "reranking_positive_present_policy": "diagnostic_only_not_primary_denominator",
+    "reranking_positive_present_rows": 314
+  },
+  "manifest_path": "results/manifests/phase_f6m_reproduction_closure_manifest.json",
+  "offline_guards": {
+    "no_api_calls": true,
+    "no_downloads": true,
+    "no_full_lastfm_extension": true,
+    "no_new_inference": true,
+    "no_training": true
+  },
+  "output_artifacts": {
+    "report/phase_f6m_reproduction_closure.md": "52B8C8F5A8E29224EEDF3D7A79FBF59FDD39BAFD5D0F849265BDD5FFAC3E1B28",
+    "results/tables/phase_f6m_artifact_index.csv": "BCB9D733FCE94F92E8EC32F110F54BE8CA2CBDF2062316E34FAD8A4A06D2CE52",
+    "results/tables/phase_f6m_input_validation.csv": "DDF4D047436BA86E635FA44A626177E6A0EF5DF6A369104B45CDA5E7C3556E9A",
+    "results/tables/phase_f6m_lastfm_final_status.csv": "30AF243FEBCA9DED4771C46C4E75C93BAB578842ACC998BEF2F56A33BB8E433D",
+    "results/tables/phase_f6m_limitations_register.csv": "0C4EEC87EB358A87398F9DCD2B2F08553002F4C8BA57A773757CA7ECCD73DF98",
+    "results/tables/phase_f6m_master_reproducibility_matrix.csv": "2C5168A2F06CB8F46EDBE27D19639323EC9D86E1218D98B26C97191906871293",
+    "results/tables/phase_f6m_master_results_long.csv": "4BEFCB92B90D0C966CBB1D3434BF1F48E909AC73AFDB8251EAC6546FEEEA43CF",
+    "results/tables/phase_f6m_master_results_wide.csv": "2A4EFBBE75129B0F00A727281231FDEEFFF1AE2981504057C30780831D95CD8B",
+    "results/tables/phase_f6m_paper_claim_evidence_matrix.csv": "946588F4149AF0F6483211DC982A4A5F055D4F1B86D93708CAD8FD5C99F13401",
+    "results/tables/phase_f6m_reproduction_extension_boundary.csv": "EF15FFD420F80FEEDB9F1D339B442A42E5E9471536CA9D01C6053A2973C57B0B",
+    "results/tables/phase_f6m_research_question_matrix.csv": "5266375B0BA9540A24F97D0DE5F4268759D1BB2915DAA169A20D144817F3D278",
+    "results/tables/phase_f6m_statistical_assessment.csv": "C0B55795D0001C20FB837D20DA75765CE3A600DC633F7F0FCEAE81D88D6B2490"
+  },
+  "phase_id": "phase_f6m_reproduction_closure",
+  "validation_history": [
+    {
+      "command": ".venv_audit_recovery\\Scripts\\python.exe -B -m pytest tests --collect-only -q -p no:cacheprovider",
+      "gate": "precondition_collect",
+      "result": "1949 tests collected before F6M files were added",
+      "status": "pass"
+    },
+    {
+      "command": ".venv_audit_recovery\\Scripts\\python.exe -B -m pytest tests/test_phase_f6l_lastfm_v4_reranking_continuation_v4_1.py tests/test_phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution.py -q -p no:cacheprovider",
+      "gate": "precondition_f6l_focused",
+      "result": "13 passed",
+      "status": "pass"
+    },
+    {
+      "command": ".venv_audit_recovery\\Scripts\\python.exe -B -m pytest tests/test_phase_f6m_reproduction_closure.py -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp",
+      "gate": "f6m_focused",
+      "result": "5 passed",
+      "status": "pass"
+    },
+    {
+      "command": ".venv_audit_recovery\\Scripts\\python.exe -B -m pytest tests/test_phase_f6l_lastfm_v4_ranking_metrics_freeze.py tests/test_phase_f6l_lastfm_v4_reranking_continuation_v4_1.py tests/test_phase_f6l_lastfm_v4_reranking_continuation_v4_1_execution.py -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp_f6l",
+      "gate": "f6l_affected",
+      "result": "17 passed",
+      "status": "pass"
+    },
+    {
+      "command": ".venv_audit_recovery\\Scripts\\python.exe -B -m pytest tests/test_phase_f6j_scientific_evidence_synthesis.py tests/test_phase_f6k_scientific_gap_readiness.py tests/test_plan_d_phase_6b_readme_reproducibility.py tests/test_plan_d_phase_6c_final_scientific_report.py -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp_docs",
+      "gate": "documentation_and_evidence",
+      "result": "107 passed",
+      "status": "pass"
+    },
+    {
+      "command": ".venv_audit_recovery\\Scripts\\python.exe -B -m pytest tests --collect-only -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp_collect",
+      "gate": "postchange_collect",
+      "result": "1954 tests collected",
+      "status": "pass"
+    },
+    {
+      "command": ".venv_audit_recovery\\Scripts\\python.exe -B -m pytest tests -m \"cleanup_current and not unsafe_external\" -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp_cleanup",
+      "gate": "cleanup_current",
+      "result": "timed out after 1200 seconds with historical protected-input guard failures; first isolated failure: tests/test_phase_f6i2g_first_python_consolidation_execution.py reports f6i2g_failed_protected_input_change after intentional F6M edits",
+      "status": "residual_historical_suite_failure"
+    },
+    {
+      "command": ".venv_audit_recovery\\Scripts\\python.exe -B -m pytest tests -m \"not cleanup_current and not unsafe_external\" -q -p no:cacheprovider --basetemp results/logs/phase_f6m_pytest_tmp_broad_noncleanup",
+      "gate": "broad_noncleanup",
+      "result": "timed out after 1200 seconds; first isolated failure under -x is tests/test_exactness_frontier_and_evidence_closure.py::test_required_schemas_and_exact_row_counts due older direct script path ModuleNotFoundError: No module named src",
+      "status": "residual_historical_suite_failure"
+    }
+  ]
+}

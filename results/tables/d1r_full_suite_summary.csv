@@ -1,0 +1,2 @@
+phase_id,command,exit_code,collected_or_accounted,passed,failed,errors,skipped,deselected,xfailed,xpassed,warnings,elapsed_seconds,elapsed_hms,full_suite_complete,full_suite_green
+d1r_post_purge_full_suite_failure_reconciliation,$env:PYTHONNOUSERSITE='1'; $env:PYTHONDONTWRITEBYTECODE='1'; .\.venv_audit_recovery\Scripts\python.exe -B -m pytest -q --tb=short -ra --basetemp results\logs\d1r_full_suite_tmp tests,1,2122,1975,102,43,2,0,0,0,6,7507.72,2:05:07,true,false

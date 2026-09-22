@@ -1,0 +1,55 @@
+{
+  "canonical_source_artifacts": [
+    "results/tables/rq3_llm_history_metric_grid_final.csv",
+    "results/rq3_completion_scientific_freeze/freeze_manifest.json",
+    "results/rq3_completion_scientific_freeze/statistical_results.csv",
+    "results/rq3_completion_scientific_freeze/scientific_synthesis_summary.csv"
+  ],
+  "canonical_source_sha256": {
+    "results/rq3_completion_scientific_freeze/freeze_manifest.json": "c23d83a1249e700f11ca6284fa9819db70009b4607d09c779432b3ac9a09f295",
+    "results/rq3_completion_scientific_freeze/scientific_synthesis_summary.csv": "189ab285a873a74ef2c25f95f1f784b1b45edd000b21fb00f2fa265ad7fa824f",
+    "results/rq3_completion_scientific_freeze/statistical_results.csv": "976257e38d7cff90cc135bc126f27348020a1f9097f3260372bcd59c70a09f95",
+    "results/tables/rq3_llm_history_metric_grid_final.csv": "96ab1971f5717c04faba7c0b61e9e1bfc92620ac2ee56eab33d622ec312a349d"
+  },
+  "created_from_commit": "7f9efd8b747928e0ed6e19f3ff655ae0febf73eb",
+  "display_contract": {
+    "contrasts": [
+      "H2_H3",
+      "H3_H4",
+      "H4_H5",
+      "H10_H15",
+      "H15_H20"
+    ],
+    "decision_colors": {
+      "INCONCLUSIVE": "gray",
+      "NEGATIVE": "orange",
+      "POSITIVE": "blue"
+    },
+    "interval": "two-sided 95% percentile CI",
+    "orientation": "value_b_minus_value_a as frozen",
+    "p_values": false,
+    "paired_user_bootstrap_resamples": 10000,
+    "panels": 15,
+    "rows": 450
+  },
+  "figure_id": "fig_rq3_paired_bootstrap_decisions",
+  "figure_values_csv": "results/final_figures/rq3/values/fig_rq3_paired_bootstrap_decisions_values.csv",
+  "figure_values_sha256": "a97ebaf9e7933634b0ab0e8a9e3d0343d309ff84dc0b1ac5116e33a64b53bd2e",
+  "generator": "src/analysis/final_figures/rq3.py",
+  "generator_sha256": "b0c41c8184b97252dac12a3b388d0f055771bc6897b27eb123e574daefb2ae6b",
+  "limitations": [
+    "GE10 and GE20 contrasts use different frozen eligible populations and are not joined as one trajectory.",
+    "No p-values, multiplicity adjustment, or pooled cross-configuration confidence interval.",
+    "H0 to H10 and H10 to H20 inferential contrasts are absent from the frozen statistical CSV and are not invented."
+  ],
+  "output_pdf": "results/final_figures/rq3/figures/fig_rq3_paired_bootstrap_decisions.pdf",
+  "output_pdf_sha256": "c2b372da17d672eddcd47d413794457d08acafcb6ca77f53a3fc87b43c037e8c",
+  "output_png": "results/final_figures/rq3/figures/fig_rq3_paired_bootstrap_decisions.png",
+  "output_png_sha256": "7afae94b73f496c7846d92bb6ed9c7f528243e18c309afeac56096aba8dd1db5",
+  "output_svg": "results/final_figures/rq3/figures/fig_rq3_paired_bootstrap_decisions.svg",
+  "output_svg_sha256": "3ee6e3fec251c213856a72a9efd0d9667f2b308ae51d8c7867771eac0aca6647",
+  "rq": "RQ3",
+  "schema_version": "1.0",
+  "scientific_interpretation": "Frozen paired CIs show positive, negative, and inconclusive effects by configuration; later additions are not uniformly beneficial.",
+  "scientific_purpose": "Configuration-level paired-bootstrap contrast evidence"
+}

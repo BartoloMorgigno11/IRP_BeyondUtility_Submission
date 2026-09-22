@@ -1,0 +1,10 @@
+quantity,original_r5b,corrected_r5b
+total,1200,1200
+accounted,1200,1200
+valid,52,1200
+invalid,1148,0
+wrong_length,1132,0
+parse_failure,16,0
+backend_incomplete,16,0
+mistral_valid,50,600
+qwen_valid,2,600

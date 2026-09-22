@@ -1,0 +1,16 @@
+{
+  "authority": "FOREGROUND",
+  "bootstrap_contrasts": 32,
+  "decisions": {
+    "CI_SUPPORTED_NEGATIVE": 1,
+    "CI_SUPPORTED_POSITIVE": 2,
+    "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 29
+  },
+  "matched_pairs": 3200,
+  "profiles": 800,
+  "ranking_reused": 200,
+  "rankings": 4000,
+  "raw_inference_unchanged": true,
+  "status": "PASS",
+  "strict_valid": 3996
+}

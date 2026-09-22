@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-08-21T17:05:35Z",
+  "decision": "R5D_CANARY_PASS",
+  "freeze_metadata_version": "r5d_generation_involved_freeze_candidate_v1",
+  "freeze_ready": false,
+  "paper_exact": false,
+  "phase": "R5D_GENERATION_INVOLVED_RECOVERY",
+  "protocol_hash": "D55997795A10C0FFE83A9539D20A28CC21A8475A031262C893B0E7B43DA42C72",
+  "r5a_manifest_sha256": "290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD",
+  "r5c_corrected_freeze_commit": "98a93d9892d8e9b21c9cdfa981e0ebea0a987500",
+  "r5c_corrected_protocol_hash": "3AAD4945AF443A7F50846BFD044C54FEFD5B77EDBD3725B1D1F1C62D829ECDEE",
+  "raw_aggregate_sha256": "12BEB4FB64B5252B36E874EC86F1921C13BE2B1054449775DE8B285A454070AE",
+  "raw_count": 12,
+  "raw_namespace": "results/recovery/r5d_generation_involved",
+  "status_counts": {
+    "backend_incomplete": 0,
+    "invalid": 0,
+    "out_of_range": 0,
+    "parse_failure": 0,
+    "requests_accounted": 12,
+    "requests_expected": 1200,
+    "valid": 12,
+    "wrong_length": 0
+  },
+  "target_gaps_recovered": 0,
+  "target_gaps_total": 4
+}

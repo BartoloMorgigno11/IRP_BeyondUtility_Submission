@@ -1,0 +1,10 @@
+audit_step,count,status,reason
+total_foodcom_users,226570,PASS,computed from RAW_interactions chronology and RAW_recipes candidate universe
+users_with_enough_interactions_for_test_target,226570,PASS,computed from RAW_interactions chronology and RAW_recipes candidate universe
+users_with_enough_interactions_for_nested_validation_target,60314,PASS,computed from RAW_interactions chronology and RAW_recipes candidate universe
+users_satisfying_common_model_input_requirements,37576,PASS,computed from RAW_interactions chronology and RAW_recipes candidate universe
+users_remaining_after_excluding_f0_primary_test_users,37392,PASS,computed from RAW_interactions chronology and RAW_recipes candidate universe
+users_with_validation_positive_in_candidate_universe,37392,PASS,computed from RAW_interactions chronology and RAW_recipes candidate universe
+users_supporting_candidate_construction,37392,PASS,computed from RAW_interactions chronology and RAW_recipes candidate universe
+required_validation_users,1000,PASS,fixed F1BXR target; do not silently reduce N
+selection_seed,20260829,PASS,deterministic outcome-blind stable hash ordering

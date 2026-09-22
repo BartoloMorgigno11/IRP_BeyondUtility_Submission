@@ -1,0 +1,4 @@
+[submodule "original_repo/EvaLLMasRecommender"]
+	path = original_repo/EvaLLMasRecommender
+	url = https://github.com/JiangDeccc/EvaLLMasRecommender.git
+	branch = main

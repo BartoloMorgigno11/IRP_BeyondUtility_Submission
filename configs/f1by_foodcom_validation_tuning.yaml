@@ -1,0 +1,54 @@
+phase:
+  id: f1by_foodcom_validation_only_tuning
+  expected_head: 3842beb94d2303a3987795a3a22854a691e526df
+  authoritative_protocol_checkpoint: 61fbde6d048faaed9e20508484efc90fa95fa5bf
+  predecessor_state: F1BXR_CHECKPOINT_FROZEN
+  success_token: F1BY_FOODCOM_WINNERS_SELECTED
+  blocked_token: F1BY_FOODCOM_TUNING_BLOCKED
+
+paths:
+  raw_interactions: data/raw/foodcom/d0a_extracted/e7a43e623c61/RAW_interactions.csv
+  f1br_search_space: results/tables/f1br_foodcom_search_space.csv
+  f1bxr_nested_split: results/tables/f1bxr_foodcom_nested_split_audit.csv
+  f1bxr_validation_cohort: results/tables/f1bxr_foodcom_validation_cohort.csv
+  f1bxr_validation_candidates: results/tables/f1bxr_foodcom_validation_candidates.csv
+  f1bxr_validation_contract_manifest: results/manifests/f1bxr_foodcom_validation_contract.json
+  f1bx_execution_manifest: results/manifests/f1bx_execution_manifest.json
+  f0_request_budget: results/tables/f0_final_request_budget.csv
+  f1arr_final_metric_blockers: results/tables/f1arr_final_metric_blockers.csv
+  d0a_extracted_hashes: results/manifests/d0a_foodcom_extracted_file_hashes.json
+  h0_manifest: results/manifests/extension_h0_no_inference_manifest.json
+
+contract:
+  dataset: foodcom
+  validation_contract_id: F1BXR_FOODCOM_VALIDATION_CONTRACT_V1
+  tuning_seed: 42
+  selection_metric: validation_ndcg_at_5
+  tie_breaking: higher_validation_ndcg_at_5_then_lower_search_config_id_lexicographic
+  candidate_scope: candidate_set_20
+  classification: ORIGINAL_EXTENSION_VALIDATION_PROTOCOL
+
+runtime:
+  implementation_classification: LOCAL_PROJECT_WRAPPER_NOT_RECHORUS_EXACT
+  optimizer: Adam
+  epochs: 5
+  max_sequence_length: 50
+  dropout: 0.2
+  bprmf_batch_size: 4096
+  gru4rec_batch_size: 512
+  sasrec_batch_size: 512
+  lightgcn_batch_size: 4096
+  device_policy: cuda_if_available_else_cpu
+  deterministic_algorithms: true
+  negative_sampling: deterministic_one_train_universe_negative_per_positive
+
+execution:
+  allow_foodcom_tuning_training: true
+  allow_original_four_final_runs: false
+  allow_foodcom_final_five_seed_runs: false
+  allow_final_test_evaluation: false
+  allow_llm_inference: false
+  allow_external_api: false
+  allow_download: false
+  allow_network: false
+  allow_commit: false

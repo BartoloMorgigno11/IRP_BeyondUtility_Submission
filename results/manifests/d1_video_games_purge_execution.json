@@ -1,0 +1,204 @@
+{
+  "active_dataset_audit": {
+    "dataset_ids": [
+      "beauty",
+      "sports",
+      "ml1m",
+      "lastfm",
+      "foodcom"
+    ],
+    "dataset_labels": [
+      "Beauty",
+      "Sports",
+      "ML-1M",
+      "LastFM",
+      "Food.com"
+    ],
+    "total_active_cells": 1542,
+    "total_active_raw_experiments": 114,
+    "unexpected_dataset_rows": 0
+  },
+  "active_dataset_set": [
+    "Beauty",
+    "Sports",
+    "ML-1M",
+    "LastFM",
+    "Food.com"
+  ],
+  "branch": "master",
+  "decision_token": "D1_FOODCOM_ONLY_OPERATIONAL_TREE_VALIDATED",
+  "downloads_executed": 0,
+  "execute": true,
+  "finished_at": "2026-08-26T08:26:48.174123+00:00",
+  "head": "adbf060f93872f6a75a32d38bbfe34ce30ed059e",
+  "llm_requests_executed": 0,
+  "manual_review_rows": 4,
+  "manual_review_unresolved": 0,
+  "network_calls_executed": 0,
+  "output_hashes": {
+    "report/d1_final_fifth_dataset_cleanup.md": "e1a02f8434cca8ce95558d3613d2ac0f68ef51bce558624384df908ce60fc426",
+    "report/extension_cell_universe.md": "8a62b4d80b7fb1ddbfd77e0efe69a946529fcb9192d1b9b997eec01c9552f038",
+    "results/manifests/extension_cell_universe_freeze.json": "920a6471743f7c55041d3c916ae23a31981f8a2be8b272b0a7e6268185d8ea69",
+    "results/tables/d1_active_dataset_audit.csv": "5f682456346c5212787aa6785eff5d44590f154422aee6c6d3f5eb3cc4ebdf6e",
+    "results/tables/d1_manual_review_resolution.csv": "d5cd39cecd5f303b21597c172d05dd36c4acee9a8cf9df2345af2617daa47fb8",
+    "results/tables/d1_remaining_video_games_reference_audit.csv": "039370b4a7a559ab92b489351881f52b572c478a0be4bd2eeb230a158a3a84f9",
+    "results/tables/d1_removed_artifacts.csv": "9d5574e9091484de282c723c2c6721c3b4d8101ace6d24726204dadaf8fdb7a6",
+    "results/tables/d1_retained_generic_artifacts.csv": "2ba0633d409448a97196bb74c8149bd2e2ee999ab605292215ea01f52bfeec9d",
+    "results/tables/extension_cell_completeness_summary.csv": "fc3e5165df599135c43686b8963a0fe62ceb54cea4fc251d42a800d90949fa7e",
+    "results/tables/extension_cell_universe.csv": "a657dd02b1838672088dc173799ad8a912ea44ab80b7f17abb8ff0af8684b671",
+    "results/tables/extension_metric_applicability_matrix.csv": "3ff5f0bb78a2c45156e3c4f516e5d2e460c704edf716f4e4fb87d5a9ecdcd89c",
+    "results/tables/extension_parity_summary.csv": "b45fe0fd74e778a57d0ef8fa411fa6732ea370c60b08fda00e85c55efc3e08c2",
+    "results/tables/extension_raw_experiment_universe.csv": "544807d471ac91b5dc9468fb1fd0f43c07a304f6e7a443cd0e82ec14a5e09973"
+  },
+  "phase_id": "d1_final_loser_dataset_purge",
+  "post_purge": {
+    "created_at": "2026-08-26T08:14:10.541374+00:00",
+    "d0a_artifact_hashes": {
+      "results/manifests/d0a_foodcom_extracted_file_hashes.json": "579af687641cfad7948badbf064913406494b3bbc801d96ef8582ac19d532e22",
+      "results/manifests/d0a_foodcom_no_inference_manifest.json": "39ed2fa4256b1a388a46dc560065b06e371a88069b7489d900f31eca813f429e",
+      "results/manifests/d0a_foodcom_raw_archive_manifest.json": "2f09183a4bc9e74b225ba3895304b3d8976cb81c63e15f8e85fb8198e34bb445"
+    },
+    "d0b_artifact_hashes": {
+      "results/manifests/d0b_loser_purge_inventory.json": "77cad09ec8bb61b9b8d3e7ebf26a936ee8ae0b8269c7ef7a625245045b0822e1",
+      "results/manifests/d0b_no_inference_manifest.json": "627e496f7dd3feda97f0eca9100748f6bdfa93a417fbfaf97a5d9c5ba35c2d0d",
+      "results/tables/d0b_authoritative_input_evidence.csv": "c20be0254ecc5525c02963dd9afb97f3caad0a8f06f92641bafb179cfca66a9f",
+      "results/tables/d0b_completeness_counts.csv": "65a1adc79e3133d1183308e8154a0e1d4ef4634ef80d4ef7873fd39b1f32e62a",
+      "results/tables/d0b_dataset_specific_blockers.csv": "7ba67c00b0a1c1cb33845372da6101893f133e37fff6e2ef583e40ff70538e94",
+      "results/tables/d0b_fifth_dataset_complete_requirement_matrix.csv": "efc56c8b2a47aa9ae73895a37ab232849c6b18f7bcee2de95c6206fd638f8fed",
+      "results/tables/d0b_final_selection_decision.csv": "371e41440e6e9d8831827d9ad6e538012b644e3af4720f39013aba247812051f",
+      "results/tables/d0b_future_inference_budget.csv": "9d080f6ae75abb39db9dc69da875427322e6105a14c851bbd41c93cca063c856"
+    },
+    "foodcom_hashes": {
+      "RAW_interactions.csv": "4e278d2f687b1020f5694e51003a7d6174344b51aebbdf4530de88b5c6a78ee4",
+      "RAW_recipes.csv": "6a8136d1da9e03396a9f52d72200b3fddb8fe103f11e1496effca30ac4e0539f",
+      "archive": "e7a43e623c616799f78a0479b550483450fd7ede4e0c40979db3458a82b5b913"
+    },
+    "git": {
+      "branch": "master",
+      "head": "adbf060f93872f6a75a32d38bbfe34ce30ed059e",
+      "status_short": "M .gitignore\n M Espansione_progetto/gemma2_su_vecchi_dataset/0_prepara_beauty_sports.py\n D Espansione_progetto/video_games_tutti_esperimenti/1_run_baselines_video_games.py\n D Espansione_progetto/video_games_tutti_esperimenti/2_run_gemma2_video_games.py\n D Espansione_progetto/video_games_tutti_esperimenti/3_aggrega_risultati_video_games.py\n D Espansione_progetto/video_games_tutti_esperimenti/ISTRUZIONI.md\n D Espansione_progetto/video_games_tutti_esperimenti/run_all_video_games.sh\n D ISTRUZIONI_AMICO.md\n M configs/extension_e0_protocol.yaml\n D configs/extension_e1_pilot.yaml\n D configs/video_games.yaml\n D data/processed/video_games/candidates.csv\n D data/processed/video_games/catalog.csv\n D data/processed/video_games/ground_truth.csv\n D data/processed/video_games/interactions.csv\n D report/dataset_audit.md\n D report/extension_e0_protocol_freeze.md\n D report/extension_e1_pilot.md\n M report/notes.md\n D report/results_analysis.md\n D results/extension/e1_pilot/execution_records.jsonl\n D results/extension/e1_pilot/raw/E1-REQ-0001.json\n D results/extension/e1_pilot/raw/E1-REQ-0002.json\n D results/extension/e1_pilot/raw/E1-REQ-0003.json\n D results/extension/e1_pilot/raw/E1-REQ-0004.json\n D results/extension/e1_pilot/raw/E1-REQ-0005.json\n D results/extension/e1_pilot/raw/E1-REQ-0006.json\n D results/extension/e1_pilot/raw/E1-REQ-0007.json\n D results/extension/e1_pilot/raw/E1-REQ-0008.json\n D results/extension/e1_pilot/raw/E1-REQ-0009.json\n D results/extension/e1_pilot/raw/E1-REQ-0010.json\n D results/extension/e1_pilot/raw/E1-REQ-0011.json\n D results/extension/e1_pilot/raw/E1-REQ-0012.json\n D results/extension/e1_pilot/raw/E1-REQ-0013.json\n D results/extension/e1_pilot/raw/E1-REQ-0014.json\n D results/extension/e1_pilot/raw/E1-REQ-0015.json\n D results/extension/e1_pilot/raw/E1-REQ-0016.json\n D results/extension/e1_pilot/raw/E1-REQ-0017.json\n D results/extension/e1_pilot/raw/E1-REQ-0018.json\n D results/extension/e1_pilot/raw/E1-REQ-0019.json\n D results/extension/e1_pilot/raw/E1-REQ-0020.json\n D results/extension/e1_pilot/raw/E1-REQ-0021.json\n D results/extension/e1_pilot/raw/E1-REQ-0022.json\n D results/extension/e1_pilot/raw/E1-REQ-0023.json\n D results/extension/e1_pilot/raw/E1-REQ-0024.json\n D results/extension/e1_pilot/raw/E1-REQ-0025.json\n D results/extension/e1_pilot/raw/E1-REQ-0026.json\n D results/extension/e1_pilot/raw/E1-REQ-0027.json\n D results/extension/e1_pilot/raw/E1-REQ-0028.json\n D results/extension/e1_pilot/raw/E1-REQ-0029.json\n D results/extension/e1_pilot/raw/E1-REQ-0030.json\n D results/extension/e1_pilot/raw/E1-REQ-0031.json\n D results/extension/e1_pilot/raw/E1-REQ-0032.json\n D results/extension/e1_pilot/raw/E1-REQ-0033.json\n D results/extension/e1_pilot/raw/E1-REQ-0034.json\n D results/extension/e1_pilot/raw/E1-REQ-0035.json\n D results/extension/e1_pilot/raw/E1-REQ-0036.json\n D results/extension/e1_pilot/raw/E1-REQ-0037.json\n D results/extension/e1_pilot/raw/E1-REQ-0038.json\n D results/extension/e1_pilot/raw/E1-REQ-0039.json\n D results/extension/e1_pilot/raw/E1-REQ-0040.json\n D results/extension/e1_pilot/raw/E1-REQ-0041.json\n D results/extension/e1_pilot/raw/E1-REQ-0042.json\n D results/extension/e1_pilot/raw/E1-REQ-0043.json\n D results/extension/e1_pilot/raw/E1-REQ-0044.json\n D results/extension/e1_pilot/raw/E1-REQ-0045.json\n D results/extension/e1_pilot/raw/E1-REQ-0046.json\n D results/extension/e1_pilot/raw/E1-REQ-0047.json\n D results/extension/e1_pilot/raw/E1-REQ-0048.json\n D results/extension/e1_pilot/raw/E1-REQ-0049.json\n D results/extension/e1_pilot/raw/E1-REQ-0050.json\n D results/extension/e1_pilot/raw/E1-REQ-0051.json\n D results/extension/e1_pilot/raw/E1-REQ-0052.json\n D results/extension/e1_pilot/raw/E1-REQ-0053.json\n D results/extension/e1_pilot/raw/E1-REQ-0054.json\n D results/extension/e1_pilot/raw/E1-REQ-0055.json\n D results/extension/e1_pilot/raw/E1-REQ-0056.json\n D results/extension/e1_pilot/raw/E1-REQ-0057.json\n D results/extension/e1_pilot/raw/E1-REQ-0058.json\n D results/extension/e1_pilot/raw/E1-REQ-0059.json\n D results/extension/e1_pilot/raw/E1-REQ-0060.json\n D results/extension/e1_pilot/raw/E1-REQ-0061.json\n D results/extension/e1_pilot/raw/E1-REQ-0062.json\n D results/extension/e1_pilot/raw/E1-REQ-0063.json\n D results/extension/e1_pilot/raw/E1-REQ-0064.json\n D results/extension/e1_pilot/raw/E1-REQ-0065.json\n D results/extension/e1_pilot/raw/E1-REQ-0066.json\n D results/extension/e1_pilot/raw/E1-REQ-0067.json\n D results/extension/e1_pilot/raw/E1-REQ-0068.json\n D results/extension/e1_pilot/raw/E1-REQ-0069.json\n D results/extension/e1_pilot/raw/E1-REQ-0070.json\n D results/extension/e1_pilot/raw/E1-REQ-0071.json\n D results/extension/e1_pilot/raw/E1-REQ-0072.json\n D results/extension/e1_pilot/raw/E1-REQ-0073.json\n D results/extension/e1_pilot/raw/E1-REQ-0074.json\n D results/extension/e1_pilot/raw/E1-REQ-0075.json\n D results/extension/e1_pilot/raw/E1-REQ-0076.json\n D results/extension/e1_pilot/raw/E1-REQ-0077.json\n D results/extension/e1_pilot/raw/E1-REQ-0078.json\n D results/extension/e1_pilot/raw/E1-REQ-0079.json\n D results/extension/e1_pilot/raw/E1-REQ-0080.json\n D results/extension/e1_pilot/raw/E1-REQ-0081.json\n D results/extension/e1_pilot/raw/E1-REQ-0082.json\n D results/extension/e1_pilot/raw/E1-REQ-0083.json\n D results/extension/e1_pilot/raw/E1-REQ-0084.json\n D results/extension/e1_pilot/raw/E1-REQ-0085.json\n D results/extension/e1_pilot/raw/E1-REQ-0086.json\n D results/extension/e1_pilot/raw/E1-REQ-0087.json\n D results/extension/e1_pilot/raw/E1-REQ-0088.json\n D results/extension/e1_pilot/raw/E1-REQ-0089.json\n D results/extension/e1_pilot/raw/E1-REQ-0090.json\n D results/extension/e1_pilot/raw/E1-REQ-0091.json\n D results/extension/e1_pilot/raw/E1-REQ-0092.json\n D results/extension/e1_pilot/raw/E1-REQ-0093.json\n D results/extension/e1_pilot/raw/E1-REQ-0094.json\n D results/extension/e1_pilot/raw/E1-REQ-0095.json\n D results/extension/e1_pilot/raw/E1-REQ-0096.json\n D results/extension/e1_pilot/raw/E1-REQ-0097.json\n D results/extension/e1_pilot/raw/E1-REQ-0098.json\n D results/extension/e1_pilot/raw/E1-REQ-0099.json\n D results/extension/e1_pilot/raw/E1-REQ-0100.json\n D results/extension/e1_pilot/raw/E1-REQ-0101.json\n D results/extension/e1_pilot/raw/E1-REQ-0102.json\n D results/extension/e1_pilot/raw/E1-REQ-0103.json\n D results/extension/e1_pilot/raw/E1-REQ-0104.json\n D results/extension/e1_pilot/raw/E1-REQ-0105.json\n D results/extension/e1_pilot/raw/E1-REQ-0106.json\n D results/extension/e1_pilot/raw/E1-REQ-0107.json\n D results/extension/e1_pilot/raw/E1-REQ-0108.json\n D results/extension/e1_pilot/raw/E1-REQ-0109.json\n D results/extension/e1_pilot/raw/E1-REQ-0110.json\n D results/extension/e1_pilot/raw/E1-REQ-0111.json\n D results/extension/e1_pilot/raw/E1-REQ-0112.json\n D results/extension/e1_pilot/raw/E1-REQ-0113.json\n D results/extension/e1_pilot/raw/E1-REQ-0114.json\n D results/extension/e1_pilot/raw/E1-REQ-0115.json\n D results/extension/e1_pilot/raw/E1-REQ-0116.json\n D results/extension/e1_pilot/raw/E1-REQ-0117.json\n D results/extension/e1_pilot/raw/E1-REQ-0118.json\n D results/extension/e1_pilot/raw/E1-REQ-0119.json\n D results/extension/e1_pilot/raw/E1-REQ-0120.json\n D results/extension/e1_pilot/raw/E1-REQ-0121.json\n D results/extension/e1_pilot/raw/E1-REQ-0122.json\n D results/extension/e1_pilot/raw/E1-REQ-0123.json\n D results/extension/e1_pilot/raw/E1-REQ-0124.json\n D results/extension/e1_pilot/raw/E1-REQ-0125.json\n D results/extension/e1_pilot/raw/E1-REQ-0126.json\n D results/extension/e1_pilot/raw/E1-REQ-0127.json\n D results/extension/e1_pilot/raw/E1-REQ-0128.json\n D results/extension/e1_pilot/raw/E1-REQ-0129.json\n D results/extension/e1_pilot/raw/E1-REQ-0130.json\n D results/extension/e1_pilot/raw/E1-REQ-0131.json\n D results/extension/e1_pilot/raw/E1-REQ-0132.json\n D results/extension/extension_e0_video_games_mostpop_candidate_dry_run.csv\n D results/extension/extension_e0_video_games_random_candidate_dry_run.csv\n D results/manifests/extension_e0_prompt_samples.csv\n D results/manifests/extension_e0_reproducibility.json\n D results/manifests/extension_e0_video_games_primary_candidates.csv\n D results/manifests/extension_e1_pilot_manifest.csv\n D results/manifests/extension_e1_reproducibility.json\n D results/manifests/extension_e1_response_manifest.csv\n D results/manifests/extension_e1_runtime_provenance.json\n D results/manifests/extension_e1_selected_users.csv\n D results/metrics/video_games_coverage_metrics.csv\n D results/metrics/video_games_final_results.csv\n D results/metrics/video_games_position_bias_metrics.csv\n D results/metrics/video_games_reproduction_metrics.csv\n D results/raw_outputs/video_games_history_length_prompts.csv\n D results/raw_outputs/video_games_mostpop_recommendations.csv\n D results/tables/extension_e0_video_games_dry_run_summary.csv\n D results/tables/extension_e1_canary_results.csv\n D results/tables/extension_e1_early_health_results.csv\n D results/tables/extension_e1_full_run_projection.csv\n D results/tables/extension_e1_history_validation.csv\n D results/tables/extension_e1_model_readiness.csv\n D results/tables/extension_e1_pilot_utility_by_cell.csv\n D results/tables/extension_e1_preflight.csv\n D results/tables/extension_e1_reliability_by_cell.csv\n D results/tables/extension_e1_reliability_by_model.csv\n D results/tables/extension_e1_runtime_by_model.csv\n D src/data/prepare_video_games.py\n D src/experiments/run_video_games_gemma2.py\n M src/extension/e0_candidates.py\n D src/extension/e0_dry_run.py\n M src/extension/e0_protocol.py\n D src/extension/e1_pilot.py\n M tests/test_extension_e0_protocol.py\n D tests/test_extension_e1_pilot.py\n?? report/d0a_foodcom_material_feasibility.md\n?? report/d0b_final_fifth_dataset_selection.md\n?? report/d1_final_fifth_dataset_cleanup.md\n?? report/extension_cell_universe.md\n?? report/extension_h0_history_final_parity_audit.md\n?? results/manifests/d0a_foodcom_extracted_file_hashes.json\n?? results/manifests/d0a_foodcom_no_inference_manifest.json\n?? results/manifests/d0a_foodcom_raw_archive_manifest.json\n?? results/manifests/d0b_loser_purge_inventory.json\n?? results/manifests/d0b_no_inference_manifest.json\n?? results/manifests/d1_video_games_purge_execution.json\n?? results/manifests/extension_cell_universe_freeze.json\n?? results/manifests/extension_h0_no_inference_manifest.json\n?? results/tables/d0a_foodcom_archive_inventory.csv\n?? results/tables/d0a_foodcom_duplicate_timestamp_audit.csv\n?? results/tables/d0a_foodcom_feature_coverage.csv\n?? results/tables/d0a_foodcom_history200_feasibility.csv\n?? results/tables/d0a_foodcom_history200_users.csv\n?? results/tables/d0a_foodcom_metadata_coverage.csv\n?? results/tables/d0a_foodcom_metric_capability.csv\n?? results/tables/d0a_foodcom_paper_dimension_capability.csv\n?? results/tables/d0a_foodcom_primary1000_candidates.csv\n?? results/tables/d0a_foodcom_primary1000_feasibility.csv\n?? results/tables/d0a_foodcom_primary1000_users.csv\n?? results/tables/d0a_foodcom_raw_statistics.csv\n?? results/tables/d0a_foodcom_schema_audit.csv\n?? results/tables/d0a_foodcom_split_statistics.csv\n?? results/tables/d0a_foodcom_traditional_model_capability.csv\n?? results/tables/d0b_authoritative_input_evidence.csv\n?? results/tables/d0b_completeness_counts.csv\n?? results/tables/d0b_dataset_specific_blockers.csv\n?? results/tables/d0b_fifth_dataset_complete_requirement_matrix.csv\n?? results/tables/d0b_final_selection_decision.csv\n?? results/tables/d0b_future_inference_budget.csv\n?? results/tables/d1_active_dataset_audit.csv\n?? results/tables/d1_manual_review_resolution.csv\n?? results/tables/d1_remaining_video_games_reference_audit.csv\n?? results/tables/d1_removed_artifacts.csv\n?? results/tables/d1_retained_generic_artifacts.csv\n?? results/tables/extension_cell_completeness_summary.csv\n?? results/tables/extension_cell_universe.csv\n?? results/tables/extension_h0_72_cell_history_matrix.csv\n?? results/tables/extension_h0_dataset_l20_feasibility.csv\n?? results/tables/extension_h0_exact_history_request_budget.csv\n?? results/tables/extension_h0_final_history_protocol_identity_matrix.csv\n?? results/tables/extension_h0_final_paired_200_cohorts.csv\n?? results/tables/extension_h0_historical_history_experiment_inventory.csv\n?? results/tables/extension_h0_paper_vs_local_history_grid.csv\n?? results/tables/extension_h0_reusable_vs_to_compute.csv\n?? results/tables/extension_metric_applicability_matrix.csv\n?? results/tables/extension_parity_summary.csv\n?? results/tables/extension_raw_experiment_universe.csv\n?? src/extension/d0a_foodcom_material_feasibility.py\n?? src/extension/d0b_final_fifth_dataset_selection.py\n?? src/extension/d1_final_dataset_cleanup.py\n?? src/extension/e2a_cell_universe.py\n?? src/extension/h0_history_final_parity_audit.py\n?? tests/test_extension_d0a_foodcom_material_feasibility.py\n?? tests/test_extension_d0b_final_fifth_dataset_selection.py\n?? tests/test_extension_d1_final_dataset_cleanup.py\n?? tests/test_extension_e2a_cell_universe.py\n?? tests/test_extension_h0_history_final_parity_audit.py"
+    },
+    "h0_artifact_hashes": {
+      "results/manifests/extension_h0_no_inference_manifest.json": "ad11c149090ab454c4235abb8db1bae8c7a4bb3a3d43eddc60e44d8055cbde48",
+      "results/tables/extension_h0_72_cell_history_matrix.csv": "63dff562a03486d38918dd74258e5f61ccb11b5909578f40d71d3ed095810c50",
+      "results/tables/extension_h0_dataset_l20_feasibility.csv": "7cd8badc2261239f5b3b5007c322b01bd4c3946325be5bf93c590b5f6a9892ac",
+      "results/tables/extension_h0_exact_history_request_budget.csv": "5b56348b9dcb4f87bc40af365501115a5286a4f258f09542d8961d5cee782071",
+      "results/tables/extension_h0_final_history_protocol_identity_matrix.csv": "2869b194819851609afb717a348adecc3f6b276c6c66a72036814c2a58985a1d",
+      "results/tables/extension_h0_final_paired_200_cohorts.csv": "2a18e0d4d318572330ddb545ea84899d3c6df8a388ba71314ab577a4966465b3",
+      "results/tables/extension_h0_historical_history_experiment_inventory.csv": "c9925101840a66441ecf5f514c74e0ef013c348ee41d7fecd5da4341a0d342be",
+      "results/tables/extension_h0_paper_vs_local_history_grid.csv": "7f87f3bc05654e78841a88f1bcf9eee9404ccfad116e5e19459457f5913cc1b7",
+      "results/tables/extension_h0_reusable_vs_to_compute.csv": "95c5182d7b499030de4bf85f22fa87221b0e7a94129f9d3979a1845b4d4ea707"
+    },
+    "inventory_reported_hash": "",
+    "purge_inventory_hash": "77cad09ec8bb61b9b8d3e7ebf26a936ee8ae0b8269c7ef7a625245045b0822e1"
+  },
+  "pre_purge": {
+    "created_at": "2026-08-26T08:13:49.021239+00:00",
+    "d0a_artifact_hashes": {
+      "results/manifests/d0a_foodcom_extracted_file_hashes.json": "579af687641cfad7948badbf064913406494b3bbc801d96ef8582ac19d532e22",
+      "results/manifests/d0a_foodcom_no_inference_manifest.json": "39ed2fa4256b1a388a46dc560065b06e371a88069b7489d900f31eca813f429e",
+      "results/manifests/d0a_foodcom_raw_archive_manifest.json": "2f09183a4bc9e74b225ba3895304b3d8976cb81c63e15f8e85fb8198e34bb445"
+    },
+    "d0b_artifact_hashes": {
+      "results/manifests/d0b_loser_purge_inventory.json": "77cad09ec8bb61b9b8d3e7ebf26a936ee8ae0b8269c7ef7a625245045b0822e1",
+      "results/manifests/d0b_no_inference_manifest.json": "627e496f7dd3feda97f0eca9100748f6bdfa93a417fbfaf97a5d9c5ba35c2d0d",
+      "results/tables/d0b_authoritative_input_evidence.csv": "c20be0254ecc5525c02963dd9afb97f3caad0a8f06f92641bafb179cfca66a9f",
+      "results/tables/d0b_completeness_counts.csv": "65a1adc79e3133d1183308e8154a0e1d4ef4634ef80d4ef7873fd39b1f32e62a",
+      "results/tables/d0b_dataset_specific_blockers.csv": "7ba67c00b0a1c1cb33845372da6101893f133e37fff6e2ef583e40ff70538e94",
+      "results/tables/d0b_fifth_dataset_complete_requirement_matrix.csv": "efc56c8b2a47aa9ae73895a37ab232849c6b18f7bcee2de95c6206fd638f8fed",
+      "results/tables/d0b_final_selection_decision.csv": "371e41440e6e9d8831827d9ad6e538012b644e3af4720f39013aba247812051f",
+      "results/tables/d0b_future_inference_budget.csv": "9d080f6ae75abb39db9dc69da875427322e6105a14c851bbd41c93cca063c856"
+    },
+    "foodcom_hashes": {
+      "RAW_interactions.csv": "4e278d2f687b1020f5694e51003a7d6174344b51aebbdf4530de88b5c6a78ee4",
+      "RAW_recipes.csv": "6a8136d1da9e03396a9f52d72200b3fddb8fe103f11e1496effca30ac4e0539f",
+      "archive": "e7a43e623c616799f78a0479b550483450fd7ede4e0c40979db3458a82b5b913"
+    },
+    "git": {
+      "branch": "master",
+      "head": "adbf060f93872f6a75a32d38bbfe34ce30ed059e",
+      "status_short": "M .gitignore\n M Espansione_progetto/gemma2_su_vecchi_dataset/0_prepara_beauty_sports.py\n D Espansione_progetto/video_games_tutti_esperimenti/1_run_baselines_video_games.py\n D Espansione_progetto/video_games_tutti_esperimenti/2_run_gemma2_video_games.py\n D Espansione_progetto/video_games_tutti_esperimenti/3_aggrega_risultati_video_games.py\n D Espansione_progetto/video_games_tutti_esperimenti/ISTRUZIONI.md\n D Espansione_progetto/video_games_tutti_esperimenti/run_all_video_games.sh\n M configs/extension_e0_protocol.yaml\n D configs/extension_e1_pilot.yaml\n D configs/video_games.yaml\n D data/processed/video_games/candidates.csv\n D data/processed/video_games/catalog.csv\n D data/processed/video_games/ground_truth.csv\n D data/processed/video_games/interactions.csv\n D report/dataset_audit.md\n D report/extension_e0_protocol_freeze.md\n D report/extension_e1_pilot.md\n M report/notes.md\n D report/results_analysis.md\n D results/extension/e1_pilot/execution_records.jsonl\n D results/extension/e1_pilot/raw/E1-REQ-0001.json\n D results/extension/e1_pilot/raw/E1-REQ-0002.json\n D results/extension/e1_pilot/raw/E1-REQ-0003.json\n D results/extension/e1_pilot/raw/E1-REQ-0004.json\n D results/extension/e1_pilot/raw/E1-REQ-0005.json\n D results/extension/e1_pilot/raw/E1-REQ-0006.json\n D results/extension/e1_pilot/raw/E1-REQ-0007.json\n D results/extension/e1_pilot/raw/E1-REQ-0008.json\n D results/extension/e1_pilot/raw/E1-REQ-0009.json\n D results/extension/e1_pilot/raw/E1-REQ-0010.json\n D results/extension/e1_pilot/raw/E1-REQ-0011.json\n D results/extension/e1_pilot/raw/E1-REQ-0012.json\n D results/extension/e1_pilot/raw/E1-REQ-0013.json\n D results/extension/e1_pilot/raw/E1-REQ-0014.json\n D results/extension/e1_pilot/raw/E1-REQ-0015.json\n D results/extension/e1_pilot/raw/E1-REQ-0016.json\n D results/extension/e1_pilot/raw/E1-REQ-0017.json\n D results/extension/e1_pilot/raw/E1-REQ-0018.json\n D results/extension/e1_pilot/raw/E1-REQ-0019.json\n D results/extension/e1_pilot/raw/E1-REQ-0020.json\n D results/extension/e1_pilot/raw/E1-REQ-0021.json\n D results/extension/e1_pilot/raw/E1-REQ-0022.json\n D results/extension/e1_pilot/raw/E1-REQ-0023.json\n D results/extension/e1_pilot/raw/E1-REQ-0024.json\n D results/extension/e1_pilot/raw/E1-REQ-0025.json\n D results/extension/e1_pilot/raw/E1-REQ-0026.json\n D results/extension/e1_pilot/raw/E1-REQ-0027.json\n D results/extension/e1_pilot/raw/E1-REQ-0028.json\n D results/extension/e1_pilot/raw/E1-REQ-0029.json\n D results/extension/e1_pilot/raw/E1-REQ-0030.json\n D results/extension/e1_pilot/raw/E1-REQ-0031.json\n D results/extension/e1_pilot/raw/E1-REQ-0032.json\n D results/extension/e1_pilot/raw/E1-REQ-0033.json\n D results/extension/e1_pilot/raw/E1-REQ-0034.json\n D results/extension/e1_pilot/raw/E1-REQ-0035.json\n D results/extension/e1_pilot/raw/E1-REQ-0036.json\n D results/extension/e1_pilot/raw/E1-REQ-0037.json\n D results/extension/e1_pilot/raw/E1-REQ-0038.json\n D results/extension/e1_pilot/raw/E1-REQ-0039.json\n D results/extension/e1_pilot/raw/E1-REQ-0040.json\n D results/extension/e1_pilot/raw/E1-REQ-0041.json\n D results/extension/e1_pilot/raw/E1-REQ-0042.json\n D results/extension/e1_pilot/raw/E1-REQ-0043.json\n D results/extension/e1_pilot/raw/E1-REQ-0044.json\n D results/extension/e1_pilot/raw/E1-REQ-0045.json\n D results/extension/e1_pilot/raw/E1-REQ-0046.json\n D results/extension/e1_pilot/raw/E1-REQ-0047.json\n D results/extension/e1_pilot/raw/E1-REQ-0048.json\n D results/extension/e1_pilot/raw/E1-REQ-0049.json\n D results/extension/e1_pilot/raw/E1-REQ-0050.json\n D results/extension/e1_pilot/raw/E1-REQ-0051.json\n D results/extension/e1_pilot/raw/E1-REQ-0052.json\n D results/extension/e1_pilot/raw/E1-REQ-0053.json\n D results/extension/e1_pilot/raw/E1-REQ-0054.json\n D results/extension/e1_pilot/raw/E1-REQ-0055.json\n D results/extension/e1_pilot/raw/E1-REQ-0056.json\n D results/extension/e1_pilot/raw/E1-REQ-0057.json\n D results/extension/e1_pilot/raw/E1-REQ-0058.json\n D results/extension/e1_pilot/raw/E1-REQ-0059.json\n D results/extension/e1_pilot/raw/E1-REQ-0060.json\n D results/extension/e1_pilot/raw/E1-REQ-0061.json\n D results/extension/e1_pilot/raw/E1-REQ-0062.json\n D results/extension/e1_pilot/raw/E1-REQ-0063.json\n D results/extension/e1_pilot/raw/E1-REQ-0064.json\n D results/extension/e1_pilot/raw/E1-REQ-0065.json\n D results/extension/e1_pilot/raw/E1-REQ-0066.json\n D results/extension/e1_pilot/raw/E1-REQ-0067.json\n D results/extension/e1_pilot/raw/E1-REQ-0068.json\n D results/extension/e1_pilot/raw/E1-REQ-0069.json\n D results/extension/e1_pilot/raw/E1-REQ-0070.json\n D results/extension/e1_pilot/raw/E1-REQ-0071.json\n D results/extension/e1_pilot/raw/E1-REQ-0072.json\n D results/extension/e1_pilot/raw/E1-REQ-0073.json\n D results/extension/e1_pilot/raw/E1-REQ-0074.json\n D results/extension/e1_pilot/raw/E1-REQ-0075.json\n D results/extension/e1_pilot/raw/E1-REQ-0076.json\n D results/extension/e1_pilot/raw/E1-REQ-0077.json\n D results/extension/e1_pilot/raw/E1-REQ-0078.json\n D results/extension/e1_pilot/raw/E1-REQ-0079.json\n D results/extension/e1_pilot/raw/E1-REQ-0080.json\n D results/extension/e1_pilot/raw/E1-REQ-0081.json\n D results/extension/e1_pilot/raw/E1-REQ-0082.json\n D results/extension/e1_pilot/raw/E1-REQ-0083.json\n D results/extension/e1_pilot/raw/E1-REQ-0084.json\n D results/extension/e1_pilot/raw/E1-REQ-0085.json\n D results/extension/e1_pilot/raw/E1-REQ-0086.json\n D results/extension/e1_pilot/raw/E1-REQ-0087.json\n D results/extension/e1_pilot/raw/E1-REQ-0088.json\n D results/extension/e1_pilot/raw/E1-REQ-0089.json\n D results/extension/e1_pilot/raw/E1-REQ-0090.json\n D results/extension/e1_pilot/raw/E1-REQ-0091.json\n D results/extension/e1_pilot/raw/E1-REQ-0092.json\n D results/extension/e1_pilot/raw/E1-REQ-0093.json\n D results/extension/e1_pilot/raw/E1-REQ-0094.json\n D results/extension/e1_pilot/raw/E1-REQ-0095.json\n D results/extension/e1_pilot/raw/E1-REQ-0096.json\n D results/extension/e1_pilot/raw/E1-REQ-0097.json\n D results/extension/e1_pilot/raw/E1-REQ-0098.json\n D results/extension/e1_pilot/raw/E1-REQ-0099.json\n D results/extension/e1_pilot/raw/E1-REQ-0100.json\n D results/extension/e1_pilot/raw/E1-REQ-0101.json\n D results/extension/e1_pilot/raw/E1-REQ-0102.json\n D results/extension/e1_pilot/raw/E1-REQ-0103.json\n D results/extension/e1_pilot/raw/E1-REQ-0104.json\n D results/extension/e1_pilot/raw/E1-REQ-0105.json\n D results/extension/e1_pilot/raw/E1-REQ-0106.json\n D results/extension/e1_pilot/raw/E1-REQ-0107.json\n D results/extension/e1_pilot/raw/E1-REQ-0108.json\n D results/extension/e1_pilot/raw/E1-REQ-0109.json\n D results/extension/e1_pilot/raw/E1-REQ-0110.json\n D results/extension/e1_pilot/raw/E1-REQ-0111.json\n D results/extension/e1_pilot/raw/E1-REQ-0112.json\n D results/extension/e1_pilot/raw/E1-REQ-0113.json\n D results/extension/e1_pilot/raw/E1-REQ-0114.json\n D results/extension/e1_pilot/raw/E1-REQ-0115.json\n D results/extension/e1_pilot/raw/E1-REQ-0116.json\n D results/extension/e1_pilot/raw/E1-REQ-0117.json\n D results/extension/e1_pilot/raw/E1-REQ-0118.json\n D results/extension/e1_pilot/raw/E1-REQ-0119.json\n D results/extension/e1_pilot/raw/E1-REQ-0120.json\n D results/extension/e1_pilot/raw/E1-REQ-0121.json\n D results/extension/e1_pilot/raw/E1-REQ-0122.json\n D results/extension/e1_pilot/raw/E1-REQ-0123.json\n D results/extension/e1_pilot/raw/E1-REQ-0124.json\n D results/extension/e1_pilot/raw/E1-REQ-0125.json\n D results/extension/e1_pilot/raw/E1-REQ-0126.json\n D results/extension/e1_pilot/raw/E1-REQ-0127.json\n D results/extension/e1_pilot/raw/E1-REQ-0128.json\n D results/extension/e1_pilot/raw/E1-REQ-0129.json\n D results/extension/e1_pilot/raw/E1-REQ-0130.json\n D results/extension/e1_pilot/raw/E1-REQ-0131.json\n D results/extension/e1_pilot/raw/E1-REQ-0132.json\n D results/extension/extension_e0_video_games_mostpop_candidate_dry_run.csv\n D results/extension/extension_e0_video_games_random_candidate_dry_run.csv\n D results/manifests/extension_e0_prompt_samples.csv\n D results/manifests/extension_e0_reproducibility.json\n D results/manifests/extension_e0_video_games_primary_candidates.csv\n D results/manifests/extension_e1_pilot_manifest.csv\n D results/manifests/extension_e1_reproducibility.json\n D results/manifests/extension_e1_response_manifest.csv\n D results/manifests/extension_e1_runtime_provenance.json\n D results/manifests/extension_e1_selected_users.csv\n D results/metrics/video_games_coverage_metrics.csv\n D results/metrics/video_games_final_results.csv\n D results/metrics/video_games_position_bias_metrics.csv\n D results/metrics/video_games_reproduction_metrics.csv\n D results/raw_outputs/video_games_history_length_prompts.csv\n D results/raw_outputs/video_games_mostpop_recommendations.csv\n D results/tables/extension_e0_video_games_dry_run_summary.csv\n D results/tables/extension_e1_canary_results.csv\n D results/tables/extension_e1_early_health_results.csv\n D results/tables/extension_e1_full_run_projection.csv\n D results/tables/extension_e1_history_validation.csv\n D results/tables/extension_e1_model_readiness.csv\n D results/tables/extension_e1_pilot_utility_by_cell.csv\n D results/tables/extension_e1_preflight.csv\n D results/tables/extension_e1_reliability_by_cell.csv\n D results/tables/extension_e1_reliability_by_model.csv\n D results/tables/extension_e1_runtime_by_model.csv\n D src/data/prepare_video_games.py\n D src/experiments/run_video_games_gemma2.py\n M src/extension/e0_candidates.py\n D src/extension/e0_dry_run.py\n M src/extension/e0_protocol.py\n D src/extension/e1_pilot.py\n M tests/test_extension_e0_protocol.py\n D tests/test_extension_e1_pilot.py\n?? report/d0a_foodcom_material_feasibility.md\n?? report/d0b_final_fifth_dataset_selection.md\n?? report/d1_final_fifth_dataset_cleanup.md\n?? report/extension_cell_universe.md\n?? report/extension_h0_history_final_parity_audit.md\n?? results/manifests/d0a_foodcom_extracted_file_hashes.json\n?? results/manifests/d0a_foodcom_no_inference_manifest.json\n?? results/manifests/d0a_foodcom_raw_archive_manifest.json\n?? results/manifests/d0b_loser_purge_inventory.json\n?? results/manifests/d0b_no_inference_manifest.json\n?? results/manifests/d1_video_games_purge_execution.json\n?? results/manifests/extension_cell_universe_freeze.json\n?? results/manifests/extension_h0_no_inference_manifest.json\n?? results/tables/d0a_foodcom_archive_inventory.csv\n?? results/tables/d0a_foodcom_duplicate_timestamp_audit.csv\n?? results/tables/d0a_foodcom_feature_coverage.csv\n?? results/tables/d0a_foodcom_history200_feasibility.csv\n?? results/tables/d0a_foodcom_history200_users.csv\n?? results/tables/d0a_foodcom_metadata_coverage.csv\n?? results/tables/d0a_foodcom_metric_capability.csv\n?? results/tables/d0a_foodcom_paper_dimension_capability.csv\n?? results/tables/d0a_foodcom_primary1000_candidates.csv\n?? results/tables/d0a_foodcom_primary1000_feasibility.csv\n?? results/tables/d0a_foodcom_primary1000_users.csv\n?? results/tables/d0a_foodcom_raw_statistics.csv\n?? results/tables/d0a_foodcom_schema_audit.csv\n?? results/tables/d0a_foodcom_split_statistics.csv\n?? results/tables/d0a_foodcom_traditional_model_capability.csv\n?? results/tables/d0b_authoritative_input_evidence.csv\n?? results/tables/d0b_completeness_counts.csv\n?? results/tables/d0b_dataset_specific_blockers.csv\n?? results/tables/d0b_fifth_dataset_complete_requirement_matrix.csv\n?? results/tables/d0b_final_selection_decision.csv\n?? results/tables/d0b_future_inference_budget.csv\n?? results/tables/d1_active_dataset_audit.csv\n?? results/tables/d1_manual_review_resolution.csv\n?? results/tables/d1_remaining_video_games_reference_audit.csv\n?? results/tables/d1_removed_artifacts.csv\n?? results/tables/d1_retained_generic_artifacts.csv\n?? results/tables/extension_cell_completeness_summary.csv\n?? results/tables/extension_cell_universe.csv\n?? results/tables/extension_h0_72_cell_history_matrix.csv\n?? results/tables/extension_h0_dataset_l20_feasibility.csv\n?? results/tables/extension_h0_exact_history_request_budget.csv\n?? results/tables/extension_h0_final_history_protocol_identity_matrix.csv\n?? results/tables/extension_h0_final_paired_200_cohorts.csv\n?? results/tables/extension_h0_historical_history_experiment_inventory.csv\n?? results/tables/extension_h0_paper_vs_local_history_grid.csv\n?? results/tables/extension_h0_reusable_vs_to_compute.csv\n?? results/tables/extension_metric_applicability_matrix.csv\n?? results/tables/extension_parity_summary.csv\n?? results/tables/extension_raw_experiment_universe.csv\n?? src/extension/d0a_foodcom_material_feasibility.py\n?? src/extension/d0b_final_fifth_dataset_selection.py\n?? src/extension/d1_final_dataset_cleanup.py\n?? src/extension/e2a_cell_universe.py\n?? src/extension/h0_history_final_parity_audit.py\n?? tests/test_extension_d0a_foodcom_material_feasibility.py\n?? tests/test_extension_d0b_final_fifth_dataset_selection.py\n?? tests/test_extension_d1_final_dataset_cleanup.py\n?? tests/test_extension_e2a_cell_universe.py\n?? tests/test_extension_h0_history_final_parity_audit.py"
+    },
+    "h0_artifact_hashes": {
+      "results/manifests/extension_h0_no_inference_manifest.json": "ad11c149090ab454c4235abb8db1bae8c7a4bb3a3d43eddc60e44d8055cbde48",
+      "results/tables/extension_h0_72_cell_history_matrix.csv": "63dff562a03486d38918dd74258e5f61ccb11b5909578f40d71d3ed095810c50",
+      "results/tables/extension_h0_dataset_l20_feasibility.csv": "7cd8badc2261239f5b3b5007c322b01bd4c3946325be5bf93c590b5f6a9892ac",
+      "results/tables/extension_h0_exact_history_request_budget.csv": "5b56348b9dcb4f87bc40af365501115a5286a4f258f09542d8961d5cee782071",
+      "results/tables/extension_h0_final_history_protocol_identity_matrix.csv": "2869b194819851609afb717a348adecc3f6b276c6c66a72036814c2a58985a1d",
+      "results/tables/extension_h0_final_paired_200_cohorts.csv": "2a18e0d4d318572330ddb545ea84899d3c6df8a388ba71314ab577a4966465b3",
+      "results/tables/extension_h0_historical_history_experiment_inventory.csv": "c9925101840a66441ecf5f514c74e0ef013c348ee41d7fecd5da4341a0d342be",
+      "results/tables/extension_h0_paper_vs_local_history_grid.csv": "7f87f3bc05654e78841a88f1bcf9eee9404ccfad116e5e19459457f5913cc1b7",
+      "results/tables/extension_h0_reusable_vs_to_compute.csv": "95c5182d7b499030de4bf85f22fa87221b0e7a94129f9d3979a1845b4d4ea707"
+    },
+    "inventory_reported_hash": "",
+    "purge_inventory_hash": "77cad09ec8bb61b9b8d3e7ebf26a936ee8ae0b8269c7ef7a625245045b0822e1"
+  },
+  "protected_hashes": {
+    "d0a_unchanged": true,
+    "d0b_unchanged": true,
+    "foodcom_expected": {
+      "RAW_interactions.csv": "4e278d2f687b1020f5694e51003a7d6174344b51aebbdf4530de88b5c6a78ee4",
+      "RAW_recipes.csv": "6a8136d1da9e03396a9f52d72200b3fddb8fe103f11e1496effca30ac4e0539f",
+      "archive": "e7a43e623c616799f78a0479b550483450fd7ede4e0c40979db3458a82b5b913"
+    },
+    "foodcom_post": {
+      "RAW_interactions.csv": "4e278d2f687b1020f5694e51003a7d6174344b51aebbdf4530de88b5c6a78ee4",
+      "RAW_recipes.csv": "6a8136d1da9e03396a9f52d72200b3fddb8fe103f11e1496effca30ac4e0539f",
+      "archive": "e7a43e623c616799f78a0479b550483450fd7ede4e0c40979db3458a82b5b913"
+    },
+    "foodcom_pre": {
+      "RAW_interactions.csv": "4e278d2f687b1020f5694e51003a7d6174344b51aebbdf4530de88b5c6a78ee4",
+      "RAW_recipes.csv": "6a8136d1da9e03396a9f52d72200b3fddb8fe103f11e1496effca30ac4e0539f",
+      "archive": "e7a43e623c616799f78a0479b550483450fd7ede4e0c40979db3458a82b5b913"
+    },
+    "foodcom_unchanged": true,
+    "h0_post": {
+      "results/manifests/extension_h0_no_inference_manifest.json": "ad11c149090ab454c4235abb8db1bae8c7a4bb3a3d43eddc60e44d8055cbde48",
+      "results/tables/extension_h0_72_cell_history_matrix.csv": "63dff562a03486d38918dd74258e5f61ccb11b5909578f40d71d3ed095810c50",
+      "results/tables/extension_h0_dataset_l20_feasibility.csv": "7cd8badc2261239f5b3b5007c322b01bd4c3946325be5bf93c590b5f6a9892ac",
+      "results/tables/extension_h0_exact_history_request_budget.csv": "5b56348b9dcb4f87bc40af365501115a5286a4f258f09542d8961d5cee782071",
+      "results/tables/extension_h0_final_history_protocol_identity_matrix.csv": "2869b194819851609afb717a348adecc3f6b276c6c66a72036814c2a58985a1d",
+      "results/tables/extension_h0_final_paired_200_cohorts.csv": "2a18e0d4d318572330ddb545ea84899d3c6df8a388ba71314ab577a4966465b3",
+      "results/tables/extension_h0_historical_history_experiment_inventory.csv": "c9925101840a66441ecf5f514c74e0ef013c348ee41d7fecd5da4341a0d342be",
+      "results/tables/extension_h0_paper_vs_local_history_grid.csv": "7f87f3bc05654e78841a88f1bcf9eee9404ccfad116e5e19459457f5913cc1b7",
+      "results/tables/extension_h0_reusable_vs_to_compute.csv": "95c5182d7b499030de4bf85f22fa87221b0e7a94129f9d3979a1845b4d4ea707"
+    },
+    "h0_pre": {
+      "results/manifests/extension_h0_no_inference_manifest.json": "ad11c149090ab454c4235abb8db1bae8c7a4bb3a3d43eddc60e44d8055cbde48",
+      "results/tables/extension_h0_72_cell_history_matrix.csv": "63dff562a03486d38918dd74258e5f61ccb11b5909578f40d71d3ed095810c50",
+      "results/tables/extension_h0_dataset_l20_feasibility.csv": "7cd8badc2261239f5b3b5007c322b01bd4c3946325be5bf93c590b5f6a9892ac",
+      "results/tables/extension_h0_exact_history_request_budget.csv": "5b56348b9dcb4f87bc40af365501115a5286a4f258f09542d8961d5cee782071",
+      "results/tables/extension_h0_final_history_protocol_identity_matrix.csv": "2869b194819851609afb717a348adecc3f6b276c6c66a72036814c2a58985a1d",
+      "results/tables/extension_h0_final_paired_200_cohorts.csv": "2a18e0d4d318572330ddb545ea84899d3c6df8a388ba71314ab577a4966465b3",
+      "results/tables/extension_h0_historical_history_experiment_inventory.csv": "c9925101840a66441ecf5f514c74e0ef013c348ee41d7fecd5da4341a0d342be",
+      "results/tables/extension_h0_paper_vs_local_history_grid.csv": "7f87f3bc05654e78841a88f1bcf9eee9404ccfad116e5e19459457f5913cc1b7",
+      "results/tables/extension_h0_reusable_vs_to_compute.csv": "95c5182d7b499030de4bf85f22fa87221b0e7a94129f9d3979a1845b4d4ea707"
+    },
+    "h0_unchanged": true
+  },
+  "raw_reconstruction_executed": 0,
+  "remaining_video_games_references": {
+    "allowed_rows": 3924,
+    "operational_forbidden_occurrences": 0,
+    "rows": 3924
+  },
+  "removed_artifacts": {
+    "bytes_removed": 13760189,
+    "files_removed": 181,
+    "paths_considered": 87,
+    "paths_existing_before": 1,
+    "paths_removed": 87,
+    "raw_processed_bytes_removed": 8201576
+  },
+  "retained_generic_artifacts": 15,
+  "source_artifacts": {
+    "active_dataset_audit": "results/tables/d1_active_dataset_audit.csv",
+    "manual_review_resolution": "results/tables/d1_manual_review_resolution.csv",
+    "remaining_reference_audit": "results/tables/d1_remaining_video_games_reference_audit.csv",
+    "removed_artifacts": "results/tables/d1_removed_artifacts.csv",
+    "retained_generic_artifacts": "results/tables/d1_retained_generic_artifacts.csv",
+    "starting_inventory": "results/manifests/d0b_loser_purge_inventory.json"
+  },
+  "started_at": "2026-08-26T08:13:46.992019+00:00",
+  "training_runs_executed": 0
+}

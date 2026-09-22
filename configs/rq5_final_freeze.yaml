@@ -1,0 +1,57 @@
+package_namespace: results/rq5_final_scientific_freeze
+base_commit: 88c6987ffa7b0b246918686b720eb911896ebd48
+source_commits:
+  master: 944798f3e754576beef2a03bd5a00811a285b1e6
+  submission_prof: 01e68c6c5e3b074c1e7bcbab44f5007d221b3653
+  r5d_freeze: ba1dbe8367216f7ea1044b2ff8db69318f8678ee
+allow_api_calls: false
+statistics:
+  resamples: 10000
+  seed: 20260901
+  quantiles: [0.025, 0.975]
+  quantile_method: linear
+  p_values: false
+  multiplicity_correction: false
+popularity:
+  interactions: research/data/reconstructed/plan_c/amazon_beauty/interactions.csv
+  catalog: research/data/reconstructed/plan_c/amazon_beauty/catalog.csv
+  item_column: internal_item_id
+  split: train
+  quantile: 0.8
+  tie_break: descending_frequency_then_ascending_exact_canonical_item_id_unicode_string
+  classification: LOCAL_ADAPTED_ONLY
+families:
+  corrected:
+    authority: FOREGROUND
+    prefix: rq5_corrected_full
+    request_suffix: request_universe
+    rankings: 4000
+    valid: 3996
+    profiles: 800
+    bootstrap_rows: 32
+    datasets: [beauty, sports]
+    recommenders: ['mistral:7b-instruct', 'qwen2:7b-instruct']
+    generators: ['mistral:7b-instruct', 'qwen2:7b-instruct']
+  systematic:
+    authority: SUPPORTING
+    prefix: rq5_primary_systematic
+    request_suffix: ranking_universe
+    rankings: 9000
+    valid: 8997
+    profiles: 1000
+    bootstrap_rows: 60
+    datasets: [beauty, sports, ml1m, lastfm, foodcom]
+    recommenders: ['mistral:7b-instruct', 'qwen2:7b-instruct', 'gemma2:9b']
+    generators: ['qwen2:7b-instruct']
+  history_v2:
+    authority: EXPERIMENTALLY_DISTINCT
+    prefix: rq5_figure6_history_length
+    request_suffix: ranking_manifest
+    rankings: 4800
+    valid: 4794
+    profiles: 1600
+    bootstrap_rows: 64
+    datasets: [beauty]
+    recommenders: ['qwen2:7b-instruct']
+    generators: ['qwen2:7b-instruct']
+    history_lengths: [1, 2, 3, 4, 5, 10, 15, 20]

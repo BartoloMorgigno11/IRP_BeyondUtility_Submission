@@ -1,0 +1,13 @@
+dataset,model_name,metric,corrected_local_adapted_canddif,paper_exact,comparison_class,notes
+Beauty,mistral:7b-instruct,CandDif-HR,-0.11441035117774434,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+Beauty,mistral:7b-instruct,CandDif-NDCG,0.04875784514700657,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+Beauty,qwen2:7b-instruct,CandDif-HR,0.37223946047984396,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+Beauty,qwen2:7b-instruct,CandDif-NDCG,0.3806664570368846,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+LastFM,mistral:7b-instruct,CandDif-HR,0.19845093872383823,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+LastFM,mistral:7b-instruct,CandDif-NDCG,0.3544191400142057,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+LastFM,qwen2:7b-instruct,CandDif-HR,1.0986122886681102,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+LastFM,qwen2:7b-instruct,CandDif-NDCG,0.694729398051804,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+Sports,mistral:7b-instruct,CandDif-HR,0.11394425934921769,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+Sports,mistral:7b-instruct,CandDif-NDCG,0.24266766912453377,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+Sports,qwen2:7b-instruct,CandDif-HR,0.2728669866666401,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.
+Sports,qwen2:7b-instruct,CandDif-NDCG,0.3491591161090149,false,LOCAL_ADAPTED_NOT_PAPER_EXACT,Corrected R5B preserves R5A local-model scope; no paper-exact numeric claim.

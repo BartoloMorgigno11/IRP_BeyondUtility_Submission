@@ -1,0 +1,25 @@
+Model,Dataset,Condition,HistoryLength,Complete,Parsed K,Valid,Failure,parse_status,Within1ToN,ItemIdSubstitutionCount,ParsedValues,Raw,request_id,r5a_request_id
+mistral:7b-instruct,Beauty,HISTORY_LENGTH_0,0,true,5,true,VALID,parsed_valid,true,0.0,"[5,4,7,1,6]","{""ranked_candidate_indices"":[5,4,7,1,6]}",R5C-CORR-16D676B05ABC07CE,R5A-REQ-A047C418739887F3
+mistral:7b-instruct,Beauty,HISTORY_LENGTH_10,10,true,5,true,VALID,parsed_valid,true,0.0,"[5,3,7,14,15]","{""ranked_candidate_indices"":[5,3,7,14,15]}",R5C-CORR-B2094B16F72783D2,R5A-REQ-4B59FA646FA5E44B
+mistral:7b-instruct,Beauty,HISTORY_LENGTH_20,20,true,5,true,VALID,parsed_valid,true,0.0,"[5,3,1,7,19]","{""ranked_candidate_indices"":[5,3,1,7,19]}",R5C-CORR-748206131D610439,R5A-REQ-91B45BCD83A063BE
+qwen2:7b-instruct,Beauty,HISTORY_LENGTH_0,0,true,5,true,VALID,parsed_valid,true,0.0,"[2,5,7,13,19]","{""ranked_candidate_indices"":[2,5,7,13,19]}",R5C-CORR-48031A3E5EE3FC3C,R5A-REQ-964FFF65E0CDD226
+qwen2:7b-instruct,Beauty,HISTORY_LENGTH_10,10,true,5,true,VALID,parsed_valid,true,0.0,"[3,5,7,13,19]","{""ranked_candidate_indices"":[3,5,7,13,19]}",R5C-CORR-4E24C197EB1842D2,R5A-REQ-F9B0A51E75F1A054
+qwen2:7b-instruct,Beauty,HISTORY_LENGTH_20,20,true,5,true,VALID,parsed_valid,true,0.0,"[3,5,7,13,19]","{""ranked_candidate_indices"":[3,5,7,13,19]}",R5C-CORR-A9DC7B173C2E6C0E,R5A-REQ-D7205BB7F519FFAE
+mistral:7b-instruct,LastFM,HISTORY_LENGTH_10,10,true,5,true,VALID,parsed_valid,true,0.0,"[5,14,15,16,18]","{""ranked_candidate_indices"":[5, 14, 15, 16, 18]}",R5C-CORR-204F5AEC37231B1A,R5A-REQ-E62101FEF9C5EF0A
+mistral:7b-instruct,LastFM,HISTORY_LENGTH_20,20,true,5,true,VALID,parsed_valid,true,0.0,"[1,16,14,19,18]","{""ranked_candidate_indices"":[1, 16, 14, 19, 18]}",R5C-CORR-10E70304F6CCD6CE,R5A-REQ-01B6B77B1F7A4A9A
+mistral:7b-instruct,LastFM,HISTORY_LENGTH_5,5,true,5,true,VALID,parsed_valid,true,0.0,"[7,14,15,16,18]","{""ranked_candidate_indices"":[7, 14, 15, 16, 18]}",R5C-CORR-498376B9A5FA0590,R5A-REQ-4F710474A2B2C090
+qwen2:7b-instruct,LastFM,HISTORY_LENGTH_10,10,true,5,true,VALID,parsed_valid,true,0.0,"[1,2,3,6,7]","{""ranked_candidate_indices"":[1,2,3,6,7]}",R5C-CORR-7CD703BA8ECCD09C,R5A-REQ-99DEDCDD00697232
+qwen2:7b-instruct,LastFM,HISTORY_LENGTH_20,20,true,5,true,VALID,parsed_valid,true,0.0,"[2,5,1,7,4]","{""ranked_candidate_indices"":[2,5,1,7,4]}",R5C-CORR-22B4399348A7C911,R5A-REQ-FAC19D3433A064A0
+qwen2:7b-instruct,LastFM,HISTORY_LENGTH_5,5,true,5,true,VALID,parsed_valid,true,0.0,"[1,2,3,6,7]","{""ranked_candidate_indices"":[1,2,3,6,7]}",R5C-CORR-84702A67101F9846,R5A-REQ-CE3564ADF2D7D19A
+mistral:7b-instruct,ML-1M,HISTORY_LENGTH_10,10,true,5,true,VALID,parsed_valid,true,0.0,"[6,15,19,17,18]","{""ranked_candidate_indices"":[6, 15, 19, 17, 18]}",R5C-CORR-732E39DD37DC576F,R5A-REQ-E48FB83AD8659AFC
+mistral:7b-instruct,ML-1M,HISTORY_LENGTH_20,20,true,5,true,VALID,parsed_valid,true,0.0,"[5,6,19,18,1]","{""ranked_candidate_indices"":[5, 6, 19, 18, 1]}",R5C-CORR-8E11C9844C553376,R5A-REQ-5413BC1549E14434
+mistral:7b-instruct,ML-1M,HISTORY_LENGTH_5,5,true,5,true,VALID,parsed_valid,true,0.0,"[2,7,19,16,15]","{""ranked_candidate_indices"":[2, 7, 19, 16, 15]}",R5C-CORR-1C9D66FD561834CA,R5A-REQ-16F19EBA4BFEF741
+qwen2:7b-instruct,ML-1M,HISTORY_LENGTH_10,10,true,5,true,VALID,parsed_valid,true,0.0,"[1,6,7,8,10]","{""ranked_candidate_indices"":[1,6,7,8,10]}",R5C-CORR-91DA3B1D416F1414,R5A-REQ-55F08DAB82172AD9
+qwen2:7b-instruct,ML-1M,HISTORY_LENGTH_20,20,true,5,true,VALID,parsed_valid,true,0.0,"[1,6,2,3,5]","{""ranked_candidate_indices"":[1,6,2,3,5]}",R5C-CORR-B5B839CD4F6A931D,R5A-REQ-4FB3FB62FCF4F158
+qwen2:7b-instruct,ML-1M,HISTORY_LENGTH_5,5,true,5,true,VALID,parsed_valid,true,0.0,"[1,6,7,11,12]","{""ranked_candidate_indices"":[1,6,7,11,12]}",R5C-CORR-03450F51E2DA0FF3,R5A-REQ-C151AC4AEE2FDC6A
+mistral:7b-instruct,Sports,HISTORY_LENGTH_10,10,true,5,true,VALID,parsed_valid,true,0.0,"[7,4,5,1,2]","{""ranked_candidate_indices"":[7,4,5,1,2]}",R5C-CORR-5B8A5A680208B5CC,R5A-REQ-17C941BD12EC9064
+mistral:7b-instruct,Sports,HISTORY_LENGTH_20,20,true,5,true,VALID,parsed_valid,true,0.0,"[7,4,5,2,1]","{""ranked_candidate_indices"":[7,4,5,2,1]}",R5C-CORR-C786B1523CEB8332,R5A-REQ-571ABBF91E9C0C00
+mistral:7b-instruct,Sports,HISTORY_LENGTH_5,5,true,5,true,VALID,parsed_valid,true,0.0,"[7,5,4,16,19]","{""ranked_candidate_indices"":[7,5,4,16,19]}",R5C-CORR-B85A68B6E194F4E5,R5A-REQ-C5E1D53258F097D2
+qwen2:7b-instruct,Sports,HISTORY_LENGTH_10,10,true,5,true,VALID,parsed_valid,true,0.0,"[2,5,1,7,4]","{""ranked_candidate_indices"":[2,5,1,7,4]}",R5C-CORR-4001077CD594CF80,R5A-REQ-2DFFFDE404E9690A
+qwen2:7b-instruct,Sports,HISTORY_LENGTH_20,20,true,5,true,VALID,parsed_valid,true,0.0,"[2,5,1,7,4]","{""ranked_candidate_indices"":[2,5,1,7,4]}",R5C-CORR-7EABF9CC5C8D34F8,R5A-REQ-40DDB170C9EFD001
+qwen2:7b-instruct,Sports,HISTORY_LENGTH_5,5,true,5,true,VALID,parsed_valid,true,0.0,"[2,5,1,7,4]","{""ranked_candidate_indices"":[2,5,1,7,4]}",R5C-CORR-5061E183F2269C08,R5A-REQ-793E529CE1F90888

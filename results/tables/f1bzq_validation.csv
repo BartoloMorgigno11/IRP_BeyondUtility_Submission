@@ -1,0 +1,32 @@
+check,status,evidence
+precondition_head,PASS,b85ba3bc18653d40af6aa905a42b5e71d0a7be9d
+precondition_worktree_clean_at_phase_start,PASS,git status --short --untracked-files=all returned empty before F1BZQ source/config edits
+precondition_f1bz,PASS,F1BZ_FINAL_TRADITIONAL_EXECUTION_VALIDATED
+precondition_f1bza,PASS,F1BZA_CORRECTION_REQUIRED
+precondition_f1bzc,PASS,F1BZC_RERANKING_SOURCE_BLOCKED
+precondition_f1bzp,PASS,F1BZP_ADAPTED_POOL_PROTOCOL_FROZEN
+active_datasets_exact,PASS,"['beauty', 'sports', 'ml1m', 'lastfm', 'foodcom']"
+video_games_absent,PASS,0
+f1bzp_policy_exact,PASS,"{'component': 'f1bzp_adapted_pool_policy', 'policy_id': 'ADAPTED_BALANCED_MULTI_MODEL_RERANKING_POOL', 'algorithm_id': 'BALANCED_RANK_ROUND_ROBIN_UNIQUE_20', 'resolution_status': 'FROZEN', 'paper_exact': 'false', 'requested_source_depth': '20', 'actual_max_depth_used': 'PROTOCOL_ONLY_NOT_EXECUTED', 'users_unable_to_fill_20': 'PROTOCOL_ONLY_NOT_EXECUTED', 'model_order': '[""BPRMF"",""GRU4Rec"",""SASRec"",""LightGCN""]', 'final_pool_size': '20', 'force_positive': 'false', 'target_identity_used': 'false', 'candidate_order_immutable_for_llm': 'true', 'source_order_preservation': 'true', 'candidate_recall_classification': 'NOT_COMPUTED_PROTOCOL_ONLY', 'reason': 'Balanced rank round-robin prevents first-model domination while preserving source-internal order and deterministic duplicate refill.'}"
+f1bzp_representable_catalog,PASS,"{'ready': {'MODEL_REPRESENTABLE_FULL_CATALOG_READY': 20}, 'oov': 0}"
+source_cells_20_terminal,PASS,{'COMPUTED': 20}
+source_cases_19528,PASS,"{'source_users': 19528, 'execution_sum': 19528}"
+source_retrievable_intersection,PASS,"[{'dataset': 'beauty', 'model': 'BPRMF', 'retrievable_catalog_N': 12099, 'checkpoint_item_vocab_N': 12099}, {'dataset': 'beauty', 'model': 'GRU4Rec', 'retrievable_catalog_N': 12099, 'checkpoint_item_vocab_N': 12099}, {'dataset': 'beauty', 'model': 'SASRec', 'retrievable_catalog_N': 12099, 'checkpoint_item_vocab_N': 12099}, {'dataset': 'beauty', 'model': 'LightGCN', 'retrievable_catalog_N': 12099, 'checkpoint_item_vocab_N': 12099}, {'dataset': 'sports', 'model': 'BPRMF', 'retrievable_catalog_N': 18352, 'checkpoint_item_vocab_N': 18352}]"
+source_no_positive_force,PASS,false
+deterministic_ranking_hashes,PASS,"['bd7826c1ff82ec00be7b4fa71011c91b3b4795c593dae74dd6655916f68cb123', '139337afe7145699c3d793d75aa269f83bc5b4e484d958dba162f17a7d937a04', '0364c65c8b5905d4269c21f7fad0a6879907653b4b0d1290412de9e30a6702cf', 'c3260ec0c4cc2d0f1cbf0e793d8a65e7bdd1496345703967bea8596873a20bdb', 'e8308ce919199c1e9624c1998ccd36a3c2343cef6ae4ff6255023d700ceae2fd']"
+pool_users_4882,PASS,"{'beauty': 990, 'foodcom': 1000, 'lastfm': 1000, 'ml1m': 1000, 'sports': 892}"
+pool_rows_97640,PASS,97640
+pool_size_unique,PASS,"{(20, 20): 4882}"
+pool_policy_replayed,PASS,"[{'pool_policy': 'ADAPTED_BALANCED_MULTI_MODEL_RERANKING_POOL', 'pool_algorithm': 'BALANCED_RANK_ROUND_ROBIN_UNIQUE_20'}]"
+anti_first_model_domination,PASS,{'false': 4882}
+metadata_title_validity,PASS,0
+candidate_recall_non_tautological,PASS,"[{'dataset': 'beauty', 'candidate_recall_at_20': '0.049494949494949494'}, {'dataset': 'sports', 'candidate_recall_at_20': '0.031390134529147982'}, {'dataset': 'ml1m', 'candidate_recall_at_20': '0.193'}, {'dataset': 'lastfm', 'candidate_recall_at_20': '0.46899999999999997'}, {'dataset': 'foodcom', 'candidate_recall_at_20': '0.0040000000000000001'}]"
+foodcom_warm_cold_preserved,PASS,"[{'scope': 'ALL_USERS', 'evaluation_N': 1000}, {'scope': 'WARM_USERS', 'evaluation_N': 273}, {'scope': 'TRUE_ZERO_HISTORY_USERS', 'evaluation_N': 727}]"
+reranking_readiness_30_ready,PASS,"{'rows': 30, 'requests': 29292}"
+old_artifacts_superseded,PASS,"[{'artifact_id': 'old_f1bz_first_stage_rankings', 'superseded_status': 'SUPERSEDED_RERANKING_SOURCE_DEFECT'}, {'artifact_id': 'old_f1bz_reranking_pools', 'superseded_status': 'SUPERSEDED_RERANKING_SOURCE_DEFECT'}, {'artifact_id': 'old_f1bz_candidate_recall', 'superseded_status': 'SUPERSEDED_RERANKING_SOURCE_DEFECT'}, {'artifact_id': 'old_f1bz_reranking_readiness', 'superseded_status': 'SUPERSEDED_RERANKING_SOURCE_DEFECT'}, {'artifact_id': 'f1bzc_attempted_adapted_pools', 'superseded_status': 'SUPERSEDED_RERANKING_SOURCE_DEFECT'}]"
+pool_validation_passed,PASS,{'PASS': 18}
+f0_budget_unchanged,PASS,"{'EXISTING_REUSABLE_REQUESTS': 0, 'CORE_MANDATORY_NOW_REQUESTS': 29292, 'REQUIRED_SENSITIVITY_REQUESTS': 21000, 'TRAINING_DEPENDENT_REQUESTS': 29292, 'CONDITIONAL_REQUESTS': 9000, 'OPTIONAL_REQUESTS': 12000, 'BLOCKED_REQUESTS': 0, 'MANDATORY_RAW_REQUESTS_TOTAL': 50292, 'FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL': 88584, 'CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL': 100584, 'PREVIOUS_D0B_ESTIMATE': 44928, 'MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE': 5364}"
+checkpoint_hashes_unchanged,PASS,100
+no_training_no_tuning,PASS,"{'allow_checkpoint_loading': True, 'allow_traditional_checkpoint_scoring': True, 'allow_traditional_training': False, 'allow_tuning': False, 'allow_final_test_evaluation_for_training_selection': False, 'allow_llm_inference': False, 'allow_ollama_recommendation_calls': False, 'allow_external_api_calls': False, 'allow_downloads': False, 'allow_network': False, 'allow_commit': False, 'device_policy': 'cuda_if_available_else_cpu'}"
+zero_llm_network_download,PASS,"{'allow_checkpoint_loading': True, 'allow_traditional_checkpoint_scoring': True, 'allow_traditional_training': False, 'allow_tuning': False, 'allow_final_test_evaluation_for_training_selection': False, 'allow_llm_inference': False, 'allow_ollama_recommendation_calls': False, 'allow_external_api_calls': False, 'allow_downloads': False, 'allow_network': False, 'allow_commit': False, 'device_policy': 'cuda_if_available_else_cpu'}"
+original_repo_paper_data_raw_clean,PASS,clean

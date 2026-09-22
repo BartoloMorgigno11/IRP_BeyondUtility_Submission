@@ -1,0 +1,282 @@
+phase:
+  id: phase_f6g2r
+  name: cpython312_runtime_recovery_and_f6g2_execution_preflight
+  expected_branch: plan-d-extensions
+  expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  cpython_version: 3.12.10
+  architecture: 64bit
+  final_decision_on_success: f6g2r_runtime_recovery_complete_ready_for_execution
+
+runtime:
+  base_python_path: results/environment/cpython-3.12.10-amd64/python.exe
+  venv_path: .venv_f6g2_py312
+  venv_python_path: .venv_f6g2_py312/Scripts/python.exe
+  do_not_modify:
+    - .venv
+    - .venv_repro
+    - .venv_repro_system_site
+  python_inventory_candidates:
+    - .venv/Scripts/python.exe
+    - .venv_repro/Scripts/python.exe
+    - .venv_repro_system_site/Scripts/python.exe
+    - results/environment/cpython-3.12.10-amd64/python.exe
+    - .venv_f6g2_py312/Scripts/python.exe
+    - C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0/python3.12.exe
+
+installer:
+  source_url: https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe
+  downloaded_path: results/environment/phase_f6g2r_downloads/python-3.12.10-amd64.exe
+  expected_sha256: 67b5635e80ea51072b87941312d00ec8927c4db9ba18938f7ad2d27b328b95fb
+  installation_target: results/environment/cpython-3.12.10-amd64
+  installed_python_sha256: 4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a
+  venv_python_sha256: 0b471133e110cfb53a061cad528ce8e517d7b9ac41a0a396c39ad795a487fc14
+  provenance_classification: official_cpython_windows_x64_installer
+
+dependencies:
+  wheelhouse: results/environment/phase_f6g2r_wheelhouse
+  pip_index_policy: official_pypi_binary_wheels_only
+  pins:
+    - package: numpy
+      version: 2.5.0
+      import_name: numpy
+      wheel: numpy-2.5.0-cp312-cp312-win_amd64.whl
+      sha256: 6f2d6873e2940c860a309d21e25b1e69af6aaffdd80aa056b04c16380db1c4f2
+    - package: pandas
+      version: 3.0.3
+      import_name: pandas
+      wheel: pandas-3.0.3-cp312-cp312-win_amd64.whl
+      sha256: c7be265b62cef88e253a941e4698604973736dcfe242fdb5198f0f7bc473cdcc
+    - package: PyYAML
+      version: 6.0.3
+      import_name: yaml
+      wheel: pyyaml-6.0.3-cp312-cp312-win_amd64.whl
+      sha256: 5fcd34e47f6e0b794d17de1b4ff496c00986e1c83f7ab2fb8fcfe9616ff7477b
+    - package: pytest
+      version: 9.1.1
+      import_name: pytest
+      wheel: pytest-9.1.1-py3-none-any.whl
+      sha256: 37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c
+    - package: python-dateutil
+      version: 2.9.0.post0
+      import_name: dateutil
+      wheel: python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+      sha256: a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427
+    - package: tzdata
+      version: 2026.2
+      import_name: tzdata
+      wheel: tzdata-2026.2-py2.py3-none-any.whl
+      sha256: bbe9af844f658da81a5f95019480da3a89415801f6cc966806612cc7169bffe7
+    - package: six
+      version: 1.17.0
+      import_name: six
+      wheel: six-1.17.0-py2.py3-none-any.whl
+      sha256: 4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274
+    - package: colorama
+      version: 0.4.6
+      import_name: colorama
+      wheel: colorama-0.4.6-py2.py3-none-any.whl
+      sha256: 4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6
+    - package: iniconfig
+      version: 2.3.0
+      import_name: iniconfig
+      wheel: iniconfig-2.3.0-py3-none-any.whl
+      sha256: f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12
+    - package: packaging
+      version: 26.2
+      import_name: packaging
+      wheel: packaging-26.2-py3-none-any.whl
+      sha256: 5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e
+    - package: pluggy
+      version: 1.6.0
+      import_name: pluggy
+      wheel: pluggy-1.6.0-py3-none-any.whl
+      sha256: e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746
+    - package: Pygments
+      version: 2.20.0
+      import_name: pygments
+      wheel: pygments-2.20.0-py3-none-any.whl
+      sha256: 81a9e26dd42fd28a23a2d169d86d7ac03b46e2f8b59ed4698fb4785f946d0176
+
+imports:
+  required_modules:
+    - numpy
+    - pandas
+    - yaml
+    - pytest
+    - src.analysis.plan_f6g1_lastfm_reranking_reconstruction
+    - src.analysis.plan_f6g2_lastfm_reranking_execution_analysis
+    - src.llm.plan_f6g2_lastfm_reranking_runner
+
+ollama:
+  live_metadata_check: true
+  command_timeout_seconds: 30
+  generation_allowed: false
+  expected_models:
+    - name: qwen2:7b-instruct
+      observed_short_id: dd314f039b9d
+      expected_full_digest: ""
+      digest_status_policy: short_id_presence_only
+    - name: mistral:7b-instruct
+      observed_short_id: 6577803aa9a0
+      expected_full_digest: ""
+      digest_status_policy: short_id_presence_only
+
+f6g2_contract:
+  authoritative_f6g2_config: configs/phase_f6g2_lastfm_reranking_execution.yaml
+  expected_logical_instances: 1859
+  expected_requests: 7436
+  expected_shards: 15
+  candidate_pool_size: 20
+  f6g1_required_output_length: 20
+  f6g1_parser_contract: indexed_json_top20_unique_candidates
+  top10_required_requested_ranking_length: 10
+  top10_required_parser_expected_length: 10
+  top10_adapter_evidence:
+    - results/tables/phase_f6e3b_request_manifest.csv
+    - results/tables/phase_f6e4a_request_manifest.csv
+    - results/tables/canonical_local_llm_reranking_top10_prompt_contract.csv
+    - results/tables/canonical_local_llm_reranking_top10_parser_contract.csv
+    - results/tables/canonical_local_llm_final_reranking_protocol_decision.csv
+  current_contract_expected_status: blocked_by_top20_top10_conflict
+  no_raw_files_expected: true
+
+input_hashes:
+  f6g2_manifest:
+    path: results/manifests/phase_f6g2_lastfm_reranking_execution_freeze.json
+    sha256: 8dc9bbb90b8addab7ca900cb91e5700776ce6a98ab647b151d25ab9cfa850601
+    phase: F6G2
+  f6g2_report:
+    path: report/phase_f6g2_lastfm_reranking_execution.md
+    sha256: 43f29f437d2a12a870b7028044a507aedbcef437be0d41ba375763534bb64893
+    phase: F6G2
+  f6g2_execution_gate:
+    path: results/tables/phase_f6g2_execution_gate.csv
+    sha256: 7c00072b8e87ae59ca7a65f49b9e9a0cdfd9871a0b9f782a321fa0ff73649369
+    phase: F6G2
+  f6g2_request_execution:
+    path: results/tables/phase_f6g2_request_execution.csv
+    sha256: 75acc29cfda9b7d12d883973062e644cfd95f6d557d21bb0648cc6d96cee6fae
+    phase: F6G2
+  f6g2_runtime_gate:
+    path: results/tables/phase_f6g2_runtime_gate.csv
+    sha256: b9cd6a4b116cbc154b6ed3a824b414be6956a5a8a9d3ea5ca20aa4ec05748b12
+    phase: F6G2
+  f6g2_model_identity:
+    path: results/tables/phase_f6g2_model_identity.csv
+    sha256: a10e5fb33b54f0f607b650ff93810ee3ccf0b83d1b1631f2540d8ea9bc04f20b
+    phase: F6G2
+  f6g1_manifest:
+    path: results/manifests/phase_f6g1_lastfm_reranking_freeze.json
+    sha256: 5aabb8a237bee95e1aaa53220177ce5ad560c7fb02afa6c7398efe8e3cb1117c
+    phase: F6G1
+  f6g1_future_logical_instances:
+    path: results/tables/phase_f6g1_future_logical_instances.csv
+    sha256: 0390f5e07f68e62189cca8bc47b66037887ef72d213a1e435eb0cb11fd8d63ac
+    phase: F6G1
+  f6g1_future_request_manifest:
+    path: results/tables/phase_f6g1_future_request_manifest.csv
+    sha256: 3fb4a37bedd263a7cd2891ecb6a8aaa4cdcd9a49981af04494ac40f2a12d8e97
+    phase: F6G1
+  f6g1_future_shard_manifest:
+    path: results/tables/phase_f6g1_future_shard_manifest.csv
+    sha256: c3240b517147fda9615470cb65f7e2dddf15052140ddb74a126c9bfcae4de932
+    phase: F6G1
+  f6g1_pool_item_provenance:
+    path: results/tables/phase_f6g1_pool_item_provenance.csv
+    sha256: c19001427391a851b56a5eb88ca785ce495ea69d80e9f2025ee8298533c1e576
+    phase: F6G1
+  f6e3b_request_manifest:
+    path: results/tables/phase_f6e3b_request_manifest.csv
+    sha256: b7c62d543702f22f186eb08863f3e422ec88db43783f124c9162a8b87166c256
+    phase: F6E3B
+  f6e4a_request_manifest:
+    path: results/tables/phase_f6e4a_request_manifest.csv
+    sha256: fdcbd10900e3dddfba5251d44259b51000cc6a102e855f7adf9fa7157979a29a
+    phase: F6E4A
+  top10_prompt_contract:
+    path: results/tables/canonical_local_llm_reranking_top10_prompt_contract.csv
+    sha256: c6d5352bab875329570a7814d0f54baf93f8464d329d95ccee1151a2560ed958
+    phase: protocol_audit
+  top10_parser_contract:
+    path: results/tables/canonical_local_llm_reranking_top10_parser_contract.csv
+    sha256: 9ec0647457fe8ebdf4265b828943e45735fe0d80a968bc15532fc458e39a5285
+    phase: protocol_audit
+  reranking_protocol_decision:
+    path: results/tables/canonical_local_llm_final_reranking_protocol_decision.csv
+    sha256: a30a193ccc637c241688c1281cb436c580488e50eb8b77b220f9a37988055d6c
+    phase: protocol_audit
+  f2_protected_hashes:
+    path: results/tables/finalization_f2_protected_input_hashes_after.csv
+    sha256: 18d2ed7db21ce62fbf8369f17c547c25aeb5a93196f01239fd1300b0615f4301
+    phase: F2
+
+validation:
+  run_suites: true
+  pytest_basetemp_root: C:/tmp/phase_f6g2r_pytest_tmp
+  suite_timeout_seconds: 360
+  suites:
+    - name: F6G2R focused tests
+      files: [tests/test_plan_f6g2r_runtime_recovery.py]
+    - name: F6G2 tests
+      files: [tests/test_plan_f6g2_lastfm_reranking_execution.py]
+    - name: F6G1 tests
+      files: [tests/test_plan_f6g1_lastfm_reranking_reconstruction.py]
+    - name: F6F2 tests
+      files: [tests/test_plan_f6f2_scientific_readout.py]
+    - name: F6F1 tests
+      files: [tests/test_plan_f6f1_beyond_utility_metrics.py]
+    - name: F6F1R tests
+      files: [tests/test_plan_f6f1r_environment_recovery.py]
+    - name: F6E4C tests
+      files: [tests/test_plan_f6e4c_scientific_consolidation.py]
+    - name: minimal parser contract
+      files: [tests/test_canonical_llm_contract.py]
+    - name: protected input guard
+      files: [tests/test_finalization_f6d4a_protected_input_guard.py]
+  unsafe_exclusions:
+    - training
+    - cuda
+    - ollama_generation
+    - inference
+    - network
+    - downloads
+    - remote_api
+    - model_pull
+    - unsafe_full_suite
+
+outputs:
+  report: report/phase_f6g2r_runtime_recovery.md
+  freeze_manifest: results/manifests/phase_f6g2r_runtime_recovery_freeze.json
+  environment:
+    pip_freeze: results/environment/phase_f6g2r_pip_freeze.txt
+    pip_list: results/environment/phase_f6g2r_pip_list.json
+    python_identity: results/environment/phase_f6g2r_python_identity.json
+  tables:
+    python_inventory: results/tables/phase_f6g2r_python_inventory.csv
+    installer_provenance: results/tables/phase_f6g2r_installer_provenance.csv
+    environment_identity: results/tables/phase_f6g2r_environment_identity.csv
+    dependency_lock: results/tables/phase_f6g2r_dependency_lock.csv
+    dependency_installation: results/tables/phase_f6g2r_dependency_installation.csv
+    import_gate: results/tables/phase_f6g2r_import_gate.csv
+    ollama_preflight: results/tables/phase_f6g2r_ollama_preflight.csv
+    input_integrity: results/tables/phase_f6g2r_input_integrity.csv
+    test_results: results/tables/phase_f6g2r_test_results.csv
+    execution_preflight: results/tables/phase_f6g2r_execution_preflight.csv
+    missing_or_blocked: results/tables/phase_f6g2r_missing_or_blocked.csv
+
+allowed_final_decisions:
+  - f6g2r_runtime_recovery_complete_ready_for_execution
+  - f6g2r_blocked_by_python_installation
+  - f6g2r_blocked_by_dependency_resolution
+  - f6g2r_blocked_by_ollama_gate
+  - f6g2r_blocked_by_contract_conflict
+  - f6g2r_blocked_by_tests
+  - f6g2r_blocked_by_input_invariance
+  - f6g2r_blocked_by_incomplete_provenance
+
+allowed_recommendations:
+  - proceed_to_f6g2b_lastfm_reranking_execution
+  - repair_dependency_environment
+  - inspect_output_contract_conflict
+  - repair_ollama_runtime
+  - keep_execution_blocked

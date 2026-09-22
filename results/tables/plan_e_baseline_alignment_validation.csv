@@ -1,0 +1,22 @@
+check_name,passed,observed_value,expected_value,severity,notes
+all_E2_manifests_present,true,6,6,critical,All six E2 manifests must exist.
+manifest_schema_valid,true,valid,valid,critical,E2 manifests must contain the required columns.
+candidate_pool_size_20,true,6,6,critical,Every manifest must have 20 candidates per user.
+one_positive_per_user,true,1,1,critical,Every user must have one positive.
+nineteen_negatives_per_user,true,19,19,critical,Every user must have nineteen negatives.
+no_duplicate_items_per_user,true,no_duplicates,no_duplicates,critical,No duplicate items per user.
+metric_formula_hr_at_5_available,true,implemented,implemented,critical,E3A implements single-positive HR@5 directly.
+metric_formula_ndcg_at_5_available,true,implemented,implemented,critical,E3A implements single-positive NDCG@5 directly.
+candidate_order_reference_metrics_created,true,6,6,critical,Candidate-order reference must be evaluated for every E2 manifest.
+random_deterministic_reference_metrics_created,true,6,6,critical,Deterministic random reference must be evaluated for every E2 manifest.
+all_paper_baselines_represented,true,BM25;MostPop;BPRMF;GRU4Rec;SASRec;LightGCN,BM25;MostPop;BPRMF;GRU4Rec;SASRec;LightGCN,critical,All paper baselines must be represented in score availability.
+no_neural_training_performed,true,no_training,no_training,critical,E3A never trains neural baselines.
+no_llm_inference_performed,true,no_llm_inference,no_llm_inference,critical,E3A does not run LLMs.
+no_ollama_call_performed,true,no_ollama_call,no_ollama_call,critical,E3A does not call Ollama.
+no_api_call_performed,true,no_api_call,no_api_call,critical,E3A does not call remote APIs.
+no_download_performed,true,no_download,no_download,critical,E3A does not download data or models.
+no_lastfm_run_performed,true,no_lastfm_run,no_lastfm_run,critical,LastFM remains blocked/conditional.
+no_raw_outputs_created,true,7,unchanged_existing_only,critical,E3A writes no raw outputs or JSONL files.
+no_original_repo_output,true,clean,clean,critical,original_repo/ must remain unmodified.
+no_plan_c_modification,true,clean,clean,critical,Plan C files and metrics must remain unmodified.
+no_exact_reproduction_overclaim,true,no_exact_claim,no_exact_claim,critical,E3A report states no full exact reproduction is claimed.

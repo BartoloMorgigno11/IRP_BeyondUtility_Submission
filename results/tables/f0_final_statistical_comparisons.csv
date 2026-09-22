@@ -1,0 +1,7 @@
+comparison_family,comparison,paired_unit,method,multiple_testing_correction,interpretation_policy,predeclared
+prompt_strategy_within_model_dataset_task,BASE vs LLMRank,paired user-level rows,paired bootstrap 95 CI; paired NDCG delta; McNemar for HR where binary paired,Holm within prompt family,inferential,true
+model_comparison_within_dataset_task_prompt,Qwen vs Mistral vs Gemma,same dataset/task/prompt/cohort when available,paired bootstrap; paired effect sizes,Holm within model family,inferential_when_paired,true
+history_length_within_model_dataset,"L0,L1,L2,L5,L10,L20",paired 200-user history cohort,paired bootstrap; repeated paired contrasts against L20 and L0,Holm within history family,inferential,true
+candidate_order_sensitivity,canonical vs alternate order,paired user/candidate set,paired HR/NDCG deltas; CandDif-HR/NDCG,Holm within order family,inferential,true
+ranking_vs_reranking,ranking vs reranking,only where source candidate positive-present policy valid,unconditional and positive-present conditional summaries,descriptive unless pairing is exact,conditional_descriptive,true
+traditional_vs_llm,LLM vs Random/MostPop/BM25/trainable,same dataset/cohort/candidate policy,paired bootstrap where row-aligned,Holm within dataset-baseline family,inferential_when_paired,true

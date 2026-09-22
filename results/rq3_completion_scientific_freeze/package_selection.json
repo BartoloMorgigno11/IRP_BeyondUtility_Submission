@@ -1,0 +1,47 @@
+{
+  "RQ3_FILES_REQUIRED_FOR_FINAL_FREEZE": [
+    "results/tables/rq3_llm_history_metric_grid_final.csv",
+    "results/rq3_completion_scientific_freeze/pairability_validation.csv",
+    "results/rq3_completion_scientific_freeze/request_accounting.csv",
+    "results/rq3_completion_scientific_freeze/scientific_synthesis_summary.csv",
+    "results/rq3_completion_scientific_freeze/statistical_results.csv",
+    "src/analysis/rq3_completion_scientific_freeze.py",
+    "results/rq3_completion_scientific_freeze/freeze_manifest.json",
+    "results/rq3_completion_scientific_freeze/source_freeze_manifest.json",
+    "results/rq3_completion_scientific_freeze/request_manifest.csv.gz",
+    "results/rq3_completion_scientific_freeze/terminal_evidence.tar.gz",
+    "results/rq3_completion_scientific_freeze/terminal_evidence_members.csv",
+    "results/rq3_completion_scientific_freeze/evidence_package_manifest.json",
+    "configs/rq3_completion_freeze.yaml",
+    "src/analysis/validate_rq3_completion_freeze.py",
+    "tests/test_rq3_completion_freeze.py"
+  ],
+  "required_inherited_g2_inputs": [
+    "configs/g2_history_length_sensitivity.yaml",
+    "results/tables/g2_history_length_cohort.csv",
+    "results/tables/g2_history_length_readout_metric_values.csv",
+    "results/tables/g2_history_length_statistical_paired_contributions.csv",
+    "results/manifests/g2_history_length_analysis_universe_freeze.json",
+    "results/manifests/g2_history_length_scientific_readout_manifest.json",
+    "results/manifests/g2_history_length_statistical_analysis_manifest.json"
+  ],
+  "RQ3_FILES_OPTIONAL": [
+    "src/extension/rq3_llm_completion.py",
+    "artifacts/rq3_llm_completion/preflight.json",
+    "results/llm/rq3_llm_completion/raw/*.json"
+  ],
+  "RQ3_FILES_EXCLUDED": [
+    "artifacts/rq3_llm_completion/*.pid",
+    "artifacts/rq3_llm_completion/*.log",
+    "artifacts/rq3_llm_completion/run_worker.ps1",
+    "artifacts/rq3_fig3_protocol/*",
+    "artifacts/rq3_traditional*/*",
+    "results/raw_outputs/rq3_traditional/*",
+    "results/tables/rq3_traditional*.csv",
+    "configs/rq3_traditional_history_run.yaml",
+    "src/extension/rq3_traditional_history_run.py",
+    "report/*",
+    "RQ5 evidence",
+    "figure artifacts"
+  ]
+}

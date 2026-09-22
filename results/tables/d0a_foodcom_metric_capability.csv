@@ -1,0 +1,26 @@
+metric,family,status,evidence
+HR@5,utility,READY_DATA,held-out target and 20-candidate ranking contract are materialized
+NDCG@5,utility,READY_DATA,held-out target and candidate order are materialized
+MRR diagnostic,utility,READY_DATA,ranked candidate outputs will be sufficient
+SelfInformation@5,novelty / popularity,READY_DATA,train item popularity is available after chronological split
+Serendipity@5,novelty / popularity,READY_WITH_ADAPTATION,requires predeclared recipe-feature or popularity baseline definition
+ARP@5,novelty / popularity,READY_DATA,train item popularity is available
+APLT@5,novelty / popularity,READY_DATA,long-tail threshold can be computed from train popularity
+PopREO@5,novelty / popularity,BLOCKED_GLOBAL_PROTOCOL,grouping policy is not recovered globally; not a Food.com metadata blocker
+ItemCoverage@5,diversity / coverage,READY_DATA,candidate and catalog item IDs are materialized
+Catalog Coverage@5,diversity / coverage,READY_DATA,recipe catalog is available
+OIC@5,diversity / coverage,READY_DATA,item coverage over observed recommendation outputs can be computed later
+Shannon category entropy@5,diversity / coverage,READY_WITH_ADAPTATION,tags provide the canonical category feature space
+ILD@5,diversity / coverage,READY_WITH_ADAPTATION,requires a declared Jaccard/cosine distance over tags or ingredients
+Calibration@5,calibration / fairness,READY_WITH_ADAPTATION,requires user-profile feature distribution over tags or ingredients
+Gini@5,calibration / fairness,READY_DATA,exposure distribution over recommended item IDs is sufficient
+DPD@5,calibration / fairness,BLOCKED_GLOBAL_PROTOCOL,requires a global group definition before dataset-specific execution
+Jain's Index@5,calibration / fairness,READY_DATA,exposure distribution over recommended item IDs is sufficient
+hallucination,LLM behaviour,READY_DATA,strict recipe-name candidate catalog is available
+strict parse validity,LLM behaviour,READY_DATA,parser contract llm_rank_strict_index_top10_v1 is global
+duplicate rate,LLM behaviour,READY_DATA,ranked candidate outputs can be checked for duplicates
+invalid reason distribution,LLM behaviour,READY_DATA,strict parser emits machine-readable invalid reasons
+latency,efficiency,NOT_APPLICABLE,"execution telemetry, not raw dataset material capability"
+throughput,efficiency,NOT_APPLICABLE,"execution telemetry, not raw dataset material capability"
+runtime distributions,efficiency,NOT_APPLICABLE,"execution telemetry, not raw dataset material capability"
+tokens/cost where available,efficiency,NOT_APPLICABLE,"provider telemetry, not raw dataset material capability"

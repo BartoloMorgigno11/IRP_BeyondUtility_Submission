@@ -1,0 +1,13 @@
+backend,check_name,command_or_import,available,version_or_result,status,notes
+ollama,command_exists,ollama,true,found_on_path,available,Ollama command is available on PATH.
+ollama,version,ollama --version,true,ollama version is 0.31.1,available,"Local command only; no model run, pull, download, or API call was performed."
+ollama,installed_models,ollama list,true,qwen2:7b-instruct,available,"qwen2:7b-instruct is present in ollama list; no model run, pull, download, or API call was performed by this audit."
+python,requests_import,import requests,true,2.32.5,available,Importability check only; no HTTP request or API call was made.
+python,openai_import,import openai,false,not_importable,missing,Importability check only; no HTTP request or API call was made.
+python,anthropic_import,import anthropic,false,not_importable,missing,Importability check only; no HTTP request or API call was made.
+python,transformers_import,import transformers,false,not_importable,missing,Importability check only; no HTTP request or API call was made.
+python,llama_cpp_import,import llama_cpp,false,not_importable,missing,Importability check only; no HTTP request or API call was made.
+torch,torch_import,import torch,true,2.5.1+cu121,available,Imported locally for CUDA availability inspection only.
+torch,cuda_available,torch.cuda.is_available(),true,true,available,Local CUDA availability check only; no model inference was run.
+torch,cuda_device_name,torch.cuda.get_device_name(0),true,NVIDIA GeForce RTX 4060 Laptop GPU,available,Device name recorded only when CUDA is available.
+local_gpu,rtx4060_8gb_assumption,planning_assumption,true,RTX 4060 8GB planning target; actual_cuda_device=NVIDIA GeForce RTX 4060 Laptop GPU,conditional,"Feasibility labels are conservative for the project target GPU; 7B quantized local models are planned, 70B local execution is blocked."

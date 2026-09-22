@@ -1,0 +1,124 @@
+# Food.com Dataset-5 E3 acquisition, preprocessing, and integrity freeze.
+# Raw archive must be manually staged under data/raw/foodcom/source/.
+
+dataset:
+  name: foodcom
+  raw_dir: data/raw/foodcom
+  processed_dir: data/processed/foodcom
+  sample_dir: data/samples/foodcom
+  interactions_path: data/processed/foodcom/interactions.csv
+  catalog_path: data/processed/foodcom/catalog.csv
+  candidates_path: null
+  ground_truth_path: data/processed/foodcom/ground_truth.csv
+  llm_outputs_path: null
+  baseline_outputs_path: null
+
+paths:
+  raw_dir: data/raw/foodcom
+  processed_dir: data/processed/foodcom
+  sample_dir: data/samples/foodcom
+  interactions_path: data/processed/foodcom/interactions.csv
+  catalog_path: data/processed/foodcom/catalog.csv
+  candidates_path: null
+  ground_truth_path: data/processed/foodcom/ground_truth.csv
+  llm_outputs_path: null
+  baseline_outputs_path: null
+
+original_repo:
+  root: original_repo/EvaLLMasRecommender
+  data_dir: null
+  llm_results_dir: original_repo/EvaLLMasRecommender/llm_results
+  sota_results_dir: original_repo/EvaLLMasRecommender/sota_results
+
+experiment:
+  task: dataset_integrity_freeze
+  k_values: [5]
+  seed: 42
+  sample_size: null
+  allow_api_calls: false
+
+api:
+  allow_api_calls: false
+  provider: null
+  model: null
+  api_key_env_var: null
+
+models:
+  llm_outputs: []
+  baselines: [random, mostpop, bm25_like, bprmf, gru4rec, sasrec, lightgcn]
+  baseline_outputs: []
+
+metrics:
+  utility: [hr, ndcg]
+  beyond_utility: [novelty, popularity, diversity, fairness, hallucination]
+  matching_protocols: [exact, normalized]
+
+output:
+  metrics_dir: results/metrics
+  tables_dir: results/tables
+  plots_dir: results/plots
+  raw_outputs_dir: results/raw_outputs
+  dataset_audit_path: results/tables/extension_e3_foodcom_raw_statistics.csv
+  preparation_summary_path: results/tables/extension_e3_foodcom_split_statistics.csv
+  metrics_path: results/metrics/extension_e3_foodcom_no_metrics.csv
+  summary_path: results/tables/extension_e3_foodcom_decision_summary.csv
+  analysis_path: report/extension_e3_foodcom_data_integrity.md
+
+extension_e3:
+  evidence_label: POST-F6M DATASET-5 EXTENSION EVIDENCE
+  enforce_git_precondition: true
+  expected_head: 955c5397330123424dd9dcb0ed87ae4f32eacceb
+  expected_branch: master
+  source_dir: data/raw/foodcom/source
+  extracted_dir: data/raw/foodcom/extracted
+  determinism_dir: results/logs/extension_e3_foodcom_determinism
+  required_archive_count: 1
+  allowed_archive_extensions: [.zip]
+  required_raw_files:
+    interactions: RAW_interactions.csv
+    recipes: RAW_recipes.csv
+  official_sources:
+    ucsd_mccauley_page: https://cseweb.ucsd.edu/~jmcauley/datasets.html#foodcom
+    kaggle_endpoint: https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions
+    berd_record: https://berd-platform.de/records/dmajj-zp851
+  authoritative_counts:
+    ucsc_recipes: 231637
+    ucsc_users: 226570
+    ucsc_reviews: 1132367
+    berd_recipes_description: 180K+
+    berd_reviews_description: 700K+
+  interaction_semantics:
+    definition: every RAW_interactions row is an implicit user-recipe recommendation event with rating/review retained as metadata
+    rating_threshold: null
+    zero_ratings_are_interactions: true
+    classification: FOODCOM_INTERACTION_SEMANTICS_PARITY
+  duplicate_policy:
+    exact_duplicate_rows: collapse_exact_duplicates
+    repeated_user_item_pairs: retain_latest_dated_event
+    classification_if_repeated_pairs_exist: DATASET_NECESSARY_ADAPTATION
+  temporal_policy:
+    date_field: date
+    date_granularity: day
+    invalid_dates: block_success
+    tie_policy: exclude_users_with_any_tied_interaction_date
+    target_policy: last_interaction_test_second_last_validation
+    classification_if_ties_exist: DATASET_NECESSARY_ADAPTATION
+  preprocessing:
+    min_user_interactions: 5
+    min_item_interactions: 5
+    core_algorithm: iterative_user_item_k_core_after_duplicate_and_tie_policy
+    min_sequence_length_after_core: 3
+    split_policy: chronological_leave_two_out_train_validation_test
+    mapping_order: numeric_raw_id_ascending_zero_based_internal_ids
+  cohort:
+    size: 1000
+    seed: 42
+    algorithm: seeded_shuffle_over_sorted_eligible_users
+    min_negative_items_for_future_ranking: 19
+    cohort_id: foodcom_e3_seed42_size1000
+  metadata:
+    title_field: name
+    calibration_feature_source: tags
+    calibration_feature_format: python_literal_list
+    bm25_text_fields: [name, description, ingredients, tags]
+    preserve_duplicate_titles: true

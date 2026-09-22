@@ -1,0 +1,10 @@
+check_id,check_name,status,observed,expected
+VAL-001,static preflight,pass,33/33,all pass
+VAL-002,synthetic tests,pass,13/13,all pass
+VAL-003,context preflight,pass,32/32,all pass
+VAL-004,canary complete when attempted,pass,24/24,all complete
+VAL-005,canary parsed K=5 when attempted,pass,24/24,all 5
+VAL-006,early health no backend incomplete,pass,checked,0
+VAL-007,group validation,pass,800/800,800/800
+VAL-008,incomplete not succeeded,pass,checked,none
+VAL-009,full run authorization consistent,pass,authorized=True;decision=R5C_HISTORY_LENGTH_RECOVERY_COMPLETE;terminal=2400,consistent

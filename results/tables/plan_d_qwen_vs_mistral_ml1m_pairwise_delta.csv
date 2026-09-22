@@ -1,0 +1,17 @@
+comparison,metric_name,qwen2_value,mistral_value,delta,pairwise_value,interpretation
+mistral_vs_qwen2_strict,HR@5_delta,0.550000,0.100000,-0.450000,,HR@5_delta_decreased_for_mistral
+mistral_vs_qwen2_strict,NDCG@5_delta,0.288479,0.044343,-0.244136,,NDCG@5_delta_decreased_for_mistral
+mistral_vs_qwen2_strict,candidate_validity_delta,1.000000,1.000000,0.000000,,no_change_vs_qwen2
+mistral_vs_qwen2_strict,hallucination_rate_delta,0.000000,0.000000,0.000000,,no_change_vs_qwen2
+mistral_vs_qwen2_strict,parse_success_delta,1.000000,1.000000,0.000000,,no_change_vs_qwen2
+mistral_vs_qwen2_strict,schema_valid_delta,1.000000,1.000000,0.000000,,no_change_vs_qwen2
+mistral_vs_qwen2_strict,exact_top_k_delta,1.000000,1.000000,0.000000,,no_change_vs_qwen2
+mistral_vs_qwen2_strict,duplicate_rate_delta,0.000000,0.000000,0.000000,,no_change_vs_qwen2
+mistral_vs_qwen2_strict,mean_latency_delta,4.776439,4.454589,-0.321850,,mean_latency_delta_decreased_for_mistral
+mistral_vs_qwen2_strict,valid_recommendation_jaccard,,,,0.260119,valid_recommendation_jaccard_computed_over_20_instances
+mistral_vs_qwen2_strict,selected_item_jaccard,,,,0.260119,selected_item_jaccard_computed_over_20_instances
+mistral_vs_qwen2_strict,positive_selection_agreement_rate,,,,0.550000,positive_selection_agreement_rate_computed_over_20_instances
+mistral_vs_qwen2_strict,both_hit_rate,,,,0.100000,both_hit_rate_computed_over_20_instances
+mistral_vs_qwen2_strict,qwen_only_hit_rate,,,,0.450000,qwen_only_hit_rate_computed_over_20_instances
+mistral_vs_qwen2_strict,mistral_only_hit_rate,,,,0.000000,mistral_only_hit_rate_computed_over_20_instances
+mistral_vs_qwen2_strict,neither_hit_rate,,,,0.450000,neither_hit_rate_computed_over_20_instances

@@ -1,0 +1,36 @@
+check_id,check_name,status,observed,expected
+STATIC-001,manifest SHA,pass,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD
+STATIC-002,repository HEAD is R5C corrected freeze,pass,98a93d9892d8e9b21c9cdfa981e0ebea0a987500,98a93d9892d8e9b21c9cdfa981e0ebea0a987500
+STATIC-003,R5C corrected freeze manifest exists,pass,C:/Users/Bartolo/Desktop/PROGETTI/IRP_BeyondUtility_Project/results/manifests/reproduction_r5c_history_length_corrected_freeze_candidate.json,exists
+STATIC-004,R5C corrected protocol hash,pass,3AAD4945AF443A7F50846BFD044C54FEFD5B77EDBD3725B1D1F1C62D829ECDEE,3AAD4945AF443A7F50846BFD044C54FEFD5B77EDBD3725B1D1F1C62D829ECDEE
+STATIC-005,R5C corrected freeze ready,pass,true,true
+STATIC-006,manifest rows,pass,4800,4800
+STATIC-007,selected generation rows,pass,1200,1200
+STATIC-008,out-of-scope rows remain unselected,pass,3600,3600
+STATIC-009,profile-generation rows,pass,400,400
+STATIC-010,downstream ranking rows,pass,800,800
+STATIC-011,datasets,pass,"['Beauty', 'LastFM', 'ML-1M', 'Sports']","['Beauty', 'LastFM', 'ML-1M', 'Sports']"
+STATIC-012,models,pass,"['mistral:7b-instruct', 'qwen2:7b-instruct']","['mistral:7b-instruct', 'qwen2:7b-instruct']"
+STATIC-013,distinct cells,pass,12 cells; min=100; max=100,12 cells of 100
+STATIC-014,profile datasets,pass,"['LastFM', 'ML-1M']","['LastFM', 'ML-1M']"
+STATIC-015,ranking datasets,pass,"['Beauty', 'LastFM', 'ML-1M', 'Sports']","['Beauty', 'LastFM', 'ML-1M', 'Sports']"
+STATIC-016,ranking expected K is 10,pass,[10],[10]
+STATIC-017,ranking candidate count 20,pass,['20'],20
+STATIC-018,profile candidate count 0,pass,['0'],0
+STATIC-019,profile prompt strict JSON,pass,400,400
+STATIC-020,ranking prompt says EXACTLY 10,pass,800,800
+STATIC-021,ranking prompt states positions 1..20,pass,800,800
+STATIC-022,ranking prompt rejects item IDs,pass,checked,all ranking prompts
+STATIC-023,parser contracts,pass,"['r5d_profile_json_profile_parser_v1', 'r5d_ranked_index_json_top10_v1']",r5d_profile_json_profile_parser_v1;r5d_ranked_index_json_top10_v1
+STATIC-024,dependency graph valid,pass,800/800,800/800
+STATIC-025,output namespace R5D,pass,results/recovery/r5d_generation_involved_v2/,results/recovery/r5d_generation_involved_v2/
+STATIC-026,no output path overlap with R5A destinations,pass,0,0
+STATIC-027,no protected namespace overlap,pass,checked,none
+STATIC-028,local endpoint only,pass,http://127.0.0.1:11434/api/generate,localhost Ollama
+STATIC-029,format json stream false,pass,format=json;stream=False,format=json;stream=false
+STATIC-030,max_retries remains zero,pass,0,0
+STATIC-031,context envelope,pass,12/12,all pass
+STATIC-032,disk free guard,pass,157904302080,>=1073741824
+STATIC-033,original repo clean,pass,,empty
+STATIC-034,protected artifacts unchanged,pass,12/12,12/12
+STATIC-035,protocol hash present,pass,AA76CD3E936A969A57CDA2E9E54E22B73D6C1D3DB65C0795F86E181CEDFE3B1A,64-char SHA256

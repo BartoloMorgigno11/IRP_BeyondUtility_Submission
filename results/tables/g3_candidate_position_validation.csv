@@ -1,0 +1,26 @@
+check_id,description,status,observed,expected
+G3-VAL-001,precondition HEAD,PASS,34c231779ef48bfcd291c6435bcf52a0baf02acd,34c231779ef48bfcd291c6435bcf52a0baf02acd
+G3-VAL-002,git status limited to current G3 freeze artifacts,PASS,"{""full_status"":""?? configs/g3_candidate_position_execution.yaml\n?? src/extension/g3_candidate_position_execution.py\n?? tests/test_extension_g3_candidate_position_execution.py"",""unexpected"":[]}",no non-G3 freeze artifacts
+G3-VAL-003,G1 execution frozen,PASS,G1_PRIMARY_RANKING_VALIDATED,G1_PRIMARY_RANKING_VALIDATED
+G3-VAL-004,G1 retention frozen,PASS,G1_PRIMARY_RANKING_VALIDATED,G1_PRIMARY_RANKING_VALIDATED
+G3-VAL-005,G2 execution retention frozen,PASS,G2_EXECUTION_RETENTION_FROZEN,G2_EXECUTION_RETENTION_FROZEN
+G3-VAL-006,G2 scientific synthesis frozen,PASS,G2_SCIENTIFIC_SYNTHESIS_FROZEN,G2_SCIENTIFIC_SYNTHESIS_FROZEN
+G3-VAL-007,cohort 200 users per dataset,PASS,"{""beauty"":200,""foodcom"":200,""lastfm"":200,""ml1m"":200,""sports"":200}","{""beauty"":200,""foodcom"":200,""lastfm"":200,""ml1m"":200,""sports"":200}"
+G3-VAL-008,request universe row count,PASS,12000,12000
+G3-VAL-009,request IDs unique,PASS,12000,12000
+G3-VAL-010,no G1/G2 response reuse,PASS,0,0
+G3-VAL-011,new Ollama call count,PASS,12000,12000
+G3-VAL-012,dataset accounting,PASS,"{""beauty"":2400,""foodcom"":2400,""lastfm"":2400,""ml1m"":2400,""sports"":2400}","{""beauty"":2400,""foodcom"":2400,""lastfm"":2400,""ml1m"":2400,""sports"":2400}"
+G3-VAL-013,model accounting,PASS,"{""gemma2:9b"":4000,""mistral:7b-instruct"":4000,""qwen2:7b-instruct"":4000}","{""gemma2:9b"":4000,""mistral:7b-instruct"":4000,""qwen2:7b-instruct"":4000}"
+G3-VAL-014,prompt accounting,PASS,"{""BASE"":6000,""LLMRANK"":6000}","{""BASE"":6000,""LLMRANK"":6000}"
+G3-VAL-015,order accounting,PASS,"{""FIRST"":6000,""RANDOM"":6000}","{""FIRST"":6000,""RANDOM"":6000}"
+G3-VAL-016,FIRST positive position fixed,PASS,[1],[1]
+G3-VAL-017,RANDOM positive never first,PASS,"[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]",positions 2..20
+G3-VAL-018,all FIRST/RANDOM pairs valid,PASS,6000,6000
+G3-VAL-019,pair count,PASS,6000,6000
+G3-VAL-020,target excluded from visible history,PASS,12000,12000
+G3-VAL-021,strict G1 prompt/parser contract reused,PASS,"[""llm_rank_strict_index_top10_v1""]",llm_rank_strict_index_top10_v1
+G3-VAL-022,statistical plan rows,PASS,90,90
+G3-VAL-023,bootstrap settings reused,PASS,"{""resamples"":[10000],""seed"":[20260901]}","{""resamples"":10000,""seed"":20260901}"
+G3-VAL-024,LLMSRec excluded,PASS,absent,absent
+G3-VAL-025,zero inference during freeze,PASS,0,0

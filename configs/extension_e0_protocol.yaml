@@ -1,0 +1,114 @@
+# Extension E0 protocol freeze and dry-run configuration.
+# This config is append-only and must never authorize LLM/API calls.
+
+dataset:
+  name: extension_e0
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  sample_dir: data/samples
+  interactions_path: null
+  catalog_path: null
+  candidates_path: null
+  ground_truth_path: null
+  llm_outputs_path: null
+  baseline_outputs_path: null
+
+original_repo:
+  root: original_repo/EvaLLMasRecommender
+
+experiment:
+  task: ranking
+  k_values: [5]
+  seed: 20260824
+  sample_size: null
+  allow_api_calls: false
+
+api:
+  allow_api_calls: false
+  provider: null
+  model: null
+  api_key_env_var: null
+
+models:
+  llm_outputs: []
+  baselines: [random_candidate, mostpop_candidate]
+  baseline_outputs: []
+
+metrics:
+  utility: [hr, ndcg]
+  beyond_utility: [catalog_coverage, novelty, aplt, average_popularity, ild, calibration]
+  matching_protocols: [strict_index]
+
+output:
+  metrics_dir: results/metrics
+  tables_dir: results/tables
+  plots_dir: results/plots
+  raw_outputs_dir: results/raw_outputs
+  dataset_audit_path: results/tables/extension_e0_dataset_audit.csv
+  metrics_path: results/metrics/extension_e0_metrics_placeholder.csv
+  summary_path: results/tables/extension_e0_summary.csv
+  analysis_path: report/extension_e0_protocol_freeze.md
+
+extension:
+  experiment_id: extension_e0_protocol_freeze_v1
+  seed: 20260824
+  models:
+    - qwen2:7b-instruct
+    - mistral:7b-instruct
+    - gemma2:9b
+  primary:
+    datasets: [beauty, sports, foodcom]
+    prompt_strategies: [BASE, LLMRANK]
+    candidate_count: 20
+    positive_count: 1
+    negative_count: 19
+    candidate_position_convention: one_based_1_to_20
+    requested_output_length: 10
+    parser_contract: llm_rank_strict_index_top10_v1
+    metric_k: 5
+    fail_strict: true
+    paper_alignment: strict_index_adaptation_not_paper_exact
+  foodcom:
+    mode: d0a_materialized
+    primary_users: 1000
+    history_users: 200
+    raw_archive_path: data/raw/foodcom/source/food-com-recipes-and-user-interactions.zip
+    primary_candidates_path: results/tables/d0a_foodcom_primary1000_candidates.csv
+    primary_users_path: results/tables/d0a_foodcom_primary1000_users.csv
+    history_users_path: results/tables/d0a_foodcom_history200_users.csv
+  history:
+    prompt_strategy: BASE
+    cohort_size: 200
+    lengths: [0, 1, 2, 5, 10, 20]
+    min_train_interactions: 20
+    datasets:
+      beauty:
+        interactions_path: data/reconstructed/plan_c/amazon_beauty/interactions.csv
+        catalog_path: data/reconstructed/plan_c/amazon_beauty/catalog.csv
+        candidates_path: data/reconstructed/plan_c/amazon_beauty/candidates.csv
+      sports:
+        interactions_path: data/reconstructed/plan_c/amazon_sports/interactions.csv
+        catalog_path: data/reconstructed/plan_c/amazon_sports/catalog.csv
+        candidates_path: data/reconstructed/plan_c/amazon_sports/candidates.csv
+      ml1m:
+        interactions_path: data/processed/ml1m/interactions.csv
+        catalog_path: data/processed/ml1m/catalog.csv
+        candidates_path: data/reconstructed/plan_c/ml1m/candidates.csv
+      lastfm:
+        interactions_path: data/processed/finalization_f6c_lastfm_interactions.csv
+        catalog_path: data/processed/finalization_f6c_lastfm_catalog.csv
+        candidates_path: data/processed/finalization_f6c_lastfm_ranking_candidates.csv
+  outputs:
+    foodcom_primary_candidates: results/tables/d0a_foodcom_primary1000_candidates.csv
+    foodcom_primary_summary: results/tables/d0a_foodcom_primary1000_feasibility.csv
+    foodcom_history_users: results/tables/d0a_foodcom_history200_users.csv
+    baseline_summary: results/tables/extension_e0_baseline_dry_run_summary.csv
+    prompt_samples: results/manifests/extension_e0_prompt_samples.csv
+    parser_summary: results/tables/extension_e0_parser_synthetic_summary.csv
+    history_manifest: results/manifests/extension_e0_history_manifest.csv
+    history_summary: results/tables/extension_e0_history_dry_run_summary.csv
+    contracts: results/tables/extension_e0_protocol_contracts.csv
+    reproducibility: results/manifests/extension_e0_reproducibility.json
+    report: report/extension_e0_protocol_freeze.md

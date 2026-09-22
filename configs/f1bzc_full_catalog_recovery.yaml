@@ -1,0 +1,51 @@
+phase:
+  id: f1bzc_full_catalog_recovery
+  predecessor_state: F1BZA_CORRECTION_REQUIRED
+  success_token: F1BZC_RERANKING_SOURCE_CORRECTED
+  blocked_token: F1BZC_RERANKING_SOURCE_BLOCKED
+
+execution:
+  allow_checkpoint_loading: true
+  allow_traditional_scoring: true
+  allow_traditional_training: false
+  allow_tuning: false
+  allow_llm_inference: false
+  allow_ollama_recommendation_calls: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network: false
+  allow_commit: false
+
+inputs:
+  f1bz_config: configs/f1bz_final_traditional_execution.yaml
+  f1bz_manifest: results/manifests/f1bz_final_traditional_execution.json
+  f1bza_manifest: results/manifests/f1bza_post_execution_audit.json
+  f1bza_readiness: results/tables/f1bza_full_catalog_regeneration_readiness.csv
+  f1br_reranking_source_protocol: results/tables/f1br_reranking_source_protocol.csv
+  f0_request_budget: results/tables/f0_final_request_budget.csv
+
+source_seed_policy:
+  policy_id: F1BZ_FIVE_SEED_MEAN_SCORE_THEN_FROZEN_MODEL_ORDER
+  provenance: configs/f1bz_final_traditional_execution.yaml::reranking_source.source_seed_policy
+  selection_metric_used: none
+  uses_final_test_metric: false
+  seeds: [42, 43, 44, 45, 46]
+  selected_seed: ALL_FIVE_SEED_MEAN
+  fallback_used: false
+
+full_catalog_retrieval:
+  source_top_k: 20
+  candidate_universe: raw_catalog_items_represented_in_checkpoint_item_map
+  seen_item_exclusion: frozen_pre_test_training_history_only
+  force_positive: false
+  target_membership_used_for_ranking: false
+  score_batch_size: 128
+  deterministic_tie_break: score_desc_item_id_asc_rank_position_asc
+
+reranking_pool:
+  policy_id: F1BR_ADAPTED_ORDERED_DEDUP_TOP20_UNION_V1
+  model_order: [BPRMF, GRU4Rec, SASRec, LightGCN]
+  per_model_top_k: 20
+  final_pool_size: 20
+  duplicate_policy: keep_first_occurrence_by_model_order_then_rank
+  single_model_fill_policy: block_before_authoritative_reranking_freeze

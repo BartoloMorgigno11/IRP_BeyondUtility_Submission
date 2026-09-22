@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "rq": "RQ6",
+  "authority_branch": "submission/final",
+  "source_tree_head": "dc1a3e9d91bb4cea6821f64f3020d69f72c976ab",
+  "direct_textual_hallucination_reproduced": false,
+  "local_canonical_evidence": "STRUCTURAL_RELIABILITY",
+  "direct_comparability_with_paper": false,
+  "authority_classes": {
+    "CANONICAL": [
+      {
+        "path": "results/tables/g1_primary_ranking_reliability.csv",
+        "role": "G1_STRUCTURAL_RELIABILITY",
+        "sha256": "1f5051ee58df03118617c981d13ece3a1679df2440b08f59e52a7ed068ebd023"
+      },
+      {
+        "path": "results/tables/g2_history_length_analysis_universe.csv",
+        "role": "G2_REQUEST_LEVEL_STRUCTURAL_RELIABILITY",
+        "sha256": "02d501b1fd250f2da1ab33905a36da2a80803c8e16b763b5a31f56de5bc7e336"
+      },
+      {
+        "path": "results/tables/g3_candidate_position_reliability.csv",
+        "role": "G3_STRUCTURAL_RELIABILITY",
+        "sha256": "b31de0ea8c3b788091eeb7893af7a795029ddb36059d87a13c88f1257da7d537"
+      },
+      {
+        "path": "results/tables/g4_f1bzq_reliability.csv",
+        "role": "G4_STRUCTURAL_RELIABILITY",
+        "sha256": "666f4af4d2fda42fbd145e0d34dd881f2655c5582e8c88b83251690b4b2d27cb"
+      },
+      {
+        "path": "results/rq5_final_scientific_freeze/freeze_manifest.json",
+        "role": "RQ5_FREEZE_AUTHORITY",
+        "sha256": "e3e6a8edc1d2698e76350ffee726329f21f51a2aaa598690b2e9d2c7b379e3d6"
+      },
+      {
+        "path": "results/rq5_final_scientific_freeze/corrected/per_user.csv",
+        "role": "RQ5_CORRECTED_VIEW",
+        "sha256": "1b1b59508e5e56222db4546de8c4256f968ffd2c98d4cb848cda47e17c57b3d0"
+      },
+      {
+        "path": "results/rq5_final_scientific_freeze/systematic/per_user.csv",
+        "role": "RQ5_SYSTEMATIC_VIEW",
+        "sha256": "2249890b517175049d5ac0272874c541fab95d37cb810aeb377e282acd23708a"
+      },
+      {
+        "path": "results/rq5_final_scientific_freeze/history_v2/per_user.csv",
+        "role": "RQ5_HISTORY_V2_VIEW",
+        "sha256": "75f60b22c94b979fcaf0c0d4d600e1f20039af5a3b9030b6b02745190aa68ccb"
+      },
+      {
+        "path": "results/rq5_final_scientific_freeze/r5d/per_user.csv",
+        "role": "RQ5_R5D_VIEW",
+        "sha256": "be26b6618370993ceefe355e200651bd5d9e75c1a9f35572e078095deb64026b"
+      }
+    ],
+    "SUPPORTING_UPSTREAM_REFERENCE": [
+      {
+        "path": "results/tables/reproduction_r1_hallucination_official_results.csv",
+        "role": "RECOVERED_UPSTREAM_FREE_TEXT_HALLUCINATION_REFERENCE",
+        "sha256": "a3bed4eca0e8dd4393b8ffcf1307afb110f82ea2fca3c213d14de0b57a1f81c4",
+        "rows": 105,
+        "numeric_projection_sha256": "4d47fa3e10f1300e96166ea541d845754242fb87bb9e1bd45e600eb85c580eee",
+        "numeric_values_unchanged": true,
+        "locally_reproduced": false,
+        "quantitative_foreground_authority": false
+      }
+    ],
+    "FORENSIC_ONLY": [
+      {
+        "path": "results/tables/reproduction_r3_hallucination_audit.csv",
+        "role": "LEGACY_LOCAL_HALLUCINATION_RECONSTRUCTION",
+        "sha256": "559b7adb68b8baea4b7501cadbc360bb2f575998ce7b18972fc4cf98911ff011",
+        "authoritative_quantitative_use": false,
+        "reasons": [
+          "Interpreted values labelled as rates exceed 1.",
+          "Declared source tables are absent from submission/final.",
+          "Denominator and provenance are invalid for final quantitative use."
+        ],
+        "observed_interpreted_rate_gt_1_count": 16,
+        "observed_max_interpreted_rate": 2189,
+        "declared_sources": [
+          {
+            "path": "results/tables/phase_f6e3a_hallucination_audit.csv",
+            "present_in_release_candidate": false
+          },
+          {
+            "path": "results/tables/phase_f6l_profile_parse_results.csv",
+            "present_in_release_candidate": false
+          },
+          {
+            "path": "results/tables/canonical_local_llm_structural_metrics.csv",
+            "present_in_release_candidate": false
+          }
+        ]
+      },
+      {
+        "path": "results/tables/reproduction_r4_hallucination_reconciliation.csv",
+        "role": "LEGACY_THREE_WAY_RECONCILIATION",
+        "sha256": "63801e834cc1024f13c6094626ac5a1291721995fd17089c2851c8efc192eea9",
+        "authoritative_quantitative_use": false,
+        "reasons": [
+          "Summarizes non-authoritative R3 interpreted rates.",
+          "Local free-text source chain is absent.",
+          "Retained only for historical provenance."
+        ]
+      },
+      {
+        "path": "report/archive/phase_reports/phase_f6e3a_parser_recovery_audit.md",
+        "role": "LEGACY_F6E3A_DIAGNOSTIC_REPORT",
+        "sha256": "8ea349077019da4aadfc7938f52619d9d6271c94ab82ffc4bb5e63f5e63e66f0",
+        "authoritative_quantitative_use": false
+      },
+      {
+        "path": "results/tables/plan_d_qwen2_hallucination_instance_profile.csv",
+        "role": "PLAN_D_OUT_OF_CANDIDATE_DIAGNOSTIC",
+        "sha256": "3ccc110dac24dfd2a57523e2073e3bb2b330e14a1f5a20aa4e5095eb1ffefb8a",
+        "authoritative_quantitative_use": false
+      },
+      {
+        "path": "report/plan_d_qwen2_output_validity_and_hallucination_analysis.md",
+        "role": "PLAN_D_DIAGNOSTIC_REPORT",
+        "sha256": "c6cb3081af2bc7df2cce71e10732ad6aad5e544c2b2ef1bcf161ab42947bc8ef",
+        "authoritative_quantitative_use": false
+      }
+    ]
+  },
+  "upstream_reference_portability": {
+    "historical_source_archive_fields": {
+      "classification": "HISTORICAL_ABSOLUTE_NON_OPERATIONAL",
+      "operational_dependency": false,
+      "note": "Absolute source_archive strings in R1 identify the recovery workstation and are not executable release paths."
+    },
+    "portable_provenance": {
+      "source_project": "EvaLLMasRecommender",
+      "distribution_status": "EXTERNAL_UPSTREAM_ARCHIVES_NOT_BUNDLED",
+      "archives": [
+        {
+          "logical_id": "UPSTREAM_EVALLM_BEAUTY_RESULTS_ARCHIVE",
+          "dataset": "Beauty",
+          "expected_upstream_repository_relative_path": "llm_results/beauty.zip",
+          "sha256": "f3fb9bfe835beb0a894226648087f900861c62268a9c5626395fd544321e6ad6",
+          "size_bytes": 28995120,
+          "member_identity_column": "source_member"
+        },
+        {
+          "logical_id": "UPSTREAM_EVALLM_SPORTS_RESULTS_ARCHIVE",
+          "dataset": "Sports",
+          "expected_upstream_repository_relative_path": "llm_results/sports.zip",
+          "sha256": "18e05fa056b20b3991a425af30127f0451574cf92b3349b109a8f63ebce88a07",
+          "size_bytes": 14693076,
+          "member_identity_column": "source_member"
+        }
+      ],
+      "acquisition_instruction": "Obtain matching upstream result archives, verify archive SHA-256, and resolve each retained source_member."
+    }
+  },
+  "foreground_policy": {
+    "quantitative_rq6_sources": [
+      "results/tables/g1_primary_ranking_reliability.csv",
+      "results/tables/g2_history_length_analysis_universe.csv",
+      "results/tables/g3_candidate_position_reliability.csv",
+      "results/tables/g4_f1bzq_reliability.csv",
+      "results/rq5_final_scientific_freeze/corrected/per_user.csv",
+      "results/rq5_final_scientific_freeze/systematic/per_user.csv",
+      "results/rq5_final_scientific_freeze/history_v2/per_user.csv",
+      "results/rq5_final_scientific_freeze/r5d/per_user.csv"
+    ],
+    "supporting_reference_sources": [
+      "results/tables/reproduction_r1_hallucination_official_results.csv"
+    ],
+    "forbidden_quantitative_foreground_sources": [
+      "results/tables/reproduction_r3_hallucination_audit.csv",
+      "results/tables/reproduction_r4_hallucination_reconciliation.csv"
+    ],
+    "foreground_registry_paths": [
+      "README.md",
+      "results/manifests/final_submission_figure_inventory.csv",
+      "results/manifests/final_submission_deferred_inventory.json",
+      "results/manifests/github_packaged_artifacts.json",
+      "report/g2_history_length_scientific_synthesis.md",
+      "report/g3_candidate_position_scientific_synthesis.md",
+      "report/g4_f1bzq_scientific_synthesis.md"
+    ]
+  }
+}

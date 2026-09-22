@@ -1,0 +1,36 @@
+{
+  "artifact_hashes": {
+    "results/tables/extension_h0_72_cell_history_matrix.csv": "63dff562a03486d38918dd74258e5f61ccb11b5909578f40d71d3ed095810c50",
+    "results/tables/extension_h0_dataset_l20_feasibility.csv": "7cd8badc2261239f5b3b5007c322b01bd4c3946325be5bf93c590b5f6a9892ac",
+    "results/tables/extension_h0_exact_history_request_budget.csv": "5b56348b9dcb4f87bc40af365501115a5286a4f258f09542d8961d5cee782071",
+    "results/tables/extension_h0_final_history_protocol_identity_matrix.csv": "2869b194819851609afb717a348adecc3f6b276c6c66a72036814c2a58985a1d",
+    "results/tables/extension_h0_final_paired_200_cohorts.csv": "2a18e0d4d318572330ddb545ea84899d3c6df8a388ba71314ab577a4966465b3",
+    "results/tables/extension_h0_historical_history_experiment_inventory.csv": "c9925101840a66441ecf5f514c74e0ef013c348ee41d7fecd5da4341a0d342be",
+    "results/tables/extension_h0_paper_vs_local_history_grid.csv": "7f87f3bc05654e78841a88f1bcf9eee9404ccfad116e5e19459457f5913cc1b7",
+    "results/tables/extension_h0_reusable_vs_to_compute.csv": "95c5182d7b499030de4bf85f22fa87221b0e7a94129f9d3979a1845b4d4ea707"
+  },
+  "blocked_cells": 0,
+  "blocked_requests": 0,
+  "created_at": "2026-08-25T12:27:07.921957+00:00",
+  "decision": "HISTORY_FINAL_PARITY_READY",
+  "downloads_executed": 0,
+  "feasible_datasets": 4,
+  "final_cells": 72,
+  "llm_requests_executed": 0,
+  "network_calls_executed": 0,
+  "phase_id": "extension_h0_history_final_parity_audit",
+  "required_requests": 14400,
+  "reusable_cells": 0,
+  "reusable_requests": 0,
+  "source_artifacts": {
+    "extension_e0_history_manifest": "results\\manifests\\extension_e0_history_manifest.csv",
+    "extension_e0_history_summary": "results\\tables\\extension_e0_history_dry_run_summary.csv",
+    "official_history_results": "results\\tables\\reproduction_r1_history_length_official_results.csv",
+    "plan_d_manifest": "results\\tables\\plan_d_llm_ml1m_history_length_manifest.csv",
+    "r5c_corrected_manifest": "results\\tables\\reproduction_r5c_history_length_corrected_execution_manifest.csv"
+  },
+  "source_commit": "adbf060f93872f6a75a32d38bbfe34ce30ed059e",
+  "to_compute_cells": 72,
+  "to_compute_requests": 14400,
+  "training_runs_executed": 0
+}

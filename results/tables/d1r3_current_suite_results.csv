@@ -1,0 +1,4 @@
+run_id,command,exit_code,selected,passed,skipped,failed,errors,duration_seconds,status
+d1r3_current_pytest,pytest -p no:cacheprovider selected current suite (30 files),0,306,304,2,0,0,42.053,pass
+src/analysis/build_exactness_frontier_and_evidence_closure.py --help,C:\Users\Bartolo\Desktop\PROGETTI\IRP_BeyondUtility_Project\.venv_audit_recovery\Scripts\python.exe -B src/analysis/build_exactness_frontier_and_evidence_closure.py --help,0,1,1,0,0,0,,pass
+src/analysis/build_workspace_forensic_state_audit.py --help,C:\Users\Bartolo\Desktop\PROGETTI\IRP_BeyondUtility_Project\.venv_audit_recovery\Scripts\python.exe -B src/analysis/build_workspace_forensic_state_audit.py --help,0,1,1,0,0,0,,pass

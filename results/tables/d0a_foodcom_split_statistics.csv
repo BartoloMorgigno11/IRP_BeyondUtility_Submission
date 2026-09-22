@@ -1,0 +1,14 @@
+metric,value
+split_policy,chronological_leave_one_target_per_user
+tie_policy,date_ascending_then_original_input_order
+duplicate_user_recipe_policy,retain_repeated_event_rows
+users,226570
+items,231637
+interactions,1132367
+train_rows,905797
+test_rows,226570
+users_with_train_history_ge_20,6389
+users_with_empty_train_history,166256
+max_train_history_length,7670
+median_train_history_length,0.0
+max_total_interactions_per_user,7671

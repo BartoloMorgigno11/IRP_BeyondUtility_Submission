@@ -1,0 +1,35 @@
+test_id,check,status,evidence
+F0-VAL-24C33A2BCB,all_local_model_manifests_present,PASS,"dd314f039b9d,6577803aa9a0,ff02c3702f32"
+F0-VAL-C6772CE903,conceptual_history_requests_18000,PASS,18000
+F0-VAL-A38D10B28D,current_head_is_pre_f0_checkpoint,PASS,30d6c3e5fcb0e97451a4420829b88de10bb57213
+F0-VAL-415FAE164A,derived_metrics_add_zero_llm_requests,PASS,0
+F0-VAL-2B77D876F0,exactly_five_active_datasets,PASS,"beauty,sports,ml1m,lastfm,foodcom"
+F0-VAL-BFA451F64F,exactly_three_local_llms,PASS,"qwen2:7b-instruct,mistral:7b-instruct,gemma2:9b"
+F0-VAL-40579ABC69,execution_dag_acyclic,PASS,acyclic
+F0-VAL-FE93FACDE6,foodcom_hashes_unchanged,PASS,expected hashes matched
+F0-VAL-3C9A8A4531,foodcom_is_fifth_dataset,PASS,foodcom
+F0-VAL-AB298682A4,global_blockers_explicit,PASS,"PopREO@5,DPD@5,K-S sample representativeness"
+F0-VAL-B8F554E80F,h0_hashes_unchanged,PASS,True
+F0-VAL-2D7EC88170,history_five_datasets_three_models,PASS,5 datasets; 3 models
+F0-VAL-007735B21C,history_l0_explicit_empty,PASS,explicit_empty_history
+F0-VAL-582F3433D0,history_lengths_final,PASS,"0,1,2,5,10,20"
+F0-VAL-21979679F9,history_paired_n_200,PASS,200
+F0-VAL-BCD8791BC3,mandatory_conditional_optional_separate,PASS,"BLOCKED,CONDITIONAL,CORE_MANDATORY_NOW,OFFLINE_NO_LLM,OPTIONAL,REQUIRED_SENSITIVITY,TRAINING_DEPENDENT"
+F0-VAL-7B615E99BF,metric_k_5,PASS,5
+F0-VAL-0D95D8CDAE,metric_matrix_no_unknown,PASS,0
+F0-VAL-1BB3E01DBC,no_active_video_games_rows,PASS,raw=0;cells=0
+F0-VAL-B6952BDA34,no_duplicate_raw_experiment_ids,PASS,0
+F0-VAL-B817377819,no_duplicate_request_identity,PASS,0
+F0-VAL-FD25D183A9,no_inference_training_download_network,PASS,all F0 counters are zero
+F0-VAL-0F569E2F19,no_raw_foodcom_tracked,PASS,
+F0-VAL-7F97B6AEE2,no_raw_unknown_status,PASS,
+F0-VAL-6521BE0CE6,no_result_cell_without_status,PASS,0
+F0-VAL-1C2AEDE406,output_length_10,PASS,10
+F0-VAL-B5079DEDD1,parser_expected_length_10,PASS,10
+F0-VAL-D1AA9B0588,pool_20,PASS,20
+F0-VAL-2880C39932,primary_base_llmrank,PASS,"BASE,LLMRANK"
+F0-VAL-092AE7B04C,primary_matrix_30,PASS,30
+F0-VAL-AF587B4CB0,raw_result_universes_separate,PASS,raw=323;cells=8938
+F0-VAL-CE49314DC7,reranking_dependencies_explicit,PASS,30
+F0-VAL-3040BC3AED,training_dependencies_separate,PASS,50
+F0-VAL-3BFB9401F1,working_tree_clean_at_f0_start_or_only_f0_outputs,PASS,F0 generator records precondition; final git status is reported separately.

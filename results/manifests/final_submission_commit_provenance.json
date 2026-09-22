@@ -1,0 +1,55 @@
+{
+  "base_commit": "944798f3e754576beef2a03bd5a00811a285b1e6",
+  "figure_artifact_inventory_status": "COMPLETE_NO_IMPORT",
+  "final_branch": "submission/final",
+  "g1_corrected_artifact_matches_submission": "PASS",
+  "g1_correction_commit": "21eb7cf23442a5ef1aa6471ec39bc4be109dea18",
+  "g1_correction_manifest": "results/manifests/g1_serendipity_correction.json",
+  "g1_correction_manifest_sha256": "c33cca450081a00eb7937b524ffe58fff309e0b6583d9fc2ec35ac47edfce6f1",
+  "manuscript_and_report_unchanged": true,
+  "old_g2_unchanged": "PASS",
+  "provenance_policy": "Containing RQ3 and G1 commits are recorded by this later provenance artifact, avoiding self-referential hashes. The commit containing this provenance artifact is discoverable with git log -- results/manifests/final_submission_commit_provenance.json.",
+  "rq3_actual_freeze_commit": "801523d7b51e71e7dc719a91b69ca078210ac645",
+  "rq3_artifacts": {
+    "results/rq3_completion_scientific_freeze/freeze_manifest.json": "c23d83a1249e700f11ca6284fa9819db70009b4607d09c779432b3ac9a09f295",
+    "results/rq3_completion_scientific_freeze/statistical_results.csv": "976257e38d7cff90cc135bc126f27348020a1f9097f3260372bcd59c70a09f95",
+    "results/tables/rq3_llm_history_metric_grid_final.csv": "96ab1971f5717c04faba7c0b61e9e1bfc92620ac2ee56eab33d622ec312a349d"
+  },
+  "rq3_hash_validation": "PASS",
+  "rq5_integration_status": "DEFERRED_PENDING_SCIENTIFIC_AUDIT",
+  "source_worktree_preservation": [
+    {
+      "branch": "master",
+      "head": "944798f3e754576beef2a03bd5a00811a285b1e6",
+      "status_and_dirty_file_bytes_sha256_after": "5f60faf12ff9682aaaeb083eafe18fc870b76cc13750a6e26cc7fd744ef07f43",
+      "status_and_dirty_file_bytes_sha256_before": "5f60faf12ff9682aaaeb083eafe18fc870b76cc13750a6e26cc7fd744ef07f43",
+      "status_counts": {
+        " M": 1,
+        "??": 750
+      },
+      "worktree_modified_by_integration": false
+    },
+    {
+      "branch": "submission/prof",
+      "head": "01e68c6c5e3b074c1e7bcbab44f5007d221b3653",
+      "status_and_dirty_file_bytes_sha256_after": "a8dc77cc7b8f1587a6de5f0daae6ac8a155f36a235e5f7b9b8386bb9bbb0ebb0",
+      "status_and_dirty_file_bytes_sha256_before": "a8dc77cc7b8f1587a6de5f0daae6ac8a155f36a235e5f7b9b8386bb9bbb0ebb0",
+      "status_counts": {
+        " M": 10,
+        "??": 19
+      },
+      "worktree_modified_by_integration": false
+    }
+  ],
+  "validation": {
+    "g1_correction_tests": {
+      "passed": 3
+    },
+    "new_inference_calls": 0,
+    "rq3_and_core_metric_tests": {
+      "passed": 47,
+      "skipped": 2
+    },
+    "rq3_bootstrap_validation": "450 frozen result rows and confidence intervals recomputed in memory and matched"
+  }
+}

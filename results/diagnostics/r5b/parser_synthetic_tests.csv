@@ -1,0 +1,23 @@
+case_id,input,expected_contract_valid,expected_indices,actual_valid,actual_status,actual_indices,actual_length,strict_pass,diagnostic_salvage_valid,diagnostic_salvage_status,diagnostic_salvage_indices,transformations
+perfect_json,"{""ranked_candidate_indices"":[1,2,3,4,5]}",True,"[1, 2, 3, 4, 5]",True,parsed_valid,"[1, 2, 3, 4, 5]",5,True,True,parsed_valid,"[1, 2, 3, 4, 5]",[]
+numbered_lines,1. 342\n2. 177\n3. 901,False,[],False,parse_failed,[],0,True,False,parse_failed,[],[]
+json_array,"[1,2,3,4,5]",False,[],False,invalid_schema,[],0,True,False,invalid_schema,[],[]
+csv_indices,"1,2,3,4,5",False,[],False,parse_failed,[],0,True,False,parse_failed,[],[]
+text_plus_json,"Here is my ranking: {""ranked_candidate_indices"":[1,2,3,4,5]}",False,[],False,parse_failed,[],0,True,True,parsed_valid,"[1, 2, 3, 4, 5]","[""extracted_json_object""]"
+json_string_indices,"{""ranked_candidate_indices"":[""1"",""2"",""3"",""4"",""5""]}",False,[],False,invalid_schema,[],0,True,True,parsed_valid,"[1, 2, 3, 4, 5]","[""converted_integer_strings""]"
+wrong_key_ranking,"{""ranking"":[1,2,3,4,5]}",False,[],False,invalid_schema,[],0,True,False,invalid_schema,[],[]
+multiline_indices,1\n2\n3\n4\n5,False,[],False,parse_failed,[],0,True,False,parse_failed,[],[]
+k_minus_1,"{""ranked_candidate_indices"":[1,2,3,4]}",False,"[1, 2, 3, 4]",False,invalid_length,"[1, 2, 3, 4]",4,True,False,invalid_length,"[1, 2, 3, 4]",[]
+k_plus_1,"{""ranked_candidate_indices"":[1,2,3,4,5,6]}",False,"[1, 2, 3, 4, 5, 6]",False,invalid_length,"[1, 2, 3, 4, 5, 6]",6,True,False,invalid_length,"[1, 2, 3, 4, 5, 6]",[]
+two_k_due_numbering,"{""ranked_candidate_indices"":[1,342,2,177,3,901,4,111,5,222]}",False,"[1, 342, 2, 177, 3, 901, 4, 111, 5, 222]",False,invalid_length,"[1, 342, 2, 177, 3, 901, 4, 111, 5, 222]",10,True,False,invalid_length,"[1, 342, 2, 177, 3, 901, 4, 111, 5, 222]",[]
+duplicate,"{""ranked_candidate_indices"":[1,1,2,3,4]}",False,"[1, 1, 2, 3, 4]",False,duplicate_indices,"[1, 1, 2, 3, 4]",5,True,False,duplicate_indices,"[1, 1, 2, 3, 4]",[]
+unknown_index,"{""ranked_candidate_indices"":[1,2,3,4,21]}",False,"[1, 2, 3, 4, 21]",False,unknown_indices,"[1, 2, 3, 4, 21]",5,True,False,unknown_indices,"[1, 2, 3, 4, 21]",[]
+trailing_text,"{""ranked_candidate_indices"":[1,2,3,4,5]} thanks",False,[],False,parse_failed,[],0,True,True,parsed_valid,"[1, 2, 3, 4, 5]","[""extracted_json_object""]"
+leading_text,"ranking {""ranked_candidate_indices"":[1,2,3,4,5]}",False,[],False,parse_failed,[],0,True,True,parsed_valid,"[1, 2, 3, 4, 5]","[""extracted_json_object""]"
+code_fence,"```json\n{""ranked_candidate_indices"":[1,2,3,4,5]}\n```",False,[],False,parse_failed,[],0,True,True,parsed_valid,"[1, 2, 3, 4, 5]","[""removed_code_fence""]"
+empty,,False,[],False,empty_output,[],0,True,False,parse_failed,[],[]
+null_value,"{""ranked_candidate_indices"":null}",False,[],False,invalid_schema,[],0,True,False,invalid_schema,[],[]
+rationale_json_extra_key,"{""reason"":""because 1 and 2 are relevant"",""ranked_candidate_indices"":[1,2,3,4,5]}",True,"[1, 2, 3, 4, 5]",True,parsed_valid,"[1, 2, 3, 4, 5]",5,True,True,parsed_valid,"[1, 2, 3, 4, 5]",[]
+boolean_index,"{""ranked_candidate_indices"":[true,2,3,4,5]}",False,[],False,invalid_schema,[],0,True,False,invalid_schema,[],[]
+float_index,"{""ranked_candidate_indices"":[1.0,2,3,4,5]}",False,[],False,invalid_schema,[],0,True,False,invalid_schema,[],[]
+negative_index,"{""ranked_candidate_indices"":[-1,2,3,4,5]}",False,"[-1, 2, 3, 4, 5]",False,unknown_indices,"[-1, 2, 3, 4, 5]",5,True,False,unknown_indices,"[-1, 2, 3, 4, 5]",[]

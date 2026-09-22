@@ -1,0 +1,13 @@
+dataset,model_name,condition,requests,valid,invalid,wrong_length,parse_failed,valid_rate,invalid_rate
+Beauty,mistral:7b-instruct,CANDDIF_FIRST,100,4,96,90,6,0.04,0.96
+Beauty,mistral:7b-instruct,CANDDIF_RANDOM,100,7,93,91,2,0.07,0.93
+Beauty,qwen2:7b-instruct,CANDDIF_FIRST,100,1,99,99,0,0.01,0.99
+Beauty,qwen2:7b-instruct,CANDDIF_RANDOM,100,0,100,100,0,0.0,1.0
+LastFM,mistral:7b-instruct,CANDDIF_FIRST,100,14,86,86,0,0.14,0.86
+LastFM,mistral:7b-instruct,CANDDIF_RANDOM,100,12,88,88,0,0.12,0.88
+LastFM,qwen2:7b-instruct,CANDDIF_FIRST,100,0,100,100,0,0.0,1.0
+LastFM,qwen2:7b-instruct,CANDDIF_RANDOM,100,0,100,100,0,0.0,1.0
+Sports,mistral:7b-instruct,CANDDIF_FIRST,100,9,91,85,6,0.09,0.91
+Sports,mistral:7b-instruct,CANDDIF_RANDOM,100,4,96,94,2,0.04,0.96
+Sports,qwen2:7b-instruct,CANDDIF_FIRST,100,1,99,99,0,0.01,0.99
+Sports,qwen2:7b-instruct,CANDDIF_RANDOM,100,0,100,100,0,0.0,1.0

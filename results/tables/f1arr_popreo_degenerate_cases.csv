@@ -1,0 +1,20 @@
+dataset,cohort,degenerate_condition,status,affected_groups,reason
+beauty,primary,target_outside_quantile_groups,REPOSITORY_BEHAVIOR_AUDITED,,3 targets have zero train popularity and are not assigned by strict quantile inequalities
+beauty,primary,zero_mean_group_hit_rates,AWAITING_CANONICAL_RAW,,requires final hit@5 vectors; F1ARR records policy but does not infer recommendation outputs
+beauty,history200,target_outside_quantile_groups,REPOSITORY_BEHAVIOR_AUDITED,,1 targets have zero train popularity and are not assigned by strict quantile inequalities
+beauty,history200,zero_mean_group_hit_rates,AWAITING_CANONICAL_RAW,,requires final hit@5 vectors; F1ARR records policy but does not infer recommendation outputs
+sports,primary,target_outside_quantile_groups,REPOSITORY_BEHAVIOR_AUDITED,,2 targets have zero train popularity and are not assigned by strict quantile inequalities
+sports,primary,zero_mean_group_hit_rates,AWAITING_CANONICAL_RAW,,requires final hit@5 vectors; F1ARR records policy but does not infer recommendation outputs
+sports,history200,target_outside_quantile_groups,REPOSITORY_BEHAVIOR_AUDITED,,1 targets have zero train popularity and are not assigned by strict quantile inequalities
+sports,history200,zero_mean_group_hit_rates,AWAITING_CANONICAL_RAW,,requires final hit@5 vectors; F1ARR records policy but does not infer recommendation outputs
+ml1m,primary,target_outside_quantile_groups,REPOSITORY_BEHAVIOR_AUDITED,,1 targets have zero train popularity and are not assigned by strict quantile inequalities
+ml1m,primary,zero_mean_group_hit_rates,AWAITING_CANONICAL_RAW,,requires final hit@5 vectors; F1ARR records policy but does not infer recommendation outputs
+ml1m,history200,zero_mean_group_hit_rates,AWAITING_CANONICAL_RAW,,requires final hit@5 vectors; F1ARR records policy but does not infer recommendation outputs
+lastfm,primary,zero_mean_group_hit_rates,AWAITING_CANONICAL_RAW,,requires final hit@5 vectors; F1ARR records policy but does not infer recommendation outputs
+lastfm,history200,zero_mean_group_hit_rates,AWAITING_CANONICAL_RAW,,requires final hit@5 vectors; F1ARR records policy but does not infer recommendation outputs
+foodcom,primary,empty_popularity_group,DEGENERATE_PROTOCOL_INPUT,2,repository protocol has no group merge/epsilon/drop repair
+foodcom,primary,target_outside_quantile_groups,REPOSITORY_BEHAVIOR_AUDITED,,105 targets have zero train popularity and are not assigned by strict quantile inequalities
+foodcom,primary,zero_mean_group_hit_rates,AWAITING_CANONICAL_RAW,,requires final hit@5 vectors; F1ARR records policy but does not infer recommendation outputs
+foodcom,history200,empty_popularity_group,DEGENERATE_PROTOCOL_INPUT,2,repository protocol has no group merge/epsilon/drop repair
+foodcom,history200,target_outside_quantile_groups,REPOSITORY_BEHAVIOR_AUDITED,,22 targets have zero train popularity and are not assigned by strict quantile inequalities
+foodcom,history200,zero_mean_group_hit_rates,AWAITING_CANONICAL_RAW,,requires final hit@5 vectors; F1ARR records policy but does not infer recommendation outputs

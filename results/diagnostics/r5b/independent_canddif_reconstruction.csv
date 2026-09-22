@@ -1,0 +1,7 @@
+dataset,model_name,reported_CandDif_HR,recomputed_CandDif_HR,delta_CandDif_HR,reported_CandDif_NDCG,recomputed_CandDif_NDCG,delta_CandDif_NDCG,formula,hr_safety,ndcg_safety
+Beauty,mistral:7b-instruct,-0.020408871631207123,-0.020408871631207123,0.0,-0.008292157483430252,-0.008292157483430252,0.0,log((1-Acc_random)/(1-Acc_first)),NONE,NONE
+Beauty,qwen2:7b-instruct,0.0,0.0,0.0,0.0,0.0,0.0,log((1-Acc_random)/(1-Acc_first)),NONE,NONE
+LastFM,mistral:7b-instruct,0.021506205220963463,0.021506205220963463,0.0,0.03708927294780549,0.03708927294780549,0.0,log((1-Acc_random)/(1-Acc_first)),NONE,NONE
+LastFM,qwen2:7b-instruct,0.0,0.0,0.0,0.0,0.0,0.0,log((1-Acc_random)/(1-Acc_first)),NONE,NONE
+Sports,mistral:7b-instruct,0.06252035698133414,0.06252035698133414,0.0,0.06869466265343702,0.06869466265343702,0.0,log((1-Acc_random)/(1-Acc_first)),NONE,NONE
+Sports,qwen2:7b-instruct,0.0,0.0,0.0,0.0,0.0,0.0,log((1-Acc_random)/(1-Acc_first)),NONE,NONE

@@ -1,0 +1,27 @@
+dataset_candidate,requirement_id,experiment_family,metric_or_analysis,blocker_scope,reason
+Food.com,NONE,ALL,none,NONE,no mandatory dataset-specific blockers
+Video Games,HISTORY_qwen2:7b-instruct_L0,history,history N=200 BASE qwen2:7b-instruct L0,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_qwen2:7b-instruct_L1,history,history N=200 BASE qwen2:7b-instruct L1,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_qwen2:7b-instruct_L2,history,history N=200 BASE qwen2:7b-instruct L2,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_qwen2:7b-instruct_L5,history,history N=200 BASE qwen2:7b-instruct L5,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_qwen2:7b-instruct_L10,history,history N=200 BASE qwen2:7b-instruct L10,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_qwen2:7b-instruct_L20,history,history N=200 BASE qwen2:7b-instruct L20,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_mistral:7b-instruct_L0,history,history N=200 BASE mistral:7b-instruct L0,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_mistral:7b-instruct_L1,history,history N=200 BASE mistral:7b-instruct L1,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_mistral:7b-instruct_L2,history,history N=200 BASE mistral:7b-instruct L2,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_mistral:7b-instruct_L5,history,history N=200 BASE mistral:7b-instruct L5,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_mistral:7b-instruct_L10,history,history N=200 BASE mistral:7b-instruct L10,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_mistral:7b-instruct_L20,history,history N=200 BASE mistral:7b-instruct L20,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_gemma2:9b_L0,history,history N=200 BASE gemma2:9b L0,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_gemma2:9b_L1,history,history N=200 BASE gemma2:9b L1,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_gemma2:9b_L2,history,history N=200 BASE gemma2:9b L2,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_gemma2:9b_L5,history,history N=200 BASE gemma2:9b L5,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_gemma2:9b_L10,history,history N=200 BASE gemma2:9b L10,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,HISTORY_gemma2:9b_L20,history,history N=200 BASE gemma2:9b L20,DATASET,"Video Games strict L20 users 35, below required 200"
+Video Games,SHANNON_CATEGORY_ENTROPY_5,diversity,Shannon category entropy@5,DATASET,Video Games lacks frozen dataset metadata/feature evidence for Shannon category entropy@5
+Video Games,ILD_5,diversity,ILD@5,DATASET,Video Games lacks frozen dataset metadata/feature evidence for ILD@5
+Video Games,CALIBRATION_5,fairness,Calibration@5,DATASET,Video Games lacks frozen dataset metadata/feature evidence for Calibration@5
+Video Games,PROFILE_HISTORY_ONLY,profiles,history-only,DATASET,Video Games paired L20 history blocked and canonical feature/profile representation not frozen
+Video Games,PROFILE_PROFILE_GENERATION,profiles,profile generation,DATASET,Video Games paired L20 history blocked and canonical feature/profile representation not frozen
+Video Games,PROFILE_PROFILE_ONLY_RECOMMENDATION,profiles,profile-only recommendation,DATASET,Video Games paired L20 history blocked and canonical feature/profile representation not frozen
+Video Games,PROFILE_PROFILE___HISTORY_RECOMMENDATION,profiles,profile + history recommendation,DATASET,Video Games paired L20 history blocked and canonical feature/profile representation not frozen

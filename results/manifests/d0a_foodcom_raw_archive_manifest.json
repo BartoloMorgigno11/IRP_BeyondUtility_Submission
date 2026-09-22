@@ -1,0 +1,32 @@
+{
+  "absolute_path": "C:\\Users\\Bartolo\\Desktop\\PROGETTI\\IRP_BeyondUtility_Project\\data\\raw\\foodcom\\source\\food-com-recipes-and-user-interactions.zip",
+  "archive_member_count": 8,
+  "artifact_hashes": {
+    "results/tables/d0a_foodcom_archive_inventory.csv": "6b9596da4935eeb521d5826e0cfe6ae76291b580c24e28bd9148547e9984a8be",
+    "results/tables/d0a_foodcom_duplicate_timestamp_audit.csv": "866da616893491a0f4ca7647415b4a161faa8f38e2430cb385c211e0dba522ac",
+    "results/tables/d0a_foodcom_feature_coverage.csv": "dc0d7a1457f1e0931031afd1cd5efc387c932f257dcf6e38e803e18b3b1611e8",
+    "results/tables/d0a_foodcom_history200_feasibility.csv": "340142910349840fc266ea0fd2e426a1e9ec3da00cf627c224a33cbd5d91c73d",
+    "results/tables/d0a_foodcom_history200_users.csv": "f192ed1a7f58ca62d89c37344abf5fd9b8fae70f4e3d7795573694033097c94e",
+    "results/tables/d0a_foodcom_metadata_coverage.csv": "5e4bc3577f63100b0252ee0a13b511350c4a6511779b9f533ede9b5424d7ac63",
+    "results/tables/d0a_foodcom_metric_capability.csv": "6270d946c8bf104b71f535d3e180684dd237cc279c109064865064024f9c61d3",
+    "results/tables/d0a_foodcom_paper_dimension_capability.csv": "fd80988237428b147e5bc7e80be2c81f997b44986e3108a74a85245377232ae5",
+    "results/tables/d0a_foodcom_primary1000_candidates.csv": "642a69ad8fda1222fc0c27adceca73d938cbcdb98ab1b2353349d0e5220f2639",
+    "results/tables/d0a_foodcom_primary1000_feasibility.csv": "f8ff32f23cd41dc87b2833d64bd6256613ae29d752fe761c3318a47d96b4a2d0",
+    "results/tables/d0a_foodcom_primary1000_users.csv": "66688a72e857da101557cc1adfa47b118d9b32d9147632fdbf75fe3abb17fe7d",
+    "results/tables/d0a_foodcom_raw_statistics.csv": "b19e3cec586582748bf226b430aa5196ff0de1ff69c18a81da31b6e1d2e3a855",
+    "results/tables/d0a_foodcom_schema_audit.csv": "d2f34db3d74b27a27f658cbb4d2951b40885368277d9b8eea04b5332b4c7507d",
+    "results/tables/d0a_foodcom_split_statistics.csv": "83e161ab0d33a93c23c437650217f7335db5f46a4dcd13bebba5113793e72c79",
+    "results/tables/d0a_foodcom_traditional_model_capability.csv": "c44948e74477414b6898459f90a78aa8126e8178d6337ff97032ac3e7ed20e9a"
+  },
+  "created_at": "2026-08-25T13:51:16.057373+00:00",
+  "file_size_bytes": 280350373,
+  "filename": "food-com-recipes-and-user-interactions.zip",
+  "phase_id": "d0a_foodcom_material_raw_intake_final_protocol_feasibility",
+  "relative_path": "data/raw/foodcom/source/food-com-recipes-and-user-interactions.zip",
+  "required_members": {
+    "RAW_interactions.csv": "RAW_interactions.csv",
+    "RAW_recipes.csv": "RAW_recipes.csv"
+  },
+  "sha256": "e7a43e623c616799f78a0479b550483450fd7ede4e0c40979db3458a82b5b913",
+  "zip_valid": true
+}

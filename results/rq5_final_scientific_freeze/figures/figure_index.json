@@ -1,0 +1,99 @@
+[
+  {
+    "config": "configs/rq5_final_freeze.yaml",
+    "evidence_family": "corrected",
+    "figure_id": "fig_rq5_profile_conditions_main",
+    "figure_sha256": {
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_conditions_main.pdf": "d086aa56e48ef73c058908239823ff4c23bf1da03b0980173924341a1e543677",
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_conditions_main.png": "8643ec22b859572cc64d6dd10798a42c8a2f784786c8fdde0986625d44941ab8",
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_conditions_main.svg": "f4e3b378f1582143ea49013f07b62a77b91bee312918fe8852fd6adae671b4c1"
+    },
+    "generation_script": "src/analysis/rq5_final_freeze.py",
+    "limitations": "200-user full denominators; local protocol; no semantic-fidelity inference",
+    "rq_identifier": "RQ5",
+    "scientific_interpretation": "Absolute matched-condition utility",
+    "source_artifacts": {
+      "results/rq5_final_scientific_freeze/corrected/metrics.csv": "98c7782211ec143c46205591a1cebc2dc4e5798926aef23badd34287cdd3f312"
+    },
+    "source_csv": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_conditions_main_values.csv",
+    "source_csv_sha256": "8fcc680a8fd7b6cc5718fdeed951c45c2b679f983f76575ce57084afe9f12451"
+  },
+  {
+    "config": "configs/rq5_final_freeze.yaml",
+    "evidence_family": "corrected",
+    "figure_id": "fig_rq5_profile_deltas_heatmap",
+    "figure_sha256": {
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_deltas_heatmap.pdf": "d1ae3665ce0f2023c9a7cea808844d8b515e633665ca4f036e046992c4ee2915",
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_deltas_heatmap.png": "61a4fde64fe77d14f67356b6ded16c04144df17e450ef48cf6eb0e31c5397743",
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_deltas_heatmap.svg": "257b205b5313691c6a83e14a4bffb371b7c993dd51814ec064b2d071ad269ab9"
+    },
+    "generation_script": "src/analysis/rq5_final_freeze.py",
+    "limitations": "CI markers unadjusted for multiplicity; no general positive addition effect",
+    "rq_identifier": "RQ5",
+    "scientific_interpretation": "Matched substitution/addition effects relative to History",
+    "source_artifacts": {
+      "results/rq5_final_scientific_freeze/corrected/bootstrap_results.csv": "f81d55d54468fe363b898635040c0299fa4303a9d94ce0dcdfcb10e5a8e712dc"
+    },
+    "source_csv": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_deltas_heatmap_values.csv",
+    "source_csv_sha256": "b6189c79d9ce7c15c47760f7d0972563bf6683bfc7b07adbcfd8f11e2ca3a50f"
+  },
+  {
+    "config": "configs/rq5_final_freeze.yaml",
+    "evidence_family": "r5d",
+    "figure_id": "fig_rq5_profile_plus_history_extension",
+    "figure_sha256": {
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.pdf": "7e6992bf329a82b8deca3c33dc618d4a1025282a4d8011ccc7c43e87065b2ea9",
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.png": "0a5e3132fb354b4167989a9fdc110278dfb4b6e2bc691d66aa4b0e6028327d74",
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_plus_history_extension.svg": "5dd3a4fcf5da603bdec7e50fcb21c4074752f01d9dcd4c590f5a704102bc5ca5"
+    },
+    "generation_script": "src/analysis/rq5_final_freeze.py",
+    "limitations": "No aligned History-only counterfactual; not a causal profile benefit",
+    "rq_identifier": "RQ5",
+    "scientific_interpretation": "Pipeline feasibility and absolute downstream utility",
+    "source_artifacts": {
+      "results/rq5_final_scientific_freeze/r5d/metrics.csv": "498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7"
+    },
+    "source_csv": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_plus_history_extension_values.csv",
+    "source_csv_sha256": "2555cf5191446a01f61665f8dc6f69e608276b5ae9cf990b3d463ab53e79b863"
+  },
+  {
+    "config": "configs/rq5_final_freeze.yaml",
+    "evidence_family": "illustrative",
+    "figure_id": "fig_rq5_profile_example_qualitative",
+    "figure_sha256": {
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_example_qualitative.pdf": "fc5fef5b5688f3dd6994b09831f1685a02866fa3e943fe94ae29f2a7f8c79bab",
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_example_qualitative.png": "452c60a379d3371c02023a653503dc34558b6bb344ce74416a440a9f87765604",
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_example_qualitative.svg": "765627f93b37c3bda0fa1084fbb681f845b1018252c8988b947347a3b5d34b7e"
+    },
+    "generation_script": "src/analysis/rq5_final_freeze.py",
+    "limitations": "Qualitative illustration only; text shortened for display; no profile-quality validation",
+    "rq_identifier": "RQ5",
+    "scientific_interpretation": "A real generated profile and interpretive cues",
+    "source_artifacts": {
+      "results/rq5_final_scientific_freeze/evidence_f6l.zip": "c4561cfbfc450e35ee205743dba1cd0ef0a1c6e913419e7f269bdb75813bb241",
+      "results/rq5_final_scientific_freeze/evidence_figure_inputs.zip": "1d9a27bba9f1925aa77f1925812659dc5d38184da815b1ad9981363743ca5d5a"
+    },
+    "source_csv": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_example_qualitative_values.csv",
+    "source_csv_sha256": "f868bd7bffcd2570bf238fc537a1529bcacc8e509e501b7fed1e293e46e9cde1"
+  },
+  {
+    "config": "configs/rq5_final_freeze.yaml",
+    "evidence_family": "history_v2",
+    "figure_id": "fig_rq5_history_length_profile_conditions",
+    "figure_sha256": {
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_history_length_profile_conditions.pdf": "1a8c8297cc7d6700fdea640f0d169eeef54597ae82d357f2932bb39f09434c68",
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_history_length_profile_conditions.png": "760ce5c63939e6ade26d77caad8a13c9f5d4425b363fff724bb1bb6e9428f1f7",
+      "results/plots/rq5_final_scientific_freeze/fig_rq5_history_length_profile_conditions.svg": "6b6a86f31b8d18f91d46c6af0c3232e77238d4af48d75598a0ac19f0a19df901"
+    },
+    "generation_script": "src/analysis/rq5_final_freeze.py",
+    "limitations": "Beauty/Qwen only; local adapted APLT/MostPop; V2 canonical ID tie-break; exploratory",
+    "rq_identifier": "RQ5",
+    "scientific_interpretation": "Experimentally distinct history-length slice; PASS metrics only",
+    "source_artifacts": {
+      "results/rq5_final_scientific_freeze/history_v2/metrics.csv": "7ace71bc8354515d2fb099883c7f6cba908d91bd49be01c7fb04c86ac66386fa",
+      "results/rq5_final_scientific_freeze/history_v2/migration_manifest.json": "d07254a556ef01b720fa7094eb63249ce7f3ec5b5fea5de6401cb381f5439fce"
+    },
+    "source_csv": "results/rq5_final_scientific_freeze/figures/fig_rq5_history_length_profile_conditions_values.csv",
+    "source_csv_sha256": "387f617f5652b76361190c7f9c5575498e5855941ff217000d3f1de697136789"
+  }
+]

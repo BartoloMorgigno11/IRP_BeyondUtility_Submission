@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-08-21T14:40:04Z",
+  "decision": "R5C_HISTORY_LENGTH_RECOVERY_COMPLETE",
+  "freeze_metadata_version": "r5c_history_length_freeze_candidate_v1",
+  "freeze_ready": false,
+  "paper_exact": false,
+  "phase": "R5C_HISTORY_LENGTH",
+  "protocol_hash": "30E4BCA9E1456EE9A7DE74A09FE03BF1A26EFCF758915052FD88F39AF9A836F2",
+  "r5a_manifest_sha256": "290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD",
+  "r5b_corrected_freeze_commit": "83b46454866ea61f3e05eec81d555be53e4c41e8",
+  "r5b_corrected_protocol_hash": "9596F36E1B1DBC15B68679DDF32114E6AE09914B418FB31DC112072384B708D5",
+  "raw_aggregate_sha256": "D1CAC607FE113B84FBA08BE32B2CD849A22AE0918652F35898D2C50684B2E9D0",
+  "raw_count": 2400,
+  "raw_namespace": "results/recovery/r5c_history_length",
+  "status_counts": {
+    "backend_incomplete": 0,
+    "invalid": 15,
+    "parse_failure": 0,
+    "requests_accounted": 2400,
+    "requests_expected": 2400,
+    "valid": 2385,
+    "wrong_length": 0
+  }
+}

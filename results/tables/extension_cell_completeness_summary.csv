@@ -1,0 +1,32 @@
+summary_scope,claim_family,scenario,status,row_count,llm_request_count,training_run_count
+budget,Food.com CandDif,FOODCOM_CANDDIF_1000,BUDGET_FROM_RAW_EXPERIMENTS_ONLY,3,3000,0
+budget,Food.com history,FOODCOM_HISTORY_200,BUDGET_FROM_RAW_EXPERIMENTS_ONLY,18,3600,0
+budget,Food.com primary,FOODCOM_PRIMARY_1000,BUDGET_FROM_RAW_EXPERIMENTS_ONLY,6,6000,0
+budget,Food.com profiles,FOODCOM_PROFILE_CONDITIONAL,BUDGET_FROM_RAW_EXPERIMENTS_ONLY,9,1800,0
+budget,Gemma parity,original_four,BUDGET_FROM_RAW_EXPERIMENTS_ONLY,46,20928,0
+raw_experiment,foodcom_canddif_primary,ALL,TO_INFER,3,3000,0
+raw_experiment,foodcom_history_parity,ALL,TO_INFER,18,3600,0
+raw_experiment,foodcom_primary_parity,ALL,TO_INFER,6,6000,0
+raw_experiment,foodcom_profile_generation,ALL,TO_INFER,9,1800,0
+raw_experiment,foodcom_reranking_parity,ALL,BLOCKED,6,6000,0
+raw_experiment,foodcom_traditional_parity,ALL,TO_COMPUTE_OFFLINE,3,0,0
+raw_experiment,foodcom_traditional_parity,ALL,TO_TRAIN,4,0,4
+raw_experiment,gemma_canddif_parity,ALL,TO_INFER,6,600,0
+raw_experiment,gemma_history_parity,ALL,TO_INFER,24,4800,0
+raw_experiment,gemma_original_four_parity,ALL,TO_INFER,16,15528,0
+raw_experiment,profile_generation,ALL,NOT_APPLICABLE,4,0,0
+raw_experiment,unresolved_original_metric_policy,ALL,BLOCKED,15,0,0
+result_cell,foodcom_canddif_primary,ALL,TO_INFER,21,0,0
+result_cell,foodcom_history_parity,ALL,NOT_APPLICABLE,3,0,0
+result_cell,foodcom_history_parity,ALL,TO_INFER,339,0,0
+result_cell,foodcom_primary_parity,ALL,TO_INFER,114,0,0
+result_cell,foodcom_profile_generation,ALL,TO_INFER,18,0,0
+result_cell,foodcom_reranking_parity,ALL,BLOCKED,132,0,0
+result_cell,foodcom_traditional_parity,ALL,TO_COMPUTE_OFFLINE,30,0,0
+result_cell,foodcom_traditional_parity,ALL,TO_TRAIN,40,0,0
+result_cell,gemma_canddif_parity,ALL,TO_INFER,42,0,0
+result_cell,gemma_history_parity,ALL,NOT_APPLICABLE,4,0,0
+result_cell,gemma_history_parity,ALL,TO_INFER,452,0,0
+result_cell,gemma_original_four_parity,ALL,TO_INFER,328,0,0
+result_cell,profile_generation,ALL,NOT_APPLICABLE,4,0,0
+result_cell,unresolved_original_metric_policy,ALL,BLOCKED,15,0,0

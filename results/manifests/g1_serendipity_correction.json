@@ -1,0 +1,21 @@
+{
+  "affected_cells": 30,
+  "affected_metric": "serendipity_at_5",
+  "bug_description": "bool('False') is True; explicit bool_value parsing restores MostPop ground-truth semantics.",
+  "deterministic_recomputation_only": true,
+  "historical_manifests_policy": "Preserved unchanged as pre-correction provenance; this artifact records the correction successor.",
+  "inference_calls": 0,
+  "post_fix_artifact_hash": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b",
+  "pre_fix_artifact_hash": "15ca9025aada73feba7513e06756b6c3ede42542befd82c1a76dbc757b018ae1",
+  "protected_artifacts_verified": 230,
+  "raw_inference_unchanged": true,
+  "request_accounting_unchanged": true,
+  "scope": "Port and deterministic verification of the existing correction only; no G1 metric-contract audit.",
+  "source_base_commit": "944798f3e754576beef2a03bd5a00811a285b1e6",
+  "source_branch": "submission/prof",
+  "source_fix_reference": "8d69d2c22b68164e19d4875dd7b5453b8ac28c5a",
+  "status": "PASS",
+  "unchanged_beyond_utility_cells": 390,
+  "user_contributions_verified": 29024,
+  "validation_command": "python -B src/analysis/validate_g1_serendipity_correction.py --config configs/g1_serendipity_correction.yaml"
+}

@@ -1,0 +1,121 @@
+result_id,dataset,model_name,prompt_variant,metric_id,value,value_json,status,planned_users,undefined_user_count,source_recommendation_hash,reason,metric_display_label,heatmap_row,heatmap_column,configuration_label,display_transform,eligible_user_count,cell_annotation
+G1-BEYOND-732BF36FC0FA1DD3,beauty,qwen2:7b-instruct,BASE,calibration_at_5,0.507123018907502,"{""defined_user_count"":989}",COMPUTED,990,1,05ea0fc95d0795b9dbd74f404f62740734a8a877dc50942744873201641b3ac2,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,0,0,"Qwen2
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,989,"0.507
+e=989
+u=1"
+G1-BEYOND-C62CDAD2D46B3BFC,beauty,qwen2:7b-instruct,LLMRANK,calibration_at_5,0.51766062439009874,"{""defined_user_count"":972}",COMPUTED,990,18,3c5fca21c6e3fa5c27e78a04eeec57d952d181e8e8aac32c90edf9f5d0c91a51,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,0,1,"Qwen2
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,972,"0.518
+e=972
+u=18"
+G1-BEYOND-7FF072ECF217D982,beauty,mistral:7b-instruct,BASE,calibration_at_5,0.51301714989803548,"{""defined_user_count"":984}",COMPUTED,990,6,717da3f4877f7bb45368e425bb21e7221a3f573f785a57eba9108bf16235d536,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,0,2,"Mistral
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,984,"0.513
+e=984
+u=6"
+G1-BEYOND-098E014BC13C640B,beauty,mistral:7b-instruct,LLMRANK,calibration_at_5,0.5132288374116164,"{""defined_user_count"":960}",COMPUTED,990,30,1cecc00c49b0b266b89081327f60c7d504b4ff8d7ceec53186fc884c54cbd768,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,0,3,"Mistral
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,960,"0.513
+e=960
+u=30"
+G1-BEYOND-1FD3DC0501C64C4C,beauty,gemma2:9b,BASE,calibration_at_5,0.51940477790371198,"{""defined_user_count"":990}",COMPUTED,990,0,e6c621fa3d8e49890bde304a3c90b5bbde7d447947a5b14f61445e6bbc8ce571,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,0,4,"Gemma2
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,990,"0.519
+e=990
+u=0"
+G1-BEYOND-40420EF1294844FF,beauty,gemma2:9b,LLMRANK,calibration_at_5,0.54213624647609415,"{""defined_user_count"":989}",COMPUTED,990,1,5281ec668157d4567dce9508e93385464b3286f392604fe9dfa2b3935d459207,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,0,5,"Gemma2
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,989,"0.542
+e=989
+u=1"
+G1-BEYOND-090762C3583FA777,sports,qwen2:7b-instruct,BASE,calibration_at_5,0.4490560058905117,"{""defined_user_count"":891}",COMPUTED,892,1,ede93d6c4d2758fc1d8796039ec9a4eff36b8a7ceef11d3ba433870199e85964,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,1,0,"Qwen2
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,891,"0.449
+e=891
+u=1"
+G1-BEYOND-6FB5D33FB9A33DF4,sports,qwen2:7b-instruct,LLMRANK,calibration_at_5,0.45762513997928222,"{""defined_user_count"":879}",COMPUTED,892,13,5ffe6cfe7f1e6a993b1fdc42683c15ec7f9685800ad844b3365ff22fb44eca85,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,1,1,"Qwen2
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,879,"0.458
+e=879
+u=13"
+G1-BEYOND-EB45E209D77ED2B9,sports,mistral:7b-instruct,BASE,calibration_at_5,0.45997522375246508,"{""defined_user_count"":888}",COMPUTED,892,4,adfc9328c48959b20f4c381f17ea05d02eeb1cfe2d1ab7781dba2e549dc76c69,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,1,2,"Mistral
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,888,"0.460
+e=888
+u=4"
+G1-BEYOND-C40E80D5222B6A0F,sports,mistral:7b-instruct,LLMRANK,calibration_at_5,0.45357466728931378,"{""defined_user_count"":863}",COMPUTED,892,29,c3e015be815afb5c6afe254864ff346f72f0fbb964fa589b352115619c2be4d1,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,1,3,"Mistral
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,863,"0.454
+e=863
+u=29"
+G1-BEYOND-0446B483448E2FA1,sports,gemma2:9b,BASE,calibration_at_5,0.47760607715300291,"{""defined_user_count"":890}",COMPUTED,892,2,54cd2f622c603481ec8223b18803d60e67a4f3392d8eefcecfd22409cd5aebeb,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,1,4,"Gemma2
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,890,"0.478
+e=890
+u=2"
+G1-BEYOND-DB69007AC4EAB0BD,sports,gemma2:9b,LLMRANK,calibration_at_5,0.49876370333973069,"{""defined_user_count"":884}",COMPUTED,892,8,ecc3b5652635a3d0816c74b4961d400cde907732e940be2cd9fc4699ce0d4f5b,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,1,5,"Gemma2
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,884,"0.499
+e=884
+u=8"
+G1-BEYOND-2A46BEE419D54E16,ml1m,qwen2:7b-instruct,BASE,calibration_at_5,0.64017034253065541,"{""defined_user_count"":1000}",COMPUTED,1000,0,6e297be1eff65af6eece4c5b92832be8ee583acae10f30ee9cbeedf6b13983a5,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,2,0,"Qwen2
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,1000,"0.640
+e=1000
+u=0"
+G1-BEYOND-47F7934A45DFF9F5,ml1m,qwen2:7b-instruct,LLMRANK,calibration_at_5,0.639881776891845,"{""defined_user_count"":990}",COMPUTED,1000,10,b608078c30d65d2df96c239d52e8cee4aaf778d1b1ccff1f16d71305346ed3f6,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,2,1,"Qwen2
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,990,"0.640
+e=990
+u=10"
+G1-BEYOND-5FABCFB12264EEA5,ml1m,mistral:7b-instruct,BASE,calibration_at_5,0.65752136650675341,"{""defined_user_count"":999}",COMPUTED,1000,1,8f59a395407ad9c8e100c46c50815d71df51ecd5a8fa43cae7f79e21ba92cbda,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,2,2,"Mistral
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,999,"0.658
+e=999
+u=1"
+G1-BEYOND-F850E2A55E32EAEE,ml1m,mistral:7b-instruct,LLMRANK,calibration_at_5,0.65509517034193454,"{""defined_user_count"":954}",COMPUTED,1000,46,40dfdad3834f39f910f5ad6ab3d5faf567f098142bed89f34a7bb65d2392b84c,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,2,3,"Mistral
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,954,"0.655
+e=954
+u=46"
+G1-BEYOND-F7A62A08932E6E8A,ml1m,gemma2:9b,BASE,calibration_at_5,0.64212921005702495,"{""defined_user_count"":1000}",COMPUTED,1000,0,cd267365b35ce2bd5d77a7ceed5faf4019c1b48356f64a3448bcb56597b89e6d,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,2,4,"Gemma2
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,1000,"0.642
+e=1000
+u=0"
+G1-BEYOND-FB7F8447606D30E9,ml1m,gemma2:9b,LLMRANK,calibration_at_5,0.65495245796669788,"{""defined_user_count"":998}",COMPUTED,1000,2,10ac41ddc3ef5bdc99c9b343fcaabf0e4f13556d39654d1ac90ff00087477237,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,2,5,"Gemma2
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,998,"0.655
+e=998
+u=2"
+G1-BEYOND-F5A55B43EF17B03E,lastfm,qwen2:7b-instruct,BASE,calibration_at_5,0.29939219730290789,"{""defined_user_count"":992}",COMPUTED,1000,8,5853415c36410462b70f6c67a7556295f239cd6831a6a1923fa6ffffdd449afe,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,3,0,"Qwen2
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,992,"0.299
+e=992
+u=8"
+G1-BEYOND-53F5873B6C4F18EB,lastfm,qwen2:7b-instruct,LLMRANK,calibration_at_5,0.30388803889478172,"{""defined_user_count"":986}",COMPUTED,1000,14,b4bfdb0296f352778eab7a6f8182087deaa904829913ab37b628da3c41c334e4,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,3,1,"Qwen2
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,986,"0.304
+e=986
+u=14"
+G1-BEYOND-905E4C15515E9907,lastfm,mistral:7b-instruct,BASE,calibration_at_5,0.32331583836691352,"{""defined_user_count"":995}",COMPUTED,1000,5,981b6e19fcfbe01a4b77f7517a7eec36a98ac2343bb4e68b7f75d241fbe7f03a,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,3,2,"Mistral
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,995,"0.323
+e=995
+u=5"
+G1-BEYOND-E85D5C27F7349E1A,lastfm,mistral:7b-instruct,LLMRANK,calibration_at_5,0.2988591641189085,"{""defined_user_count"":973}",COMPUTED,1000,27,9995210518b4ebf178f78d452ae8913ebc7272d3e7c564879cc3693c7767571c,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,3,3,"Mistral
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,973,"0.299
+e=973
+u=27"
+G1-BEYOND-5B02141F724E6365,lastfm,gemma2:9b,BASE,calibration_at_5,0.32691694176823294,"{""defined_user_count"":1000}",COMPUTED,1000,0,6a6bcf815a003492474e9465eb05bafe25a97b1445afe8fff7c81f9e54632250,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,3,4,"Gemma2
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,1000,"0.327
+e=1000
+u=0"
+G1-BEYOND-7307100315D9F8DE,lastfm,gemma2:9b,LLMRANK,calibration_at_5,0.33447866080260719,"{""defined_user_count"":995}",COMPUTED,1000,5,b43f1b1c918003c205322eb4dadf626f2705ab714ddaa66a303fba9d3ac79a3d,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,3,5,"Gemma2
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,995,"0.334
+e=995
+u=5"
+G1-BEYOND-3AB4719A85CB496D,foodcom,qwen2:7b-instruct,BASE,calibration_at_5,0.56186443451025669,"{""defined_user_count"":272}",COMPUTED,1000,728,03b1080d2f70dc877c58167f75a10f7e4056beeb8f5d156a4e1b36396bab0667,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,4,0,"Qwen2
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,272,"0.562
+e=272
+u=728"
+G1-BEYOND-99E0F0ECF5C42406,foodcom,qwen2:7b-instruct,LLMRANK,calibration_at_5,0.562917035017371,"{""defined_user_count"":270}",COMPUTED,1000,730,2645cdb73c20dff0fcb0fae6b0b45999b93f9bc37dad828c6049e060a2b4f30e,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,4,1,"Qwen2
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,270,"0.563
+e=270
+u=730"
+G1-BEYOND-77080840A053A0AA,foodcom,mistral:7b-instruct,BASE,calibration_at_5,0.56239693677393798,"{""defined_user_count"":273}",COMPUTED,1000,727,4be2b024a4b5afb63fe498af167f8754dd1142bcdbd0ceb0706971615b35be46,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,4,2,"Mistral
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,273,"0.562
+e=273
+u=727"
+G1-BEYOND-345B99359820D4EE,foodcom,mistral:7b-instruct,LLMRANK,calibration_at_5,0.55846814974523007,"{""defined_user_count"":260}",COMPUTED,1000,740,01a921783e2f9f38c3d95ead7dfb914c48afaf8eb977ba6a32ac70e70169a6cd,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,4,3,"Mistral
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,260,"0.558
+e=260
+u=740"
+G1-BEYOND-4E0EB9D23E07B40F,foodcom,gemma2:9b,BASE,calibration_at_5,0.57889756181498997,"{""defined_user_count"":272}",COMPUTED,1000,728,d5f8e11194a0264fa83a0f239f9a1e7cc469d813977ea0ba9feabb64324d5d52,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,4,4,"Gemma2
+BASE",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,272,"0.579
+e=272
+u=728"
+G1-BEYOND-4B23EF38AB31933F,foodcom,gemma2:9b,LLMRANK,calibration_at_5,0.58755979559448479,"{""defined_user_count"":273}",COMPUTED,1000,727,2c18f447ff14d150825608c0dd6f1736891b02e67cd84f977835292dce66a7eb,mean over strict-valid users with train-history and recommendation feature distributions,Calibration@5,4,5,"Gemma2
+LLMRANK",PER_METRIC_LINEAR_COLOR_NORMALIZATION_RAW_ANNOTATIONS,273,"0.588
+e=273
+u=727"

@@ -1,0 +1,99 @@
+{
+  "analytic_universe_modified": false,
+  "bootstrap_settings": {
+    "alpha": 0.05,
+    "ci": "two_sided_95_percentile",
+    "engine": "empirical_multinomial_equivalent_to_paired_user_resampling_for_mean_delta",
+    "method": "paired_user_bootstrap_mean_delta",
+    "percentile_method": "numpy_quantile_linear",
+    "resamples": 10000,
+    "seed": 20260901
+  },
+  "created_at_utc": "2026-09-06T07:49:30Z",
+  "decision_token": "G4_STATISTICAL_ANALYSIS_FROZEN",
+  "files_created": [
+    "results/tables/g4_f1bzq_statistical_paired_contributions.csv",
+    "results/tables/g4_f1bzq_statistical_results.csv",
+    "results/tables/g4_f1bzq_statistical_validation.csv",
+    "results/manifests/g4_f1bzq_statistical_analysis_manifest.json",
+    "report/g4_f1bzq_statistical_analysis.md",
+    "report/notes.md"
+  ],
+  "frozen_evidence_modified": false,
+  "head_before_generation": "41ac7fe548ba68b4a55f002e1ba408677d6fb2a0",
+  "holm_applied": false,
+  "holm_status": "metadata_only_not_applied_no_frozen_p_value_method",
+  "input_hashes": {
+    "results/manifests/g1_primary_ranking_execution_manifest.json": "351eb31d4ae938c755c913b312e690e5be066f43d0128df252f62c2d3c9856b9",
+    "results/manifests/g4_f1bzq_analytic_universe_freeze.json": "2cb39f6c3e3b8fbf8926e9e46bb4148d3635c3a52b2cbafe38d8e81939e75422",
+    "results/manifests/g4_f1bzq_metrics_freeze.json": "a82573e29924b461ba1d60c03cc39891aa0a5191b74157b41d2bd4975cf80c37",
+    "results/manifests/g4_f1bzq_reranking_protocol_freeze.json": "6c020d3ebd4da59e63907b0a5d18748c9cb43cbb42e4184561bca2afd5fbcc2c",
+    "results/tables/g1_primary_ranking_utility.csv": "369db87fb19686525135aa1f5cd9d1b1d6d790e4696aad0b70613cb235b33308",
+    "results/tables/g4_f1bzq_analytic_cell_counts.csv": "b6685118768799d37243f1f361d5ee6f0bff25de2827bec03ea4512f382601c2",
+    "results/tables/g4_f1bzq_analytic_universe.csv": "e1e2ee0c7fdfb034eb66cd186f221fa02127dc7cd727e275e015b3327eb07821",
+    "results/tables/g4_f1bzq_candidate_conditional_metrics.csv": "b6be7dc20ba6769e93d3dccef9092c159603d7bac22b7c45e7af3623746500ba",
+    "results/tables/g4_f1bzq_metric_denominators.csv": "f07d31e9600b9109975135fead0f6d6d5df8eb1128bd16652b2035389f72b79d",
+    "results/tables/g4_f1bzq_metric_results.csv": "c19577d2c12a45fbc4d9dcdb009b2b3417dc602f3047a8be1c15ed2b97f3904b",
+    "results/tables/g4_f1bzq_metric_undefined_blocked.csv": "5c06d8affef175f79ee9ff10f241151db321a25be78c4d1cd226d9519c32652f",
+    "results/tables/g4_f1bzq_metric_validation.csv": "c7ae457282372effb0fb321f22226987bb1db71a3f682c7efeedb36fa3d0e5a3",
+    "results/tables/g4_f1bzq_reliability.csv": "666f4af4d2fda42fbd145e0d34dd881f2655c5582e8c88b83251690b4b2d27cb",
+    "results/tables/g4_f1bzq_statistical_comparisons.csv": "1145162db3576a2d6024a0bd0088fcf24acb6e3112271509b2a57eec2e512355"
+  },
+  "metric_artifacts_modified": false,
+  "metric_scope": {
+    "beyond_utility": "not_tested_absent_from_frozen_statistical_plan",
+    "candidate_recall": "not_tested_upstream_dataset_level_quantity",
+    "descriptive_g1_vs_g4_pipeline": [
+      "hr_at_5",
+      "ndcg_at_5",
+      "mrr"
+    ],
+    "inferential_g4_internal": [
+      "hr_at_5",
+      "ndcg_at_5",
+      "mrr",
+      "conditional_hr_at_5",
+      "conditional_ndcg_at_5"
+    ]
+  },
+  "new_tests_added": false,
+  "next_safe_step": "perform final G4 scientific synthesis/report update from frozen metric and statistical artifacts only",
+  "ollama_or_api_calls_executed": 0,
+  "output_hashes": {
+    "report/g4_f1bzq_statistical_analysis.md": "913448ad01fb8993db019b77b84286b620b00bc598f3d8b8e11beedd78c227a9",
+    "results/tables/g4_f1bzq_statistical_paired_contributions.csv": "242f8e296d030902ebf73a94a1f3989965ff42c766ede3e49cba5a939ca76581",
+    "results/tables/g4_f1bzq_statistical_results.csv": "21aaa612a82cee6d267e1b4558958ebba44f27afb269a4230bab3d14a5b77ee9",
+    "results/tables/g4_f1bzq_statistical_validation.csv": "aef80f7edd3387c12d46fec7d9f36b4ed1600ac8f39f4c620593dfd7d43a8f9d"
+  },
+  "p_values_computed": false,
+  "phase_id": "g4_f1bzq_statistical_analysis",
+  "precondition_status": "G4_METRICS_FROZEN",
+  "protocol_config_runner_modified": false,
+  "schema_version": "1.0",
+  "source": "frozen_g4_metric_artifacts_and_frozen_g4_analytic_universe_only",
+  "statistical_plan_modified": false,
+  "summary": {
+    "ci_decision_counts": {
+      "CI_SUPPORTED_NEGATIVE": 24,
+      "CI_SUPPORTED_POSITIVE": 29,
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 172
+    },
+    "comparison_family_counts": {
+      "g1_vs_g4_pipeline_descriptive": 30,
+      "g4_model_pair": 30,
+      "g4_prompt_strategy": 15
+    },
+    "comparison_templates_covered": 75,
+    "descriptive_result_rows": 90,
+    "descriptive_templates": 30,
+    "inferential_result_rows": 225,
+    "inferential_templates": 45,
+    "paired_contribution_rows": 145188,
+    "statistical_result_rows": 315,
+    "validation_failures": 0,
+    "validation_passes": 33
+  },
+  "validation_failures": [],
+  "validation_passed": true,
+  "zero_inference": true
+}

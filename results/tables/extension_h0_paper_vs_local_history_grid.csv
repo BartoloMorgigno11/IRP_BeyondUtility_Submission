@@ -1,0 +1,25 @@
+dataset,history_length,classification,paper_alignment_note,official_code_supported,local_final_grid,l0_semantics
+beauty,0,OFFICIAL_CODE_SUPPORTED,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",True,True,explicit_empty_history
+beauty,1,OFFICIAL_CODE_SUPPORTED,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",True,True,
+beauty,2,OFFICIAL_CODE_SUPPORTED,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",True,True,
+beauty,5,OFFICIAL_CODE_SUPPORTED,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",True,True,
+beauty,10,OFFICIAL_CODE_SUPPORTED,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",True,True,
+beauty,20,OFFICIAL_CODE_SUPPORTED,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",True,True,
+sports,0,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,explicit_empty_history
+sports,1,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+sports,2,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+sports,5,OFFICIAL_CODE_SUPPORTED,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",True,True,
+sports,10,OFFICIAL_CODE_SUPPORTED,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",True,True,
+sports,20,OFFICIAL_CODE_SUPPORTED,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",True,True,
+ml1m,0,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,explicit_empty_history
+ml1m,1,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+ml1m,2,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+ml1m,5,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+ml1m,10,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+ml1m,20,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+lastfm,0,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,explicit_empty_history
+lastfm,1,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+lastfm,2,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+lastfm,5,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+lastfm,10,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,
+lastfm,20,LOCAL_EXTENSION_GRID,"paper history protocol exists, but exact paper length grid is not proven from local artifacts",False,True,

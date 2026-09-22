@@ -1,0 +1,11 @@
+staged_local_path,archive_member_path,matched_name,match_type,dataset_guess,artifact_category_guess,confidence,reason
+data/external/plan_c/hetrec2011-lastfm-2k.zip,user_taggedartists.dat,user_taggedartists.dat,lastfm_raw_file,lastfm,raw_dataset_candidate,medium,Found LastFM HetRec raw filename user_taggedartists.dat.
+data/external/plan_c/hetrec2011-lastfm-2k.zip,artists.dat,artists.dat,lastfm_raw_file,lastfm,raw_dataset_candidate,medium,Found LastFM HetRec raw filename artists.dat.
+data/external/plan_c/hetrec2011-lastfm-2k.zip,user_artists.dat,user_artists.dat,lastfm_raw_file,lastfm,raw_dataset_candidate,medium,Found LastFM HetRec raw filename user_artists.dat.
+data/external/plan_c/meta_Beauty.json.gz,,meta_Beauty.json.gz,amazon_raw_file,beauty,raw_dataset_candidate,medium,Found Amazon raw-data filename pattern meta_Beauty.json.gz.
+data/external/plan_c/meta_Sports_and_Outdoors.json.gz,,meta_Sports_and_Outdoors.json.gz,amazon_raw_file,sports,raw_dataset_candidate,medium,Found Amazon raw-data filename pattern meta_Sports_and_Outdoors.json.gz.
+data/external/plan_c/ml-1m.zip,ml-1m/movies.dat,movies.dat,ml1m_raw_file,ml1m,raw_dataset_candidate,medium,Found MovieLens-1M raw filename movies.dat.
+data/external/plan_c/ml-1m.zip,ml-1m/ratings.dat,ratings.dat,ml1m_raw_file,ml1m,raw_dataset_candidate,medium,Found MovieLens-1M raw filename ratings.dat.
+data/external/plan_c/ml-1m.zip,ml-1m/users.dat,users.dat,ml1m_raw_file,ml1m,raw_dataset_candidate,medium,Found MovieLens-1M raw filename users.dat.
+data/external/plan_c/reviews_Beauty_5.json.gz,,reviews_Beauty_5.json.gz,amazon_raw_file,beauty,raw_dataset_candidate,medium,Found Amazon raw-data filename pattern reviews_Beauty_5.json.gz.
+data/external/plan_c/reviews_Sports_and_Outdoors_5.json.gz,,reviews_Sports_and_Outdoors_5.json.gz,amazon_raw_file,sports,raw_dataset_candidate,medium,Found Amazon raw-data filename pattern reviews_Sports_and_Outdoors_5.json.gz.

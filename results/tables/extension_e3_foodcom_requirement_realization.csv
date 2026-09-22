@@ -1,0 +1,24 @@
+evidence_label,requirement,mandatory,requirement_class,realization_status,evidence
+POST-F6M DATASET-5 EXTENSION EVIDENCE,"Public, reproducible dataset access and license",yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,User-item interaction rows with stable user_id and item_id,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Chronological order or timestamps,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Item titles or names,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Item metadata categories/tags/genres,yes_if_claimed,MANDATORY_FOR_LOCAL_REPRODUCTION_PARITY,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Train-only item popularity counts,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Unique-user item popularity counts,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Ground-truth positive target per sampled user,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Ranking candidate pools with one positive and 19 negatives,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,"Reranking candidate pools from BPRMF, GRU4Rec, SASRec, and LightGCN top-K outputs",yes_for_reranking,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Candidate order and positive position metadata,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,History length bins with sufficient depth,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Aligned MostPop recommendation/hit vector,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Popularity quintile groups with zero-denominator policy,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,User activity groups based on median history length,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Catalog item universe with exposure denominator policy,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Free-text/title-list LLM outputs or paper-equivalent parser outputs,yes_for_paper_hallucination,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Profile-generation outputs and dependency manifest,yes,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Traditional model training-ready split and configs,yes_if_reproducing_traditional_matrix,MANDATORY_FOR_PAPER_FRAMEWORK,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,"Raw output manifests, parser provenance, and invalid-output policy",yes,MANDATORY_FOR_LOCAL_REPRODUCTION_PARITY,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Candidate retrieval and aggregation intermediate artifacts,yes_later,MANDATORY_FOR_NEW_EXTENSION,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Positive-injection intervention records,yes_later,MANDATORY_FOR_NEW_EXTENSION,UNRESOLVED,Food.com acquisition/preprocessing did not complete.
+POST-F6M DATASET-5 EXTENSION EVIDENCE,"Token, latency, and cost logs",optional,OPTIONAL,UNRESOLVED,Food.com acquisition/preprocessing did not complete.

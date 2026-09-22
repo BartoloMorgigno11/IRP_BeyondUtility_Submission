@@ -1,0 +1,11 @@
+dataset,component,source_path,archive_member,sampled_rows,parsed_rows,parse_errors,unique_users_sample,unique_items_sample,min_timestamp_sample,max_timestamp_sample,rating_distribution_sample,metadata_records_with_title,metadata_records_with_categories,metadata_records_with_description,notes
+amazon_beauty,amazon_reviews,data/external/plan_c/reviews_Beauty_5.json.gz,,1000,1000,0,903,55,1052611200,1405209600,1.0:58;2.0:69;3.0:114;4.0:168;5.0:591,,,,"Amazon review sample; counts are sample diagnostics, not final dataset statistics."
+amazon_beauty,amazon_metadata,data/external/plan_c/meta_Beauty.json.gz,,1000,1000,0,,1000,,,,1000,1000,889,Amazon metadata sample; coverage is sample-level only.
+amazon_sports,amazon_reviews,data/external/plan_c/reviews_Sports_and_Outdoors_5.json.gz,,1000,1000,0,959,49,1015459200,1405296000,1.0:22;2.0:25;3.0:57;4.0:166;5.0:730,,,,"Amazon review sample; counts are sample diagnostics, not final dataset statistics."
+amazon_sports,amazon_metadata,data/external/plan_c/meta_Sports_and_Outdoors.json.gz,,1000,1000,0,,1000,,,,976,1000,838,Amazon metadata sample; coverage is sample-level only.
+ml1m,ml1m_ratings,data/external/plan_c/ml-1m.zip,ml-1m/ratings.dat,1000,1000,0,10,670,978224375,980638688,1:24;2:75;3:274;4:354;5:273,0,0,,MovieLens-1M sample; counts are sample diagnostics.
+ml1m,ml1m_movies,data/external/plan_c/ml-1m.zip,ml-1m/movies.dat,1000,1000,0,0,1000,,,,1000,1000,,MovieLens-1M sample; counts are sample diagnostics.
+ml1m,ml1m_users,data/external/plan_c/ml-1m.zip,ml-1m/users.dat,1000,1000,0,1000,0,,,,0,0,,MovieLens-1M sample; counts are sample diagnostics.
+lastfm,lastfm_user_artists,data/external/plan_c/hetrec2011-lastfm-2k.zip,user_artists.dat,1000,1000,0,20,798,,,,,,,LastFM sample; user_artists has weights but no listening timestamp.
+lastfm,lastfm_artists,data/external/plan_c/hetrec2011-lastfm-2k.zip,artists.dat,1000,1000,0,0,1000,,,,,,,LastFM sample; user_artists has weights but no listening timestamp.
+lastfm,lastfm_user_taggedartists,data/external/plan_c/hetrec2011-lastfm-2k.zip,user_taggedartists.dat,1000,1000,0,11,403,20061101,20110505,,,,,LastFM sample; user_artists has weights but no listening timestamp.

@@ -1,0 +1,2 @@
+dataset,baseline,candidate_rows,candidate_items_not_in_interaction_universe_count,candidate_items_not_in_interaction_universe_rate,zero_train_pop_candidate_rate,evaluated_users,diagnostic_subset,max_users,run_scope,notes,timestamp
+amazon_sports,content_bm25,100000,69313,0.69313,0.72908,1000,True,1000,diagnostic_max_users_1000,Candidate diagnostics compare candidates against reconstructed train+ground-truth item universe; zero train popularity is expected for some held-out positives and cold candidate items.,2026-06-29T16:16:59.559147+00:00

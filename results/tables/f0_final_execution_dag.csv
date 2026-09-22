@@ -1,0 +1,12 @@
+node_id,stage,requires,produces,execution_type,mandatory_or_conditional,estimated_raw_llm_requests
+F0-DAG-A,dataset/cohort/candidate final freeze,,frozen five-dataset cohorts and candidate identities,offline,mandatory,0
+F0-DAG-B,offline metric implementation completion,F0-DAG-A,OIC/Shannon/Gini/Jain/K-S implementation readiness,offline,mandatory,0
+F0-DAG-C,traditional recommender computation/training,F0-DAG-A,baseline rankings and source ranked lists,offline_training,mandatory,0
+F0-DAG-D,primary LLM ranking,F0-DAG-A;F0-DAG-B,five-dataset primary local LLM raw outputs,llm_inference,mandatory,29292
+F0-DAG-E,history sensitivity,F0-DAG-A;F0-DAG-D,paired L0/L1/L2/L5/L10/L20 raw outputs,llm_inference,required_sensitivity,18000
+F0-DAG-F,CandDif/order sensitivity,F0-DAG-A;F0-DAG-D,paired alternate-order raw outputs,llm_inference,required_sensitivity,3000
+F0-DAG-G,reranking after source-rank audit,F0-DAG-C,reranking raw outputs and Candidate Recall@N,training_dependent_llm_inference,training_dependent,29292
+F0-DAG-H,profile/generation experiments,F0-DAG-A;F0-DAG-D;F0-DAG-E,profile-only and profile+history raw outputs,conditional_llm_inference,conditional,9000
+F0-DAG-I,derived metrics,F0-DAG-D;F0-DAG-E;F0-DAG-F;F0-DAG-G;F0-DAG-H,"utility, beyond-utility, reliability, efficiency tables",offline,mandatory,0
+F0-DAG-J,statistical comparisons,F0-DAG-I,paired comparisons and multiplicity-controlled summaries,offline,mandatory,0
+F0-DAG-K,final synthesis/report,F0-DAG-J,final scientific synthesis,offline,mandatory,0

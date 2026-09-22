@@ -1,0 +1,26 @@
+check,status,evidence
+head_matches_f1bxrf_checkpoint,PASS,3842beb94d2303a3987795a3a22854a691e526df
+active_datasets_exact,PASS,"beauty,sports,ml1m,lastfm,foodcom"
+video_games_absent,PASS,0
+f0_budget_unchanged,PASS,"{'EXISTING_REUSABLE_REQUESTS': 0, 'CORE_MANDATORY_NOW_REQUESTS': 29292, 'REQUIRED_SENSITIVITY_REQUESTS': 21000, 'TRAINING_DEPENDENT_REQUESTS': 29292, 'CONDITIONAL_REQUESTS': 9000, 'OPTIONAL_REQUESTS': 12000, 'BLOCKED_REQUESTS': 0, 'MANDATORY_RAW_REQUESTS_TOTAL': 50292, 'FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL': 88584, 'CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL': 100584, 'PREVIOUS_D0B_ESTIMATE': 44928, 'MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE': 5364}"
+foodcom_raw_hashes_unchanged,PASS,True
+h0_hashes_unchanged,PASS,True
+global_metric_blockers_zero,PASS,0
+search_space_40,PASS,40
+f1bxr_readiness_40_ready,PASS,{'READY_TO_TUNE': 40}
+seed_42,PASS,[42]
+execution_40_terminal,PASS,{'COMPLETED': 40}
+execution_40_completed,PASS,{'COMPLETED': 40}
+metrics_validation_only,PASS,"['validation_hr_at_5', 'validation_ndcg_at_5']"
+no_final_test_metrics,PASS,execution table
+ranking_has_40_rows,PASS,40
+selected_four_winners,PASS,"[{'model': 'BPRMF', 'selected_config_id': 'F1BR-FOODCOM-SEARCH-CF0C268538BB66EF', 'config_hash': '665b2b14d2397107875e35ead8f017dcb449e873badda5b44e3c8aa9af5c0779', 'hyperparameters': '{""embedding"":128,""l2"":1e-05,""lr"":0.001}', 'validation_hr_at_5': '0.34699999999999998', 'validation_ndcg_at_5': '0.25997168809994115', 'selection_rank': 1, 'tie_break_fields': 'validation_ndcg_at_5_desc;config_id_asc', 'selected': 'true', 'final_test_metrics_available_at_selection': 'false', 'status': 'SELECTED', 'reason': 'highest validation_ndcg_at_5 with deterministic config_id tie-break'}, {'model': 'GRU4Rec', 'selected_config_id': 'F1BR-FOODCOM-SEARCH-83800622AC730568', 'config_hash': '166fc289ac9adaaad67984c6d18a93180050d126f0558705a87a9bd614abe912', 'hyperparameters': '{""embedding"":64,""hidden"":100,""l2"":0.0001,""lr"":0.001}', 'validation_hr_at_5': '0.42699999999999999', 'validation_ndcg_at_5': '0.34343431550189368', 'selection_rank': 1, 'tie_break_fields': 'validation_ndcg_at_5_desc;config_id_asc', 'selected': 'true', 'final_test_metrics_available_at_selection': 'false', 'status': 'SELECTED', 'reason': 'highest validation_ndcg_at_5 with deterministic config_id tie-break'}, {'model': 'SASRec', 'selected_config_id': 'F1BR-FOODCOM-SEARCH-5F3EA9FE6EEF42A3', 'config_hash': '42845752f3588af1a6fe80c28d53bcd1da85fdb9f88a4a00e8234c4ff6ad63c2', 'hyperparameters': '{""embedding"":128,""heads"":1,""l2"":0.0001,""layers"":2,""lr"":0.001}', 'validation_hr_at_5': '0.39500000000000002', 'validation_ndcg_at_5': '0.30964535860646131', 'selection_rank': 1, 'tie_break_fields': 'validation_ndcg_at_5_desc;config_id_asc', 'selected': 'true', 'final_test_metrics_available_at_selection': 'false', 'status': 'SELECTED', 'reason': 'highest validation_ndcg_at_5 with deterministic config_id tie-break'}, {'model': 'LightGCN', 'selected_config_id': 'F1BR-FOODCOM-SEARCH-CDA9D3AE06F9E4D0', 'config_hash': 'e6bed1a4101a4143e858a03fbb11f766581574f904a3eb6cb1efc59f02d6f432', 'hyperparameters': '{""embedding"":128,""l2"":1e-06,""layers"":4,""lr"":0.001}', 'validation_hr_at_5': '0.46999999999999997', 'validation_ndcg_at_5': '0.36593488245019623', 'selection_rank': 1, 'tie_break_fields': 'validation_ndcg_at_5_desc;config_id_asc', 'selected': 'true', 'final_test_metrics_available_at_selection': 'false', 'status': 'SELECTED', 'reason': 'highest validation_ndcg_at_5 with deterministic config_id tie-break'}]"
+winner_models_exact,PASS,"['BPRMF', 'GRU4Rec', 'LightGCN', 'SASRec']"
+final_test_metrics_unavailable_at_selection,PASS,selected configs
+baseline_rows_preserved,PASS,15
+baseline_recommendation_rows_preserved,PASS,292920
+baseline_hashes_unchanged,PASS,F1BX manifest hashes
+no_test_leakage,PASS,[]
+zero_final_training,PASS,0
+zero_llm_network_download,PASS,0
+training_contract_scale,PASS,"{'train_rows': 24708, 'users': 1000}"

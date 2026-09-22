@@ -1,0 +1,313 @@
+{
+  "accounting": {
+    "backend_errors": 0,
+    "g1_g2_reuse": 0,
+    "g3_backend_calls": 12000,
+    "invalid_terminal_scientific_evidence": 166,
+    "logical_requests": 12000,
+    "remaining_calls": 0,
+    "retries": 0,
+    "strict_valid": 11834
+  },
+  "artifact_hashes": {
+    "report/g3_candidate_position_execution_retention_freeze.md": "d38c27ae96d91dd613a85013d73bdfa69d681c3d2d8d28e814b6880910ab0f6d",
+    "report/notes.md": "8fd24aa1a1ff31dba0e6520f4ab7956feb59d93d3236cdf0f9df23647b8a69bc",
+    "results/tables/g3_candidate_position_execution_evidence_inventory.csv": "59e1a438c540a21d33ae786eb259596df7faeaad0f5894236032b35322618e1a"
+  },
+  "backend_status_counts": {
+    "BACKEND_SUCCESS": 12000
+  },
+  "candidate_order_counts": {
+    "FIRST": 6000,
+    "RANDOM": 6000
+  },
+  "canonical_evidence_completeness": {
+    "event_counts": {
+      "backend_attempt_completed": 12000,
+      "request_recorded_before_send": 12000,
+      "terminal_response_recorded_after_raw_persistence": 12000
+    },
+    "event_rows": 36000,
+    "event_unique_ids_by_type": {
+      "backend_attempt_completed": 12000,
+      "request_recorded_before_send": 12000,
+      "terminal_response_recorded_after_raw_persistence": 12000
+    },
+    "execution_order_rows": 12000,
+    "execution_order_unique_ids": 12000,
+    "raw_response_files": 12000,
+    "raw_response_record_unique_ids": 12000,
+    "raw_response_records": 12000,
+    "raw_response_unique_ids": 12000,
+    "request_ledger_rows": 12000,
+    "request_ledger_unique_ids": 12000,
+    "terminal_response_rows": 12000,
+    "terminal_response_unique_ids": 12000
+  },
+  "checks": {
+    "archive_entry_count_match": true,
+    "backend_errors_match": true,
+    "canonical_identity_match": true,
+    "execution_order_rows_match": true,
+    "execution_order_unique_ids": true,
+    "first_random_counts_match": true,
+    "frozen_artifact_hashes_match": true,
+    "head_before_matches": true,
+    "invalid_breakdown_match": true,
+    "invalid_match": true,
+    "logical_rows_match": true,
+    "model_digest_counts_match": true,
+    "no_missing_evidence": true,
+    "no_orphan_evidence": true,
+    "raw_file_count_match": true,
+    "raw_file_ids_unique": true,
+    "raw_integrity_clean": true,
+    "raw_record_count_match": true,
+    "raw_record_ids_unique": true,
+    "remaining_match": true,
+    "request_ids_unique": true,
+    "request_ledger_rows_match": true,
+    "retry_count_match": true,
+    "strict_valid_match": true,
+    "terminal_hashes_match": true,
+    "terminal_ids_unique": true,
+    "terminal_response_rows_match": true,
+    "tracked_status_clean_before_retention_artifacts": true,
+    "validation_25_of_25_pass": true
+  },
+  "dataset_counts": {
+    "beauty": 2400,
+    "foodcom": 2400,
+    "lastfm": 2400,
+    "ml1m": 2400,
+    "sports": 2400
+  },
+  "decision_token": "G3_EXECUTION_RETENTION_FROZEN",
+  "duplicate_provenance": {
+    "policy": "no duplicate provenance observed in G3; preserve evidence exactly without ledger rewrite",
+    "raw_duplicate_ids": 0,
+    "raw_record_duplicate_ids": 0,
+    "request_duplicate_ids": 0,
+    "terminal_duplicate_ids": 0
+  },
+  "external_archive": {
+    "determinism": "entries sorted, fixed DOS timestamp 1980-01-01T00:00:00, fixed file mode 0644, deflated zip64 archive",
+    "entry_count": 12003,
+    "ledger_hashes": {
+      "results/llm/extension_canonical/g3_candidate_position/events.jsonl": {
+        "archive_member": "results/llm/extension_canonical/g3_candidate_position/events.jsonl",
+        "sha256": "3496f61e2184a2949cee046126f7397204663fc3340d2c20ed2781c86b444a12",
+        "size_bytes": 11420391
+      },
+      "results/llm/extension_canonical/g3_candidate_position/requests.jsonl": {
+        "archive_member": "results/llm/extension_canonical/g3_candidate_position/requests.jsonl",
+        "sha256": "3a559f2a42a2e7b57028f24cdf9de202778ccbb7e9922215ce31edccaba7552f",
+        "size_bytes": 34532628
+      },
+      "results/llm/extension_canonical/g3_candidate_position/responses.jsonl": {
+        "archive_member": "results/llm/extension_canonical/g3_candidate_position/responses.jsonl",
+        "sha256": "5f97fbb25f8ac39d68c39694294e5e5c1e92a14adc4c6f7f9502af1940308c69",
+        "size_bytes": 68237138
+      }
+    },
+    "path": "archive_external/g3_candidate_position_execution/G3_candidate_position_06088e9_external_evidence.zip",
+    "sha256": "605c075af4a602d914d527d2ae555367abab76dcae95ede4bdff59a3b033696e",
+    "size_bytes": 54426579,
+    "uncompressed_bytes": 237006057
+  },
+  "frozen_identity_checks": {
+    "all_frozen_artifact_hashes_match": true,
+    "execution_freeze_manifest": "results/manifests/g3_candidate_position_execution_freeze.json",
+    "expected_head": "06088e9e475a00ecbea33351aeca7d6021d42587",
+    "head_before_matches": true,
+    "model_digest_counts": {
+      "gemma2:9b|ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b": 4000,
+      "mistral:7b-instruct|6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf": 4000,
+      "qwen2:7b-instruct|dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755": 4000
+    },
+    "model_identities_verified_from_raw_evidence_only": {
+      "gemma2:9b": "ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b",
+      "mistral:7b-instruct": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+      "qwen2:7b-instruct": "dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755"
+    },
+    "protocol_freeze_manifest": "results/manifests/g3_candidate_position_protocol_freeze.json",
+    "tracked_frozen_artifact_hashes": {
+      "configs/g3_candidate_position_execution.yaml": {
+        "actual": "a8b5d9b9bd111e93deda78eb48526272b1cbfa98bf5fc3bb26d7433dbe36788b",
+        "expected": "a8b5d9b9bd111e93deda78eb48526272b1cbfa98bf5fc3bb26d7433dbe36788b",
+        "match": true
+      },
+      "report/g3_candidate_position_execution_runner.md": {
+        "actual": "fdb6bd8938714c8800f6caf8e6baeb45c289bd088ac6b37b8572ec7047217717",
+        "expected": "fdb6bd8938714c8800f6caf8e6baeb45c289bd088ac6b37b8572ec7047217717",
+        "match": true
+      },
+      "report/g3_candidate_position_protocol.md": {
+        "actual": "6d4e67171cdcb3d3d44f45f6fc37fd41f9e4ef4450d136f604ea0079ebbc04bf",
+        "expected": "6d4e67171cdcb3d3d44f45f6fc37fd41f9e4ef4450d136f604ea0079ebbc04bf",
+        "match": true
+      },
+      "results/tables/g3_candidate_position_cohort.csv": {
+        "actual": "f8d02416601d46222a7e0c4d280a198cd049776a17385c71e9069cb524926af9",
+        "expected": "f8d02416601d46222a7e0c4d280a198cd049776a17385c71e9069cb524926af9",
+        "match": true
+      },
+      "results/tables/g3_candidate_position_execution_accounting.csv": {
+        "actual": "cdd1cb26e75b89c5c7360acb036710a2d1bb91cabed9d02ddb507ac726296deb",
+        "expected": "cdd1cb26e75b89c5c7360acb036710a2d1bb91cabed9d02ddb507ac726296deb",
+        "match": true
+      },
+      "results/tables/g3_candidate_position_execution_order.csv": {
+        "actual": "5dffabf52a91ef2d0f081e363157152825ed7b5a9ed550634d17a6b8bf27bf0a",
+        "expected": "5dffabf52a91ef2d0f081e363157152825ed7b5a9ed550634d17a6b8bf27bf0a",
+        "match": true
+      },
+      "results/tables/g3_candidate_position_metric_contract.csv": {
+        "actual": "884ed36f699e663e242987e486efc00b564258d675da65a48395a6dc067c32db",
+        "expected": "884ed36f699e663e242987e486efc00b564258d675da65a48395a6dc067c32db",
+        "match": true
+      },
+      "results/tables/g3_candidate_position_pair_integrity.csv": {
+        "actual": "9de7febe5fe472b57f383f59c11a83f49353772482223360aa42fe0e0be75255",
+        "expected": "9de7febe5fe472b57f383f59c11a83f49353772482223360aa42fe0e0be75255",
+        "match": true
+      },
+      "results/tables/g3_candidate_position_request_accounting.csv": {
+        "actual": "60483d0ca39c468bd0088c8250735f6f6465e4e51a175c7ecf3a25014f8f56a2",
+        "expected": "60483d0ca39c468bd0088c8250735f6f6465e4e51a175c7ecf3a25014f8f56a2",
+        "match": true
+      },
+      "results/tables/g3_candidate_position_request_universe.csv": {
+        "actual": "823723c23a1c2a6617fedd5934e4cfb14508f91b28d8e680fc884ed454ef9ba8",
+        "expected": "823723c23a1c2a6617fedd5934e4cfb14508f91b28d8e680fc884ed454ef9ba8",
+        "match": true
+      },
+      "results/tables/g3_candidate_position_retention_plan.csv": {
+        "actual": "96f9571ef50f0d4d8bfb2737e8c1e38b288385f7c898959f76a62828a40dcca7",
+        "expected": "96f9571ef50f0d4d8bfb2737e8c1e38b288385f7c898959f76a62828a40dcca7",
+        "match": true
+      },
+      "results/tables/g3_candidate_position_statistical_plan.csv": {
+        "actual": "143c2535675678ca6a5a363a0a3cd41a0778d633ac5e47c4d1577be903fad809",
+        "expected": "143c2535675678ca6a5a363a0a3cd41a0778d633ac5e47c4d1577be903fad809",
+        "match": true
+      },
+      "results/tables/g3_candidate_position_validation.csv": {
+        "actual": "31c3489c71fe3c10dcc90c8d92311996f385b92f4ff252f59418cb3653a63f80",
+        "expected": "31c3489c71fe3c10dcc90c8d92311996f385b92f4ff252f59418cb3653a63f80",
+        "match": true
+      },
+      "src/extension/g3_candidate_position_execution.py": {
+        "actual": "d89648ff8f011164a62e41c934c1d7e06d18b9a772ea109480eb34f7cac2ceb3",
+        "expected": "d89648ff8f011164a62e41c934c1d7e06d18b9a772ea109480eb34f7cac2ceb3",
+        "match": true
+      },
+      "tests/test_extension_g3_candidate_position_execution.py": {
+        "actual": "9f0fabb9565a076d1b46d771e731913b9095e9db0110f6398fe66274e8903164",
+        "expected": "9f0fabb9565a076d1b46d771e731913b9095e9db0110f6398fe66274e8903164",
+        "match": true
+      }
+    }
+  },
+  "generated_at_utc": "2026-09-04T13:39:34Z",
+  "head_before": "06088e9e475a00ecbea33351aeca7d6021d42587",
+  "model_counts": {
+    "gemma2:9b": 4000,
+    "mistral:7b-instruct": 4000,
+    "qwen2:7b-instruct": 4000
+  },
+  "next_safe_step": "G3 metric analysis from frozen retained evidence; do not compute metrics until explicitly requested.",
+  "no_new_inference_guards": {
+    "api_calls_executed": 0,
+    "evidence_rewritten_or_cleaned": false,
+    "metric_computation_executed": false,
+    "ollama_generation_calls_executed": 0,
+    "ollama_metadata_calls_executed": 0,
+    "protocol_changes_executed": false,
+    "statistical_analysis_executed": false
+  },
+  "orphan_and_ambiguity_checks": {
+    "ambiguous_evidence": 0,
+    "raw_not_in_order": 0,
+    "raw_without_terminal": 0,
+    "request_without_raw": 0,
+    "request_without_terminal": 0,
+    "requests_not_in_order": 0,
+    "responses_not_in_order": 0,
+    "terminal_without_raw": 0
+  },
+  "parse_status_counts": {
+    "duplicate_indices": 51,
+    "invalid_length": 114,
+    "parsed_valid": 11834,
+    "unknown_indices": 1
+  },
+  "phase_id": "g3_candidate_position_execution_retention_freeze",
+  "prompt_counts": {
+    "BASE": 6000,
+    "LLMRANK": 6000
+  },
+  "raw_integrity": {
+    "bad_name": 0,
+    "digest_mismatch": 0,
+    "id_mismatch": 0,
+    "json_parse_bad": 0,
+    "raw_backend_status_counts": {
+      "BACKEND_SUCCESS": 12000
+    },
+    "raw_digest_by_model": {
+      "gemma2:9b|ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b": 4000,
+      "mistral:7b-instruct|6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf": 4000,
+      "qwen2:7b-instruct|dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755": 4000
+    },
+    "raw_model_counts": {
+      "gemma2:9b": 4000,
+      "mistral:7b-instruct": 4000,
+      "qwen2:7b-instruct": 4000
+    },
+    "raw_size_bytes_total": 122815900,
+    "tiny_lt100": 0,
+    "zero_length": 0
+  },
+  "retention_policy": {
+    "evidence_inventory_path": "results/tables/g3_candidate_position_execution_evidence_inventory.csv",
+    "evidence_inventory_sha256": "59e1a438c540a21d33ae786eb259596df7faeaad0f5894236032b35322618e1a",
+    "external_archive_path": "archive_external/g3_candidate_position_execution/G3_candidate_position_06088e9_external_evidence.zip",
+    "external_archive_required_for_full_raw_reproduction": true,
+    "external_archive_sha256": "605c075af4a602d914d527d2ae555367abab76dcae95ede4bdff59a3b033696e",
+    "externalized_ignored_evidence": [
+      "results/llm/extension_canonical/g3_candidate_position/requests.jsonl",
+      "results/llm/extension_canonical/g3_candidate_position/responses.jsonl",
+      "results/llm/extension_canonical/g3_candidate_position/events.jsonl",
+      "results/llm/extension_canonical/g3_candidate_position/responses"
+    ],
+    "normal_git_contains_large_raw_evidence": false,
+    "raw_and_ledger_evidence_verifiable_after_restore": true,
+    "retention_manifest_self_hash_note": "The manifest SHA256 is not embedded to avoid a self-referential hash.",
+    "tracked_completion_artifacts": [
+      "results/tables/g3_candidate_position_execution_evidence_inventory.csv",
+      "results/manifests/g3_candidate_position_execution_retention_manifest.json",
+      "report/g3_candidate_position_execution_retention_freeze.md",
+      "report/notes.md"
+    ]
+  },
+  "runtime": {
+    "backend_runtime_hours_sum": 6.211549984388597,
+    "backend_runtime_seconds_sum": 22361.579943798948,
+    "backend_throughput_calls_per_hour": 1931.884961106235,
+    "first_start_utc": "2026-09-04T07:06:53.827000Z",
+    "last_complete_utc": "2026-09-04T13:25:53.429000Z",
+    "ledger_wall_span_seconds": 22739.602,
+    "ledger_wall_throughput_calls_per_hour": 1899.7693978988727
+  },
+  "schema_version": "1.0",
+  "source_status": "G3_FULL_EXECUTION_COMPLETED_AND_RECONCILED",
+  "terminal_state_counts": {
+    "HALLUCINATION_OR_OUT_OF_CANDIDATE": 1,
+    "INVALID_DUPLICATE": 51,
+    "INVALID_LENGTH": 114,
+    "STRICT_VALID": 11834
+  },
+  "validation_failures": [],
+  "validation_passed": true
+}

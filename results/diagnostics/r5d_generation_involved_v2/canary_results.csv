@@ -1,0 +1,13 @@
+Task,Model,Dataset,Condition,Complete,ParsedLength,ExpectedLength,Valid,Failure,parse_status,Within1ToN,ItemIdSubstitutionCount,request_id,r5a_request_id
+ranking,mistral:7b-instruct,Beauty,PROFILE_PLUS_HISTORY,true,10,10,true,VALID,parsed_valid,true,0,R5D-RANK-3A80F607203952BD,R5A-REQ-9C1C15D57D179D51
+ranking,qwen2:7b-instruct,Beauty,PROFILE_PLUS_HISTORY,true,10,10,true,VALID,parsed_valid,true,0,R5D-RANK-F2131CC61402DD67,R5A-REQ-6AA241EFE900CD31
+profile_generation,mistral:7b-instruct,LastFM,PROFILE_GENERATION,true,1,1,true,VALID,parsed_valid,not_applicable,0,R5D-PROF-0FC097300A129AE5,R5A-REQ-080EFDDF20628CF7
+ranking,mistral:7b-instruct,LastFM,PROFILE_PLUS_HISTORY,true,10,10,true,VALID,parsed_valid,true,0,R5D-RANK-42FD3E257CC44A33,R5A-REQ-BE7D6DF069EC0B95
+profile_generation,qwen2:7b-instruct,LastFM,PROFILE_GENERATION,true,1,1,true,VALID,parsed_valid,not_applicable,0,R5D-PROF-5ED1948957BF604E,R5A-REQ-54AB20351CD28E6D
+ranking,qwen2:7b-instruct,LastFM,PROFILE_PLUS_HISTORY,true,10,10,true,VALID,parsed_valid,true,0,R5D-RANK-1CF9CC7CF71C9B34,R5A-REQ-8EAFC084A8F1DDEA
+profile_generation,mistral:7b-instruct,ML-1M,PROFILE_GENERATION,true,1,1,true,VALID,parsed_valid,not_applicable,0,R5D-PROF-1FEE35FC7981309C,R5A-REQ-B907BAEB134B2489
+ranking,mistral:7b-instruct,ML-1M,PROFILE_PLUS_HISTORY,true,10,10,true,VALID,parsed_valid,true,0,R5D-RANK-1BA2C3198C79CD4A,R5A-REQ-19C5E8E484E7129C
+profile_generation,qwen2:7b-instruct,ML-1M,PROFILE_GENERATION,true,1,1,true,VALID,parsed_valid,not_applicable,0,R5D-PROF-62358C59F39CD925,R5A-REQ-85321CE6B0A629C7
+ranking,qwen2:7b-instruct,ML-1M,PROFILE_PLUS_HISTORY,true,10,10,true,VALID,parsed_valid,true,0,R5D-RANK-1D158D44AFD33009,R5A-REQ-6DD87AED1F63BF35
+ranking,mistral:7b-instruct,Sports,PROFILE_PLUS_HISTORY,true,10,10,true,VALID,parsed_valid,true,0,R5D-RANK-D8199B698987BC39,R5A-REQ-843AC26027DF75BC
+ranking,qwen2:7b-instruct,Sports,PROFILE_PLUS_HISTORY,true,10,10,true,VALID,parsed_valid,true,0,R5D-RANK-06CE229DAB3B925E,R5A-REQ-A3796F01B1F7D4A1

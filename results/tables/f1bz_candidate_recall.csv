@@ -1,0 +1,6 @@
+dataset,source_policy,evaluation_N,positive_present_N,positive_absent_N,candidate_recall_at_20,positive_rank_mean,positive_rank_median,positive_rank_min,positive_rank_max,status,reason
+beauty,F1BZ_FIVE_SEED_MEAN_SCORE_THEN_FROZEN_MODEL_ORDER,990,990,0,1,6.3595959595959597,4,1,20,COMPUTED,computed from F1BZ first-stage reranking pools
+sports,F1BZ_FIVE_SEED_MEAN_SCORE_THEN_FROZEN_MODEL_ORDER,892,892,0,1,5.7163677130044839,4,1,20,COMPUTED,computed from F1BZ first-stage reranking pools
+ml1m,F1BZ_FIVE_SEED_MEAN_SCORE_THEN_FROZEN_MODEL_ORDER,1000,1000,0,1,4.649,3,1,20,COMPUTED,computed from F1BZ first-stage reranking pools
+lastfm,F1BZ_FIVE_SEED_MEAN_SCORE_THEN_FROZEN_MODEL_ORDER,1000,1000,0,1,2.7120000000000002,1,1,20,COMPUTED,computed from F1BZ first-stage reranking pools
+foodcom,F1BZ_FIVE_SEED_MEAN_SCORE_THEN_FROZEN_MODEL_ORDER,1000,1000,0,1,9.2919999999999998,9,1,20,COMPUTED,computed from F1BZ first-stage reranking pools

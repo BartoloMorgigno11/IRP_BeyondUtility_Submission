@@ -1,0 +1,55 @@
+phase:
+  id: phase_f6i2d
+  name: phase_f6i2d_archive_prerequisite_closure_and_technical_cache_cleanup
+  expected_branch: plan-d-extensions
+  expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  interpreter_path: .venv_audit_recovery/Scripts/python.exe
+  runtime_classification: defensible_repaired_clone_exact_package_versions
+
+inputs:
+  f6i2c_candidate_preflight: results/tables/phase_f6i2c_archive_candidate_preflight.csv
+  f6i2c_archive_decisions: results/tables/phase_f6i2c_archive_decisions.csv
+  f6i2c_archive_ready: results/tables/phase_f6i2c_archive_ready.csv
+  f6i2c_archive_rejected: results/tables/phase_f6i2c_archive_rejected.csv
+  f6i2c_archive_manual_review: results/tables/phase_f6i2c_archive_manual_review.csv
+  f6i2c_future_dependency_recheck: results/tables/phase_f6i2c_future_dependency_recheck.csv
+  f6i2c_target_architecture: results/tables/phase_f6i2c_archive_target_architecture.csv
+  f6i2c_path_mapping: results/tables/phase_f6i2c_archive_path_mapping.csv
+  f6i2c_target_collisions: results/tables/phase_f6i2c_target_path_collisions.csv
+  f6i2c_reference_inventory: results/tables/phase_f6i2c_reference_inventory.csv
+  f6i2c_reference_rewrite_plan: results/tables/phase_f6i2c_reference_rewrite_plan.csv
+  f6i2c_compatibility_strategy: results/tables/phase_f6i2c_compatibility_strategy.csv
+  f6i2c_current_summary_migration_plan: results/tables/phase_f6i2c_current_summary_migration_plan.csv
+  f6i2c_index_schema: results/tables/phase_f6i2c_archive_index_schema.csv
+  f6i2c_cache_bundle: results/tables/phase_f6i2c_cache_cleanup_bundle.csv
+  f6i2c_validation: results/tables/phase_f6i2c_validation.csv
+  f6i2c_manifest: results/manifests/phase_f6i2c_archive_verification_manifest.json
+  f6i2c_protected_hashes: results/manifests/phase_f6i2c_protected_input_hashes.json
+  f6i2c_report: report/phase_f6i2c_archive_bundle_verification_and_migration_design.md
+  f6i1_inventory: results/tables/phase_f6i1_relevant_file_inventory.csv
+  f6i1_edges: results/tables/phase_f6i1_dependency_edges.csv
+  f6i2a_archive_bundle: results/tables/phase_f6i2a_archive_bundle.csv
+  f6i2b_manifest: results/manifests/phase_f6i2b_deletion_manifest.json
+  handoff: report/future_operations_context_handoff.md
+  current_context_snapshot: results/manifests/current_project_context_snapshot.json
+
+policy:
+  expected_content_index_candidates: 12
+  expected_current_summary_candidates: 6
+  expected_cache_candidates: 751
+  cache_cleanup_exact_paths_only: true
+  no_substantive_candidate_move_copy_rename_delete: true
+  no_archive_population: true
+  no_reference_rewrite: true
+  no_training: true
+  no_llm_inference: true
+  no_ollama: true
+  no_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  no_git_stage_or_commit: true
+
+archive:
+  next_phase: phase_f6i2e_substantive_archive_migration_execution_after_explicit_approval
+  root: archive
+  path_policy: f6i2c_category_directory_with_original_relative_path_embedded

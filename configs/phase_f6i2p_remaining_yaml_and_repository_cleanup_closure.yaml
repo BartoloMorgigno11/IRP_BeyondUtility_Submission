@@ -1,0 +1,102 @@
+phase_id: phase_f6i2p
+phase_name: phase_f6i2p_remaining_yaml_and_repository_cleanup_closure
+runtime:
+  interpreter: .venv_audit_recovery/Scripts/python.exe
+  python_no_user_site: "1"
+  python_dont_write_bytecode: "1"
+  classification: defensible_repaired_clone_exact_package_versions
+  not_exact_original_runtime: true
+
+input_evidence:
+  f6i2o_remaining_yaml_group_readiness: results/tables/phase_f6i2o_remaining_yaml_group_readiness.csv
+  f6i2o_next_actions: results/tables/phase_f6i2o_next_actions.csv
+  f6i2o_consolidation_manifest: results/manifests/phase_f6i2o_consolidation_manifest.json
+  f6i2n_wrapper_report: report/phase_f6i2n_repository_cleanup_after_explicit_approval.md
+  f6i2kr_current_guard_manifest: results/manifests/phase_f6i2kr_current_guard_manifest.json
+  f6i2nr_current_git_guard_manifest: results/manifests/phase_f6i2nr_current_git_guard_manifest.json
+
+excluded_groups:
+  - model_bprmf_overrides
+
+remaining_yaml_groups:
+  base_dataset_or_cost:
+    terminal_status: retained_future_dependency
+    members:
+      - configs/beauty.yaml
+      - configs/cost.yaml
+      - configs/ml1m.yaml
+      - configs/sports.yaml
+  model_gru4rec_overrides:
+    terminal_status: no_change_retained_distinct
+    members:
+      - configs/plan_e_gru4rec_beauty.yaml
+      - configs/plan_e_gru4rec_ml1m_pilot.yaml
+      - configs/plan_e_gru4rec_sports.yaml
+  model_lightgcn_overrides:
+    terminal_status: no_change_retained_distinct
+    members:
+      - configs/plan_e_lightgcn_beauty_cpu.yaml
+      - configs/plan_e_lightgcn_ml1m_pilot.yaml
+      - configs/plan_e_lightgcn_sports_cpu.yaml
+  model_sasrec_overrides:
+    terminal_status: no_change_retained_distinct
+    members:
+      - configs/plan_e_sasrec_beauty.yaml
+      - configs/plan_e_sasrec_ml1m_pilot.yaml
+      - configs/plan_e_sasrec_sports.yaml
+  phase_specific_archive:
+    terminal_status: retained_historical_evidence
+    members:
+      - configs/finalization_f6d2_lastfm_trainable_models.yaml
+      - configs/phase_f6f1_beyond_utility_metrics.yaml
+      - configs/phase_f6f2_scientific_readout.yaml
+      - configs/phase_f6g1_lastfm_reranking_reconstruction.yaml
+      - configs/phase_f6g2_lastfm_reranking_execution.yaml
+      - configs/phase_f6g2r_runtime_recovery.yaml
+      - configs/phase_f6g3_lastfm_reranking_top10_freeze.yaml
+      - configs/phase_f6h1_offline_exactness_elevation.yaml
+      - configs/phase_f6h2_direct_verification_and_lineage_recovery.yaml
+      - configs/plan_c_reconstruction.yaml
+
+policy:
+  no_training: true
+  no_inference: true
+  no_ollama: true
+  no_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  no_member_yaml_changes: true
+  no_consumer_reference_changes: true
+  no_git_stage_or_commit: true
+  prohibit_wildcard_staging: true
+
+repository_cleanup:
+  wrapper_count: 551
+  safe_removal_bundles: 0
+  function_removal_candidates: 0
+  file_removal_candidates: 0
+  archive_candidates: 0
+  wrapper_decision: terminal_retain_current_compatibility_architecture
+
+outputs:
+  tables:
+    current_suite_failure_closure: results/tables/phase_f6i2p_current_suite_failure_closure.csv
+    remaining_yaml_terminal_decisions: results/tables/phase_f6i2p_remaining_yaml_terminal_decisions.csv
+    resolved_config_equivalence: results/tables/phase_f6i2p_resolved_config_equivalence.csv
+    repository_cleanup_closure: results/tables/phase_f6i2p_repository_cleanup_closure.csv
+    checkpoint_staging_plan: results/tables/phase_f6i2p_checkpoint_staging_plan.csv
+    validation: results/tables/phase_f6i2p_validation.csv
+    next_actions: results/tables/phase_f6i2p_next_actions.csv
+  manifests:
+    cleanup_closure_manifest: results/manifests/phase_f6i2p_cleanup_closure_manifest.json
+    checkpoint_staging_manifest: results/manifests/phase_f6i2p_checkpoint_staging_manifest.json
+    protected_input_hashes: results/manifests/phase_f6i2p_protected_input_hashes.json
+  report: report/phase_f6i2p_remaining_yaml_and_repository_cleanup_closure.md
+
+decision:
+  success: f6i2p_repository_cleanup_closed_return_to_scientific_work
+  partial_yaml_changes: f6i2p_partial_safe_yaml_changes_cleanup_closed
+  blocked_config_contract: f6i2p_blocked_unresolved_config_contract
+  failed_current_suite: f6i2p_failed_current_suite
+  failed_protected_input_change: f6i2p_failed_protected_input_change
+  next_phase: phase_f6j_scientific_completion_rebaseline_and_execution_plan

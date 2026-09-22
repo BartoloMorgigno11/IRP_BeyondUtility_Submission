@@ -1,0 +1,9 @@
+metric,value,policy,notes
+invalid_date_rows,0,BLOCK_IF_NONZERO,final chronological split needs parseable dates
+exact_duplicate_rows,0,RETAIN_AND_REPORT,D0A does not collapse raw event rows
+repeated_user_recipe_pairs,0,RETAIN_EVENT_SEMANTICS,same user can interact with a recipe more than once
+repeated_user_recipe_rows,0,RETAIN_EVENT_SEMANTICS,affected rows in repeated user-recipe pairs
+same_day_user_tie_groups,161062,STABLE_INPUT_ORDER_TIE_BREAK,date granularity is one day
+same_day_user_tie_rows,451467,STABLE_INPUT_ORDER_TIE_BREAK,rows in user-date tie groups
+same_day_same_user_recipe_tie_groups,0,STABLE_INPUT_ORDER_TIE_BREAK,same recipe repeated on same date
+same_day_same_user_recipe_tie_rows,0,STABLE_INPUT_ORDER_TIE_BREAK,rows in same user-recipe-date tie groups

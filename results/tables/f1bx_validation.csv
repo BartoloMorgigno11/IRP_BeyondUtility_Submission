@@ -1,0 +1,35 @@
+check,status,evidence
+head_is_expected_f1br_checkpoint,PASS,61fbde6d048faaed9e20508484efc90fa95fa5bf
+active_datasets_exact,PASS,"beauty,sports,ml1m,lastfm,foodcom"
+operational_video_games_rows_zero,PASS,0
+candidate_contracts_match_f1br_cohorts,PASS,all datasets
+target_leakage_zero,PASS,0
+baseline_execution_rows_15,PASS,15
+baseline_execution_computed_15,PASS,15
+random_rows_5,PASS,5
+mostpop_rows_5,PASS,5
+bm25like_content_rows_5,PASS,5
+recommendation_rows_complete,PASS,292920
+utility_metric_rows_45,PASS,45
+beyond_metric_rows_210,PASS,210
+bm25_foodcom_tag_policy,PASS,RAW_recipes.tags
+foodcom_search_configs_40,PASS,40
+foodcom_tuning_seed_42,PASS,42
+foodcom_tuning_terminal_40,PASS,40
+foodcom_tuning_executed_zero_due_blocker,PASS,0
+validation_candidate_contract_blocker_explicit,PASS,"F1BR freezes Food.com search space, tuning seed, validation metric, and no-test-tuning policy, but no separate frozen Food.com validation candidate/cohort contract is materialized; using the F0 primary final-test candidate set for tuning would leak final-test evidence."
+validation_results_do_not_use_test_metric,PASS,final_test_metric_computed=false
+selected_config_rows_4,PASS,4
+selected_winners_zero_when_blocked,PASS,0
+no_final_five_seed_training,PASS,0
+no_original_four_final_training,PASS,0
+f0_request_budget_unchanged,PASS,"{""BLOCKED_REQUESTS"":0,""CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL"":100584,""CONDITIONAL_REQUESTS"":9000,""CORE_MANDATORY_NOW_REQUESTS"":29292,""EXISTING_REUSABLE_REQUESTS"":0,""FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL"":88584,""MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE"":5364,""MANDATORY_RAW_REQUESTS_TOTAL"":50292,""OPTIONAL_REQUESTS"":12000,""PREVIOUS_D0B_ESTIMATE"":44928,""REQUIRED_SENSITIVITY_REQUESTS"":21000,""TRAINING_DEPENDENT_REQUESTS"":29292}"
+foodcom_hashes_unchanged,PASS,true
+h0_hashes_unchanged,PASS,true
+original_repo_unchanged,PASS,clean
+paper_unchanged,PASS,clean
+zero_llm_inference,PASS,0
+zero_ollama_recommendation_calls,PASS,0
+zero_external_api_download_network,PASS,0
+historical_full_suite_not_run,PASS,0
+config_forbids_final_training_and_llm,PASS,false

@@ -1,0 +1,297 @@
+{
+  "analysis_hashes": {
+    "src/analysis/reproduction_r5b_canddif_recovery.py": "BFFBBE792E94CAFBD162780F741344CA3290385ECF629A8633E1E4097B94263A",
+    "src/analysis/reproduction_r5b_corrected_canddif_recovery.py": "A152523E8C471CFA4488E274A58B4924048486C597199520AD3135B0D15C292D",
+    "src/experiments/run_reproduction_r5b_canddif_recovery.py": "7F1168C87679DD5A0380C1A96411D2E3D0971DB90108D938B44C487F1EC45682",
+    "src/experiments/run_reproduction_r5b_corrected_canddif_recovery.py": "5B4AEC8BB51D39DDB043FABC779427B85E8D0B48DAC8479754E3F006BDE2F9F2",
+    "src/llm/canonical_llm_contract.py": "CB5DA25F85CC9B90449FC11EA436D26379C225F2F2194CDB3CF9B2306A92A364"
+  },
+  "config_hashes": {
+    "configs/reproduction_r5b_canddif_recovery.yaml": "A1DFACC76D94A18FB793DF6E52E6767F625E148E81935E7A9A5FD7C45EB38E9E",
+    "configs/reproduction_r5b_corrected_canddif_recovery.yaml": "0EF1EF47A8C8FD5B29446599A9C0C81F94D2A0D7127A333CA5D5FCA53D9B57FE"
+  },
+  "corrected_r5b_preservation": {
+    "decision": "R5B_CORRECTED_RECOVERY_COMPLETE",
+    "diagnostics_namespace": "results/diagnostics/r5b_corrected",
+    "raw_count": 1200,
+    "raw_namespace": "results/recovery/r5b_corrected",
+    "report": "report/reproduction_r5b_corrected.md"
+  },
+  "corrected_status_counts": {
+    "backend_incomplete": 0,
+    "invalid": 0,
+    "parse_failure": 0,
+    "requests_accounted": 1200,
+    "requests_expected": 1200,
+    "valid": 1200,
+    "wrong_length": 0
+  },
+  "created_utc": "2026-08-21T13:16:37Z",
+  "diagnostic_hashes": {
+    "results/diagnostics/r5b/artifact_integrity.csv": "92F4CFD8F71756D9998164A650DDAEE4CC926B6BFFA5A818E949CE03DC085D81",
+    "results/diagnostics/r5b/diagnostic_canddif_end_to_end_vs_conditional_valid.csv": "194ECF45755676AB7867428CB2848FD0FBB0DAB8FF8AE0EE737C3D05204F9530",
+    "results/diagnostics/r5b/diagnostic_metrics_end_to_end_vs_conditional_valid.csv": "311142D34887386EC92D9464DFB020F7A7E279B97A63AEDA1A33DA1009086625",
+    "results/diagnostics/r5b/forensic_sample_summary.csv": "CCC822EABF68FF5E0CF04F2F62E575E283040A04E929C563CDB48C89DDC651DD",
+    "results/diagnostics/r5b/forensic_samples.jsonl": "04E716AE963583989AFF30C826AE751102A3310A870F18A31AFF7F8FDD375367",
+    "results/diagnostics/r5b/forensic_summary.json": "6E33DC5B9BF9D6FA278E2865E12C2CDC37C23969EA2CB277C10B3B5BA0D17EF3",
+    "results/diagnostics/r5b/generate_forensic_diagnostics.py": "770DBBFFB9C61A38F2A4539E6061BAACBD15A292738040840B907DFAA5E41065",
+    "results/diagnostics/r5b/independent_canddif_reconstruction.csv": "4BA6E5073E2DB7444BC15CFB29CA97EF5AD75C6C7BACB35DE4DA5A082E6A0433",
+    "results/diagnostics/r5b/manual_pair_reconstruction.csv": "5E87B664DD27F3220328513FF0B6780A4C760A218D86A07A3B4F8F606DBD15C8",
+    "results/diagnostics/r5b/metric_denominator_reconstruction.csv": "139B8FE7C8C5A5D9869399D889E032DE1F084EA5E22DC0C7ACE569F30B8BAEAB",
+    "results/diagnostics/r5b/ollama_config_audit.csv": "90A240FCBC573BB7619CDAE4C0E5DA3926D85B35D3CF2752A765635F7D633A79",
+    "results/diagnostics/r5b/original_protocol_comparison.csv": "D5B9281E2F1C1B32F8021F640CB11B08B86596A3565D0462330D7D7C93103875",
+    "results/diagnostics/r5b/pair_integrity_independent.csv": "3F58959428E040C99879E414A33264CFB23D9DA70AFDDA8230594FFC7D2AFA3F",
+    "results/diagnostics/r5b/pair_integrity_summary.csv": "2F6C07DDAA795C8C053E3825A12F13868E6ABDA4757A6E1F97C1ADD465EFA996",
+    "results/diagnostics/r5b/parser_synthetic_tests.csv": "C9695BDEAC4484834642AAC38E588EC663295C4C730C221463CDFB12142397C3",
+    "results/diagnostics/r5b/prompt_audit.csv": "0C02C225A1DB7F38FDE934BEF5B7F964AEE673106B0B73E50556243921D989B0",
+    "results/diagnostics/r5b/qwen_54_samples.jsonl": "CA1089B9350C116C19C134A0F40BBF26F7BBFDCF5911A0470E3086103D25BEC5",
+    "results/diagnostics/r5b/qwen_format_summary.csv": "094CC079A283FE3F60369E2AF50638D0272EFA15DCDB11A7CD0F0797C043514F",
+    "results/diagnostics/r5b/raw_output_completeness.csv": "D8130C15AC9D8BE57E07FCC6FC76316684CAA6C5D15DE9EF53918048784485A6",
+    "results/diagnostics/r5b/request_level_forensics.csv": "5AD5E40A49F56E402C1D048D1EA5CC54ED3B54DD95CB77191A11D205C42E3E62",
+    "results/diagnostics/r5b/root_cause_attribution.csv": "61418645B3E910DD783028F2A4AB1AD9EBBED5C3E8D1409D51486971AEF060E9",
+    "results/diagnostics/r5b/smoke_reuse_verification.csv": "0691B7599363356F1DC41B4E0D119117B1E7ABD6F7381812F13072D2082F794A",
+    "results/diagnostics/r5b/validity_by_dataset_model.csv": "B4EA21049DE9C95D9F4A6B594B49E4BD657ED55393E140D476674961EC3FBD01",
+    "results/diagnostics/r5b/validity_by_dataset_model_condition.csv": "08EA6DB57FBB6B518832413A8203A1A8E9F242D9B128289E7F4AABA4B7FE4541",
+    "results/diagnostics/r5b/wrong_length_by_condition.csv": "5E2EE4E1315BA853ED027E42FCCFA893EAC61DB1ABE212990DF5D2F6F44D0BC7",
+    "results/diagnostics/r5b/wrong_length_by_dataset.csv": "D72118037EC334A2D19A6747AA037AEC80C59EC737FB14C14C4F77E757A3E214",
+    "results/diagnostics/r5b/wrong_length_by_dataset_model.csv": "B3EEEE98A29AEE83A21C1EDB4372B4148E70AB24CC029483380F9F50D967A21F",
+    "results/diagnostics/r5b/wrong_length_by_dataset_model_condition.csv": "856084ACCCFC759C2A325A39CDD04211E229A1A8915C3726F9905A75C769EA7F",
+    "results/diagnostics/r5b/wrong_length_by_model.csv": "3F7995B0974FE4139EB0F9346386F35E5EA0DCE1B45979F189A9391126844D79",
+    "results/diagnostics/r5b/wrong_length_by_model_condition.csv": "EBD3BF5D0D5FAA47FDF12DF200F3A9B72751177F39365FE105F9D7F705F45C52",
+    "results/diagnostics/r5b/wrong_length_distribution.csv": "4976461AB33A3B1DD467D2041882A9162043EDB67C284A4055FEB008FDCFCF06",
+    "results/diagnostics/r5b_corrected/canary_results.csv": "B1391371E29EEBFA618DEE60A147BC1F8AB84115A2745743047D21E26338B610",
+    "results/diagnostics/r5b_corrected/early_health.csv": "6B7A13588603522E403E4D0CD1888AD2552FBB165C534C8854DEB47E6F2D3C07",
+    "results/diagnostics/r5b_corrected/health_checkpoint_100.csv": "64BBBE50AC6A8AB0216A6861B8AA9AF766CA8E420739490A215526DA42BA0704",
+    "results/diagnostics/r5b_corrected/health_checkpoint_300.csv": "6545CCAB4986CC9F5DE050FFEC536652656CCF136C8C99B32DAADD66F245B4A4",
+    "results/diagnostics/r5b_corrected/health_checkpoint_600.csv": "7F75C7B307DB3270C2EBAF842EB69E0BD251AFD3DBF7117A62465B9D37038485",
+    "results/diagnostics/r5b_corrected/health_checkpoint_900.csv": "7BC7174207C97E24A3CA869BD6966DF5CFE49269AC2422BA5BA3BF5CBC094A7F",
+    "results/diagnostics/r5b_corrected/health_full.csv": "12732F9BC6C47980483E0960BD0733A96520D1ED8590C27C0A963B14DF5A78D8",
+    "results/diagnostics/r5b_corrected/protocol_freeze.csv": "218BF9129FB31F5D1B09AAE27D02F029222E3B391D533325771D7512AA375514",
+    "results/diagnostics/r5b_corrected/static_preflight.csv": "CF1EFF5FC8B20061F4731ED82E803CDC10D3774687DA66EF81689216F832608A",
+    "results/diagnostics/r5b_corrected/synthetic_tests.csv": "2601A1A6F3CF0996A219EE0F8730D0DF43352E016D496451D1DE1DD882B96475"
+  },
+  "expected_r5a_manifest_sha256": "290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD",
+  "freeze_metadata_version": "r5b_corrected_freeze_v1",
+  "generation_configuration": [
+    {
+      "component": "generation_config",
+      "sha256": "E62BD8A4FC52A56CBB9CCBC5AE8FA24861835197175629B091FFE188E5964801",
+      "value": "{\"endpoint\":\"http://127.0.0.1:11434/api/generate\",\"format\":\"json\",\"max_retries\":\"0\",\"num_predict_values\":[\"512\"],\"seed_values\":[\"0\"],\"stream\":\"false\",\"temperature\":\"0\",\"timeout_seconds\":\"120\"}"
+    }
+  ],
+  "model_identifiers": [
+    {
+      "component": "model_identifier",
+      "sha256": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+      "value": "mistral:7b-instruct"
+    },
+    {
+      "component": "model_identifier",
+      "sha256": "dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755",
+      "value": "qwen2:7b-instruct"
+    }
+  ],
+  "original_r5b_preservation": {
+    "decision": "R5B_MULTIPLE_PROTOCOL_FAILURES / scientifically rejected after forensic audit",
+    "diagnostics_namespace": "results/diagnostics/r5b",
+    "forensic_report": "report/reproduction_r5b_forensic_audit.md",
+    "raw_count": 1200,
+    "raw_namespace": "results/recovery/r5",
+    "report": "report/reproduction_r5b_canddif_recovery.md"
+  },
+  "paper_exact": false,
+  "parser_hashes": [
+    {
+      "component": "parser",
+      "sha256": "CB5DA25F85CC9B90449FC11EA436D26379C225F2F2194CDB3CF9B2306A92A364",
+      "value": "r5b_corrected_ranked_index_json_top5_v1"
+    }
+  ],
+  "phase": "R5B_CORRECTED",
+  "prompt_hashes": [
+    {
+      "component": "prompt_family",
+      "sha256": "CBC367079200778AF6175AEF39A65F03C6BE77C950B0D86B0C25CA203C8EBF29",
+      "value": "r5b_corrected_canddif_json_index_exact5_v1"
+    }
+  ],
+  "protected_root_file_hashes": {
+    "final_metric_paper_comparison_values.md": "FD0209C410761E08B5AE7189911A2E80F5AC58AD3AD0D18E3EA030A34397C23F",
+    "original_repo_metric_file_inventory.csv": "267DE0F3BE059419202C41DF017E39B883B29974F1BD3A9BCB80B5E365916B78",
+    "original_repo_metric_values_decoded.csv": "7E84FACF5D00260C4FBE8BF9A6FA849EA4B7F38B88CEF01EC2A67D8828A505C6",
+    "original_repo_metric_values_decoded_summary.csv": "DFCF6DC472CEB1A19781022BEF6B19904609798ED55AB53122CFFE929452524F",
+    "original_repo_metric_values_decoded_wide.csv": "6D27C08B553F162284B002BB133185D1BEC87A90438C9B80DE88A8A4DE8FDD51",
+    "original_repo_requested_metric_values_decoded.csv": "268E33138F04D2C3E03BDD98DA0267418374D2551BC8B5C5DBD3800DF46B3BC0",
+    "requested_metric_candidate_position_bias_values.csv": "02F279CC7C1A5D3E719554DDC8E46040F76F1038A99639DF3DC07A9A7E7F400D",
+    "requested_metric_generation_involved_performance_values.csv": "9D19E1635CB6A39E963F1EB07F515951EA924097F0F84AC3011E049B444D45B6",
+    "requested_metric_history_length_sensitivity_values.csv": "48452372E0AE79706D98AB226B4272DF1B13982AC3FBE68AAF255D96AEA9E4A4",
+    "requested_metric_novelty_values.csv": "FA4EFB7C9E142875478573A3E31BD7D3773A3EC3CE8C911C78DE348EA8792B87",
+    "requested_metric_paper_comparison_values.csv": "A112ADB8010A960BE4C4ECB27A6498D4E3AB3C0C272EA212369EE6BD491072B4",
+    "requested_metric_values_summary.csv": "87C5082BE5CDC2FF3D19A153EAF7AB56B776791D207B86811F56C2C555F3C929"
+  },
+  "protocol_hash": "9596F36E1B1DBC15B68679DDF32114E6AE09914B418FB31DC112072384B708D5",
+  "push": "NO",
+  "r5a_manifest": "results/tables/reproduction_r5a_recovery_request_manifest.csv",
+  "r5a_manifest_sha256": "290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD",
+  "raw_output_aggregate_sha256": "5E7C9E6637DF8F02DED37FEDECCF405B274FAD7192E69517ECBCE1884D57C4F2",
+  "raw_output_file_count_by_namespace": {
+    "results/recovery/r5": 1200,
+    "results/recovery/r5b_corrected": 1200
+  },
+  "raw_output_inventory_path": "results/tables/reproduction_r5b_corrected_freeze_raw_output_inventory.csv",
+  "report_hashes": {
+    "report/reproduction_r5b_canddif_recovery.md": "F35EC1FA272A0929FC6FBDFD4B98B802AC0D998F1FA9CC8AFD5962EFD998068F",
+    "report/reproduction_r5b_corrected.md": "66BF353E193AEAF2D9A8C27379EC9447C3AD65F1EA5E7F1DEA6E1333586FA719",
+    "report/reproduction_r5b_forensic_audit.md": "A47DC4FE8A004AD50620D58324BEE4A54A2246082FC27C4F8F464DD89EE15C78"
+  },
+  "repository_branch": "master",
+  "repository_head_before_freeze": "98c28c5364c40e571765a3b50d4dab8affe80743",
+  "result_table_hashes": {
+    "results/tables/reproduction_r5b_canddif_results.csv": "8A4EBEFA6AF667412B95FA8B06529A818C008E05D25D8AC4C2F943C5427A3D5C",
+    "results/tables/reproduction_r5b_corrected_canddif_results.csv": "65D026FF2F3B225DACCDF649BF232C831E42EAC437799279DCFD647F545FE3DE",
+    "results/tables/reproduction_r5b_corrected_conditional_valid_metrics.csv": "D5B802490ACB58929FA9C3B4AE87EE0CA407AF7679592E46CC8E03DBCC27EC8E",
+    "results/tables/reproduction_r5b_corrected_dataset_model_summary.csv": "12C1FFBD7D99340173A0C8B7124501D65752715ABB328B43EF7AC919BAA28991",
+    "results/tables/reproduction_r5b_corrected_execution_manifest.csv": "37B575115354E81065DE059664302463CD0AD5A6F96432A4170A8D7849AC94ED",
+    "results/tables/reproduction_r5b_corrected_metrics_by_condition.csv": "D91F5E476132CC6E73A5895241EB55CBDE7B631347D19D73B57698604C978CA0",
+    "results/tables/reproduction_r5b_corrected_official_comparison.csv": "50B480CA1B80A3196F6EBF49D1A1F64BAEECF771957FB519434F3E920B33BD0F",
+    "results/tables/reproduction_r5b_corrected_original_vs_corrected.csv": "EACE4A02654BC07366E7D395EBD0226DED840BC8A3AF95E93AB58AEE448D23B8",
+    "results/tables/reproduction_r5b_corrected_output_validity.csv": "8FCB822C6E4DB459EC7B95DC13D915AE7FE750D4DB32148A6A99CEC2A3D9438E",
+    "results/tables/reproduction_r5b_corrected_pair_validation.csv": "7B8BD73A4F6D63357F47912AA182164C0F92FEBE37DB187FD69A1ED538C91C18",
+    "results/tables/reproduction_r5b_corrected_request_execution_status.csv": "2737F51BE66633B80B285D2A2729F6B75352A6218CFC3E937C4993E24A44F921",
+    "results/tables/reproduction_r5b_corrected_runtime_provenance.csv": "A7515B2A9573A8206777F851FE9A4E8F7677615D00881CF7BBD4CFE51C49E035",
+    "results/tables/reproduction_r5b_corrected_validation.csv": "3EC948B5C9A1F714AA17BE32FE50955957381AC534A4CAE66FE06613500C16E0",
+    "results/tables/reproduction_r5b_dataset_model_summary.csv": "D75A470413862686FB5C9F0C9286472ADC5E354599D3C43490526F4AA088564E",
+    "results/tables/reproduction_r5b_execution_manifest.csv": "C28022907613074F0AC458F4DDE96DA2E346AC145BCAF339273DB8C4BD78F7C3",
+    "results/tables/reproduction_r5b_metrics_by_condition.csv": "4A25C960F85B3D3F43ECC1606330A5C24843BE8541E244F5D0926A41A9A10070",
+    "results/tables/reproduction_r5b_official_comparison.csv": "6D516414380651EF27841B457640F18FB4A3D5C1BBF3215DA70B1E2919859667",
+    "results/tables/reproduction_r5b_output_validity.csv": "95E6431F53202A63F7535F854C681173A74DB56E9E0B5A219D93A46D92C7DDDF",
+    "results/tables/reproduction_r5b_p0_gap_resolution.csv": "D0BD03A5A793754F0D7D547E8923EC6CF92A9DCFB428B6D3E6F83A71B45C69F9",
+    "results/tables/reproduction_r5b_pair_validation.csv": "930260187F788465733EDE8975444790673F7FA4BFF69A612F44E7D2BD7FD398",
+    "results/tables/reproduction_r5b_request_execution_status.csv": "E5EC417637E069BE0833F272054E5D7C3021C210830BC803970E5C48734AD840",
+    "results/tables/reproduction_r5b_runtime_provenance.csv": "8AABB8A28A29958209EF985376C466F75A5E6C5D9785B8007C413A17906C5EFB",
+    "results/tables/reproduction_r5b_validation.csv": "0A430DC62534A0DD79000A9A25913391B0DB466246DBD7D7EF3663A8F793403B"
+  },
+  "runtime_provenance": [
+    {
+      "backend": "ollama",
+      "backend_failed": "0",
+      "backend_incomplete": "0",
+      "context_length": "32768",
+      "disk_free_bytes": "161411850240",
+      "downloads_allowed": "false",
+      "external_api_allowed": "false",
+      "git_head": "98c28c5364c40e571765a3b50d4dab8affe80743",
+      "model_available": "true",
+      "model_digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+      "model_name": "mistral:7b-instruct",
+      "model_parameter_size": "7.2B",
+      "model_quantization_level": "Q4_K_M",
+      "not_executed": "0",
+      "ollama_version": "0.32.4",
+      "phase": "R5B_CORRECTED",
+      "protocol_hash": "9596F36E1B1DBC15B68679DDF32114E6AE09914B418FB31DC112072384B708D5",
+      "request_count": "600",
+      "runtime_available": "true",
+      "runtime_error": "",
+      "succeeded": "600",
+      "training_allowed": "false"
+    },
+    {
+      "backend": "ollama",
+      "backend_failed": "0",
+      "backend_incomplete": "0",
+      "context_length": "32768",
+      "disk_free_bytes": "161411850240",
+      "downloads_allowed": "false",
+      "external_api_allowed": "false",
+      "git_head": "98c28c5364c40e571765a3b50d4dab8affe80743",
+      "model_available": "true",
+      "model_digest": "dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755",
+      "model_name": "qwen2:7b-instruct",
+      "model_parameter_size": "7.6B",
+      "model_quantization_level": "Q4_0",
+      "not_executed": "0",
+      "ollama_version": "0.32.4",
+      "phase": "R5B_CORRECTED",
+      "protocol_hash": "9596F36E1B1DBC15B68679DDF32114E6AE09914B418FB31DC112072384B708D5",
+      "request_count": "600",
+      "runtime_available": "true",
+      "runtime_error": "",
+      "succeeded": "600",
+      "training_allowed": "false"
+    }
+  ],
+  "scientific_status": "Corrected local adapted R5B is defensible; still not paper-exact.",
+  "test_hashes": {
+    "tests/test_reproduction_r5b_canddif_recovery.py": "DCFCD8A5E328829067962833BEE954EF2A7EDEFA90D63335FABC1AB12585FD3F",
+    "tests/test_reproduction_r5b_corrected_canddif_recovery.py": "B98071C203F051265237095BC635CB5C3AF07BFF6695A15D006010F661F20777"
+  },
+  "test_status": {
+    "py_compile": "PASS",
+    "pytest": "PASS",
+    "pytest_command": ".\\.venv_audit_recovery\\Scripts\\python.exe -m pytest tests/test_reproduction_r5b_corrected_canddif_recovery.py -q",
+    "pytest_result": "5 passed; pytest cache permission warning non-material"
+  },
+  "validation_rows": [
+    {
+      "check_id": "VAL-001",
+      "check_name": "static preflight",
+      "expected": "all pass",
+      "observed": "26/26",
+      "status": "pass"
+    },
+    {
+      "check_id": "VAL-002",
+      "check_name": "synthetic tests",
+      "expected": "all pass",
+      "observed": "12/12",
+      "status": "pass"
+    },
+    {
+      "check_id": "VAL-003",
+      "check_name": "canary complete when attempted",
+      "expected": "all complete",
+      "observed": "12/12",
+      "status": "pass"
+    },
+    {
+      "check_id": "VAL-004",
+      "check_name": "canary parsed K=5 when attempted",
+      "expected": "all 5",
+      "observed": "12/12",
+      "status": "pass"
+    },
+    {
+      "check_id": "VAL-005",
+      "check_name": "early health no backend incomplete",
+      "expected": "0",
+      "observed": "checked",
+      "status": "pass"
+    },
+    {
+      "check_id": "VAL-006",
+      "check_name": "pair validation",
+      "expected": "600/600",
+      "observed": "600/600",
+      "status": "pass"
+    },
+    {
+      "check_id": "VAL-007",
+      "check_name": "incomplete not succeeded",
+      "expected": "none",
+      "observed": "checked",
+      "status": "pass"
+    },
+    {
+      "check_id": "VAL-008",
+      "check_name": "full run authorization consistent",
+      "expected": "consistent",
+      "observed": "authorized=True;decision=R5B_CORRECTED_RECOVERY_COMPLETE;terminal=1200",
+      "status": "pass"
+    }
+  ],
+  "validator_hashes": {
+    "contract_file": "CB5DA25F85CC9B90449FC11EA436D26379C225F2F2194CDB3CF9B2306A92A364",
+    "corrected_runner_validation_logic": "A152523E8C471CFA4488E274A58B4924048486C597199520AD3135B0D15C292D"
+  }
+}

@@ -1,0 +1,2 @@
+plan,phase,backend,model,prompt_strategy,temperature,response_received,parse_success,schema_valid,selected_count,candidate_validity_rate,duplicate_count,hallucinated_count,latency_seconds,raw_output_path,status,notes
+Plan D,D5C1,ollama,qwen2:7b-instruct,toy_strict_json,0,true,true,true,3,1.000000,0,0,9.196662,not_saved,smoke_test_passed,Model returned parseable JSON with valid toy candidate IDs.

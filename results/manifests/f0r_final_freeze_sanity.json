@@ -1,0 +1,38 @@
+{
+  "artifact_hashes": {
+    "report/f0r_final_freeze_sanity.md": "73df132b8aee2f7dceb26eb097a32b2e117de8cecd0aa2d3aee332fd52cc5e02",
+    "results/tables/f0r_optional_request_breakdown.csv": "a2f0faee26783785503a8e72acbd63e228145c4cff99bc90c00fb65b37037ff2",
+    "results/tables/f0r_primary_request_breakdown.csv": "73b4a6c62cc60ac91f397efa03b56713d6cff5ae91e645cec2d3b9ebe0c954b0",
+    "results/tables/f0r_profile_request_breakdown.csv": "c238f78eb0618dc844fabfef34a29cfb1f40d563bfdc47242e9df2e60f515a7e",
+    "results/tables/f0r_request_total_reconciliation.csv": "c83fc03ec371b36b6a4b2dd706a7f6868ac8f031fbfaa0964115a7996bbe8278",
+    "results/tables/f0r_reranking_request_breakdown.csv": "3375c1377535210c5f4c18726633e70560014e0716bda2048c9448bc6d750888",
+    "results/tables/f0r_runtime_contract.csv": "71e2416b4263193448243c3c71a0247c65f2f8245e9fa798e02bfeec8531b9a2",
+    "results/tables/f0r_sensitivity_request_breakdown.csv": "75d245dc88dba490a5ff73dda3b9e77f6529c57f9db088239936d820222910bd"
+  },
+  "commit_created": 0,
+  "decision_token": "F0_FINAL_SANITY_VALIDATED",
+  "downloads_executed": 0,
+  "expected_pre_f0_head": "30d6c3e5fcb0e97451a4420829b88de10bb57213",
+  "f0_rerun_executed": 0,
+  "head": "30d6c3e5fcb0e97451a4420829b88de10bb57213",
+  "llm_inference_calls_executed": 0,
+  "network_calls_executed": 0,
+  "phase_id": "f0r_final_freeze_sanity",
+  "request_totals": {
+    "CANARY_INCREMENTAL": 0,
+    "CONCEPTUAL_ALL_APPLICABLE": 100584,
+    "CONDITIONAL": 9000,
+    "CORE_MANDATORY": 29292,
+    "EXISTING_REUSABLE": 0,
+    "FULL_PLANNED_IF_CONDITIONAL": 88584,
+    "MANDATORY_PLUS_TRAINING_DEPENDENT": 79584,
+    "MANDATORY_TOTAL": 50292,
+    "OPTIONAL": 12000,
+    "REQUIRED_SENSITIVITY": 21000,
+    "TRAINING_DEPENDENT": 29292
+  },
+  "training_runs_executed": 0,
+  "updated_f0_inference_contract_hash": "7bf74991efec2219607412c3baa3c7eef20629a2b6fa50b3a9a95dd8308f8714",
+  "validation_errors": [],
+  "validation_passed": true
+}

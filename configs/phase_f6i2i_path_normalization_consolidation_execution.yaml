@@ -1,0 +1,23 @@
+phase:
+  id: phase_f6i2i
+  name: phase_f6i2i_path_normalization_consolidation_execution
+  previous_phase: phase_f6i2h
+runtime:
+  approved_interpreter: .venv_audit_recovery/Scripts/python.exe
+  required_python_no_user_site: "1"
+  classification: defensible_repaired_clone_exact_package_versions
+  caveat: repaired clone exact package tree only; not exact original executable environment
+bundle:
+  selected_group: path_normalization
+  approved_function: rel
+  canonical_module: src/audit/common_paths.py
+boundaries:
+  no_other_helper_consolidation: true
+  no_wrapper_removal: true
+  no_scientific_modification: true
+  no_training: true
+  no_llm_inference: true
+  no_ollama_or_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  no_staging_or_commit: true

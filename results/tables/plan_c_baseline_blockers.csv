@@ -1,0 +1,2 @@
+dataset,baseline,status,reason,missing_inputs,diagnostic_subset,max_users,run_scope,reconstruction_status,notes,timestamp
+lastfm,all,blocked,LastFM is extension_only in C5: no ground_truth.csv/candidates.csv protocol is available for utility metrics.,,False,,full,extension_only,No fake metric file was written.,2026-06-29T16:16:59.559147+00:00

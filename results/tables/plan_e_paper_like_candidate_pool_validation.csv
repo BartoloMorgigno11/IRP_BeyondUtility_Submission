@@ -1,0 +1,83 @@
+manifest_id,dataset,task,check_name,passed,observed_value,expected_value,severity,notes
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,file_exists,true,will_write_non_empty_manifest,non_empty_manifest,critical,Validation is computed before write and confirms a non-empty output frame.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,row_count_is_20000_when_complete,true,20000,20000,critical,Required for complete 1000-user manifests.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,user_count_is_1000_when_complete,true,1000,1000,critical,Required for complete 1000-user manifests.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,candidate_pool_size_is_20,true,20,20,critical,Every selected user must have exactly 20 rows.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,one_positive_per_user,true,1,1,critical,Every selected user must have exactly one positive.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,nineteen_negatives_per_user,true,19,19,critical,Every selected user must have exactly nineteen negatives.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,no_duplicate_items_per_user,true,20,20,critical,Candidate item IDs must be unique within each user pool.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,candidate_positions_are_1_to_20,true,1..20_per_user,1..20_per_user,critical,Candidate positions must be complete and deterministic.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,no_missing_user_ids,true,0,0,critical,No user IDs may be blank.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,no_missing_item_ids,true,0,0,critical,No item IDs may be blank.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,deterministic_seed_recorded,true,20260702,20260702,major,Seed metadata must be recorded.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,expected_row_count_for_selected_users,true,20000,20000,major,Partial manifests still need 20 rows per selected user.
+plan_e_beauty_1000user_ranking_manifest,Amazon Beauty,ranking,no_original_repo_output,true,results/tables/plan_e_beauty_1000user_ranking_manifest.csv,not_under_original_repo,critical,E2 outputs must not write under original_repo/.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,file_exists,true,will_write_non_empty_manifest,non_empty_manifest,critical,Validation is computed before write and confirms a non-empty output frame.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,row_count_is_20000_when_complete,true,20000,20000,critical,Required for complete 1000-user manifests.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,user_count_is_1000_when_complete,true,1000,1000,critical,Required for complete 1000-user manifests.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,candidate_pool_size_is_20,true,20,20,critical,Every selected user must have exactly 20 rows.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,one_positive_per_user,true,1,1,critical,Every selected user must have exactly one positive.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,nineteen_negatives_per_user,true,19,19,critical,Every selected user must have exactly nineteen negatives.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,no_duplicate_items_per_user,true,20,20,critical,Candidate item IDs must be unique within each user pool.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,candidate_positions_are_1_to_20,true,1..20_per_user,1..20_per_user,critical,Candidate positions must be complete and deterministic.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,no_missing_user_ids,true,0,0,critical,No user IDs may be blank.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,no_missing_item_ids,true,0,0,critical,No item IDs may be blank.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,deterministic_seed_recorded,true,20260702,20260702,major,Seed metadata must be recorded.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,expected_row_count_for_selected_users,true,20000,20000,major,Partial manifests still need 20 rows per selected user.
+plan_e_beauty_1000user_reranking_manifest,Amazon Beauty,reranking,no_original_repo_output,true,results/tables/plan_e_beauty_1000user_reranking_manifest.csv,not_under_original_repo,critical,E2 outputs must not write under original_repo/.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,file_exists,true,will_write_non_empty_manifest,non_empty_manifest,critical,Validation is computed before write and confirms a non-empty output frame.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,row_count_is_20000_when_complete,true,20000,20000,critical,Required for complete 1000-user manifests.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,user_count_is_1000_when_complete,true,1000,1000,critical,Required for complete 1000-user manifests.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,candidate_pool_size_is_20,true,20,20,critical,Every selected user must have exactly 20 rows.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,one_positive_per_user,true,1,1,critical,Every selected user must have exactly one positive.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,nineteen_negatives_per_user,true,19,19,critical,Every selected user must have exactly nineteen negatives.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,no_duplicate_items_per_user,true,20,20,critical,Candidate item IDs must be unique within each user pool.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,candidate_positions_are_1_to_20,true,1..20_per_user,1..20_per_user,critical,Candidate positions must be complete and deterministic.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,no_missing_user_ids,true,0,0,critical,No user IDs may be blank.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,no_missing_item_ids,true,0,0,critical,No item IDs may be blank.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,deterministic_seed_recorded,true,20260702,20260702,major,Seed metadata must be recorded.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,expected_row_count_for_selected_users,true,20000,20000,major,Partial manifests still need 20 rows per selected user.
+plan_e_sports_1000user_ranking_manifest,Amazon Sports,ranking,no_original_repo_output,true,results/tables/plan_e_sports_1000user_ranking_manifest.csv,not_under_original_repo,critical,E2 outputs must not write under original_repo/.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,file_exists,true,will_write_non_empty_manifest,non_empty_manifest,critical,Validation is computed before write and confirms a non-empty output frame.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,row_count_is_20000_when_complete,true,20000,20000,critical,Required for complete 1000-user manifests.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,user_count_is_1000_when_complete,true,1000,1000,critical,Required for complete 1000-user manifests.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,candidate_pool_size_is_20,true,20,20,critical,Every selected user must have exactly 20 rows.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,one_positive_per_user,true,1,1,critical,Every selected user must have exactly one positive.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,nineteen_negatives_per_user,true,19,19,critical,Every selected user must have exactly nineteen negatives.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,no_duplicate_items_per_user,true,20,20,critical,Candidate item IDs must be unique within each user pool.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,candidate_positions_are_1_to_20,true,1..20_per_user,1..20_per_user,critical,Candidate positions must be complete and deterministic.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,no_missing_user_ids,true,0,0,critical,No user IDs may be blank.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,no_missing_item_ids,true,0,0,critical,No item IDs may be blank.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,deterministic_seed_recorded,true,20260702,20260702,major,Seed metadata must be recorded.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,expected_row_count_for_selected_users,true,20000,20000,major,Partial manifests still need 20 rows per selected user.
+plan_e_sports_1000user_reranking_manifest,Amazon Sports,reranking,no_original_repo_output,true,results/tables/plan_e_sports_1000user_reranking_manifest.csv,not_under_original_repo,critical,E2 outputs must not write under original_repo/.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,file_exists,true,will_write_non_empty_manifest,non_empty_manifest,critical,Validation is computed before write and confirms a non-empty output frame.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,row_count_is_20000_when_complete,true,20000,20000,critical,Required for complete 1000-user manifests.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,user_count_is_1000_when_complete,true,1000,1000,critical,Required for complete 1000-user manifests.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,candidate_pool_size_is_20,true,20,20,critical,Every selected user must have exactly 20 rows.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,one_positive_per_user,true,1,1,critical,Every selected user must have exactly one positive.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,nineteen_negatives_per_user,true,19,19,critical,Every selected user must have exactly nineteen negatives.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,no_duplicate_items_per_user,true,20,20,critical,Candidate item IDs must be unique within each user pool.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,candidate_positions_are_1_to_20,true,1..20_per_user,1..20_per_user,critical,Candidate positions must be complete and deterministic.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,no_missing_user_ids,true,0,0,critical,No user IDs may be blank.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,no_missing_item_ids,true,0,0,critical,No item IDs may be blank.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,deterministic_seed_recorded,true,20260702,20260702,major,Seed metadata must be recorded.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,expected_row_count_for_selected_users,true,20000,20000,major,Partial manifests still need 20 rows per selected user.
+plan_e_ml1m_1000user_ranking_manifest,ML-1M,ranking,no_original_repo_output,true,results/tables/plan_e_ml1m_1000user_ranking_manifest.csv,not_under_original_repo,critical,E2 outputs must not write under original_repo/.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,file_exists,true,will_write_non_empty_manifest,non_empty_manifest,critical,Validation is computed before write and confirms a non-empty output frame.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,row_count_is_20000_when_complete,true,20000,20000,critical,Required for complete 1000-user manifests.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,user_count_is_1000_when_complete,true,1000,1000,critical,Required for complete 1000-user manifests.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,candidate_pool_size_is_20,true,20,20,critical,Every selected user must have exactly 20 rows.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,one_positive_per_user,true,1,1,critical,Every selected user must have exactly one positive.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,nineteen_negatives_per_user,true,19,19,critical,Every selected user must have exactly nineteen negatives.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,no_duplicate_items_per_user,true,20,20,critical,Candidate item IDs must be unique within each user pool.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,candidate_positions_are_1_to_20,true,1..20_per_user,1..20_per_user,critical,Candidate positions must be complete and deterministic.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,no_missing_user_ids,true,0,0,critical,No user IDs may be blank.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,no_missing_item_ids,true,0,0,critical,No item IDs may be blank.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,deterministic_seed_recorded,true,20260702,20260702,major,Seed metadata must be recorded.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,expected_row_count_for_selected_users,true,20000,20000,major,Partial manifests still need 20 rows per selected user.
+plan_e_ml1m_1000user_reranking_manifest,ML-1M,reranking,no_original_repo_output,true,results/tables/plan_e_ml1m_1000user_reranking_manifest.csv,not_under_original_repo,critical,E2 outputs must not write under original_repo/.
+global,LastFM,all,no_LastFM_manifest_unless_valid,true,no_lastfm_manifest,no_lastfm_manifest,critical,LastFM remains blocked/conditional unless valid utility artifacts exist.
+global,all,all,no_raw_outputs_created,true,7,unchanged_existing_only,critical,E2 does not write raw outputs; build-script tests compare before/after JSONL sets.
+global,all,all,no_original_repo_output,true,0,0,critical,original_repo/ must remain unmodified.
+global,all,all,no_plan_c_modification,true,0,0,critical,Plan C files and metrics must remain unmodified.

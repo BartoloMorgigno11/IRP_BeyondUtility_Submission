@@ -1,0 +1,5 @@
+family,cells,sign_agreement_yes,sign_agreement_no,numeric_comparable_yes,direction_comparable_yes,magnitude_agreement,ranking_agreement,qualitative_agreement_cells
+R5B,12,11,1,0,12,not evaluated unless same-model numeric baseline exists,not evaluated against paper; local rank observations reported in final report,11
+R5C,16,16,0,0,16,not evaluated unless same-model numeric baseline exists,not evaluated against paper; local rank observations reported in final report,16
+R5D,16,0,0,0,0,not evaluated unless same-model numeric baseline exists,not evaluated against paper; local rank observations reported in final report,16
+TOTAL,44,27,1,0,28,no paper-exact magnitude comparison available,no paper-exact rank-order comparison available,43

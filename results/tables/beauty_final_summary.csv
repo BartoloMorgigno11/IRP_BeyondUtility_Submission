@@ -1,0 +1,27 @@
+dataset,phase,step,status,message,path,row_count,timestamp
+beauty,smoke,smoke_checks,completed,Smoke checks passed.,,34,2026-06-28T23:07:31.502998+00:00
+beauty,dataset_audit,dataset_audit,ready,Verified existing dataset audit output.,results\tables\beauty_dataset_audit.csv,91,2026-06-28T23:07:31.502998+00:00
+beauty,llm_outputs,llm_outputs,ready,Verified recommendation file with usable recommendation rows.,results\raw_outputs\beauty_llm_outputs_normalized.csv,2000,2026-06-28T23:07:31.502998+00:00
+beauty,baseline_outputs,baseline_outputs,ready,Verified existing normalized baseline outputs.,results\raw_outputs\beauty_baseline_outputs_normalized.csv,447260,2026-06-28T23:07:31.502998+00:00
+beauty,mostpop,mostpop,not_configured,MostPop is blocked because interactions_path is not configured.,,0,2026-06-28T23:07:31.502998+00:00
+beauty,reproduction,reproduction,blocked,reproduction produced diagnostics but no real metric rows.,results\tables\beauty_reproduction_summary.csv,0,2026-06-28T23:07:31.502998+00:00
+beauty,reproduction,ground_truth_path,blocked,Ground-truth path is not configured.,,0,2026-06-28T23:07:31.502998+00:00
+beauty,reproduction,llm_recommendations,ready,Loaded normalized llm recommendations.,results\raw_outputs\beauty_llm_outputs_normalized.csv,2000,2026-06-28T23:07:31.502998+00:00
+beauty,reproduction,traditional_baseline_recommendations,ready,Loaded normalized traditional_baseline recommendations.,results\raw_outputs\beauty_baseline_outputs_normalized.csv,447260,2026-06-28T23:07:31.502998+00:00
+beauty,reproduction,mostpop_recommendations,missing,Normalized mostpop recommendation file is missing.,results\raw_outputs\beauty_mostpop_recommendations.csv,0,2026-06-28T23:07:31.502998+00:00
+beauty,reproduction,hallucination_reference,not_configured,LLM hallucination metrics are blocked because neither candidates_path nor catalog_path is configured to a valid readable file.,candidates_path=not_configured; catalog_path=not_configured,0,2026-06-28T23:07:31.502998+00:00
+beauty,coverage,coverage,blocked,coverage produced diagnostics but no real metric rows.,results\tables\beauty_coverage_summary.csv,0,2026-06-28T23:07:31.502998+00:00
+beauty,coverage,catalog_path,not_configured,Catalog Coverage@5 is blocked because catalog_path is not configured.,,0,2026-06-28T23:07:31.502998+00:00
+beauty,coverage,llm_recommendations,ready,Loaded normalized llm recommendations.,results\raw_outputs\beauty_llm_outputs_normalized.csv,2000,2026-06-28T23:07:31.502998+00:00
+beauty,coverage,traditional_baseline_recommendations,ready,Loaded normalized traditional_baseline recommendations.,results\raw_outputs\beauty_baseline_outputs_normalized.csv,447260,2026-06-28T23:07:31.502998+00:00
+beauty,coverage,mostpop_recommendations,missing,Normalized mostpop recommendation file is missing.,results\raw_outputs\beauty_mostpop_recommendations.csv,0,2026-06-28T23:07:31.502998+00:00
+beauty,position_bias,position_bias,blocked,position_bias produced diagnostics but no real metric rows.,results\tables\beauty_position_bias_summary.csv,0,2026-06-28T23:07:31.502998+00:00
+beauty,position_bias,candidates_path,not_configured,Position-bias analysis is blocked because candidates_path is not configured.,,0,2026-06-28T23:07:31.502998+00:00
+beauty,position_bias,llm_recommendations,ready,Loaded normalized llm recommendations.,results\raw_outputs\beauty_llm_outputs_normalized.csv,2000,2026-06-28T23:07:31.502998+00:00
+beauty,position_bias,traditional_baseline_recommendations,ready,Loaded normalized traditional_baseline recommendations.,results\raw_outputs\beauty_baseline_outputs_normalized.csv,447260,2026-06-28T23:07:31.502998+00:00
+beauty,position_bias,mostpop_recommendations,missing,Normalized mostpop recommendation file is missing.,results\raw_outputs\beauty_mostpop_recommendations.csv,0,2026-06-28T23:07:31.502998+00:00
+beauty,history_length,history_length,blocked,history_length produced diagnostics but no real metric rows.,results\tables\beauty_history_length_summary.csv,0,2026-06-28T23:07:31.502998+00:00
+beauty,history_length,history_data,not_configured,History-length prompt preparation is blocked because neither history_path nor interactions_path is configured.,,0,2026-06-28T23:07:31.502998+00:00
+beauty,cost,cost_metrics_module,ready,Cost/token utility functions are importable; no API calls are made.,src/evaluation/cost_metrics.py,0,2026-06-28T23:07:31.502998+00:00
+beauty,cost,token_latency_inputs,not_configured,No token/latency record path is configured; cost estimates were not computed.,,0,2026-06-28T23:07:31.502998+00:00
+beauty,cost,pricing_assumptions,not_configured,"configs/cost.yaml is present, but prices are null; cost estimates were not computed.",configs\cost.yaml,0,2026-06-28T23:07:31.502998+00:00

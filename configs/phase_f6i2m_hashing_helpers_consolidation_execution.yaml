@@ -1,0 +1,16 @@
+phase:
+  id: phase_f6i2m
+  name: phase_f6i2m_hashing_helpers_consolidation_execution
+  helper_group: hashing_helpers
+runtime:
+  interpreter: .venv_audit_recovery/Scripts/python.exe
+  python_no_user_site: "1"
+  classification: defensible_repaired_clone_exact_package_versions
+scope:
+  canonical_module: src/audit/common_hashing.py
+  no_training: true
+  no_inference: true
+  no_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  no_git_stage_or_commit: true

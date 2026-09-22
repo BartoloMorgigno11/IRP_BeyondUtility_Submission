@@ -1,0 +1,13 @@
+component,raw_llm_requests,budget_class,training_required,derived_metric_extra_requests,evidence
+original_four_history,14400,MANDATORY,False,0,H0 final history matrix; 72 cells
+fifth_dataset_primary,6000,MANDATORY,False,0,3 models x 2 prompts x 1000 users
+fifth_dataset_history,3600,MANDATORY,False,0,3 models x 6 lengths x 200 users; feasible only for Food.com
+gemma_original_four_primary_parity,15528,MANDATORY,False,0,derived from E2A gemma_original_four_parity raw rows
+required_original_four_gemma_canddif,600,MANDATORY,False,0,derived from E2A gemma_canddif_parity raw rows
+fifth_dataset_canddif_primary,3000,MANDATORY,False,0,3 models x one order-variant x 1000 users
+other_sensitivities_predeclared,0,NOT_PREDECLARED,False,0,no additional mandatory sensitivity budget is frozen in D0B
+profile_generation,600,REQUIRED_CONDITIONAL,False,0,3 models x 200 paired users
+profile_only_recommendation,600,REQUIRED_CONDITIONAL,False,0,3 models x 200 paired users
+profile_plus_history_recommendation,600,REQUIRED_CONDITIONAL,False,0,3 models x 200 paired users
+derived_metrics,0,DERIVED,False,0,derived metrics add zero raw LLM requests
+grand_total_mandatory_and_conditional,44928,TOTAL,False,0,excludes non-predeclared optional sensitivities

@@ -1,0 +1,30 @@
+{
+  "artifact_hashes": {
+    "report/f1ar_offline_closure_sanity.md": "7546f28d81077be90b4d29d64626d8987837bfb1aca9e2fca1373b38b200b3aa",
+    "results/tables/f1ar_cost_wording_audit.csv": "56f045366d13938230f0ccffec3d933c791a6b06cfcfda929e3b315615fdafc0",
+    "results/tables/f1ar_final_metric_blockers.csv": "c4d5e839662e43eba14084b26212393fff2b4065bc7c20d433027e84b4eae79b",
+    "results/tables/f1ar_ks_original_four_results.csv": "c113a62f30d40b5846dbf0487dc7359262c02bf0ddf261e046969c3dceb9470f",
+    "results/tables/f1ar_ks_recoverability_audit.csv": "8630f83a1c14d0d0c2667da1243b2b74965925362c94e94e511a1311d2bad071"
+  },
+  "avoidable_ks_blockers": 0,
+  "commit_created": 0,
+  "decision_token": "F1A_FINAL_OFFLINE_CLOSURE_VALIDATED",
+  "downloads_executed": 0,
+  "expected_f0_checkpoint_head": "6b489f507c41911f5571e136a02986119d3233ac",
+  "f1arr_update": {
+    "decision_token": "F1ARR_POPREO_DPD_RECOVERED",
+    "global_metric_blockers_removed_in_f1arr": true,
+    "phase_id": "f1arr_popreo_dpd_recovery",
+    "prior_popreo_dpd_blockers_superseded": true
+  },
+  "final_metric_blockers": [],
+  "head": "38d601439edf93aa68107c550f5a45743da089e3",
+  "ks_original_four_result_rows": 8,
+  "ks_recoverability_rows": 4,
+  "llm_inference_calls_executed": 0,
+  "network_calls_executed": 0,
+  "phase_id": "f1ar_offline_closure_sanity",
+  "training_runs_executed": 0,
+  "validation_failures": [],
+  "validation_passed": true
+}

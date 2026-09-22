@@ -1,0 +1,2 @@
+dataset,status,check,path,message,row_count,timestamp
+sports,not_configured,history_data,,History-length prompt preparation is blocked because neither history_path nor interactions_path is configured.,0,2026-06-28T23:07:44.049088+00:00

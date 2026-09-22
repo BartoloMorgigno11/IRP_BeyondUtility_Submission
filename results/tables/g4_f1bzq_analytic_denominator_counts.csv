@@ -1,0 +1,7 @@
+scope,dataset,planned_users,positive_present_users,positive_absent_users,model_prompt_variants,planned_request_rows,positive_present_request_rows,positive_absent_request_rows,strict_valid_request_rows,invalid_terminal_request_rows,backend_error_request_rows,source,metric_values_computed_in_this_phase
+BY_DATASET,beauty,990,49,941,6,5940,294,5646,5876,64,0,results/tables/g4_f1bzq_candidate_hashes.csv plus frozen terminal evidence,false
+BY_DATASET,sports,892,28,864,6,5352,168,5184,5307,45,0,results/tables/g4_f1bzq_candidate_hashes.csv plus frozen terminal evidence,false
+BY_DATASET,ml1m,1000,193,807,6,6000,1158,4842,5936,64,0,results/tables/g4_f1bzq_candidate_hashes.csv plus frozen terminal evidence,false
+BY_DATASET,lastfm,1000,469,531,6,6000,2814,3186,5907,93,0,results/tables/g4_f1bzq_candidate_hashes.csv plus frozen terminal evidence,false
+BY_DATASET,foodcom,1000,4,996,6,6000,24,5976,5960,40,0,results/tables/g4_f1bzq_candidate_hashes.csv plus frozen terminal evidence,false
+GRAND_TOTAL,ALL,4882,743,4139,6,29292,4458,24834,28986,306,0,sum of BY_DATASET rows,false

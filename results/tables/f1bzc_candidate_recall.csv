@@ -1,0 +1,6 @@
+dataset,source_policy,evaluation_N,positive_present_N,positive_absent_N,candidate_recall_at_20,warm_user_N,warm_positive_present_N,warm_candidate_recall_at_20,cold_user_N,cold_positive_present_N,cold_candidate_recall_at_20,candidate_recall_tautological,authoritative,status,reason
+beauty,F1BZC_FULL_CATALOG_FIVE_SEED_MEAN,990,,,,,,,,,,not_evaluated,false,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,No raw full-catalog pool could be produced without invented item embeddings.
+sports,F1BZC_FULL_CATALOG_FIVE_SEED_MEAN,892,,,,,,,,,,not_evaluated,false,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,No raw full-catalog pool could be produced without invented item embeddings.
+ml1m,F1BZC_FULL_CATALOG_FIVE_SEED_MEAN,1000,,,,,,,,,,not_evaluated,false,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,No raw full-catalog pool could be produced without invented item embeddings.
+lastfm,F1BZC_FULL_CATALOG_FIVE_SEED_MEAN,1000,409,591,0.40899999999999997,1000,409,0.40899999999999997,0,,,false,false,BLOCKED_ADAPTED_POOL_SINGLE_MODEL_DOMINANCE,Recall is non-tautological but not authoritative because the adapted pool algorithm is single-model dominated.
+foodcom,F1BZC_FULL_CATALOG_FIVE_SEED_MEAN,1000,,,,,,,,,,not_evaluated,false,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,No raw full-catalog pool could be produced without invented item embeddings.

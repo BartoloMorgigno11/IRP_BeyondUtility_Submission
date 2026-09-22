@@ -1,0 +1,88 @@
+{
+  "bootstrap_recomputed": false,
+  "created_at_utc": "2026-09-04T15:44:15Z",
+  "decision_token": "G3_SCIENTIFIC_SYNTHESIS_FROZEN",
+  "files_created": [
+    "src/extension/g3_candidate_position_scientific_synthesis.py",
+    "results/tables/g3_candidate_position_synthesis_statistical_comparisons.csv",
+    "results/tables/g3_candidate_position_synthesis_decision_breakdowns.csv",
+    "results/tables/g3_candidate_position_synthesis_canddif_summary.csv",
+    "results/tables/g3_candidate_position_synthesis_prompt_interaction.csv",
+    "results/tables/g3_candidate_position_synthesis_reliability.csv",
+    "results/tables/g3_candidate_position_synthesis_validation.csv",
+    "results/manifests/g3_candidate_position_scientific_synthesis_manifest.json",
+    "report/g3_candidate_position_scientific_synthesis.md",
+    "report/notes.md"
+  ],
+  "frozen_evidence_modified": false,
+  "frozen_metrics_modified": false,
+  "frozen_statistical_results_modified": false,
+  "g4_started": false,
+  "head_before_generation": "ed146d6089b0370b27ea97228b03c0da0b057ae7",
+  "input_hashes": {
+    "results/manifests/g3_candidate_position_metrics_freeze.json": "3cc590443a8a63c53744293625c255ef5f385141d5344cd14499ee4feb156ea6",
+    "results/manifests/g3_candidate_position_statistical_analysis_manifest.json": "066466de839a01eb3be9f6fdcfc3406b2f1d7cf902c3c814ee9d9cba46f8f9a0",
+    "results/tables/g3_candidate_position_canddif.csv": "6349802ba933d5ab0218fd72268e4aa0c71563f3a8c1cc91d8a0273ee9e59f80",
+    "results/tables/g3_candidate_position_metric_results.csv": "ce005175b0e6222ca488080506cd8a8e13d1314e136e0421c782b88f14e4e25e",
+    "results/tables/g3_candidate_position_reliability.csv": "b31de0ea8c3b788091eeb7893af7a795029ddb36059d87a13c88f1257da7d537",
+    "results/tables/g3_candidate_position_statistical_paired_contributions.csv": "5b5080c76cd90caca1db4fde7b574e65e677702fbd6ed7bc07ef391ec42a8a8a",
+    "results/tables/g3_candidate_position_statistical_results.csv": "2b2e1fa3d661fa1c4c2e81d56350548eeb33d1fb9594ef5b924b548af7a555a3",
+    "results/tables/g3_candidate_position_statistical_validation.csv": "9108202377fd9b2f40c26b7279f40606e7982614b502e8ed2bc6cedb941cccd8"
+  },
+  "new_tests_or_hypotheses_added": false,
+  "next_safe_step": "update report through frozen G3 results only; do not start G4 without explicit request",
+  "ollama_api_calls_executed": 0,
+  "output_hashes": {
+    "report/g3_candidate_position_scientific_synthesis.md": "c61fd6ef6b635da074132b9615dd5ddeac44c832f0c55efb51563ccf695e7d16",
+    "results/tables/g3_candidate_position_synthesis_canddif_summary.csv": "29eec35e216cac3960dc0c30715018db5448ceff1eb9fedf77821368a5b03d25",
+    "results/tables/g3_candidate_position_synthesis_decision_breakdowns.csv": "869daa07c5325bb1108ba5016712db979d5de7d2453f206f3200a92885f6cc07",
+    "results/tables/g3_candidate_position_synthesis_prompt_interaction.csv": "095c210093ffce1cf8d35ba7cb451fb89c5a730bd684218b16c57edd4c9036d7",
+    "results/tables/g3_candidate_position_synthesis_reliability.csv": "227d73f1ba9024e2d095f1d48bedd26d591d1ca0d59928685c07174e0fdc4d71",
+    "results/tables/g3_candidate_position_synthesis_statistical_comparisons.csv": "f24af8cc57f3403e26453a6ea9d636b061c4375cbeeb3c9f9e53f6ecd643f19d",
+    "results/tables/g3_candidate_position_synthesis_validation.csv": "ec3cc6ea60a336e22b1a8359f211ba2df6734afd47b973941ba5ba275d1972f0"
+  },
+  "phase_id": "g3_candidate_position_scientific_synthesis",
+  "precondition_head": "ed146d6089b0370b27ea97228b03c0da0b057ae7",
+  "precondition_status": "G3_STATISTICAL_ANALYSIS_FROZEN",
+  "protocol_changes": false,
+  "relation_update_executed": false,
+  "schema_version": "1.0",
+  "source_hashes": {
+    "src/extension/g3_candidate_position_scientific_synthesis.py": "c7fb6c457ae08e3a2d25eb63eee01106f0f5503a62764d80cb138a4ea0c971e3"
+  },
+  "statistical_wording": {
+    "canddif": "DESCRIPTIVE_ONLY_NO_SIGNIFICANCE_TEST",
+    "holm": "NOT_APPLIED_NO_FROZEN_P_VALUE_METHOD_FOR_G3",
+    "inference_basis": "bootstrap_CI_only",
+    "p_values": "NOT_COMPUTED_NO_FROZEN_PRIMARY_P_VALUE_METHOD_FOR_G3"
+  },
+  "summary": {
+    "canddif_rows": 60,
+    "comparison_coverage": "90/90",
+    "decision_counts": {
+      "CI_SUPPORTED_NEGATIVE": 1,
+      "CI_SUPPORTED_POSITIVE": 85,
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": 4
+    },
+    "first_invalid": 96,
+    "mistral_exception_rows": 5,
+    "multiplicity_status": "NOT_APPLIED_NO_FROZEN_P_VALUE_METHOD_FOR_G3",
+    "paired_contribution_rows": 18000,
+    "prompt_interaction_counts": {
+      "CandDif": {
+        "AMPLIFIES": 11,
+        "ATTENUATES": 19
+      },
+      "FIRST_minus_RANDOM": {
+        "AMPLIFIES": 13,
+        "ATTENUATES": 32
+      }
+    },
+    "random_invalid": 70,
+    "statistical_comparisons": 90,
+    "validation_failures": [],
+    "validation_pass_count": 25,
+    "validation_total_count": 25
+  },
+  "zero_inference": true
+}

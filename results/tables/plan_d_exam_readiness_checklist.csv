@@ -1,0 +1,14 @@
+check_id,area,status,finding,recommendation
+C01,final report states no exact LLM reproduction,pass,The final package explicitly rejects exact/full LLM reproduction.,Keep this wording in oral defense.
+C02,final report states no full LLM reproduction,pass,The full LLM reproduction boundary is explicit.,Do not describe D5E-D5K as the paper's full LLM matrix.
+C03,Plan C classified as reconstructed reproduction,pass,Plan C is consistently framed as reconstructed reproduction.,"Use the tag as stability evidence, not exact-paper evidence."
+C04,D5E-D5K classified as diagnostic_subset,pass,The LLM diagnostics are represented as diagnostic subset work.,Mention 20 ML-1M users when discussing LLM findings.
+C05,blocked/conditional items are explicit,pass,Blocked and conditional items are documented.,Lead with blockers before discussing optional future API work.
+C06,strict prompt mitigation result is clearly explained,pass,Strict prompt mitigation is stated in the final package.,"Say it improved this diagnostic, not that it solves hallucination generally."
+C07,hallucination/candidate validity distinction is clear,pass,The final package separates validity from utility.,Explain that valid JSON can still contain invalid candidate IDs.
+C08,position bias and history-length sensitivity are discussed,pass,Order and history-length robustness are included in the story.,"Frame these as robustness diagnostics, not full causal claims."
+C09,Qwen vs Mistral comparison is interpreted correctly,pass,The model comparison is local and bounded.,Avoid generalizing to the full benchmark or all Mistral/Qwen variants.
+C10,re-ranking diagnostic is interpreted without overclaiming,pass,The report avoids claiming LLM reranking is generally worse or better.,Say it did not help this candidate-order reference in this subset.
+C11,raw outputs are said to be Git-ignored,pass,Raw JSONL handling is clearly documented.,"Before any commit, verify raw JSONL remains ignored."
+C12,no API/no-download/no-training boundaries are stated,pass,No-inference/no-API/no-download/no-training boundaries are explicit.,Keep the same boundary paragraph in final slides.
+C13,D5H Mistral status wording consistency,pass,"D5H wording is consistent: initially conditional, final local Mistral smoke test passed after manual user installation.","Keep D5H framed as diagnostic_subset local model availability/smoke test, not exact reproduction."

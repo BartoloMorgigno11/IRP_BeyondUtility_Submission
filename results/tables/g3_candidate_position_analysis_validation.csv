@@ -1,0 +1,26 @@
+check_id,description,status,observed,expected
+G3AU-001,precondition HEAD,PASS,e9ca0bc412312b7954ca2f6831827c42c25c8507,e9ca0bc412312b7954ca2f6831827c42c25c8507
+G3AU-002,git status limited to current G3 analytic-universe artifacts,PASS,"{""full_status"":""M report/notes.md\n?? report/g3_candidate_position_analysis_universe.md\n?? src/extension/g3_candidate_position_analysis_universe.py"",""unexpected"":[]}",no non-G3 analytic-universe artifacts
+G3AU-003,execution retention frozen,PASS,G3_EXECUTION_RETENTION_FROZEN,G3_EXECUTION_RETENTION_FROZEN
+G3AU-004,retention validation passed,PASS,True,True
+G3AU-005,frozen protocol and runner artifacts unchanged,PASS,[],[]
+G3AU-006,retention artifacts unchanged,PASS,[],[]
+G3AU-007,logical analytic rows,PASS,12000,12000
+G3AU-008,unique analytic canonical request IDs,PASS,12000,12000
+G3AU-009,expected pair rows,PASS,6000,6000
+G3AU-010,pairing defects zero,PASS,0,0
+G3AU-011,FIRST positive position equals 1,PASS,all FIRST rows,positive position 1
+G3AU-012,RANDOM positive position in 2..20,PASS,all RANDOM rows,positive positions 2..20
+G3AU-013,raw file evidence complete,PASS,"{""missing"":0,""raw_files"":12000}","{""missing"":0,""raw_files"":12000}"
+G3AU-014,terminal evidence complete,PASS,"{""missing"":0,""responses"":12000}","{""missing"":0,""responses"":12000}"
+G3AU-015,request ledger complete,PASS,"{""missing"":0,""requests"":12000}","{""missing"":0,""requests"":12000}"
+G3AU-016,missing evidence zero,PASS,"{""raw_file"":0,""raw_record"":0,""request"":0,""terminal"":0}",all zero
+G3AU-017,orphan evidence zero,PASS,"{""raw_file"":0,""raw_record"":0,""request"":0,""terminal"":0}",all zero
+G3AU-018,duplicate evidence zero,PASS,"{""raw_file"":0,""raw_record"":0,""request"":0,""terminal"":0}",all zero
+G3AU-019,canonical identity mismatches zero,PASS,0,0
+G3AU-020,raw and terminal hashes valid,PASS,"{""raw_errors"":0,""raw_record_hash_mismatch"":0,""terminal_hash_mismatch"":0}",all zero
+G3AU-021,FIRST/RANDOM accounting,PASS,"{""FIRST"":6000,""RANDOM"":6000}","{""FIRST"":6000,""RANDOM"":6000}"
+G3AU-022,dimension accounting,PASS,"{""dataset"":{""beauty"":2400,""foodcom"":2400,""lastfm"":2400,""ml1m"":2400,""sports"":2400},""model"":{""gemma2:9b"":4000,""mistral:7b-instruct"":4000,""qwen2:7b-instruct"":4000},""prompt"":{""BASE"":6000,""LLMRANK"":6000}}","{""dataset_each"":2400,""model_each"":4000,""prompt_each"":6000}"
+G3AU-023,strict-valid and invalid accounting,PASS,"{""invalid"":166,""strict_valid"":11834}","{""invalid"":166,""strict_valid"":11834}"
+G3AU-024,invalid class accounting,PASS,"{""HALLUCINATION_OR_OUT_OF_CANDIDATE"":1,""INVALID_DUPLICATE"":51,""INVALID_LENGTH"":114,""STRICT_VALID"":11834}","{""HALLUCINATION_OR_OUT_OF_CANDIDATE"":1,""INVALID_DUPLICATE"":51,""INVALID_LENGTH"":114,""STRICT_VALID"":11834}"
+G3AU-025,zero inference and zero metrics in analytic freeze,PASS,"{""metrics_computed"":0,""ollama_or_api_calls"":0,""statistics_computed"":0}","{""metrics_computed"":0,""ollama_or_api_calls"":0,""statistics_computed"":0}"

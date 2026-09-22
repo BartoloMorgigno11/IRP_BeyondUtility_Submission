@@ -1,0 +1,5 @@
+dataset,source_path,source_exists,source_rows,source_user_count,eligible_user_count,selected_user_count,target_user_count,candidate_pool_size,required_positive_per_user,required_negative_per_user,can_build_1000_user_manifest,eligibility_class,blocking_issue,notes
+ML-1M,data/reconstructed/plan_c/ml1m/candidates.csv,true,604000,6040,6040,1000,1000,20,1,19,true,complete_1000_user_manifest_ready,,Eligible users are selected by stable string ordering.
+Amazon Beauty,data/reconstructed/plan_c/amazon_beauty/candidates.csv,true,2236300,22363,22363,1000,1000,20,1,19,true,complete_1000_user_manifest_ready,,Eligible users are selected by stable string ordering.
+Amazon Sports,data/reconstructed/plan_c/amazon_sports/candidates.csv,true,3559800,35598,35598,1000,1000,20,1,19,true,complete_1000_user_manifest_ready,,Eligible users are selected by stable string ordering.
+LastFM,,false,0,0,0,0,1000,20,1,19,false,blocked/conditional,"LastFM remains conditional/blocked: valid comparable candidate, split, and ground-truth artifacts are not present.",No E2 manifest generated for this dataset.

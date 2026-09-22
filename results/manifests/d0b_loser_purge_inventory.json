@@ -1,0 +1,569 @@
+{
+  "artifact_hashes": {
+    "results/tables/d0b_authoritative_input_evidence.csv": "c20be0254ecc5525c02963dd9afb97f3caad0a8f06f92641bafb179cfca66a9f",
+    "results/tables/d0b_completeness_counts.csv": "65a1adc79e3133d1183308e8154a0e1d4ef4634ef80d4ef7873fd39b1f32e62a",
+    "results/tables/d0b_dataset_specific_blockers.csv": "7ba67c00b0a1c1cb33845372da6101893f133e37fff6e2ef583e40ff70538e94",
+    "results/tables/d0b_fifth_dataset_complete_requirement_matrix.csv": "efc56c8b2a47aa9ae73895a37ab232849c6b18f7bcee2de95c6206fd638f8fed",
+    "results/tables/d0b_final_selection_decision.csv": "371e41440e6e9d8831827d9ad6e538012b644e3af4720f39013aba247812051f",
+    "results/tables/d0b_future_inference_budget.csv": "9d080f6ae75abb39db9dc69da875427322e6105a14c851bbd41c93cca063c856"
+  },
+  "created_at": "2026-08-25T14:07:24.315280+00:00",
+  "entries": [
+    {
+      "artifact_type": "raw_canonical_or_enrichment_data",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "true",
+      "path": "data/raw/video_games_2014",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "processed_dataset",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "true",
+      "path": "data/processed/video_games",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "config",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "configs/video_games.yaml",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "source_module",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "src/data/prepare_video_games.py",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "source_module",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "src/experiments/run_video_games_gemma2.py",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "source_module",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "src/extension/e2b0_video_games_2014_feasibility.py",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "source_module",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "src/extension/e2b0h_video_games_history_title_blockers.py",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "source_module",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "src/extension/e2b0j_joint_title_recovery_frontier.py",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "test",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "tests/test_extension_e2b0_video_games_2014_feasibility.py",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "test",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "tests/test_extension_e2b0h_video_games_history_title_blockers.py",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "test",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "tests/test_extension_e2b0j_joint_title_recovery_frontier.py",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "report",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "report/extension_dataset_pivot_video_games.md",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "report",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "report/extension_e2b0_video_games_2014_feasibility.md",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "report",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "report/extension_e2b0h_video_games_history_title_blocker_audit.md",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "report",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "report/extension_e2b0j_joint_title_recovery_frontier.md",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_protocol_identity.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_candidate_feasibility.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_candidate_strict_title_summary.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_cohort_bias_audit.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_history_200_feasibility.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_history_200_users.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_history_eligibility.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_missing_title_frequency.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_primary_1000_candidates.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_primary_1000_feasibility.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_primary_1000_users.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_title_conflict_summary.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_title_conflicts.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_title_map.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_title_provenance_summary.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0_video_games_2014_unresolved_title_items.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0h_video_games_blocker_concentration.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0h_video_games_blocking_asins.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0h_video_games_greedy_recovery_frontier.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0h_video_games_history_title_blocker_summary.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0h_video_games_l20_user_blockers.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0h_video_games_missing_count_distribution.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0h_video_games_title_recovery_priority.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0j_joint_blocker_distribution.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0j_joint_blocking_asins.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0j_joint_greedy_recovery_frontier.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0j_joint_recovery_concentration.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0j_joint_recovery_summary.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0j_joint_user_title_blockers.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0j_structural_exclusions.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e2b0j_title_recovery_priority.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "table",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/tables/extension_e0_video_games_dry_run_summary.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "manifest",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/manifests/extension_e2b0_no_inference_preflight_manifest.json",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "manifest",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/manifests/extension_e2b0h_no_inference_manifest.json",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "manifest",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/manifests/extension_e2b0j_no_inference_manifest.json",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "other",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/extension/extension_e0_video_games_mostpop_candidate_dry_run.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "other",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/extension/extension_e0_video_games_random_candidate_dry_run.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "raw_output",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/raw_outputs/video_games_history_length_prompts.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "raw_output",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/raw_outputs/video_games_mostpop_recommendations.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "metrics",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/metrics/video_games_coverage_metrics.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "metrics",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/metrics/video_games_final_results.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "metrics",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/metrics/video_games_position_bias_metrics.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "metrics",
+      "classification": "REMOVE_DATASET_SPECIFIC",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "results/metrics/video_games_reproduction_metrics.csv",
+      "reason": "losing fifth-dataset operational artifact"
+    },
+    {
+      "artifact_type": "generic_extension_infrastructure",
+      "classification": "RETAIN_GENERIC_INFRASTRUCTURE",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "src/extension/e0_protocol.py",
+      "reason": "retain for winner/generic/historical use"
+    },
+    {
+      "artifact_type": "generic_extension_infrastructure",
+      "classification": "RETAIN_GENERIC_INFRASTRUCTURE",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "src/extension/e0_candidates.py",
+      "reason": "retain for winner/generic/historical use"
+    },
+    {
+      "artifact_type": "generic_extension_infrastructure",
+      "classification": "RETAIN_GENERIC_INFRASTRUCTURE",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "src/extension/e0_history.py",
+      "reason": "retain for winner/generic/historical use"
+    },
+    {
+      "artifact_type": "generic_extension_infrastructure",
+      "classification": "RETAIN_GENERIC_INFRASTRUCTURE",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "src/extension/e0_prompts.py",
+      "reason": "retain for winner/generic/historical use"
+    },
+    {
+      "artifact_type": "generic_extension_infrastructure",
+      "classification": "RETAIN_GENERIC_INFRASTRUCTURE",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "src/extension/e0_parser.py",
+      "reason": "retain for winner/generic/historical use"
+    },
+    {
+      "artifact_type": "generic_extension_infrastructure",
+      "classification": "RETAIN_GENERIC_INFRASTRUCTURE",
+      "exists": "true",
+      "is_dir": "false",
+      "path": "tests/test_extension_h0_history_final_parity_audit.py",
+      "reason": "retain for winner/generic/historical use"
+    },
+    {
+      "artifact_type": "cell_universe_rows",
+      "classification": "REVIEW_MANUALLY",
+      "exists": "",
+      "is_dir": "",
+      "path": "results/tables/extension_cell_universe.csv rows where dataset=video_games",
+      "reason": "D1 cleanup must edit shared files without removing generic extension evidence"
+    },
+    {
+      "artifact_type": "raw_experiment_rows",
+      "classification": "REVIEW_MANUALLY",
+      "exists": "",
+      "is_dir": "",
+      "path": "results/tables/extension_raw_experiment_universe.csv rows where dataset=video_games",
+      "reason": "D1 cleanup must edit shared files without removing generic extension evidence"
+    },
+    {
+      "artifact_type": "notes_rows",
+      "classification": "REVIEW_MANUALLY",
+      "exists": "",
+      "is_dir": "",
+      "path": "report/notes.md Video Games D0/E2B notes",
+      "reason": "D1 cleanup must edit shared files without removing generic extension evidence"
+    },
+    {
+      "artifact_type": "gitignore_rules",
+      "classification": "REVIEW_MANUALLY",
+      "exists": "",
+      "is_dir": "",
+      "path": ".gitignore extension_e2b0/video_games visibility rules",
+      "reason": "D1 cleanup must edit shared files without removing generic extension evidence"
+    },
+    {
+      "artifact_type": "historical_reproduction",
+      "classification": "RETAIN_HISTORICAL_REPRODUCTION",
+      "exists": "true",
+      "is_dir": "true",
+      "path": "original_repo/EvaLLMasRecommender",
+      "reason": "not a fifth-dataset operational artifact"
+    }
+  ],
+  "loser": "Video Games",
+  "no_purge_executed": true,
+  "phase_id": "d0b_final_fifth_dataset_selection",
+  "winner": "FOODCOM_SELECTED_FINAL_FIFTH_DATASET"
+}

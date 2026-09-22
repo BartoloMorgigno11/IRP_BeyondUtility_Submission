@@ -1,0 +1,3 @@
+dataset,model,model_name,metric,k,value,num_users,num_recommendation_rows,status,run_id,config_path,timestamp
+ml1m,content_bm25,content_bm25,hit_rate,5,0.2508278145695364,6040,604000,computed,ml1m_content_bm25_bm25,configs\ml1m.yaml,2026-06-29T00:41:27.428682+00:00
+ml1m,content_bm25,content_bm25,ndcg,5,0.1647567964031986,6040,604000,computed,ml1m_content_bm25_bm25,configs\ml1m.yaml,2026-06-29T00:41:27.428682+00:00

@@ -1,0 +1,48 @@
+{
+  "canonical_source_artifacts": [
+    "results/rq5_final_scientific_freeze/corrected/bootstrap_results.csv",
+    "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_deltas_heatmap_values.csv",
+    "results/rq5_final_scientific_freeze/figures/figure_index.json",
+    "results/rq5_final_scientific_freeze/freeze_manifest.json"
+  ],
+  "canonical_source_sha256": {
+    "results/rq5_final_scientific_freeze/corrected/bootstrap_results.csv": "f81d55d54468fe363b898635040c0299fa4303a9d94ce0dcdfcb10e5a8e712dc",
+    "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_deltas_heatmap_values.csv": "b6189c79d9ce7c15c47760f7d0972563bf6683bfc7b07adbcfd8f11e2ca3a50f",
+    "results/rq5_final_scientific_freeze/figures/figure_index.json": "48124a4886231e960a8d736ba3592957fdb855d59924953a29b7d69cff7b71e1",
+    "results/rq5_final_scientific_freeze/freeze_manifest.json": "e3e6a8edc1d2698e76350ffee726329f21f51a2aaa598690b2e9d2c7b379e3d6"
+  },
+  "created_from_commit": "c1ae68eebcb7d814bee935d0b49fd8c0c6466b0e",
+  "display_contract": {
+    "addition": "Profile + History minus History-only",
+    "ci_marker_map": {
+      "CI_SUPPORTED_NEGATIVE": "-CI",
+      "CI_SUPPORTED_POSITIVE": "+CI",
+      "NON_SIGNIFICANT_CI_INCLUDES_ZERO": ""
+    },
+    "multiplicity_adjusted": false,
+    "substitution": "Profile-only minus History-only"
+  },
+  "evidence_role": "MAIN_TEXT",
+  "figure_id": "fig_rq5_profile_deltas_heatmap",
+  "figure_values_csv": "results/final_figures/rq5/values/fig_rq5_profile_deltas_heatmap_values.csv",
+  "figure_values_sha256": "7372c69f992d54af3df6f89c53f2db8d933762e1fd3f44fd1cd78e8f754e2600",
+  "frozen_scientific_results_unchanged": true,
+  "generator": "src/analysis/final_figures/rq5.py",
+  "generator_sha256": "3aeb95027dcc9f3730c188027f9382e9d3d189b2951315b44b35fdaae81138d1",
+  "limitations": [
+    "Paired 95% bootstrap CIs are unadjusted for multiplicity.",
+    "Local exploratory effects do not support a general profile-benefit claim."
+  ],
+  "output_pdf": "results/final_figures/rq5/figures/fig_rq5_profile_deltas_heatmap.pdf",
+  "output_pdf_sha256": "c4e08746e6ece4f13a482eea18e24c71ec7153de6204a3859da58fa3e6c23237",
+  "output_png": "results/final_figures/rq5/figures/fig_rq5_profile_deltas_heatmap.png",
+  "output_png_sha256": "2592ce328f628bb2f51cd39c17cebe03cdec3e5dedeb69ec81f5a7dc72b7f954",
+  "output_svg": "results/final_figures/rq5/figures/fig_rq5_profile_deltas_heatmap.svg",
+  "output_svg_sha256": "db591697ca7fb76d05647c474e60999f5e77fc7bcdee332d96c728b2b5288094",
+  "presentation_only": true,
+  "row_count": 32,
+  "rq": "RQ5",
+  "schema_version": "1.0",
+  "scientific_interpretation": "Local corrected substitution/addition effects include positive, negative and inconclusive CI decisions; no general benefit is established.",
+  "scientific_purpose": "Corrected matched substitution and addition effects"
+}

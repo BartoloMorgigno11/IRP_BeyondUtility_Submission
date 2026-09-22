@@ -1,0 +1,28 @@
+phase_id: phase_f6i2k
+phase_name: phase_f6i2k_manifest_generation_consolidation_execution
+selected_helper_group: manifest_generation
+expected_branch: plan-d-extensions
+expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+runtime:
+  interpreter: .venv_audit_recovery/Scripts/python.exe
+  python_no_user_site: "1"
+  classification: defensible_repaired_clone_exact_package_versions
+  not_exact_original_runtime: true
+authoritative_previous_phase:
+  phase_id: phase_f6i2j
+  decision_token: f6i2j_git_state_capture_consolidation_complete
+  next_helper_group: manifest_generation
+canonical_dependencies:
+  - src/audit/common_io.py
+  - src/audit/common_paths.py
+  - src/audit/common_git.py
+canonical_module: src/audit/common_manifests.py
+forbidden_actions:
+  - training
+  - llm_inference
+  - ollama
+  - api_calls
+  - downloads
+  - package_changes
+  - git_stage
+  - git_commit

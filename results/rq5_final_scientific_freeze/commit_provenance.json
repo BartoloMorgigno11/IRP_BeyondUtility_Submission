@@ -1,0 +1,28 @@
+{
+  "actual_freeze_containing_commit": "27384ca2557112af180af24f856ade6139346045",
+  "attestation_commit_resolution": "git log -1 --format=%H -- results/rq5_final_scientific_freeze/commit_provenance.json",
+  "base_commit": "88c6987ffa7b0b246918686b720eb911896ebd48",
+  "clean_room_logs_sha256": {
+    "results/rq5_final_scientific_freeze/clean_room_logs/step_1.log": "b52ee54afe425b59e2b90a91d99a0b5b5dbe2a9c161a1580210f3efce0309340",
+    "results/rq5_final_scientific_freeze/clean_room_logs/step_2.log": "917763a8ec43839101b12aacad895707cbea7830bdc6b3cf560dc177d26f5b12",
+    "results/rq5_final_scientific_freeze/clean_room_logs/step_3.log": "b5515f122d366b510281ddfbb322aa1512c8d1c8265b8139cfd76f3b9620ff5e",
+    "results/rq5_final_scientific_freeze/clean_room_logs/step_4.log": "b52ee54afe425b59e2b90a91d99a0b5b5dbe2a9c161a1580210f3efce0309340",
+    "results/rq5_final_scientific_freeze/clean_room_logs/step_5.log": "398812f3445283d154426fa9cc147670f1d8efaeab2d29b55f663d077946e3b8"
+  },
+  "clean_room_validation_path": "results/rq5_final_scientific_freeze/clean_room_validation.json",
+  "clean_room_validation_sha256": "c61ca7e17bae7fd61a1180b8cc04608aee96e1801428c4cc3bd9908c6e58b018",
+  "freeze_manifest_git_blob": "c54079afafd7e7a0aedbc86254e7ac67258f4b27",
+  "freeze_manifest_path": "results/rq5_final_scientific_freeze/freeze_manifest.json",
+  "freeze_manifest_sha256": "e3e6a8edc1d2698e76350ffee726329f21f51a2aaa598690b2e9d2c7b379e3d6",
+  "master_unchanged": true,
+  "no_new_llm_inference": true,
+  "protected_branch_heads": {
+    "master": "944798f3e754576beef2a03bd5a00811a285b1e6",
+    "submission/final": "88c6987ffa7b0b246918686b720eb911896ebd48",
+    "submission/prof": "01e68c6c5e3b074c1e7bcbab44f5007d221b3653"
+  },
+  "self_reference_explanation": "This provenance-only follow-up records the already validated containing commit. Its own containing commit is resolved from Git history; the frozen scientific manifest is unchanged.",
+  "source_commit_is_not_freeze_commit": true,
+  "submission_final_unchanged": true,
+  "submission_prof_unchanged": true
+}

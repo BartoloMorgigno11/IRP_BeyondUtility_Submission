@@ -1,0 +1,27 @@
+check_id,check_name,status,observed,expected
+STATIC-001,manifest SHA,pass,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD
+STATIC-002,repository HEAD,pass,98c28c5364c40e571765a3b50d4dab8affe80743,98c28c5364c40e571765a3b50d4dab8affe80743
+STATIC-003,manifest rows,pass,4800,4800
+STATIC-004,selected CandDif rows,pass,1200,1200
+STATIC-005,FIRST/RANDOM rows,pass,"{'CANDDIF_FIRST': np.int64(600), 'CANDDIF_RANDOM': np.int64(600)}","{CANDDIF_FIRST:600,CANDDIF_RANDOM:600}"
+STATIC-006,datasets,pass,"['Beauty', 'LastFM', 'Sports']","['Beauty', 'LastFM', 'Sports']"
+STATIC-007,models,pass,"['mistral:7b-instruct', 'qwen2:7b-instruct']","['mistral:7b-instruct', 'qwen2:7b-instruct']"
+STATIC-008,no ML-1M CandDif,pass,0,0
+STATIC-009,ranking task only,pass,['ranking'],ranking
+STATIC-010,expected K is 5,pass,[5],[5]
+STATIC-011,candidate count 20,pass,['20'],20
+STATIC-012,pair count and validity,pass,600/600,600/600
+STATIC-013,corrected prompt says EXACTLY 5,pass,1200,1200
+STATIC-014,corrected prompt forbids more/fewer,pass,checked,all prompts
+STATIC-015,corrected prompt forbids prose,pass,checked,all prompts
+STATIC-016,parser contract corrected,pass,['r5b_corrected_ranked_index_json_top5_v1'],r5b_corrected_ranked_index_json_top5_v1
+STATIC-017,local endpoint only,pass,http://127.0.0.1:11434/api/generate,localhost Ollama
+STATIC-018,format json stream false,pass,format=json;stream=False,format=json;stream=false
+STATIC-019,no retry policy introduced,pass,0,0
+STATIC-020,output namespace corrected,pass,results/recovery/r5b_corrected/,results/recovery/r5b_corrected/
+STATIC-021,no output path overlap with old R5B,pass,0,0
+STATIC-022,no corrected output under original namespace,pass,checked,none
+STATIC-023,original repo clean,pass,,empty
+STATIC-024,protected artifacts unchanged,pass,12/12,12/12
+STATIC-025,disk free guard,pass,162166550528,>=1073741824
+STATIC-026,protocol hash present,pass,9596F36E1B1DBC15B68679DDF32114E6AE09914B418FB31DC112072384B708D5,64-char SHA256

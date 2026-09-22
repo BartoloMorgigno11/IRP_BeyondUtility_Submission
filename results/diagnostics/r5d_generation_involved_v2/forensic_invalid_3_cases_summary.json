@@ -1,0 +1,38 @@
+{
+  "final_decision": "R5D_GENUINE_MODEL_NONCOMPLIANCE_CONFIRMED",
+  "llm_calls": 0,
+  "cases_audited": "3/3",
+  "valid_controls_audited": 10,
+  "manifest_sha256": "290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD",
+  "protocol_hash": "AA76CD3E936A969A57CDA2E9E54E22B73D6C1D3DB65C0795F86E181CEDFE3B1A",
+  "prompt_exactly_k": true,
+  "prompt_positions_not_item_ids": true,
+  "prompt_no_duplicates": true,
+  "context_truncation_issue": false,
+  "parser_bug": false,
+  "validator_bug": false,
+  "invalid_prompt_chars": [
+    5558,
+    7335,
+    7483
+  ],
+  "control_prompt_chars": [
+    7320,
+    7270,
+    7414,
+    7444,
+    7195,
+    7160,
+    7129,
+    7569,
+    7023,
+    7016
+  ],
+  "same_cell_valid_terminal_controls_available": 97,
+  "root_cause": "Mistral produced terminal JSON that violated the already explicit R5D ranking contract in 3 Beauty PROFILE_PLUS_HISTORY cases: 2 item-ID substitutions and 1 duplicate index.",
+  "protocol_change_required": true,
+  "selective_retry_allowed": false,
+  "full_r5d_corrected_rerun_required": true,
+  "can_existing_600_outputs_be_frozen": "PARTIAL",
+  "notes": "597 valid terminal outputs can be retained only as partial interrupted-run evidence under strict invalid-output accounting; they cannot freeze the R5D target gaps or justify selective retry under the frozen zero-retry protocol."
+}

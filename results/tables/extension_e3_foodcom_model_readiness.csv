@@ -1,0 +1,8 @@
+evidence_label,model_name,readiness_status,evidence,adapter_needed
+POST-F6M DATASET-5 EXTENSION EVIDENCE,Random,UNRESOLVED,Food.com acquisition/preprocessing did not complete.,false
+POST-F6M DATASET-5 EXTENSION EVIDENCE,MostPop,UNRESOLVED,Food.com acquisition/preprocessing did not complete.,false
+POST-F6M DATASET-5 EXTENSION EVIDENCE,BM25-like,UNRESOLVED,Food.com acquisition/preprocessing did not complete.,false
+POST-F6M DATASET-5 EXTENSION EVIDENCE,BPRMF,UNRESOLVED,Food.com acquisition/preprocessing did not complete.,true
+POST-F6M DATASET-5 EXTENSION EVIDENCE,GRU4Rec,UNRESOLVED,Food.com acquisition/preprocessing did not complete.,true
+POST-F6M DATASET-5 EXTENSION EVIDENCE,SASRec,UNRESOLVED,Food.com acquisition/preprocessing did not complete.,true
+POST-F6M DATASET-5 EXTENSION EVIDENCE,LightGCN,UNRESOLVED,Food.com acquisition/preprocessing did not complete.,true

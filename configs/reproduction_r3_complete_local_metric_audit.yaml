@@ -1,0 +1,35 @@
+phase_id: reproduction_r3_complete_local_metric_audit
+expected_branch: master
+expected_head: 5167740b80fd917db99df0768ea9358d00ec3515
+
+inputs:
+  e1_metric_contract: results/tables/extension_e1_metric_contract.csv
+  r2_metric_input_contracts: results/tables/reproduction_r2_metric_input_contracts.csv
+  r2_master: results/tables/reproduction_r2_official_metric_calculability_master.csv
+  r2_protected_hash_check: results/tables/reproduction_r2_protected_artifact_hash_check.csv
+  paper_atomic_contract: results/tables/paper_atomic_contract.csv
+
+scan:
+  roots:
+    - results
+    - report
+    - configs
+    - src
+    - tests
+  skip_dirs:
+    - .git
+    - .pytest_cache
+    - .venv
+    - .venv_audit_recovery
+    - .venv_consolidation_candidate
+    - .venv_f6g2_py312
+    - .venv_repro
+    - .venv_repro_system_site
+    - results/environment
+    - results/logs
+    - results/fixtures
+
+outputs:
+  tables_dir: results/tables
+  report: report/reproduction_r3_complete_local_metric_and_beyond_utility_audit.md
+  notes: report/notes.md

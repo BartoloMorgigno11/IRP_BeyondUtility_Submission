@@ -1,0 +1,2 @@
+evidence_label,phase,relative_path,sha256,byte_size,protected_status,notes
+POST-F6M DATASET-5 EXTENSION EVIDENCE,,,,,not_run,EXTENSION_E3_FOODCOM_ACQUISITION_BLOCKED: Manual source directory is missing: data/raw/foodcom/source

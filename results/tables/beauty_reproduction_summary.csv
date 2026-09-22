@@ -1,0 +1,6 @@
+dataset,status,check,path,message,upstream_phase,row_count,timestamp
+beauty,blocked,ground_truth_path,,Ground-truth path is not configured.,Complete the dataset preparation/audit phase and set paths.ground_truth_path to a canonical CSV/TSV with user_id and ground_truth_item_id.,0,2026-06-28T23:07:32.456210+00:00
+beauty,ready,llm_recommendations,results\raw_outputs\beauty_llm_outputs_normalized.csv,Loaded normalized llm recommendations.,,2000,2026-06-28T23:07:32.456210+00:00
+beauty,ready,traditional_baseline_recommendations,results\raw_outputs\beauty_baseline_outputs_normalized.csv,Loaded normalized traditional_baseline recommendations.,,447260,2026-06-28T23:07:32.456210+00:00
+beauty,missing,mostpop_recommendations,results\raw_outputs\beauty_mostpop_recommendations.csv,Normalized mostpop recommendation file is missing.,MostPop phase: run mostpop.py after configuring interactions_path,0,2026-06-28T23:07:32.456210+00:00
+beauty,not_configured,hallucination_reference,candidates_path=not_configured; catalog_path=not_configured,LLM hallucination metrics are blocked because neither candidates_path nor catalog_path is configured to a valid readable file.,Complete dataset preparation/audit and configure paths.candidates_path or paths.catalog_path.,0,2026-06-28T23:07:32.456210+00:00

@@ -1,0 +1,31 @@
+{
+  "artifact_hashes": {
+    ".gitignore": "7a025ea9ce4f24f7fc2c7bedc973a8633037233e75a3799a9ae7f6d566ee8f1b",
+    "configs/f1bxr_foodcom_validation_contract.yaml": "9387477be6aabd160bc2e846c29d1b9e06eb3a47be4ee59d14e2d2a46ccf5ea8",
+    "report/f1bxr_foodcom_validation_contract.md": "8e4e4531858d906ef10351de55513552893773fb33963f92ec91d299fe6819a0",
+    "results/tables/f1bxr_foodcom_nested_split_audit.csv": "70c6a72449f94730bcabba581a8ab000c979888d09346b8260ad628964252811",
+    "results/tables/f1bxr_foodcom_validation_candidate_audit.csv": "5a102ec927e8cdaab626d7388f38e3f3c77c2a0741c08bd95f0e51a276146ecd",
+    "results/tables/f1bxr_foodcom_validation_candidates.csv": "1762d94963a910be05a61b6e51584c08bced46b4904c7c85d2a7cc578311d3fc",
+    "results/tables/f1bxr_foodcom_validation_cohort.csv": "bec12e811762d2f05dfa33d0954c3d4a09f2705f91aeca3d0c7e0d4855d8f3df",
+    "results/tables/f1bxr_foodcom_validation_eligibility.csv": "9d97dfcf91f827388f897887c1e2634c39acd53ea5ce5898297f7c07265f42e9",
+    "results/tables/f1bxr_test_leakage_audit.csv": "af7e3eabef9390eb63ad905342d26bf7c4b4fa77b36e5c774369485e40ef213c",
+    "results/tables/f1bxr_tuning_readiness.csv": "21edf8d000b73506b16fa1bc1ae210f655ed2eeed1af54830d08e9b43957a5f8",
+    "results/tables/f1bxr_validation.csv": "2cdd824b9a1adb01e9dd2166c4637c9be63f6bef8399f351024bcd145e19ee82",
+    "src/extension/f1bxr_foodcom_validation_contract.py": "843898688de5c918e3bf3b136d09c1ad0a7a97a7f98f9f50f5cfbc7e77b1e912",
+    "tests/test_extension_f1bxr_foodcom_validation_contract.py": "305144048e75c29bf4dc0cb2bc2e3818a5538961467b436b22b674cdd0a037aa"
+  },
+  "baseline_hashes_unchanged": true,
+  "baseline_reruns_executed": 0,
+  "decision_token": "F1BXR_FOODCOM_VALIDATION_CONTRACT_RESOLVED",
+  "downloads_executed": 0,
+  "external_api_calls_executed": 0,
+  "final_training_runs_executed": 0,
+  "foodcom_tuning_training_runs_executed": 0,
+  "head": "61fbde6d048faaed9e20508484efc90fa95fa5bf",
+  "llm_inference_calls_executed": 0,
+  "network_calls_executed": 0,
+  "ollama_recommendation_calls_executed": 0,
+  "phase_id": "f1bxr_foodcom_validation_contract_recovery",
+  "training_runs_executed": 0,
+  "validation_passed": true
+}

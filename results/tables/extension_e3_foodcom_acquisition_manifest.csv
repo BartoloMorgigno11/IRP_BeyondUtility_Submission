@@ -1,0 +1,2 @@
+evidence_label,file_role,classification,relative_path,byte_size,sha256,acquisition_source,acquisition_timestamp,status,notes
+POST-F6M DATASET-5 EXTENSION EVIDENCE,manual_source_archive,archive,data/raw/foodcom/source,,,https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions,2026-08-17T16:17:13+00:00,blocked,Manual source directory is missing: data/raw/foodcom/source

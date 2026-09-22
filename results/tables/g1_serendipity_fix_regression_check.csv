@@ -1,0 +1,16 @@
+metric,cells_before,cells_after,changed_cells,max_abs_difference,expected_change,status
+hr_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+ndcg_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+mrr,30,30,0,0.0,no,PASS_UNCHANGED
+aplt_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+arp_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+popreo_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+self_information_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+item_coverage_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+catalog_coverage_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+gini_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+jain_index_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+ild_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+calibration_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+dpd_at_5,30,30,0,0.0,no,PASS_UNCHANGED
+serendipity_at_5,30,30,30,0.2285067873303167,yes,PASS_CHANGED_AS_EXPECTED

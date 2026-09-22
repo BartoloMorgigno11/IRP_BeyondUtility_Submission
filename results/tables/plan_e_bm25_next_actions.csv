@@ -1,0 +1,8 @@
+action_id,phase,priority,action,reason,depends_on,risk_level,expected_artifact,notes
+E3B_A01,E3_summary,1,integrate BM25-like metrics into the later E3 summary,E3B created E2-aligned BM25-like metrics for scorable datasets/tasks.,E3B metrics,medium,E3 summary table,Scored dataset/task rows: 6. Keep reconstructed_BM25_like classification.
+E3B_A02,E3B_source_fix,2,document exact missing metadata/history source for any blocked dataset,BM25 cannot be meaningful without local item text and user-history queries.,E3B query/corpus audit,medium,source-fix note or blocked decision,Blocked valid E2 rows: 0.
+E3B_A03,E3C,3,decide whether to proceed to neural baseline scoring,"BPRMF, GRU4Rec, SASRec, and LightGCN still need aligned E2 scores.",E3A/E3B baseline audits,high,E3C neural score audit,Do not train neural models without explicit approval.
+E3B_A04,E3C/E4/E5,4,keep E2 manifests as the common evaluation substrate,Paper-like comparison requires the same candidate pools.,E2 manifests,low,shared evaluation substrate,Do not regenerate E2 manifests in E3B.
+E3B_A05,E5,5,keep LLM inference for E5,E3B is baseline text scoring only.,E4 prompt alignment and explicit run approval,high,E5 local LLM run plan,No Qwen2/Mistral/Ollama calls in E3B.
+E3B_A06,E6,6,keep API audit for E6,Closed-source API work is outside E3B.,E0/E1 cost audit,high,E6 API availability and pricing report,No remote API calls in E3B.
+E3B_A07,blocked,7,keep LastFM conditional,LastFM lacks valid E2 manifests and comparable utility artifacts.,valid LastFM artifacts,high,LastFM unblock decision,E3B does not run LastFM.

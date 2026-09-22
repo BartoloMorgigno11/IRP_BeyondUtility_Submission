@@ -1,0 +1,26 @@
+criterion,category,weight,mandatory_gate,evidence_needed,scoring_guidance
+Public availability,access,high,yes,"source URL, access instructions",Reject if not reproducibly accessible.
+License/access terms,access,high,yes,license text or terms summary,Reject if redistribution/use is unclear for academic reproducibility.
+Reproducible download,access,high,yes,download command or manual intake manifest,Prefer stable public archive with checksum.
+User-item interactions,schema,high,yes,raw interaction columns,Must map to user_id and item_id.
+Timestamps/order,schema,high,yes,timestamp/order field,Must support leave-one-out and history truncation.
+Item titles,LLM compatibility,high,yes,title/name field coverage,Must support prompts and hallucination matching.
+Item metadata/categories,beyond-utility,medium,yes_if_claiming_diversity_calibration,category/tag/genre fields and coverage,"Needed for Shannon, adapted ILD, and calibration."
+History depth,protocol,high,yes,post-filter distribution,Must support history bins and profile generation.
+Post-filter user count,scale,medium,yes,5-core statistics,Prefer enough users for 1000-user sample or explicit smaller policy.
+Post-filter item count,scale,medium,yes,5-core statistics,Must be large enough for candidate pools and long-tail groups.
+Interaction density,scale,medium,no,density statistics,Assess traditional model feasibility.
+Long-tail properties,beyond-utility,high,yes,popularity distribution,Must make APLT/ARP/PopREO meaningful.
+Leave-one-out compatibility,protocol,high,yes,split construction memo,Reject if no chronological target can be held out.
+Paper metric compatibility,protocol,high,yes,requirements coverage checklist,Must satisfy mandatory paper metrics before extensions.
+Profile generation compatibility,LLM compatibility,medium,yes,history/title suitability,Need histories readable as prompt text.
+Hallucination evaluation compatibility,LLM compatibility,high,yes,title uniqueness and parser policy,Need matchable item universe.
+Candidate-position experiment compatibility,protocol,high,yes,candidate order manipulation plan,Need position metadata and deterministic permutations.
+Calibration compatibility,extension,medium,yes_later,item feature metadata,Extension only after paper parity.
+BPRMF compatibility,traditional models,medium,yes_if_reproducing_traditional_matrix,implicit feedback matrix,Assess training feasibility.
+GRU4Rec compatibility,traditional models,medium,yes_if_reproducing_traditional_matrix,chronological sessions/sequences,Assess sequence preparation.
+SASRec compatibility,traditional models,medium,yes_if_reproducing_traditional_matrix,chronological sequences,Assess training feasibility.
+LightGCN compatibility,traditional models,medium,yes_if_reproducing_traditional_matrix,user-item graph,Assess graph size and memory.
+Compute cost,runtime,medium,yes,"row counts, model/training estimates",Reject if impossible under local no-paid-API policy.
+LLM prompt suitability,LLM compatibility,medium,yes,sample titles/histories,Avoid domains where titles are cryptic or non-recommendable.
+Domain novelty relative to Beauty/Sports/Movies/Music,scientific value,medium,no,domain description,Prefer a genuinely new domain.

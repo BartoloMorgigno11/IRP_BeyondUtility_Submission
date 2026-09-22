@@ -1,0 +1,29 @@
+project_root: .
+
+experiment:
+  name: reproduction_r4_three_way_reconciliation
+  allow_api_calls: false
+  allow_training: false
+  allow_new_inference: false
+  allow_recovery_execution: false
+
+frozen_state:
+  branch: master
+  head: 357d8a4cf98c78effc6c92f5b8dc00e334836a56
+
+inputs:
+  paper_contract: results/tables/paper_atomic_contract.csv
+  e1_contract: results/tables/extension_e1_metric_contract.csv
+  official_r2_master: results/tables/reproduction_r2_official_metric_calculability_master.csv
+  local_r3_master: results/tables/reproduction_r3_all_metric_cells_master.csv
+  local_r3_gaps: results/tables/reproduction_r3_true_remaining_gaps.csv
+
+outputs:
+  table_dir: results/tables
+  report: report/reproduction_r4_three_way_beyond_utility_reconciliation.md
+
+datasets:
+  - Beauty
+  - Sports
+  - ML-1M
+  - LastFM

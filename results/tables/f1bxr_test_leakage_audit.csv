@@ -1,0 +1,9 @@
+check,status,evidence
+f0_final_test_candidate_files_not_input_to_tuning_selection,PASS,F0 candidate file hashed only for preservation; F1BXR tuning readiness uses validation contract hash
+final_test_hr_ndcg_not_computed_during_tuning,PASS,Food.com tuning runs executed = 0 and validation table contains no final-test metric values
+candidate_generator_signature_has_no_test_target,PASS,"generate_validation_candidate_items accepts user_id, validation_target, tuning_training_prefix, item_universe"
+validation_candidate_generation_does_not_exclude_test_target,PASS,final target appeared by blind chance in 0 validation candidate rows
+validation_selection_depends_only_on_user_id_and_eligibility,PASS,stable hash selection uses seed and user_id after chronology/catalog eligibility
+final_test_result_artifacts_absent_before_winner_freeze,PASS,
+all_tuning_rows_mark_final_candidates_not_input,PASS,f1bxr_tuning_readiness.csv
+f0_final_user_file_used_only_for_disjoint_exclusion,PASS,results/tables/d0a_foodcom_primary1000_users.csv

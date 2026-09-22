@@ -1,0 +1,9 @@
+action_id,phase,priority,action,reason,depends_on,risk_level,expected_artifact,notes
+E3A_A01,E3B,1,decide whether to implement lightweight BM25 scoring on E2 manifests,BM25 is a paper baseline but aligned E2 scores are not currently available.,E3A missing-baseline table,medium,E3B BM25 score table or documented no-BM25 decision,Do not build a new index unless the scope is approved and reproducible.
+E3A_A02,E3C,2,decide whether to run neural baseline scoring on E2 manifests,BPRMF/GRU4Rec/SASRec/LightGCN need aligned E2 scores before HR/NDCG can be compared.,E2 manifests,high,E3C aligned neural score audit,Scoring may be possible without retraining if saved model outputs exist; otherwise E3D approval is needed.
+E3A_A03,E3B,3,prepare E3B for paper-like baseline scoring,E3A established the E2 evaluation substrate and no-training references.,E3A metrics,medium,E3B baseline scoring plan,Keep E3B separate from training.
+E3A_A04,E5,4,keep LLM inference for E5,E3A is baseline alignment only.,E4 prompt alignment and explicit approval,high,E5 local LLM run plan,Do not mix D5 diagnostic LLM metrics with E3A baseline metrics.
+E3A_A05,E6,5,keep API audit for E6,Closed-source API work is outside E3A.,E0/E1 cost audit,high,E6 API availability and pricing report,No API calls in E3A.
+E3A_A06,blocked,6,keep LastFM conditional,LastFM lacks valid E2 manifests.,valid LastFM artifacts,high,LastFM unblock decision,Do not run LastFM or fabricate utility metrics.
+E3A_A07,reporting,7,do not mix D5 LLM diagnostic metrics with baseline metrics,D5 diagnostics use different scopes and models.,E3A source inventory,medium,claim-safety note,D5 remains diagnostic_subset.
+E3A_A08,E3B/E4/E5,8,preserve E2 manifests as the common evaluation substrate,Common candidate pools are required for paper-like comparisons.,E2 manifests,low,shared manifest registry,Do not regenerate E2 manifests in E3A.

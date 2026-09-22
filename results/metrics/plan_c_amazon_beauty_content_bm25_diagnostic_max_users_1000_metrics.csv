@@ -1,0 +1,4 @@
+dataset,baseline,k,metric,value,evaluated_users,recommendation_rows,diagnostic_subset,max_users,run_scope,reconstruction_status,status,notes,timestamp
+amazon_beauty,content_bm25,5,hit_rate,0.317,1000,100000,True,1000,diagnostic_max_users_1000,reconstructed_from_public_raw,computed,Computed against reconstructed Plan C ground truth and candidates.,2026-06-29T16:13:08.699100+00:00
+amazon_beauty,content_bm25,5,ndcg,0.23030986370074683,1000,100000,True,1000,diagnostic_max_users_1000,reconstructed_from_public_raw,computed,Computed against reconstructed Plan C ground truth and candidates.,2026-06-29T16:13:08.699100+00:00
+amazon_beauty,content_bm25,5,catalog_coverage,0.012681131464020617,1000,100000,True,1000,diagnostic_max_users_1000,reconstructed_from_public_raw,computed,Catalog Coverage@K over reconstructed Plan C catalog.,2026-06-29T16:13:08.699100+00:00

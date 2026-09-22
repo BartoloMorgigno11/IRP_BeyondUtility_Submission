@@ -1,0 +1,43 @@
+evidence_label,candidate_id,candidate_name,model_name,compatibility_status,rationale,source_ids
+POST-F6M EXTENSION DESIGN EVIDENCE,goodreads,Goodreads,Random,DIRECTLY_COMPATIBLE,Candidate pools can be sampled once split is frozen.,S_GOODREADS_UCSD
+POST-F6M EXTENSION DESIGN EVIDENCE,goodreads,Goodreads,MostPop,COMPATIBLE_AFTER_STANDARD_MAPPING,Train-only item popularity from interactions.,S_GOODREADS_UCSD
+POST-F6M EXTENSION DESIGN EVIDENCE,goodreads,Goodreads,BM25,COMPATIBLE_AFTER_STANDARD_MAPPING,Book titles/authors/shelves can form item text.,S_GOODREADS_UCSD
+POST-F6M EXTENSION DESIGN EVIDENCE,goodreads,Goodreads,BPRMF,COMPATIBLE_AFTER_STANDARD_MAPPING,Implicit or explicit interactions after deduplication.,S_GOODREADS_UCSD
+POST-F6M EXTENSION DESIGN EVIDENCE,goodreads,Goodreads,GRU4Rec,COMPATIBLE_WITH_NONTRIVIAL_ADAPTATION,Multiple date fields require chronological policy.,S_GOODREADS_UCSD
+POST-F6M EXTENSION DESIGN EVIDENCE,goodreads,Goodreads,SASRec,COMPATIBLE_WITH_NONTRIVIAL_ADAPTATION,Multiple date fields require chronological policy.,S_GOODREADS_UCSD
+POST-F6M EXTENSION DESIGN EVIDENCE,goodreads,Goodreads,LightGCN,COMPATIBLE_AFTER_STANDARD_MAPPING,User-book graph after preprocessing.,S_GOODREADS_UCSD
+POST-F6M EXTENSION DESIGN EVIDENCE,bookcrossing,BookCrossing / Book-Crossing,Random,DIRECTLY_COMPATIBLE,Candidate pools can be sampled.,S_BOOKCROSSING_GROUPLENS;S_BOOKCROSSING_MLDATA
+POST-F6M EXTENSION DESIGN EVIDENCE,bookcrossing,BookCrossing / Book-Crossing,MostPop,COMPATIBLE_AFTER_STANDARD_MAPPING,Popularity from ratings.,S_BOOKCROSSING_GROUPLENS;S_BOOKCROSSING_MLDATA
+POST-F6M EXTENSION DESIGN EVIDENCE,bookcrossing,BookCrossing / Book-Crossing,BM25,COMPATIBLE_AFTER_STANDARD_MAPPING,Book title/author text available.,S_BOOKCROSSING_GROUPLENS;S_BOOKCROSSING_MLDATA
+POST-F6M EXTENSION DESIGN EVIDENCE,bookcrossing,BookCrossing / Book-Crossing,BPRMF,COMPATIBLE_AFTER_STANDARD_MAPPING,Ratings can become implicit feedback.,S_BOOKCROSSING_GROUPLENS;S_BOOKCROSSING_MLDATA
+POST-F6M EXTENSION DESIGN EVIDENCE,bookcrossing,BookCrossing / Book-Crossing,GRU4Rec,INCOMPATIBLE,No authoritative chronology/timestamp.,S_BOOKCROSSING_GROUPLENS;S_BOOKCROSSING_MLDATA
+POST-F6M EXTENSION DESIGN EVIDENCE,bookcrossing,BookCrossing / Book-Crossing,SASRec,INCOMPATIBLE,No authoritative chronology/timestamp.,S_BOOKCROSSING_GROUPLENS;S_BOOKCROSSING_MLDATA
+POST-F6M EXTENSION DESIGN EVIDENCE,bookcrossing,BookCrossing / Book-Crossing,LightGCN,COMPATIBLE_AFTER_STANDARD_MAPPING,User-book graph from ratings.,S_BOOKCROSSING_GROUPLENS;S_BOOKCROSSING_MLDATA
+POST-F6M EXTENSION DESIGN EVIDENCE,yelp,Yelp Open Dataset,Random,DIRECTLY_COMPATIBLE,Candidate pools can be sampled after access.,S_YELP_OPEN;S_YELP_DOCS
+POST-F6M EXTENSION DESIGN EVIDENCE,yelp,Yelp Open Dataset,MostPop,COMPATIBLE_AFTER_STANDARD_MAPPING,Business popularity from train reviews.,S_YELP_OPEN;S_YELP_DOCS
+POST-F6M EXTENSION DESIGN EVIDENCE,yelp,Yelp Open Dataset,BM25,COMPATIBLE_AFTER_STANDARD_MAPPING,Business names/categories/reviews can form item text.,S_YELP_OPEN;S_YELP_DOCS
+POST-F6M EXTENSION DESIGN EVIDENCE,yelp,Yelp Open Dataset,BPRMF,COMPATIBLE_AFTER_STANDARD_MAPPING,User-business review graph.,S_YELP_OPEN;S_YELP_DOCS
+POST-F6M EXTENSION DESIGN EVIDENCE,yelp,Yelp Open Dataset,GRU4Rec,COMPATIBLE_WITH_NONTRIVIAL_ADAPTATION,Review-as-interaction semantics and current release must be frozen.,S_YELP_OPEN;S_YELP_DOCS
+POST-F6M EXTENSION DESIGN EVIDENCE,yelp,Yelp Open Dataset,SASRec,COMPATIBLE_WITH_NONTRIVIAL_ADAPTATION,Review-as-interaction semantics and current release must be frozen.,S_YELP_OPEN;S_YELP_DOCS
+POST-F6M EXTENSION DESIGN EVIDENCE,yelp,Yelp Open Dataset,LightGCN,COMPATIBLE_AFTER_STANDARD_MAPPING,User-business graph from reviews.,S_YELP_OPEN;S_YELP_DOCS
+POST-F6M EXTENSION DESIGN EVIDENCE,steam,Steam reviews/interactions,Random,DIRECTLY_COMPATIBLE,Candidate pools can be sampled.,S_STEAM_MCAULEY;S_STEAM_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,steam,Steam reviews/interactions,MostPop,COMPATIBLE_AFTER_STANDARD_MAPPING,Game popularity from train review/interactions.,S_STEAM_MCAULEY;S_STEAM_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,steam,Steam reviews/interactions,BM25,COMPATIBLE_AFTER_STANDARD_MAPPING,Game title/genres/tags/specs can form item text.,S_STEAM_MCAULEY;S_STEAM_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,steam,Steam reviews/interactions,BPRMF,COMPATIBLE_AFTER_STANDARD_MAPPING,User-game feedback graph.,S_STEAM_MCAULEY;S_STEAM_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,steam,Steam reviews/interactions,GRU4Rec,COMPATIBLE_AFTER_STANDARD_MAPPING,Review date supports sequence construction after field freeze.,S_STEAM_MCAULEY;S_STEAM_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,steam,Steam reviews/interactions,SASRec,COMPATIBLE_AFTER_STANDARD_MAPPING,Review date supports sequence construction after field freeze.,S_STEAM_MCAULEY;S_STEAM_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,steam,Steam reviews/interactions,LightGCN,COMPATIBLE_AFTER_STANDARD_MAPPING,User-game graph from interactions.,S_STEAM_MCAULEY;S_STEAM_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,foodcom,Food.com,Random,DIRECTLY_COMPATIBLE,Candidate pools can be sampled.,S_FOOD_MCAULEY;S_FOOD_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,foodcom,Food.com,MostPop,COMPATIBLE_AFTER_STANDARD_MAPPING,Recipe popularity from train interactions.,S_FOOD_MCAULEY;S_FOOD_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,foodcom,Food.com,BM25,COMPATIBLE_AFTER_STANDARD_MAPPING,Recipe names/tags/ingredients/descriptions can form item text.,S_FOOD_MCAULEY;S_FOOD_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,foodcom,Food.com,BPRMF,COMPATIBLE_AFTER_STANDARD_MAPPING,User-recipe ratings/reviews as feedback.,S_FOOD_MCAULEY;S_FOOD_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,foodcom,Food.com,GRU4Rec,COMPATIBLE_AFTER_STANDARD_MAPPING,Explicit interaction date and processed histories support sequence construction.,S_FOOD_MCAULEY;S_FOOD_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,foodcom,Food.com,SASRec,COMPATIBLE_AFTER_STANDARD_MAPPING,Explicit interaction date and processed histories support sequence construction.,S_FOOD_MCAULEY;S_FOOD_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,foodcom,Food.com,LightGCN,COMPATIBLE_AFTER_STANDARD_MAPPING,User-recipe graph from interactions.,S_FOOD_MCAULEY;S_FOOD_BERD
+POST-F6M EXTENSION DESIGN EVIDENCE,google_restaurants,Google Restaurants / Google Local restaurant release,Random,DIRECTLY_COMPATIBLE,Candidate pools can be sampled after field verification.,S_GOOGLE_RESTAURANTS_MCAULEY;S_GOOGLE_LOCAL_2021
+POST-F6M EXTENSION DESIGN EVIDENCE,google_restaurants,Google Restaurants / Google Local restaurant release,MostPop,COMPATIBLE_AFTER_STANDARD_MAPPING,Restaurant popularity from train reviews.,S_GOOGLE_RESTAURANTS_MCAULEY;S_GOOGLE_LOCAL_2021
+POST-F6M EXTENSION DESIGN EVIDENCE,google_restaurants,Google Restaurants / Google Local restaurant release,BM25,UNKNOWN,Visible source does not establish restaurant name/title field.,S_GOOGLE_RESTAURANTS_MCAULEY;S_GOOGLE_LOCAL_2021
+POST-F6M EXTENSION DESIGN EVIDENCE,google_restaurants,Google Restaurants / Google Local restaurant release,BPRMF,COMPATIBLE_AFTER_STANDARD_MAPPING,User-restaurant ratings/reviews as feedback.,S_GOOGLE_RESTAURANTS_MCAULEY;S_GOOGLE_LOCAL_2021
+POST-F6M EXTENSION DESIGN EVIDENCE,google_restaurants,Google Restaurants / Google Local restaurant release,GRU4Rec,UNKNOWN,Timestamp field not explicit on visible restaurant page.,S_GOOGLE_RESTAURANTS_MCAULEY;S_GOOGLE_LOCAL_2021
+POST-F6M EXTENSION DESIGN EVIDENCE,google_restaurants,Google Restaurants / Google Local restaurant release,SASRec,UNKNOWN,Timestamp field not explicit on visible restaurant page.,S_GOOGLE_RESTAURANTS_MCAULEY;S_GOOGLE_LOCAL_2021
+POST-F6M EXTENSION DESIGN EVIDENCE,google_restaurants,Google Restaurants / Google Local restaurant release,LightGCN,COMPATIBLE_AFTER_STANDARD_MAPPING,User-restaurant graph from interactions.,S_GOOGLE_RESTAURANTS_MCAULEY;S_GOOGLE_LOCAL_2021

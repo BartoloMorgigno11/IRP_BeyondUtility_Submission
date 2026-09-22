@@ -1,0 +1,5 @@
+path,original_classification,final_classification,reason,references_found,safe_to_remove,replacement_needed
+results/tables/extension_cell_universe.csv rows where dataset=video_games,REVIEW_MANUALLY,REMOVE_DATASET_SPECIFIC,Rows scoped to the discarded fifth dataset are regenerated out of the active universe.,0,True,True
+results/tables/extension_raw_experiment_universe.csv rows where dataset=video_games,REVIEW_MANUALLY,REMOVE_DATASET_SPECIFIC,Raw experiment rows scoped to the discarded fifth dataset are regenerated out of the active universe.,0,True,True
+report/notes.md Video Games D0/E2B notes,REVIEW_MANUALLY,REMOVE_DATASET_SPECIFIC,Long operational notes were collapsed to the final selection rationale.,10,True,True
+.gitignore extension_e2b0/video_games visibility rules,REVIEW_MANUALLY,REMOVE_DATASET_SPECIFIC,Loser-specific visibility exceptions were removed; D1 evidence exceptions were added.,0,True,True

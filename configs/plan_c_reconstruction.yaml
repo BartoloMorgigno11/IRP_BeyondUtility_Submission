@@ -1,0 +1,116 @@
+# Plan C raw-to-canonical reconstruction config.
+# These outputs are reconstructed from public raw datasets, not exact original
+# paper artifacts. Official Beauty/Sports processed Dropbox artifacts remain
+# blocked_unavailable_url / requires_author_contact unless author files are
+# provided later.
+
+dataset:
+  name: plan_c_reconstruction
+  raw_dir: data/external/plan_c
+  processed_dir: data/reconstructed/plan_c
+  sample_dir: data/samples/plan_c
+  interactions_path: null
+  catalog_path: null
+  candidates_path: null
+  ground_truth_path: null
+  llm_outputs_path: null
+  baseline_outputs_path: null
+
+paths:
+  raw_dir: data/external/plan_c
+  processed_dir: data/reconstructed/plan_c
+  sample_dir: data/samples/plan_c
+  interactions_path: null
+  catalog_path: null
+  candidates_path: null
+  ground_truth_path: null
+  llm_outputs_path: null
+  baseline_outputs_path: null
+
+original_repo:
+  root: original_repo/EvaLLMasRecommender
+  data_dir: null
+  llm_results_dir: original_repo/EvaLLMasRecommender/llm_results
+  sota_results_dir: original_repo/EvaLLMasRecommender/sota_results
+
+experiment:
+  task: ranking
+  k_values: [5]
+  seed: 42
+  sample_size: null
+  allow_api_calls: false
+
+preprocessing:
+  min_interactions: 2
+  negative_samples_per_user: 99
+  candidate_ordering: deterministic_shuffle
+
+negative_sampling:
+  # Safer default for candidate-set evaluation: sample negatives from observed
+  # interaction items, not from metadata-only catalog items.
+  # catalog_items is available only for explicit experimental checks because it
+  # can inflate popularity baselines when many catalog items have no training
+  # interactions.
+  item_universe: interaction_items
+
+plan_c_reconstruction:
+  input_staging_dir: data/external/plan_c
+  output_base_dir: data/reconstructed/plan_c
+  seed: 42
+  negatives_per_user: 99
+  min_interactions_per_user: 2
+  datasets_enabled:
+    - amazon_beauty
+    - amazon_sports
+    - ml1m
+    - lastfm
+  datasets:
+    amazon_beauty:
+      status_note: reconstructible_from_public_raw
+      reviews_file: reviews_Beauty_5.json.gz
+      metadata_file: meta_Beauty.json.gz
+      split_type: chronological_leave_one_out
+    amazon_sports:
+      status_note: reconstructible_from_public_raw
+      reviews_file: reviews_Sports_and_Outdoors_5.json.gz
+      metadata_file: meta_Sports_and_Outdoors.json.gz
+      split_type: chronological_leave_one_out
+    ml1m:
+      status_note: reconstructible_from_public_raw
+      archive_file: ml-1m.zip
+      ratings_member: ml-1m/ratings.dat
+      movies_member: ml-1m/movies.dat
+      users_member: ml-1m/users.dat
+      split_type: chronological_leave_one_out
+    lastfm:
+      status_note: extension_only
+      archive_file: hetrec2011-lastfm-2k.zip
+      user_artists_member: user_artists.dat
+      artists_member: artists.dat
+      split_type: interactions_catalog_only_no_chronological_timestamp
+
+api:
+  allow_api_calls: false
+  provider: null
+  model: null
+  api_key_env_var: null
+
+models:
+  llm_outputs: []
+  baselines: []
+  baseline_outputs: []
+
+metrics:
+  utility: []
+  beyond_utility: []
+  matching_protocols: []
+
+output:
+  metrics_dir: results/metrics
+  tables_dir: results/tables
+  plots_dir: results/plots
+  raw_outputs_dir: results/raw_outputs
+  dataset_audit_path: results/tables/plan_c_reconstructed_dataset_audit.csv
+  metrics_path: results/metrics/plan_c_reconstruction_metrics_not_written.csv
+  summary_path: results/tables/plan_c_reconstructed_dataset_summary.csv
+  analysis_path: report/results_analysis.md

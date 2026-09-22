@@ -1,0 +1,9 @@
+dataset,recommender,requests,strict_valid,hr_at_5,ndcg_at_5,denominator_policy,source_artifacts
+Beauty,mistral:7b-instruct,100,97,0.33,0.2130390190604181,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO,"{""results/rq5_final_scientific_freeze/r5d/metrics.csv"":""498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7""}"
+Beauty,qwen2:7b-instruct,100,100,0.29,0.21055695982660486,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO,"{""results/rq5_final_scientific_freeze/r5d/metrics.csv"":""498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7""}"
+LastFM,mistral:7b-instruct,100,100,0.57,0.3580338653159218,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO,"{""results/rq5_final_scientific_freeze/r5d/metrics.csv"":""498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7""}"
+LastFM,qwen2:7b-instruct,100,100,0.25,0.1588148397719527,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO,"{""results/rq5_final_scientific_freeze/r5d/metrics.csv"":""498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7""}"
+ML-1M,mistral:7b-instruct,100,100,0.43,0.2729313812146781,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO,"{""results/rq5_final_scientific_freeze/r5d/metrics.csv"":""498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7""}"
+ML-1M,qwen2:7b-instruct,100,100,0.4,0.2836137924064225,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO,"{""results/rq5_final_scientific_freeze/r5d/metrics.csv"":""498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7""}"
+Sports,mistral:7b-instruct,100,99,0.24,0.1514927993781802,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO,"{""results/rq5_final_scientific_freeze/r5d/metrics.csv"":""498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7""}"
+Sports,qwen2:7b-instruct,100,99,0.25,0.14516542707811142,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO,"{""results/rq5_final_scientific_freeze/r5d/metrics.csv"":""498e50b87e620382fda8277aa554f5011c400f4c927d63a5b308413ac076c6b7""}"

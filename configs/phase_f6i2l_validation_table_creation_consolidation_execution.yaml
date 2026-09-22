@@ -1,0 +1,20 @@
+phase_id: phase_f6i2l
+phase_name: phase_f6i2l_validation_table_creation_consolidation_execution
+expected_branch: plan-d-extensions
+expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+runtime:
+  interpreter: .venv_audit_recovery/Scripts/python.exe
+  python_no_user_site: "1"
+  classification: defensible_repaired_clone_exact_package_versions
+  not_exact_original_runtime: true
+authoritative_inputs:
+  previous_phase: phase_f6i2kr
+  previous_decision_token: f6i2kr_current_suite_closure_complete
+  selected_helper_group: validation_table_creation
+  f6i2a_merge_group_id: PYMERGE-F6I2A-009
+  f6i2a_semantic_group_id: PYSEM-F6I2A-009
+closure_scope:
+  no_hashing_consolidation: true
+  no_training_inference_api_downloads: true
+  retain_wrappers: true
+  next_helper_group_after_success: hashing_helpers

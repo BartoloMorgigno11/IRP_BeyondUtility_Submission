@@ -1,0 +1,115 @@
+phase:
+  id: phase_f6f1
+  name: beyond_utility_metrics_recovery
+  cutoff: 5
+  bootstrap_resamples: 10000
+  bootstrap_seed: 42
+  expected_branch: plan-d-extensions
+  expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  expected_dirty_tracked:
+    - README.md
+    - report/dataset_audit.md
+    - report/notes.md
+
+inputs:
+  paper_pdf: paper/2411.00331v1.pdf
+  paper_docx_secondary: paper/traduzione_italiana_beyond_utility_llm_recommender.docx
+  official_metrics_code: original_repo/EvaLLMasRecommender/eva/codes/llm_metrics.py
+  f2_protected_hashes: results/tables/finalization_f2_protected_input_hashes_after.csv
+  f6e4c_freeze_manifest: results/manifests/phase_f6e4c_scientific_freeze.json
+  f6e4c_input_integrity: results/tables/phase_f6e4c_input_integrity.csv
+  f6e4c_request_level_metrics: results/tables/phase_f6e4c_request_level_metrics.csv
+  f6e4c_cell_summary: results/tables/phase_f6e4c_cell_summary.csv
+  f6e4c_dataset_task_summary: results/tables/phase_f6e4c_dataset_task_summary.csv
+  f6e4c_candidate_position_analysis: results/tables/phase_f6e4c_candidate_position_analysis.csv
+  f6e4b_freeze_manifest: results/manifests/phase_f6e4b_execution_freeze.json
+  f6e4b_raw_qwen2: results/llm/phase_f6e4b_qwen2_adapted_full_run_raw.jsonl
+  f6e4b_raw_mistral: results/llm/phase_f6e4b_mistral_adapted_full_run_raw.jsonl
+  f6e4a_freeze_manifest: results/manifests/phase_f6e4a_full_run_freeze.json
+  f6e4a_request_manifest: results/tables/phase_f6e4a_request_manifest.csv
+  canonical_full_matrix_rankings: results/tables/canonical_local_llm_full_matrix_rankings.csv
+  canonical_full_matrix_request_state: results/tables/canonical_local_llm_full_matrix_request_state.csv
+  train_item_statistics: results/tables/canonical_metric_train_item_statistics.csv
+  item_popularity_statistics: results/tables/finalization_f5c_item_popularity_statistics.csv
+  traditional_baseline_rankings: results/tables/traditional_baseline_rankings.csv
+  traditional_baseline_metrics: results/tables/traditional_baselines_metrics.csv
+  plan_e_bprmf_rankings:
+    - results/tables/plan_e_bprmf_beauty_sports_rankings.csv
+    - results/tables/plan_e_bprmf_ml1m_pilot_rankings.csv
+  plan_e_gru4rec_rankings:
+    - results/tables/plan_e_gru4rec_beauty_sports_rankings.csv
+    - results/tables/plan_e_gru4rec_ml1m_pilot_rankings.csv
+  plan_e_sasrec_rankings:
+    - results/tables/plan_e_sasrec_beauty_sports_rankings.csv
+    - results/tables/plan_e_sasrec_ml1m_pilot_rankings.csv
+  plan_e_lightgcn_rankings:
+    - results/tables/plan_e_lightgcn_beauty_sports_cpu_rankings.csv
+    - results/tables/plan_e_lightgcn_ml1m_pilot_rankings.csv
+  f6d3_lastfm_ranking_manifest: results/tables/finalization_f6d3_lastfm_ranking_llm_manifest.csv
+  f6d3_lastfm_reranking_manifest: results/tables/finalization_f6d3_lastfm_reranking_llm_manifest.csv
+  f6d4a_response_validation: results/tables/finalization_f6d4a_response_validation.csv
+  f6d4a_closure_hash_manifest: results/tables/finalization_f6d4a_closure_hash_manifest.csv
+  f6d4a_input_hashes: results/tables/finalization_f6d4a_input_hashes.csv
+  lastfm_train: data/processed/finalization_f6c_lastfm_train.csv
+  lastfm_catalog: data/processed/finalization_f6c_lastfm_catalog.csv
+  lastfm_candidates: data/processed/finalization_f6c_lastfm_ranking_candidates.csv
+  lastfm_baseline_rankings: results/predictions/finalization_f6d1_lastfm_baseline_rankings.csv
+  lastfm_trainable_rankings: results/predictions/finalization_f6d2_lastfm_candidate_rankings.csv
+  plan_d_candidate_position_variant_summary: results/tables/plan_d_qwen2_ml1m_candidate_position_bias_variant_summary.csv
+  plan_d_candidate_position_pairwise_delta: results/tables/plan_d_qwen2_ml1m_candidate_position_bias_pairwise_delta.csv
+
+outputs:
+  report: report/phase_f6f1_beyond_utility_metrics.md
+  freeze_manifest: results/manifests/phase_f6f1_beyond_utility_freeze.json
+  tables:
+    metric_source_inventory: results/tables/phase_f6f1_metric_source_inventory.csv
+    metric_contract: results/tables/phase_f6f1_metric_contract.csv
+    metric_exactness_matrix: results/tables/phase_f6f1_metric_exactness_matrix.csv
+    aplt_results: results/tables/phase_f6f1_aplt_results.csv
+    serendipity_results: results/tables/phase_f6f1_serendipity_results.csv
+    popularity_novelty_results: results/tables/phase_f6f1_popularity_novelty_results.csv
+    candidate_position_results: results/tables/phase_f6f1_candidate_position_results.csv
+    ranking_vs_reranking: results/tables/phase_f6f1_ranking_vs_reranking.csv
+    llm_vs_baseline: results/tables/phase_f6f1_llm_vs_baseline.csv
+    structural_diagnostics: results/tables/phase_f6f1_structural_diagnostics.csv
+    research_question_update: results/tables/phase_f6f1_research_question_update.csv
+    missing_or_blocked: results/tables/phase_f6f1_missing_or_blocked.csv
+
+baseline_sources:
+  wide:
+    - id: traditional
+      path: results/tables/traditional_baseline_rankings.csv
+    - id: bprmf_beauty_sports
+      path: results/tables/plan_e_bprmf_beauty_sports_rankings.csv
+    - id: bprmf_ml1m
+      path: results/tables/plan_e_bprmf_ml1m_pilot_rankings.csv
+    - id: gru4rec_beauty_sports
+      path: results/tables/plan_e_gru4rec_beauty_sports_rankings.csv
+    - id: gru4rec_ml1m
+      path: results/tables/plan_e_gru4rec_ml1m_pilot_rankings.csv
+    - id: sasrec_beauty_sports
+      path: results/tables/plan_e_sasrec_beauty_sports_rankings.csv
+    - id: sasrec_ml1m
+      path: results/tables/plan_e_sasrec_ml1m_pilot_rankings.csv
+    - id: lightgcn_beauty_sports
+      path: results/tables/plan_e_lightgcn_beauty_sports_cpu_rankings.csv
+    - id: lightgcn_ml1m
+      path: results/tables/plan_e_lightgcn_ml1m_pilot_rankings.csv
+  long:
+    - id: lastfm_non_neural
+      path: results/predictions/finalization_f6d1_lastfm_baseline_rankings.csv
+      dataset: LastFM
+      task: ranking
+    - id: lastfm_trainable
+      path: results/predictions/finalization_f6d2_lastfm_candidate_rankings.csv
+      dataset: LastFM
+      task: ranking
+
+unsafe_excluded_tests:
+  - training
+  - cuda_required
+  - downloads
+  - url_access
+  - ollama
+  - remote_api
+  - fresh_inference

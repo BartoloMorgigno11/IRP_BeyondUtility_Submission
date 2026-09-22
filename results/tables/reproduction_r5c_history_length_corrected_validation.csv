@@ -1,0 +1,14 @@
+check_id,check_name,status,observed,expected
+VAL-001,static preflight,pass,34/34,all pass
+VAL-002,synthetic tests,pass,14/14,all pass
+VAL-003,context preflight,pass,32/32,all pass
+VAL-004,canary complete when attempted,pass,24/24,all complete
+VAL-005,canary parsed K=5 when attempted,pass,24/24,all 5
+VAL-006,early health no backend incomplete,pass,checked,0
+VAL-007,group validation,pass,800/800,800/800
+VAL-008,incomplete not succeeded,pass,checked,none
+VAL-009,full run authorization consistent,pass,authorized=True;decision=R5C_CORRECTED_HISTORY_LENGTH_COMPLETE;terminal=2400,consistent
+VAL-CORR-010,canary values are candidate positions,pass,checked,all true
+VAL-CORR-011,canary has no item-ID substitution,pass,checked,0
+VAL-CORR-012,max retries zero in terminal outputs,pass,checked,0
+VAL-CORR-013,no out_of_range when complete,pass,0,0

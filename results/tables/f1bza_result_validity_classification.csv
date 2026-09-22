@@ -1,0 +1,29 @@
+output_family,dataset,classification,affected_rows,reason,model
+foodcom_history_alignment,foodcom,VALID_AS_IS,1000,Zero-history users are true raw single-interaction final-test users.,
+candidate20_trainable_final_test_metrics,all,VALID_AS_IS,300,Utility metrics are valid for the frozen candidate20 ranking task.,
+candidate20_trainable_beyond_utility_metrics,all,VALID_AS_IS,1400,Beyond-utility metrics remain candidate20-scoped; degenerate cells stay explicit.,
+deterministic_baseline_outputs,all,VALID_AS_IS,292920,F1BX baseline hashes are preserved by F1BZ.,
+trainable_checkpoints_candidate20_scoring,all,VALID_AS_IS,100,Checkpoints are valid for the F1BZ training data and candidate20 scoring contract.,
+f1bz_reranking_pools,all,INVALID,4882,Pools are assembled from forced-positive candidate20 first-stage rankings.,
+f1bz_candidate_recall_at_20,all,INVALID,5,Candidate Recall@20 is tautological under the current source universe.,
+f1bz_reranking_readiness,all,INVALID,30,Readiness depends on invalid reranking pools and must be regenerated after source correction.,
+full_catalog_first_stage_generation,beauty,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",BPRMF
+full_catalog_first_stage_generation,beauty,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",GRU4Rec
+full_catalog_first_stage_generation,beauty,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",SASRec
+full_catalog_first_stage_generation,beauty,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",LightGCN
+full_catalog_first_stage_generation,sports,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",BPRMF
+full_catalog_first_stage_generation,sports,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",GRU4Rec
+full_catalog_first_stage_generation,sports,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",SASRec
+full_catalog_first_stage_generation,sports,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",LightGCN
+full_catalog_first_stage_generation,ml1m,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",BPRMF
+full_catalog_first_stage_generation,ml1m,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",GRU4Rec
+full_catalog_first_stage_generation,ml1m,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",SASRec
+full_catalog_first_stage_generation,ml1m,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",LightGCN
+full_catalog_first_stage_generation,lastfm,REGENERATE_FROM_EXISTING_CHECKPOINT,5,Existing checkpoints can score every raw catalog item represented by the frozen model item map without target injection.,BPRMF
+full_catalog_first_stage_generation,lastfm,REGENERATE_FROM_EXISTING_CHECKPOINT,5,Existing checkpoints can score every raw catalog item represented by the frozen model item map without target injection.,GRU4Rec
+full_catalog_first_stage_generation,lastfm,REGENERATE_FROM_EXISTING_CHECKPOINT,5,Existing checkpoints can score every raw catalog item represented by the frozen model item map without target injection.,SASRec
+full_catalog_first_stage_generation,lastfm,REGENERATE_FROM_EXISTING_CHECKPOINT,5,Existing checkpoints can score every raw catalog item represented by the frozen model item map without target injection.,LightGCN
+full_catalog_first_stage_generation,foodcom,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",BPRMF
+full_catalog_first_stage_generation,foodcom,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",GRU4Rec
+full_catalog_first_stage_generation,foodcom,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",SASRec
+full_catalog_first_stage_generation,foodcom,RETRAIN_REQUIRED,5,"Existing checkpoint item embeddings cover the F1BZ model-known universe, not the entire raw catalog required for non-tautological full-catalog first-stage generation.",LightGCN

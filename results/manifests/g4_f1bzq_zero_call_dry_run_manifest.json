@@ -1,0 +1,144 @@
+{
+  "active_datasets": [
+    "beauty",
+    "sports",
+    "ml1m",
+    "lastfm",
+    "foodcom"
+  ],
+  "artifact_hashes": {
+    "configs/g4_f1bzq_reranking_execution.yaml": "3bedb35a3e8905d048a64fb230746f6d64cd8fd1e8996013b4ff2050d9d02f7c",
+    "report/g4_f1bzq_reranking_protocol_freeze.md": "40ee84e2eb834c5e1d8ce3fee3846c89e3829be2db332af4d1831920da81a691",
+    "results/tables/g4_f1bzq_candidate_hashes.csv": "ee4574d349d0605ac508b408e6d5983721b954e16884aa0b045d6b0d652b209e",
+    "results/tables/g4_f1bzq_candidate_recall_at_20.csv": "07bdd61e79975c32c5c0edd6a51375dde7075e5d2ec448bbd3086731904255f2",
+    "results/tables/g4_f1bzq_metric_denominator_contract.csv": "e2927de9d763e3089b9040b75eef97cefbcdc9ce21b23749ba46652ae924aad8",
+    "results/tables/g4_f1bzq_model_digest_freeze.csv": "00a6b3122fd2ffc9739e47977995136f66efc3080f515c256bd8e55f88ed9867",
+    "results/tables/g4_f1bzq_reranking_execution_order.csv": "a3ccba58a2b19597d7afc7c50ba233bbc7027e5b756440ed48ed852f418096aa",
+    "results/tables/g4_f1bzq_reranking_request_universe.csv": "815b3d6fd9fb16b3b83d03d3727c4cf2f5fe5f1e6b6b04568ed1ee1b634750ba",
+    "results/tables/g4_f1bzq_response_reuse_policy.csv": "7e2e3f8486aad249aba84c91c88d40b20e99afea28fab03594287377fddbf30f",
+    "results/tables/g4_f1bzq_retention_plan.csv": "0a68940a60a7c99b78e2b9ef00c49562661e663f6f68486281b1fc169d87589d",
+    "results/tables/g4_f1bzq_statistical_comparisons.csv": "1145162db3576a2d6024a0bd0088fcf24acb6e3112271509b2a57eec2e512355",
+    "results/tables/g4_f1bzq_validation.csv": "b6569b97e4609d789eb198969124127b08a99bfd8b36e1903837d090b55b0ab8",
+    "results/tables/g4_f1bzq_zero_call_dry_run_accounting.csv": "f54e72aab7636ab9ebf3c2ccbc4d9945975bd1a14d6645175ba8be19d5316f06",
+    "src/extension/g4_f1bzq_reranking_execution.py": "2edf0985d6a483651f758ba03ebffc710035be50191696d8ff17423ef7771477",
+    "tests/test_extension_g4_f1bzq_reranking_execution.py": "9d25c11d411afbefc5ec30f601888da0cf6a6375e509f5f4b80c627f81b03018"
+  },
+  "base_checkpoint_is_ancestor": true,
+  "candidate_pool_algorithm": "BALANCED_RANK_ROUND_ROBIN_UNIQUE_20",
+  "candidate_pool_policy": "ADAPTED_BALANCED_MULTI_MODEL_RERANKING_POOL",
+  "candidate_source": "F1BZQ_ONLY",
+  "cells": 30,
+  "decision_token": "G4_F1BZQ_RERANKING_PROTOCOL_FROZEN",
+  "dry_run_accounting": [
+    {
+      "cells": 30,
+      "design": "G4_F1BZQ_ADAPTED_RERANKING",
+      "dry_run": "false",
+      "exact_response_reuse": 0,
+      "existing_terminal_g4_evidence_after": 29292,
+      "existing_terminal_g4_evidence_before": 24727,
+      "future_ollama_calls": 29292,
+      "llm_inference_calls_executed_in_this_invocation": 4565,
+      "logical_requests": 29292,
+      "request_jsonl_rows_after": 29292,
+      "request_jsonl_rows_before": 24727,
+      "status": "EXECUTION_ATTEMPT_RECORDED"
+    }
+  ],
+  "execution_code_commit": "df8700c159dfce5474e67462162b79e3956b4ac5",
+  "existing_terminal_g4_evidence": 24727,
+  "f1bzq_pool_manifest_decision": "F1BZQ_AUTHORITATIVE_RERANKING_POOLS_VALIDATED",
+  "frame_hashes": {
+    "candidate_hashes": "ee4574d349d0605ac508b408e6d5983721b954e16884aa0b045d6b0d652b209e",
+    "candidate_recall": "07bdd61e79975c32c5c0edd6a51375dde7075e5d2ec448bbd3086731904255f2",
+    "dry_run_accounting": "f54e72aab7636ab9ebf3c2ccbc4d9945975bd1a14d6645175ba8be19d5316f06",
+    "execution_order": "a3ccba58a2b19597d7afc7c50ba233bbc7027e5b756440ed48ed852f418096aa",
+    "metric_contract": "e2927de9d763e3089b9040b75eef97cefbcdc9ce21b23749ba46652ae924aad8",
+    "model_digests": "00a6b3122fd2ffc9739e47977995136f66efc3080f515c256bd8e55f88ed9867",
+    "request_universe": "815b3d6fd9fb16b3b83d03d3727c4cf2f5fe5f1e6b6b04568ed1ee1b634750ba",
+    "response_reuse_policy": "7e2e3f8486aad249aba84c91c88d40b20e99afea28fab03594287377fddbf30f",
+    "retention_plan": "0a68940a60a7c99b78e2b9ef00c49562661e663f6f68486281b1fc169d87589d",
+    "statistical_comparisons": "1145162db3576a2d6024a0bd0088fcf24acb6e3112271509b2a57eec2e512355",
+    "validation": "b6569b97e4609d789eb198969124127b08a99bfd8b36e1903837d090b55b0ab8"
+  },
+  "future_ollama_calls": 29292,
+  "generated_at": "2026-09-06T03:06:02.771Z",
+  "head": "df8700c159dfce5474e67462162b79e3956b4ac5",
+  "history_contract": "visible_last_10_or_available",
+  "llm_inference_calls_executed_in_this_invocation": 4565,
+  "logical_requests": 29292,
+  "models": [
+    "qwen2:7b-instruct",
+    "mistral:7b-instruct",
+    "gemma2:9b"
+  ],
+  "phase_id": "g4_f1bzq_reranking_protocol_freeze",
+  "prompt_strategies": [
+    "BASE",
+    "LLMRANK"
+  ],
+  "raw_paths": {
+    "events_jsonl": "results/llm/extension_canonical/g4_f1bzq_reranking/events.jsonl",
+    "raw_dir": "results/llm/extension_canonical/g4_f1bzq_reranking",
+    "requests_jsonl": "results/llm/extension_canonical/g4_f1bzq_reranking/requests.jsonl",
+    "response_dir": "results/llm/extension_canonical/g4_f1bzq_reranking/responses",
+    "responses_jsonl": "results/llm/extension_canonical/g4_f1bzq_reranking/responses.jsonl"
+  },
+  "response_reuse": 0,
+  "response_reuse_policy": [
+    {
+      "canonical_id_overlap_with_g4": 36,
+      "exact_reused_rows": 0,
+      "reason": "excluded_by_g4_response_reuse_zero",
+      "reuse_allowed": "false",
+      "source_exists": "true",
+      "source_id": "g0_canary",
+      "source_path": "results/llm/extension_canonical/g0_canary/responses.jsonl",
+      "status": "G4_RESPONSE_REUSE_EXPLICITLY_ZERO",
+      "terminal_rows_observed": 72
+    },
+    {
+      "canonical_id_overlap_with_g4": 0,
+      "exact_reused_rows": 0,
+      "reason": "different_task_candidate_source",
+      "reuse_allowed": "false",
+      "source_exists": "true",
+      "source_id": "g1_primary_ranking",
+      "source_path": "results/llm/extension_canonical/g1_primary_ranking/responses.jsonl",
+      "status": "G4_RESPONSE_REUSE_EXPLICITLY_ZERO",
+      "terminal_rows_observed": 29256
+    },
+    {
+      "canonical_id_overlap_with_g4": 0,
+      "exact_reused_rows": 0,
+      "reason": "explicitly_excluded_not_f1bzq_g4",
+      "reuse_allowed": "false",
+      "source_exists": "false",
+      "source_id": "f6m_lastfm_reranking",
+      "source_path": "results/llm/lastfm_reranking_v4_1/responses.jsonl",
+      "status": "G4_RESPONSE_REUSE_EXPLICITLY_ZERO",
+      "terminal_rows_observed": 0
+    }
+  ],
+  "scientific_base_checkpoint": "0465d7aa5f9fe9231be94dbe8d45649864bb4878",
+  "scientific_objective": "LLM reranking over frozen F1BZQ authoritative balanced candidate pools.",
+  "scientific_status": "ADAPTED_EXTENSION_NOT_PAPER_EXACT",
+  "source_policy": "F1BZQ_REPRESENTABLE_FULL_CATALOG_FIVE_SEED_MEAN",
+  "tables": {
+    "candidate_hashes": "results/tables/g4_f1bzq_candidate_hashes.csv",
+    "candidate_recall": "results/tables/g4_f1bzq_candidate_recall_at_20.csv",
+    "dry_run_accounting": "results/tables/g4_f1bzq_zero_call_dry_run_accounting.csv",
+    "execution_order": "results/tables/g4_f1bzq_reranking_execution_order.csv",
+    "metric_contract": "results/tables/g4_f1bzq_metric_denominator_contract.csv",
+    "model_digests": "results/tables/g4_f1bzq_model_digest_freeze.csv",
+    "request_universe": "results/tables/g4_f1bzq_reranking_request_universe.csv",
+    "response_reuse_policy": "results/tables/g4_f1bzq_response_reuse_policy.csv",
+    "retention_plan": "results/tables/g4_f1bzq_retention_plan.csv",
+    "statistical_comparisons": "results/tables/g4_f1bzq_statistical_comparisons.csv",
+    "validation": "results/tables/g4_f1bzq_validation.csv"
+  },
+  "task": "reranking",
+  "validation_failures": [],
+  "validation_passed": true,
+  "working_tree_status_at_manifest_build": ""
+}

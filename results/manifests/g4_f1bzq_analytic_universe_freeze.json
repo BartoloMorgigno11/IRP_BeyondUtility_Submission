@@ -1,0 +1,207 @@
+{
+  "created_at_utc": "2026-09-06T07:08:03Z",
+  "decision_token": "G4_ANALYTIC_UNIVERSE_FROZEN",
+  "denominator_contract": [
+    {
+      "denominator_scope": "all planned users",
+      "denominator_unit": "planned user-request rows within each dataset_model_prompt cell",
+      "global_denominator_rows": 29292,
+      "invalid_terminal_policy": "invalid terminal response contributes zero",
+      "metric_group": "primary_unconditional_utility",
+      "metric_ids": "[\"hr_at_5\",\"ndcg_at_5\",\"mrr\"]",
+      "metric_values_computed_in_this_phase": "false",
+      "per_cell_denominator_source": "planned_users by dataset in g4_f1bzq_analytic_denominator_counts.csv"
+    },
+    {
+      "denominator_scope": "all users",
+      "denominator_unit": "unique dataset/user candidate pools",
+      "global_denominator_rows": 4882,
+      "invalid_terminal_policy": "not applicable to terminal response validity",
+      "metric_group": "candidate_recall",
+      "metric_ids": "[\"candidate_recall_at_20\"]",
+      "metric_values_computed_in_this_phase": "false",
+      "per_cell_denominator_source": "not model/prompt specific; candidate-stage denominator by dataset"
+    },
+    {
+      "denominator_scope": "positive-present users only",
+      "denominator_unit": "positive-present user-request rows within each dataset_model_prompt cell",
+      "global_denominator_rows": 4458,
+      "invalid_terminal_policy": "invalid terminal response contributes zero within the positive-present subset",
+      "metric_group": "conditional_utility",
+      "metric_ids": "[\"conditional_hr_at_5\",\"conditional_ndcg_at_5\"]",
+      "metric_values_computed_in_this_phase": "false",
+      "per_cell_denominator_source": "positive_present_users by dataset in g4_f1bzq_analytic_denominator_counts.csv"
+    },
+    {
+      "denominator_scope": "strict-valid users",
+      "denominator_unit": "strict-valid user-request rows, with metric-specific defined subsets where required",
+      "global_denominator_rows": 28986,
+      "invalid_terminal_policy": "invalid terminal responses excluded from strict-valid beyond-utility denominator",
+      "metric_group": "beyond_utility",
+      "metric_ids": "reuse_only_already_implemented_frozen_g1_g2_compatible_metrics",
+      "metric_values_computed_in_this_phase": "false",
+      "per_cell_denominator_source": "strict_valid by dataset_model_prompt in g4_f1bzq_analytic_cell_counts.csv"
+    },
+    {
+      "denominator_scope": "all planned requests",
+      "denominator_unit": "planned requests",
+      "global_denominator_rows": 29292,
+      "invalid_terminal_policy": "invalid terminal response remains terminal scientific evidence and is counted",
+      "metric_group": "reliability",
+      "metric_ids": "strict_parse_validity,structural_invalidity_rate,invalid_reason_distribution,duplicate_rate,hallucination,backend_failure_rate,latency,throughput,token_counts,hardware_runtime_provenance",
+      "metric_values_computed_in_this_phase": "false",
+      "per_cell_denominator_source": "logical_rows by dataset_model_prompt in g4_f1bzq_analytic_cell_counts.csv"
+    }
+  ],
+  "f1bzq_pools_modified": false,
+  "files_created": [
+    "src/analysis/g4_f1bzq_analytic_universe.py",
+    "results/tables/g4_f1bzq_analytic_universe.csv",
+    "results/tables/g4_f1bzq_analytic_cell_counts.csv",
+    "results/tables/g4_f1bzq_analytic_denominator_counts.csv",
+    "results/tables/g4_f1bzq_analytic_denominator_contract.csv",
+    "results/tables/g4_f1bzq_analytic_validation.csv",
+    "results/manifests/g4_f1bzq_analytic_universe_freeze.json",
+    "report/g4_f1bzq_analytic_universe_freeze.md",
+    "report/notes.md"
+  ],
+  "frozen_evidence_modified": false,
+  "head_before_generation": "4b18f0a998c694a961eee563f8c5cf18e2b81485",
+  "input_hashes": {
+    "results/llm/extension_canonical/g4_f1bzq_reranking/events.jsonl": "d06f2fba6eff294049c6af56e42b738dde03f120f607c327566cb1ceadf461dd",
+    "results/llm/extension_canonical/g4_f1bzq_reranking/requests.jsonl": "0f2073e0ce41aa79b8d4b0d8540f45be50a5a687cb0c8c35fe90b6abe88070aa",
+    "results/llm/extension_canonical/g4_f1bzq_reranking/responses.jsonl": "ce65d44063012de1e8d68875a9a992c1b60be40771a11923b2b922fc33348247",
+    "results/manifests/g4_f1bzq_execution_retention_manifest.json": "d94cdc06f04c774fc6c1a8c7829e0fa751506c3abbe9482a5349082e8ebff958",
+    "results/manifests/g4_f1bzq_request_universe_manifest.json": "7b5870c6e1ad91bc9582eade36915c41d5b7f352a67b2a1621951228cca253be",
+    "results/manifests/g4_f1bzq_reranking_protocol_freeze.json": "6c020d3ebd4da59e63907b0a5d18748c9cb43cbb42e4184561bca2afd5fbcc2c",
+    "results/tables/g4_f1bzq_candidate_hashes.csv": "ee4574d349d0605ac508b408e6d5983721b954e16884aa0b045d6b0d652b209e",
+    "results/tables/g4_f1bzq_candidate_recall_at_20.csv": "07bdd61e79975c32c5c0edd6a51375dde7075e5d2ec448bbd3086731904255f2",
+    "results/tables/g4_f1bzq_execution_evidence_inventory.csv": "9a8e71bc217797007b45f3cb41d4e338ede90a9cd0c897a3de9357d2d76155de",
+    "results/tables/g4_f1bzq_metric_denominator_contract.csv": "e2927de9d763e3089b9040b75eef97cefbcdc9ce21b23749ba46652ae924aad8",
+    "results/tables/g4_f1bzq_model_digest_freeze.csv": "00a6b3122fd2ffc9739e47977995136f66efc3080f515c256bd8e55f88ed9867",
+    "results/tables/g4_f1bzq_reranking_execution_order.csv": "a3ccba58a2b19597d7afc7c50ba233bbc7027e5b756440ed48ed852f418096aa",
+    "results/tables/g4_f1bzq_reranking_request_universe.csv": "815b3d6fd9fb16b3b83d03d3727c4cf2f5fe5f1e6b6b04568ed1ee1b634750ba"
+  },
+  "metric_computation_executed": false,
+  "next_safe_step": "compute G4 metrics from the frozen analytic universe only when explicitly requested; no new inference",
+  "ollama_or_api_calls_executed": 0,
+  "output_hashes": {
+    "report/g4_f1bzq_analytic_universe_freeze.md": "57de9456c55e25ecf9b67038c38d5259f0d571db6f941d483cd1ba7fd3e1236a",
+    "results/tables/g4_f1bzq_analytic_cell_counts.csv": "b6685118768799d37243f1f361d5ee6f0bff25de2827bec03ea4512f382601c2",
+    "results/tables/g4_f1bzq_analytic_denominator_contract.csv": "a3975825f4513134a152abd5cab985a21ba707bc7740dbf30995d2aa00fd1b0c",
+    "results/tables/g4_f1bzq_analytic_denominator_counts.csv": "96c756e6581ac4a267d52ffc98cd66d280b3f7cfdfb3b7cc37991023745408e8",
+    "results/tables/g4_f1bzq_analytic_universe.csv": "e1e2ee0c7fdfb034eb66cd186f221fa02127dc7cd727e275e015b3327eb07821",
+    "results/tables/g4_f1bzq_analytic_validation.csv": "f1cee1cc0e1cd64ee9dbd58be3590f425b4ec0d025cda897eca23fafb92b11f2"
+  },
+  "phase_id": "g4_f1bzq_analytic_universe_freeze",
+  "precondition_status": "G4_EXECUTION_RETENTION_FROZEN",
+  "protocol_config_runner_modified": false,
+  "schema_version": "1.0",
+  "source": "frozen_retained_g4_evidence_only",
+  "source_hashes": {
+    "src/analysis/g4_f1bzq_analytic_universe.py": "1cc9cc5c4aaa54577b339baac4cdc67bbb96c32f4aa76adfb508ad1ab5d6f729"
+  },
+  "statistical_analysis_executed": false,
+  "summary": {
+    "cells": 30,
+    "dataset_counts": {
+      "beauty": {
+        "backend_errors": 0,
+        "invalid": 64,
+        "invalid_duplicate": 25,
+        "invalid_length": 39,
+        "logical_rows": 5940,
+        "planned_users": 990,
+        "positive_absent_users": 941,
+        "positive_present_users": 49,
+        "strict_valid": 5876
+      },
+      "foodcom": {
+        "backend_errors": 0,
+        "invalid": 40,
+        "invalid_duplicate": 3,
+        "invalid_length": 37,
+        "logical_rows": 6000,
+        "planned_users": 1000,
+        "positive_absent_users": 996,
+        "positive_present_users": 4,
+        "strict_valid": 5960
+      },
+      "lastfm": {
+        "backend_errors": 0,
+        "invalid": 93,
+        "invalid_duplicate": 5,
+        "invalid_length": 88,
+        "logical_rows": 6000,
+        "planned_users": 1000,
+        "positive_absent_users": 531,
+        "positive_present_users": 469,
+        "strict_valid": 5907
+      },
+      "ml1m": {
+        "backend_errors": 0,
+        "invalid": 64,
+        "invalid_duplicate": 4,
+        "invalid_length": 60,
+        "logical_rows": 6000,
+        "planned_users": 1000,
+        "positive_absent_users": 807,
+        "positive_present_users": 193,
+        "strict_valid": 5936
+      },
+      "sports": {
+        "backend_errors": 0,
+        "invalid": 45,
+        "invalid_duplicate": 14,
+        "invalid_length": 31,
+        "logical_rows": 5352,
+        "planned_users": 892,
+        "positive_absent_users": 864,
+        "positive_present_users": 28,
+        "strict_valid": 5307
+      }
+    },
+    "denominator_totals": {
+      "backend_error_request_rows": 0,
+      "dataset": "ALL",
+      "invalid_terminal_request_rows": 306,
+      "metric_values_computed_in_this_phase": "false",
+      "model_prompt_variants": 6,
+      "planned_request_rows": 29292,
+      "planned_users": 4882,
+      "positive_absent_request_rows": 24834,
+      "positive_absent_users": 4139,
+      "positive_present_request_rows": 4458,
+      "positive_present_users": 743,
+      "scope": "GRAND_TOTAL",
+      "source": "sum of BY_DATASET rows",
+      "strict_valid_request_rows": 28986
+    },
+    "invalid": 306,
+    "logical_rows": 29292,
+    "model_counts": {
+      "gemma2:9b": 9764,
+      "mistral:7b-instruct": 9764,
+      "qwen2:7b-instruct": 9764
+    },
+    "parse_status_counts": {
+      "duplicate_indices": 51,
+      "invalid_length": 255,
+      "parsed_valid": 28986
+    },
+    "prompt_counts": {
+      "BASE": 14646,
+      "LLMRANK": 14646
+    },
+    "strict_valid": 28986,
+    "terminal_state_counts": {
+      "INVALID_DUPLICATE": 51,
+      "INVALID_LENGTH": 255,
+      "STRICT_VALID": 28986
+    },
+    "unique_users": 4882
+  },
+  "validation_failures": [],
+  "validation_passed": true,
+  "zero_inference": true
+}

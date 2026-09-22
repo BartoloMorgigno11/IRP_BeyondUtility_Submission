@@ -1,0 +1,79 @@
+project_root: .
+
+experiment:
+  name: reproduction_r5b_corrected_canddif_recovery
+  identity: R5B_CORRECTED
+  allow_paid_or_external_api_calls: false
+  allow_downloads: false
+  allow_training: false
+  allow_history_recovery: false
+  allow_generation_recovery: false
+  allow_local_ollama_execution: true
+
+frozen_r5a:
+  freeze_commit: 98c28c5364c40e571765a3b50d4dab8affe80743
+  manifest: results/tables/reproduction_r5a_recovery_request_manifest.csv
+  manifest_sha256: 290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD
+  manifest_rows: 4800
+
+scope:
+  recovery_family: CANDDIF_RECOVERY
+  selected_rows: 1200
+  expected_pairs: 600
+  expected_k: 5
+  datasets:
+    - Beauty
+    - Sports
+    - LastFM
+  excluded_datasets:
+    - ML-1M
+  models:
+    - qwen2:7b-instruct
+    - mistral:7b-instruct
+  conditions:
+    - CANDDIF_FIRST
+    - CANDDIF_RANDOM
+
+runtime:
+  backend: ollama
+  endpoint: http://127.0.0.1:11434/api/generate
+  tags_endpoint: http://127.0.0.1:11434/api/tags
+  version_endpoint: http://127.0.0.1:11434/api/version
+  timeout_seconds: 120
+  temperature: 0
+  max_retries: 0
+  stream: false
+  format: json
+  disk_free_min_bytes: 1073741824
+
+gates:
+  canary_initial_per_cell: 1
+  canary_extra_per_failed_cell: 2
+  early_additional_per_cell: 2
+  periodic_accounted_checkpoints:
+    - 100
+    - 300
+    - 600
+    - 900
+  min_overall_validity_rate: 0.75
+  min_model_validity_rate: 0.65
+  max_overall_wrong_length_rate: 0.20
+  max_cell_wrong_length_rate: 0.50
+
+outputs:
+  table_dir: results/tables
+  diagnostics_dir: results/diagnostics/r5b_corrected
+  report: report/reproduction_r5b_corrected.md
+  result_namespace: results/recovery/r5b_corrected
+  request_execution_status: results/tables/reproduction_r5b_corrected_request_execution_status.csv
+  execution_manifest: results/tables/reproduction_r5b_corrected_execution_manifest.csv
+  pair_validation: results/tables/reproduction_r5b_corrected_pair_validation.csv
+  output_validity: results/tables/reproduction_r5b_corrected_output_validity.csv
+  metrics_by_condition: results/tables/reproduction_r5b_corrected_metrics_by_condition.csv
+  canddif_results: results/tables/reproduction_r5b_corrected_canddif_results.csv
+  conditional_valid_metrics: results/tables/reproduction_r5b_corrected_conditional_valid_metrics.csv
+  dataset_model_summary: results/tables/reproduction_r5b_corrected_dataset_model_summary.csv
+  original_vs_corrected: results/tables/reproduction_r5b_corrected_original_vs_corrected.csv
+  official_comparison: results/tables/reproduction_r5b_corrected_official_comparison.csv
+  runtime_provenance: results/tables/reproduction_r5b_corrected_runtime_provenance.csv
+  validation: results/tables/reproduction_r5b_corrected_validation.csv

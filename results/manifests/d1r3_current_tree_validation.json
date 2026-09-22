@@ -1,0 +1,45 @@
+{
+  "current_suite": {
+    "direct_smoke_nodes": 2,
+    "duration_seconds": "42.053",
+    "errors": 0,
+    "exit_code": 0,
+    "failed": 0,
+    "junit_xml": "results/tables/d1r3_current_suite_junit.xml",
+    "passed": 304,
+    "selected_pytest_nodes": 306,
+    "skipped": 2
+  },
+  "decision_token": "D1R3_CURRENT_TREE_VALIDATED",
+  "downloads_executed": 0,
+  "f0_preconditions": {
+    "CURRENT_TREE_VALID": true,
+    "D1_INTEGRITY_VALID": true,
+    "HISTORICAL_FREEZE_MAPPING_COMPLETE": true
+  },
+  "git": {
+    "branch": "master",
+    "head": "adbf060f93872f6a75a32d38bbfe34ce30ed059e",
+    "status_row_count": 286
+  },
+  "historical_builders_executed_on_current_tree": 0,
+  "historical_worktrees_executed": 0,
+  "integrity": {
+    "active_dataset_set_ok": true,
+    "active_datasets": [
+      "beauty",
+      "sports",
+      "ml1m",
+      "lastfm",
+      "foodcom"
+    ],
+    "foodcom_unchanged": true,
+    "forbidden_video_games_refs": 0,
+    "h0_unchanged": true,
+    "historical_snapshot_rewrites": 0
+  },
+  "llm_requests_executed": 0,
+  "phase_id": "d1r3_current_tree_validation",
+  "timestamp_utc": "2026-08-27T12:23:04.127683+00:00",
+  "training_runs_executed": 0
+}

@@ -1,0 +1,81 @@
+phase:
+  id: f1b_traditional_recommender_completion
+  expected_head: c280fbef3440debe0a804efaf1f15436d9659347
+  predecessor_commit: c280fbef3440debe0a804efaf1f15436d9659347
+  completion_token_when_blocked: F1B_TRADITIONAL_COMPLETION_BLOCKED
+
+execution:
+  allow_traditional_training: true
+  allow_llm_inference: false
+  allow_ollama_recommendation_calls: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network: false
+  allow_historical_full_suite: false
+  allow_commit: false
+  stop_before_training_on_protocol_ambiguity: true
+
+datasets:
+  - name: beauty
+    f0_cohort_id: beauty_primary_990
+    evaluation_users: 990
+    candidate_source: results/tables/canonical_llm_cohort_preflight.csv
+  - name: sports
+    f0_cohort_id: sports_primary_892
+    evaluation_users: 892
+    candidate_source: results/tables/canonical_llm_cohort_preflight.csv
+  - name: ml1m
+    f0_cohort_id: ml1m_primary_1000
+    evaluation_users: 1000
+    candidate_source: results/tables/canonical_llm_cohort_preflight.csv
+  - name: lastfm
+    f0_cohort_id: lastfm_primary_1000
+    evaluation_users: 1000
+    candidate_source: data/processed/finalization_f6c_lastfm_ranking_candidates.csv
+  - name: foodcom
+    f0_cohort_id: foodcom_primary_1000
+    evaluation_users: 1000
+    candidate_source: results/tables/d0a_foodcom_primary1000_candidates.csv
+
+methods:
+  - name: Random
+    family: deterministic
+    frozen_seed_policy: deterministic_stable_seed_after_gate
+  - name: MostPop
+    family: deterministic
+    frozen_seed_policy: no_randomness_after_gate
+  - name: BM25-like/content
+    family: deterministic
+    frozen_seed_policy: deterministic_text_scoring_after_gate
+  - name: BPRMF
+    family: trainable
+    planned_seed_slots: 5
+  - name: GRU4Rec
+    family: trainable
+    planned_seed_slots: 5
+  - name: SASRec
+    family: trainable
+    planned_seed_slots: 5
+  - name: LightGCN
+    family: trainable
+    planned_seed_slots: 5
+
+protocol_ambiguity:
+  status: BLOCKED_BEFORE_TRAINING
+  reason: >
+    Current repository evidence contains incompatible trainable seed/config
+    lineages: original-paper Beauty/Sports archives reference seeds 0-4,
+    local LastFM F6D2 adapted training uses seeds 42-46 and selected
+    reranking seeds 44-46, and Plan E pilot artifacts use single seed 42 with
+    superseded cohorts. F1B must not choose a cross-dataset training protocol
+    implicitly.
+  evidence:
+    - report/codebase_map.md
+    - configs/finalization_f6d2_lastfm_trainable_models.yaml
+    - results/tables/finalization_f6d2_model_protocol.csv
+    - results/tables/finalization_f6d2_reranking_source_selection.csv
+    - results/tables/phase_f6g1_seed_policy_audit.csv
+    - configs/plan_e_bprmf_beauty.yaml
+    - configs/plan_e_gru4rec_beauty.yaml
+    - configs/plan_e_sasrec_beauty.yaml
+    - configs/plan_e_lightgcn_beauty_cpu.yaml

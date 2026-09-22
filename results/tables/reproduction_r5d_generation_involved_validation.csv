@@ -1,0 +1,13 @@
+check_id,check_name,status,observed,expected
+VAL-001,static preflight pass,pass,35/35,35/35
+VAL-002,synthetic pass,pass,14/14,14/14
+VAL-003,context preflight pass,pass,12/12,12/12
+VAL-004,dependency graph pass,pass,800/800,800/800
+VAL-005,canary table valid when present,pass,checked,all true
+VAL-006,early health pass when present,pass,checked,pass
+VAL-007,max retries zero,pass,checked,0
+VAL-008,incomplete is not succeeded,pass,checked,no incomplete succeeded
+VAL-009,ranking exactly K when valid,pass,checked,10
+VAL-010,profile JSON valid when valid,pass,checked,1
+VAL-011,full authorization consistent,pass,authorized=False;decision=R5D_CANARY_PASS,consistent
+VAL-012,complete means all valid,pass,terminal=12;valid=12,1200/1200

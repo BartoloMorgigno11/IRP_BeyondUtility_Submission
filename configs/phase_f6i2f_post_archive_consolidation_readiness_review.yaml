@@ -1,0 +1,65 @@
+phase:
+  id: phase_f6i2f
+  name: phase_f6i2f_post_archive_consolidation_readiness_review
+  previous_phase: phase_f6i2e
+  next_phase: phase_f6i2g_first_python_consolidation_execution_after_explicit_approval
+  audit_start_git_state:
+    branch: plan-d-extensions
+    head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+    status_row_count: 1351
+    status_counts:
+      modified: 5
+      deleted: 11
+      untracked: 1335
+      added: 0
+      other: 0
+runtime:
+  approved_interpreter: .venv_audit_recovery/Scripts/python.exe
+  required_python_no_user_site: "1"
+  classification: defensible_repaired_clone_exact_package_versions
+  caveat: repaired clone exact package tree only; not exact original executable environment
+inputs:
+  f6i2a:
+    - results/tables/phase_f6i2a_source_file_audit.csv
+    - results/tables/phase_f6i2a_python_semantic_groups.csv
+    - results/tables/phase_f6i2a_python_merge_plan.csv
+    - results/tables/phase_f6i2a_config_audit.csv
+    - results/tables/phase_f6i2a_config_merge_plan.csv
+    - results/tables/phase_f6i2a_test_audit.csv
+    - results/tables/phase_f6i2a_future_dependency_protection.csv
+    - results/tables/phase_f6i2a_retention_decisions.csv
+    - results/tables/phase_f6i2a_target_repository_architecture.csv
+  f6i2c:
+    - results/tables/phase_f6i2c_archive_decisions.csv
+    - results/tables/phase_f6i2c_archive_path_mapping.csv
+    - results/tables/phase_f6i2c_reference_inventory.csv
+    - results/tables/phase_f6i2c_reference_rewrite_plan.csv
+  f6i2d:
+    - results/tables/phase_f6i2d_content_index.csv
+    - results/tables/phase_f6i2d_current_fact_migration.csv
+    - results/tables/phase_f6i2d_final_archive_gate.csv
+    - results/tables/phase_f6i2d_archive_ready_for_migration.csv
+    - results/manifests/phase_f6i2d_substantive_archive_migration_manifest.json
+  f6i2e:
+    - results/manifests/phase_f6i2e_pre_migration_manifest.json
+    - results/manifests/phase_f6i2e_archive_index.json
+    - results/manifests/phase_f6i2e_migration_manifest.json
+    - results/manifests/phase_f6i2e_rollback_manifest.json
+    - results/manifests/phase_f6i2e_protected_input_hashes.json
+    - results/tables/phase_f6i2e_migration_actions.csv
+    - results/tables/phase_f6i2e_reference_rewrite_actions.csv
+    - results/tables/phase_f6i2e_archive_hash_validation.csv
+    - results/tables/phase_f6i2e_active_reference_validation.csv
+    - results/tables/phase_f6i2e_future_dependency_validation.csv
+    - results/tables/phase_f6i2e_validation.csv
+    - report/phase_f6i2e_substantive_archive_migration_execution.md
+  context:
+    - report/future_operations_context_handoff.md
+    - results/manifests/current_project_context_snapshot.json
+    - CODEX_PROMPTS.md
+    - PROJECT_SPEC.md
+outputs:
+  update_current_context_after_success: true
+  report: report/phase_f6i2f_post_archive_consolidation_readiness_review.md
+  manifest: results/manifests/phase_f6i2f_post_archive_readiness_manifest.json
+  protected_hashes: results/manifests/phase_f6i2f_protected_input_hashes.json

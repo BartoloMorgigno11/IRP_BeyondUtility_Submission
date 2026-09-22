@@ -1,0 +1,4 @@
+summary_id,scope,scope_value,planned_requests,strict_valid,invalid,backend_errors,invalid_length,invalid_duplicate,hallucination_or_out_of_candidate,strict_valid_rate,invalid_rate,source
+G3SYN-REL-138AD9845058C2E664B3745FB9A685E4,order,FIRST,6000,5904,96,0,57,39,0,0.98399999999999999,0.016,results/tables/g3_candidate_position_reliability.csv
+G3SYN-REL-B7CBF161B9BBDD1E8F176E8EF9F3760E,order,RANDOM,6000,5930,70,0,57,12,1,0.98833333333333329,0.011666666666666667,results/tables/g3_candidate_position_reliability.csv
+G3SYN-REL-AD45E0B24C6B13B5EA99B2F6D460EF84,order_delta,FIRST_minus_RANDOM,6000_per_order,-26,26,0,0,27,-1,-0.004333,0.004333,results/tables/g3_candidate_position_reliability.csv

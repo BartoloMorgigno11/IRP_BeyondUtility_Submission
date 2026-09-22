@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-08-21T16:14:48Z",
+  "decision": "R5C_CORRECTED_HISTORY_LENGTH_COMPLETE",
+  "freeze_metadata_version": "r5c_history_length_corrected_freeze_candidate_v1",
+  "freeze_ready": true,
+  "original_r5c_namespace_preserved": "results/recovery/r5c_history_length",
+  "original_r5c_protocol_hash": "30E4BCA9E1456EE9A7DE74A09FE03BF1A26EFCF758915052FD88F39AF9A836F2",
+  "paper_exact": false,
+  "phase": "R5C_CORRECTED",
+  "protocol_hash": "3AAD4945AF443A7F50846BFD044C54FEFD5B77EDBD3725B1D1F1C62D829ECDEE",
+  "r5a_manifest_sha256": "290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD",
+  "raw_aggregate_sha256": "47B330C1D27BB380FEF72C6B3D4EDF20848F56DF3045AA08FCE685524F1B9A4F",
+  "raw_count": 2400,
+  "raw_namespace": "results/recovery/r5c_history_length_corrected",
+  "status_counts": {
+    "backend_incomplete": 0,
+    "invalid": 0,
+    "out_of_range": 0,
+    "parse_failure": 0,
+    "requests_accounted": 2400,
+    "requests_expected": 2400,
+    "valid": 2400,
+    "wrong_length": 0
+  }
+}

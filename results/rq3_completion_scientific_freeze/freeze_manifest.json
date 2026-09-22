@@ -1,0 +1,162 @@
+{
+  "base_commit": "944798f3e754576beef2a03bd5a00811a285b1e6",
+  "bootstrap": {
+    "confidence_interval": "two_sided_95_percent_percentile_ci",
+    "engine": "empirical_multinomial_equivalent_to_paired_user_resampling_for_mean_delta",
+    "method": "paired_user_bootstrap_mean_delta",
+    "p_values": "NOT_COMPUTED_NO_FROZEN_PRIMARY_P_VALUE_METHOD",
+    "percentile_method": "numpy_quantile_linear",
+    "resamples": 10000,
+    "scope": "within_dataset_model_prompt",
+    "seed": 20260901
+  },
+  "cohort_semantics": {
+    "GE10": "frozen PRIMARY_B1_GE10 cohort; H3/H4 use identical users and candidates",
+    "GE20": "frozen SECONDARY_FULL_CURVE_GE20 cohort; H15 and H0/H1/H2/H3/H4/H5/H10/H20 use identical users and candidates"
+  },
+  "created_at_utc": "2026-09-19T14:13:41Z",
+  "experiment_id": "RQ3_H3_H4_H15_COMPLETION_SCIENTIFIC_FREEZE",
+  "freeze_status": "FINAL_SCIENTIFIC_FREEZE",
+  "history_grids": {
+    "GE10": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      10
+    ],
+    "GE20": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      15,
+      20
+    ]
+  },
+  "history_lengths_added": [
+    3,
+    4,
+    15
+  ],
+  "limitations": [
+    "RQ3 completion extension; canonical G2 experiment and artifacts remain unchanged.",
+    "Confidence intervals are configuration-specific; no post-hoc pooled cross-configuration CI is introduced.",
+    "Invalid terminal responses contribute zero utility under the frozen fail-strict policy.",
+    "No p-values or Holm correction are computed because the frozen primary method defines no p-value calculation.",
+    "Local cohort identities are frozen operationalizations and are not claimed to reproduce author sample identities."
+  ],
+  "metric_grid_artifact": {
+    "path": "results/tables/rq3_llm_history_metric_grid_final.csv",
+    "sha256": "96ab1971f5717c04faba7c0b61e9e1bfc92620ac2ee56eab33d622ec312a349d"
+  },
+  "old_g2_hash_checks": {
+    "configs/g2_history_length_sensitivity.yaml": {
+      "actual": "db0684fb4bb37ee55480c03fb21f22999e66e7f862fd2af526d263a4623c3479",
+      "expected": "db0684fb4bb37ee55480c03fb21f22999e66e7f862fd2af526d263a4623c3479",
+      "match": true
+    },
+    "results/tables/g2_history_length_cohort.csv": {
+      "actual": "da53a1fbeed3e76933ebf09ca951cab64c55db3b2c37b29caad5f8fa548548d0",
+      "expected": "da53a1fbeed3e76933ebf09ca951cab64c55db3b2c37b29caad5f8fa548548d0",
+      "match": true
+    },
+    "results/tables/g2_history_length_readout_metric_values.csv": {
+      "actual": "ba308ad02bac28071d71bd3a0ec11d522ff7e662a5e0f0786200c49c7450ccda",
+      "expected": "ba308ad02bac28071d71bd3a0ec11d522ff7e662a5e0f0786200c49c7450ccda",
+      "match": true
+    },
+    "results/tables/g2_history_length_statistical_paired_contributions.csv": {
+      "actual": "ad089c3353a6ea761ef245e787333f4d7c3cfcc593ed9a7567ef2853c8281f7e",
+      "expected": "ad089c3353a6ea761ef245e787333f4d7c3cfcc593ed9a7567ef2853c8281f7e",
+      "match": true
+    }
+  },
+  "old_g2_unchanged": true,
+  "outputs": {
+    "results/rq3_completion_scientific_freeze/pairability_validation.csv": "5e5d6897e0e7a647f01592b996a340bb7f62dd405b4a5b090f81c4a691e100cc",
+    "results/rq3_completion_scientific_freeze/request_accounting.csv": "827e8c91c0ed9c78c7ec665056a529f2355aab0cdfd6d21d588078ac48af8e81",
+    "results/rq3_completion_scientific_freeze/scientific_synthesis_summary.csv": "189ab285a873a74ef2c25f95f1f784b1b45edd000b21fb00f2fa265ad7fa824f",
+    "results/rq3_completion_scientific_freeze/statistical_results.csv": "976257e38d7cff90cc135bc126f27348020a1f9097f3260372bcd59c70a09f95"
+  },
+  "protocol": {
+    "config": "configs/g2_history_length_sensitivity.yaml",
+    "config_sha256": "db0684fb4bb37ee55480c03fb21f22999e66e7f862fd2af526d263a4623c3479",
+    "metric_contract": "canonical_G2_HR5_NDCG5_MRR_invalid_terminal_zero"
+  },
+  "provenance_note": "base_commit identifies the source checkout, not the artifact-containing commit; see results/manifests/final_submission_commit_provenance.json created after the freeze commit.",
+  "request_accounting": {
+    "by_history_length": [
+      {
+        "accounted": 14298,
+        "backend_incomplete": 0,
+        "cohort": "GE10",
+        "expected": 14298,
+        "history_length": 3,
+        "invalid": 102,
+        "missing": 0,
+        "status": "PASS",
+        "valid": 14196
+      },
+      {
+        "accounted": 14298,
+        "backend_incomplete": 0,
+        "cohort": "GE10",
+        "expected": 14298,
+        "history_length": 4,
+        "invalid": 170,
+        "missing": 0,
+        "status": "PASS",
+        "valid": 14128
+      },
+      {
+        "accounted": 12198,
+        "backend_incomplete": 0,
+        "cohort": "GE20",
+        "expected": 12198,
+        "history_length": 15,
+        "invalid": 192,
+        "missing": 0,
+        "status": "PASS",
+        "valid": 12006
+      }
+    ],
+    "totals": {
+      "accounted": 40794,
+      "backend_incomplete": 0,
+      "expected": 40794,
+      "invalid": 464,
+      "missing": 0,
+      "valid": 40330
+    }
+  },
+  "source_terminal_evidence": {
+    "directory": "results/llm/rq3_llm_completion/terminal",
+    "request_manifest": "artifacts/rq3_llm_completion/request_manifest.csv",
+    "request_manifest_sha256": "ef9554878343fb506f0c7dc8c8c3e4da3f5806f04968b470a37cc207e1a76dfa",
+    "terminal_set_sha256": "226b1de885ef7fc3b1b0d43cb0efc7896b11cff00949ceb4dd108cb2572b2ad8"
+  },
+  "statistical_artifact": {
+    "path": "results/rq3_completion_scientific_freeze/statistical_results.csv",
+    "rows": 450,
+    "sha256": "976257e38d7cff90cc135bc126f27348020a1f9097f3260372bcd59c70a09f95"
+  },
+  "validation_failures": [],
+  "validations": {
+    "completion_candidate_contract_pass": true,
+    "completion_cohort_contract_pass": true,
+    "history_grids_match": true,
+    "metric_grid_means_match": true,
+    "no_p_values_invented": true,
+    "old_g2_unchanged": true,
+    "pairability_all_pass": true,
+    "statistical_rows_450": true,
+    "synthesis_rows_15": true,
+    "terminal_accounting_pass": true
+  }
+}

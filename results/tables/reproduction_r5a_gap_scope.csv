@@ -1,0 +1,55 @@
+gap_id,dataset,metric,priority,r5a_recovery_family,eligible_for_r5a,scheduled_in_manifest,raw_planned_requests,unique_request_count,scope_decision,reason
+R4-GAP-0001,Beauty,ACLT@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0002,Beauty,CandDif-HR,P0_MUST_CLOSE,CANDDIF_RECOVERY,true,true,400,400,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0003,Beauty,CandDif-NDCG,P0_MUST_CLOSE,CANDDIF_RECOVERY,true,true,400,400,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0004,Beauty,DPD@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0005,Beauty,Generation-involved profile recommendation,P1_HIGH_VALUE,GENERATION_INVOLVED_RECOVERY,true,true,200,200,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0006,Beauty,Gini@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0007,Beauty,History-length sensitivity,P1_HIGH_VALUE,HISTORY_LENGTH_RECOVERY,true,true,600,600,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0008,Beauty,Jaccard@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0009,Beauty,Jain's Index@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0010,Beauty,K-S sample representativeness gate,P3_REDUNDANT_OR_LOW_VALUE,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0011,Beauty,MRR printed by official script,P3_REDUNDANT_OR_LOW_VALUE,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0012,Beauty,Overlap Item Coverage@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0013,Beauty,PopREO@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0014,Beauty,Shannon category entropy@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0015,LastFM,ACLT@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0016,LastFM,CandDif-HR,P0_MUST_CLOSE,CANDDIF_RECOVERY,true,true,400,400,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0017,LastFM,CandDif-NDCG,P0_MUST_CLOSE,CANDDIF_RECOVERY,true,true,400,400,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0018,LastFM,DPD@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0019,LastFM,Generation-involved profile recommendation,P1_HIGH_VALUE,GENERATION_INVOLVED_RECOVERY,true,true,400,400,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0020,LastFM,Gini@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0021,LastFM,History-length sensitivity,P1_HIGH_VALUE,HISTORY_LENGTH_RECOVERY,true,true,600,600,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0022,LastFM,Jaccard@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0023,LastFM,Jain's Index@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0024,LastFM,K-S sample representativeness gate,P3_REDUNDANT_OR_LOW_VALUE,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0025,LastFM,MRR printed by official script,P3_REDUNDANT_OR_LOW_VALUE,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0026,LastFM,Overlap Item Coverage@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0027,LastFM,PopREO@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0028,LastFM,Shannon category entropy@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0029,ML-1M,ACLT@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0030,ML-1M,DPD@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0031,ML-1M,Generation-involved profile recommendation,P1_HIGH_VALUE,GENERATION_INVOLVED_RECOVERY,true,true,400,400,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0032,ML-1M,Gini@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0033,ML-1M,History-length sensitivity,P1_HIGH_VALUE,HISTORY_LENGTH_RECOVERY,true,true,600,600,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0034,ML-1M,Jaccard@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0035,ML-1M,Jain's Index@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0036,ML-1M,K-S sample representativeness gate,P3_REDUNDANT_OR_LOW_VALUE,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0037,ML-1M,MRR printed by official script,P3_REDUNDANT_OR_LOW_VALUE,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0038,ML-1M,Overlap Item Coverage@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0039,ML-1M,PopREO@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0040,ML-1M,Shannon category entropy@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0041,Sports,ACLT@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0042,Sports,CandDif-HR,P0_MUST_CLOSE,CANDDIF_RECOVERY,true,true,400,400,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0043,Sports,CandDif-NDCG,P0_MUST_CLOSE,CANDDIF_RECOVERY,true,true,400,400,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0044,Sports,DPD@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0045,Sports,Generation-involved profile recommendation,P1_HIGH_VALUE,GENERATION_INVOLVED_RECOVERY,true,true,200,200,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0046,Sports,Gini@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0047,Sports,History-length sensitivity,P1_HIGH_VALUE,HISTORY_LENGTH_RECOVERY,true,true,600,600,SCHEDULED_IN_R5A_MANIFEST,P0/P1 R4 recovery gap selected for deterministic manifest.
+R4-GAP-0048,Sports,Jaccard@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0049,Sports,Jain's Index@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0050,Sports,K-S sample representativeness gate,P3_REDUNDANT_OR_LOW_VALUE,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0051,Sports,MRR printed by official script,P3_REDUNDANT_OR_LOW_VALUE,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0052,Sports,Overlap Item Coverage@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0053,Sports,PopREO@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.
+R4-GAP-0054,Sports,Shannon category entropy@5,P2_USEFUL_BUT_OPTIONAL,OUT_OF_R5A_SCOPE,false,false,0,0,EXCLUDED_BY_R5A_SCOPE,R5A schedules P0/P1 only; P2/P3/P4 receive zero requests.

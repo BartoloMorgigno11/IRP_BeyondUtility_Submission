@@ -1,0 +1,73 @@
+experiment_id: plan_e_sasrec_beauty
+model_id: sasrec_reconstructed_beauty_strict_causal
+dataset: Amazon Beauty
+paper_alignment: adapted_paper_like_reconstructed
+configuration_provenance:
+  phase_3j_config: configs/plan_e_sasrec_ml1m_pilot.yaml
+  phase_3j_report: report/plan_e_sasrec_ml1m_pilot.md
+  plan_d_source: results/tables/plan_d_sasrec_training_summary.csv
+  selected_plan_d_row: Plan D ml1m sasrec extended_subset completed 2026-06-30T09:26:14.123481+00:00
+  selected_plan_d_config_hash: 8864a614183d
+  adaptation_note: Reuses the successful Phase 3J ML-1M SASRec configuration unchanged and changes only dataset-specific paths, IDs and outputs.
+implementation_path: src/baselines/plan_d_sasrec.py
+adapter_path: src/baselines/plan_e_sasrec_adapter.py
+training_module_path: src/baselines/plan_e_sasrec_training.py
+training_data_path: data/reconstructed/plan_c/amazon_beauty/interactions.csv
+datamap_path: data/reconstructed/plan_c/amazon_beauty/datamaps.json
+candidate_sets_path: results/tables/ranking_candidate_sets.csv
+row_compatibility_path: results/tables/plan_e_sasrec_row_compatibility.csv
+ranking_candidate_set_id: plan_e_beauty_1000user_ranking_manifest
+reranking_candidate_set_id: plan_e_beauty_1000user_reranking_manifest
+policy_id: strict_causal_history_and_train_known_candidates
+seed: 42
+device: cuda
+deterministic_algorithms: true
+item_embedding_dim: 64
+hidden_size: 64
+feed_forward_dim: 256
+num_attention_heads: 2
+num_transformer_blocks: 2
+embedding_dropout: 0.2
+attention_dropout: 0.2
+residual_dropout: 0.2
+activation: gelu
+maximum_sequence_length: 50
+position_embedding_cardinality: 50
+padding_direction: left
+padding_index: 0
+real_item_offset: 1
+history_truncation_policy: keep_most_recent
+chronology_sort_fields:
+  - user_id
+  - timestamp
+  - source_row_index
+equal_timestamp_tie_rule: original_source_row_index
+training_objective_strategy: all_prefix_next_item
+loss: bpr_pairwise
+negative_sampling_strategy: plan_d_deterministic_user_positive_exclusion
+negative_samples_per_target: 1
+learning_rate: 0.001
+regularization: 0.0
+optimizer: Adam
+batch_size: 512
+epochs: 5
+num_workers: 0
+evaluation_k: 5
+candidate_scoring_method: sasrec_score_candidates_dot_product
+tie_breaking_rule:
+  - descending_score
+  - lexical_raw_item_id
+  - original_candidate_position
+maximum_run_minutes: 60
+cohort:
+  expected_total_rows: 2000
+  expected_included_rows: 1966
+  expected_excluded_rows: 34
+  expected_included_ranking_rows: 983
+  expected_included_reranking_rows: 983
+  expected_matched_ranking_rows: 977
+  expected_matched_reranking_rows: 977
+  full_cohort_id: plan_e2_sasrec_strict_causal_full
+  matched_cohort_id: plan_e2_sasrec_strict_causal_matched
+checkpoint_path: results/models/plan_e_sasrec_beauty/model_state.pt
+metadata_path: results/models/plan_e_sasrec_beauty/metadata.json

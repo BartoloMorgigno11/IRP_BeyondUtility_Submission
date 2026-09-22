@@ -1,0 +1,84 @@
+# Beauty ranking config for the constrained reproduction path.
+# File-level dataset paths that are still unaudited are kept as null.
+
+dataset:
+  name: beauty
+  # Project-local directories; they may be empty until data preparation/audit.
+  raw_dir: data/raw/beauty
+  processed_dir: data/processed/beauty
+  sample_dir: data/samples/beauty
+  # Fill these after dataset audit confirms the canonical files and schemas.
+  interactions_path: null
+  catalog_path: null
+  candidates_path: null
+  ground_truth_path: null
+  # Existing upstream archives inspected in report/codebase_map.md.
+  llm_outputs_path: original_repo/EvaLLMasRecommender/llm_results/beauty.zip
+  baseline_outputs_path: original_repo/EvaLLMasRecommender/sota_results/beauty_his10.zip
+
+paths:
+  # Project-local directories; they may be empty until data preparation/audit.
+  raw_dir: data/raw/beauty
+  processed_dir: data/processed/beauty
+  sample_dir: data/samples/beauty
+  # Fill these after dataset audit confirms the canonical files and schemas.
+  interactions_path: null
+  catalog_path: null
+  candidates_path: null
+  ground_truth_path: null
+  # Existing upstream archives inspected in report/codebase_map.md.
+  llm_outputs_path: original_repo/EvaLLMasRecommender/llm_results/beauty.zip
+  baseline_outputs_path: original_repo/EvaLLMasRecommender/sota_results/beauty_his10.zip
+
+original_repo:
+  root: original_repo/EvaLLMasRecommender
+  # The expanded upstream data directory is not present in the current checkout.
+  data_dir: null
+  llm_results_dir: original_repo/EvaLLMasRecommender/llm_results
+  sota_results_dir: original_repo/EvaLLMasRecommender/sota_results
+
+experiment:
+  task: ranking
+  k_values: [5]
+  seed: 42
+  sample_size: null
+  allow_api_calls: false
+
+api:
+  allow_api_calls: false
+  provider: null
+  model: null
+  api_key_env_var: null
+
+models:
+  llm_outputs:
+    - model_name: gpt3.5
+      source_file: original_repo/EvaLLMasRecommender/llm_results/beauty.zip
+      archive_member: beauty/results_gpt3.5_seed0_test_history10_candidate20_shuffle_sample.json
+      prompt_variant: history10_candidate20
+      candidate_ordering: shuffle
+      history_length: 10
+      run_id: gpt3.5_seed0_history10_candidate20_shuffle_sample
+  baselines: [mostpop]
+  baseline_outputs:
+    # Available in the upstream ZIP, but alignment must be confirmed by dataset audit.
+    - model_name: BPRMF
+      source_file: original_repo/EvaLLMasRecommender/sota_results/beauty_his10.zip
+      archive_member: beauty_his10/rec-BPRMF-history10-shuffleFalse-seed0.csv
+      history_length: 10
+      seed: 0
+
+metrics:
+  utility: [hr, ndcg]
+  beyond_utility: [hallucination, coverage]
+  matching_protocols: [exact, normalized, fuzzy]
+
+output:
+  metrics_dir: results/metrics
+  tables_dir: results/tables
+  plots_dir: results/plots
+  raw_outputs_dir: results/raw_outputs
+  dataset_audit_path: results/tables/beauty_dataset_audit.csv
+  metrics_path: results/metrics/beauty_reproduction_metrics.csv
+  summary_path: results/tables/beauty_reproduction_summary.csv
+  analysis_path: report/results_analysis.md

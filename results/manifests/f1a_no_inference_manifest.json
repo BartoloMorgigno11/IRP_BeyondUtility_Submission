@@ -1,0 +1,51 @@
+{
+  "artifact_hashes": {
+    "report/f1a_offline_metric_closure.md": "5580dc16061d02106fa6fe77e7ab8c034c9c65b228ec69979f9e4eab907d7f3b",
+    "results/tables/f1a_foodcom_completeness.csv": "b6c2a20a59ef197595cd753c4f945b78437bc2b4ebc0f346f7400d39960ff969",
+    "results/tables/f1a_metric_dataset_applicability.csv": "d255c1e41997ccc45a04a15c5db757e44ff07569b460e5515f1bdc426853212f",
+    "results/tables/f1a_metric_formula_registry.csv": "c891324ee648e64f9769fc78272de9fcb0c399bf45ec88cbc7c670cc20895169",
+    "results/tables/f1a_metric_resolution_audit.csv": "eaab22e1e6035ea815a306ceb9026f74fae31d5e90a5b7100b9abec0cdbef969",
+    "results/tables/f1a_offline_metric_results.csv": "a377605b7648649457a8eb41325dbb1f8cd118453c3e04d22e1175201fb959a2",
+    "results/tables/f1a_original_four_completeness.csv": "cb1a2b5852ab9033ee41de38c32625ce6998cbebcff08be664b39441c7731b92",
+    "results/tables/f1a_raw_source_mapping.csv": "69bea59641b629a59bfaf56179ebf31331bdec76fbab3ecbf9e2586d58bbcf8a",
+    "results/tables/f1a_remaining_blockers.csv": "1073b980ebb60a626a8751b76731818b0d3fa195c51fdf865ba3532cd20ef5a5",
+    "results/tables/f1a_result_cell_readiness.csv": "e8398bd85ae034371ec3ca958141dc29d84743d270eb444cfa5bccc0beb4d7cf",
+    "results/tables/f1a_validation.csv": "bdd616183630998ff481e259f39481603927f75b0ca17dcbce7612ce5fd43bc0"
+  },
+  "commit_created": 0,
+  "decision_token": "F1A_OFFLINE_METRIC_CLOSURE_VALIDATED",
+  "downloads_executed": 0,
+  "expected_f0_checkpoint_head": "6b489f507c41911f5571e136a02986119d3233ac",
+  "f0_manifest_head": "30d6c3e5fcb0e97451a4420829b88de10bb57213",
+  "f0_raw_request_budget_changed": 0,
+  "f1ar_update": {
+    "avoidable_ks_blockers": 0,
+    "decision_token": "F1A_FINAL_OFFLINE_CLOSURE_VALIDATED",
+    "ks_original_four_result_rows_added": 8,
+    "phase_id": "f1ar_offline_closure_sanity"
+  },
+  "f1arr_update": {
+    "adds_llm_requests": 0,
+    "decision_token": "F1ARR_POPREO_DPD_RECOVERED",
+    "dpd_protocol_recovered": true,
+    "global_metric_blockers_removed": true,
+    "phase_id": "f1arr_popreo_dpd_recovery",
+    "popreo_protocol_recovered": true
+  },
+  "head": "6b489f507c41911f5571e136a02986119d3233ac",
+  "llm_inference_calls_executed": 0,
+  "network_calls_executed": 0,
+  "phase_id": "f1a_offline_metric_closure",
+  "readiness_counts": {
+    "COMPUTED_F1A": 286,
+    "DEGENERATE_PROTOCOL_INPUT": 91,
+    "IMPLEMENTATION_READY_AWAITING_RAW": 810,
+    "NOT_APPLICABLE": 287,
+    "READY_AFTER_TRAINING_RAW": 1815,
+    "READY_FROM_NEW_RAW": 5649
+  },
+  "result_cell_rows": 8938,
+  "training_runs_executed": 0,
+  "validation_failures": [],
+  "validation_passed": true
+}

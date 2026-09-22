@@ -1,0 +1,14 @@
+checkpoint,requests_expected,requests_accounted,valid,invalid,missing,raw_count,retry_nonzero,backend_incomplete,backend_failed,wrong_length,out_of_range,duplicate,parse_failure,item_id_substitution_values,new_rows_terminal,new_rows_valid,new_rows_invalid
+before_resume,1200,600,597,3,600,600,0,0,0,0,2,1,0,20,0,0,0
+after_batch_001,1200,650,647,3,550,650,0,0,0,0,2,1,0,20,50,50,0
+after_batch_002,1200,700,697,3,500,700,0,0,0,0,2,1,0,20,100,100,0
+after_batch_003,1200,750,747,3,450,750,0,0,0,0,2,1,0,20,150,150,0
+after_batch_004,1200,800,797,3,400,800,0,0,0,0,2,1,0,20,200,200,0
+after_batch_005,1200,850,847,3,350,850,0,0,0,0,2,1,0,20,250,250,0
+after_batch_006,1200,900,897,3,300,900,0,0,0,0,2,1,0,20,300,300,0
+after_batch_007,1200,950,947,3,250,950,0,0,0,0,2,1,0,20,350,350,0
+after_batch_008,1200,1000,997,3,200,1000,0,0,0,0,2,1,0,20,400,400,0
+after_batch_009,1200,1050,1046,4,150,1050,0,0,0,1,2,1,0,20,450,449,1
+after_batch_010,1200,1100,1096,4,100,1100,0,0,0,1,2,1,0,20,500,499,1
+after_batch_011,1200,1150,1145,5,50,1150,0,0,0,1,2,2,0,20,550,548,2
+after_batch_012,1200,1200,1195,5,0,1200,0,0,0,1,2,2,0,20,600,598,2

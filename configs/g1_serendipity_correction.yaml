@@ -1,0 +1,11 @@
+source_fix_reference: 8d69d2c22b68164e19d4875dd7b5453b8ac28c5a
+base_commit: 944798f3e754576beef2a03bd5a00811a285b1e6
+affected_metric: serendipity_at_5
+affected_cells: 30
+paths:
+  artifact: results/tables/g1_primary_ranking_beyond_utility.csv
+  cells: results/tables/audit_figure2_serendipity_cells.csv
+  contributions: results/tables/audit_figure2_serendipity_user_contingency.csv
+  regression: results/tables/g1_serendipity_fix_regression_check.csv
+  source_file: src/extension/f1bx_execution_stage1.py
+allow_api_calls: false

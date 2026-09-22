@@ -1,0 +1,8 @@
+status,historical_evidence_note,cells,raw_requests,reusable_identical_raw_requests,to_compute_raw_requests,blocked_raw_requests
+TO_COMPUTE,ML-1M 20-user diagnostic subset and candidate-ID contract,4,800,0,800,0
+TO_COMPUTE,ML-1M 20-user diagnostic subset and candidate-ID contract; pilot scope and fifth-dataset context; not full four-dataset final history matrix,2,400,0,400,0
+TO_COMPUTE,no historical Gemma final-history output found,12,2400,0,2400,0
+TO_COMPUTE,no protocol-identical historical raw output found,10,2000,0,2000,0
+TO_COMPUTE,pilot scope and fifth-dataset context; not full four-dataset final history matrix,26,5200,0,5200,0
+TO_COMPUTE,"pilot scope and fifth-dataset context; not full four-dataset final history matrix; top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid",8,1600,0,1600,0
+TO_COMPUTE,"top5 output/parser, 100 users/cell, Qwen+Mistral only, partial length grid",10,2000,0,2000,0

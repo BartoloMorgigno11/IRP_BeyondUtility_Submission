@@ -1,0 +1,32 @@
+output_family,dataset,classification,reason,model
+candidate20_ranking_utility,all,VALID_AS_IS,Candidate20 HR@5/NDCG@5/MRR remain valid for the frozen ranking task.,
+candidate20_beyond_utility,all,VALID_AS_IS,Candidate20 beyond-utility results remain valid with explicit degenerate cells.,
+f1bz_100_training_checkpoints,all,VALID_AS_IS,Checkpoint hashes remain unchanged; no parameter updates were executed.,
+old_reranking_pools,all,SUPERSEDED_RERANKING_SOURCE_DEFECT,Old pools were derived from forced-positive candidate20 first-stage rankings.,
+old_candidate_recall,all,SUPERSEDED_RERANKING_SOURCE_DEFECT,Old Candidate Recall@20 was tautological under candidate20 source rankings.,
+full_catalog_retrieval,beauty,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,BPRMF
+full_catalog_retrieval,beauty,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,GRU4Rec
+full_catalog_retrieval,beauty,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,SASRec
+full_catalog_retrieval,beauty,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,LightGCN
+full_catalog_retrieval,sports,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,BPRMF
+full_catalog_retrieval,sports,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,GRU4Rec
+full_catalog_retrieval,sports,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,SASRec
+full_catalog_retrieval,sports,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,LightGCN
+full_catalog_retrieval,ml1m,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,BPRMF
+full_catalog_retrieval,ml1m,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,GRU4Rec
+full_catalog_retrieval,ml1m,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,SASRec
+full_catalog_retrieval,ml1m,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,LightGCN
+full_catalog_retrieval,lastfm,CORRECTED_F1BZC,The checkpoint item map covers the raw catalog; full-catalog adapter can score it.,BPRMF
+full_catalog_retrieval,lastfm,CORRECTED_F1BZC,The checkpoint item map covers the raw catalog; full-catalog adapter can score it.,GRU4Rec
+full_catalog_retrieval,lastfm,CORRECTED_F1BZC,The checkpoint item map covers the raw catalog; full-catalog adapter can score it.,SASRec
+full_catalog_retrieval,lastfm,CORRECTED_F1BZC,The checkpoint item map covers the raw catalog; full-catalog adapter can score it.,LightGCN
+full_catalog_retrieval,foodcom,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,BPRMF
+full_catalog_retrieval,foodcom,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,GRU4Rec
+full_catalog_retrieval,foodcom,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,SASRec
+full_catalog_retrieval,foodcom,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,The raw catalog contains items absent from the frozen checkpoint item embedding table.,LightGCN
+new_candidate_recall,beauty,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,No raw full-catalog pool could be produced without invented item embeddings.,
+new_candidate_recall,sports,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,No raw full-catalog pool could be produced without invented item embeddings.,
+new_candidate_recall,ml1m,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,No raw full-catalog pool could be produced without invented item embeddings.,
+new_candidate_recall,lastfm,BLOCKED_ADAPTED_POOL_SINGLE_MODEL_DOMINANCE,Recall is non-tautological but not authoritative because the adapted pool algorithm is single-model dominated.,
+new_candidate_recall,foodcom,BLOCKED_SCIENTIFIC_ITEM_UNIVERSE_COVERAGE,No raw full-catalog pool could be produced without invented item embeddings.,
+new_reranking_pools,all,BLOCKED_ADAPTED_POOL_SINGLE_MODEL_DOMINANCE,F1BR adapted pool policy is single-model dominated when applied exactly.,

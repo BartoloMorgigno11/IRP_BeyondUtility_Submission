@@ -1,0 +1,73 @@
+phase:
+  id: phase_f6i2c
+  name: phase_f6i2c_archive_bundle_verification_and_migration_design
+  expected_branch: plan-d-extensions
+  expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  interpreter_path: .venv_audit_recovery/Scripts/python.exe
+  runtime_classification: defensible_repaired_clone_exact_package_versions
+  decision_tokens:
+    complete_ready: f6i2c_archive_verification_complete_ready_for_migration
+    complete_partial_ready: f6i2c_archive_verification_complete_partial_ready
+    blocked_no_safe: f6i2c_archive_verification_blocked_no_safe_candidates
+    failed_protected_input_change: f6i2c_failed_protected_input_change
+
+inputs:
+  f6i1_inventory: results/tables/phase_f6i1_relevant_file_inventory.csv
+  f6i1_edges: results/tables/phase_f6i1_dependency_edges.csv
+  f6i1_retention: results/tables/phase_f6i1_retention_classification.csv
+  f6i1_future_map: results/tables/phase_f6i1_future_dependency_map.csv
+  f6i1_validation: results/tables/phase_f6i1_validation.csv
+  f6i1_manifest: results/manifests/phase_f6i1_initial_capture.json
+  f6i1_report: report/phase_f6i1_repository_retention_audit_and_safe_cleanup_batch1.md
+  f6i2a_archive_bundle: results/tables/phase_f6i2a_archive_bundle.csv
+  f6i2a_retention_decisions: results/tables/phase_f6i2a_retention_decisions.csv
+  f6i2a_source_file_audit: results/tables/phase_f6i2a_source_file_audit.csv
+  f6i2a_future_dependency_protection: results/tables/phase_f6i2a_future_dependency_protection.csv
+  f6i2a_phase_family_consolidation: results/tables/phase_f6i2a_phase_family_consolidation.csv
+  f6i2a_markdown_audit: results/tables/phase_f6i2a_markdown_audit.csv
+  f6i2a_agents_codex_audit: results/tables/phase_f6i2a_agents_codex_audit.csv
+  f6i2a_results_manifest_audit: results/tables/phase_f6i2a_results_manifest_audit.csv
+  f6i2a_manual_review: results/tables/phase_f6i2a_manual_review.csv
+  f6i2a_target_repository_architecture: results/tables/phase_f6i2a_target_repository_architecture.csv
+  f6i2a_manifest: results/manifests/phase_f6i2a_consolidation_design_manifest.json
+  f6i2a_report: report/phase_f6i2a_substantive_repository_consolidation_design.md
+  f6i2b_candidate_preflight: results/tables/phase_f6i2b_candidate_preflight.csv
+  f6i2b_deletion_actions: results/tables/phase_f6i2b_deletion_actions.csv
+  f6i2b_rejected_candidates: results/tables/phase_f6i2b_rejected_candidates.csv
+  f6i2b_reference_validation: results/tables/phase_f6i2b_reference_validation.csv
+  f6i2b_future_dependency_validation: results/tables/phase_f6i2b_future_dependency_validation.csv
+  f6i2b_validation: results/tables/phase_f6i2b_validation.csv
+  f6i2b_manifest: results/manifests/phase_f6i2b_deletion_manifest.json
+  f6i2b_protected_hashes: results/manifests/phase_f6i2b_protected_input_hashes.json
+  f6i2b_report: report/phase_f6i2b_low_risk_substantive_deletion.md
+  handoff: report/future_operations_context_handoff.md
+  current_context_snapshot: results/manifests/current_project_context_snapshot.json
+
+archive_architecture:
+  root: archive
+  path_policy: preserve_original_relative_path_under_category
+  categories:
+    phase_reports: archive/phase_reports
+    codex: archive/codex
+    decisions: archive/decisions
+    configs: archive/configs
+    results: archive/results
+    manifests: archive/manifests
+    miscellaneous: archive/miscellaneous
+
+policy:
+  no_moves: true
+  no_renames: true
+  no_copies: true
+  no_deletes: true
+  no_merges: true
+  no_reference_rewrites: true
+  no_training: true
+  no_llm_inference: true
+  no_ollama: true
+  no_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  no_git_stage_or_commit: true
+  expected_archive_candidate_unique_paths: 179
+  expected_f6i2b_deleted_candidates: 8

@@ -1,0 +1,8 @@
+dataset,stage,status,required_inputs_found,outputs_written,metrics_written,notes,timestamp
+ml1m,canonical_inputs,ready,True,data\processed\ml1m\interactions.csv;data\processed\ml1m\ground_truth.csv;data\processed\ml1m\candidates.csv;data\processed\ml1m\catalog.csv;data\processed\ml1m,False,All canonical ML-1M processed files are present.,2026-06-29T00:41:02.210961+00:00
+ml1m,preprocessing,skipped,True,,False,Canonical processed files already exist; preprocessing was not rerun.,2026-06-29T00:41:02.210961+00:00
+ml1m,random,completed,True,results\raw_outputs\ml1m_random_recommendations.csv;results\metrics\ml1m_random_metrics.csv;results\tables\ml1m_random_baseline_summary.csv,True,random refreshed 2 metric row(s).,2026-06-29T00:41:02.210961+00:00
+ml1m,mostpop,completed,True,results\raw_outputs\ml1m_mostpop_recommendations.csv;results\metrics\ml1m_mostpop_metrics.csv;results\tables\ml1m_mostpop_baseline_summary.csv,True,mostpop refreshed 2 metric row(s).,2026-06-29T00:41:02.210961+00:00
+ml1m,content_bm25,completed,True,results\raw_outputs\ml1m_content_bm25_recommendations.csv;results\metrics\ml1m_content_bm25_metrics.csv;results\tables\ml1m_content_bm25_baseline_summary.csv,True,content_bm25 refreshed 2 metric row(s).,2026-06-29T00:41:02.210961+00:00
+ml1m,comparison,completed,True,results\tables\ml1m_baseline_comparison_summary.csv,False,Rebuilt comparison table from real metric files with 6 available row(s) and 0 missing diagnostic row(s).,2026-06-29T00:41:02.210961+00:00
+ml1m,plots,completed,True,results\plots\ml1m_baseline_hr_at_5.png;results\plots\ml1m_baseline_ndcg_at_5.png;results\plots\ml1m_baseline_comparison.png,False,Generated 3 plot(s) from real comparison rows.,2026-06-29T00:41:02.210961+00:00

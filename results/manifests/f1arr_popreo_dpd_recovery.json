@@ -1,0 +1,31 @@
+{
+  "artifact_hashes": {
+    "report/f1arr_popreo_dpd_recovery.md": "0528cae4eb06f25e5d68ba403f0f9ecb11b123c0d4c90892d4a023c76c3a34d8",
+    "results/tables/f1arr_dpd_group_audit.csv": "effd9abd8528084d6368bb4e370de38e54441598029ddf850e4b5a215b8320fb",
+    "results/tables/f1arr_dpd_protocol_recovery.csv": "dcdc26340c9271fbb7f70c7acf09a20332a865f11d6b677ef6fc98c3f431a93a",
+    "results/tables/f1arr_final_degenerate_metric_cells.csv": "342734e93ea73d5afdcb9342ab26533fbe58234b78f5f0e55a8fb0e4ab5cc724",
+    "results/tables/f1arr_final_metric_blockers.csv": "77bf22b82cdfad086cdd023a4376c2c2d6ec4718f6db903be7a58c0e0f539456",
+    "results/tables/f1arr_popreo_degenerate_cases.csv": "589dbeaec3dd14ed36027e4f07c8f6126b281db92b5786928b35b83ad2e8489d",
+    "results/tables/f1arr_popreo_group_occupancy.csv": "c7bd68b12607c79635cf6c61d29920f4bfbff7437696fa8629cfd0a2e08b0d11",
+    "results/tables/f1arr_popreo_protocol_recovery.csv": "9738aa0c86d4980199ce5c77a6bcf44313ee90e7044044cb6432d2330f7255e6",
+    "results/tables/f1arr_validation.csv": "7028b642c2f8b6bdd450adcc89d22726b64ce2a002b2aea90a19ee4cbbe0b948"
+  },
+  "commit_created": 0,
+  "decision_token": "F1ARR_POPREO_DPD_RECOVERED",
+  "downloads_executed": 0,
+  "dpd_degenerate_cohort_rows": 3,
+  "dpd_group_audit_rows": 10,
+  "expected_f1a_checkpoint_head": "38d601439edf93aa68107c550f5a45743da089e3",
+  "f0_raw_request_budget_changed": 0,
+  "final_degenerate_metric_cell_rows": 91,
+  "global_metric_blockers": 0,
+  "head": "38d601439edf93aa68107c550f5a45743da089e3",
+  "llm_inference_calls_executed": 0,
+  "network_calls_executed": 0,
+  "phase_id": "f1arr_popreo_dpd_recovery",
+  "popreo_degenerate_case_rows": 19,
+  "popreo_group_occupancy_rows": 10,
+  "training_runs_executed": 0,
+  "validation_failures": [],
+  "validation_passed": true
+}

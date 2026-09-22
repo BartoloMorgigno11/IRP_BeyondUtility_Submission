@@ -1,0 +1,75 @@
+phase:
+  id: f1bzq_authoritative_reranking_pool_materialization
+  predecessor_state: F1BZP_PROTOCOL_CHECKPOINT_FROZEN
+  expected_head: b85ba3bc18653d40af6aa905a42b5e71d0a7be9d
+  phase_start_clean_verified: true
+  phase_start_clean_evidence: git status --short --untracked-files=all returned empty before F1BZQ source/config edits
+  success_token: F1BZQ_AUTHORITATIVE_RERANKING_POOLS_VALIDATED
+  blocked_token: F1BZQ_AUTHORITATIVE_RERANKING_POOLS_BLOCKED
+
+execution:
+  allow_checkpoint_loading: true
+  allow_traditional_checkpoint_scoring: true
+  allow_traditional_training: false
+  allow_tuning: false
+  allow_final_test_evaluation_for_training_selection: false
+  allow_llm_inference: false
+  allow_ollama_recommendation_calls: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network: false
+  allow_commit: false
+  device_policy: cuda_if_available_else_cpu
+
+inputs:
+  f1bz_config: configs/f1bz_final_traditional_execution.yaml
+  f1bz_manifest: results/manifests/f1bz_final_traditional_execution.json
+  f1bz_no_llm_manifest: results/manifests/f1bz_no_llm_inference.json
+  f1bza_manifest: results/manifests/f1bza_post_execution_audit.json
+  f1bza_zero_history_summary: results/tables/f1bza_foodcom_zero_history_summary.csv
+  f1bzc_manifest: results/manifests/f1bzc_full_catalog_recovery.json
+  f1bzc_candidate_recall: results/tables/f1bzc_candidate_recall.csv
+  f1bzp_manifest: results/manifests/f1bzp_reranking_protocol_resolution.json
+  f1bzp_checkpoint_vocab_audit: results/tables/f1bzp_checkpoint_vocab_audit.csv
+  f1bzp_representable_readiness: results/tables/f1bzp_representable_catalog_readiness.csv
+  f1bzp_pool_policy_resolution: results/tables/f1bzp_pool_policy_resolution.csv
+  f0_request_budget: results/tables/f0_final_request_budget.csv
+  f0_reranking_matrix: results/tables/f0_final_reranking_matrix.csv
+
+source_policy:
+  policy_id: F1BZQ_REPRESENTABLE_FULL_CATALOG_FIVE_SEED_MEAN
+  checkpoint_seed_policy: F1BZ_FIVE_SEED_MEAN_SCORE_THEN_FROZEN_MODEL_ORDER
+  seeds: [42, 43, 44, 45, 46]
+  source_depth_from_f1bzp: true
+  retrievable_universe: eligible_catalog_intersect_checkpoint_item_vocabulary_minus_pretest_seen
+  deterministic_tie_break: score_desc_item_id_asc_rank_position_asc
+  force_positive: false
+  target_identity_used_for_ranking: false
+
+pool_policy:
+  source: results/tables/f1bzp_pool_policy_resolution.csv
+  policy_id: ADAPTED_BALANCED_MULTI_MODEL_RERANKING_POOL
+  algorithm_id: BALANCED_RANK_ROUND_ROBIN_UNIQUE_20
+  model_order: [BPRMF, GRU4Rec, SASRec, LightGCN]
+  source_depth: 20
+  final_pool_size: 20
+  duplicate_policy: skip_duplicate_continue_round_robin_until_unique20_or_exhausted
+  insufficient_unique_policy: POOL_UNDERFILLED
+  candidate_order_immutable_for_llm: true
+  force_positive: false
+  target_identity_used: false
+
+outputs:
+  source_ranking_dir: results/raw_outputs/f1bzq_source_rankings
+  pool_dir: results/raw_outputs/f1bzq_reranking_pools
+  request_manifest: results/tables/f1bzq_reranking_request_manifest.csv
+  candidate_manifest: results/tables/f1bzq_reranking_candidate_manifest.csv
+
+request_budget:
+  CORE_MANDATORY: 29292
+  REQUIRED_SENSITIVITY: 21000
+  MANDATORY_TOTAL: 50292
+  TRAINING_DEPENDENT: 29292
+  CONDITIONAL: 9000
+  OPTIONAL: 12000
+  CONCEPTUAL_ALL_APPLICABLE: 100584

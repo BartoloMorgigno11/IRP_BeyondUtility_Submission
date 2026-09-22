@@ -1,0 +1,6 @@
+dataset,display_name,active,role,primary_cohort_size,history_paired_cohort_size,strict_paired_l20_eligible_users,active_raw_experiment_count_d1,active_cell_count_d1,canonical_candidate_pool_size,status,evidence_source
+beauty,Amazon Beauty,true,original_four,990,200,,16,214,20,ACTIVE,results/tables/d1_active_dataset_audit.csv;results/tables/extension_h0_dataset_l20_feasibility.csv;results/tables/d0a_foodcom_history200_feasibility.csv
+sports,Amazon Sports,true,original_four,892,200,,16,214,20,ACTIVE,results/tables/d1_active_dataset_audit.csv;results/tables/extension_h0_dataset_l20_feasibility.csv;results/tables/d0a_foodcom_history200_feasibility.csv
+ml1m,ML-1M,true,original_four,1000,200,,14,200,20,ACTIVE,results/tables/d1_active_dataset_audit.csv;results/tables/extension_h0_dataset_l20_feasibility.csv;results/tables/d0a_foodcom_history200_feasibility.csv
+lastfm,LastFM,true,original_four,1000,200,,16,214,20,ACTIVE,results/tables/d1_active_dataset_audit.csv;results/tables/extension_h0_dataset_l20_feasibility.csv;results/tables/d0a_foodcom_history200_feasibility.csv
+foodcom,Food.com,true,fifth_dataset,1000,200,6387,52,700,20,ACTIVE,results/tables/d1_active_dataset_audit.csv;results/tables/extension_h0_dataset_l20_feasibility.csv;results/tables/d0a_foodcom_history200_feasibility.csv

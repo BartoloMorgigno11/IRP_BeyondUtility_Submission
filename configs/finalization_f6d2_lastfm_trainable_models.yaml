@@ -1,0 +1,64 @@
+phase: finalization_f6d2
+dataset:
+  name: LastFM
+  train_file: data/processed/finalization_f6c_lastfm_train.csv
+  validation_file: data/processed/finalization_f6c_lastfm_validation.csv
+  test_file: data/processed/finalization_f6c_lastfm_test.csv
+  catalog_file: data/processed/finalization_f6c_lastfm_catalog.csv
+  ranking_cohort_file: data/processed/finalization_f6c_lastfm_ranking_cohort.csv
+  ranking_candidates_file: data/processed/finalization_f6c_lastfm_ranking_candidates.csv
+models:
+  order:
+    - bprmf
+    - gru4rec
+    - sasrec
+    - lightgcn
+  paper_names:
+    bprmf: BPRMF
+    gru4rec: GRU4Rec
+    sasrec: SASRec
+    lightgcn: LightGCN
+seed_policy:
+  seeds: [42, 43, 44, 45, 46]
+  paper_run_count_equivalent: true
+  paper_seed_identity_equivalent: false
+training:
+  device: cpu
+  epoch_limit: 1
+  smoke_epoch_limit: 1
+  embedding_dimension: 16
+  hidden_dimension: 16
+  sequence_length: 20
+  number_of_layers: 1
+  dropout: 0.0
+  learning_rate: 0.03
+  batch_size: 4096
+  optimizer: Adam
+  regularization: 0.0001
+  negative_sampling: uniform_unobserved_train_item
+early_stopping:
+  metric: validation_hr_at_5_full_catalog
+  patience: 0
+  test_based: false
+candidate_evaluation:
+  cutoff: 5
+  candidate_count: 20
+  cohort_name: finalization_f6c_lastfm_ranking_cohort
+  candidate_set_name: finalization_f6c_lastfm_ranking_candidates_20
+full_catalog_retrieval:
+  top_n: 100
+  export_policy: selected_best_validation_seed_per_model
+  exclude_train_history: true
+  exclude_validation_item: true
+  exclude_test_positive: false
+reranking_pool:
+  policy: adapted_multi_model_round_robin_union
+  candidate_count: 20
+  model_order: [bprmf, gru4rec, sasrec, lightgcn]
+  source_seed_policy: best_validation_seed_per_model
+  deduplication: first_occurrence
+  use_test_positive_for_construction: false
+checkpoint_policy:
+  root: results/checkpoints/finalization_f6d2_lastfm
+  overwrite_existing: false
+  second_run_mode: load_checkpoint_and_regenerate_outputs

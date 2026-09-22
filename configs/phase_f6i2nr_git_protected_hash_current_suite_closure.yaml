@@ -1,0 +1,25 @@
+phase:
+  id: phase_f6i2nr
+  name: phase_f6i2nr_git_protected_hash_current_suite_closure
+  purpose: git protected-hash current-suite closure after F6I2N
+
+runtime:
+  interpreter: .venv_audit_recovery/Scripts/python.exe
+  python_no_user_site: true
+  python_dont_write_bytecode: true
+  classification: defensible_repaired_clone_exact_package_versions
+  not_exact_original_runtime: true
+
+policy:
+  preserve_historical_f6i2m_evidence: true
+  preserve_historical_f6i2n_evidence: true
+  no_wrapper_removal: true
+  no_yaml_consolidation: true
+  no_training_inference_download_or_package_change: true
+
+expected:
+  branch: plan-d-extensions
+  head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  f6i2n_wrappers_inventoried: 551
+  f6i2n_safe_removal_bundles: 0
+  next_phase_after_closure: phase_f6i2o_yaml_config_consolidation_after_explicit_approval

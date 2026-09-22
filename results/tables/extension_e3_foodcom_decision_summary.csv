@@ -1,0 +1,2 @@
+evidence_label,decision_token,reason,run_started_at,run_completed_at,primary_dataset,backup_dataset,processed_tree_sha256,commit_policy
+POST-F6M DATASET-5 EXTENSION EVIDENCE,EXTENSION_E3_FOODCOM_ACQUISITION_BLOCKED,Manual source directory is missing: data/raw/foodcom/source,2026-08-17T16:17:13+00:00,2026-08-17T16:17:14+00:00,Food.com,Steam reviews/interactions,,NONE

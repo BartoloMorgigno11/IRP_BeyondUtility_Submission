@@ -1,0 +1,99 @@
+phase:
+  id: f1bx_traditional_execution_stage1
+  expected_head: 61fbde6d048faaed9e20508484efc90fa95fa5bf
+  predecessor_state: F1BR_TRADITIONAL_PROTOCOL_RESOLVED
+  validated_token: F1BX_TUNING_AND_BASELINES_VALIDATED
+  blocked_token: F1BX_TUNING_AND_BASELINES_BLOCKED
+  phase_start_clean_confirmation: git status --short --untracked-files=all was empty before F1BX edits
+
+execution:
+  allow_deterministic_baseline_execution: true
+  allow_foodcom_validation_tuning: true
+  allow_final_five_seed_training: false
+  allow_original_four_final_training: false
+  allow_llm_inference: false
+  allow_ollama_recommendation_calls: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network: false
+  allow_historical_full_suite: false
+  allow_commit: false
+
+datasets:
+  - name: beauty
+    display_name: Amazon Beauty
+    cohort_id: beauty_primary_990
+    evaluation_users: 990
+    candidate_source: results/tables/plan_e_beauty_1000user_ranking_manifest.csv
+    cohort_filter_source: results/tables/canonical_llm_cohort_preflight.csv
+    interaction_source: data/reconstructed/plan_c/amazon_beauty/interactions.csv
+    catalog_source: data/reconstructed/plan_c/amazon_beauty/catalog.csv
+    feature_source: categories
+    bm25_text_source: normalized_text
+  - name: sports
+    display_name: Amazon Sports
+    cohort_id: sports_primary_892
+    evaluation_users: 892
+    candidate_source: results/tables/plan_e_sports_1000user_ranking_manifest.csv
+    cohort_filter_source: results/tables/canonical_llm_cohort_preflight.csv
+    interaction_source: data/reconstructed/plan_c/amazon_sports/interactions.csv
+    catalog_source: data/reconstructed/plan_c/amazon_sports/catalog.csv
+    feature_source: categories
+    bm25_text_source: normalized_text
+  - name: ml1m
+    display_name: ML-1M
+    cohort_id: ml1m_primary_1000
+    evaluation_users: 1000
+    candidate_source: results/tables/plan_e_ml1m_1000user_ranking_manifest.csv
+    cohort_filter_source: results/tables/canonical_llm_cohort_preflight.csv
+    interaction_source: data/reconstructed/plan_c/ml1m/interactions.csv
+    catalog_source: data/reconstructed/plan_c/ml1m/catalog.csv
+    feature_source: categories
+    bm25_text_source: normalized_text
+  - name: lastfm
+    display_name: LastFM
+    cohort_id: lastfm_primary_1000
+    evaluation_users: 1000
+    candidate_source: data/processed/finalization_f6c_lastfm_ranking_candidates.csv
+    cohort_filter_source: results/tables/phase_f6l_lastfm_operationalized_sample_cohort.csv
+    interaction_source: data/processed/finalization_f6c_lastfm_train.csv
+    catalog_source: data/processed/finalization_f6c_lastfm_catalog.csv
+    feature_source: tag_values
+    bm25_text_source: normalized_text
+  - name: foodcom
+    display_name: Food.com
+    cohort_id: foodcom_primary_1000
+    evaluation_users: 1000
+    candidate_source: results/tables/d0a_foodcom_primary1000_candidates.csv
+    cohort_filter_source: results/tables/d0a_foodcom_primary1000_users.csv
+    interaction_source: data/raw/foodcom/d0a_extracted/e7a43e623c61/RAW_interactions.csv
+    catalog_source: data/raw/foodcom/d0a_extracted/e7a43e623c61/RAW_recipes.csv
+    feature_source: RAW_recipes.tags
+    bm25_text_source: RAW_recipes.tags
+
+baselines:
+  Random:
+    seed: 42
+    score_definition: sha256(seed,dataset,user_id,candidate_item_id)
+    tie_breaking: descending_score_then_candidate_position_then_item_id
+  MostPop:
+    score_definition: train_split_only_item_frequency
+    tie_breaking: descending_frequency_then_candidate_position_then_item_id
+  BM25-like/content:
+    k1: 1.5
+    b: 0.75
+    tie_breaking: descending_score_then_candidate_position_then_item_id
+    foodcom_text_policy: RAW_recipes.tags
+
+foodcom_tuning:
+  frozen_search_space_source: results/tables/f1br_foodcom_search_space.csv
+  frozen_contract_source: results/tables/f1br_foodcom_tuning_contract.csv
+  tuning_seed: 42
+  selection_metric: validation_ndcg_at_5
+  tie_breaking: higher_validation_ndcg_at_5_then_lower_search_config_id_lexicographic
+  validation_candidate_contract_required: true
+  missing_validation_candidate_contract_status: BLOCKED_NOT_EXECUTED_MISSING_VALIDATION_CANDIDATE_CONTRACT
+  protected_split_sources:
+    train: data/raw/foodcom/d0a_extracted/e7a43e623c61/interactions_train.csv
+    validation: data/raw/foodcom/d0a_extracted/e7a43e623c61/interactions_validation.csv
+    test: data/raw/foodcom/d0a_extracted/e7a43e623c61/interactions_test.csv

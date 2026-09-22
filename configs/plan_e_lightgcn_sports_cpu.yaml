@@ -1,0 +1,75 @@
+experiment_id: plan_e_lightgcn_sports_cpu
+model_id: lightgcn_reconstructed_sports_strict_connected_cpu
+dataset: Amazon Sports
+paper_alignment: adapted_paper_like_reconstructed
+configuration_provenance:
+  selected_basis: configs/plan_e_lightgcn_ml1m_pilot.yaml
+  selected_basis_experiment: plan_e_lightgcn_ml1m_pilot
+  cpu_scale_up_decision: results/tables/plan_e_lightgcn_ml1m_cuda_first_step_decision.csv
+  adapter_preflight_report: report/plan_e_lightgcn_adapter_preflight.md
+  adapter_preflight_rows: results/tables/plan_e_lightgcn_row_compatibility.csv
+  controlled_scale_up_policy: Preserve Phase 3M hyperparameters, change only dataset-specific paths and force CPU execution.
+implementation_path: src/baselines/plan_d_lightgcn.py
+adapter_path: src/baselines/plan_e_lightgcn_adapter.py
+training_module_path: src/baselines/plan_e_lightgcn_training.py
+training_data_path: data/reconstructed/plan_c/amazon_sports/interactions.csv
+datamap_path: data/reconstructed/plan_c/amazon_sports/datamaps.json
+candidate_sets_path: results/tables/ranking_candidate_sets.csv
+row_compatibility_path: results/tables/plan_e_lightgcn_row_compatibility.csv
+policy_id: verified_train_graph_and_strict_connected_candidates_cpu
+seed: 42
+device: cpu
+deterministic_algorithms: true
+embedding_dim: 64
+propagation_layers: 2
+include_layer_zero: true
+layer_aggregation: arithmetic_mean_layer_0_through_L
+graph_edge_policy: train_only_unique_binary_user_item_pairs
+duplicate_edge_policy: deterministic_deduplicate_user_item_pairs
+graph_symmetrized: true
+self_loops: false
+normalization_formula: D^-1/2 A D^-1/2
+sparse_layout: torch.sparse_coo
+learning_rate: 0.001
+regularization: 0.0
+optimizer: Adam
+batch_size: 4096
+epochs: 5
+negative_sampling_strategy: deterministic_one_train_universe_negative_per_positive
+negative_samples_per_positive: 1
+num_workers: 0
+evaluation_k: 5
+candidate_scoring_method: propagated_user_item_dot_product
+tie_breaking_rule:
+  - descending_score
+  - lexical_raw_item_id
+  - original_candidate_position
+maximum_run_minutes: 60
+cohort:
+  dataset: Amazon Sports
+  included_policy: lightgcn_graph_compatible_and_existing_model_index_compatible_and_eligible_plan_e2_full
+  expected_total_rows: 2000
+  expected_included_rows: 1988
+  expected_excluded_rows: 12
+  expected_included_ranking_rows: 994
+  expected_included_reranking_rows: 994
+  expected_matched_ranking_rows: 907
+  expected_matched_reranking_rows: 907
+  full_cohort_id: plan_e2_lightgcn_strict_connected_full
+  matched_cohort_id: plan_e2_lightgcn_strict_connected_matched
+candidate_set_ids:
+  ranking: plan_e_sports_1000user_ranking_manifest
+  reranking: plan_e_sports_1000user_reranking_manifest
+checkpoint_path: results/models/plan_e_lightgcn_sports_cpu/model_state.pt
+metadata_path: results/models/plan_e_lightgcn_sports_cpu/metadata.json
+output_paths:
+  model_node_map: results/tables/plan_e_lightgcn_beauty_sports_cpu_model_node_map.csv
+  graph_summary: results/tables/plan_e_lightgcn_beauty_sports_cpu_graph_summary.csv
+  cohort: results/tables/plan_e_lightgcn_beauty_sports_cpu_cohort.csv
+  run_manifest: results/tables/plan_e_lightgcn_beauty_sports_cpu_run_manifest.csv
+  training_history: results/tables/plan_e_lightgcn_beauty_sports_cpu_training_history.csv
+  rankings: results/tables/plan_e_lightgcn_beauty_sports_cpu_rankings.csv
+  metrics: results/tables/plan_e_lightgcn_beauty_sports_cpu_metrics.csv
+  determinism: results/tables/plan_e_lightgcn_beauty_sports_cpu_determinism.csv
+  validation: results/tables/plan_e_lightgcn_beauty_sports_cpu_validation.csv
+  report: report/plan_e_lightgcn_beauty_sports_cpu_and_baseline_comparison.md

@@ -1,0 +1,57 @@
+experiment_id: plan_e_bprmf_ml1m_pilot
+model_id: bprmf_plan_e_ml1m_strict_train_known
+dataset: ML-1M
+paper_alignment: adapted
+configuration_provenance:
+  selected_basis: results/tables/plan_d_bprmf_training_summary.csv
+  selected_basis_row: "dataset=ml1m, method=bprmf, scope=extended_subset, status=completed, timestamp=2026-06-30T09:00:08.936439+00:00"
+  implementation_path: src/baselines/plan_d_bprmf.py
+  runner_path: src/experiments/run_plan_d_bprmf.py
+  adapter_preflight_report: report/plan_e_bprmf_adapter_preflight.md
+  adapter_preflight_rows: results/tables/plan_e_bprmf_row_compatibility.csv
+  training_scope_adaptation: "Plan D extended_subset capped training to 100000 rows; Phase 3D uses all ML-1M split=train rows because the cap does not cover the approved strict Plan E2 candidate rows."
+implementation_path: src/baselines/plan_d_bprmf.py
+adapter_path: src/baselines/plan_e_bprmf_adapter.py
+training_module_path: src/baselines/plan_e_bprmf_training.py
+training_data_path: data/reconstructed/plan_c/ml1m/interactions.csv
+datamap_path: data/reconstructed/plan_c/ml1m/datamaps.json
+candidate_sets_path: results/tables/ranking_candidate_sets.csv
+row_compatibility_path: results/tables/plan_e_bprmf_row_compatibility.csv
+policy_id: exclude_rows_with_any_train_unseen_candidate
+seed: 42
+device: cuda
+deterministic_algorithms: true
+embedding_dim: 64
+learning_rate: 0.001
+regularization: 0.0
+optimizer: Adam
+batch_size: 4096
+epochs: 5
+negative_sampling_strategy: deterministic_one_train_universe_negative_per_positive
+negative_samples_per_positive: 1
+num_workers: 0
+evaluation_k: 5
+tie_breaking_rule: "descending_score; lexical_raw_item_id; original_candidate_position"
+maximum_run_minutes: 60
+cohort:
+  dataset: ML-1M
+  included_policy: strict_train_known_compatible_and_existing_model_index_compatible_and_eligible_plan_e2_full
+  expected_total_rows: 2000
+  expected_included_rows: 1962
+  expected_excluded_rows: 38
+  expected_included_ranking_rows: 981
+  expected_included_reranking_rows: 981
+  full_cohort_id: plan_e2_bprmf_strict_train_known_full
+  matched_cohort_id: plan_e2_bprmf_strict_train_known_matched
+checkpoint_path: results/models/plan_e_bprmf_ml1m_pilot/model_state.pt
+metadata_path: results/models/plan_e_bprmf_ml1m_pilot/metadata.json
+output_paths:
+  model_id_map: results/tables/plan_e_bprmf_ml1m_model_id_map.csv
+  pilot_cohort: results/tables/plan_e_bprmf_ml1m_pilot_cohort.csv
+  run_manifest: results/tables/plan_e_bprmf_ml1m_pilot_run_manifest.csv
+  training_history: results/tables/plan_e_bprmf_ml1m_pilot_training_history.csv
+  rankings: results/tables/plan_e_bprmf_ml1m_pilot_rankings.csv
+  metrics: results/tables/plan_e_bprmf_ml1m_pilot_metrics.csv
+  determinism: results/tables/plan_e_bprmf_ml1m_pilot_determinism.csv
+  validation: results/tables/plan_e_bprmf_ml1m_pilot_validation.csv
+  report: report/plan_e_bprmf_ml1m_pilot.md

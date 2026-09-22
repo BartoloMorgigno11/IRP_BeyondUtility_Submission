@@ -1,0 +1,7 @@
+dataset,model,metric,k,value,status,source_file,notes,timestamp
+ml1m,random,hit_rate,5,0.0514900662251655,available,results\metrics\ml1m_random_metrics.csv,Real metric row loaded from generated metrics CSV.,2026-06-29T00:41:02.210961+00:00
+ml1m,random,ndcg,5,0.0293715251496116,available,results\metrics\ml1m_random_metrics.csv,Real metric row loaded from generated metrics CSV.,2026-06-29T00:41:02.210961+00:00
+ml1m,mostpop,hit_rate,5,0.320364238410596,available,results\metrics\ml1m_mostpop_metrics.csv,Real metric row loaded from generated metrics CSV.,2026-06-29T00:41:02.210961+00:00
+ml1m,mostpop,ndcg,5,0.2102806322093436,available,results\metrics\ml1m_mostpop_metrics.csv,Real metric row loaded from generated metrics CSV.,2026-06-29T00:41:02.210961+00:00
+ml1m,content_bm25,hit_rate,5,0.2508278145695364,available,results\metrics\ml1m_content_bm25_metrics.csv,Real metric row loaded from generated metrics CSV.,2026-06-29T00:41:02.210961+00:00
+ml1m,content_bm25,ndcg,5,0.1647567964031986,available,results\metrics\ml1m_content_bm25_metrics.csv,Real metric row loaded from generated metrics CSV.,2026-06-29T00:41:02.210961+00:00

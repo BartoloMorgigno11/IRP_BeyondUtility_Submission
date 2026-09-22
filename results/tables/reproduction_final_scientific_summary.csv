@@ -1,0 +1,15 @@
+key,value
+final_scientific_status,LOCAL_ADAPTED_REPRODUCTION_COMPLETE_NOT_PAPER_EXACT
+final_requests_accounted,4800/4800
+valid_rate,4795/4800
+terminal_invalid_rate,5/4800
+unauthorized_retries,0
+r5b_freeze_sha,83b46454866ea61f3e05eec81d555be53e4c41e8
+r5c_freeze_sha,98a93d9892d8e9b21c9cdfa981e0ebea0a987500
+r5d_freeze_sha,ba1dbe8367216f7ea1044b2ff8db69318f8678ee
+paper_exact_cells,0
+paper_aligned_adapted_cells,11
+directional_only_cells,16
+divergent_cells,1
+no_direct_comparison_cells,16
+not_comparable_cells,0

@@ -1,0 +1,23 @@
+check,status,evidence
+precondition_state_f1bz_validated,PASS,F1BZ_FINAL_TRADITIONAL_EXECUTION_VALIDATED
+active_datasets_exact,PASS,"['beauty', 'sports', 'ml1m', 'lastfm', 'foodcom']"
+video_games_absent,PASS,"{'rows': 0, 'runs': 0}"
+f1bz_artifacts_hashed_before_audit,PASS,"{'f1bz_tables': 14, 'updated_f1b_tables': 9, 'f1bz_manifests': 2, 'raw_recommendations': 100, 'checkpoints': 100, 'total': 225}"
+f1bz_final_runs_preserved,PASS,"{'completed': 100, 'failed': 0}"
+foodcom_history_alignment_1000,PASS,1000
+foodcom_zero_history_is_true_raw_singleton,PASS,"{'TRUE_ZERO_HISTORY_RAW_SINGLE_INTERACTION_TARGET_ONLY': 727, 'NONZERO_HISTORY_ALIGNED': 261, 'NONZERO_HISTORY_ALIGNED_SEQUENCE_TRUNCATED_TO_MAX_LEN': 12}"
+foodcom_history_decision_valid,PASS,{'FOODCOM_HISTORY_VALID': 5}
+model_input_mapping_rows,PASS,4000
+first_stage_source_candidate20_defect,PASS,{'RERANKING_POOL_SOURCE_DEFECT': 20}
+candidate_recall_tautology_rows,PASS,4882
+full_catalog_readiness_materialized,PASS,"{'BLOCKED': 16, 'FULL_CATALOG_REGENERATION_READY': 4}"
+lastfm_historical_lineage_non_tautological_reference,PASS,"[{'lineage': 'historical_f6d2_lastfm', 'status': 'HISTORICAL_NON_TAUTOLOGICAL_REFERENCE'}, {'lineage': 'current_f1bz_lastfm', 'status': 'RERANKING_POOL_SOURCE_DEFECT'}, {'lineage': 'comparison', 'status': 'RERANKING_POOL_SOURCE_DEFECT'}]"
+result_validity_statuses_complete,PASS,"{'RETRAIN_REQUIRED': 16, 'VALID_AS_IS': 5, 'REGENERATE_FROM_EXISTING_CHECKPOINT': 4, 'INVALID': 3}"
+corrective_scope_records_defect,PASS,"[{'output_family': 'foodcom_zero_history', 'status': 'VALID_AS_IS'}, {'output_family': 'candidate20_ranking_results', 'status': 'VALID_AS_IS'}, {'output_family': 'reranking_pool_construction', 'status': 'INVALID'}, {'output_family': 'future_llm_reranking_requests', 'status': 'INVALID'}, {'output_family': 'full_catalog_generation_from_checkpoints', 'status': 'PARTIAL'}]"
+global_metric_blockers_zero,PASS,0
+f0_budget_unchanged,PASS,"{'core': 29292, 'training_dependent': 29292}"
+baseline_preserved,PASS,"{'baseline_rows': 15, 'baseline_recommendation_rows': 292920, 'baseline_hashes_unchanged': True, 'baseline_hashes_match_f1bx_manifest': True}"
+foodcom_h0_hashes_unchanged,PASS,"{'foodcom': True, 'h0': True}"
+original_repo_paper_unchanged,PASS,"{'original_repo': '', 'paper': ''}"
+zero_llm_network_download_training,PASS,0
+output_tables_defined,PASS,"['candidate_recall_tautology_audit', 'corrective_scope', 'first_stage_source_audit', 'foodcom_history_alignment', 'foodcom_zero_history_summary', 'full_catalog_regeneration_readiness', 'lastfm_reranking_lineage_comparison', 'model_input_mapping_audit', 'result_validity_classification', 'validation']"

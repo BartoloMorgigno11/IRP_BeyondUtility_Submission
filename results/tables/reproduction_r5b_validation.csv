@@ -1,0 +1,21 @@
+check_id,check_name,status,observed,expected,details
+R5B-VAL-001,expected branch,pass,master,master,R5B executes from the R5A freeze branch.
+R5B-VAL-002,expected head,pass,98c28c5364c40e571765a3b50d4dab8affe80743,98c28c5364c40e571765a3b50d4dab8affe80743,R5B starts from the frozen R5A commit.
+R5B-VAL-003,no staged diff,pass,,empty,R5B does not stage or commit artifacts.
+R5B-VAL-004,original repo clean,pass,,empty,R5B must not modify original_repo/EvaLLMasRecommender.
+R5B-VAL-005,protected artifacts unchanged,pass,12/12,12/12,The 12 protected root artifacts remain untracked and SHA256-identical.
+R5B-VAL-006,manifest sha exact,pass,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD,R5B uses only the frozen R5A manifest.
+R5B-VAL-007,manifest row count,pass,4800,4800,R5A manifest size is unchanged.
+R5B-VAL-008,CandDif row count,pass,1200,1200,R5B selects only CANDDIF_RECOVERY rows.
+R5B-VAL-009,no History Generation ML1M CandDif,pass,"families=['CANDDIF_RECOVERY']; datasets=['Beauty', 'LastFM', 'Sports']",CandDif ranking only; no ML-1M,No out-of-scope recovery family is selected.
+R5B-VAL-010,pair count and validity,pass,pairs=600; valid=600,600 valid,Each user/model has FIRST and RANDOM rows with the frozen candidate relation.
+R5B-VAL-011,material hashes match manifest,pass,prompt=0;candidate=0;history=0,0;0;0,"R5B did not regenerate or alter prompts, candidates, or histories."
+R5B-VAL-012,runtime models available,pass,,qwen2:7b-instruct and mistral:7b-instruct available,Only local Ollama runtime is allowed.
+R5B-VAL-013,request accounting sums,pass,rows=1200;terminal=1200;not_executed=0,rows=1200;terminal+not_executed=1200,Every frozen CandDif request has exactly one status row.
+R5B-VAL-014,all requests executed,pass,0,0,Completion requires all 1200 CandDif requests to reach a terminal state.
+R5B-VAL-015,no backend failures,pass,0,0,Runtime failures block a complete R5B freeze.
+R5B-VAL-016,invalid outputs preserved not hallucination,pass,invalid_outputs=1148,invalid_outputs>=0 with parse status recorded,"Invalid outputs are retained and scored as zero, not repaired."
+R5B-VAL-017,P0 gap set accounted,pass,"[[""Beauty"",""CandDif-HR""],[""Beauty"",""CandDif-NDCG""],[""LastFM"",""CandDif-HR""],[""LastFM"",""CandDif-NDCG""],[""Sports"",""CandDif-HR""],[""Sports"",""CandDif-NDCG""]]","[[""Beauty"",""CandDif-HR""],[""Beauty"",""CandDif-NDCG""],[""LastFM"",""CandDif-HR""],[""LastFM"",""CandDif-NDCG""],[""Sports"",""CandDif-HR""],[""Sports"",""CandDif-NDCG""]]",Only the six R4 P0 CandDif rows are resolved by R5B.
+R5B-VAL-018,P0 gap resolution complete,pass,{'RECOVERED_PAPER_ALIGNED_ADAPTED': 6},all RECOVERED_PAPER_ALIGNED_ADAPTED,Complete only when every P0 CandDif metric has terminal local adapted evidence.
+R5B-VAL-019,no out-of-scope raw outputs,pass,,none,The R5 output namespace contains no non-CandDif artifacts.
+R5B-VAL-020,disk free guard,pass,155088941056,>=1073741824,Local runtime has enough disk headroom for atomic raw output writes.

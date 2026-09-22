@@ -1,0 +1,89 @@
+{
+  "all_valid_freeze_ready": false,
+  "created_utc": "2026-08-21T18:40:38Z",
+  "decision": "R5D_FROZEN_PROTOCOL_COMPLETION_VALID",
+  "executed_this_resume": 600,
+  "failure_reasons": {
+    "DUPLICATE": 2,
+    "OUT_OF_RANGE": 2,
+    "WRONG_LENGTH": 1
+  },
+  "freeze_metadata_version": "r5d_generation_involved_frozen_completion_candidate_v1",
+  "freeze_ready_under_invalid_policy": true,
+  "invalid": 5,
+  "invalid_by_cell": [
+    {
+      "dataset": "Beauty",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "model_name": "mistral:7b-instruct",
+      "n": 1,
+      "request_ids": [
+        "R5D-RANK-59C06DDCFD78BFF4"
+      ],
+      "validity_class": "DUPLICATE"
+    },
+    {
+      "dataset": "Beauty",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "model_name": "mistral:7b-instruct",
+      "n": 2,
+      "request_ids": [
+        "R5D-RANK-167AC5F3AB797DBA",
+        "R5D-RANK-E491A3315449174D"
+      ],
+      "validity_class": "OUT_OF_RANGE"
+    },
+    {
+      "dataset": "Sports",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "model_name": "mistral:7b-instruct",
+      "n": 1,
+      "request_ids": [
+        "R5D-RANK-FA218507694B581F"
+      ],
+      "validity_class": "WRONG_LENGTH"
+    },
+    {
+      "dataset": "Sports",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "model_name": "qwen2:7b-instruct",
+      "n": 1,
+      "request_ids": [
+        "R5D-RANK-94B4099CCA078776"
+      ],
+      "validity_class": "DUPLICATE"
+    }
+  ],
+  "invalid_policy": "FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO",
+  "invalid_policy_interpretation": "terminal invalid outputs remain in the manifest denominator and receive zero HR/NDCG credit",
+  "paper_exact": false,
+  "phase": "R5D_GENERATION_INVOLVED_RECOVERY_V2",
+  "protocol_hash": "AA76CD3E936A969A57CDA2E9E54E22B73D6C1D3DB65C0795F86E181CEDFE3B1A",
+  "r5a_manifest_sha256": "290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD",
+  "raw_aggregate_sha256": "4E1466456445B0BB3946DA4414AFD3B74D41E5BF350F0B0A92A6F33359FCB658",
+  "raw_count": 1200,
+  "raw_namespace": "results/recovery/r5d_generation_involved_v2",
+  "requests_accounted": 1200,
+  "requests_expected": 1200,
+  "retried_rows": 0,
+  "status_counts": {
+    "backend_failed": 0,
+    "backend_incomplete": 0,
+    "duplicate": 2,
+    "invalid": 5,
+    "item_id_substitution_values": 20,
+    "missing": 0,
+    "out_of_range": 2,
+    "parse_failure": 0,
+    "raw_count": 1200,
+    "requests_accounted": 1200,
+    "requests_expected": 1200,
+    "retry_nonzero": 0,
+    "valid": 1195,
+    "wrong_length": 1
+  },
+  "target_gaps_accounted_under_invalid_policy": 4,
+  "target_gaps_all_valid": 2,
+  "target_gaps_total": 4,
+  "valid": 1195
+}

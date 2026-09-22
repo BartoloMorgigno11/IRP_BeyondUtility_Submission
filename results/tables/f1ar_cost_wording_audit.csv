@@ -1,0 +1,4 @@
+cost_dimension,f1a_status,wording,request_budget_effect
+paid_api_marginal_monetary_cost,NOT_APPLICABLE,No paid API provider is used by the frozen local-Ollama execution plan; provider marginal monetary cost is not a reportable metric.,unchanged_zero_extra_requests
+total_computational_cost,NOT_ZERO_BUT_UNPRICED,Local execution has nonzero compute time and resource use; do not describe total computational cost as zero.,unchanged
+hardware_electricity_cost,UNMEASURED,Hardware depreciation and electricity cost are not measured by F1A/F1AR and must not be inferred.,unchanged

@@ -1,0 +1,45 @@
+phase:
+  id: phase_f6i2e
+  name: phase_f6i2e_substantive_archive_migration_execution
+  expected_branch: plan-d-extensions
+  expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  interpreter_path: .venv_audit_recovery/Scripts/python.exe
+  runtime_classification: defensible_repaired_clone_exact_package_versions
+
+inputs:
+  f6i2d_migration_manifest: results/manifests/phase_f6i2d_substantive_archive_migration_manifest.json
+  f6i2d_content_index_manifest: results/manifests/phase_f6i2d_content_index_manifest.json
+  f6i2d_protected_hashes: results/manifests/phase_f6i2d_protected_input_hashes.json
+  f6i2d_archive_ready: results/tables/phase_f6i2d_archive_ready_for_migration.csv
+  f6i2d_final_archive_gate: results/tables/phase_f6i2d_final_archive_gate.csv
+  f6i2d_content_index: results/tables/phase_f6i2d_content_index.csv
+  f6i2d_current_fact_migration: results/tables/phase_f6i2d_current_fact_migration.csv
+  f6i2d_reference_rewrite_closure: results/tables/phase_f6i2d_reference_rewrite_closure.csv
+  f6i2d_compatibility_closure: results/tables/phase_f6i2d_compatibility_closure.csv
+  f6i2d_target_collision_recheck: results/tables/phase_f6i2d_target_collision_recheck.csv
+  f6i2d_validation: results/tables/phase_f6i2d_validation.csv
+  f6i2d_report: report/phase_f6i2d_archive_prerequisite_closure_and_technical_cache_cleanup.md
+  f6i2c_archive_path_mapping: results/tables/phase_f6i2c_archive_path_mapping.csv
+  f6i2c_reference_inventory: results/tables/phase_f6i2c_reference_inventory.csv
+  f6i2c_target_architecture: results/tables/phase_f6i2c_archive_target_architecture.csv
+  f6i2a_future_dependency_protection: results/tables/phase_f6i2a_future_dependency_protection.csv
+  handoff: report/future_operations_context_handoff.md
+  current_context_snapshot: results/manifests/current_project_context_snapshot.json
+
+policy:
+  expected_approved_candidates: 18
+  expected_active_reference_rows: 15
+  expected_active_reference_candidates: 5
+  expected_compatibility_stubs: 0
+  expected_target_collisions: 0
+  no_training: true
+  no_llm_inference: true
+  no_ollama: true
+  no_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  no_git_stage_or_commit: true
+
+archive:
+  root: archive
+  path_policy: f6i2d_approved_final_archive_path_only

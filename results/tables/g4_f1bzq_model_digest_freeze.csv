@@ -1,0 +1,4 @@
+model_order,model,model_family,frozen_digest,size_bytes,modified_at,source_manifest,metadata_call_during_g4_freeze,status
+1,qwen2:7b-instruct,QWEN,dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755,4431401491,2026-07-01T11:10:17.2004217+02:00,results/manifests/g0_canary_execution_manifest.json,false,FROZEN_FROM_G0_PROVENANCE
+2,mistral:7b-instruct,MISTRAL,6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf,4372824384,2026-07-01T21:25:40.303487+02:00,results/manifests/g0_canary_execution_manifest.json,false,FROZEN_FROM_G0_PROVENANCE
+3,gemma2:9b,GEMMA,ff02c3702f322b9e075e9568332d96c0a7028002f1a5a056e0a6784320a4db0b,5443152417,2026-08-24T15:32:42.1502412+02:00,results/manifests/g0_canary_execution_manifest.json,false,FROZEN_FROM_G0_PROVENANCE

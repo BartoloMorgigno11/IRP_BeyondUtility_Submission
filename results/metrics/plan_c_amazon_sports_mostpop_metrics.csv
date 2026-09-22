@@ -1,0 +1,4 @@
+dataset,baseline,k,metric,value,evaluated_users,recommendation_rows,diagnostic_subset,max_users,run_scope,reconstruction_status,status,notes,timestamp
+amazon_sports,mostpop,5,hit_rate,0.21096690825327266,35598,3559800,False,,full,reconstructed_from_public_raw,computed,Computed against reconstructed Plan C ground truth and candidates.,2026-06-29T16:07:54.581431+00:00
+amazon_sports,mostpop,5,ndcg,0.14153647259033758,35598,3559800,False,,full,reconstructed_from_public_raw,computed,Computed against reconstructed Plan C ground truth and candidates.,2026-06-29T16:07:54.581431+00:00
+amazon_sports,mostpop,5,catalog_coverage,0.004297280894105002,35598,3559800,False,,full,reconstructed_from_public_raw,computed,Catalog Coverage@K over reconstructed Plan C catalog.,2026-06-29T16:07:54.581431+00:00

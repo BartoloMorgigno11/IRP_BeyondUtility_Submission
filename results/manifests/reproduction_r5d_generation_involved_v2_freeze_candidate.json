@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-08-21T17:38:18Z",
+  "decision": "R5D_EXECUTION_FAILED",
+  "freeze_metadata_version": "r5d_generation_involved_freeze_candidate_v1",
+  "freeze_ready": false,
+  "paper_exact": false,
+  "phase": "R5D_GENERATION_INVOLVED_RECOVERY_V2",
+  "protocol_hash": "AA76CD3E936A969A57CDA2E9E54E22B73D6C1D3DB65C0795F86E181CEDFE3B1A",
+  "r5a_manifest_sha256": "290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD",
+  "r5c_corrected_freeze_commit": "98a93d9892d8e9b21c9cdfa981e0ebea0a987500",
+  "r5c_corrected_protocol_hash": "3AAD4945AF443A7F50846BFD044C54FEFD5B77EDBD3725B1D1F1C62D829ECDEE",
+  "raw_aggregate_sha256": "B49FBDD52F3A447AC18D52AFD4881D884FFAFDAD09E7E43AFD7DDE21E53C6E09",
+  "raw_count": 600,
+  "raw_namespace": "results/recovery/r5d_generation_involved_v2",
+  "status_counts": {
+    "backend_incomplete": 0,
+    "invalid": 3,
+    "out_of_range": 2,
+    "parse_failure": 0,
+    "requests_accounted": 600,
+    "requests_expected": 1200,
+    "valid": 597,
+    "wrong_length": 0
+  },
+  "target_gaps_recovered": 0,
+  "target_gaps_total": 4
+}

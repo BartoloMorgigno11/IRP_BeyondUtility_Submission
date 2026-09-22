@@ -1,0 +1,59 @@
+{
+  "canonical_source_artifacts": [
+    "results/tables/rq3_llm_history_metric_grid_final.csv",
+    "results/rq3_completion_scientific_freeze/freeze_manifest.json",
+    "results/rq3_completion_scientific_freeze/statistical_results.csv",
+    "results/rq3_completion_scientific_freeze/scientific_synthesis_summary.csv"
+  ],
+  "canonical_source_sha256": {
+    "results/rq3_completion_scientific_freeze/freeze_manifest.json": "c23d83a1249e700f11ca6284fa9819db70009b4607d09c779432b3ac9a09f295",
+    "results/rq3_completion_scientific_freeze/scientific_synthesis_summary.csv": "189ab285a873a74ef2c25f95f1f784b1b45edd000b21fb00f2fa265ad7fa824f",
+    "results/rq3_completion_scientific_freeze/statistical_results.csv": "976257e38d7cff90cc135bc126f27348020a1f9097f3260372bcd59c70a09f95",
+    "results/tables/rq3_llm_history_metric_grid_final.csv": "96ab1971f5717c04faba7c0b61e9e1bfc92620ac2ee56eab33d622ec312a349d"
+  },
+  "created_from_commit": "7f9efd8b747928e0ed6e19f3ff655ae0febf73eb",
+  "display_contract": {
+    "aggregation": "arithmetic mean of five dataset configuration values, equal dataset weighting at every H",
+    "cohort": "GE20",
+    "history_grid": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      15,
+      20
+    ],
+    "lines": "six model-prompt configurations per metric",
+    "metrics": [
+      "hr_at_5",
+      "ndcg_at_5",
+      "mrr"
+    ],
+    "numeric_x_axis": true,
+    "population_mixing": false,
+    "raw_rows": 810
+  },
+  "figure_id": "fig_rq3_history_metric_grid_final",
+  "figure_values_csv": "results/final_figures/rq3/values/fig_rq3_history_metric_grid_final_values.csv",
+  "figure_values_sha256": "65ea49841f6a3736ee75a405f30ef67280daad3f619e3a2d02c52e931a9e31ae",
+  "generator": "src/analysis/final_figures/rq3.py",
+  "generator_sha256": "b0c41c8184b97252dac12a3b388d0f055771bc6897b27eb123e574daefb2ae6b",
+  "limitations": [
+    "H=0 is a controlled no-history condition on warm eligible users, not true cold-start.",
+    "No monotonicity or universal optimal history-length claim.",
+    "Dataset means are descriptive, unweighted, and do not define a pooled user-level result."
+  ],
+  "output_pdf": "results/final_figures/rq3/figures/fig_rq3_history_metric_grid_final.pdf",
+  "output_pdf_sha256": "0c3ee6ffd750f1631b2e93f3ecaf1167452a7d3e4f3a51a37751a5d637dbfd75",
+  "output_png": "results/final_figures/rq3/figures/fig_rq3_history_metric_grid_final.png",
+  "output_png_sha256": "86d8c146b56ac2eae436a04850f47019e8149713375b900022b51c547565661d",
+  "output_svg": "results/final_figures/rq3/figures/fig_rq3_history_metric_grid_final.svg",
+  "output_svg_sha256": "97e5e2da2fae2caa12a07cccbad3894babb76dfb1cee317272d15356a94978ce",
+  "rq": "RQ3",
+  "schema_version": "1.0",
+  "scientific_interpretation": "History effects are configuration-dependent and nonlinear; descriptive curves do not define a universal optimum.",
+  "scientific_purpose": "GE20 complete-history descriptive trajectories"
+}

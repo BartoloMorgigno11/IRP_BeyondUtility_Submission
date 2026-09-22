@@ -1,0 +1,52 @@
+phase:
+  id: phase_f6g3
+  name: corrective_offline_lastfm_reranking_top10_freeze
+  expected_branch: plan-d-extensions
+  expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  interpreter_path: .venv_audit_recovery/Scripts/python.exe
+  environment_classification: defensible_repaired_clone_exact_package_versions
+
+contract:
+  dataset: LastFM
+  task: reranking
+  candidate_pool_size: 20
+  requested_output_length: 10
+  parser_expected_length: 10
+  metric_cutoff_k: 5
+  paper_output_length: paper_unspecified
+  repository_output_length: repository_derived_not_paper_specified
+  output_length_resolution: D_repository_derived_top10_paper_unspecified
+  classification: repository_derived_adapted_protocol
+
+inputs:
+  f6g1_logical_instances: results/tables/phase_f6g1_future_logical_instances.csv
+  f6g1_request_manifest: results/tables/phase_f6g1_future_request_manifest.csv
+  f6g1_shard_manifest: results/tables/phase_f6g1_future_shard_manifest.csv
+  f6g1_pool_instance_summary: results/tables/phase_f6g1_pool_instance_summary.csv
+  f6g1_pool_item_provenance: results/tables/phase_f6g1_pool_item_provenance.csv
+  f6g1_candidate_source_model_decisions: results/tables/phase_f6g1_candidate_source_model_decisions.csv
+  f6g2_request_execution: results/tables/phase_f6g2_request_execution.csv
+  f6g2_output_length_resolution: results/tables/phase_f6g2_output_length_contract_resolution.csv
+  f6e4b_instance_results: results/tables/phase_f6e4b_instance_results.csv
+  f6e4b_raw_qwen2: results/llm/phase_f6e4b_qwen2_adapted_full_run_raw.jsonl
+  f6e4b_raw_mistral: results/llm/phase_f6e4b_mistral_adapted_full_run_raw.jsonl
+  exactness_frontier_components: results/tables/exactness_frontier_by_component.csv
+  exactness_frontier_numeric: results/tables/numeric_cell_exactness_frontier.csv
+
+policy:
+  no_training: true
+  no_llm_inference: true
+  no_ollama: true
+  no_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  fail_closed_on_missing_raw_output: true
+  legacy_top20_reuse_allowed_for:
+    - candidate_pool_identity
+    - cohort_identity
+    - user_and_task_identifiers
+    - candidate_ordering
+    - positive_item_position
+    - model_and_prompt_strategy_identity
+    - shard_boundaries
+    - provenance

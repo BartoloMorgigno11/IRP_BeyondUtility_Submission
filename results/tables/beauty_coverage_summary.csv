@@ -1,0 +1,5 @@
+dataset,status,check,path,message,row_count,timestamp
+beauty,not_configured,catalog_path,,Catalog Coverage@5 is blocked because catalog_path is not configured.,0,2026-06-28T23:07:35.258498+00:00
+beauty,ready,llm_recommendations,results\raw_outputs\beauty_llm_outputs_normalized.csv,Loaded normalized llm recommendations.,2000,2026-06-28T23:07:35.258498+00:00
+beauty,ready,traditional_baseline_recommendations,results\raw_outputs\beauty_baseline_outputs_normalized.csv,Loaded normalized traditional_baseline recommendations.,447260,2026-06-28T23:07:35.258498+00:00
+beauty,missing,mostpop_recommendations,results\raw_outputs\beauty_mostpop_recommendations.csv,Normalized mostpop recommendation file is missing.,0,2026-06-28T23:07:35.258498+00:00

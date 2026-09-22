@@ -1,0 +1,10 @@
+check_id,check_name,status,observed,expected
+RESVAL-001,offline resume preflight pass,pass,17/17,17/17
+RESVAL-002,all manifest rows accounted,pass,1200/1200,1200/1200
+RESVAL-003,one raw per manifest row,pass,1200,1200
+RESVAL-004,no retries,pass,0,0
+RESVAL-005,original invalids retained,pass,checked,retained
+RESVAL-006,invalids allowed by denominator policy,pass,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO,FAIL_STRICT_ALL_MANIFEST_REQUESTS_INVALID_ZERO
+RESVAL-007,target gaps accounted,pass,4/4,4/4
+RESVAL-008,decision matches frozen completion,pass,R5D_FROZEN_PROTOCOL_COMPLETION_VALID,R5D_FROZEN_PROTOCOL_COMPLETION_VALID
+RESVAL-009,validity is not forced to all-valid,pass,1195/1200,invalids terminal

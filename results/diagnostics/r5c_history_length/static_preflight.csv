@@ -1,0 +1,34 @@
+check_id,check_name,status,observed,expected
+STATIC-001,manifest SHA,pass,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD,290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD
+STATIC-002,repository HEAD is R5B corrected freeze,pass,83b46454866ea61f3e05eec81d555be53e4c41e8,83b46454866ea61f3e05eec81d555be53e4c41e8
+STATIC-003,R5B corrected freeze manifest exists,pass,C:/Users/Bartolo/Desktop/PROGETTI/IRP_BeyondUtility_Project/results/manifests/reproduction_r5b_corrected_freeze.json,exists
+STATIC-004,R5B corrected protocol hash,pass,9596F36E1B1DBC15B68679DDF32114E6AE09914B418FB31DC112072384B708D5,9596F36E1B1DBC15B68679DDF32114E6AE09914B418FB31DC112072384B708D5
+STATIC-005,manifest rows,pass,4800,4800
+STATIC-006,selected history rows,pass,2400,2400
+STATIC-007,out-of-scope rows remain unselected,pass,2400,2400
+STATIC-008,no CandDif rows selected,pass,0,0
+STATIC-009,no Generation rows selected,pass,0,0
+STATIC-010,ranking task only,pass,['ranking'],ranking
+STATIC-011,datasets,pass,"['Beauty', 'LastFM', 'ML-1M', 'Sports']","['Beauty', 'LastFM', 'ML-1M', 'Sports']"
+STATIC-012,models,pass,"['mistral:7b-instruct', 'qwen2:7b-instruct']","['mistral:7b-instruct', 'qwen2:7b-instruct']"
+STATIC-013,expected cell count,pass,24 cells; min=100; max=100,24 cells of 100
+STATIC-014,expected group count,pass,800 groups; min=3; max=3,800 groups of 3
+STATIC-015,conditions by dataset,pass,"{'Beauty': ['HISTORY_LENGTH_0', 'HISTORY_LENGTH_10', 'HISTORY_LENGTH_20'], 'Sports': ['HISTORY_LENGTH_10', 'HISTORY_LENGTH_20', 'HISTORY_LENGTH_5'], 'ML-1M': ['HISTORY_LENGTH_10', 'HISTORY_LENGTH_20', 'HISTORY_LENGTH_5'], 'LastFM': ['HISTORY_LENGTH_10', 'HISTORY_LENGTH_20', 'HISTORY_LENGTH_5']}","{'Beauty': ['HISTORY_LENGTH_0', 'HISTORY_LENGTH_10', 'HISTORY_LENGTH_20'], 'Sports': ['HISTORY_LENGTH_10', 'HISTORY_LENGTH_20', 'HISTORY_LENGTH_5'], 'ML-1M': ['HISTORY_LENGTH_10', 'HISTORY_LENGTH_20', 'HISTORY_LENGTH_5'], 'LastFM': ['HISTORY_LENGTH_10', 'HISTORY_LENGTH_20', 'HISTORY_LENGTH_5']}"
+STATIC-016,expected K is 5,pass,[5],[5]
+STATIC-017,candidate count 20,pass,['20'],20
+STATIC-018,group validation,pass,800/800,800/800
+STATIC-019,corrected prompt says EXACTLY 5,pass,2400,2400
+STATIC-020,corrected prompt forbids more/fewer,pass,checked,all prompts
+STATIC-021,corrected prompt forbids prose,pass,checked,all prompts
+STATIC-022,parser contract corrected,pass,['r5c_ranked_index_json_top5_v1'],r5c_ranked_index_json_top5_v1
+STATIC-023,local endpoint only,pass,http://127.0.0.1:11434/api/generate,localhost Ollama
+STATIC-024,format json stream false,pass,format=json;stream=False,format=json;stream=false
+STATIC-025,no retry policy introduced,pass,0,0
+STATIC-026,output namespace R5C,pass,results/recovery/r5c_history_length/,results/recovery/r5c_history_length/
+STATIC-027,no output path overlap with original R5,pass,0,0
+STATIC-028,no R5C output under R5/R5B namespaces,pass,checked,none
+STATIC-029,original repo clean,pass,,empty
+STATIC-030,protected artifacts unchanged,pass,12/12,12/12
+STATIC-031,disk free guard,pass,161153851392,>=1073741824
+STATIC-032,context envelope,pass,32/32,all pass
+STATIC-033,protocol hash present,pass,30E4BCA9E1456EE9A7DE74A09FE03BF1A26EFCF758915052FD88F39AF9A836F2,64-char SHA256

@@ -1,0 +1,104 @@
+phase:
+  id: f1br_traditional_protocol_recovery
+  expected_head: c280fbef3440debe0a804efaf1f15436d9659347
+  predecessor_state: F1B_TRADITIONAL_COMPLETION_BLOCKED
+  decision_token: F1BR_TRADITIONAL_PROTOCOL_RESOLVED
+
+execution:
+  allow_llm_inference: false
+  allow_ollama_recommendation_calls: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network: false
+  allow_traditional_training: false
+  allow_deterministic_baseline_execution: false
+  allow_commit: false
+
+seed_policy:
+  final_seeds: [42, 43, 44, 45, 46]
+  tuning_seed: 42
+  evidence_classification: LOCAL_REPRODUCIBLE_FIVE_SEED_POLICY
+  paper_run_count_equivalent: true
+  paper_seed_identity_equivalent: false
+  source: F6D2 local adapted protocol; F1BR project-wide preregistration
+
+paper_hyperparameters:
+  BM25:
+    beauty: {k1: 1.5, b: 0.75}
+    sports: {k1: 1.5, b: 0.75}
+    ml1m: {k1: 1.5, b: 0.75}
+    lastfm: {k1: 1.5, b: 0.75}
+  BPRMF:
+    beauty: {lr: 0.001, l2: 0.000005, embedding: 64}
+    sports: {lr: 0.001, l2: 0.000001, embedding: 128}
+    ml1m: {lr: 0.0005, l2: 0.00001, embedding: 64}
+    lastfm: {lr: 0.001, l2: 0.00005, embedding: 128}
+  GRU4Rec:
+    beauty: {lr: 0.005, l2: 0.0001, hidden: 100, embedding: 128}
+    sports: {lr: 0.001, l2: 0.0001, hidden: 100, embedding: 64}
+    ml1m: {lr: 0.001, l2: 0.00005, hidden: 100, embedding: 128}
+    lastfm: {lr: 0.01, l2: 0.0001, hidden: 100, embedding: 128}
+  SASRec:
+    beauty: {lr: 0.0001, l2: 0.0005, layers: 1, heads: 1, embedding: 128}
+    sports: {lr: 0.0001, l2: 0.0005, layers: 1, heads: 1, embedding: 128}
+    ml1m: {lr: 0.0001, l2: 0.0001, layers: 2, heads: 1, embedding: 128}
+    lastfm: {lr: 0.001, l2: 0.0005, layers: 1, heads: 1, embedding: 128}
+  LightGCN:
+    beauty: {lr: 0.001, l2: 0.000001, layers: 3, embedding: 128}
+    sports: {lr: 0.001, l2: 0.000001, layers: 3, embedding: 128}
+    ml1m: {lr: 0.001, l2: 0.00001, layers: 4, embedding: 128}
+    lastfm: {lr: 0.001, l2: 0.00001, layers: 4, embedding: 128}
+
+paper_notes:
+  appendix_a3_typo: final LightGCN entries are labelled Beauty in the appendix, but the final two reported configurations are identical and are not an operational hyperparameter blocker.
+  evidence_source: paper/2411.00331v1.pdf plus F1BR Appendix A.3 excerpt supplied in the phase request
+
+foodcom_search_space:
+  BPRMF:
+    lr: [0.0005, 0.001]
+    l2: [0.000001, 0.000005, 0.00001, 0.00005]
+    embedding: [64, 128]
+  GRU4Rec:
+    lr: [0.001, 0.005, 0.01]
+    l2: [0.00005, 0.0001]
+    hidden: [100]
+    embedding: [64, 128]
+  SASRec:
+    lr: [0.0001, 0.001]
+    l2: [0.0001, 0.0005]
+    layers: [1, 2]
+    heads: [1]
+    embedding: [128]
+  LightGCN:
+    lr: [0.001]
+    l2: [0.000001, 0.00001]
+    layers: [3, 4]
+    embedding: [128]
+
+baseline_policy:
+  Random:
+    random_seed: 42
+    tie_breaking: candidate_position_ascending_then_item_id
+    candidate_contract: F0 canonical 20-candidate evaluation contract
+  MostPop:
+    frequency_definition: train_split_only_item_frequency
+    tie_breaking: descending_frequency_then_candidate_position_then_item_id
+    candidate_contract: F0 canonical 20-candidate evaluation contract
+  BM25-like/content:
+    k1: 1.5
+    b: 0.75
+    original_four_text_policy: original dataset item text/title fields through existing BM25-like wrapper
+    foodcom_text_policy: RAW_recipes.tags
+    tie_breaking: descending_score_then_candidate_position_then_item_id
+    candidate_contract: F0 canonical 20-candidate evaluation contract
+
+reranking_source_policy:
+  paper_rankers: [BPRMF, GRU4Rec, SASRec, LightGCN]
+  exact_union_order_recovered: false
+  adapted_policy_id: F1BR_ADAPTED_ORDERED_DEDUP_TOP20_UNION_V1
+  model_order: [BPRMF, GRU4Rec, SASRec, LightGCN]
+  per_model_top_k: 20
+  duplicate_policy: keep_first_occurrence_by_model_order_then_rank
+  final_pool_size: 20
+  insufficient_unique_policy: block_before_llm_reranking
+  candidate_recall_required: true

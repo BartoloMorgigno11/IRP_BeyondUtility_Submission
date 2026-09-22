@@ -1,0 +1,27 @@
+check,status,evidence
+head_matches_f1br_checkpoint,PASS,61fbde6d048faaed9e20508484efc90fa95fa5bf
+active_datasets_exact,PASS,"beauty,sports,ml1m,lastfm,foodcom"
+video_games_absent,PASS,0
+global_metric_blockers_zero,PASS,0
+foodcom_raw_hashes_unchanged,PASS,True
+h0_hashes_unchanged,PASS,True
+f0_budget_unchanged,PASS,"{'EXISTING_REUSABLE_REQUESTS': 0, 'CORE_MANDATORY_NOW_REQUESTS': 29292, 'REQUIRED_SENSITIVITY_REQUESTS': 21000, 'TRAINING_DEPENDENT_REQUESTS': 29292, 'CONDITIONAL_REQUESTS': 9000, 'OPTIONAL_REQUESTS': 12000, 'BLOCKED_REQUESTS': 0, 'MANDATORY_RAW_REQUESTS_TOTAL': 50292, 'FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL': 88584, 'CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL': 100584, 'PREVIOUS_D0B_ESTIMATE': 44928, 'MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE': 5364}"
+final_test_contract_untouched,PASS,D0A final users/candidates hashes
+eligible_validation_users_at_least_1000,PASS,37392
+validation_cohort_n_1000,PASS,1000
+validation_test_cohort_disjoint,PASS,0
+validation_candidate_rows_20000,PASS,20000
+candidate_sets_have_20_unique,PASS,20
+candidate_sets_have_one_positive,PASS,{1: 1000}
+candidate_sets_have_19_negatives,PASS,{19: 1000}
+candidate_sets_no_prefix_overlap,PASS,0
+candidate_order_not_systematically_positive_first,PASS,"{1: 65, 2: 43, 3: 52, 4: 59, 5: 54, 6: 46, 7: 52, 8: 51, 9: 46, 10: 53, 11: 54, 12: 47, 13: 43, 14: 30, 15: 56, 16: 45, 17: 41, 18: 58, 19: 55, 20: 50}"
+tuning_readiness_40_ready,PASS,{'READY_TO_TUNE': 40}
+tuning_seed_42,PASS,['42']
+selection_metric_validation_ndcg,PASS,['validation_ndcg_at_5']
+final_test_not_used_by_tuning,PASS,[]
+baseline_hashes_unchanged,PASS,15
+baseline_rows_15,PASS,15
+baseline_recommendation_rows_292920,PASS,292920
+zero_training,PASS,0
+zero_llm_network_download,PASS,0

@@ -1,0 +1,13 @@
+dataset,model_name,experimental_condition,n_valid_outputs,diagnostic_hr_at_5_valid_only,diagnostic_ndcg_at_5_valid_only,diagnostic_only,notes
+Beauty,mistral:7b-instruct,CANDDIF_FIRST,100,0.26,0.22422417928846541,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+Beauty,mistral:7b-instruct,CANDDIF_RANDOM,100,0.34,0.1854617137594331,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+Beauty,qwen2:7b-instruct,CANDDIF_FIRST,100,0.49,0.41543281576755725,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+Beauty,qwen2:7b-instruct,CANDDIF_RANDOM,100,0.26,0.14462653526448047,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+LastFM,mistral:7b-instruct,CANDDIF_FIRST,100,0.59,0.5277551241576647,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+LastFM,mistral:7b-instruct,CANDDIF_RANDOM,100,0.5,0.32688459337162823,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+LastFM,qwen2:7b-instruct,CANDDIF_FIRST,100,0.81,0.6490598039415529,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+LastFM,qwen2:7b-instruct,CANDDIF_RANDOM,100,0.43,0.297008201438006,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+Sports,mistral:7b-instruct,CANDDIF_FIRST,100,0.42,0.38239947294154475,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+Sports,mistral:7b-instruct,CANDDIF_RANDOM,100,0.35,0.2127786071600896,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+Sports,qwen2:7b-instruct,CANDDIF_FIRST,100,0.49,0.44495870347817557,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.
+Sports,qwen2:7b-instruct,CANDDIF_RANDOM,100,0.33,0.2130209442960639,true,Conditional-valid metrics separate ranking quality from format compliance; not official replacement.

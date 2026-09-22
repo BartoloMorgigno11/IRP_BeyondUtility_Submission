@@ -1,0 +1,19 @@
+{
+  "config": "configs/rq5_final_freeze.yaml",
+  "evidence_family": "corrected",
+  "figure_id": "fig_rq5_profile_deltas_heatmap",
+  "figure_sha256": {
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_deltas_heatmap.pdf": "d1ae3665ce0f2023c9a7cea808844d8b515e633665ca4f036e046992c4ee2915",
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_deltas_heatmap.png": "61a4fde64fe77d14f67356b6ded16c04144df17e450ef48cf6eb0e31c5397743",
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_deltas_heatmap.svg": "257b205b5313691c6a83e14a4bffb371b7c993dd51814ec064b2d071ad269ab9"
+  },
+  "generation_script": "src/analysis/rq5_final_freeze.py",
+  "limitations": "CI markers unadjusted for multiplicity; no general positive addition effect",
+  "rq_identifier": "RQ5",
+  "scientific_interpretation": "Matched substitution/addition effects relative to History",
+  "source_artifacts": {
+    "results/rq5_final_scientific_freeze/corrected/bootstrap_results.csv": "f81d55d54468fe363b898635040c0299fa4303a9d94ce0dcdfcb10e5a8e712dc"
+  },
+  "source_csv": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_deltas_heatmap_values.csv",
+  "source_csv_sha256": "b6189c79d9ce7c15c47760f7d0972563bf6683bfc7b07adbcfd8f11e2ca3a50f"
+}

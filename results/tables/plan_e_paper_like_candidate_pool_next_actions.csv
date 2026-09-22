@@ -1,0 +1,8 @@
+action_id,phase,priority,action,reason,depends_on,risk_level,expected_artifact,notes
+E2_A01,E2_review,1,validate generated 1000-user manifests manually,The manifests are reconstructed paper-like support artifacts and should be inspected before use.,E2 outputs,medium,manual validation note,Check representative users and positive placement.
+E2_A02,E3,2,use manifests for E3 baseline alignment,E3 can compare baseline outputs under the same paper-like candidate pools.,E2 validation,medium,E3 baseline alignment tables,Do not overwrite Plan C metrics.
+E2_A03,E4,3,use manifests for E4 prompt strategy alignment,Prompt templates need stable candidate pools and metadata.,E2 validation,medium,E4 prompt-manifest registry,Strict prompt remains an extension.
+E2_A04,E5,4,use manifests for E5 local LLM scale-up,Local Qwen2/Mistral scale-up needs deterministic manifests.,E4 prompt alignment and explicit approval,high,E5 local LLM run plan,Do not run LLMs until E5.
+E2_A05,E1/E2,5,keep LastFM conditional unless valid artifacts are found,LastFM lacks comparable utility-evaluation artifacts.,valid LastFM artifacts,high,LastFM unblocking audit,No LastFM manifest generated in E2.
+E2_A06,E5,6,do not run LLMs until E5,E2 is manifest construction only.,explicit approval,high,approval record,No Ollama/Qwen2/Mistral calls in E2.
+E2_A07,E6/E7,7,do not call APIs until E6/E7 and only with approval,"Closed-source model use requires current pricing, availability, keys, and approval.",E6 audit,high,API approval and cost audit,No API calls in E2.

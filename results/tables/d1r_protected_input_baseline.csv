@@ -1,0 +1,2 @@
+timestamp_utc,protected_hash_table,checked,changed,missing,hash_mismatch,existence_mismatch,newly_present,status_string
+2026-08-26T08:52:37.141874+00:00,results/tables/finalization_f2_protected_input_hashes_after.csv,1144,275,52,223,52,0,checked=1144;changed=275

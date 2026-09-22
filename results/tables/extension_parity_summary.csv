@@ -1,0 +1,6 @@
+parity_family,scenario,cohort_size,raw_experiment_count,result_cell_count,qwen_requests,mistral_requests,gemma_requests,total_llm_requests,executable_llm_requests,blocked_llm_requests,optional_sensitivity_requests,training_runs,training_runs_currently_executable,offline_only_cells,blocked_cells,not_applicable_cells,completion_status
+Gemma parity,original_four,,46,826,0,0,20928,20928,20928,0,0,0,0,0,0,4,classified_incomplete_pre_execution
+Food.com primary,FOODCOM_PRIMARY_1000,1000,6,114,2000,2000,2000,6000,6000,0,0,0,0,0,0,0,classified_incomplete_pre_execution
+Food.com history,FOODCOM_HISTORY_200,200,18,342,1200,1200,1200,3600,3600,0,0,0,0,0,0,3,classified_incomplete_pre_execution
+Food.com CandDif,FOODCOM_CANDDIF_1000,1000,3,21,1000,1000,1000,3000,3000,0,0,0,0,0,0,0,classified_incomplete_pre_execution
+Food.com profiles,FOODCOM_PROFILE_CONDITIONAL,200,9,18,600,600,600,1800,1800,0,0,0,0,0,0,0,classified_incomplete_pre_execution

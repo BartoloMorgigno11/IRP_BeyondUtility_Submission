@@ -1,0 +1,6 @@
+dataset,final_seeds,tuning_seed,evidence_classification,paper_run_count_equivalent,paper_seed_identity_equivalent,claimed_as_author_seed_identity,source,status
+beauty,"[42,43,44,45,46]",,LOCAL_REPRODUCIBLE_FIVE_SEED_POLICY,true,false,false,F6D2 local adapted protocol; F1BR project-wide preregistration,FROZEN
+sports,"[42,43,44,45,46]",,LOCAL_REPRODUCIBLE_FIVE_SEED_POLICY,true,false,false,F6D2 local adapted protocol; F1BR project-wide preregistration,FROZEN
+ml1m,"[42,43,44,45,46]",,LOCAL_REPRODUCIBLE_FIVE_SEED_POLICY,true,false,false,F6D2 local adapted protocol; F1BR project-wide preregistration,FROZEN
+lastfm,"[42,43,44,45,46]",,LOCAL_REPRODUCIBLE_FIVE_SEED_POLICY,true,false,false,F6D2 local adapted protocol; F1BR project-wide preregistration,FROZEN
+foodcom,"[42,43,44,45,46]",42,LOCAL_REPRODUCIBLE_FIVE_SEED_POLICY,true,false,false,F6D2 local adapted protocol; F1BR project-wide preregistration,FROZEN

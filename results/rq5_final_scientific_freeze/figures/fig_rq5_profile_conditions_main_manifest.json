@@ -1,0 +1,19 @@
+{
+  "config": "configs/rq5_final_freeze.yaml",
+  "evidence_family": "corrected",
+  "figure_id": "fig_rq5_profile_conditions_main",
+  "figure_sha256": {
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_conditions_main.pdf": "d086aa56e48ef73c058908239823ff4c23bf1da03b0980173924341a1e543677",
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_conditions_main.png": "8643ec22b859572cc64d6dd10798a42c8a2f784786c8fdde0986625d44941ab8",
+    "results/plots/rq5_final_scientific_freeze/fig_rq5_profile_conditions_main.svg": "f4e3b378f1582143ea49013f07b62a77b91bee312918fe8852fd6adae671b4c1"
+  },
+  "generation_script": "src/analysis/rq5_final_freeze.py",
+  "limitations": "200-user full denominators; local protocol; no semantic-fidelity inference",
+  "rq_identifier": "RQ5",
+  "scientific_interpretation": "Absolute matched-condition utility",
+  "source_artifacts": {
+    "results/rq5_final_scientific_freeze/corrected/metrics.csv": "98c7782211ec143c46205591a1cebc2dc4e5798926aef23badd34287cdd3f312"
+  },
+  "source_csv": "results/rq5_final_scientific_freeze/figures/fig_rq5_profile_conditions_main_values.csv",
+  "source_csv_sha256": "8fcc680a8fd7b6cc5718fdeed951c45c2b679f983f76575ce57084afe9f12451"
+}

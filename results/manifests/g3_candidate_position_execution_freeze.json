@@ -1,0 +1,53 @@
+{
+  "artifact_hashes": {
+    "configs/g3_candidate_position_execution.yaml": "a8b5d9b9bd111e93deda78eb48526272b1cbfa98bf5fc3bb26d7433dbe36788b",
+    "report/g3_candidate_position_execution_runner.md": "fdb6bd8938714c8800f6caf8e6baeb45c289bd088ac6b37b8572ec7047217717",
+    "report/g3_candidate_position_protocol.md": "6d4e67171cdcb3d3d44f45f6fc37fd41f9e4ef4450d136f604ea0079ebbc04bf",
+    "results/tables/g3_candidate_position_cohort.csv": "f8d02416601d46222a7e0c4d280a198cd049776a17385c71e9069cb524926af9",
+    "results/tables/g3_candidate_position_execution_accounting.csv": "cdd1cb26e75b89c5c7360acb036710a2d1bb91cabed9d02ddb507ac726296deb",
+    "results/tables/g3_candidate_position_execution_order.csv": "5dffabf52a91ef2d0f081e363157152825ed7b5a9ed550634d17a6b8bf27bf0a",
+    "results/tables/g3_candidate_position_metric_contract.csv": "884ed36f699e663e242987e486efc00b564258d675da65a48395a6dc067c32db",
+    "results/tables/g3_candidate_position_pair_integrity.csv": "9de7febe5fe472b57f383f59c11a83f49353772482223360aa42fe0e0be75255",
+    "results/tables/g3_candidate_position_request_accounting.csv": "60483d0ca39c468bd0088c8250735f6f6465e4e51a175c7ecf3a25014f8f56a2",
+    "results/tables/g3_candidate_position_request_universe.csv": "823723c23a1c2a6617fedd5934e4cfb14508f91b28d8e680fc884ed454ef9ba8",
+    "results/tables/g3_candidate_position_retention_plan.csv": "96f9571ef50f0d4d8bfb2737e8c1e38b288385f7c898959f76a62828a40dcca7",
+    "results/tables/g3_candidate_position_statistical_plan.csv": "143c2535675678ca6a5a363a0a3cd41a0778d633ac5e47c4d1577be903fad809",
+    "results/tables/g3_candidate_position_validation.csv": "31c3489c71fe3c10dcc90c8d92311996f385b92f4ff252f59418cb3653a63f80",
+    "src/extension/g3_candidate_position_execution.py": "d89648ff8f011164a62e41c934c1d7e06d18b9a772ea109480eb34f7cac2ceb3",
+    "tests/test_extension_g3_candidate_position_execution.py": "9f0fabb9565a076d1b46d771e731913b9095e9db0110f6398fe66274e8903164"
+  },
+  "backend_retry_count": 2,
+  "created_at_utc": "2026-09-04T06:58:45Z",
+  "decision_token": "G3_EXECUTION_RUNNER_FROZEN",
+  "existing_g3_terminal_requests": 0,
+  "g1_g2_reuse_requests": 0,
+  "g3_execution_started": false,
+  "head_before_generation": "34c231779ef48bfcd291c6435bcf52a0baf02acd",
+  "llm_inference_calls_executed": 0,
+  "logical_requests": 12000,
+  "new_ollama_calls_required": 12000,
+  "pending_new_requests": 12000,
+  "phase_id": "g3_candidate_position_first_random_execution_freeze",
+  "protocol_decision_required": "G3_BASE_LLMRANK_FIRST_RANDOM_PROTOCOL_FROZEN",
+  "raw_evidence": {
+    "event_jsonl": "results/llm/extension_canonical/g3_candidate_position/events.jsonl",
+    "overwrite_terminal_evidence": false,
+    "raw_dir": "results/llm/extension_canonical/g3_candidate_position",
+    "raw_response_protocol": "extension_canonical_raw_response_jsonl_v1",
+    "request_jsonl": "results/llm/extension_canonical/g3_candidate_position/requests.jsonl",
+    "response_dir": "results/llm/extension_canonical/g3_candidate_position/responses",
+    "response_jsonl": "results/llm/extension_canonical/g3_candidate_position/responses.jsonl"
+  },
+  "raw_first_persistence": true,
+  "request_ledger_rows": 0,
+  "response_ledger_rows": 0,
+  "resume_policy": "skip_only_matching_terminal_g3_raw_evidence_by_canonical_request_id",
+  "structural_invalidity_retry_count": 0,
+  "table_hashes": {
+    "results/tables/g3_candidate_position_execution_accounting.csv": "cdd1cb26e75b89c5c7360acb036710a2d1bb91cabed9d02ddb507ac726296deb",
+    "results/tables/g3_candidate_position_execution_order.csv": "5dffabf52a91ef2d0f081e363157152825ed7b5a9ed550634d17a6b8bf27bf0a"
+  },
+  "validation_failures": [],
+  "validation_passed": true,
+  "zero_inference": true
+}

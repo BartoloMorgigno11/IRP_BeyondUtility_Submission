@@ -1,0 +1,9 @@
+check_id,check_name,status,count,paths,notes
+H01,results_raw_outputs_exists,passed,1,results/raw_outputs,Raw-output directory presence only; E1 creates no raw outputs.
+H02,jsonl_files_under_results_raw_outputs,review,7,results/raw_outputs/plan_d_llm_ml1m_history_length_sensitivity_raw.jsonl; results/raw_outputs/plan_d_llm_ml1m_reranking_diagnostic_raw.jsonl; results/raw_outputs/plan_d_mistral_smoke_test_raw.jsonl; results/raw_outputs/plan_d_qwen2_ml1m_candidate_position_bias_diagnostic_raw.jsonl; results/raw_outputs/plan_d_qwen2_ml1m_ranking_diagnostic_raw.jsonl; results/raw_outputs/plan_d_qwen2_ml1m_strict_prompt_diagnostic_raw.jsonl; results/raw_outputs/plan_d_qwen_vs_mistral_ml1m_diagnostic_raw.jsonl,Existing JSONL files would be raw LLM responses and must remain ignored.
+H03,tracked_jsonl_files_under_results_raw_outputs,passed,0,,No tracked raw JSONL files should exist.
+H04,tracked_checkpoint_cache_model_like_files,review,4,results/raw_outputs/.gitkeep; results/raw_outputs/beauty_baseline_outputs_normalized.csv; results/raw_outputs/beauty_llm_outputs_normalized.csv; results/raw_outputs/sports_llm_outputs_normalized.csv,"Tracks forbidden patterns including checkpoints, caches, model files, .venv, JSONL, and raw output paths."
+H05,untracked_forbidden_file_patterns,passed,0,,Untracked forbidden paths should not be committed.
+H06,original_repo_git_status,passed,0,,original_repo/ must remain unmodified.
+H07,plan_c_git_status,passed,0,,Plan C files and metrics must remain unmodified.
+H08,e1_raw_output_creation,passed,0,,E1 writes only inventory tables and a report.

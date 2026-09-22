@@ -1,0 +1,65 @@
+phase:
+  id: phase_f6h2
+  name: direct_paper_verification_and_official_lineage_recovery
+  expected_branch: plan-d-extensions
+  expected_head: 02a20b8b509b8cf834a8766dd1cf1f751ae204bf
+  interpreter_path: .venv_audit_recovery/Scripts/python.exe
+  environment_classification: defensible_repaired_clone_exact_package_versions
+
+inputs:
+  workspace_forensic_report: report/workspace_forensic_state_audit.md
+  exactness_frontier_report: report/exactness_frontier_and_evidence_closure.md
+  f6g3_report: report/phase_f6g3_lastfm_reranking_top10_freeze.md
+  f6h1_report: report/phase_f6h1_offline_exactness_elevation.md
+  handoff: report/future_operations_context_handoff.md
+  current_context_snapshot: results/manifests/current_project_context_snapshot.json
+  exactness_frontier_snapshot: results/manifests/exactness_frontier_snapshot.json
+  f6g3_freeze_manifest: results/manifests/phase_f6g3_top10_freeze_manifest.json
+  f6h1_manifest: results/manifests/phase_f6h1_offline_exactness_elevation_manifest.json
+  paper_atomic_contract: results/tables/paper_atomic_contract.csv
+  paper_repository_contract_conflicts: results/tables/paper_repository_contract_conflicts.csv
+  paper_to_local_traceability: results/tables/paper_to_local_traceability.csv
+  current_reproduction_status_matrix: results/tables/current_reproduction_status_matrix.csv
+  exactness_frontier_by_component: results/tables/exactness_frontier_by_component.csv
+  numeric_cell_exactness_frontier: results/tables/numeric_cell_exactness_frontier.csv
+  exactness_elevation_candidates: results/tables/exactness_elevation_candidates.csv
+  phase_f6h1_target_inventory: results/tables/phase_f6h1_target_candidate_inventory.csv
+  phase_f6h1_documentary_verification: results/tables/phase_f6h1_documentary_verification.csv
+  phase_f6h1_raw_evidence_reconciliation: results/tables/phase_f6h1_raw_evidence_reconciliation.csv
+  phase_f6h1_component_decisions: results/tables/phase_f6h1_component_elevation_decisions.csv
+  phase_f6h1_numeric_decisions: results/tables/phase_f6h1_numeric_cell_elevation_decisions.csv
+  phase_f6h1_unresolved: results/tables/phase_f6h1_unresolved_or_rejected_candidates.csv
+  paper_pdf: paper/2411.00331v1.pdf
+  paper_pdf_duplicate: paper/Beyond Utility Evaluating LLM As Recommander.pdf
+  paper_docx_translation: paper/traduzione_italiana_beyond_utility_llm_recommender.docx
+  manual_pdf_review: results/tables/finalization_f5ar_manual_pdf_review.csv
+  docx_tables: results/tables/finalization_f5ar_docx_tables.csv
+  paper_table_inventory: results/tables/finalization_f5ar_paper_table_inventory.csv
+  upstream_root: original_repo/EvaLLMasRecommender
+  upstream_readme: original_repo/EvaLLMasRecommender/README.md
+  upstream_metric_code: original_repo/EvaLLMasRecommender/eva/codes/llm_metrics.py
+  upstream_zero_shot_code: original_repo/EvaLLMasRecommender/eva/codes/zero_shot.py
+  upstream_templates_dir: original_repo/EvaLLMasRecommender/eva/templates
+  upstream_beauty_sota_zip: original_repo/EvaLLMasRecommender/sota_results/beauty_his10.zip
+  upstream_beauty_llm_zip: original_repo/EvaLLMasRecommender/llm_results/beauty.zip
+  upstream_sports_llm_zip: original_repo/EvaLLMasRecommender/llm_results/sports.zip
+  local_reconstructed_beauty_dir: data/reconstructed/plan_c/amazon_beauty
+  local_reconstructed_sports_dir: data/reconstructed/plan_c/amazon_sports
+  local_llm_results_dir: results/llm
+  local_tables_dir: results/tables
+
+policy:
+  no_training: true
+  no_llm_inference: true
+  no_ollama: true
+  no_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  no_prompt_changes: true
+  no_parser_changes: true
+  no_candidate_changes: true
+  no_cohort_changes: true
+  no_metric_recomputation_except_integrity_checks: true
+  report_evidence_readiness_not_exactness_elevation: true
+  preserve_f6g3_negative_result: true
+  preserve_f6h1_zero_elevation_result: true

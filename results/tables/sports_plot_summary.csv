@@ -1,0 +1,9 @@
+dataset,plot_name,status,reason,output_path,source_files,timestamp
+sports,hr_at_5,skipped,No existing CSV metric rows were available for hr_at_5.,,,2026-06-28T23:07:46.783881+00:00
+sports,ndcg_at_5,skipped,No existing CSV metric rows were available for ndcg_at_5.,,,2026-06-28T23:07:46.783881+00:00
+sports,catalog_coverage_at_5,skipped,No existing CSV metric rows were available for catalog_coverage_at_5.,,,2026-06-28T23:07:46.783881+00:00
+sports,hallucination_rate,skipped,No existing CSV metric rows were available for hallucination_rate.,,,2026-06-28T23:07:46.783881+00:00
+sports,ndcg_at_5_vs_catalog_coverage_at_5,skipped,NDCG@5 and Catalog Coverage@5 metric rows were not both available.,,,2026-06-28T23:07:46.783881+00:00
+sports,position_bias,skipped,No existing position-bias metric rows with candidate_position and value were available.,,,2026-06-28T23:07:46.783881+00:00
+sports,history_length,skipped,No existing history-length metric rows with history_length and value were available.,,,2026-06-28T23:07:46.783881+00:00
+sports,readiness_status_counts,generated,Generated from existing readiness/status summary rows; no metric values were inferred.,results\plots\sports_readiness_status_counts.png,results\tables\sports_final_summary.csv,2026-06-28T23:07:46.783881+00:00

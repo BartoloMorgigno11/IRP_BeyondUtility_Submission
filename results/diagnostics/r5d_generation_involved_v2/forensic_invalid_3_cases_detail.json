@@ -1,0 +1,756 @@
+{
+  "summary": {
+    "final_decision": "R5D_GENUINE_MODEL_NONCOMPLIANCE_CONFIRMED",
+    "llm_calls": 0,
+    "cases_audited": "3/3",
+    "valid_controls_audited": 10,
+    "manifest_sha256": "290CCB9E809FF7BDAECDF83AE9C2AC9DF79A3715B6FC9CC14E520521001E0AFD",
+    "protocol_hash": "AA76CD3E936A969A57CDA2E9E54E22B73D6C1D3DB65C0795F86E181CEDFE3B1A",
+    "prompt_exactly_k": true,
+    "prompt_positions_not_item_ids": true,
+    "prompt_no_duplicates": true,
+    "context_truncation_issue": false,
+    "parser_bug": false,
+    "validator_bug": false,
+    "invalid_prompt_chars": [
+      5558,
+      7335,
+      7483
+    ],
+    "control_prompt_chars": [
+      7320,
+      7270,
+      7414,
+      7444,
+      7195,
+      7160,
+      7129,
+      7569,
+      7023,
+      7016
+    ],
+    "same_cell_valid_terminal_controls_available": 97,
+    "root_cause": "Mistral produced terminal JSON that violated the already explicit R5D ranking contract in 3 Beauty PROFILE_PLUS_HISTORY cases: 2 item-ID substitutions and 1 duplicate index.",
+    "protocol_change_required": true,
+    "selective_retry_allowed": false,
+    "full_r5d_corrected_rerun_required": true,
+    "can_existing_600_outputs_be_frozen": "PARTIAL",
+    "notes": "597 valid terminal outputs can be retained only as partial interrupted-run evidence under strict invalid-output accounting; they cannot freeze the R5D target gaps or justify selective retry under the frozen zero-retry protocol."
+  },
+  "invalid_cases": [
+    {
+      "request_id": "R5D-RANK-167AC5F3AB797DBA",
+      "r5a_request_id": "R5A-REQ-155584DECE4A6E7F",
+      "user_id": "8641",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7483,
+      "prompt_words": 1117,
+      "prompt_eval_count": 2545,
+      "eval_count": 71,
+      "done": true,
+      "done_reason": "stop",
+      "backend_complete": true,
+      "expected_k": 10,
+      "raw_response_text": "{\"ranked_candidate_indices\":[11630, 2758, 2105, 3602, 6152, 5237, 2042, 11709, 1939, 778]}",
+      "parsed_values_json": "[11630,2758,2105,3602,6152,5237,2042,11709,1939,778]",
+      "parse_status": "unknown_indices",
+      "validity_class": "OUT_OF_RANGE",
+      "duplicate_count": 0,
+      "unknown_item_count": 10,
+      "dataset_item_id_substitution_count": 10,
+      "item_id_to_position_mapping_json": "[{\"value\":11630,\"candidate_position\":1,\"item_id\":\"11630\"},{\"value\":2758,\"candidate_position\":2,\"item_id\":\"2758\"},{\"value\":2105,\"candidate_position\":4,\"item_id\":\"2105\"},{\"value\":3602,\"candidate_position\":5,\"item_id\":\"3602\"},{\"value\":6152,\"candidate_position\":6,\"item_id\":\"6152\"},{\"value\":5237,\"candidate_position\":7,\"item_id\":\"5237\"},{\"value\":2042,\"candidate_position\":8,\"item_id\":\"2042\"},{\"value\":11709,\"candidate_position\":9,\"item_id\":\"11709\"},{\"value\":1939,\"candidate_position\":10,\"item_id\":\"1939\"},{\"value\":778,\"candidate_position\":11,\"item_id\":\"778\"}]",
+      "prompt_hash_matches_payload": "true",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-167AC5F3AB797DBA.json",
+      "exact_prompt_sent": "Dataset: Beauty\nTask: ranking\nControlled condition: profile_plus_history\nUse only the train-history, profile, and candidate context below. Return exactly 10 1-based candidate indices. Valid outputs are candidate POSITIONS 1..20, not dataset item IDs. Use only integer indices corresponding to positions in the candidate list supplied in this prompt. Do not return item IDs. Return only valid JSON with key ranked_candidate_indices containing EXACTLY 10 unique integers ordered from rank 1 to rank 10: {\"ranked_candidate_indices\":[2,5,1,7,4,9,3,8,6,10]}. Do not return more than 10 indices. Do not return fewer than 10 indices. Do not include rationale, explanation, prose, Markdown, or extra keys.\n\nProfile context:\nExisting F6L profile dependency F6L-PROFILE-REQ-0485; profile_hash=E6D792DD15A7A30E65B5B183012904BB645BF4CF04A34045820F311FCB4984DC\n\nFrozen source context:\nThe Beauty user pixels and bits has bought items (from the earlier to the later): Beauty items ['Dove Men+Care Sensitive + Face Wash, 5 Ounces', 'Clear Scalp and Hair Beauty Therapy Frizz Control Nourishing Daily Conditioner, 12.7 Fluid Ounce', 'Clear Deep Nourishing Treatment Mask, Ultra Shea, 6 Fluid Ounce', 'Nivea Q10 Skin Firming Body Lotion , 13.5 fl oz  (Pack of 2)', 'Cotz Pediatric Spf 40, 3.5 Ounce', 'Dove Color Care Leave On Conditioner, 4 Ounce', 'Remington S9620 Silk Ceramic Flat Iron, 2 Inch', 'Remington H9096 Silk Ceramic Heated Clip Setter', 'Toni&amp;Guy Casual Sea Salt Texturising Spray, 6.8 Fluid Ounce', 'Toni&amp;Guy Glamour Volume Plumping Whip, 2.82 Fluid Ounce']. pixels and bits's user profile goes like: \"Based on the purchase history provided, I can make some educated guesses about the user's personality, preferences, and shopping tendencies: 1. **Personality**: The user seems to prioritize self-care and grooming, which suggests a focus on personal hygiene and appearance. This could indicate a conscientious and health-conscious individual who values maintaining a well-groomed appearance. 2. **Preference**: The user appears to have a preference for well-known brands such as Dove, Clear, Nivea, Remington, and Toni&Guy. This suggests a preference for established, trusted brands in the beauty and grooming industry. 3. **Shopping Tendency**: The user's purchases include a variety of products catering to different needs, such as face wash, conditioner, hair mask, body lotion, sunscreen, styling tools, and texturizing sprays. This indicates a broad interest in various beauty and grooming categories. The user also seems to prefer buying in bulk or multi-packs (e.g., the Nivea body lotion pack of 2). This could suggest a cost-conscious shopper who values convenience and efficiency. 4. **Gender**: While I can't definitively determine the user's gender based on the provided list, the presence of Dove Men+Care suggests that the user is likely male or shopping for a male. However, it's important to note that many grooming products are unisex and can be used by both men and women. 5. **Age Group**: The variety of products, including those specifically marketed towards children (e.g., Cotz Pediatric SPF 40), suggests that the user could potentially be a parent or caregiver for younger individuals. However, without more specific information, it's difficult to accurately determine the user's age group.\". Please select the top 10 items from the list of candidates below that the user is most likely to buy next, and rank them in descending order of likelihood. The candidates are: ['Natural Anti Aging Anti Wrinkle Intensive Skin Care Eye Firming Cream - Made Under the Mediterranean Sun | Smooths Out Fine Lines and Wrinkles | Lightens Dark Circles | Reduces Puffy Eyes | Encourages the Skin to Produce Natural Collagen | Rejuvenating Naturally Mediterranean Moisturizing Cream | SAY Goodbye to Wrinkles, Baggy Eyes and Dark Rings | Fresh Looking Youthful Skin | Easily Absorbs to Leave Skin Smooth | No Chemicals, No Additives, No Unnatural Preservatives, No Parabens, No Free Radicals', 'Neutrogena Wet Skin Junior Sunblock Spray SPF 70, 5 Ounce', 'BaByliss Pro BABP2800 Porcelain Ceramic 2000-Watt Dryer, Black', 'Olay Regenerist Deep Hydration Regenerating Cream Facial Moisturirzer 1.7 Fl Oz', 'Mizani Moisturizing Leave-In Milk, D'tangle, 8.5 Ounce', 'Dior Diorshow Brow Styler Ultra-Fine Precision Brow Pencil Universal Shade', 'Sable Nail Art Brushes Pen, Detailer Liner and Striper Set of 3 Plus 5 x 2 Way Marbleizing Dotting Pen with Bonus Rhinestones and Fimo Fruit and/or Flower Slices', '20''7pcs Fashional Clips in Remy Human Hair Extensions 24 Colors for Women Beauty Hot Sale (#02-dark brown)', '42 Acrylic Powder Liquid Brush Glitter Clipper Primer File Nail Art Tips Set Kit', 'Essie Essie Nail Polish Resort Collection - Playa Del Platinum', 'Garnier Sleek and Shine Shampoo, 25.4 Fluid Ounce', 'Cristophe Professional Volumizing Spray Tonic, 6 Ounce', 'Coastal Scents 88 Original Palette', 'Andalou Naturals Get Started Brightening Kit', 'Aveda Smooth Infusion Style-Prep Smoother 3.4 oz', 'Elasta QP Olive Oil &amp; Mango Butter Moisturizer Unisex 8.25 oz.', 'NIOXIN New System Kit #4 1x Cleanser 10.1 oz, 1xScalp Therapy 5.07 oz, 1xScalp Treatment 3.38 oz', 'Pravana Fresh Volumizing Dry Shampoo, 3.4 oz', 'NARS The Multiple, Maui', 'Harmony Gelish Magneto - Polar Attraction w/ Matching Magnet Lacquer'].\n\nUser history:\n1. F6L source prompt D9F16940C7999BBF0BE6D3F2E261A43452C6CF9ED7E95B17E4DA887D5E9886CC [F6L_RENDERED_CONTEXT]\n\nCandidates:\n1. Natural Anti Aging Anti Wrinkle Intensive Skin Care Eye Firming Cream - Made Under the Mediterranean Sun | Smooths Out Fine Lines and Wrinkles | Lightens Dark Circles | Reduces Puffy Eyes | Encourages the Skin to Produce Natural Collagen | Rejuvenating Naturally Mediterranean Moisturizing Cream | SAY Goodbye to Wrinkles, Baggy Eyes and Dark Rings | Fresh Looking Youthful Skin | Easily Absorbs to Leave Skin Smooth | No Chemicals, No Additives, No Unnatural Preservatives, No Parabens, No Free Radicals [11630]\n2. Neutrogena Wet Skin Junior Sunblock Spray SPF 70, 5 Ounce [2758]\n3. BaByliss Pro BABP2800 Porcelain Ceramic 2000-Watt Dryer, Black [5643]\n4. Olay Regenerist Deep Hydration Regenerating Cream Facial Moisturirzer 1.7 Fl Oz [2105]\n5. Mizani Moisturizing Leave-In Milk, D'tangle, 8.5 Ounce [3602]\n6. Dior Diorshow Brow Styler Ultra-Fine Precision Brow Pencil Universal Shade [6152]\n7. Sable Nail Art Brushes Pen, Detailer Liner and Striper Set of 3 Plus 5 x 2 Way Marbleizing Dotting Pen with Bonus Rhinestones and Fimo Fruit and/or Flower Slices [5237]\n8. 20''7pcs Fashional Clips in Remy Human Hair Extensions 24 Colors for Women Beauty Hot Sale (#02-dark brown) [2042]\n9. 42 Acrylic Powder Liquid Brush Glitter Clipper Primer File Nail Art Tips Set Kit [11709]\n10. Essie Essie Nail Polish Resort Collection - Playa Del Platinum [1939]\n11. Garnier Sleek and Shine Shampoo, 25.4 Fluid Ounce [778]\n12. Cristophe Professional Volumizing Spray Tonic, 6 Ounce [768]\n13. Coastal Scents 88 Original Palette [4364]\n14. Andalou Naturals Get Started Brightening Kit [116]\n15. Aveda Smooth Infusion Style-Prep Smoother 3.4 oz [11538]\n16. Elasta QP Olive Oil &amp; Mango Butter Moisturizer Unisex 8.25 oz. [3599]\n17. NIOXIN New System Kit #4 1x Cleanser 10.1 oz, 1xScalp Therapy 5.07 oz, 1xScalp Treatment 3.38 oz [9982]\n18. Pravana Fresh Volumizing Dry Shampoo, 3.4 oz [9879]\n19. NARS The Multiple, Maui [5257]\n20. Harmony Gelish Magneto - Polar Attraction w/ Matching Magnet Lacquer [9958]\n",
+      "candidate_set": [
+        {
+          "position": 1,
+          "item_id": "11630",
+          "title": "Natural Anti Aging Anti Wrinkle Intensive Skin Care Eye Firming Cream - Made Under the Mediterranean Sun | Smooths Out Fine Lines and Wrinkles | Lightens Dark Circles | Reduces Puffy Eyes | Encourages the Skin to Produce Natural Collagen | Rejuvenating Naturally Mediterranean Moisturizing Cream | SAY Goodbye to Wrinkles, Baggy Eyes and Dark Rings | Fresh Looking Youthful Skin | Easily Absorbs to Leave Skin Smooth | No Chemicals, No Additives, No Unnatural Preservatives, No Parabens, No Free Radicals"
+        },
+        {
+          "position": 2,
+          "item_id": "2758",
+          "title": "Neutrogena Wet Skin Junior Sunblock Spray SPF 70, 5 Ounce"
+        },
+        {
+          "position": 3,
+          "item_id": "5643",
+          "title": "BaByliss Pro BABP2800 Porcelain Ceramic 2000-Watt Dryer, Black"
+        },
+        {
+          "position": 4,
+          "item_id": "2105",
+          "title": "Olay Regenerist Deep Hydration Regenerating Cream Facial Moisturirzer 1.7 Fl Oz"
+        },
+        {
+          "position": 5,
+          "item_id": "3602",
+          "title": "Mizani Moisturizing Leave-In Milk, D'tangle, 8.5 Ounce"
+        },
+        {
+          "position": 6,
+          "item_id": "6152",
+          "title": "Dior Diorshow Brow Styler Ultra-Fine Precision Brow Pencil Universal Shade"
+        },
+        {
+          "position": 7,
+          "item_id": "5237",
+          "title": "Sable Nail Art Brushes Pen, Detailer Liner and Striper Set of 3 Plus 5 x 2 Way Marbleizing Dotting Pen with Bonus Rhinestones and Fimo Fruit and/or Flower Slices"
+        },
+        {
+          "position": 8,
+          "item_id": "2042",
+          "title": "20''7pcs Fashional Clips in Remy Human Hair Extensions 24 Colors for Women Beauty Hot Sale (#02-dark brown)"
+        },
+        {
+          "position": 9,
+          "item_id": "11709",
+          "title": "42 Acrylic Powder Liquid Brush Glitter Clipper Primer File Nail Art Tips Set Kit"
+        },
+        {
+          "position": 10,
+          "item_id": "1939",
+          "title": "Essie Essie Nail Polish Resort Collection - Playa Del Platinum"
+        },
+        {
+          "position": 11,
+          "item_id": "778",
+          "title": "Garnier Sleek and Shine Shampoo, 25.4 Fluid Ounce"
+        },
+        {
+          "position": 12,
+          "item_id": "768",
+          "title": "Cristophe Professional Volumizing Spray Tonic, 6 Ounce"
+        },
+        {
+          "position": 13,
+          "item_id": "4364",
+          "title": "Coastal Scents 88 Original Palette"
+        },
+        {
+          "position": 14,
+          "item_id": "116",
+          "title": "Andalou Naturals Get Started Brightening Kit"
+        },
+        {
+          "position": 15,
+          "item_id": "11538",
+          "title": "Aveda Smooth Infusion Style-Prep Smoother 3.4 oz"
+        },
+        {
+          "position": 16,
+          "item_id": "3599",
+          "title": "Elasta QP Olive Oil &amp; Mango Butter Moisturizer Unisex 8.25 oz."
+        },
+        {
+          "position": 17,
+          "item_id": "9982",
+          "title": "NIOXIN New System Kit #4 1x Cleanser 10.1 oz, 1xScalp Therapy 5.07 oz, 1xScalp Treatment 3.38 oz"
+        },
+        {
+          "position": 18,
+          "item_id": "9879",
+          "title": "Pravana Fresh Volumizing Dry Shampoo, 3.4 oz"
+        },
+        {
+          "position": 19,
+          "item_id": "5257",
+          "title": "NARS The Multiple, Maui"
+        },
+        {
+          "position": 20,
+          "item_id": "9958",
+          "title": "Harmony Gelish Magneto - Polar Attraction w/ Matching Magnet Lacquer"
+        }
+      ],
+      "history_context": [
+        {
+          "item_id": "F6L_RENDERED_CONTEXT",
+          "title": "F6L source prompt D9F16940C7999BBF0BE6D3F2E261A43452C6CF9ED7E95B17E4DA887D5E9886CC"
+        }
+      ],
+      "raw_payload_generation_metadata": {
+        "runtime_model_id": "mistral:7b-instruct",
+        "backend_complete": true,
+        "ollama_done": true,
+        "ollama_done_reason": "stop",
+        "prompt_eval_count": 2545,
+        "eval_count": 71,
+        "eval_duration": 1788533000,
+        "prompt_eval_duration": 2288500000,
+        "total_duration": 4218949300,
+        "temperature": "0",
+        "seed": "0",
+        "max_new_tokens": "512",
+        "retry_count": 0
+      }
+    },
+    {
+      "request_id": "R5D-RANK-59C06DDCFD78BFF4",
+      "r5a_request_id": "R5A-REQ-69D4E5AD411E778E",
+      "user_id": "2362",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7335,
+      "prompt_words": 1144,
+      "prompt_eval_count": 2521,
+      "eval_count": 36,
+      "done": true,
+      "done_reason": "stop",
+      "backend_complete": true,
+      "expected_k": 10,
+      "raw_response_text": "{\"ranked_candidate_indices\":[11,4,1,11,7,10,3,19,6,14]}",
+      "parsed_values_json": "[11,4,1,11,7,10,3,19,6,14]",
+      "parse_status": "duplicate_indices",
+      "validity_class": "DUPLICATE",
+      "duplicate_count": 1,
+      "unknown_item_count": 0,
+      "dataset_item_id_substitution_count": 0,
+      "item_id_to_position_mapping_json": "[]",
+      "prompt_hash_matches_payload": "true",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-59C06DDCFD78BFF4.json",
+      "exact_prompt_sent": "Dataset: Beauty\nTask: ranking\nControlled condition: profile_plus_history\nUse only the train-history, profile, and candidate context below. Return exactly 10 1-based candidate indices. Valid outputs are candidate POSITIONS 1..20, not dataset item IDs. Use only integer indices corresponding to positions in the candidate list supplied in this prompt. Do not return item IDs. Return only valid JSON with key ranked_candidate_indices containing EXACTLY 10 unique integers ordered from rank 1 to rank 10: {\"ranked_candidate_indices\":[2,5,1,7,4,9,3,8,6,10]}. Do not return more than 10 indices. Do not return fewer than 10 indices. Do not include rationale, explanation, prose, Markdown, or extra keys.\n\nProfile context:\nExisting F6L profile dependency F6L-PROFILE-REQ-0430; profile_hash=471F2BA895FD4A5EED79773C9BB07CF3CA0292D619AD72912E306786410C34D5\n\nFrozen source context:\nAccording to what items Beauty user I. M. Strong has purchased (from the earlier to the later): Beauty items ['Skin QR Organics L'or de la Mer Organic Anti Cellulite Body Blaster Scrub with Seaweed, 12oz', 'Dabur Vatika Enriched Coconut Hair Oil - 5.07fl oz', 'Mavala Stop - Helps Cure Nail Biting and Thumb Sucking, 0.3-Fluid Ounce', 'Wild Ferns Manuka Honey Eye Cream 30ml', 'Manuka Honey Night Revival Cream 100 ml', 'Elchim 2001hp High Pressure 2000 Watt Hair Dryer, White', 'Badger Balm, Sleep Balm - 2 oz', 'Omega Labs Fungus Treatment for Finger &amp; Toe Nails 15ml/0.5oz', 'Professional Hair Salon Nylon Cape with Snap Closure - 50&quot; x 60&quot;'] , I. M. Strong's user profile goes like: \"Based on the items purchased by I. M. Strong, we can infer several characteristics about their personality, preferences, and shopping tendencies: 1. Health-conscious and eco-friendly: The purchase of organic skincare products like Skin QR Organics L'or de la Mer Organic Anti Cellulite Body Blaster Scrub with Seaweed suggests a preference for natural and organic beauty products. This could indicate a health-conscious lifestyle and an interest in eco-friendly choices. 2. Concern for skin care: The user has purchased several skincare items, such as the Wild Ferns Manuka Honey Eye Cream 30ml, Manuka Honey Night Revival Cream 100 ml, and Badger Balm Sleep Balm - 2 oz. This suggests a focus on maintaining good skin health and possibly addressing specific concerns like dark circles, dryness, or aging. 3. Hair care: The user has also shown interest in hair care with the purchase of Dabur Vatika Enriched Coconut Hair Oil and an Elchim 2001hp High Pressure 2000 Watt Hair Dryer. This indicates a concern for hair health, possibly due to concerns about damage or styling needs. 4. Nail care: The user has purchased Mavala Stop, a product designed to help cure nail biting and thumb sucking, as well as Omega Labs Fungus Treatment for Finger & Toe Nails 15ml/0.5oz. This suggests a concern for nail health and possibly a desire to improve or maintain the appearance of their nails. 5. Professionalism: The purchase of a Professional Hair Salon Nylon Cape with Snap Closure indicates that the user may work in a professional setting, such as a hair salon, or have a strong interest in hairdressing and styling. In summary, I. M. Strong appears to be health-conscious, focused on skincare, hair care, and nail care, and possibly works in a professional setting related to beauty or hairdressing. They seem to prioritize natural and eco-friendly products and may have specific concerns they are addressing through their purchases.\". Please select the top 10 items from the list of candidates below that the user is most likely to need next, and rank them in descending order of likelihood. The candidates are: ['L'Oreal HiP Kohl Liner - Navy', 'B&amp;B Neon Mist Spray Bottle (Assorted Colors)', 'Andis 40055 Pro Style 1600 Watt Hair Dryer - White', 'Clear Scalp and Hair Intense Hydration Nourishing Conditioner, 12.7 Ounce', 'Aqua Spa Energize Bath Soak, 10 Ounce', 'Shea Butter - Smooth Luxurious - Intense Long Lasting Moisturization in a Beautiful Scent - Ultra Rich Whipped Shea Body Butter Easily Absorbed Into Your Skin - Heals Extremely Dry, Rough or Damaged Skin - Leaving Your Skin Feeling and Looking Soft and Rejuvenated. This Is an FDA Certified Product.', 'Bar Soap, African Blk with Al, 5 oz (6 Pack)', 'Vidal Sassoon 5-inch Pocket Combs, 2 Count', 'African Shea Butter 100% Natural 16oz', 'e.l.f. Essential Eyelid Primer-7501 Sheer', 'L'Oreal Paris EverStrong Deep Replenishing Masque, 5.1-Fluid Ounce', '100% Pure 100% Pure Fruit Pigmented Mascara - Black Tea - 0.24 oz', 'OPI: Lacquer NLS86 Bubble Bath, 0.5 oz', 'Dead Sea Mud Facial Mask - Ancient Natural Facial Mask and Skin Care Treatment for Women, Men and Teens + FREE BONUS EBOOK! - Organic Mud Mask Offers Gentle Facial Cleanser, Exfoliator &amp; Natural Moisturizer to Restore Your Skin's Natural Radiance - This Renowned Anti-Aging Mud Mask Heals Dry &amp; Oily Skin, Acne, Eczema &amp; Psoriasis - Leaves You With a Youthful-Looking, Radiant Complexion', 'Pibbs 514 Kwik Dri Dryer Big Sale!', 'Burt's Bees Acne Pore Refining Scrub, 4 Ounce Tube', '12 type practical nail art hollow heart decoration tips', '100% Australian Tea Tree Oil + FREE Blemish Roll-on Stick with Tea Tree Oil', 'Nexxus humectress ultimate moisture deep conditioning treatment , 5.5oz', 'Aphogee Conditioner Pro-Vitamin Leave-In 8 oz.'].\n\nUser history:\n1. F6L source prompt 3A0425B3CF12CCC84F42BE0A45BB05BCE0AC9A49EAEABF7485FE442163981845 [F6L_RENDERED_CONTEXT]\n\nCandidates:\n1. L'Oreal HiP Kohl Liner - Navy [11600]\n2. B&amp;B Neon Mist Spray Bottle (Assorted Colors) [7295]\n3. Andis 40055 Pro Style 1600 Watt Hair Dryer - White [11081]\n4. Clear Scalp and Hair Intense Hydration Nourishing Conditioner, 12.7 Ounce [6711]\n5. Aqua Spa Energize Bath Soak, 10 Ounce [2393]\n6. Shea Butter - Smooth Luxurious - Intense Long Lasting Moisturization in a Beautiful Scent - Ultra Rich Whipped Shea Body Butter Easily Absorbed Into Your Skin - Heals Extremely Dry, Rough or Damaged Skin - Leaving Your Skin Feeling and Looking Soft and Rejuvenated. This Is an FDA Certified Product. [11772]\n7. Bar Soap, African Blk with Al, 5 oz (6 Pack) [2794]\n8. Vidal Sassoon 5-inch Pocket Combs, 2 Count [1568]\n9. African Shea Butter 100% Natural 16oz [3972]\n10. e.l.f. Essential Eyelid Primer-7501 Sheer [1765]\n11. L'Oreal Paris EverStrong Deep Replenishing Masque, 5.1-Fluid Ounce [4039]\n12. 100% Pure 100% Pure Fruit Pigmented Mascara - Black Tea - 0.24 oz [783]\n13. OPI: Lacquer NLS86 Bubble Bath, 0.5 oz [4040]\n14. Dead Sea Mud Facial Mask - Ancient Natural Facial Mask and Skin Care Treatment for Women, Men and Teens + FREE BONUS EBOOK! - Organic Mud Mask Offers Gentle Facial Cleanser, Exfoliator &amp; Natural Moisturizer to Restore Your Skin's Natural Radiance - This Renowned Anti-Aging Mud Mask Heals Dry &amp; Oily Skin, Acne, Eczema &amp; Psoriasis - Leaves You With a Youthful-Looking, Radiant Complexion [6464]\n15. Pibbs 514 Kwik Dri Dryer Big Sale! [8559]\n16. Burt's Bees Acne Pore Refining Scrub, 4 Ounce Tube [7390]\n17. 12 type practical nail art hollow heart decoration tips [11419]\n18. 100% Australian Tea Tree Oil + FREE Blemish Roll-on Stick with Tea Tree Oil [10599]\n19. Nexxus humectress ultimate moisture deep conditioning treatment , 5.5oz [1638]\n20. Aphogee Conditioner Pro-Vitamin Leave-In 8 oz. [5952]\n",
+      "candidate_set": [
+        {
+          "position": 1,
+          "item_id": "11600",
+          "title": "L'Oreal HiP Kohl Liner - Navy"
+        },
+        {
+          "position": 2,
+          "item_id": "7295",
+          "title": "B&amp;B Neon Mist Spray Bottle (Assorted Colors)"
+        },
+        {
+          "position": 3,
+          "item_id": "11081",
+          "title": "Andis 40055 Pro Style 1600 Watt Hair Dryer - White"
+        },
+        {
+          "position": 4,
+          "item_id": "6711",
+          "title": "Clear Scalp and Hair Intense Hydration Nourishing Conditioner, 12.7 Ounce"
+        },
+        {
+          "position": 5,
+          "item_id": "2393",
+          "title": "Aqua Spa Energize Bath Soak, 10 Ounce"
+        },
+        {
+          "position": 6,
+          "item_id": "11772",
+          "title": "Shea Butter - Smooth Luxurious - Intense Long Lasting Moisturization in a Beautiful Scent - Ultra Rich Whipped Shea Body Butter Easily Absorbed Into Your Skin - Heals Extremely Dry, Rough or Damaged Skin - Leaving Your Skin Feeling and Looking Soft and Rejuvenated. This Is an FDA Certified Product."
+        },
+        {
+          "position": 7,
+          "item_id": "2794",
+          "title": "Bar Soap, African Blk with Al, 5 oz (6 Pack)"
+        },
+        {
+          "position": 8,
+          "item_id": "1568",
+          "title": "Vidal Sassoon 5-inch Pocket Combs, 2 Count"
+        },
+        {
+          "position": 9,
+          "item_id": "3972",
+          "title": "African Shea Butter 100% Natural 16oz"
+        },
+        {
+          "position": 10,
+          "item_id": "1765",
+          "title": "e.l.f. Essential Eyelid Primer-7501 Sheer"
+        },
+        {
+          "position": 11,
+          "item_id": "4039",
+          "title": "L'Oreal Paris EverStrong Deep Replenishing Masque, 5.1-Fluid Ounce"
+        },
+        {
+          "position": 12,
+          "item_id": "783",
+          "title": "100% Pure 100% Pure Fruit Pigmented Mascara - Black Tea - 0.24 oz"
+        },
+        {
+          "position": 13,
+          "item_id": "4040",
+          "title": "OPI: Lacquer NLS86 Bubble Bath, 0.5 oz"
+        },
+        {
+          "position": 14,
+          "item_id": "6464",
+          "title": "Dead Sea Mud Facial Mask - Ancient Natural Facial Mask and Skin Care Treatment for Women, Men and Teens + FREE BONUS EBOOK! - Organic Mud Mask Offers Gentle Facial Cleanser, Exfoliator &amp; Natural Moisturizer to Restore Your Skin's Natural Radiance - This Renowned Anti-Aging Mud Mask Heals Dry &amp; Oily Skin, Acne, Eczema &amp; Psoriasis - Leaves You With a Youthful-Looking, Radiant Complexion"
+        },
+        {
+          "position": 15,
+          "item_id": "8559",
+          "title": "Pibbs 514 Kwik Dri Dryer Big Sale!"
+        },
+        {
+          "position": 16,
+          "item_id": "7390",
+          "title": "Burt's Bees Acne Pore Refining Scrub, 4 Ounce Tube"
+        },
+        {
+          "position": 17,
+          "item_id": "11419",
+          "title": "12 type practical nail art hollow heart decoration tips"
+        },
+        {
+          "position": 18,
+          "item_id": "10599",
+          "title": "100% Australian Tea Tree Oil + FREE Blemish Roll-on Stick with Tea Tree Oil"
+        },
+        {
+          "position": 19,
+          "item_id": "1638",
+          "title": "Nexxus humectress ultimate moisture deep conditioning treatment , 5.5oz"
+        },
+        {
+          "position": 20,
+          "item_id": "5952",
+          "title": "Aphogee Conditioner Pro-Vitamin Leave-In 8 oz."
+        }
+      ],
+      "history_context": [
+        {
+          "item_id": "F6L_RENDERED_CONTEXT",
+          "title": "F6L source prompt 3A0425B3CF12CCC84F42BE0A45BB05BCE0AC9A49EAEABF7485FE442163981845"
+        }
+      ],
+      "raw_payload_generation_metadata": {
+        "runtime_model_id": "mistral:7b-instruct",
+        "backend_complete": true,
+        "ollama_done": true,
+        "ollama_done_reason": "stop",
+        "prompt_eval_count": 2521,
+        "eval_count": 36,
+        "eval_duration": 879505000,
+        "prompt_eval_duration": 1853810000,
+        "total_duration": 2859337800,
+        "temperature": "0",
+        "seed": "0",
+        "max_new_tokens": "512",
+        "retry_count": 0
+      }
+    },
+    {
+      "request_id": "R5D-RANK-E491A3315449174D",
+      "r5a_request_id": "R5A-REQ-DEE0E2F2C801DF48",
+      "user_id": "2903",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 5558,
+      "prompt_words": 800,
+      "prompt_eval_count": 1893,
+      "eval_count": 71,
+      "done": true,
+      "done_reason": "stop",
+      "backend_complete": true,
+      "expected_k": 10,
+      "raw_response_text": "{\"ranked_candidate_indices\":[1370, 1389, 7876, 5877, 1134, 6963, 5911, 8129, 11663, 3224]}",
+      "parsed_values_json": "[1370,1389,7876,5877,1134,6963,5911,8129,11663,3224]",
+      "parse_status": "unknown_indices",
+      "validity_class": "OUT_OF_RANGE",
+      "duplicate_count": 0,
+      "unknown_item_count": 10,
+      "dataset_item_id_substitution_count": 10,
+      "item_id_to_position_mapping_json": "[{\"value\":1370,\"candidate_position\":1,\"item_id\":\"1370\"},{\"value\":1389,\"candidate_position\":5,\"item_id\":\"1389\"},{\"value\":7876,\"candidate_position\":7,\"item_id\":\"7876\"},{\"value\":5877,\"candidate_position\":4,\"item_id\":\"5877\"},{\"value\":1134,\"candidate_position\":17,\"item_id\":\"1134\"},{\"value\":6963,\"candidate_position\":6,\"item_id\":\"6963\"},{\"value\":5911,\"candidate_position\":9,\"item_id\":\"5911\"},{\"value\":8129,\"candidate_position\":10,\"item_id\":\"8129\"},{\"value\":11663,\"candidate_position\":2,\"item_id\":\"11663\"},{\"value\":3224,\"candidate_position\":15,\"item_id\":\"3224\"}]",
+      "prompt_hash_matches_payload": "true",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-E491A3315449174D.json",
+      "exact_prompt_sent": "Dataset: Beauty\nTask: ranking\nControlled condition: profile_plus_history\nUse only the train-history, profile, and candidate context below. Return exactly 10 1-based candidate indices. Valid outputs are candidate POSITIONS 1..20, not dataset item IDs. Use only integer indices corresponding to positions in the candidate list supplied in this prompt. Do not return item IDs. Return only valid JSON with key ranked_candidate_indices containing EXACTLY 10 unique integers ordered from rank 1 to rank 10: {\"ranked_candidate_indices\":[2,5,1,7,4,9,3,8,6,10]}. Do not return more than 10 indices. Do not return fewer than 10 indices. Do not include rationale, explanation, prose, Markdown, or extra keys.\n\nProfile context:\nExisting F6L profile dependency F6L-PROFILE-REQ-0435; profile_hash=50E0BFD983667624FC9CAD9EB5C6CD4E75CDE9468EB3546DB6410EB53570104D\n\nFrozen source context:\nBeauty user wishgirl10 has purchased Beauty items (from the earlier to the later) ['Color Oops Hair Color Remover Extra Strength 1 Application', 'Danielle Cylinder Acrylic Cotton Pad Dispenser', 'Maybelline Great Lash Mascara, Very Black -.43 Fluid Ounce', 'Maybelline Define-A-Brow Eyebrow Pencil Soft Black 641', 'Maybelline 24 Hour Eyeshadow, Too Cool, 0.14 Ounce']. wishgirl10's user profile goes like: \"Based on the user's interaction history with Beauty items, we can infer the following about their personality, preferences, and shopping tendencies: 1. **Personality**: The user seems to have a practical and low-maintenance approach to beauty, as evidenced by the use of hair color remover and acrylic cotton pad dispenser, which are often used for touch-ups or daily care. However, they also show an interest in enhancing their appearance with makeup products like mascara, eyebrow pencil, and eyeshadow, suggesting a balance between practicality and aesthetics. 2. **Preferences**: The user appears to prefer affordable and well-known brands, as indicated by the selection of Maybelline products. They might also value convenience, given the choice of the Danielle Cylinder Acrylic Cotton Pad Dispenser, which is a practical tool for applying makeup. 3. **Shopping Tendency**: The user tends to purchase items that cater to both daily care and occasional glamour. They may be drawn to products that offer multiple uses or are easy to apply, such as the Maybelline Great Lash Mascara and Define-A-Brow Eyebrow Pencil. Additionally, they seem to prefer single applications of products, as seen in the Color Oops Hair Color Remover and the Maybelline 24 Hour Eyeshadow. This suggests a preference for convenience and cost-effectiveness in their shopping habits.\". Please select the top 10 items from the list of candidates below that the user is most likely to buy next, and rank them in descending order of likelihood. The candidates are: ['Shea Moisture Coconut Hibiscus Curl Enhancing Smoothie-12 oz', 'Cute Monkey Shaped Manicure Nail Polish Blower Dryer', 'Sofn'free GroHealthy Milk Protein &amp; Olive Oil Really Deep Conditioning Treatment', 'Bee Nuts! Organic Cuticle Oil heals redness and pain quickly. More than .5 oz in every bottle.', 'Blistex Medicated Lip Ointment', 'Xtreme Brite Brightening Gel 1oz', 'TIGI Bed Head Superstar Volumizing Leave-In Conditioner, 6.76 Ounce', 'Bliss Diamancel Diamond Nail File No.2, Medium', 'Tigi Catwalk Curls Rock Curl Amplifier, 4 Ounce', 'Renpure Organics My Luscious Hair Needs Lift! Volumizing Conditioner, 13.5-Ounce', 'Salux Nylon Japanese Beauty Skin Bath Wash Cloth/Towel - White', 'Caribbean Solutions - Self Tanner Beach Colours 6 Oz', 'Revlon Age Defying Spa Foundation, Fair, 1 Ounce', 'LATHER Natural Sea Wool Sponge 1 oz.', 'Dr. Bronner's Citrus Hair Conditioning Rinse, 8 fl oz', 'Revlon Double Ended Brow Brush, Premium', 'Maybelline New York Eye Studio Master Precise Liquid Eyeliner, No.110 Black, 0.037 Fluid Ounce', 'Palladio Liquid Eyeliner, Black, 0.13 Ounce', 'Ardell LashFree Eyelash Adhesive Remover 59ml/2oz', 'Garnier Fructis Fall Fight Shampoo For Falling Breaking Hair, 13 Fluid Ounce'].\n\nUser history:\n1. F6L source prompt 31DC6A3D0854FD1B908D6C39EC30C2D18903F8C409B4262049E95F62627EF7D1 [F6L_RENDERED_CONTEXT]\n\nCandidates:\n1. Shea Moisture Coconut Hibiscus Curl Enhancing Smoothie-12 oz [1370]\n2. Cute Monkey Shaped Manicure Nail Polish Blower Dryer [11663]\n3. Sofn'free GroHealthy Milk Protein &amp; Olive Oil Really Deep Conditioning Treatment [6209]\n4. Bee Nuts! Organic Cuticle Oil heals redness and pain quickly. More than .5 oz in every bottle. [5877]\n5. Blistex Medicated Lip Ointment [1389]\n6. Xtreme Brite Brightening Gel 1oz [6963]\n7. TIGI Bed Head Superstar Volumizing Leave-In Conditioner, 6.76 Ounce [7876]\n8. Bliss Diamancel Diamond Nail File No.2, Medium [7953]\n9. Tigi Catwalk Curls Rock Curl Amplifier, 4 Ounce [5911]\n10. Renpure Organics My Luscious Hair Needs Lift! Volumizing Conditioner, 13.5-Ounce [8129]\n11. Salux Nylon Japanese Beauty Skin Bath Wash Cloth/Towel - White [1299]\n12. Caribbean Solutions - Self Tanner Beach Colours 6 Oz [7139]\n13. Revlon Age Defying Spa Foundation, Fair, 1 Ounce [5705]\n14. LATHER Natural Sea Wool Sponge 1 oz. [3502]\n15. Dr. Bronner's Citrus Hair Conditioning Rinse, 8 fl oz [3224]\n16. Revlon Double Ended Brow Brush, Premium [11034]\n17. Maybelline New York Eye Studio Master Precise Liquid Eyeliner, No.110 Black, 0.037 Fluid Ounce [1134]\n18. Palladio Liquid Eyeliner, Black, 0.13 Ounce [838]\n19. Ardell LashFree Eyelash Adhesive Remover 59ml/2oz [3263]\n20. Garnier Fructis Fall Fight Shampoo For Falling Breaking Hair, 13 Fluid Ounce [5610]\n",
+      "candidate_set": [
+        {
+          "position": 1,
+          "item_id": "1370",
+          "title": "Shea Moisture Coconut Hibiscus Curl Enhancing Smoothie-12 oz"
+        },
+        {
+          "position": 2,
+          "item_id": "11663",
+          "title": "Cute Monkey Shaped Manicure Nail Polish Blower Dryer"
+        },
+        {
+          "position": 3,
+          "item_id": "6209",
+          "title": "Sofn'free GroHealthy Milk Protein &amp; Olive Oil Really Deep Conditioning Treatment"
+        },
+        {
+          "position": 4,
+          "item_id": "5877",
+          "title": "Bee Nuts! Organic Cuticle Oil heals redness and pain quickly. More than .5 oz in every bottle."
+        },
+        {
+          "position": 5,
+          "item_id": "1389",
+          "title": "Blistex Medicated Lip Ointment"
+        },
+        {
+          "position": 6,
+          "item_id": "6963",
+          "title": "Xtreme Brite Brightening Gel 1oz"
+        },
+        {
+          "position": 7,
+          "item_id": "7876",
+          "title": "TIGI Bed Head Superstar Volumizing Leave-In Conditioner, 6.76 Ounce"
+        },
+        {
+          "position": 8,
+          "item_id": "7953",
+          "title": "Bliss Diamancel Diamond Nail File No.2, Medium"
+        },
+        {
+          "position": 9,
+          "item_id": "5911",
+          "title": "Tigi Catwalk Curls Rock Curl Amplifier, 4 Ounce"
+        },
+        {
+          "position": 10,
+          "item_id": "8129",
+          "title": "Renpure Organics My Luscious Hair Needs Lift! Volumizing Conditioner, 13.5-Ounce"
+        },
+        {
+          "position": 11,
+          "item_id": "1299",
+          "title": "Salux Nylon Japanese Beauty Skin Bath Wash Cloth/Towel - White"
+        },
+        {
+          "position": 12,
+          "item_id": "7139",
+          "title": "Caribbean Solutions - Self Tanner Beach Colours 6 Oz"
+        },
+        {
+          "position": 13,
+          "item_id": "5705",
+          "title": "Revlon Age Defying Spa Foundation, Fair, 1 Ounce"
+        },
+        {
+          "position": 14,
+          "item_id": "3502",
+          "title": "LATHER Natural Sea Wool Sponge 1 oz."
+        },
+        {
+          "position": 15,
+          "item_id": "3224",
+          "title": "Dr. Bronner's Citrus Hair Conditioning Rinse, 8 fl oz"
+        },
+        {
+          "position": 16,
+          "item_id": "11034",
+          "title": "Revlon Double Ended Brow Brush, Premium"
+        },
+        {
+          "position": 17,
+          "item_id": "1134",
+          "title": "Maybelline New York Eye Studio Master Precise Liquid Eyeliner, No.110 Black, 0.037 Fluid Ounce"
+        },
+        {
+          "position": 18,
+          "item_id": "838",
+          "title": "Palladio Liquid Eyeliner, Black, 0.13 Ounce"
+        },
+        {
+          "position": 19,
+          "item_id": "3263",
+          "title": "Ardell LashFree Eyelash Adhesive Remover 59ml/2oz"
+        },
+        {
+          "position": 20,
+          "item_id": "5610",
+          "title": "Garnier Fructis Fall Fight Shampoo For Falling Breaking Hair, 13 Fluid Ounce"
+        }
+      ],
+      "history_context": [
+        {
+          "item_id": "F6L_RENDERED_CONTEXT",
+          "title": "F6L source prompt 31DC6A3D0854FD1B908D6C39EC30C2D18903F8C409B4262049E95F62627EF7D1"
+        }
+      ],
+      "raw_payload_generation_metadata": {
+        "runtime_model_id": "mistral:7b-instruct",
+        "backend_complete": true,
+        "ollama_done": true,
+        "ollama_done_reason": "stop",
+        "prompt_eval_count": 1893,
+        "eval_count": 71,
+        "eval_duration": 1900143000,
+        "prompt_eval_duration": 1879094000,
+        "total_duration": 4047036100,
+        "temperature": "0",
+        "seed": "0",
+        "max_new_tokens": "512",
+        "retry_count": 0
+      }
+    }
+  ],
+  "valid_controls": [
+    {
+      "request_id": "R5D-RANK-6358BA76363FC984",
+      "r5a_request_id": "R5A-REQ-ACAF55A202B694B2",
+      "user_id": "7593",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7320,
+      "prompt_words": 1124,
+      "abs_diff_to_invalid_median": 15,
+      "prompt_eval_count": 2476,
+      "eval_count": 34,
+      "done": true,
+      "done_reason": "stop",
+      "output_length": 10,
+      "parse_status": "parsed_valid",
+      "values_within_1_to_n": "true",
+      "dataset_item_id_substitution_count": 0,
+      "raw_response_text": "{\"ranked_candidate_indices\":[6,8,9,10,5,14,3,2,19,1]}",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-6358BA76363FC984.json"
+    },
+    {
+      "request_id": "R5D-RANK-15C72EF99F8FAE89",
+      "r5a_request_id": "R5A-REQ-F0888625D1510960",
+      "user_id": "7236",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7270,
+      "prompt_words": 1072,
+      "abs_diff_to_invalid_median": 65,
+      "prompt_eval_count": 2517,
+      "eval_count": 37,
+      "done": true,
+      "done_reason": "stop",
+      "output_length": 10,
+      "parse_status": "parsed_valid",
+      "values_within_1_to_n": "true",
+      "dataset_item_id_substitution_count": 0,
+      "raw_response_text": "{\"ranked_candidate_indices\":[5,1,4,10,3,19,14,17,12,15]}",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-15C72EF99F8FAE89.json"
+    },
+    {
+      "request_id": "R5D-RANK-A2D37EBAA134D5BB",
+      "r5a_request_id": "R5A-REQ-EE5DE9FCE71BE7D5",
+      "user_id": "5853",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7414,
+      "prompt_words": 1095,
+      "abs_diff_to_invalid_median": 79,
+      "prompt_eval_count": 2441,
+      "eval_count": 37,
+      "done": true,
+      "done_reason": "stop",
+      "output_length": 10,
+      "parse_status": "parsed_valid",
+      "values_within_1_to_n": "true",
+      "dataset_item_id_substitution_count": 0,
+      "raw_response_text": "{\"ranked_candidate_indices\":[6,2,4,1,19,10,18,11,15,17]}",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-A2D37EBAA134D5BB.json"
+    },
+    {
+      "request_id": "R5D-RANK-571DE5AA8905118E",
+      "r5a_request_id": "R5A-REQ-4CD36873B7EA79A5",
+      "user_id": "9377",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7444,
+      "prompt_words": 1100,
+      "abs_diff_to_invalid_median": 109,
+      "prompt_eval_count": 2517,
+      "eval_count": 44,
+      "done": true,
+      "done_reason": "stop",
+      "output_length": 10,
+      "parse_status": "parsed_valid",
+      "values_within_1_to_n": "true",
+      "dataset_item_id_substitution_count": 0,
+      "raw_response_text": "{\"ranked_candidate_indices\":[1, 8, 3, 6, 7, 10, 15, 17, 2, 14]}",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-571DE5AA8905118E.json"
+    },
+    {
+      "request_id": "R5D-RANK-91A1C544E14760B6",
+      "r5a_request_id": "R5A-REQ-A069E53989DF0A68",
+      "user_id": "3776",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7195,
+      "prompt_words": 1091,
+      "abs_diff_to_invalid_median": 140,
+      "prompt_eval_count": 2470,
+      "eval_count": 38,
+      "done": true,
+      "done_reason": "stop",
+      "output_length": 10,
+      "parse_status": "parsed_valid",
+      "values_within_1_to_n": "true",
+      "dataset_item_id_substitution_count": 0,
+      "raw_response_text": "{\"ranked_candidate_indices\":[4,5,1,17,11,14,10,15,18,19]}",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-91A1C544E14760B6.json"
+    },
+    {
+      "request_id": "R5D-RANK-D390FAE90081A94C",
+      "r5a_request_id": "R5A-REQ-4746A3C02E3A1049",
+      "user_id": "327",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7160,
+      "prompt_words": 1042,
+      "abs_diff_to_invalid_median": 175,
+      "prompt_eval_count": 2451,
+      "eval_count": 37,
+      "done": true,
+      "done_reason": "stop",
+      "output_length": 10,
+      "parse_status": "parsed_valid",
+      "values_within_1_to_n": "true",
+      "dataset_item_id_substitution_count": 0,
+      "raw_response_text": "{\"ranked_candidate_indices\":[5,1,10,11,14,15,16,19,2,4]}",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-D390FAE90081A94C.json"
+    },
+    {
+      "request_id": "R5D-RANK-AFB697C7E843AA99",
+      "r5a_request_id": "R5A-REQ-663F86F997F8583F",
+      "user_id": "1455",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7129,
+      "prompt_words": 1062,
+      "abs_diff_to_invalid_median": 206,
+      "prompt_eval_count": 2430,
+      "eval_count": 39,
+      "done": true,
+      "done_reason": "stop",
+      "output_length": 10,
+      "parse_status": "parsed_valid",
+      "values_within_1_to_n": "true",
+      "dataset_item_id_substitution_count": 0,
+      "raw_response_text": "{\"ranked_candidate_indices\":[8,10,1,11,12,13,14,16,17,19]}",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-AFB697C7E843AA99.json"
+    },
+    {
+      "request_id": "R5D-RANK-AB1A32BE20913C21",
+      "r5a_request_id": "R5A-REQ-A86A322FD4A9CDEA",
+      "user_id": "5218",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7569,
+      "prompt_words": 1103,
+      "abs_diff_to_invalid_median": 234,
+      "prompt_eval_count": 2557,
+      "eval_count": 46,
+      "done": true,
+      "done_reason": "stop",
+      "output_length": 10,
+      "parse_status": "parsed_valid",
+      "values_within_1_to_n": "true",
+      "dataset_item_id_substitution_count": 0,
+      "raw_response_text": "{\"ranked_candidate_indices\":[10, 3, 1, 6, 5, 11, 18, 19, 12, 14]}",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-AB1A32BE20913C21.json"
+    },
+    {
+      "request_id": "R5D-RANK-A041E973CC42BF05",
+      "r5a_request_id": "R5A-REQ-86D86328089ABD73",
+      "user_id": "5423",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7023,
+      "prompt_words": 1045,
+      "abs_diff_to_invalid_median": 312,
+      "prompt_eval_count": 2346,
+      "eval_count": 36,
+      "done": true,
+      "done_reason": "stop",
+      "output_length": 10,
+      "parse_status": "parsed_valid",
+      "values_within_1_to_n": "true",
+      "dataset_item_id_substitution_count": 0,
+      "raw_response_text": "{\"ranked_candidate_indices\":[10,4,3,1,7,6,19,18,17,14]}",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-A041E973CC42BF05.json"
+    },
+    {
+      "request_id": "R5D-RANK-D3340DDFF48990A8",
+      "r5a_request_id": "R5A-REQ-ED6606A5E9B01C0B",
+      "user_id": "6252",
+      "task": "ranking",
+      "dataset": "Beauty",
+      "model_name": "mistral:7b-instruct",
+      "experimental_condition": "PROFILE_PLUS_HISTORY",
+      "prompt_chars": 7016,
+      "prompt_words": 1079,
+      "abs_diff_to_invalid_median": 319,
+      "prompt_eval_count": 2431,
+      "eval_count": 36,
+      "done": true,
+      "done_reason": "stop",
+      "output_length": 10,
+      "parse_status": "parsed_valid",
+      "values_within_1_to_n": "true",
+      "dataset_item_id_substitution_count": 0,
+      "raw_response_text": "{\"ranked_candidate_indices\":[5,9,1,16,17,10,18,2,19,4]}",
+      "prompt_exactly_k": "true",
+      "prompt_positions_not_item_ids": "true",
+      "prompt_no_duplicates": "true",
+      "raw_path": "results/recovery/r5d_generation_involved_v2/R5D-RANK-D3340DDFF48990A8.json"
+    }
+  ]
+}

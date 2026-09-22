@@ -1,0 +1,13 @@
+dataset,metric,value,evidence_source
+Food.com,archive_sha256,e7a43e623c616799f78a0479b550483450fd7ede4e0c40979db3458a82b5b913,D0A archive manifest
+Food.com,raw_interactions_sha256,4e278d2f687b1020f5694e51003a7d6174344b51aebbdf4530de88b5c6a78ee4,D0A extracted hashes
+Food.com,raw_recipes_sha256,6a8136d1da9e03396a9f52d72200b3fddb8fe103f11e1496effca30ac4e0539f,D0A extracted hashes
+Food.com,primary_strict_users,226553,D0A primary feasibility
+Food.com,history_strict_l20_users,6387,D0A history feasibility
+Food.com,usable_name_coverage,0.9999956829004002,D0A metadata coverage
+Video Games,primary_strict_users,2785,E2B-0 primary feasibility
+Video Games,primary_user_hash,90f4f4694d97d50e72ddd6475b85b911d29cae24a556a0799a2a751f78e3a66b,E2B-0 primary feasibility
+Video Games,primary_candidate_hash,c48f48a0353e73c44589965cb48463df4bdd0397355b358d46917d10b812fbad,E2B-0 primary feasibility
+Video Games,history_strict_l20_users,35,E2B-0 history feasibility
+Video Games,title_coverage,0.9008620689655172,E2B-0 title provenance
+H0,original_four_history_to_compute,14400,H0 no-inference manifest

@@ -1,0 +1,28 @@
+# Cost-pricing assumptions for optional cost metrics.
+#
+# Prices are intentionally null by default. Fill these values manually from a
+# cited pricing source before computing real cost estimates. Do not treat this
+# file as containing current provider prices.
+
+pricing:
+  currency: null  # Example after manual audit: USD.
+  unit: per_1k_tokens
+  models:
+    gpt3.5:
+      # Price for prompt/input tokens per 1,000 tokens.
+      prompt_per_1k_tokens: null
+      # Price for completion/output tokens per 1,000 tokens.
+      completion_per_1k_tokens: null
+      # Optional fallback if only a single total-token price is known.
+      total_per_1k_tokens: null
+      source: null  # Fill with a citation or local note when prices are set.
+    default:
+      prompt_per_1k_tokens: null
+      completion_per_1k_tokens: null
+      total_per_1k_tokens: null
+      source: null
+
+notes:
+  - No API calls are required or enabled by this config.
+  - Null prices mean estimated cost metrics are unavailable.
+  - Token and latency summaries can still be computed from recorded fields.

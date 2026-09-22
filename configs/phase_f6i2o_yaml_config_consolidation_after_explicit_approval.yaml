@@ -1,0 +1,33 @@
+phase_id: phase_f6i2o
+phase_name: phase_f6i2o_yaml_config_consolidation_after_explicit_approval
+approved_previous_phase: phase_f6i2nr_git_protected_hash_current_suite_closure
+approved_previous_decision_token: f6i2nr_git_guard_current_suite_closure_complete
+selected_yaml_group: model_bprmf_overrides
+decision_policy:
+  safe_no_change_token: f6i2o_model_bprmf_overrides_no_change_retained_distinct
+  physical_consolidation_token: f6i2o_model_bprmf_overrides_consolidation_complete
+  blocked_token: f6i2o_blocked_no_safe_loader_contract
+runtime:
+  interpreter: .venv_audit_recovery/Scripts/python.exe
+  python_no_user_site: true
+  python_dont_write_bytecode: true
+  classification: defensible_repaired_clone_exact_package_versions
+  exact_original_runtime: false
+config_group_members:
+  - configs/plan_e_bprmf_beauty.yaml
+  - configs/plan_e_bprmf_ml1m_pilot.yaml
+  - configs/plan_e_bprmf_sports.yaml
+strategy:
+  selected: retain_distinct_full_configs_no_change
+  reason: active BPRMF consumers load complete YAML files directly with yaml.safe_load and do not expose an include, extends, or override contract
+prohibitions:
+  no_training: true
+  no_llm_inference: true
+  no_ollama: true
+  no_api_calls: true
+  no_downloads: true
+  no_package_changes: true
+  no_git_stage_or_commit: true
+  do_not_modify_original_venv: true
+  do_not_modify_member_configs: true
+next_phase_candidate: phase_f6i2p_yaml_config_consolidation_after_explicit_approval

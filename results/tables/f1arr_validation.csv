@@ -1,0 +1,25 @@
+check,status,evidence
+head_descends_from_f1a_checkpoint,PASS,38d601439edf93aa68107c550f5a45743da089e3
+f1a_precondition_validated,PASS,F1A_OFFLINE_METRIC_CLOSURE_VALIDATED
+f1ar_precondition_validated,PASS,F1A_FINAL_OFFLINE_CLOSURE_VALIDATED
+active_datasets_exact,PASS,"beauty,sports,ml1m,lastfm,foodcom"
+video_games_absent,PASS,0
+dpd_protocol_recovered,PASS,RECOVERED
+popreo_protocol_recovered,PASS,RECOVERED
+dpd_edge_cases_audited,PASS,10
+popreo_group_occupancy_audited,PASS,10
+popreo_degenerate_policy_recorded,PASS,19
+global_metric_blockers_removed,PASS,0
+f1a_remaining_blockers_empty,PASS,0
+popreo_dpd_no_global_blocked_readiness,PASS,0
+popreo_dpd_final_statuses_controlled,PASS,"DEGENERATE_PROTOCOL_INPUT,NOT_APPLICABLE,READY_AFTER_TRAINING_RAW,READY_FROM_NEW_RAW"
+popreo_dpd_reasons_nonblank,PASS,blank=0
+unknown_metric_rows_zero,PASS,0
+blank_statuses_zero,PASS,blank=0
+final_degenerate_metric_cells_materialized,PASS,91
+dpd_degenerate_cells_explain_expected_cohorts,PASS,beauty/sports/foodcom history200
+popreo_degenerate_cells_explain_foodcom,PASS,foodcom primary/history
+result_cell_readiness_complete,PASS,8938 of 8938
+f0_request_budget_unchanged,PASS,"{""BLOCKED_REQUESTS"":0,""CONCEPTUAL_ALL_APPLICABLE_REQUESTS_TOTAL"":100584,""CONDITIONAL_REQUESTS"":9000,""CORE_MANDATORY_NOW_REQUESTS"":29292,""EXISTING_REUSABLE_REQUESTS"":0,""FULL_PLANNED_IF_CONDITIONAL_REQUESTS_TOTAL"":88584,""MANDATORY_MINUS_PREVIOUS_D0B_ESTIMATE"":5364,""MANDATORY_RAW_REQUESTS_TOTAL"":50292,""OPTIONAL_REQUESTS"":12000,""PREVIOUS_D0B_ESTIMATE"":44928,""REQUIRED_SENSITIVITY_REQUESTS"":21000,""TRAINING_DEPENDENT_REQUESTS"":29292}"
+offline_results_not_extended_without_raw,PASS,295
+no_inference_training_download_network,PASS,llm=0; training=0; downloads=0; network=0

@@ -1,0 +1,126 @@
+{
+  "calibration_design_decision": {
+    "existing_llm_figures": [
+      "fig_rq2_llm_calibration_landscape",
+      "fig_rq2_llm_calibration_heatmap"
+    ],
+    "reason": "feature-eligible defined-user populations differ materially; retain dedicated frozen LLM calibration figures",
+    "status": "PRESERVED_AS_LOCAL_EXTENSION_NOT_IN_COMPARATIVE_FIGURES",
+    "traditional_counterpart_exists": true
+  },
+  "canonical_source_artifacts": [
+    "results/tables/f1bx_baseline_beyond_utility_results.csv",
+    "results/tables/f1bz_aggregate_beyond_utility_results.csv",
+    "results/tables/f1bz_per_seed_beyond_utility_results.csv",
+    "results/tables/g1_primary_ranking_beyond_utility.csv",
+    "results/manifests/g1_metric_contract_and_provenance.json",
+    "results/manifests/g1_serendipity_correction.json",
+    "results/manifests/f1bx_execution_manifest.json",
+    "results/manifests/f1bz_final_traditional_execution.json"
+  ],
+  "canonical_source_sha256": {
+    "results/manifests/f1bx_execution_manifest.json": "b6251567466574ba397e1f0d5014c0ea357f9973b4ba0f20cad2bbb5334c7ac9",
+    "results/manifests/f1bz_final_traditional_execution.json": "99acd7fc2f1ee967cb158b9f9d27912d7d92441048a9cbc47fda3c344f4b7ed8",
+    "results/manifests/g1_metric_contract_and_provenance.json": "ca7fc85bd346720c8529698ecfc592da557c06dab1494e2f5b60f1a8c5d7abf6",
+    "results/manifests/g1_serendipity_correction.json": "c33cca450081a00eb7937b524ffe58fff309e0b6583d9fc2ec35ac47edfce6f1",
+    "results/tables/f1bx_baseline_beyond_utility_results.csv": "28b4719d3cb4c7c2a2e79aaae74aade1925f764104bc071c1eefc53c6f52da15",
+    "results/tables/f1bz_aggregate_beyond_utility_results.csv": "cb6a666078fc41fd63404dda264123a1e6890ae044450f3918b3cab15b8c3ba1",
+    "results/tables/f1bz_per_seed_beyond_utility_results.csv": "c56be8f5034f4457eca43e44e5feb188f6d81b9c619ad6e3e52d23fdc2a9510d",
+    "results/tables/g1_primary_ranking_beyond_utility.csv": "2e5c774f552cb47f16622f2a989ce033ee05036ad814558926b40148e8857c5b"
+  },
+  "created_from_commit": "c96c78572b7c64a63ca716e495dc2378750151c8",
+  "figure_id": "fig_rq2_traditional_vs_llm_serendipity_diversity_coverage",
+  "figure_values_csv": "results/final_figures/rq2/values/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage_values.csv",
+  "figure_values_sha256": "45ee81d6b73f28575231dda7f7e9de5528444a08ae03c61b9df02874f85b45b9",
+  "generator": "src/analysis/final_figures/rq2_traditional_llm.py",
+  "generator_sha256": "48ae9ced21c465d5bc26f16d9baab2c2d150fea3ea931fd74400bb9bbd00747d",
+  "limitations": [
+    "Traditional metrics use full evaluation cohorts; G1 beyond-utility uses strict-valid outputs and metric-defined users.",
+    "These are not matched-user causal effects or paper-exact numeric reproductions.",
+    "F1BZ error bars are five-seed sample standard deviations (ddof=1), not confidence intervals; F1BX and G1 are single frozen values.",
+    "Metric panels retain original units and must not be combined into a synthetic beyond-utility score.",
+    "Food.com PopREO is undefined for all traditional and G1 cells; it is omitted, never set to zero.",
+    "Item coverage uses the candidate-union denominator; its unique-item numerator depends on retained users."
+  ],
+  "metric_contract": {
+    "aclt_separate_metric": false,
+    "aplt": "mean_fraction_of_top5_with_positive_train_count_strictly_below_train_count_0.8_quantile",
+    "aplt_alias": "calACLT",
+    "arp": "mean_train_interaction_count_of_top5_items",
+    "comparability_class": {
+      "ild_at_5": "ADAPTED_NUMERICAL_COMPARISON",
+      "item_coverage_at_5": "DESCRIPTIVE_ONLY",
+      "serendipity_at_5": "ADAPTED_NUMERICAL_COMPARISON"
+    },
+    "ild": "mean_pairwise_Jaccard_distance_of_feature_backed_top5_items",
+    "item_coverage": "unique_recommended_top5_items_divided_by_candidate_union_size",
+    "metrics": [
+      "serendipity_at_5",
+      "ild_at_5",
+      "item_coverage_at_5"
+    ],
+    "raw_units_only": true,
+    "self_information": "mean_minus_log2(train_count/total_train_interactions)_for_defined_users",
+    "serendipity": "HR_at_5_times_(1_minus_aligned_MostPop_HR_at_5)_corrected_G1",
+    "top_k": 5
+  },
+  "other_omitted_metrics": [
+    "popreo_at_5",
+    "catalog_coverage_at_5",
+    "shannon_category_entropy_at_5",
+    "gini_at_5",
+    "dpd_at_5",
+    "jain_index_at_5",
+    "oic_at_5",
+    "calibration_at_5"
+  ],
+  "output_pdf": "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage.pdf",
+  "output_pdf_sha256": "02bdcd7991fd642b3a09356c06089881d4127c638c46574220bd0cfd423728d8",
+  "output_png": "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage.png",
+  "output_png_sha256": "cab331fe6886f51b203da20bd7b7556b604f1cfd652513a2df1c677bc044d755",
+  "output_svg": "results/final_figures/rq2/figures/fig_rq2_traditional_vs_llm_serendipity_diversity_coverage.svg",
+  "output_svg_sha256": "4853e32f51619b2349053be1f4044f6947a3ea5bb4a4f0634bea146cb11637a8",
+  "population_contract": {
+    "llm": "strict_valid_plus_metric_defined_users",
+    "traditional": "full_evaluation_cohort"
+  },
+  "role": "SUPPORTING_APPENDIX",
+  "rq": "RQ2",
+  "schema_version": "1.0",
+  "scientific_interpretation": "Dataset-specific, metric-specific adapted numerical comparisons; item coverage is descriptive only where shown.",
+  "scientific_purpose": "Compare corrected serendipity, feature diversity and descriptive item coverage.",
+  "system_contract": {
+    "datasets": [
+      "beauty",
+      "sports",
+      "ml1m",
+      "lastfm",
+      "foodcom"
+    ],
+    "llm_models": [
+      "qwen2:7b-instruct",
+      "mistral:7b-instruct",
+      "gemma2:9b"
+    ],
+    "n_users": {
+      "beauty": 990,
+      "foodcom": 1000,
+      "lastfm": 1000,
+      "ml1m": 1000,
+      "sports": 892
+    },
+    "prompts": [
+      "BASE",
+      "LLMRANK"
+    ],
+    "traditional_models": [
+      "Random",
+      "MostPop",
+      "BM25-like/content",
+      "BPRMF",
+      "GRU4Rec",
+      "SASRec",
+      "LightGCN"
+    ]
+  }
+}

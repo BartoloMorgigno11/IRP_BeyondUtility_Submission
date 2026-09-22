@@ -1,0 +1,9 @@
+member_path,basename,size,compressed_size,required_for_d0a,recognized_foodcom_file,notes
+PP_recipes.csv,PP_recipes.csv,204912912,48484170,False,True,
+PP_users.csv,PP_users.csv,13555204,3434261,False,True,
+RAW_interactions.csv,RAW_interactions.csv,349436524,131288410,True,True,
+RAW_recipes.csv,RAW_recipes.csv,294520189,87292002,True,True,
+ingr_map.pkl,ingr_map.pkl,918790,226160,False,False,
+interactions_test.csv,interactions_test.csv,522731,212819,False,True,
+interactions_train.csv,interactions_train.csv,28248536,9291026,False,True,
+interactions_validation.csv,interactions_validation.csv,292316,120289,False,True,
