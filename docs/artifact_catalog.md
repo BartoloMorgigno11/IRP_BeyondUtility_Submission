@@ -7,7 +7,7 @@ This catalog identifies the committed foreground evidence for the full research 
 - Reproduction status: `LOCAL_ADAPTED_REPRODUCTION_COMPLETE_NOT_PAPER_EXACT`
 - F6M reproduction closure: complete and frozen.
 - G1-G4 extension: complete and frozen.
-- Active delivery branch: `delivery/full-research`
+- Delivery branch: `main`
 
 ## Primary Reports
 
@@ -18,7 +18,7 @@ This catalog identifies the committed foreground evidence for the full research 
 - `report/g3_candidate_position_scientific_synthesis.md`: G3 candidate-position synthesis.
 - `report/g4_f1bzq_scientific_synthesis.md`: G4 reranking synthesis.
 - `report/GITHUB_PROVENANCE_MAP.md`: old-to-new commit provenance for the reconstructed publishable history.
-- `report/notes.md`: chronological phase log.
+- Historical phase logs are intentionally excluded from the curated submission package.
 
 ## Primary F6M Tables
 

@@ -132,8 +132,8 @@ def build_checks(repo_root: Path, config_path: Path | None) -> list[CheckResult]
     checks.extend(check_directory(repo_root, path, label) for path, label in expected_dirs)
 
     expected_files = [
-        ("PROJECT_SPEC.md", "Project spec"),
-        ("AGENTS.md", "Agent instructions"),
+        ("README.md", "Repository README"),
+        ("requirements.txt", "Project requirements"),
         ("report/codebase_map.md", "Original repo codebase map"),
     ]
     checks.extend(check_path(repo_root, path, label) for path, label in expected_files)

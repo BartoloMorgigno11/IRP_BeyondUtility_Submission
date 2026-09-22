@@ -464,7 +464,7 @@ Where these conditions do not align, the repository preserves the distinction ex
 - `results/tables/`Canonical metric tables and packaged evidence.
 - `results/manifests/`Provenance, artifact, protocol, and freeze manifests.
 - `results/plots/`Frozen scientific figures.
-- `report/`Scientific reports, audit material, provenance documentation, archived development material, and manuscript source.
+- `report/`Scientific reports, provenance documentation, validation material, and manuscript source.
 - `docs/`Reproducibility and external-archive documentation.
 - `data/`Data workspace. Raw and reconstructed external data are generally not part of the curated Git distribution.
 - `paper/`Reference paper material.

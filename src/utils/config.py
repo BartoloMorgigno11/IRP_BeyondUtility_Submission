@@ -14,7 +14,7 @@ from typing import Any
 import yaml
 
 
-PROJECT_MARKERS = ("PROJECT_SPEC.md", "AGENTS.md")
+PROJECT_MARKERS = ("README.md", "requirements.txt")
 REQUIRED_TOP_LEVEL_SECTIONS = (
     "dataset",
     "paths",

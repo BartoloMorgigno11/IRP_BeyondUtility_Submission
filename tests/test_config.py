@@ -90,8 +90,8 @@ def _minimal_config(dataset_name: str = "demo") -> dict:
 
 
 def test_find_project_root_from_nested_directory(tmp_path: Path) -> None:
-    (tmp_path / "PROJECT_SPEC.md").write_text("# spec\n", encoding="utf-8")
-    (tmp_path / "AGENTS.md").write_text("# agents\n", encoding="utf-8")
+    (tmp_path / "README.md").write_text("# spec\n", encoding="utf-8")
+    (tmp_path / "requirements.txt").write_text("# agents\n", encoding="utf-8")
     nested = tmp_path / "src" / "utils"
     nested.mkdir(parents=True)
 
@@ -99,8 +99,8 @@ def test_find_project_root_from_nested_directory(tmp_path: Path) -> None:
 
 
 def test_load_yaml_config_from_project_relative_path(tmp_path: Path) -> None:
-    (tmp_path / "PROJECT_SPEC.md").write_text("# spec\n", encoding="utf-8")
-    (tmp_path / "AGENTS.md").write_text("# agents\n", encoding="utf-8")
+    (tmp_path / "README.md").write_text("# spec\n", encoding="utf-8")
+    (tmp_path / "requirements.txt").write_text("# agents\n", encoding="utf-8")
     (tmp_path / "configs").mkdir()
     config_path = tmp_path / "configs" / "demo.yaml"
     config_path.write_text(yaml.safe_dump(_minimal_config()), encoding="utf-8")
