@@ -309,3 +309,7 @@ results/tables/audit_figure2_serendipity_user_contingency.csv
 !results/tables/audit_figure2_serendipity_user_contingency.csv.gz
 results/tables/g4_f1bzq_reranking_execution_order.csv
 !results/tables/g4_f1bzq_reranking_execution_order.csv.gz
+
+# B2.4C authoritative Beauty package restore target.
+results/raw_outputs/beauty_baseline_outputs_normalized.csv
+!results/raw_outputs/beauty_baseline_outputs_normalized.csv.gz

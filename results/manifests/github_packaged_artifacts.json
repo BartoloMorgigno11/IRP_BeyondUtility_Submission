@@ -899,6 +899,24 @@
       "phase": "B2.4B",
       "row_count": 29292,
       "scientific_role": "Canonical scientific CSV artifact: g4_f1bzq_reranking_execution_order"
+    },
+    {
+      "artifact_id": "beauty_baseline_outputs_normalized_authoritative_crlf",
+      "canonical_status": "byte_preserving_packaged_foreground_artifact",
+      "compression": "gzip",
+      "compression_level": 9,
+      "deterministic_mtime": 0,
+      "external_raw_evidence_required": false,
+      "notes": "Restoring this deterministic package reproduces the authoritative CRLF Beauty baseline bytes exactly.",
+      "original_path": "results/raw_outputs/beauty_baseline_outputs_normalized.csv",
+      "original_sha256": "de495dedf003d8406daeadeb91f7df03fdbd47e816d7fc8e29bcb9d2c41a2b26",
+      "original_size_bytes": 93759606,
+      "packaged_path": "results/raw_outputs/beauty_baseline_outputs_normalized.csv.gz",
+      "packaged_sha256": "f01d3011421a7d9e5eccd65a5f6b14de09807d122281b9611755d2b7f75a1235",
+      "packaged_size_bytes": 2818535,
+      "phase": "B2.4C",
+      "row_count": 447260,
+      "scientific_role": "Authoritative CRLF Beauty baseline normalized output"
     }
   ],
   "base_commit": "72565a6ffc00dc9a2a52c7828656eb4a8a7b1647",
