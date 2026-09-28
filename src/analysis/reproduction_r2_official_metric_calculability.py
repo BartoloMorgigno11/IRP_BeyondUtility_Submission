@@ -20,6 +20,8 @@ from typing import Any, Iterable, Mapping, Sequence
 import numpy as np
 import pandas as pd
 
+from src.analysis.r1_metric_recovery_paths import relocation_record, resolve_r1_metric_recovery_artifact
+
 
 EVIDENCE_LABEL = "POST-F6M TOTAL REPRODUCIBILITY CLOSURE EVIDENCE"
 
@@ -302,11 +304,18 @@ def protected_hash_rows(project_root: Path) -> list[dict[str, str]]:
     manifest = parse_protected_manifest(project_root)
     rows: list[dict[str, str]] = []
     for rel in PROTECTED_ROOT_FILES:
-        path = project_root / rel
-        status = git_output(project_root, ["status", "--short", "--", rel])
-        tracked = bool(git_output(project_root, ["ls-files", "--", rel]))
+        path = resolve_r1_metric_recovery_artifact(project_root, rel)
+        record = relocation_record(project_root, rel)
+        current_rel = record.current_path if record else rel
+        status = git_output(project_root, ["status", "--short", "--", current_rel])
+        tracked = bool(git_output(project_root, ["ls-files", "--", current_rel]))
         observed = sha256_file(path) if path.exists() else ""
-        expected = manifest.get(rel, "")
+        expected = record.sha256 if record else manifest.get(rel, "")
+        protected = (
+            path.exists()
+            and observed == expected
+            and (record is not None or (not tracked and status.startswith("??")))
+        )
         rows.append(
             {
                 "path": rel,
@@ -318,7 +327,7 @@ def protected_hash_rows(project_root: Path) -> list[dict[str, str]]:
                 "hash_unchanged": str(bool(expected) and observed == expected).lower(),
                 "protection_status": (
                     "PROTECTED_UNCHANGED"
-                    if path.exists() and not tracked and observed == expected and status.startswith("??")
+                    if protected
                     else "PROTECTION_FAILURE"
                 ),
             }
@@ -1658,6 +1667,21 @@ def build_stored_vs_recomputed(master: pd.DataFrame) -> pd.DataFrame:
 
 
 def build_paper_comparison(master: pd.DataFrame) -> pd.DataFrame:
+    columns = [
+        "dataset",
+        "task",
+        "model",
+        "condition",
+        "metric",
+        "paper_value",
+        "comparison_value_source",
+        "official_value_used_for_comparison",
+        "paper_mapping_status",
+        "value_agreement",
+        "absolute_delta",
+        "relative_delta",
+        "notes",
+    ]
     rows: list[dict[str, str]] = []
     subset = master.loc[master["paper_value"].astype(str).str.len().gt(0)]
     for _, row in subset.iterrows():
@@ -1691,7 +1715,7 @@ def build_paper_comparison(master: pd.DataFrame) -> pd.DataFrame:
                 "notes": clean(row.get("provenance_notes")),
             }
         )
-    return pd.DataFrame(rows).fillna("")
+    return pd.DataFrame(rows, columns=columns).fillna("")
 
 
 def build_history_table(master: pd.DataFrame) -> pd.DataFrame:
@@ -1807,7 +1831,7 @@ def validate_frames(frames: Mapping[str, pd.DataFrame], sources: Sources) -> pd.
     add("R2-VAL-015", "original_repo_clean", original_status == "## main...origin/main", original_status, "## main...origin/main")
     protected_names = set(PROTECTED_ROOT_FILES)
     add("R2-VAL-016", "protected_count_twelve", set(protected["path"]) == protected_names and len(protected) == 12, len(protected), 12)
-    add("R2-VAL-017", "paper_contract_not_root_comparison", (sources.project_root / "final_metric_paper_comparison.csv").exists(), "present but not loaded as source", "not canonical")
+    add("R2-VAL-017", "paper_contract_not_root_comparison", resolve_r1_metric_recovery_artifact(sources.project_root, "final_metric_paper_comparison.csv").exists(), "present but not loaded as source", "not canonical")
     return pd.DataFrame(rows).fillna("")
 
 

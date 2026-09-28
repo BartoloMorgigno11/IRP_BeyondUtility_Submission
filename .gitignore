@@ -237,6 +237,7 @@ results/manifests/*
 !results/manifests/g2_history_length_*.json
 !results/manifests/github_packaged_artifacts.json
 !results/manifests/github_commit_provenance_map.csv
+!results/manifests/r1_root_artifact_relocation.csv
 !results/manifests/extension_cell_universe_freeze.json
 !results/manifests/extension_h0_*.json
 

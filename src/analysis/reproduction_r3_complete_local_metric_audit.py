@@ -26,6 +26,8 @@ import numpy as np
 import pandas as pd
 import yaml
 
+from src.analysis.r1_metric_recovery_paths import relocation_record, resolve_r1_metric_recovery_artifact
+
 
 PHASE_ID = "reproduction_r3_complete_local_metric_audit"
 DEFAULT_CONFIG_PATH = Path("configs/reproduction_r3_complete_local_metric_audit.yaml")
@@ -881,12 +883,19 @@ def protected_hash_rows(project_root: Path, config: Mapping[str, Any]) -> list[d
     }
     rows: list[dict[str, str]] = []
     for rel_path in PROTECTED_ROOT_FILES:
-        path = project_root / rel_path
+        path = resolve_r1_metric_recovery_artifact(project_root, rel_path)
+        record = relocation_record(project_root, rel_path)
         observed = sha256_file(path) if path.exists() else ""
-        expected = expected_hashes.get(rel_path, "")
-        tracked = bool(git_output(project_root, ["ls-files", "--", rel_path]))
-        status = git_output(project_root, ["status", "--short", "--", rel_path])
-        ok = path.exists() and not tracked and expected and observed == expected and status.startswith("??")
+        expected = record.sha256 if record else expected_hashes.get(rel_path, "")
+        current_rel = record.current_path if record else rel_path
+        tracked = bool(git_output(project_root, ["ls-files", "--", current_rel]))
+        status = git_output(project_root, ["status", "--short", "--", current_rel])
+        ok = (
+            path.exists()
+            and bool(expected)
+            and observed == expected
+            and (record is not None or (not tracked and status.startswith("??")))
+        )
         rows.append(
             {
                 "path": rel_path,

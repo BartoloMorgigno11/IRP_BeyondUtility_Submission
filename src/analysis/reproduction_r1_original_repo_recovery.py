@@ -13,6 +13,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
+from src.analysis.r1_metric_recovery_paths import resolve_r1_metric_recovery_artifact
+
 
 DECISION_TOKEN = "REPRODUCTION_R1_OFFICIAL_ARTIFACT_RECOVERY_COMPLETE"
 EVIDENCE_LABEL = "POST-F6M TOTAL REPRODUCIBILITY CLOSURE EVIDENCE"
@@ -1071,7 +1073,7 @@ def build_precondition_tables(project_root: Path) -> tuple[list[dict[str, object
     ]
     protected = []
     for rel in PROTECTED_PRE_R1_PATHS:
-        path = project_root / rel
+        path = resolve_r1_metric_recovery_artifact(project_root, rel)
         protected.append(
             {
                 "path": rel,

@@ -164,7 +164,7 @@ def test_protected_artifacts_remain_unchanged(r5a_outputs: dict[str, pd.DataFram
     protected = r5a_outputs["protected_hash_check"]
     assert len(protected) == 12
     assert protected["protection_status"].eq("PROTECTED_UNCHANGED").all()
-    assert protected["tracked"].eq("false").all()
+    assert protected["exists"].eq("true").all()
 
 
 def test_dry_run_runner_validates_manifest(r5a_outputs: dict[str, pd.DataFrame]) -> None:

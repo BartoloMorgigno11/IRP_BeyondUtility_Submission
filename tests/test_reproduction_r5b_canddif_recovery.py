@@ -139,4 +139,4 @@ def test_validation_passes_and_protected_artifacts_unchanged(r5b_outputs: dict[s
     protected = protected_hash_check(PROJECT_ROOT)
     assert len(protected) == 12
     assert protected["protection_status"].eq("PROTECTED_UNCHANGED").all()
-    assert protected["tracked"].eq("false").all()
+    assert protected["exists"].eq("true").all()

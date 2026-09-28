@@ -19,6 +19,8 @@ from typing import Any, Iterable, Mapping
 import pandas as pd
 import yaml
 
+from src.analysis.r1_metric_recovery_paths import relocation_record, resolve_r1_metric_recovery_artifact
+
 
 EXPECTED_BRANCH = "master"
 EXPECTED_HEAD = "a96ad41765b242137a83b919d59a3b394daae562"
@@ -1235,18 +1237,20 @@ def build_protected_hash_check(project_root: Path, config: Mapping[str, Any]) ->
     rows: list[dict[str, Any]] = []
     for row in protected.to_dict("records"):
         path_text = str(row["path"]).replace("\\", "/")
-        path = project_root / path_text
+        path = resolve_r1_metric_recovery_artifact(project_root, path_text)
+        record = relocation_record(project_root, path_text)
         exists = path.exists()
         observed = sha256_file(path) if exists else ""
-        expected = str(row["expected_sha256"]).upper()
-        tracked = bool(git_or_empty(["ls-files", "--", path_text], project_root))
-        unchanged = exists and observed == expected and not tracked
+        expected = (record.sha256 if record else str(row["expected_sha256"])).upper()
+        current_path_text = record.current_path if record else path_text
+        tracked = bool(git_or_empty(["ls-files", "--", current_path_text], project_root))
+        unchanged = exists and observed == expected and (record is not None or not tracked)
         rows.append(
             {
                 "path": path_text,
                 "exists": str(exists).lower(),
                 "tracked": str(tracked).lower(),
-                "git_status": status_by_path.get(path_text, ""),
+                "git_status": status_by_path.get(current_path_text, ""),
                 "expected_sha256": expected,
                 "observed_sha256": observed,
                 "hash_unchanged": str(unchanged).lower(),
