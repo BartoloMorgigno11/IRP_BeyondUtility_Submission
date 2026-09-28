@@ -1,0 +1,97 @@
+{
+  "artifact_hash_inputs": {
+    "artifacts/rq3_llm_completion/preflight.json": "3dfe7dbe082e5ddbc2c18ba7e2760df15314129e2778376b6cfcd8b700b097be",
+    "artifacts/rq3_llm_completion/request_manifest.csv": "ef9554878343fb506f0c7dc8c8c3e4da3f5806f04968b470a37cc207e1a76dfa",
+    "results/manifests/g2_history_length_analysis_universe_freeze.json": "624bd29a6971d77c96cceb903804ec02b5be25b978b4b260dea2934522851fb1",
+    "results/manifests/g2_history_length_metrics_freeze.json": "16a074053382971795f5cefd748f33cc35261709aa430fb9e4bb2ab39c2a6251",
+    "results/tables/rq3_traditional_job_accounting.csv": "6f79de8ac066649ebdb24346983356b894f0b47c33a9b2f4380f4c69fc2abe43",
+    "results/tables/rq3_traditional_metrics_per_seed.csv": "872a56a320a790ecbc5cc8372bff77bf2e2a7e1caaaa76f2854bd1291f6243f1",
+    "results/tables/rq3_traditional_validation.csv": "061a73a88a9f81380fdcc0e5ec92f4f658d6ad4926158c584dcb62eaa0908582"
+  },
+  "cohorts": {
+    "GE10": {
+      "beauty": 181,
+      "foodcom": 61,
+      "lastfm": 981,
+      "ml1m": 1000,
+      "sports": 160
+    },
+    "GE20": {
+      "beauty": 38,
+      "foodcom": 35,
+      "lastfm": 932,
+      "ml1m": 993,
+      "sports": 35
+    },
+    "h15_policy": "GE20",
+    "h3_h4_policy": "GE10"
+  },
+  "final_status": "CLOSED",
+  "generated_at_utc": "2026-09-15T13:01:41.140274Z",
+  "llm_completion": {
+    "backend_unresolved": 0,
+    "candidate_contract": "PASS",
+    "cohort_contract": "PASS",
+    "duplicates": 0,
+    "expected_total": 40794,
+    "frozen": true,
+    "history_contract": "PASS",
+    "history_counts": {
+      "15": 12198,
+      "3": 14298,
+      "4": 14298
+    },
+    "invalid": 464,
+    "malformed": 0,
+    "missing": 0,
+    "raw": 40794,
+    "raw_terminal_mismatch": 0,
+    "terminal": 40794,
+    "terminal_state_counts": {
+      "BACKEND_FAILURE": 0,
+      "HALLUCINATION_OR_OUT_OF_CANDIDATE": 3,
+      "INVALID_CANDIDATE": 0,
+      "INVALID_DUPLICATE": 125,
+      "INVALID_FORMAT": 0,
+      "INVALID_LENGTH": 336,
+      "STRICT_VALID": 40330
+    },
+    "valid": 40330
+  },
+  "local_operationalization_label": "LOCAL_OPERATIONALIZATION_NOT_PAPER_EXACT",
+  "no_inference_used_in_freeze": true,
+  "no_ollama_used_in_freeze": true,
+  "no_raw_terminal_modified": true,
+  "no_training_used_in_freeze": true,
+  "old_g2": {
+    "old_history_lengths": {
+      "0": 18660,
+      "1": 14298,
+      "10": 14298,
+      "2": 14298,
+      "20": 12198,
+      "5": 14298
+    },
+    "unchanged": "PASS"
+  },
+  "paper_exact": false,
+  "phase_id": "rq3_final_freeze",
+  "traditional": {
+    "deterministic_completed": 64,
+    "deterministic_expected": 64,
+    "duplicates": 0,
+    "extra": 0,
+    "frozen": true,
+    "gru4rec_sasrec_h1_na": true,
+    "leakage": 0,
+    "missing": 0,
+    "mostpop_h_invariant": true,
+    "nan_inf": 0,
+    "seed_coverage_complete": true,
+    "structural_na": 40,
+    "structural_na_expected": 40,
+    "trainable_completed": 600,
+    "trainable_expected": 600,
+    "validation": "PASS"
+  }
+}

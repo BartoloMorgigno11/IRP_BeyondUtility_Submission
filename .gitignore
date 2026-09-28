@@ -125,6 +125,7 @@ results/tables/*
 !results/tables/g1_primary_ranking_runtime.csv
 !results/tables/g1_primary_ranking_validation.csv
 !results/tables/g2_history_length_*.csv
+!results/tables/rq3_traditional_*.csv
 # GitHub-publishable deterministic packages for oversized foreground evidence.
 results/tables/g2_history_length_request_universe.csv
 results/tables/g2_history_length_execution_order.csv

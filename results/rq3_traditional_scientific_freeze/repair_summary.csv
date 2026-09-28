@@ -1,0 +1,13 @@
+dataset,h,method,metric,seed_set,status,historical_duplicate_rows,corrected_n,statistics
+beauty,5,BPRMF,hr_at_5,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,BPRMF,mrr,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,BPRMF,ndcg_at_5,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,GRU4Rec,hr_at_5,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,GRU4Rec,mrr,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,GRU4Rec,ndcg_at_5,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,LightGCN,hr_at_5,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,LightGCN,mrr,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,LightGCN,ndcg_at_5,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,SASRec,hr_at_5,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,SASRec,mrr,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se
+beauty,5,SASRec,ndcg_at_5,42|43|44|45|46,PASS,2,5,mean; sample_std_ddof1; se=std/sqrt(n); ci95=mean±1.96*se

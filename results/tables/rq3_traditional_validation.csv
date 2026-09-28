@@ -1,0 +1,10 @@
+check,status,evidence
+preflight_passed,PASS,PASS
+structural_na_validated,PASS,40
+trainable_expected_complete,PASS,600
+deterministic_expected_complete,PASS,64
+bm25_complete,PASS,32
+mostpop_complete,PASS,32
+no_failed_jobs,PASS,"{'trainable_completed': 600, 'trainable_failed': 0, 'trainable_not_applicable': 40, 'deterministic_completed': 64, 'deterministic_failed': 0, 'bm25_completed': 32, 'mostpop_completed': 32}"
+leakage_zero,PASS,validated in preflight D'_H manifest
+foodcom_excluded,PASS,FoodCom not in configured paper-four run

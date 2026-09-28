@@ -1,0 +1,57 @@
+phase:
+  id: rq3_traditional_history_run
+  status: LOCAL_OPERATIONALIZATION_NOT_PAPER_EXACT
+
+execution:
+  allow_training: true
+  allow_deterministic_scoring: true
+  allow_llm_inference: false
+  allow_ollama_recommendation_calls: false
+  allow_external_api_calls: false
+  allow_downloads: false
+  allow_network: false
+  allow_foodcom: false
+  allow_commit: false
+
+datasets: [beauty, sports, ml1m, lastfm]
+history_lengths: [1, 2, 3, 4, 5, 10, 15, 20]
+trainable_models: [BPRMF, GRU4Rec, SASRec, LightGCN]
+deterministic_baselines: [BM25-like/content, MostPop]
+seeds: [42, 43, 44, 45, 46]
+
+inputs:
+  dataset_config: configs/f1bx_execution_stage1.yaml
+  trainable_readiness: results/tables/f1br_trainable_execution_readiness.csv
+  seed_policy: results/tables/f1br_seed_policy.csv
+  protocol_freeze: artifacts/rq3_traditional_freeze/traditional_config_matrix.csv
+  dprime_contract: artifacts/rq3_traditional_freeze/dprime_contract.csv
+
+runtime:
+  implementation_classification: LOCAL_PROJECT_WRAPPER_NOT_RECHORUS_EXACT
+  optimizer: Adam
+  epochs: 5
+  max_sequence_length: 50
+  dropout: 0.2
+  bprmf_batch_size: 4096
+  gru4rec_batch_size: 512
+  sasrec_batch_size: 512
+  lightgcn_batch_size: 4096
+  device_policy: cuda_if_available_else_cpu
+  deterministic_algorithms: true
+  negative_sampling: deterministic_one_train_universe_negative_per_positive
+  empty_sequence_eval_policy: deterministic_zero_history_candidate_tie_break
+
+outputs:
+  artifact_dir: artifacts/rq3_traditional_run
+  dprime_dir: artifacts/rq3_traditional_run/dprime
+  preflight: artifacts/rq3_traditional_run/preflight.json
+  dprime_manifest: artifacts/rq3_traditional_run/dprime_manifest.csv
+  pilot_validation: artifacts/rq3_traditional_run/pilot_validation.json
+  run_manifest: artifacts/rq3_traditional_run/run_manifest.json
+  job_accounting: results/tables/rq3_traditional_job_accounting.csv
+  metrics_per_seed: results/tables/rq3_traditional_metrics_per_seed.csv
+  metrics_aggregated: results/tables/rq3_traditional_metrics_aggregated.csv
+  validation: results/tables/rq3_traditional_validation.csv
+  raw_output_dir: results/raw_outputs/rq3_traditional
+  checkpoint_dir: results/checkpoints/rq3_traditional
+  plot_dir: results/plots/rq3_traditional_diagnostic

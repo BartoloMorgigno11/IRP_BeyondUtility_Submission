@@ -35,6 +35,7 @@ The final frozen package contains:
 - the completed local reproduction core;
 - G1 primary-ranking experiments;
 - G2 history-length sensitivity experiments;
+- RQ3 traditional history-length scientific freeze;
 - G3 candidate-position sensitivity experiments;
 - G4 candidate-aware reranking experiments;
 - utility and beyond-utility metrics;
@@ -66,6 +67,9 @@ The principal scientific documents are:
 - Reproduction closure:`report/phase_f6m_reproduction_closure.md`
 - G1 report:`report/g1_primary_ranking_execution.md`
 - G2 synthesis:`report/g2_history_length_scientific_synthesis.md`
+- RQ3 traditional freeze:`report/RQ3_TRADITIONAL_SCIENTIFIC_FREEZE.md`
+- RQ3 traditional manifest:
+  `results/rq3_traditional_scientific_freeze/freeze_manifest.json`
 - G3 synthesis:`report/g3_candidate_position_scientific_synthesis.md`
 - G4 synthesis:`report/g4_f1bzq_scientific_synthesis.md`
 - Packaged-artifact manifest:`results/manifests/github_packaged_artifacts.json`
@@ -246,6 +250,25 @@ Smoke test PASSED
 
 ### 3. Validate the frozen cross-RQ figure
 
+Before the cross-RQ figure validation, validate the RQ3 traditional
+history-length freeze:
+
+```powershell
+python -m pytest tests/test_rq3_traditional_scientific_freeze.py -q
+```
+
+Expected result:
+
+```text
+1 passed
+```
+
+This validates the corrected aggregate, the original per-seed evidence, and
+the manifest-hashed provenance inputs without training, inference, or new
+recommendation generation.
+
+### 4. Validate the frozen cross-RQ figure
+
 ```powershell
 python -m src.analysis.final_figures.cross_rq --mode validate
 ```
@@ -256,7 +279,7 @@ Expected result:
 PASS
 ```
 
-### 4. Validate the global final-figure freeze
+### 5. Validate the global final-figure freeze
 
 ```powershell
 python -m src.analysis.final_figures.global_freeze --mode validate
@@ -271,7 +294,7 @@ REPOSITORY_ONLY  7
 EXCLUDED         1
 ```
 
-### 5. Run the focused final-figure release tests
+### 6. Run the focused final-figure release tests
 
 ```powershell
 python -m pytest `
@@ -312,6 +335,10 @@ Final Git working tree               CLEAN
 ```
 
 The validation confirmed that the frozen scientific evidence and final figure provenance can be inspected and validated without relying on the original development working directory.
+
+The clean-room result above predates the RQ3 traditional scientific-freeze
+integration. A new final clean-room validation will supersede it after the
+planned repository curation.
 
 ---
 
@@ -419,6 +446,20 @@ Its evidence includes utility, beyond-utility, parsing, recommendation, executio
 The G2 layer studies the effect of controlled changes in user-history length while preserving the relevant candidate and target conditions.
 
 The analysis distinguishes early gains from later plateaus or configuration-dependent oscillations rather than assuming that longer histories are always better.
+
+### RQ3 â€” Traditional History-Length Diagnostic Extension
+
+The RQ3 traditional freeze evaluates `H = {1, 2, 3, 4, 5, 10, 15, 20}` for
+MostPop, BM25-like/content, BPRMF, GRU4Rec, SASRec, and LightGCN using HR@5,
+NDCG@5, and MRR. It is explicitly classified as
+`LOCAL_OPERATIONALIZATION_NOT_PAPER_EXACT` and is not semantically equivalent
+to the LLM RQ3 GE10/GE20 intervention: MostPop is H-invariant, BM25-like/content
+truncates query history, and the trainable models use `D'_H` retraining.
+
+GRU4Rec H1 and SASRec H1 are `NOT_APPLICABLE` because a one-item history cannot
+form a next-item sequence example. Twelve Beauty/H5 aggregate keys were repaired
+deterministically from the already existing seed set 42â€“46. No new training,
+inference, Ollama execution, recommendation generation, or model rerun occurred.
 
 ### G3 â€” Candidate-Position Sensitivity
 
