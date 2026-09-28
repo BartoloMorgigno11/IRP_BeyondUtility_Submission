@@ -41,3 +41,6 @@ results/tables/rq5_primary_systematic_profile_reuse_audit.csv -text
 
 *.svg text eol=lf
 .gitattributes text eol=lf
+artifacts/rq3_final_freeze/rq3_final_manifest.json -text !eol
+artifacts/rq3_traditional_run/run_manifest.json -text !eol
+report/RQ3_TRADITIONAL_RUN_FREEZE.md -text !eol
