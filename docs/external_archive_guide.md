@@ -21,7 +21,7 @@ Do not invent download URLs. If external evidence must be shared, use the existi
 
 Large foreground CSV evidence that is useful for no-inference inspection is committed as deterministic gzip packages rather than normal-Git CSV blobs. The manifest is:
 
-The current release inventory contains 38 packages.
+The current release inventory contains 50 packages.
 
 ```text
 results/manifests/github_packaged_artifacts.json

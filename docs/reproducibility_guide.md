@@ -46,7 +46,7 @@ Do not edit `original_repo/EvaLLMasRecommender/` unless a future task explicitly
 
 Some large foreground CSV artifacts are represented in Git as deterministic `.csv.gz` files. Verify packages without restoring:
 
-The current release inventory contains 38 packages.
+The current release inventory contains 50 packages.
 
 ```powershell
 .\.venv_audit_recovery\Scripts\python.exe scripts\restore_packaged_artifacts.py --verify-package
