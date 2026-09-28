@@ -56,6 +56,14 @@ The following CSV evidence is committed as deterministic gzip packages:
 - `results/tables/g1_primary_ranking_raw_response_inventory.csv.gz`
 - `results/tables/g1_primary_ranking_execution_state.csv.gz`
 - `results/tables/g1_primary_ranking_physical_execution_order.csv.gz`
+- `results/raw_outputs/f1bx_baseline_recommendations.csv.gz`
+- `results/tables/g2_history_length_statistical_paired_contributions.csv.gz`
+- `results/tables/g4_f1bzq_analytic_universe.csv.gz`
+- `results/tables/g4_f1bzq_reranking_request_universe.csv.gz`
+- `results/tables/g3_candidate_position_request_universe.csv.gz`
+- `results/tables/g3_candidate_position_analysis_universe.csv.gz`
+- `results/tables/g2_history_length_analysis_universe.csv.gz`
+- `results/tables/g2_history_length_execution_evidence_inventory.csv.gz`
 
 Manifest:
 

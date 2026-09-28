@@ -211,7 +211,9 @@ The restoration procedure checks:
 
 The restored oversized CSV files remain ignored by Git.
 
-The final clean-room validation verified all **10 packaged artifacts** successfully.
+The previous clean-room validation verified 10 packaged artifacts at its earlier
+commit. The current release inventory contains **18 packaged artifacts**;
+the final clean-room validation will be rerun after delivery curation.
 
 ---
 
@@ -232,7 +234,7 @@ python scripts/restore_packaged_artifacts.py --verify-restored
 Expected result:
 
 ```text
-PASS 10 artifacts
+PASS 18 artifacts
 ```
 
 ### 2. Run the repository smoke test
