@@ -75,6 +75,8 @@ The principal scientific documents are:
 - Packaged-artifact manifest:`results/manifests/github_packaged_artifacts.json`
 - Git provenance map:
   `report/GITHUB_PROVENANCE_MAP.md`
+- Professor quickstart: `docs/PROFESSOR_QUICKSTART.md`
+- Data availability and external-material policy: `docs/DATA_AVAILABILITY.md`
 
 Canonical numerical values should be read from the machine-readable artifacts under `results/` rather than manually copied from prose reports.
 
@@ -130,10 +132,12 @@ It is suitable for general development and inspection of the project, but it is 
 
 This file records the core package versions used for deterministic validation of the final frozen figure package.
 
-The final clean-room validation was performed with:
+The final clean-room validation of commit
+`77961e96e7cab529153cbc9b0c8352391e544822` was performed on 25 October
+2026 with:
 
 ```text
-Python      3.12.10
+Python      3.12.13
 NumPy       2.5.0
 pandas      3.0.3
 PyYAML      6.0.3
@@ -211,9 +215,9 @@ The restoration procedure checks:
 
 The restored oversized CSV files remain ignored by Git.
 
-The previous clean-room validation verified 10 packaged artifacts at its earlier
-commit. The current release inventory contains **51 packaged artifacts**;
-the final clean-room validation will be rerun after delivery curation.
+The release inventory contains **51 packaged artifacts**. The clean-room
+validation of the commit above verified all 51 packages, restored all 51 CSV
+artifacts, and verified every restored SHA-256 and row count.
 
 ---
 
@@ -316,31 +320,48 @@ Matplotlib may emit `PendingDeprecationWarning` messages concerning `cmap.set_ba
 
 These warnings do not invalidate the frozen artifacts or the validation results.
 
+On Windows systems where the default user temporary directory is protected,
+pytest may be unable to create its fixture directory. In that case, preserve
+the same focused test selection and place pytest temporary files under the
+clone, for example:
+
+```powershell
+python -m pytest `
+  tests/test_final_rq2_heatmaps.py `
+  tests/test_final_render_polish.py `
+  tests/test_global_final_figure_freeze.py `
+  -q --basetemp=pytest-release-basetemp
+```
+
 ---
 
 ## Clean-Room Validation Result
 
-The final submission was validated from a new independent clone.
+On 25 October 2026, commit
+`77961e96e7cab529153cbc9b0c8352391e544822` was validated from a new,
+independent GitHub clone using configured GitHub authentication. This confirms
+authenticated cloning only; anonymous clone access was not validated.
 
 The validated commit successfully passed:
 
 ```text
 Git checkout                         PASS
 Upstream submodule checkout          PASS
-Packaged artifacts                  10/10 PASS
-Restored artifacts                  10/10 PASS
+Packaged artifacts                  51/51 PASS
+Restored artifacts                  51/51 PASS
 Repository smoke test               34/34 PASS
+RQ3 traditional freeze               1/1 PASS
 Cross-RQ figure validation           PASS
 Global final-figure freeze           PASS
 Final figure release tests          11/11 PASS
-Final Git working tree               CLEAN
 ```
 
-The validation confirmed that the frozen scientific evidence and final figure provenance can be inspected and validated without relying on the original development working directory.
-
-The clean-room result above predates the RQ3 traditional scientific-freeze
-integration. A new final clean-room validation will supersede it after the
-planned repository curation.
+The focused release tests completed with 30 non-blocking Matplotlib
+`PendingDeprecationWarning` messages concerning `cmap.set_bad(...)`. The
+validation confirmed that the frozen scientific evidence and final-figure
+provenance can be inspected and validated without relying on the original
+development working directory, LLM inference, recommender training, or model
+weights.
 
 ---
 
